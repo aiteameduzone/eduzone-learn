@@ -1,0 +1,12 @@
+{
+  "en": {
+    "voice_id": "",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {"stability": 0.55, "similarity_boost": 0.75, "speed": 0.95}
+  },
+  "ar": {
+    "voice_id": "",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {"stability": 0.55, "similarity_boost": 0.75, "speed": 0.95}
+  }
+}
