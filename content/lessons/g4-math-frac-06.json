@@ -1,0 +1,446 @@
+{
+  "id": "g4-math-frac-06",
+  "title": {
+    "en": "Multiplying a Fraction by a Whole Number",
+    "ar": "ضرب كسر في عدد صحيح"
+  },
+  "objective": {
+    "en": "Multiply a fraction by a whole number by counting groups of unit fractions, and solve real-life problems.",
+    "ar": "أن يضرب التلميذ كسرًا في عدد صحيح بعدّ مجموعات من الكسور الأحادية، ويحل مسائل حياتية."
+  },
+  "refs": {
+    "egypt": [
+      "U9 · 9.3 L16-17"
+    ],
+    "ccss": [
+      "4.NF.B.4.a",
+      "4.NF.B.4.b",
+      "4.NF.B.4.c"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "pies",
+        "emoji": "🥤",
+        "items": [
+          {
+            "f": [
+              1,
+              4
+            ]
+          },
+          {
+            "f": [
+              1,
+              4
+            ]
+          },
+          {
+            "f": [
+              1,
+              4
+            ]
+          },
+          {
+            "f": [
+              3,
+              4
+            ],
+            "color": "blue"
+          }
+        ],
+        "ops": [
+          "+",
+          "+",
+          "="
+        ]
+      },
+      "check": {
+        "q": {
+          "en": "Each day Youssef drinks [1/4] litre of milk. How much in 3 days?",
+          "ar": "يشرب يوسف كل يوم [1/4] لتر لبن. كم يشرب في 3 أيام؟"
+        },
+        "options": {
+          "en": [
+            "[3/4] litre",
+            "[3/12] litre",
+            "[1/12] litre"
+          ],
+          "ar": [
+            "[3/4] لتر",
+            "[3/12] لتر",
+            "[1/12] لتر"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "3 days of [1/4] is [1/4] + [1/4] + [1/4] = [3/4].\n\nThat is the same as **3 × [1/4] = [3/4]**. Multiplying is fast adding!",
+        "ar": "3 أيام كل يوم [1/4] = [1/4] + [1/4] + [1/4] = [3/4].\n\nوهذا يساوي **3 × [1/4] = [3/4]**. الضرب جمع سريع!"
+      },
+      "say": {
+        "en": "Three days of one fourth is one fourth plus one fourth plus one fourth, which is three fourths. That is the same as three times one fourth equals three fourths. Multiplying is fast adding!",
+        "ar": "ثلاثة أيام كل يوم ربع، أي ربع زائد ربع زائد ربع، تساوي ثلاثة أرباع. وهذا يساوي ثلاثة في ربع يساوي ثلاثة أرباع. الضرب جمع سريع!"
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "pies",
+        "items": [
+          {
+            "f": [
+              2,
+              5
+            ]
+          },
+          {
+            "f": [
+              2,
+              5
+            ]
+          },
+          {
+            "f": [
+              2,
+              5
+            ]
+          },
+          {
+            "f": [
+              6,
+              5
+            ],
+            "color": "blue"
+          }
+        ],
+        "ops": [
+          "+",
+          "+",
+          "="
+        ]
+      },
+      "text": {
+        "en": "**The rule:** multiply the **numerator** by the whole number. The denominator stays the same.",
+        "ar": "**القاعدة:** نضرب **البسط** في العدد الصحيح، ويبقى المقام كما هو."
+      },
+      "lines": {
+        "en": [
+          "3 × [2/5] = [2/5] + [2/5] + [2/5]",
+          "= [6/5]   (3 × 2 = 6, keep fifths)",
+          "= 1 and [1/5]"
+        ],
+        "ar": [
+          "3 × [2/5] = [2/5] + [2/5] + [2/5]",
+          "= [6/5]   (3 × 2 = 6، ويبقى المقام 5)",
+          "= 1 و [1/5]"
+        ]
+      },
+      "say": {
+        "en": "The rule: multiply the numerator by the whole number. The denominator stays the same. Three times two fifths is two fifths plus two fifths plus two fifths. Three times two is six, so we get six fifths, which is one and one fifth.",
+        "ar": "القاعدة: نضرب البسط في العدد الصحيح، ويبقى المقام كما هو. ثلاثة في خُمسين تساوي خُمسين زائد خُمسين زائد خُمسين. ثلاثة في اثنين يساوي ستة، إذن الناتج ستة أخماس، أي واحد وخُمس."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "number-line",
+      "params": {
+        "min": 0,
+        "max": 2,
+        "divisions": 5,
+        "target": [
+          6,
+          5
+        ]
+      },
+      "text": {
+        "en": "Jump 3 times, each jump [2/5]. Where do you land?",
+        "ar": "اقفز 3 مرات، كل قفزة [2/5]. أين تصل؟"
+      },
+      "prompt": {
+        "en": "Put a point at 3 × [2/5].",
+        "ar": "ضع نقطة عند 3 × [2/5]."
+      },
+      "say": {
+        "en": "Jump three times, each jump two fifths. Put a point where you land.",
+        "ar": "اقفز ثلاث مرات، كل قفزة خُمسان. ضع نقطة حيث تصل."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "pies",
+        "emoji": "🍞",
+        "items": [
+          {
+            "f": [
+              3,
+              4
+            ]
+          },
+          {
+            "f": [
+              3,
+              4
+            ]
+          },
+          {
+            "f": [
+              3,
+              4
+            ]
+          },
+          {
+            "f": [
+              3,
+              4
+            ]
+          },
+          {
+            "f": [
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      "text": {
+        "en": "**Word problem:** A baker uses [3/4] kg of flour for one tray of feteer. How much flour for 5 trays?",
+        "ar": "**مسألة:** يستخدم خبّاز [3/4] كجم دقيق لصينية فطير واحدة. كم يحتاج لـ 5 صوانٍ؟"
+      },
+      "lines": {
+        "en": [
+          "5 × [3/4] = [15/4]",
+          "15 ÷ 4 = 3 remainder 3",
+          "= 3 and [3/4] kg of flour"
+        ],
+        "ar": [
+          "5 × [3/4] = [15/4]",
+          "15 ÷ 4 = 3 والباقي 3",
+          "= 3 و [3/4] كجم دقيق"
+        ]
+      },
+      "say": {
+        "en": "Word problem. A baker uses three fourths of a kilogram of flour for one tray of feteer. How much for five trays? Five times three fourths is fifteen fourths. Fifteen divided by four is three, remainder three. So three and three fourths kilograms of flour.",
+        "ar": "مسألة. يستخدم خبّاز ثلاثة أرباع كيلوجرام دقيق لصينية فطير واحدة. كم يحتاج لخمس صوانٍ؟ خمسة في ثلاثة أرباع يساوي خمسة عشر ربعًا. خمسة عشر على أربعة يساوي ثلاثة والباقي ثلاثة. إذن ثلاثة كيلوجرامات وثلاثة أرباع."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "pies",
+        "items": [
+          {
+            "f": [
+              2,
+              3
+            ]
+          },
+          {
+            "f": [
+              2,
+              3
+            ]
+          },
+          {
+            "f": [
+              4,
+              3
+            ],
+            "color": "blue"
+          }
+        ],
+        "ops": [
+          "+",
+          "="
+        ]
+      },
+      "text": {
+        "en": "**Remember:** whole number × fraction = multiply the top, keep the bottom.\n\nIf the answer is improper, change it to a mixed number.",
+        "ar": "**تذكّر:** عدد صحيح × كسر = نضرب البسط ونترك المقام.\n\nإذا كان الناتج كسرًا غير حقيقي، نحوّله إلى عدد كسري."
+      },
+      "say": {
+        "en": "Remember: whole number times fraction means multiply the top and keep the bottom. If the answer is improper, change it to a mixed number.",
+        "ar": "تذكّر: عند ضرب عدد صحيح في كسر نضرب البسط ونترك المقام. وإذا كان الناتج كسرًا غير حقيقي نحوّله إلى عدد كسري."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "4 × [1/5] = ?",
+        "ar": "4 × [1/5] = ؟"
+      },
+      "options": {
+        "en": [
+          "[4/5]",
+          "[4/20]",
+          "[5/5]",
+          "[1/20]"
+        ],
+        "ar": [
+          "[4/5]",
+          "[4/20]",
+          "[5/5]",
+          "[1/20]"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "4 groups of [1/5] is [4/5]. Don't multiply the denominator!",
+        "ar": "4 مجموعات من [1/5] تساوي [4/5]. لا نضرب المقام!"
+      },
+      "say": {
+        "en": "Four times one fifth equals?",
+        "ar": "أربعة في خُمس يساوي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "2 × [3/8] = ?",
+        "ar": "2 × [3/8] = ؟"
+      },
+      "options": {
+        "en": [
+          "[6/8]",
+          "[6/16]",
+          "[5/8]",
+          "[3/16]"
+        ],
+        "ar": [
+          "[6/8]",
+          "[6/16]",
+          "[5/8]",
+          "[3/16]"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "2 × 3 = 6, keep eighths: [6/8].",
+        "ar": "2 × 3 = 6 ويبقى المقام 8: [6/8]."
+      },
+      "say": {
+        "en": "Two times three eighths equals?",
+        "ar": "اثنان في ثلاثة أثمان يساوي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which is the same as 3 × [2/7]?",
+        "ar": "أي مما يلي يساوي 3 × [2/7]؟"
+      },
+      "options": {
+        "en": [
+          "[2/7] + [2/7] + [2/7]",
+          "[3/7] + [2/7]",
+          "[2/21]",
+          "[3/7] + [3/7]"
+        ],
+        "ar": [
+          "[2/7] + [2/7] + [2/7]",
+          "[3/7] + [2/7]",
+          "[2/21]",
+          "[3/7] + [3/7]"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "3 × [2/7] means 3 groups of [2/7].",
+        "ar": "3 × [2/7] تعني 3 مجموعات من [2/7]."
+      },
+      "say": {
+        "en": "Which is the same as three times two sevenths?",
+        "ar": "أي مما يلي يساوي ثلاثة في سُبعين؟"
+      }
+    },
+    {
+      "q": {
+        "en": "6 × [2/3] = ?",
+        "ar": "6 × [2/3] = ؟"
+      },
+      "options": {
+        "en": [
+          "4",
+          "[12/18]",
+          "[8/3]",
+          "2"
+        ],
+        "ar": [
+          "4",
+          "[12/18]",
+          "[8/3]",
+          "2"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "6 × 2 = 12, so [12/3] = 12 ÷ 3 = 4 wholes.",
+        "ar": "6 × 2 = 12، إذن [12/3] = 12 ÷ 3 = 4 صحيح."
+      },
+      "say": {
+        "en": "Six times two thirds equals?",
+        "ar": "ستة في ثلثين يساوي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Each student needs [3/10] m of string. How much for 4 students?",
+        "ar": "كل تلميذ يحتاج [3/10] م من الخيط. كم يحتاج 4 تلاميذ؟"
+      },
+      "options": {
+        "en": [
+          "[12/10] m = 1 and [2/10] m",
+          "[7/10] m",
+          "[12/40] m",
+          "[3/40] m"
+        ],
+        "ar": [
+          "[12/10] م = 1 و [2/10] م",
+          "[7/10] م",
+          "[12/40] م",
+          "[3/40] م"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "4 × [3/10] = [12/10] = 1 and [2/10]. [7/10] adds 4 instead of multiplying.",
+        "ar": "4 × [3/10] = [12/10] = 1 و [2/10]. أما [7/10] فجمعت 4 بدلًا من الضرب."
+      },
+      "say": {
+        "en": "Each student needs three tenths of a metre of string. How much for four students?",
+        "ar": "كل تلميذ يحتاج ثلاثة أعشار متر من الخيط. كم يحتاج أربعة تلاميذ؟"
+      }
+    },
+    {
+      "q": {
+        "en": "5 × [?/6] = [10/6]. What is missing?",
+        "ar": "5 × [؟/6] = [10/6]. ما العدد المجهول؟"
+      },
+      "options": {
+        "en": [
+          "2",
+          "5",
+          "10",
+          "1"
+        ],
+        "ar": [
+          "2",
+          "5",
+          "10",
+          "1"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "5 × 2 = 10.",
+        "ar": "لأن 5 × 2 = 10."
+      },
+      "say": {
+        "en": "Five times what over six equals ten sixths?",
+        "ar": "خمسة في كم على ستة يساوي عشرة أسداس؟"
+      }
+    }
+  ]
+}

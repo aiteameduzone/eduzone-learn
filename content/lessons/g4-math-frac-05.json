@@ -1,0 +1,423 @@
+{
+  "id": "g4-math-frac-05",
+  "title": {
+    "en": "Breaking Fractions Apart",
+    "ar": "تحليل الكسور"
+  },
+  "objective": {
+    "en": "Break a fraction into a sum of fractions with the same denominator in more than one way.",
+    "ar": "أن يحلّل التلميذ الكسر إلى مجموع كسور لها المقام نفسه بأكثر من طريقة."
+  },
+  "refs": {
+    "egypt": [
+      "U9 · 9.1 L2-3"
+    ],
+    "ccss": [
+      "4.NF.B.3.b"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "pies",
+        "emoji": "🍕",
+        "items": [
+          {
+            "f": [
+              2,
+              5
+            ]
+          },
+          {
+            "f": [
+              3,
+              5
+            ],
+            "color": "blue"
+          },
+          {
+            "f": [
+              5,
+              5
+            ]
+          }
+        ],
+        "ops": [
+          "+",
+          "="
+        ]
+      },
+      "check": {
+        "q": {
+          "en": "A pizza has 5 slices. Hassan eats 2, Farida eats 3. How much did they eat together?",
+          "ar": "بيتزا بها 5 شرائح. أكل حسن 2 وأكلت فريدة 3. كم أكلا معًا؟"
+        },
+        "options": {
+          "en": [
+            "[5/5], the whole pizza",
+            "[5/10]",
+            "[2/5]"
+          ],
+          "ar": [
+            "[5/5]، البيتزا كلها",
+            "[5/10]",
+            "[2/5]"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "We can also go **backwards**: start with a fraction and break it into parts.\n\n[5/5] = [2/5] + [3/5]",
+        "ar": "يمكننا أيضًا أن نعمل **بالعكس**: نبدأ بكسر ونقسّمه إلى أجزاء.\n\n[5/5] = [2/5] + [3/5]"
+      },
+      "say": {
+        "en": "We can also go backwards. Start with a fraction and break it into parts. Five fifths equals two fifths plus three fifths.",
+        "ar": "يمكننا أيضًا أن نعمل بالعكس. نبدأ بكسر ونقسّمه إلى أجزاء. خمسة أخماس تساوي خُمسين زائد ثلاثة أخماس."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "bars",
+        "items": [
+          {
+            "f": [
+              4,
+              6
+            ]
+          },
+          {
+            "f": [
+              1,
+              6
+            ],
+            "color": "blue"
+          },
+          {
+            "f": [
+              3,
+              6
+            ],
+            "color": "blue"
+          },
+          {
+            "f": [
+              2,
+              6
+            ],
+            "color": "blue"
+          }
+        ]
+      },
+      "text": {
+        "en": "There is **more than one way** to break [4/6] apart. Only the numerators change; the denominator stays 6.",
+        "ar": "يوجد **أكثر من طريقة** لتحليل [4/6]. البسوط فقط هي التي تتغير، ويبقى المقام 6."
+      },
+      "lines": {
+        "en": [
+          "[4/6] = [1/6] + [3/6]   (1 + 3 = 4)",
+          "[4/6] = [2/6] + [2/6]   (2 + 2 = 4)",
+          "[4/6] = [1/6] + [1/6] + [2/6]   (1 + 1 + 2 = 4)",
+          "[4/6] = [1/6] + [1/6] + [1/6] + [1/6]   (four unit fractions)"
+        ],
+        "ar": [
+          "[4/6] = [1/6] + [3/6]   (1 + 3 = 4)",
+          "[4/6] = [2/6] + [2/6]   (2 + 2 = 4)",
+          "[4/6] = [1/6] + [1/6] + [2/6]   (1 + 1 + 2 = 4)",
+          "[4/6] = [1/6] + [1/6] + [1/6] + [1/6]   (أربعة كسور أحادية)"
+        ]
+      },
+      "say": {
+        "en": "There is more than one way to break four sixths apart. One sixth plus three sixths. Two sixths plus two sixths. One sixth plus one sixth plus two sixths. Or four unit fractions of one sixth each. The numerators always add up to four.",
+        "ar": "يوجد أكثر من طريقة لتحليل أربعة أسداس. سُدس زائد ثلاثة أسداس. سُدسان زائد سُدسين. سُدس زائد سُدس زائد سُدسين. أو أربعة كسور أحادية كل منها سُدس. مجموع البسوط دائمًا أربعة."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "fraction-shade",
+      "params": {
+        "parts": 8,
+        "target": 7
+      },
+      "text": {
+        "en": "Break [7/8] into [3/8] + [4/8]. Shade both parts on the bar.",
+        "ar": "حلّل [7/8] إلى [3/8] + [4/8]. ظلّل الجزأين على الشريط."
+      },
+      "prompt": {
+        "en": "Shade [3/8] + [4/8] = ?",
+        "ar": "ظلّل [3/8] + [4/8] = ؟"
+      },
+      "say": {
+        "en": "Shade three eighths plus four eighths on the bar.",
+        "ar": "ظلّل ثلاثة أثمان زائد أربعة أثمان على الشريط."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "pies",
+        "emoji": "🧃",
+        "items": [
+          {
+            "f": [
+              5,
+              8
+            ]
+          }
+        ]
+      },
+      "check": {
+        "q": {
+          "en": "[5/8] = [2/8] + [?/8]. What is missing?",
+          "ar": "[5/8] = [2/8] + [؟/8]. ما العدد المجهول؟"
+        },
+        "options": {
+          "en": [
+            "3",
+            "7",
+            "5"
+          ],
+          "ar": [
+            "3",
+            "7",
+            "5"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "**Word problem:** Nada has [5/8] litre of juice. She pours [2/8] litre into one cup. How much goes into the second cup?",
+        "ar": "**مسألة:** مع ندى [5/8] لتر عصير. صبّت [2/8] لتر في كوب. كم تصب في الكوب الثاني؟"
+      },
+      "lines": {
+        "en": [
+          "[5/8] = [2/8] + [?/8]",
+          "2 + 3 = 5, so the missing part is [3/8].",
+          "The second cup gets [3/8] litre."
+        ],
+        "ar": [
+          "[5/8] = [2/8] + [؟/8]",
+          "2 + 3 = 5، إذن الجزء المجهول [3/8].",
+          "الكوب الثاني به [3/8] لتر."
+        ]
+      },
+      "say": {
+        "en": "Word problem. Nada has five eighths of a litre of juice. She pours two eighths into one cup. Five eighths equals two eighths plus what? Two plus three is five, so the second cup gets three eighths of a litre.",
+        "ar": "مسألة. مع ندى خمسة أثمان لتر عصير. صبّت ثُمنين في كوب. خمسة أثمان تساوي ثُمنين زائد كم؟ اثنان زائد ثلاثة يساوي خمسة، إذن الكوب الثاني به ثلاثة أثمان لتر."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "bars",
+        "items": [
+          {
+            "f": [
+              3,
+              4
+            ]
+          },
+          {
+            "f": [
+              1,
+              4
+            ],
+            "color": "blue"
+          },
+          {
+            "f": [
+              2,
+              4
+            ],
+            "color": "blue"
+          }
+        ]
+      },
+      "text": {
+        "en": "**Remember:** to break a fraction apart, split the **numerator** into numbers that add up to it. Keep the same denominator.",
+        "ar": "**تذكّر:** لتحليل الكسر، نقسّم **البسط** إلى أعداد مجموعها يساويه، ونترك المقام كما هو."
+      },
+      "say": {
+        "en": "Remember: to break a fraction apart, split the numerator into numbers that add up to it. Keep the same denominator.",
+        "ar": "تذكّر: لتحليل الكسر، نقسّم البسط إلى أعداد مجموعها يساويه، ونترك المقام كما هو."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "Which sum equals [5/7]?",
+        "ar": "أي مجموع يساوي [5/7]؟"
+      },
+      "options": {
+        "en": [
+          "[2/7] + [3/7]",
+          "[2/3] + [3/4]",
+          "[1/7] + [5/7]",
+          "[5/14] + [5/14]"
+        ],
+        "ar": [
+          "[2/7] + [3/7]",
+          "[2/3] + [3/4]",
+          "[1/7] + [5/7]",
+          "[5/14] + [5/14]"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "2 + 3 = 5 and the denominator stays 7.",
+        "ar": "2 + 3 = 5 والمقام يبقى 7."
+      },
+      "say": {
+        "en": "Which sum equals five sevenths?",
+        "ar": "أي مجموع يساوي خمسة أسباع؟"
+      }
+    },
+    {
+      "q": {
+        "en": "[6/10] = [4/10] + [?/10]. What is the missing number?",
+        "ar": "[6/10] = [4/10] + [؟/10]. ما العدد المجهول؟"
+      },
+      "options": {
+        "en": [
+          "2",
+          "10",
+          "6",
+          "4"
+        ],
+        "ar": [
+          "2",
+          "10",
+          "6",
+          "4"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "4 + 2 = 6.",
+        "ar": "لأن 4 + 2 = 6."
+      },
+      "say": {
+        "en": "Six tenths equals four tenths plus what over ten?",
+        "ar": "ستة أعشار تساوي أربعة أعشار زائد كم على عشرة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which is NOT a way to break apart [3/5]?",
+        "ar": "أي مما يلي ليس تحليلًا صحيحًا للكسر [3/5]؟"
+      },
+      "options": {
+        "en": [
+          "[1/5] + [1/5]",
+          "[1/5] + [2/5]",
+          "[1/5] + [1/5] + [1/5]",
+          "[2/5] + [1/5]"
+        ],
+        "ar": [
+          "[1/5] + [1/5]",
+          "[1/5] + [2/5]",
+          "[1/5] + [1/5] + [1/5]",
+          "[2/5] + [1/5]"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1 + 1 = 2, so [1/5] + [1/5] = [2/5], not [3/5].",
+        "ar": "1 + 1 = 2، إذن [1/5] + [1/5] = [2/5] وليس [3/5]."
+      },
+      "say": {
+        "en": "Which is not a way to break apart three fifths?",
+        "ar": "أي مما يلي ليس تحليلًا صحيحًا لثلاثة أخماس؟"
+      }
+    },
+    {
+      "q": {
+        "en": "How many unit fractions of [1/9] make [4/9]?",
+        "ar": "كم كسرًا أحاديًا [1/9] يكوّن [4/9]؟"
+      },
+      "options": {
+        "en": [
+          "4",
+          "9",
+          "5",
+          "1"
+        ],
+        "ar": [
+          "4",
+          "9",
+          "5",
+          "1"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "[4/9] = [1/9] + [1/9] + [1/9] + [1/9].",
+        "ar": "لأن [4/9] = [1/9] + [1/9] + [1/9] + [1/9]."
+      },
+      "say": {
+        "en": "How many ninths make four ninths?",
+        "ar": "كم تُسعًا يكوّن أربعة أتساع؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Omar walked [7/10] km: [3/10] km to the shop, then the rest to school. How far is the shop to school?",
+        "ar": "مشى عمر [7/10] كم: [3/10] كم إلى المحل، والباقي إلى المدرسة. كم المسافة من المحل إلى المدرسة؟"
+      },
+      "options": {
+        "en": [
+          "[4/10] km",
+          "[10/10] km",
+          "[4/20] km",
+          "[3/10] km"
+        ],
+        "ar": [
+          "[4/10] كم",
+          "[10/10] كم",
+          "[4/20] كم",
+          "[3/10] كم"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "[7/10] = [3/10] + [4/10], because 3 + 4 = 7.",
+        "ar": "[7/10] = [3/10] + [4/10] لأن 3 + 4 = 7."
+      },
+      "say": {
+        "en": "Omar walked seven tenths of a kilometre: three tenths to the shop, then the rest to school. How far is the shop to school?",
+        "ar": "مشى عمر سبعة أعشار كيلومتر: ثلاثة أعشار إلى المحل، والباقي إلى المدرسة. كم المسافة من المحل إلى المدرسة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "[1/4] + [1/4] + [?/4] = [4/4]",
+        "ar": "[1/4] + [1/4] + [؟/4] = [4/4]"
+      },
+      "options": {
+        "en": [
+          "2",
+          "1",
+          "4",
+          "3"
+        ],
+        "ar": [
+          "2",
+          "1",
+          "4",
+          "3"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1 + 1 + 2 = 4, so the missing part is [2/4].",
+        "ar": "1 + 1 + 2 = 4، إذن الجزء المجهول [2/4]."
+      },
+      "say": {
+        "en": "One fourth plus one fourth plus what over four equals four fourths?",
+        "ar": "ربع زائد ربع زائد كم على أربعة يساوي أربعة أرباع؟"
+      }
+    }
+  ]
+}
