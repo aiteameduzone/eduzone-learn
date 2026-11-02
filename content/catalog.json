@@ -49,17 +49,48 @@
           }
         },
         {
-          "id": "g4-math-frac-02",
+          "id": "g4-math-frac-05",
           "title": {
-            "en": "Equivalent Fractions",
-            "ar": "الكسور المتكافئة"
+            "en": "Breaking Fractions Apart",
+            "ar": "تحليل الكسور"
           },
           "refs": {
             "egypt": [
-              "U9 · 9.3 L13-15"
+              "U9 · 9.1 L2-3"
             ],
             "ccss": [
-              "4.NF.A.1"
+              "4.NF.B.3.b"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-frac-07",
+          "title": {
+            "en": "Mixed Numbers",
+            "ar": "الأعداد الكسرية"
+          },
+          "refs": {
+            "egypt": [
+              "U9 · 9.1 L4-7"
+            ],
+            "ccss": [
+              "4.NF.B.3.c"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-frac-04",
+          "title": {
+            "en": "Adding and Subtracting Fractions",
+            "ar": "جمع الكسور وطرحها"
+          },
+          "refs": {
+            "egypt": [
+              "U9 · 9.1 L4-7"
+            ],
+            "ccss": [
+              "4.NF.B.3.a",
+              "4.NF.B.3.d"
             ]
           }
         },
@@ -79,18 +110,34 @@
           }
         },
         {
-          "id": "g4-math-frac-04",
+          "id": "g4-math-frac-02",
           "title": {
-            "en": "Adding and Subtracting Fractions",
-            "ar": "جمع الكسور وطرحها"
+            "en": "Equivalent Fractions",
+            "ar": "الكسور المتكافئة"
           },
           "refs": {
             "egypt": [
-              "U9 · 9.1 L4-7"
+              "U9 · 9.3 L13-15"
             ],
             "ccss": [
-              "4.NF.B.3.a",
-              "4.NF.B.3.d"
+              "4.NF.A.1"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-frac-06",
+          "title": {
+            "en": "Multiplying a Fraction by a Whole Number",
+            "ar": "ضرب كسر في عدد صحيح"
+          },
+          "refs": {
+            "egypt": [
+              "U9 · 9.3 L16-17"
+            ],
+            "ccss": [
+              "4.NF.B.4.a",
+              "4.NF.B.4.b",
+              "4.NF.B.4.c"
             ]
           }
         }
