@@ -1,0 +1,100 @@
+{
+  "subjects": {
+    "math": {
+      "name": {
+        "en": "Math",
+        "ar": "الرياضيات"
+      },
+      "icon": "🔢"
+    },
+    "science": {
+      "name": {
+        "en": "Science",
+        "ar": "العلوم"
+      },
+      "icon": "🔬"
+    }
+  },
+  "units": [
+    {
+      "id": "g4-math-frac",
+      "grade": 4,
+      "subject": "math",
+      "title": {
+        "en": "Fractions",
+        "ar": "الكسور الاعتيادية"
+      },
+      "refs": {
+        "egypt": {
+          "en": "Unit 9 · Term 2",
+          "ar": "الوحدة التاسعة · الترم الثاني"
+        },
+        "ccss": "4.NF"
+      },
+      "lessons": [
+        {
+          "id": "g4-math-frac-01",
+          "title": {
+            "en": "Unit Fractions: Building Fractions",
+            "ar": "الكسور الأحادية: تكوين الكسور"
+          },
+          "refs": {
+            "egypt": [
+              "U9 · 9.1 L1-3"
+            ],
+            "ccss": [
+              "4.NF.B.3",
+              "4.NF.B.4.a"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-frac-02",
+          "title": {
+            "en": "Equivalent Fractions",
+            "ar": "الكسور المتكافئة"
+          },
+          "refs": {
+            "egypt": [
+              "U9 · 9.3 L13-15"
+            ],
+            "ccss": [
+              "4.NF.A.1"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-frac-03",
+          "title": {
+            "en": "Comparing Fractions",
+            "ar": "مقارنة الكسور"
+          },
+          "refs": {
+            "egypt": [
+              "U9 · 9.2 L8-12"
+            ],
+            "ccss": [
+              "4.NF.A.2"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-frac-04",
+          "title": {
+            "en": "Adding and Subtracting Fractions",
+            "ar": "جمع الكسور وطرحها"
+          },
+          "refs": {
+            "egypt": [
+              "U9 · 9.1 L4-7"
+            ],
+            "ccss": [
+              "4.NF.B.3.a",
+              "4.NF.B.3.d"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
