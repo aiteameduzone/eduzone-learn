@@ -16,7 +16,7 @@
       right: "Correct!", wrong: "Not quite.", question: "Question", of: "of",
       finish: "Finish", score: "Your score", again: "Try again", back_unit: "Back to lessons",
       none_for_cur: "No units mapped to this curriculum yet.", objective: "Objective",
-      do_it_first: "Complete the activity to continue", continue: "Continue", term: "Term", show_step: "Show next step"
+      do_it_first: "Complete the activity to continue", continue: "Continue", term: "Term", unit_word: "Unit", lessons_word: "lessons", show_step: "Show next step"
     },
     ar: {
       learn: "تعلّم", cur_egypt: "المنهج المصري", cur_ccss: "المنهج الأمريكي",
@@ -31,7 +31,7 @@
       right: "صحيح!", wrong: "ليست صحيحة.", question: "سؤال", of: "من",
       finish: "إنهاء", score: "نتيجتك", again: "أعد المحاولة", back_unit: "العودة للدروس",
       none_for_cur: "لا توجد وحدات لهذا المنهج بعد.", objective: "الهدف",
-      do_it_first: "أكمل النشاط للمتابعة", continue: "تابع", term: "الترم", show_step: "اعرض الخطوة التالية"
+      do_it_first: "أكمل النشاط للمتابعة", continue: "تابع", term: "الترم", unit_word: "الوحدة", lessons_word: "دروس", show_step: "اعرض الخطوة التالية"
     }
   };
 
@@ -84,9 +84,13 @@
     for (var i = 0; i < s.length; i++) h = ((h * 33) ^ s.charCodeAt(i)) >>> 0;
     return h.toString(16);
   }
-  var player = new Audio(), speakingBtn = null;
+  var player = new Audio(), speakingBtn = null, queueDone = null;
+  function rate() { return store.get("ez_rate", 1); }
+  function setRate(r) { store.set("ez_rate", r); player.playbackRate = r; }
   function stopAudio() {
     player.pause();
+    player.onended = null;
+    if (queueDone) { var q = queueDone; queueDone = null; q(); }
     if (window.speechSynthesis) speechSynthesis.cancel();
     if (speakingBtn) { speakingBtn.classList.remove("playing"); speakingBtn.textContent = "🔊 " + t("listen"); }
     speakingBtn = null;
@@ -100,6 +104,7 @@
     var key = djb2(state.lang + "|" + text);
     if (state.audio[key]) {
       player.src = "audio/" + key + ".mp3";
+      player.playbackRate = rate();
       player.onended = stopAudio;
       player.play().catch(stopAudio);
       return;
@@ -109,9 +114,31 @@
     u.lang = state.lang === "ar" ? "ar-EG" : "en-US";
     var voices = speechSynthesis.getVoices().filter(function (v) { return v.lang.indexOf(state.lang) === 0; });
     if (voices.length) u.voice = voices[0];
-    u.rate = 0.92;
+    u.rate = 0.92 * rate();
     u.onend = stopAudio;
     speechSynthesis.speak(u);
+  }
+  // Play a list of narration texts one after another (unit listen bar).
+  function playOne(text, next) {
+    var key = djb2(state.lang + "|" + text);
+    if (state.audio[key]) {
+      player.src = "audio/" + key + ".mp3"; player.playbackRate = rate();
+      player.onended = next; player.play().catch(next); return;
+    }
+    if (!window.speechSynthesis) return next();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = state.lang === "ar" ? "ar-EG" : "en-US"; u.rate = 0.92 * rate(); u.onend = next;
+    speechSynthesis.speak(u);
+  }
+  function playQueue(texts, onDone) {
+    stopAudio();
+    var i = 0;
+    queueDone = onDone;
+    (function step() {
+      if (!queueDone) return;
+      if (i >= texts.length) { var d = queueDone; queueDone = null; d(); return; }
+      playOne(texts[i++], step);
+    })();
   }
   function speakButton(text) {
     var b = document.createElement("button");
@@ -201,14 +228,12 @@
           '</b><span class="code">' + digits(esc(L(u.refs[state.cur]))) + '</span><span class="soon-tag">' + t("soon") + "</span></div>";
         return;
       }
-      html += '<h2>' + esc(L(u.title)) + ' <span class="code">' + digits(esc(L(u.refs[state.cur]))) + "</span></h2><div class=\"cards\">";
-      u.lessons.forEach(function (lsn, n) {
-        var p = prog[lsn.id];
-        html += '<a class="lcard" href="#/lesson/' + lsn.id + '"><span class="num">' + digits(n + 1) + "</span>" +
-          "<b>" + esc(L(lsn.title)) + "</b>" +
-          '<span class="meta">' + (p != null ? '<span class="stars">' + stars(p) + "</span>" : '<span class="go">' + t("start") + " ›</span>") + "</span></a>";
-      });
-      html += "</div>";
+      var done = u.lessons.filter(function (x) { return prog[x.id] != null; }).length;
+      html += '<a class="unit-card" href="#/unit/' + u.id + '"><span class="num">' + digits(u.num || "") + "</span>" +
+        "<span class=\"uc-main\"><b>" + esc(L(u.title)) + "</b><small>" + digits(u.lessons.length) + " " + t("lessons_word") +
+        ' · <span class="code">' + digits(esc(L(u.refs[state.cur]))) + "</span></small>" +
+        '<span class="uc-bar"><span style="width:' + Math.round(done / u.lessons.length * 100) + '%"></span></span></span>' +
+        '<span class="go">›</span></a>';
     });
     app.innerHTML = html;
   }
@@ -255,7 +280,7 @@
     store.set("ez_last", { id: lsn.id });
     var unit = findUnit(lsn.id);
     var steps = lsn.steps, total = steps.length + lsn.quiz.length, i = 0;
-    var backHref = unit ? "#/g/" + unit.grade + "/" + unit.subject : "#/";
+    var backHref = unit ? "#/unit/" + unit.id : "#/";
 
     function frame(inner, pos) {
       var refs = (lsn.refs && lsn.refs[state.cur]) || [];
@@ -433,10 +458,19 @@
     var p = location.hash.replace(/^#\/?/, "").split("/");
     if (p[0] === "g" && p[1]) viewHome(+p[1], p[2]);
     else if (p[0] === "lesson" && p[1]) viewLesson(p[1]);
+    else if (p[0] === "unit" && p[1]) window.EZUnit.view(p[1], p[2]);
     else viewHome();
     window.scrollTo(0, 0);
   }
   window.addEventListener("hashchange", route);
+
+  // Helpers shared with unit.js
+  window.EZ = {
+    state: state, store: store, t: t, L: L, digits: digits, esc: esc, inline: inline, rich: rich, plain: plain,
+    fracHTML: fracHTML, stars: stars, crumbs: crumbs, speakButton: speakButton, stopAudio: stopAudio,
+    playQueue: playQueue, rate: rate, setRate: setRate, loadLesson: loadLesson,
+    wctx: function () { return { lang: state.lang, num: digits, frac: fracHTML, say: t, inline: inline, L: L }; }
+  };
 
   applyLang();
   Promise.all([
