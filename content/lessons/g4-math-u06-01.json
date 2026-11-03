@@ -1,0 +1,418 @@
+{
+  "id": "g4-math-u06-01",
+  "title": {
+    "en": "Factors and Factor Pairs",
+    "ar": "العوامل وأزواج العوامل"
+  },
+  "objective": {
+    "en": "Find the factors of a whole number by building arrays, and list all of its factor pairs.",
+    "ar": "أن يجد التلميذ عوامل عدد صحيح ببناء مصفوفات، ويكتب جميع أزواج عوامله."
+  },
+  "refs": {
+    "egypt": [
+      "U6 · Factors and factor pairs"
+    ],
+    "ccss": [
+      "4.OA.B.4"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 3,
+        "cols": 4,
+        "label": {
+          "en": "12 chairs: 3 rows of 4",
+          "ar": "12 كرسيًا: 3 صفوف × 4"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "Can the same 12 chairs stand in 5 equal rows?",
+          "ar": "هل يمكن ترتيب الـ 12 كرسيًا نفسها في 5 صفوف متساوية؟"
+        },
+        "options": {
+          "en": [
+            "Yes",
+            "No"
+          ],
+          "ar": [
+            "نعم",
+            "لا"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "The teacher puts 12 chairs in 3 equal rows of 4.\n\n3 × 4 = 12, so 3 and 4 are **factors** of 12.\n\n5 rows do not work: 12 ÷ 5 leaves a remainder, so 5 is **not** a factor of 12.",
+        "ar": "رتّب المعلم 12 كرسيًا في 3 صفوف متساوية، في كل صف 4 كراسي.\n\n3 × 4 = 12، إذن 3 و 4 **عاملان** من عوامل العدد 12.\n\nأما 5 صفوف فلا تصلح: 12 ÷ 5 يبقى منها باقٍ، إذن 5 **ليس** عاملًا من عوامل 12."
+      },
+      "say": {
+        "en": "The teacher puts twelve chairs in three equal rows of four. Three times four is twelve, so three and four are factors of twelve. Five rows do not work: twelve divided by five leaves a remainder, so five is not a factor of twelve.",
+        "ar": "رتّب المعلم اثني عشر كرسيًا في ثلاثة صفوف متساوية، في كل صف أربعة كراسي. ثلاثة في أربعة يساوي اثني عشر، إذن ثلاثة وأربعة عاملان من عوامل العدد اثني عشر. أما خمسة صفوف فلا تصلح، لأن اثني عشر على خمسة يبقى منها باقٍ، إذن خمسة ليس عاملًا من عوامل اثني عشر."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "array",
+        "rows": 2,
+        "cols": 6,
+        "label": {
+          "en": "2 × 6 = 12",
+          "ar": "2 × 6 = 12"
+        }
+      },
+      "text": {
+        "en": "**Factor pairs of 12:** two numbers that multiply to make 12. Start at 1 and go up.",
+        "ar": "**أزواج عوامل العدد 12:** عددان حاصل ضربهما 12. نبدأ من 1 ونصعد."
+      },
+      "lines": {
+        "en": [
+          "1 × 12 = 12",
+          "2 × 6 = 12",
+          "3 × 4 = 12",
+          "4 × 3 is the same pair, so stop.",
+          "Factors of 12: 1, 2, 3, 4, 6, 12"
+        ],
+        "ar": [
+          "1 × 12 = 12",
+          "2 × 6 = 12",
+          "3 × 4 = 12",
+          "4 × 3 هو الزوج نفسه، فنتوقف.",
+          "عوامل 12 هي: 1، 2، 3، 4، 6، 12"
+        ]
+      },
+      "say": {
+        "en": "Factor pairs of twelve: two numbers that multiply to make twelve. One times twelve, two times six, three times four. Four times three is the same pair as three times four, so we stop. The factors of twelve are one, two, three, four, six and twelve.",
+        "ar": "أزواج عوامل العدد اثني عشر: عددان حاصل ضربهما اثنا عشر. واحد في اثني عشر، واثنان في ستة، وثلاثة في أربعة. وأربعة في ثلاثة هو الزوج نفسه، فنتوقف. إذن عوامل اثني عشر هي: واحد، واثنان، وثلاثة، وأربعة، وستة، واثنا عشر."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "array",
+      "params": {
+        "target": 12,
+        "notTrivial": true,
+        "max": 12
+      },
+      "text": {
+        "en": "Set out 12 chairs in equal rows, but not in one long line.",
+        "ar": "رتّب 12 كرسيًا في صفوف متساوية، ولكن ليس في صف واحد طويل."
+      },
+      "prompt": {
+        "en": "Build an array of 12 with more than 1 row and more than 1 column.",
+        "ar": "ابنِ مصفوفة من 12 فيها أكثر من صف واحد وأكثر من عمود واحد."
+      },
+      "say": {
+        "en": "Set out twelve chairs in equal rows, but not in one long line. Use more than one row and more than one column.",
+        "ar": "رتّب اثني عشر كرسيًا في صفوف متساوية، ولكن ليس في صف واحد طويل. استخدم أكثر من صف وأكثر من عمود."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "array",
+        "rows": 4,
+        "cols": 6,
+        "label": {
+          "en": "24 chairs: 4 × 6",
+          "ar": "24 كرسيًا: 4 × 6"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "Is 5 a factor of 24?",
+          "ar": "هل 5 عامل من عوامل 24؟"
+        },
+        "options": {
+          "en": [
+            "Yes",
+            "No"
+          ],
+          "ar": [
+            "نعم",
+            "لا"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "**School party:** we need to set out 24 chairs in equal rows. Which rows work? Test each number.",
+        "ar": "**حفلة المدرسة:** نريد ترتيب 24 كرسيًا في صفوف متساوية. ما الصفوف التي تصلح؟ نختبر كل عدد."
+      },
+      "lines": {
+        "en": [
+          "1 × 24",
+          "2 × 12",
+          "3 × 8",
+          "4 × 6",
+          "5 × ? (24 ÷ 5 has a remainder, no)",
+          "6 × 4 repeats, so stop.",
+          "Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24"
+        ],
+        "ar": [
+          "1 × 24",
+          "2 × 12",
+          "3 × 8",
+          "4 × 6",
+          "5 × ؟ (24 ÷ 5 لها باقٍ، لا يصلح)",
+          "6 × 4 زوج مكرر، فنتوقف.",
+          "عوامل 24 هي: 1، 2، 3، 4، 6، 8، 12، 24"
+        ]
+      },
+      "say": {
+        "en": "School party: we need to set out twenty four chairs in equal rows. One times twenty four, two times twelve, three times eight, four times six. Five does not work, because twenty four divided by five leaves a remainder. Six times four repeats a pair, so we stop. The factors of twenty four are one, two, three, four, six, eight, twelve and twenty four.",
+        "ar": "حفلة المدرسة: نريد ترتيب أربعة وعشرين كرسيًا في صفوف متساوية. واحد في أربعة وعشرين، واثنان في اثني عشر، وثلاثة في ثمانية، وأربعة في ستة. أما خمسة فلا تصلح، لأن أربعة وعشرين على خمسة يبقى منها باقٍ. وستة في أربعة زوج مكرر، فنتوقف. إذن عوامل أربعة وعشرين هي: واحد، واثنان، وثلاثة، وأربعة، وستة، وثمانية، واثنا عشر، وأربعة وعشرون."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "array",
+      "params": {
+        "target": 24,
+        "notTrivial": true,
+        "max": 12
+      },
+      "text": {
+        "en": "Find a different way to set out the 24 chairs.",
+        "ar": "أوجد طريقة أخرى لترتيب الـ 24 كرسيًا."
+      },
+      "prompt": {
+        "en": "Build an array of 24 chairs with more than 1 row.",
+        "ar": "ابنِ مصفوفة من 24 كرسيًا فيها أكثر من صف واحد."
+      },
+      "say": {
+        "en": "Find a different way to set out the twenty four chairs in equal rows.",
+        "ar": "أوجد طريقة أخرى لترتيب الأربعة والعشرين كرسيًا في صفوف متساوية."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 1,
+        "cols": 12,
+        "label": {
+          "en": "1 × 12: 1 and 12 are always factors of 12",
+          "ar": "1 × 12: العددان 1 و 12 عاملان للعدد 12 دائمًا"
+        }
+      },
+      "text": {
+        "en": "**Remember:**\n\nA **factor** divides a number with no remainder.\n\nFactors come in **pairs**. Test 1, 2, 3 ... and stop when a pair repeats.\n\n1 and the number itself are always factors.",
+        "ar": "**تذكّر:**\n\n**العامل** يقسم العدد دون باقٍ.\n\nالعوامل تأتي في **أزواج**. نختبر 1، 2، 3 ... ونتوقف عندما يتكرر زوج.\n\nالعدد 1 والعدد نفسه عاملان دائمًا."
+      },
+      "say": {
+        "en": "Remember. A factor divides a number with no remainder. Factors come in pairs. Test one, two, three, and stop when a pair repeats. One and the number itself are always factors.",
+        "ar": "تذكّر. العامل يقسم العدد دون باقٍ. العوامل تأتي في أزواج. نختبر واحدًا واثنين وثلاثة، ونتوقف عندما يتكرر زوج. والعدد واحد والعدد نفسه عاملان دائمًا."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "Which number is a factor of 18?",
+        "ar": "أي عدد من عوامل العدد 18؟"
+      },
+      "options": {
+        "en": [
+          "6",
+          "4",
+          "36",
+          "8"
+        ],
+        "ar": [
+          "6",
+          "4",
+          "36",
+          "8"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "6 × 3 = 18. 36 is a multiple of 18, not a factor. 4 and 8 leave a remainder.",
+        "ar": "6 × 3 = 18. أما 36 فهو مضاعف للعدد 18 وليس عاملًا، و 4 و 8 يبقى منهما باقٍ."
+      },
+      "say": {
+        "en": "Which number is a factor of eighteen?",
+        "ar": "أي عدد من عوامل العدد ثمانية عشر؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which list shows ALL the factors of 12?",
+        "ar": "أي قائمة تبين جميع عوامل العدد 12؟"
+      },
+      "options": {
+        "en": [
+          "1, 2, 3, 4, 6, 12",
+          "2, 3, 4, 6",
+          "12, 24, 36, 48",
+          "1, 2, 3, 4, 5, 6, 12"
+        ],
+        "ar": [
+          "1، 2، 3، 4، 6، 12",
+          "2، 3، 4، 6",
+          "12، 24، 36، 48",
+          "1، 2، 3، 4، 5، 6، 12"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Don't forget 1 and 12. 12, 24, 36 are multiples, and 5 is not a factor.",
+        "ar": "لا تنسَ 1 و 12. أما 12، 24، 36 فهي مضاعفات، و 5 ليس عاملًا."
+      },
+      "say": {
+        "en": "Which list shows all the factors of twelve?",
+        "ar": "أي قائمة تبين جميع عوامل العدد اثني عشر؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which is a factor pair of 20?",
+        "ar": "أي مما يلي زوج من أزواج عوامل العدد 20؟"
+      },
+      "options": {
+        "en": [
+          "4 × 5",
+          "2 × 8",
+          "3 × 7",
+          "10 × 10"
+        ],
+        "ar": [
+          "4 × 5",
+          "2 × 8",
+          "3 × 7",
+          "10 × 10"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "4 × 5 = 20. 2 × 8 = 16 and 3 × 7 = 21.",
+        "ar": "4 × 5 = 20، أما 2 × 8 = 16 و 3 × 7 = 21."
+      },
+      "say": {
+        "en": "Which is a factor pair of twenty?",
+        "ar": "أي مما يلي زوج من أزواج عوامل العدد عشرين؟"
+      }
+    },
+    {
+      "q": {
+        "en": "How many factors does 16 have?",
+        "ar": "كم عاملًا للعدد 16؟"
+      },
+      "options": {
+        "en": [
+          "5",
+          "6",
+          "4",
+          "8"
+        ],
+        "ar": [
+          "5",
+          "6",
+          "4",
+          "8"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1, 2, 4, 8, 16. The pair 4 × 4 gives only one factor, 4, so count it once.",
+        "ar": "1، 2، 4، 8، 16. الزوج 4 × 4 يعطي عاملًا واحدًا هو 4، فنعدّه مرة واحدة."
+      },
+      "say": {
+        "en": "How many factors does sixteen have?",
+        "ar": "كم عاملًا للعدد ستة عشر؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Mona packs 36 eggs in equal rows. Which way does NOT use exactly 36 eggs?",
+        "ar": "ترتّب منى 36 بيضة في صفوف متساوية. أي ترتيب لا يستخدم 36 بيضة بالضبط؟"
+      },
+      "options": {
+        "en": [
+          "5 rows of 7",
+          "4 rows of 9",
+          "6 rows of 6",
+          "3 rows of 12"
+        ],
+        "ar": [
+          "5 صفوف × 7",
+          "4 صفوف × 9",
+          "6 صفوف × 6",
+          "3 صفوف × 12"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "5 × 7 = 35, not 36. 5 is not a factor of 36.",
+        "ar": "5 × 7 = 35 وليس 36، لأن 5 ليس عاملًا من عوامل 36."
+      },
+      "say": {
+        "en": "Mona packs thirty six eggs in equal rows. Which way does not use exactly thirty six eggs?",
+        "ar": "ترتّب منى ستًّا وثلاثين بيضة في صفوف متساوية. أي ترتيب لا يستخدم ستًّا وثلاثين بيضة بالضبط؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Why is 7 a factor of 28?",
+        "ar": "لماذا 7 عامل من عوامل العدد 28؟"
+      },
+      "options": {
+        "en": [
+          "Because 7 × 4 = 28",
+          "Because 7 + 21 = 28",
+          "Because 28 is bigger than 7",
+          "Because 28 ends in 8"
+        ],
+        "ar": [
+          "لأن 7 × 4 = 28",
+          "لأن 7 + 21 = 28",
+          "لأن 28 أكبر من 7",
+          "لأن 28 آحاده 8"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "A factor multiplies by a whole number to give the number: 7 × 4 = 28.",
+        "ar": "العامل إذا ضُرب في عدد صحيح أعطى العدد: 7 × 4 = 28."
+      },
+      "say": {
+        "en": "Why is seven a factor of twenty eight?",
+        "ar": "لماذا سبعة عامل من عوامل العدد ثمانية وعشرين؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which number is a factor of EVERY whole number?",
+        "ar": "أي عدد هو عامل لكل عدد صحيح؟"
+      },
+      "options": {
+        "en": [
+          "1",
+          "0",
+          "2",
+          "10"
+        ],
+        "ar": [
+          "1",
+          "0",
+          "2",
+          "10"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Any number = 1 × itself, so 1 is always a factor. 2 is not a factor of odd numbers.",
+        "ar": "أي عدد = 1 × العدد نفسه، إذن 1 عامل دائمًا. أما 2 فليس عاملًا للأعداد الفردية."
+      },
+      "say": {
+        "en": "Which number is a factor of every whole number?",
+        "ar": "أي عدد هو عامل لكل عدد صحيح؟"
+      }
+    }
+  ]
+}

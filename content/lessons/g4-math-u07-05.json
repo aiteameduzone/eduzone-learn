@@ -1,0 +1,398 @@
+{
+  "id": "g4-math-u07-05",
+  "title": {
+    "en": "Dividing with Remainders",
+    "ar": "القسمة بباقٍ"
+  },
+  "objective": {
+    "en": "Divide up to four-digit numbers by a one-digit divisor using partial quotients and the division algorithm, find the remainder, and check with multiplication.",
+    "ar": "أن يقسم التلميذ أعدادًا حتى أربعة أرقام على عدد من رقم واحد باستخدام خوارج القسمة الجزئية وخطوات القسمة المطولة، ويوجد الباقي، ويتحقق بالضرب."
+  },
+  "refs": {
+    "egypt": [
+      "U7 · 7.2 Remainders, partial quotients, algorithm"
+    ],
+    "ccss": [
+      "4.NBT.B.6"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "text": {
+        "en": "29 sweets are shared equally among 4 children.\n\nEach child gets **7** (4 × 7 = 28), and **1** sweet is left over.\n\n29 ÷ 4 = 7, **remainder 1**",
+        "ar": "وُزّعت 29 حلوى بالتساوي على 4 أطفال.\n\nيأخذ كل طفل **7** (4 × 7 = 28)، ويتبقى **1**.\n\n29 ÷ 4 = 7 **والباقي 1**"
+      },
+      "say": {
+        "en": "Twenty-nine sweets are shared equally among four children. Each child gets seven, because four times seven is twenty-eight, and one sweet is left over. Twenty-nine divided by four is seven, remainder one.",
+        "ar": "وُزّعت تسع وعشرون حلوى بالتساوي على أربعة أطفال. يأخذ كل طفل سبعًا، لأن أربعة في سبعة يساوي ثمانية وعشرين، وتتبقى حلوى واحدة. تسعة وعشرون مقسومًا على أربعة يساوي سبعة والباقي واحد."
+      },
+      "visual": {
+        "kind": "blocks",
+        "n": 29
+      },
+      "check": {
+        "q": {
+          "en": "29 ÷ 4: how many each, and how many left?",
+          "ar": "29 ÷ 4: كم لكل طفل، وكم يتبقى؟"
+        },
+        "options": {
+          "en": [
+            "7 each, 1 left",
+            "7 each, 0 left",
+            "6 each, 5 left",
+            "8 each, 3 left"
+          ],
+          "ar": [
+            "7 لكل طفل، ويتبقى 1",
+            "7 لكل طفل، ولا يتبقى شيء",
+            "6 لكل طفل، ويتبقى 5",
+            "8 لكل طفل، ويتبقى 3"
+          ]
+        },
+        "answer": 0
+      }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "**The remainder is always smaller than the divisor.**\n\nIf 5 sweets were left among 4 children, each child could take one more.",
+        "ar": "**الباقي دائمًا أصغر من المقسوم عليه.**\n\nلو تبقّت 5 حلوى مع 4 أطفال، لأمكن أن يأخذ كل طفل حلوى أخرى."
+      },
+      "say": {
+        "en": "The remainder is always smaller than the divisor. If five sweets were left among four children, each child could take one more.",
+        "ar": "الباقي دائمًا أصغر من المقسوم عليه. لو تبقّت خمس حلوى مع أربعة أطفال، لأمكن أن يأخذ كل طفل حلوى أخرى."
+      },
+      "visual": {
+        "kind": "array",
+        "rows": 4,
+        "cols": 7,
+        "label": {
+          "en": "28 shared, 1 left over",
+          "ar": "وُزّع 28، ويتبقى 1"
+        }
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "array",
+      "params": {
+        "exact": [
+          4,
+          5
+        ],
+        "max": 10
+      },
+      "text": {
+        "en": "You have 23 counters. Make as many full rows of 5 as you can. The counters that do not fill a row are the remainder.",
+        "ar": "معك 23 قطعة عدّ. كوّن أكبر عدد ممكن من الصفوف الكاملة، في كل صف 5. القطع التي لا تكمل صفًا هي الباقي."
+      },
+      "prompt": {
+        "en": "Build the full rows of 5 you can make from 23 counters.",
+        "ar": "ابنِ الصفوف الكاملة من 5 التي يمكن تكوينها من 23 قطعة."
+      },
+      "say": {
+        "en": "You have twenty-three counters. Build as many full rows of five as you can. Four rows use twenty, and three are left over.",
+        "ar": "معك ثلاث وعشرون قطعة. ابنِ أكبر عدد ممكن من الصفوف الكاملة في كل منها خمس قطع. أربعة صفوف تستخدم عشرين، وتتبقى ثلاث."
+      }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "**Area model and partial quotients:** find 156 ÷ 6. Take away easy chunks of 6.",
+        "ar": "**نموذج المساحة وخوارج القسمة الجزئية:** أوجد 156 ÷ 6. اطرح أجزاء سهلة من مضاعفات 6."
+      },
+      "lines": {
+        "en": [
+          "6 × 20 = 120 → 156 − 120 = 36",
+          "6 × 6 = 36 → 36 − 36 = 0",
+          "20 + 6 = 26",
+          "156 ÷ 6 = 26"
+        ],
+        "ar": [
+          "6 × 20 = 120 ← 156 − 120 = 36",
+          "6 × 6 = 36 ← 36 − 36 = 0",
+          "20 + 6 = 26",
+          "156 ÷ 6 = 26"
+        ]
+      },
+      "say": {
+        "en": "Area model and partial quotients: find one hundred fifty-six divided by six. Is the quotient more than twenty? Six times twenty is one hundred twenty, which is less than one hundred fifty-six, so yes. One hundred fifty-six minus one hundred twenty is thirty-six. Six times six is thirty-six, and thirty-six minus thirty-six is zero. Twenty plus six is twenty-six, so one hundred fifty-six divided by six is twenty-six.",
+        "ar": "نموذج المساحة وخوارج القسمة الجزئية: أوجد مائة وستة وخمسين مقسومًا على ستة. هل خارج القسمة أكبر من عشرين؟ ستة في عشرين يساوي مائة وعشرين، وهو أقل من مائة وستة وخمسين، إذن نعم. مائة وستة وخمسون ناقص مائة وعشرين يساوي ستة وثلاثين. ستة في ستة يساوي ستة وثلاثين، وستة وثلاثون ناقص ستة وثلاثين يساوي صفرًا. عشرون زائد ستة يساوي ستة وعشرين، إذن مائة وستة وخمسون مقسومًا على ستة يساوي ستة وعشرين."
+      },
+      "visual": {
+        "kind": "grid",
+        "w": 26,
+        "h": 6,
+        "label": {
+          "en": "6 × 20 + 6 × 6",
+          "ar": "6 × 20 + 6 × 6"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "156 ÷ 6: is the quotient more than 20?",
+          "ar": "156 ÷ 6: هل خارج القسمة أكبر من 20؟"
+        },
+        "options": {
+          "en": [
+            "Yes, 6 × 20 = 120 is less than 156",
+            "No, 6 × 20 is more than 156"
+          ],
+          "ar": [
+            "نعم، 6 × 20 = 120 أقل من 156",
+            "لا، 6 × 20 أكبر من 156"
+          ]
+        },
+        "answer": 0
+      }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "**Long division:** find 847 ÷ 5. Start from the hundreds: divide, multiply, subtract, bring down.",
+        "ar": "**القسمة المطولة:** أوجد 847 ÷ 5. ابدأ من المئات: اقسم، اضرب، اطرح، أنزل."
+      },
+      "lines": {
+        "en": [
+          "8 ÷ 5 = 1, 5 × 1 = 5, 8 − 5 = 3",
+          "Bring down 4 → 34 ÷ 5 = 6, 5 × 6 = 30, 34 − 30 = 4",
+          "Bring down 7 → 47 ÷ 5 = 9, 5 × 9 = 45, 47 − 45 = 2",
+          "847 ÷ 5 = 169, remainder 2",
+          "Check: 5 × 169 + 2 = 845 + 2 = 847 ✓"
+        ],
+        "ar": [
+          "8 ÷ 5 = 1، 5 × 1 = 5، 8 − 5 = 3",
+          "ننزل 4 ← 34 ÷ 5 = 6، 5 × 6 = 30، 34 − 30 = 4",
+          "ننزل 7 ← 47 ÷ 5 = 9، 5 × 9 = 45، 47 − 45 = 2",
+          "847 ÷ 5 = 169 والباقي 2",
+          "التحقق: 5 × 169 + 2 = 845 + 2 = 847 ✓"
+        ]
+      },
+      "say": {
+        "en": "Long division: find eight hundred forty-seven divided by five. Hundreds: eight divided by five is one, five times one is five, eight minus five is three. Bring down four to make thirty-four. Thirty-four divided by five is six, five times six is thirty, thirty-four minus thirty is four. Bring down seven to make forty-seven. Forty-seven divided by five is nine, five times nine is forty-five, forty-seven minus forty-five is two. The quotient is one hundred sixty-nine and the remainder is two. Check: five times one hundred sixty-nine is eight hundred forty-five, plus two is eight hundred forty-seven.",
+        "ar": "القسمة المطولة: أوجد ثمانمائة وسبعة وأربعين مقسومًا على خمسة. المئات: ثمانية مقسومًا على خمسة يساوي واحدًا، وخمسة في واحد يساوي خمسة، وثمانية ناقص خمسة يساوي ثلاثة. ننزل الأربعة فيصبح العدد أربعة وثلاثين. أربعة وثلاثون مقسومًا على خمسة يساوي ستة، وخمسة في ستة يساوي ثلاثين، وأربعة وثلاثون ناقص ثلاثين يساوي أربعة. ننزل السبعة فيصبح العدد سبعة وأربعين. سبعة وأربعون مقسومًا على خمسة يساوي تسعة، وخمسة في تسعة يساوي خمسة وأربعين، وسبعة وأربعون ناقص خمسة وأربعين يساوي اثنين. خارج القسمة مائة وتسعة وستون والباقي اثنان. التحقق: خمسة في مائة وتسعة وستين يساوي ثمانمائة وخمسة وأربعين، زائد اثنين يساوي ثمانمائة وسبعة وأربعين."
+      },
+      "visual": {
+        "kind": "blocks",
+        "n": 847
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": {
+        "places": 3,
+        "target": 123
+      },
+      "text": {
+        "en": "Divide 738 ÷ 6 on paper: 7 ÷ 6, then 13 ÷ 6, then 18 ÷ 6. Then show the quotient.",
+        "ar": "اقسم 738 ÷ 6 في كراستك: 7 ÷ 6، ثم 13 ÷ 6، ثم 18 ÷ 6. ثم اعرض خارج القسمة."
+      },
+      "prompt": {
+        "en": "Build the quotient of 738 ÷ 6.",
+        "ar": "كوّن خارج قسمة 738 ÷ 6."
+      },
+      "say": {
+        "en": "Divide seven hundred thirty-eight by six on paper: seven divided by six, then thirteen divided by six, then eighteen divided by six. Then build the quotient.",
+        "ar": "اقسم سبعمائة وثمانية وثلاثين على ستة في كراستك: سبعة على ستة، ثم ثلاثة عشر على ستة، ثم ثمانية عشر على ستة. ثم كوّن خارج القسمة."
+      }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Remember:**\n\nDivide, multiply, subtract, bring down.\n\nThe remainder must be smaller than the divisor.\n\nCheck: divisor × quotient + remainder = dividend.",
+        "ar": "**تذكّر:**\n\nاقسم، اضرب، اطرح، أنزل.\n\nيجب أن يكون الباقي أصغر من المقسوم عليه.\n\nالتحقق: المقسوم عليه × خارج القسمة + الباقي = المقسوم."
+      },
+      "say": {
+        "en": "Remember. Divide, multiply, subtract, bring down. The remainder must be smaller than the divisor. To check, divisor times quotient plus remainder equals the dividend. For example, three times six plus two is twenty.",
+        "ar": "تذكّر. اقسم، اضرب، اطرح، أنزل. يجب أن يكون الباقي أصغر من المقسوم عليه. وللتحقق: المقسوم عليه في خارج القسمة زائد الباقي يساوي المقسوم. مثلًا: ثلاثة في ستة زائد اثنين يساوي عشرين."
+      },
+      "visual": {
+        "kind": "array",
+        "rows": 3,
+        "cols": 6,
+        "label": {
+          "en": "3 × 6 + 2 = 20",
+          "ar": "3 × 6 + 2 = 20"
+        }
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "38 ÷ 5 = ?",
+        "ar": "38 ÷ 5 = ؟"
+      },
+      "options": {
+        "en": [
+          "7 R 3",
+          "7 R 0",
+          "6 R 8",
+          "8 R 3"
+        ],
+        "ar": [
+          "7 والباقي 3",
+          "7 والباقي 0",
+          "6 والباقي 8",
+          "8 والباقي 3"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "5 × 7 = 35 and 38 − 35 = 3. A remainder of 8 is too big: it is more than 5.",
+        "ar": "5 × 7 = 35 و 38 − 35 = 3. أما الباقي 8 فكبير جدًا لأنه أكبر من 5."
+      },
+      "say": {
+        "en": "Thirty-eight divided by five equals what?",
+        "ar": "ثمانية وثلاثون مقسومًا على خمسة يساوي كم؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which remainder is impossible when you divide by 4?",
+        "ar": "أي باقٍ مستحيل عند القسمة على 4؟"
+      },
+      "options": {
+        "en": [
+          "5",
+          "3",
+          "1",
+          "0"
+        ],
+        "ar": [
+          "5",
+          "3",
+          "1",
+          "0"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "The remainder must be smaller than the divisor 4, so 5 is impossible.",
+        "ar": "يجب أن يكون الباقي أصغر من المقسوم عليه 4، إذن 5 مستحيل."
+      },
+      "say": {
+        "en": "Which remainder is impossible when you divide by four?",
+        "ar": "أي باقٍ مستحيل عند القسمة على أربعة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "96 ÷ 4 = ?",
+        "ar": "96 ÷ 4 = ؟"
+      },
+      "options": {
+        "en": [
+          "24",
+          "23 R 4",
+          "20",
+          "26"
+        ],
+        "ar": [
+          "24",
+          "23 والباقي 4",
+          "20",
+          "26"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "4 × 20 = 80, 96 − 80 = 16, 4 × 4 = 16. 20 + 4 = 24. A remainder of 4 means one more group fits.",
+        "ar": "4 × 20 = 80 و 96 − 80 = 16 و 4 × 4 = 16. إذن 20 + 4 = 24. والباقي 4 يعني أن مجموعة أخرى ممكنة."
+      },
+      "say": {
+        "en": "Ninety-six divided by four equals what?",
+        "ar": "ستة وتسعون مقسومًا على أربعة يساوي كم؟"
+      }
+    },
+    {
+      "q": {
+        "en": "How do you check 125 ÷ 3 = 41 R 2?",
+        "ar": "كيف تتحقق من أن 125 ÷ 3 = 41 والباقي 2؟"
+      },
+      "options": {
+        "en": [
+          "3 × 41 + 2",
+          "3 × 41 − 2",
+          "41 × 2 + 3",
+          "3 + 41 + 2"
+        ],
+        "ar": [
+          "3 × 41 + 2",
+          "3 × 41 − 2",
+          "41 × 2 + 3",
+          "3 + 41 + 2"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Divisor × quotient + remainder = dividend: 3 × 41 = 123, and 123 + 2 = 125.",
+        "ar": "المقسوم عليه × خارج القسمة + الباقي = المقسوم: 3 × 41 = 123، و 123 + 2 = 125."
+      },
+      "say": {
+        "en": "How do you check that one hundred twenty-five divided by three is forty-one, remainder two?",
+        "ar": "كيف تتحقق من أن مائة وخمسة وعشرين مقسومًا على ثلاثة يساوي واحدًا وأربعين والباقي اثنان؟"
+      }
+    },
+    {
+      "q": {
+        "en": "615 ÷ 5 = ?",
+        "ar": "615 ÷ 5 = ؟"
+      },
+      "options": {
+        "en": [
+          "123",
+          "113",
+          "1,203",
+          "120"
+        ],
+        "ar": [
+          "123",
+          "113",
+          "1,203",
+          "120"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "6 ÷ 5 = 1 R 1; 11 ÷ 5 = 2 R 1; 15 ÷ 5 = 3. Quotient 123. Check: 5 × 123 = 615.",
+        "ar": "6 ÷ 5 = 1 والباقي 1، ثم 11 ÷ 5 = 2 والباقي 1، ثم 15 ÷ 5 = 3. خارج القسمة 123. التحقق: 5 × 123 = 615."
+      },
+      "say": {
+        "en": "Six hundred fifteen divided by five equals what?",
+        "ar": "ستمائة وخمسة عشر مقسومًا على خمسة يساوي كم؟"
+      }
+    },
+    {
+      "q": {
+        "en": "2,436 ÷ 4 = ?",
+        "ar": "2,436 ÷ 4 = ؟"
+      },
+      "options": {
+        "en": [
+          "609",
+          "69",
+          "690",
+          "6,009"
+        ],
+        "ar": [
+          "609",
+          "69",
+          "690",
+          "6,009"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "24 ÷ 4 = 6; 3 ÷ 4 = 0, so write 0 in the tens; 36 ÷ 4 = 9. Answer 609. 69 forgets the zero. Check: 4 × 609 = 2,436.",
+        "ar": "24 ÷ 4 = 6، ثم 3 ÷ 4 = 0 فنكتب 0 في العشرات، ثم 36 ÷ 4 = 9. الناتج 609. أما 69 فنسي الصفر. التحقق: 4 × 609 = 2,436."
+      },
+      "say": {
+        "en": "Two thousand four hundred thirty-six divided by four equals what?",
+        "ar": "ألفان وأربعمائة وستة وثلاثون مقسومًا على أربعة يساوي كم؟"
+      }
+    }
+  ]
+}

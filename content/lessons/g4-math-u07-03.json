@@ -1,0 +1,393 @@
+{
+  "id": "g4-math-u07-03",
+  "title": {
+    "en": "Multiplying by Multiples of 10",
+    "ar": "الضرب في مضاعفات العشرة"
+  },
+  "objective": {
+    "en": "Multiply a two-digit number by a multiple of 10 by multiplying by the tens digit and then by 10.",
+    "ar": "أن يضرب التلميذ عددًا مكونًا من رقمين في أحد مضاعفات العشرة بالضرب في رقم العشرات ثم في عشرة."
+  },
+  "refs": {
+    "egypt": [
+      "U7 · 7.1 2-digit × multiple of 10"
+    ],
+    "ccss": [
+      "4.NBT.B.5"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "text": {
+        "en": "30 is **3 tens**. So 4 × 30 is 4 groups of 3 tens.\n\n4 × 3 tens = 12 tens = **120**\n\n4 × 3 = 12, so 4 × 30 = 120.",
+        "ar": "العدد 30 هو **3 عشرات**. إذن 4 × 30 هي 4 مجموعات من 3 عشرات.\n\n4 × 3 عشرات = 12 عشرة = **120**\n\n4 × 3 = 12، إذن 4 × 30 = 120."
+      },
+      "say": {
+        "en": "Thirty is three tens. So four times thirty is four groups of three tens. Four times three tens is twelve tens, which is one hundred twenty. Four times three is twelve, so four times thirty is one hundred twenty.",
+        "ar": "العدد ثلاثون هو ثلاث عشرات. إذن أربعة في ثلاثين هي أربع مجموعات من ثلاث عشرات. أربعة في ثلاث عشرات يساوي اثنتي عشرة عشرة، أي مائة وعشرين. أربعة في ثلاثة يساوي اثني عشر، إذن أربعة في ثلاثين يساوي مائة وعشرين."
+      },
+      "visual": {
+        "kind": "array",
+        "rows": 4,
+        "cols": 3,
+        "label": {
+          "en": "4 × 3 tens",
+          "ar": "4 × 3 عشرات"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "4 × 30 = ?",
+          "ar": "4 × 30 = ؟"
+        },
+        "options": {
+          "en": [
+            "120",
+            "12",
+            "1,200",
+            "34"
+          ],
+          "ar": [
+            "120",
+            "12",
+            "1,200",
+            "34"
+          ]
+        },
+        "answer": 0
+      }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "**See the pattern:** the basic fact stays the same; only the zeros change.",
+        "ar": "**لاحظ النمط:** الحقيقة الأساسية لا تتغير، وتتغير الأصفار فقط."
+      },
+      "lines": {
+        "en": [
+          "6 × 7 = 42",
+          "6 × 70 = 420",
+          "60 × 70 = 4,200"
+        ],
+        "ar": [
+          "6 × 7 = 42",
+          "6 × 70 = 420",
+          "60 × 70 = 4,200"
+        ]
+      },
+      "say": {
+        "en": "See the pattern. Six times seven is forty-two. Six times seventy is four hundred twenty. Sixty times seventy is four thousand two hundred.",
+        "ar": "لاحظ النمط. ستة في سبعة يساوي اثنين وأربعين. ستة في سبعين يساوي أربعمائة وعشرين. ستون في سبعين يساوي أربعة آلاف ومائتين."
+      },
+      "visual": {
+        "kind": "blocks",
+        "n": 420
+      }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Two digits × a multiple of 10:** find 23 × 30.\n\n30 = 3 × 10, so first multiply by 3, then by 10.\n\n23 × 3 = 69, and 69 × 10 = **690**",
+        "ar": "**عدد من رقمين × مضاعف للعشرة:** أوجد 23 × 30.\n\n30 = 3 × 10، إذن نضرب أولًا في 3 ثم في 10.\n\n23 × 3 = 69، و 69 × 10 = **690**"
+      },
+      "say": {
+        "en": "Two digits times a multiple of ten: find twenty-three times thirty. Thirty is three times ten, so first multiply by three, then by ten. Twenty-three times three is sixty-nine, and sixty-nine times ten is six hundred ninety.",
+        "ar": "عدد من رقمين في مضاعف للعشرة: أوجد ثلاثة وعشرين في ثلاثين. ثلاثون تساوي ثلاثة في عشرة، إذن نضرب أولًا في ثلاثة ثم في عشرة. ثلاثة وعشرون في ثلاثة يساوي تسعة وستين، وتسعة وستون في عشرة يساوي ستمائة وتسعين."
+      },
+      "visual": {
+        "kind": "grid",
+        "w": 23,
+        "h": 3,
+        "label": {
+          "en": "23 × 3, then × 10",
+          "ar": "23 × 3، ثم × 10"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "23 × 30 = ?",
+          "ar": "23 × 30 = ؟"
+        },
+        "options": {
+          "en": [
+            "690",
+            "69",
+            "6,900",
+            "530"
+          ],
+          "ar": [
+            "690",
+            "69",
+            "6,900",
+            "530"
+          ]
+        },
+        "answer": 0
+      }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "A school orders 30 boxes of crayons with 42 crayons in each. Find 42 × 30.",
+        "ar": "طلبت مدرسة 30 علبة ألوان، في كل علبة 42 قلمًا. أوجد 42 × 30."
+      },
+      "lines": {
+        "en": [
+          "42 × 30 = 42 × 3 × 10",
+          "42 × 3 = 120 + 6 = 126",
+          "126 × 10 = 1,260 crayons"
+        ],
+        "ar": [
+          "42 × 30 = 42 × 3 × 10",
+          "42 × 3 = 120 + 6 = 126",
+          "126 × 10 = 1,260 قلمًا"
+        ]
+      },
+      "say": {
+        "en": "A school orders thirty boxes of crayons with forty-two crayons in each. Find forty-two times thirty. Forty-two times three is forty times three plus two times three, that is one hundred twenty plus six, which is one hundred twenty-six. Then one hundred twenty-six times ten is one thousand two hundred sixty crayons.",
+        "ar": "طلبت مدرسة ثلاثين علبة ألوان، في كل علبة اثنان وأربعون قلمًا. أوجد اثنين وأربعين في ثلاثين. اثنان وأربعون في ثلاثة يساوي أربعين في ثلاثة زائد اثنين في ثلاثة، أي مائة وعشرين زائد ستة، ويساوي مائة وستة وعشرين. ثم مائة وستة وعشرون في عشرة يساوي ألفًا ومائتين وستين قلمًا."
+      },
+      "visual": {
+        "kind": "blocks",
+        "n": 1260
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": {
+        "places": 4,
+        "target": 1260
+      },
+      "text": {
+        "en": "Multiply by 3, then put one zero for the 10.",
+        "ar": "اضرب في 3، ثم ضع صفرًا واحدًا من أجل العشرة."
+      },
+      "prompt": {
+        "en": "Build 42 × 30 in the chart.",
+        "ar": "كوّن 42 × 30 في الجدول."
+      },
+      "say": {
+        "en": "Multiply by three, then put one zero for the ten. Build forty-two times thirty in the chart.",
+        "ar": "اضرب في ثلاثة، ثم ضع صفرًا واحدًا من أجل العشرة. كوّن اثنين وأربعين في ثلاثين في جدول القيمة المكانية."
+      }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "40 school buses each have 35 seats. Find 35 × 40.",
+        "ar": "40 حافلة مدرسية، في كل حافلة 35 مقعدًا. أوجد 35 × 40."
+      },
+      "lines": {
+        "en": [
+          "35 × 4 = 120 + 20 = 140",
+          "140 × 10 = 1,400 seats"
+        ],
+        "ar": [
+          "35 × 4 = 120 + 20 = 140",
+          "140 × 10 = 1,400 مقعد"
+        ]
+      },
+      "say": {
+        "en": "Forty school buses each have thirty-five seats. Find thirty-five times forty. Thirty-five times four is one hundred twenty plus twenty, which is one hundred forty. Then times ten gives one thousand four hundred seats.",
+        "ar": "أربعون حافلة مدرسية، في كل حافلة خمسة وثلاثون مقعدًا. أوجد خمسة وثلاثين في أربعين. خمسة وثلاثون في أربعة يساوي مائة وعشرين زائد عشرين، أي مائة وأربعين. ثم نضرب في عشرة فيكون الناتج ألفًا وأربعمائة مقعد."
+      },
+      "visual": {
+        "kind": "blocks",
+        "n": 1400
+      }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Remember:** multiply by the tens digit, then write **one zero** for the 10.\n\nCareful: the basic product may already end in zero.\n\n25 × 40: 25 × 4 = 100, so 25 × 40 = **1,000**",
+        "ar": "**تذكّر:** اضرب في رقم العشرات، ثم اكتب **صفرًا واحدًا** من أجل العشرة.\n\nانتبه: قد ينتهي حاصل الضرب الأساسي بصفر من قبل.\n\n25 × 40: لأن 25 × 4 = 100، إذن 25 × 40 = **1,000**"
+      },
+      "say": {
+        "en": "Remember: multiply by the tens digit, then write one zero for the ten. Careful: the basic product may already end in zero. Twenty-five times four is one hundred, so twenty-five times forty is one thousand.",
+        "ar": "تذكّر: اضرب في رقم العشرات، ثم اكتب صفرًا واحدًا من أجل العشرة. انتبه: قد ينتهي حاصل الضرب الأساسي بصفر من قبل. خمسة وعشرون في أربعة يساوي مائة، إذن خمسة وعشرون في أربعين يساوي ألفًا."
+      },
+      "visual": {
+        "kind": "blocks",
+        "n": 1000
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "8 × 60 = ?",
+        "ar": "8 × 60 = ؟"
+      },
+      "options": {
+        "en": [
+          "480",
+          "48",
+          "4,800",
+          "68"
+        ],
+        "ar": [
+          "480",
+          "48",
+          "4,800",
+          "68"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "8 × 6 = 48, then one zero for the 10: 480.",
+        "ar": "8 × 6 = 48، ثم صفر واحد من أجل العشرة: 480."
+      },
+      "say": {
+        "en": "Eight times sixty equals what?",
+        "ar": "ثمانية في ستين يساوي كم؟"
+      }
+    },
+    {
+      "q": {
+        "en": "31 × 20 = ?",
+        "ar": "31 × 20 = ؟"
+      },
+      "options": {
+        "en": [
+          "620",
+          "62",
+          "6,200",
+          "51"
+        ],
+        "ar": [
+          "620",
+          "62",
+          "6,200",
+          "51"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "31 × 2 = 62, then × 10 = 620. 62 forgets the zero.",
+        "ar": "31 × 2 = 62، ثم × 10 = 620. أما 62 فنسي الصفر."
+      },
+      "say": {
+        "en": "Thirty-one times twenty equals what?",
+        "ar": "واحد وثلاثون في عشرين يساوي كم؟"
+      }
+    },
+    {
+      "q": {
+        "en": "24 × 50 = ?",
+        "ar": "24 × 50 = ؟"
+      },
+      "options": {
+        "en": [
+          "1,200",
+          "120",
+          "1,020",
+          "12,000"
+        ],
+        "ar": [
+          "1,200",
+          "120",
+          "1,020",
+          "12,000"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "24 × 5 = 120, then × 10 = 1,200.",
+        "ar": "24 × 5 = 120، ثم × 10 = 1,200."
+      },
+      "say": {
+        "en": "Twenty-four times fifty equals what?",
+        "ar": "أربعة وعشرون في خمسين يساوي كم؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A felucca makes 30 trips. Each trip carries 16 people. How many people in total?",
+        "ar": "قامت فلوكة بـ 30 رحلة، تحمل في كل رحلة 16 شخصًا. كم شخصًا في المجموع؟"
+      },
+      "options": {
+        "en": [
+          "480",
+          "48",
+          "46",
+          "4,800"
+        ],
+        "ar": [
+          "480",
+          "48",
+          "46",
+          "4,800"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "16 × 3 = 48, then × 10 = 480. 46 adds 16 + 30 instead of multiplying.",
+        "ar": "16 × 3 = 48، ثم × 10 = 480. أما 46 فجمع 16 + 30 بدل الضرب."
+      },
+      "say": {
+        "en": "A felucca makes thirty trips. Each trip carries sixteen people. How many people in total?",
+        "ar": "قامت فلوكة بثلاثين رحلة، تحمل في كل رحلة ستة عشر شخصًا. كم شخصًا في المجموع؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which is equal to 47 × 20?",
+        "ar": "أي مما يلي يساوي 47 × 20؟"
+      },
+      "options": {
+        "en": [
+          "47 × 2 × 10",
+          "47 × 2 + 10",
+          "47 + 20",
+          "4 × 2 × 7"
+        ],
+        "ar": [
+          "47 × 2 × 10",
+          "47 × 2 + 10",
+          "47 + 20",
+          "4 × 2 × 7"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "20 = 2 × 10, so multiply by 2 and then by 10.",
+        "ar": "20 = 2 × 10، إذن نضرب في 2 ثم في 10."
+      },
+      "say": {
+        "en": "Which is equal to forty-seven times twenty?",
+        "ar": "أي مما يلي يساوي سبعة وأربعين في عشرين؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A school buys 40 notebooks at 25 EGP each. What is the cost?",
+        "ar": "اشترت مدرسة 40 كراسة، ثمن الواحدة 25 جنيهًا. كم التكلفة؟"
+      },
+      "options": {
+        "en": [
+          "1,000 EGP",
+          "100 EGP",
+          "800 EGP",
+          "10,000 EGP"
+        ],
+        "ar": [
+          "1,000 جنيه",
+          "100 جنيه",
+          "800 جنيه",
+          "10,000 جنيه"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "25 × 4 = 100, then × 10 = 1,000. The zero of 100 stays, then we add one more.",
+        "ar": "25 × 4 = 100، ثم × 10 = 1,000. صفرا المائة يبقيان، ثم نضيف صفرًا آخر."
+      },
+      "say": {
+        "en": "A school buys forty notebooks at twenty-five pounds each. What is the cost?",
+        "ar": "اشترت مدرسة أربعين كراسة، ثمن الواحدة خمسة وعشرون جنيهًا. كم التكلفة؟"
+      }
+    }
+  ]
+}

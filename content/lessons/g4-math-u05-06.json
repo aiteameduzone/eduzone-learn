@@ -1,0 +1,406 @@
+{
+  "id": "g4-math-u05-06",
+  "title": {
+    "en": "Patterns with 10, 100 and 1,000",
+    "ar": "أنماط الضرب في 10 و 100 و 1000"
+  },
+  "objective": {
+    "en": "Multiply a one-digit number by 10, 100, 1,000 and by multiples of them using place value and patterns.",
+    "ar": "أن يضرب التلميذ عددًا من رقم واحد في 10 و 100 و 1000 ومضاعفاتها باستخدام القيمة المكانية والأنماط."
+  },
+  "refs": {
+    "egypt": [
+      "U5 · 5.2 Patterns with multiples of 10, 100, 1,000"
+    ],
+    "ccss": [
+      "4.NBT.B.5",
+      "4.OA.C.5"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "blocks",
+        "n": 30
+      },
+      "check": {
+        "q": {
+          "en": "3 × 10 = ?",
+          "ar": "3 × 10 = ؟"
+        },
+        "options": {
+          "en": [
+            "13",
+            "30",
+            "300"
+          ],
+          "ar": [
+            "13",
+            "30",
+            "300"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "3 × 10 means 3 groups of ten: 3 tens = **30**.\n\nMultiplying by 10 moves each digit **one place to the left**, so a 0 fills the ones place.",
+        "ar": "3 × 10 تعني 3 مجموعات من العشرة: 3 عشرات = **30**.\n\nالضرب في 10 ينقل كل رقم **منزلة واحدة إلى اليسار**، فيوضع 0 في منزلة الآحاد."
+      },
+      "say": {
+        "en": "Three times ten means three groups of ten. Three tens is thirty. Multiplying by ten moves each digit one place to the left, so a zero fills the ones place.",
+        "ar": "ثلاثة في عشرة تعني ثلاث مجموعات من العشرة. ثلاث عشرات تساوي ثلاثين. الضرب في عشرة ينقل كل رقم منزلة واحدة إلى اليسار، فيوضع صفر في منزلة الآحاد."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "blocks",
+        "n": 400
+      },
+      "text": {
+        "en": "**See the pattern:** each time we multiply by 10 more, one more zero appears.",
+        "ar": "**لاحظ النمط:** كلما ضربنا في 10 مرة أخرى ظهر صفر جديد."
+      },
+      "lines": {
+        "en": [
+          "4 × 1 = 4",
+          "4 × 10 = 40",
+          "4 × 100 = 400",
+          "4 × 1,000 = 4,000"
+        ],
+        "ar": [
+          "4 × 1 = 4",
+          "4 × 10 = 40",
+          "4 × 100 = 400",
+          "4 × 1000 = 4000"
+        ]
+      },
+      "say": {
+        "en": "See the pattern. Four times one is four. Four times ten is forty. Four times one hundred is four hundred. Four times one thousand is four thousand.",
+        "ar": "لاحظ النمط. أربعة في واحد يساوي أربعة. أربعة في عشرة يساوي أربعين. أربعة في مئة يساوي أربعمئة. أربعة في ألف يساوي أربعة آلاف."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": {
+        "places": 4,
+        "target": 600
+      },
+      "text": {
+        "en": "6 × 100 means 6 hundreds.",
+        "ar": "6 × 100 تعني 6 مئات."
+      },
+      "prompt": {
+        "en": "Build 6 × 100 in the chart.",
+        "ar": "كوّن 6 × 100 في الجدول."
+      },
+      "say": {
+        "en": "Six times one hundred means six hundreds. Build it in the chart.",
+        "ar": "ستة في مئة تعني ست مئات. كوّنها في الجدول."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "blocks",
+        "n": 120
+      },
+      "check": {
+        "q": {
+          "en": "3 × 40 = ?",
+          "ar": "3 × 40 = ؟"
+        },
+        "options": {
+          "en": [
+            "1,200",
+            "43",
+            "120"
+          ],
+          "ar": [
+            "1200",
+            "43",
+            "120"
+          ]
+        },
+        "answer": 2
+      },
+      "text": {
+        "en": "**Multiples of 10:** 3 × 40 = 3 × 4 tens = 12 tens = **120**.\n\nMultiply the basic fact 3 × 4 = 12, then write the zero.",
+        "ar": "**مضاعفات العشرة:** 3 × 40 = 3 × 4 عشرات = 12 عشرة = **120**.\n\nاضرب الحقيقة الأساسية 3 × 4 = 12، ثم اكتب الصفر."
+      },
+      "say": {
+        "en": "Multiples of ten. Three times forty is three times four tens, which is twelve tens, one hundred and twenty. Multiply the basic fact three times four is twelve, then write the zero.",
+        "ar": "مضاعفات العشرة. ثلاثة في أربعين يساوي ثلاثة في أربع عشرات، أي اثنتي عشرة عشرة، تساوي مئة وعشرين. اضرب الحقيقة الأساسية ثلاثة في أربعة يساوي اثني عشر، ثم اكتب الصفر."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "blocks",
+        "n": 3000
+      },
+      "text": {
+        "en": "**Watch the zeros:** 5 × 600. The basic fact 5 × 6 = 30 already has its own zero!",
+        "ar": "**انتبه للأصفار:** 5 × 600. الحقيقة الأساسية 5 × 6 = 30 فيها صفر خاص بها!"
+      },
+      "lines": {
+        "en": [
+          "5 × 600 = 5 × 6 hundreds",
+          "= 30 hundreds",
+          "= 3,000"
+        ],
+        "ar": [
+          "5 × 600 = 5 × 6 مئات",
+          "= 30 مئة",
+          "= 3000"
+        ]
+      },
+      "say": {
+        "en": "Watch the zeros. Five times six hundred. The basic fact five times six is thirty, which already has its own zero. So we get thirty hundreds, which is three thousand.",
+        "ar": "انتبه للأصفار. خمسة في ستمئة. الحقيقة الأساسية خمسة في ستة يساوي ثلاثين، وفيها صفر خاص بها. إذن الناتج ثلاثون مئة، أي ثلاثة آلاف."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": {
+        "places": 4,
+        "target": 5600
+      },
+      "text": {
+        "en": "7 × 800: first 7 × 8 = 56, so the answer is 56 hundreds.",
+        "ar": "7 × 800: أولًا 7 × 8 = 56، إذن الناتج 56 مئة."
+      },
+      "prompt": {
+        "en": "Build 7 × 800 in the chart.",
+        "ar": "كوّن 7 × 800 في الجدول."
+      },
+      "say": {
+        "en": "Seven times eight hundred. First, seven times eight is fifty six, so the answer is fifty six hundreds. Build it in the chart.",
+        "ar": "سبعة في ثمانمئة. أولًا سبعة في ثمانية يساوي ستة وخمسين، إذن الناتج ست وخمسون مئة. كوّنه في الجدول."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "blocks",
+        "n": 6000
+      },
+      "text": {
+        "en": "**Remember:**\n\n× 10 → one zero, × 100 → two zeros, × 1,000 → three zeros.\n\nFor 2 × 3,000: do 2 × 3 = 6, then add the zeros: **6,000**.",
+        "ar": "**تذكّر:**\n\n× 10 ← صفر واحد، × 100 ← صفران، × 1000 ← ثلاثة أصفار.\n\nفي 2 × 3000: احسب 2 × 3 = 6، ثم أضف الأصفار: **6000**."
+      },
+      "say": {
+        "en": "Remember. Times ten adds one zero, times one hundred adds two zeros, times one thousand adds three zeros. For two times three thousand: two times three is six, then add the zeros: six thousand.",
+        "ar": "تذكّر. الضرب في عشرة يضيف صفرًا واحدًا، والضرب في مئة يضيف صفرين، والضرب في ألف يضيف ثلاثة أصفار. في اثنين في ثلاثة آلاف: اثنان في ثلاثة يساوي ستة، ثم نضيف الأصفار فيكون الناتج ستة آلاف."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "9 × 100 = ?",
+        "ar": "9 × 100 = ؟"
+      },
+      "options": {
+        "en": [
+          "900",
+          "9,000",
+          "90",
+          "109"
+        ],
+        "ar": [
+          "900",
+          "9000",
+          "90",
+          "109"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "9 hundreds = 900: two zeros for × 100.",
+        "ar": "9 مئات = 900: صفران عند الضرب في 100."
+      },
+      "say": {
+        "en": "Nine times one hundred equals?",
+        "ar": "تسعة في مئة يساوي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "7 × 1,000 = ?",
+        "ar": "7 × 1000 = ؟"
+      },
+      "options": {
+        "en": [
+          "7,000",
+          "700",
+          "70,000",
+          "1,007"
+        ],
+        "ar": [
+          "7000",
+          "700",
+          "70000",
+          "1007"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "7 thousands = 7,000: three zeros for × 1,000. 1,007 adds instead.",
+        "ar": "7 آلاف = 7000: ثلاثة أصفار عند الضرب في 1000. أما 1007 فجمعت."
+      },
+      "say": {
+        "en": "Seven times one thousand equals?",
+        "ar": "سبعة في ألف يساوي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "6 × 40 = ?",
+        "ar": "6 × 40 = ؟"
+      },
+      "options": {
+        "en": [
+          "240",
+          "46",
+          "2,400",
+          "24"
+        ],
+        "ar": [
+          "240",
+          "46",
+          "2400",
+          "24"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "6 × 4 = 24, so 24 tens = 240. 24 forgot the zero; 2,400 added one too many.",
+        "ar": "6 × 4 = 24، إذن 24 عشرة = 240. أما 24 فنسيت الصفر، و 2400 فيها صفر زائد."
+      },
+      "say": {
+        "en": "Six times forty equals?",
+        "ar": "ستة في أربعين يساوي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "4 × 500 = ?",
+        "ar": "4 × 500 = ؟"
+      },
+      "options": {
+        "en": [
+          "2,000",
+          "200",
+          "20,000",
+          "504"
+        ],
+        "ar": [
+          "2000",
+          "200",
+          "20000",
+          "504"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "4 × 5 = 20, so 20 hundreds = 2,000. Keep the zero of 20!",
+        "ar": "4 × 5 = 20، إذن 20 مئة = 2000. لا تنسَ صفر العدد 20!"
+      },
+      "say": {
+        "en": "Four times five hundred equals?",
+        "ar": "أربعة في خمسمئة يساوي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Continue the pattern: 3, 30, 300, ___",
+        "ar": "أكمل النمط: 3، 30، 300، ___"
+      },
+      "options": {
+        "en": [
+          "3,000",
+          "330",
+          "303",
+          "600"
+        ],
+        "ar": [
+          "3000",
+          "330",
+          "303",
+          "600"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "The rule is × 10 each time: 300 × 10 = 3,000.",
+        "ar": "القاعدة: نضرب في 10 كل مرة: 300 × 10 = 3000."
+      },
+      "say": {
+        "en": "Continue the pattern: three, thirty, three hundred, what comes next?",
+        "ar": "أكمل النمط: ثلاثة، ثلاثون، ثلاثمئة، ثم ماذا؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which is the same as 8 × 300?",
+        "ar": "أي مما يلي يساوي 8 × 300؟"
+      },
+      "options": {
+        "en": [
+          "24 hundreds",
+          "24 tens",
+          "308",
+          "83 hundreds"
+        ],
+        "ar": [
+          "24 مئة",
+          "24 عشرة",
+          "308",
+          "83 مئة"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "8 × 3 hundreds = 24 hundreds = 2,400.",
+        "ar": "8 × 3 مئات = 24 مئة = 2400."
+      },
+      "say": {
+        "en": "Which is the same as eight times three hundred?",
+        "ar": "أي مما يلي يساوي ثمانية في ثلاثمئة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A box of mangoes costs 200 EGP. How much do 6 boxes cost?",
+        "ar": "ثمن صندوق المانجو 200 جنيه. كم ثمن 6 صناديق؟"
+      },
+      "options": {
+        "en": [
+          "1,200 EGP",
+          "206 EGP",
+          "120 EGP",
+          "12,000 EGP"
+        ],
+        "ar": [
+          "1200 جنيه",
+          "206 جنيهات",
+          "120 جنيهًا",
+          "12000 جنيه"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "6 × 2 hundreds = 12 hundreds = 1,200 EGP.",
+        "ar": "6 × 2 مئات = 12 مئة = 1200 جنيه."
+      },
+      "say": {
+        "en": "A box of mangoes costs two hundred pounds. How much do six boxes cost?",
+        "ar": "ثمن صندوق المانجو مئتا جنيه. كم ثمن ستة صناديق؟"
+      }
+    }
+  ]
+}

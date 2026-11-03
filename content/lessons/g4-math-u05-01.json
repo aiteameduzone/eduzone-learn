@@ -1,0 +1,413 @@
+{
+  "id": "g4-math-u05-01",
+  "title": {
+    "en": "Times as Many",
+    "ar": "المقارنة باستخدام الضرب"
+  },
+  "objective": {
+    "en": "Understand a multiplication like 12 = 4 × 3 as a comparison (\"12 is 4 times as many as 3\") and show it with bars and arrays.",
+    "ar": "أن يفهم التلميذ الضرب مثل 12 = 4 × 3 كمقارنة (\"12 يساوي أربعة أمثال 3\") ويمثّلها بالأشرطة والمصفوفات."
+  },
+  "refs": {
+    "egypt": [
+      "U5 · 5.1 Times as many"
+    ],
+    "ccss": [
+      "4.OA.A.1"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "bars",
+        "items": [
+          {
+            "f": [
+              3,
+              12
+            ],
+            "label": {
+              "en": "Ali: 3",
+              "ar": "علي: 3"
+            }
+          },
+          {
+            "f": [
+              12,
+              12
+            ],
+            "label": {
+              "en": "Mona: 12",
+              "ar": "منى: 12"
+            },
+            "color": "blue"
+          }
+        ],
+        "hideLabels": true,
+        "emoji": "🥭"
+      },
+      "check": {
+        "q": {
+          "en": "Ali has 3 mangoes. Mona has 4 times as many. How many does Mona have?",
+          "ar": "مع علي 3 حبات مانجو، ومع منى أربعة أمثالها. كم حبة مع منى؟"
+        },
+        "options": {
+          "en": [
+            "12",
+            "7",
+            "4"
+          ],
+          "ar": [
+            "12",
+            "7",
+            "4"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "Ali has 3 mangoes. Mona has **4 times as many** as Ali.\n\nThat means Mona has 4 groups of 3: **4 × 3 = 12** mangoes.\n\n12 is 4 times as many as 3. (7 would be 4 **more**, not 4 **times**.)",
+        "ar": "مع علي 3 حبات مانجو، ومع منى **أربعة أمثال** ما مع علي.\n\nأي أن مع منى 4 مجموعات كل منها 3: **4 × 3 = 12** حبة.\n\nالعدد 12 يساوي أربعة أمثال العدد 3. (أما 7 فهي **أكثر** بـ 4، وليست **أربعة أمثال**.)"
+      },
+      "say": {
+        "en": "Ali has three mangoes. Mona has four times as many as Ali. That means Mona has four groups of three. Four times three is twelve mangoes. Twelve is four times as many as three. Seven would be four more, not four times.",
+        "ar": "مع علي ثلاث حبات مانجو، ومع منى أربعة أمثال ما مع علي. أي أن مع منى أربع مجموعات كل منها ثلاثة. أربعة في ثلاثة يساوي اثنتي عشرة حبة. العدد اثنا عشر يساوي أربعة أمثال العدد ثلاثة. أما سبعة فهي أكثر بأربعة، وليست أربعة أمثال."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "array",
+        "rows": 5,
+        "cols": 7,
+        "label": {
+          "en": "35 = 5 × 7",
+          "ar": "35 = 5 × 7"
+        }
+      },
+      "text": {
+        "en": "One multiplication gives **two** comparison sentences.",
+        "ar": "جملة ضرب واحدة تعطينا **جملتي** مقارنة."
+      },
+      "lines": {
+        "en": [
+          "35 = 5 × 7",
+          "35 is 5 times as many as 7.",
+          "35 is 7 times as many as 5."
+        ],
+        "ar": [
+          "35 = 5 × 7",
+          "35 يساوي خمسة أمثال 7.",
+          "35 يساوي سبعة أمثال 5."
+        ]
+      },
+      "say": {
+        "en": "One multiplication gives two comparison sentences. Thirty five equals five times seven. Thirty five is five times as many as seven. Thirty five is also seven times as many as five.",
+        "ar": "جملة ضرب واحدة تعطينا جملتي مقارنة. خمسة وثلاثون يساوي خمسة في سبعة. خمسة وثلاثون يساوي خمسة أمثال سبعة، ويساوي أيضًا سبعة أمثال خمسة."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "array",
+      "params": {
+        "target": 18,
+        "rows": 1,
+        "cols": 6,
+        "exact": [
+          3,
+          6
+        ]
+      },
+      "text": {
+        "en": "Hana has 6 stickers. Omar has 3 times as many. Each row is one group of 6.",
+        "ar": "مع هنا 6 ملصقات، ومع عمر ثلاثة أمثالها. كل صف مجموعة من 6."
+      },
+      "prompt": {
+        "en": "Build Omar's stickers: 3 rows of 6.",
+        "ar": "كوّن ملصقات عمر: 3 صفوف في كل صف 6."
+      },
+      "say": {
+        "en": "Hana has six stickers. Omar has three times as many. Build Omar's stickers: three rows of six.",
+        "ar": "مع هنا ستة ملصقات، ومع عمر ثلاثة أمثالها. كوّن ملصقات عمر: ثلاثة صفوف في كل صف ستة."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "bars",
+        "items": [
+          {
+            "f": [
+              1,
+              4
+            ],
+            "label": {
+              "en": "6",
+              "ar": "6"
+            }
+          },
+          {
+            "f": [
+              4,
+              4
+            ],
+            "label": {
+              "en": "24",
+              "ar": "24"
+            },
+            "color": "blue"
+          }
+        ]
+      },
+      "check": {
+        "q": {
+          "en": "Which sentence matches 24 = 4 × 6?",
+          "ar": "أي جملة تناسب 24 = 4 × 6؟"
+        },
+        "options": {
+          "en": [
+            "24 is 4 more than 6",
+            "24 is 4 times as many as 6",
+            "6 is 4 times as many as 24"
+          ],
+          "ar": [
+            "24 أكبر من 6 بمقدار 4",
+            "24 يساوي أربعة أمثال 6",
+            "6 يساوي أربعة أمثال 24"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "24 = 4 × 6 means **24 is 4 times as many as 6**.\n\nIt does **not** mean 24 is 4 more than 6 (that would be 10).",
+        "ar": "24 = 4 × 6 تعني أن **24 يساوي أربعة أمثال 6**.\n\nولا تعني أن 24 أكبر من 6 بمقدار 4 (فهذا يكون 10)."
+      },
+      "say": {
+        "en": "Twenty four equals four times six means twenty four is four times as many as six. It does not mean twenty four is four more than six. That would be ten.",
+        "ar": "أربعة وعشرون يساوي أربعة في ستة تعني أن أربعة وعشرين يساوي أربعة أمثال ستة. ولا تعني أن أربعة وعشرين أكبر من ستة بمقدار أربعة، فهذا يكون عشرة."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "array",
+      "params": {
+        "target": 16,
+        "rows": 1,
+        "cols": 8,
+        "exact": [
+          2,
+          8
+        ]
+      },
+      "text": {
+        "en": "Twice as many means 2 times as many. A small tray has 8 ta'ameya. A big tray has twice as many.",
+        "ar": "مثلا العدد يعني ضعفه، أي 2 × العدد. في الصينية الصغيرة 8 أقراص طعمية، وفي الكبيرة مثلاها."
+      },
+      "prompt": {
+        "en": "Build the big tray: twice as many as 8.",
+        "ar": "كوّن الصينية الكبيرة: مثلا 8."
+      },
+      "say": {
+        "en": "Twice as many means two times as many. A small tray has eight ta'ameya. A big tray has twice as many. Build the big tray.",
+        "ar": "مثلا العدد يعني ضعفه، أي اثنين في العدد. في الصينية الصغيرة ثمانية أقراص طعمية، وفي الكبيرة مثلاها. كوّن الصينية الكبيرة."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 5,
+        "cols": 4,
+        "label": {
+          "en": "20 = 5 × 4",
+          "ar": "20 = 5 × 4"
+        }
+      },
+      "text": {
+        "en": "**Remember:**\n\n\"**times as many**\" means multiply.\n\nTwice = 2 times, three times = 3 times ...\n\n20 = 5 × 4: 20 is 5 times as many as 4, and 4 times as many as 5.",
+        "ar": "**تذكّر:**\n\n\"**أمثال**\" تعني أن نضرب.\n\nمثلا = 2 ×، ثلاثة أمثال = 3 × ...\n\n20 = 5 × 4: العدد 20 يساوي خمسة أمثال 4، ويساوي أربعة أمثال 5."
+      },
+      "say": {
+        "en": "Remember. Times as many means multiply. Twice means two times, three times means three times. Twenty equals five times four: twenty is five times as many as four, and four times as many as five.",
+        "ar": "تذكّر. كلمة أمثال تعني أن نضرب. مثلا تعني اثنين في، وثلاثة أمثال تعني ثلاثة في. عشرون يساوي خمسة في أربعة: العدد عشرون يساوي خمسة أمثال أربعة، ويساوي أربعة أمثال خمسة."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "Sara has 5 pens. Youssef has 3 times as many. How many pens does Youssef have?",
+        "ar": "مع سارة 5 أقلام، ومع يوسف ثلاثة أمثالها. كم قلمًا مع يوسف؟"
+      },
+      "options": {
+        "en": [
+          "15",
+          "8",
+          "2",
+          "53"
+        ],
+        "ar": [
+          "15",
+          "8",
+          "2",
+          "53"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "3 times as many as 5 is 3 × 5 = 15. 8 adds 3 instead of multiplying.",
+        "ar": "ثلاثة أمثال 5 = 3 × 5 = 15. أما 8 فجمعت 3 بدلًا من الضرب."
+      },
+      "say": {
+        "en": "Sara has five pens. Youssef has three times as many. How many pens does Youssef have?",
+        "ar": "مع سارة خمسة أقلام، ومع يوسف ثلاثة أمثالها. كم قلمًا مع يوسف؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which sentence means 42 = 6 × 7?",
+        "ar": "أي جملة تعني 42 = 6 × 7؟"
+      },
+      "options": {
+        "en": [
+          "42 is 6 times as many as 7",
+          "42 is 6 more than 7",
+          "7 is 6 times as many as 42",
+          "6 is 7 times as many as 42"
+        ],
+        "ar": [
+          "42 يساوي ستة أمثال 7",
+          "42 أكبر من 7 بمقدار 6",
+          "7 يساوي ستة أمثال 42",
+          "6 يساوي سبعة أمثال 42"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "The product 42 is the big amount: it is 6 groups of 7.",
+        "ar": "حاصل الضرب 42 هو الكمية الكبيرة: إنه 6 مجموعات كل منها 7."
+      },
+      "say": {
+        "en": "Which sentence means forty two equals six times seven?",
+        "ar": "أي جملة تعني اثنين وأربعين يساوي ستة في سبعة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "40 is ___ times as many as 8.",
+        "ar": "40 يساوي ___ أمثال 8."
+      },
+      "options": {
+        "en": [
+          "5",
+          "32",
+          "4",
+          "48"
+        ],
+        "ar": [
+          "5",
+          "32",
+          "4",
+          "48"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "5 × 8 = 40. 32 is how many MORE, not how many times.",
+        "ar": "5 × 8 = 40. أما 32 فهو الفرق، وليس عدد الأمثال."
+      },
+      "say": {
+        "en": "Forty is how many times as many as eight?",
+        "ar": "أربعون يساوي كم مثلًا من ثمانية؟"
+      }
+    },
+    {
+      "q": {
+        "en": "What is twice as many as 9?",
+        "ar": "ما مثلا العدد 9؟"
+      },
+      "options": {
+        "en": [
+          "18",
+          "11",
+          "81",
+          "7"
+        ],
+        "ar": [
+          "18",
+          "11",
+          "81",
+          "7"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Twice means 2 times: 2 × 9 = 18. 11 adds 2, and 81 is 9 × 9.",
+        "ar": "المثلان يعنيان 2 ×: 2 × 9 = 18. أما 11 فجمعت 2، و 81 هي 9 × 9."
+      },
+      "say": {
+        "en": "What is twice as many as nine?",
+        "ar": "ما مثلا العدد تسعة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A small tray has 8 ta'ameya. A big tray has 4 times as many. How many are on the big tray?",
+        "ar": "في صينية صغيرة 8 أقراص طعمية، وفي الصينية الكبيرة أربعة أمثالها. كم قرصًا في الكبيرة؟"
+      },
+      "options": {
+        "en": [
+          "32",
+          "12",
+          "2",
+          "84"
+        ],
+        "ar": [
+          "32",
+          "12",
+          "2",
+          "84"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "4 × 8 = 32. 12 is 4 more, and 2 divides instead of multiplying.",
+        "ar": "4 × 8 = 32. أما 12 فأكثر بـ 4 فقط، و 2 ناتج قسمة لا ضرب."
+      },
+      "say": {
+        "en": "A small tray has eight ta'ameya. A big tray has four times as many. How many are on the big tray?",
+        "ar": "في صينية صغيرة ثمانية أقراص طعمية، وفي الصينية الكبيرة أربعة أمثالها. كم قرصًا في الكبيرة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Rana is 9 years old. Her father is 4 times as old. Which number sentence finds his age?",
+        "ar": "عمر رنا 9 سنوات، وعمر أبيها أربعة أمثال عمرها. أي جملة عددية تعطي عمر الأب؟"
+      },
+      "options": {
+        "en": [
+          "4 × 9 = 36",
+          "9 + 4 = 13",
+          "9 − 4 = 5",
+          "9 × 9 = 81"
+        ],
+        "ar": [
+          "4 × 9 = 36",
+          "9 + 4 = 13",
+          "9 − 4 = 5",
+          "9 × 9 = 81"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "4 times as old as 9 means 4 × 9 = 36 years.",
+        "ar": "أربعة أمثال 9 تعني 4 × 9 = 36 سنة."
+      },
+      "say": {
+        "en": "Rana is nine years old. Her father is four times as old. Which number sentence finds his age?",
+        "ar": "عمر رنا تسع سنوات، وعمر أبيها أربعة أمثال عمرها. أي جملة عددية تعطي عمر الأب؟"
+      }
+    }
+  ]
+}

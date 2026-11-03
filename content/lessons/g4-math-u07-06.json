@@ -1,0 +1,362 @@
+{
+  "id": "g4-math-u07-06",
+  "title": {
+    "en": "Word Problems: What Does the Remainder Mean?",
+    "ar": "مسائل لفظية: ماذا يعني الباقي؟"
+  },
+  "objective": {
+    "en": "Solve one- and multistep word problems with multiplication and division, and decide whether to round up, drop the remainder, or give the remainder as the answer.",
+    "ar": "أن يحل التلميذ مسائل لفظية من خطوة أو أكثر بالضرب والقسمة، ويقرر هل يزيد خارج القسمة واحدًا، أو يهمل الباقي، أو يكون الباقي هو الإجابة."
+  },
+  "refs": {
+    "egypt": [
+      "U7 · 7.2 Division word problems, remainders"
+    ],
+    "ccss": [
+      "4.OA.A.3",
+      "4.NBT.B.6"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Round up:** 45 pupils go on a felucca trip. Each felucca seats 8.\n\n45 ÷ 8 = 5, remainder 5\n\n5 feluccas are full, but 5 pupils still need a seat. We need **6 feluccas**.",
+        "ar": "**نزيد واحدًا:** 45 تلميذًا في رحلة بالفلوكة، وكل فلوكة تتسع لـ 8.\n\n45 ÷ 8 = 5 والباقي 5\n\n5 فلوكات ممتلئة، لكن 5 تلاميذ ما زالوا يحتاجون مكانًا. نحتاج **6 فلوكات**."
+      },
+      "say": {
+        "en": "Round up. Forty-five pupils go on a felucca trip. Each felucca seats eight. Forty-five divided by eight is five, remainder five. Five feluccas are full, but five pupils still need a seat. We need six feluccas.",
+        "ar": "نزيد واحدًا. خمسة وأربعون تلميذًا في رحلة بالفلوكة، وكل فلوكة تتسع لثمانية. خمسة وأربعون مقسومًا على ثمانية يساوي خمسة والباقي خمسة. خمس فلوكات ممتلئة، لكن خمسة تلاميذ ما زالوا يحتاجون مكانًا. نحتاج ست فلوكات."
+      },
+      "visual": {
+        "kind": "blocks",
+        "n": 45
+      },
+      "check": {
+        "q": {
+          "en": "45 pupils, 8 seats per felucca. How many feluccas are needed?",
+          "ar": "45 تلميذًا، وكل فلوكة 8 مقاعد. كم فلوكة نحتاج؟"
+        },
+        "options": {
+          "en": [
+            "6",
+            "5",
+            "5 R 5",
+            "8"
+          ],
+          "ar": [
+            "6",
+            "5",
+            "5 والباقي 5",
+            "8"
+          ]
+        },
+        "answer": 0
+      }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Drop the remainder:** 38 dates are packed into boxes of 6. How many **full** boxes?\n\n38 ÷ 6 = 6, remainder 2\n\nThe 2 dates left cannot fill a box. The answer is **6 full boxes**.",
+        "ar": "**نهمل الباقي:** تُعبّأ 38 تمرة في علب، في كل علبة 6. كم علبة **ممتلئة**؟\n\n38 ÷ 6 = 6 والباقي 2\n\nالتمرتان الباقيتان لا تملآن علبة. الإجابة **6 علب ممتلئة**."
+      },
+      "say": {
+        "en": "Drop the remainder. Thirty-eight dates are packed into boxes of six. How many full boxes? Thirty-eight divided by six is six, remainder two. The two dates left cannot fill a box. The answer is six full boxes.",
+        "ar": "نهمل الباقي. تُعبّأ ثمان وثلاثون تمرة في علب، في كل علبة ست. كم علبة ممتلئة؟ ثمانية وثلاثون مقسومًا على ستة يساوي ستة والباقي اثنان. التمرتان الباقيتان لا تملآن علبة. الإجابة ست علب ممتلئة."
+      },
+      "visual": {
+        "kind": "array",
+        "rows": 6,
+        "cols": 6,
+        "label": {
+          "en": "6 full boxes + 2 dates",
+          "ar": "6 علب ممتلئة + 2 تمرة"
+        }
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "array",
+      "params": {
+        "exact": [
+          6,
+          6
+        ],
+        "max": 10
+      },
+      "text": {
+        "en": "One row is one box of 6 dates. Build only the full boxes you can make from 38 dates.",
+        "ar": "كل صف علبة فيها 6 تمرات. ابنِ العلب الممتلئة فقط التي يمكن تكوينها من 38 تمرة."
+      },
+      "prompt": {
+        "en": "Build the full boxes of 6 from 38 dates.",
+        "ar": "ابنِ العلب الممتلئة من 6 باستخدام 38 تمرة."
+      },
+      "say": {
+        "en": "One row is one box of six dates. Build only the full boxes you can make from thirty-eight dates.",
+        "ar": "كل صف علبة فيها ست تمرات. ابنِ العلب الممتلئة فقط التي يمكن تكوينها من ثمانٍ وثلاثين تمرة."
+      }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "**The remainder is the answer:** Omar has 50 EGP. A pen costs 7 EGP. He buys as many pens as he can. How much money is left?\n\n50 ÷ 7 = 7, remainder 1\n\nHe buys 7 pens and has **1 EGP** left.",
+        "ar": "**الباقي هو الإجابة:** مع عمر 50 جنيهًا، وثمن القلم 7 جنيهات. اشترى أكبر عدد ممكن من الأقلام. كم جنيهًا تبقى معه؟\n\n50 ÷ 7 = 7 والباقي 1\n\nاشترى 7 أقلام وتبقى معه **1 جنيه**."
+      },
+      "say": {
+        "en": "The remainder is the answer. Omar has fifty pounds. A pen costs seven pounds. He buys as many pens as he can. How much money is left? Fifty divided by seven is seven, remainder one. He buys seven pens and has one pound left.",
+        "ar": "الباقي هو الإجابة. مع عمر خمسون جنيهًا، وثمن القلم سبعة جنيهات. اشترى أكبر عدد ممكن من الأقلام. كم جنيهًا تبقى معه؟ خمسون مقسومًا على سبعة يساوي سبعة والباقي واحد. اشترى سبعة أقلام وتبقى معه جنيه واحد."
+      },
+      "visual": {
+        "kind": "blocks",
+        "n": 50
+      },
+      "check": {
+        "q": {
+          "en": "How much money is left?",
+          "ar": "كم جنيهًا تبقى مع عمر؟"
+        },
+        "options": {
+          "en": [
+            "1 EGP",
+            "7 EGP",
+            "0 EGP",
+            "8 EGP"
+          ],
+          "ar": [
+            "1 جنيه",
+            "7 جنيهات",
+            "0 جنيه",
+            "8 جنيهات"
+          ]
+        },
+        "answer": 0
+      }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "**Multistep:** 3 classes of 28 pupils and 6 teachers go on a school trip. Each minibus seats 8. How many minibuses?",
+        "ar": "**مسألة من أكثر من خطوة:** 3 فصول في كل منها 28 تلميذًا، ومعهم 6 معلمين، في رحلة مدرسية. كل حافلة صغيرة تتسع لـ 8. كم حافلة نحتاج؟"
+      },
+      "lines": {
+        "en": [
+          "3 × 28 = 84 pupils",
+          "84 + 6 = 90 people",
+          "90 ÷ 8 = 11, remainder 2 (8 × 11 = 88)",
+          "Round up: 12 minibuses"
+        ],
+        "ar": [
+          "3 × 28 = 84 تلميذًا",
+          "84 + 6 = 90 شخصًا",
+          "90 ÷ 8 = 11 والباقي 2 (8 × 11 = 88)",
+          "نزيد واحدًا: 12 حافلة"
+        ]
+      },
+      "say": {
+        "en": "Multistep. Three classes of twenty-eight pupils and six teachers go on a school trip. Each minibus seats eight. Three times twenty-eight is eighty-four pupils. Eighty-four plus six is ninety people. Ninety divided by eight is eleven, remainder two, because eight times eleven is eighty-eight. Two people still need a seat, so we need twelve minibuses.",
+        "ar": "مسألة من أكثر من خطوة. ثلاثة فصول في كل منها ثمانية وعشرون تلميذًا، ومعهم ستة معلمين، في رحلة مدرسية. كل حافلة صغيرة تتسع لثمانية. ثلاثة في ثمانية وعشرين يساوي أربعة وثمانين تلميذًا. أربعة وثمانون زائد ستة يساوي تسعين شخصًا. تسعون مقسومًا على ثمانية يساوي أحد عشر والباقي اثنان، لأن ثمانية في أحد عشر يساوي ثمانية وثمانين. ما زال شخصان يحتاجان مكانًا، إذن نحتاج اثنتي عشرة حافلة."
+      },
+      "visual": {
+        "kind": "blocks",
+        "n": 90
+      }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Ask: what does the remainder mean?**\n\nEveryone needs a place → **add 1**.\n\nOnly full groups count → **drop it**.\n\nWhat is left over? → **the remainder is the answer**.",
+        "ar": "**اسأل: ماذا يعني الباقي؟**\n\nالكل يحتاج مكانًا ← **نزيد واحدًا**.\n\nالمجموعات الكاملة فقط ← **نهمل الباقي**.\n\nكم تبقى؟ ← **الباقي هو الإجابة**."
+      },
+      "say": {
+        "en": "Ask: what does the remainder mean? If everyone needs a place, add one. If only full groups count, drop it. If the question asks what is left over, the remainder is the answer.",
+        "ar": "اسأل: ماذا يعني الباقي؟ إذا كان الكل يحتاج مكانًا نزيد واحدًا. وإذا كانت المجموعات الكاملة فقط هي المطلوبة نهمل الباقي. وإذا كان السؤال عمّا تبقى فالباقي هو الإجابة."
+      },
+      "visual": {
+        "kind": "array",
+        "rows": 5,
+        "cols": 8,
+        "label": {
+          "en": "40 seated + 5 waiting → 6 feluccas",
+          "ar": "40 جالسًا + 5 ينتظرون ← 6 فلوكات"
+        }
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "58 children go on a trip. Each minibus seats 9. How many minibuses are needed?",
+        "ar": "58 طفلًا في رحلة، وكل حافلة صغيرة تتسع لـ 9. كم حافلة نحتاج؟"
+      },
+      "options": {
+        "en": [
+          "7",
+          "6",
+          "6 R 4",
+          "4"
+        ],
+        "ar": [
+          "7",
+          "6",
+          "6 والباقي 4",
+          "4"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "58 ÷ 9 = 6 R 4. The 4 children left still need a seat, so we need 7.",
+        "ar": "58 ÷ 9 = 6 والباقي 4. الأطفال الأربعة الباقون يحتاجون مكانًا، إذن نحتاج 7."
+      },
+      "say": {
+        "en": "Fifty-eight children go on a trip. Each minibus seats nine. How many minibuses are needed?",
+        "ar": "ثمانية وخمسون طفلًا في رحلة، وكل حافلة صغيرة تتسع لتسعة. كم حافلة نحتاج؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A baker has 75 feteer and puts 8 in each box. How many full boxes?",
+        "ar": "مع خباز 75 فطيرة، يضع 8 في كل علبة. كم علبة ممتلئة؟"
+      },
+      "options": {
+        "en": [
+          "9",
+          "10",
+          "3",
+          "9 R 3"
+        ],
+        "ar": [
+          "9",
+          "10",
+          "3",
+          "9 والباقي 3"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "75 ÷ 8 = 9 R 3. Only full boxes count, so we drop the 3: 9 boxes.",
+        "ar": "75 ÷ 8 = 9 والباقي 3. المطلوب العلب الممتلئة فقط، فنهمل الـ 3: الإجابة 9 علب."
+      },
+      "say": {
+        "en": "A baker has seventy-five feteer and puts eight in each box. How many full boxes?",
+        "ar": "مع خباز خمس وسبعون فطيرة، يضع ثماني فطائر في كل علبة. كم علبة ممتلئة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Hana has 60 EGP. A juice costs 8 EGP. She buys as many as she can. How much money is left?",
+        "ar": "مع هنا 60 جنيهًا، وثمن العصير 8 جنيهات. اشترت أكبر عدد ممكن. كم جنيهًا تبقى معها؟"
+      },
+      "options": {
+        "en": [
+          "4 EGP",
+          "7 EGP",
+          "0 EGP",
+          "56 EGP"
+        ],
+        "ar": [
+          "4 جنيهات",
+          "7 جنيهات",
+          "0 جنيه",
+          "56 جنيهًا"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "60 ÷ 8 = 7 R 4. She buys 7 juices (56 EGP) and 4 EGP is left. Here the remainder is the answer.",
+        "ar": "60 ÷ 8 = 7 والباقي 4. اشترت 7 عصائر (56 جنيهًا) وتبقى 4 جنيهات. هنا الباقي هو الإجابة."
+      },
+      "say": {
+        "en": "Hana has sixty pounds. A juice costs eight pounds. She buys as many as she can. How much money is left?",
+        "ar": "مع هنا ستون جنيهًا، وثمن العصير ثمانية جنيهات. اشترت أكبر عدد ممكن. كم جنيهًا تبقى معها؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A ribbon is 85 cm long. How many full 6 cm pieces can be cut?",
+        "ar": "شريط طوله 85 سم. كم قطعة كاملة طولها 6 سم يمكن قصها؟"
+      },
+      "options": {
+        "en": [
+          "14",
+          "15",
+          "1",
+          "13"
+        ],
+        "ar": [
+          "14",
+          "15",
+          "1",
+          "13"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "85 ÷ 6 = 14 R 1 (6 × 14 = 84). The 1 cm left is not a full piece.",
+        "ar": "85 ÷ 6 = 14 والباقي 1 (6 × 14 = 84). السنتيمتر الباقي ليس قطعة كاملة."
+      },
+      "say": {
+        "en": "A ribbon is eighty-five centimetres long. How many full six-centimetre pieces can be cut?",
+        "ar": "شريط طوله خمسة وثمانون سنتيمترًا. كم قطعة كاملة طولها ستة سنتيمترات يمكن قصها؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Mona buys 4 notebooks at 15 EGP each and pays 100 EGP. How much change does she get?",
+        "ar": "اشترت منى 4 كراسات، ثمن الواحدة 15 جنيهًا، ودفعت 100 جنيه. كم الباقي لها؟"
+      },
+      "options": {
+        "en": [
+          "40 EGP",
+          "60 EGP",
+          "85 EGP",
+          "81 EGP"
+        ],
+        "ar": [
+          "40 جنيهًا",
+          "60 جنيهًا",
+          "85 جنيهًا",
+          "81 جنيهًا"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Step 1: 4 × 15 = 60 EGP. Step 2: 100 − 60 = 40 EGP. 85 forgets to multiply by 4.",
+        "ar": "الخطوة الأولى: 4 × 15 = 60 جنيهًا. الخطوة الثانية: 100 − 60 = 40 جنيهًا. أما 85 فنسي الضرب في 4."
+      },
+      "say": {
+        "en": "Mona buys four notebooks at fifteen pounds each and pays one hundred pounds. How much change does she get?",
+        "ar": "اشترت منى أربع كراسات، ثمن الواحدة خمسة عشر جنيهًا، ودفعت مائة جنيه. كم الباقي لها؟"
+      }
+    },
+    {
+      "q": {
+        "en": "3 classes of 26 pupils visit the zoo. Each van seats 9. How many vans are needed?",
+        "ar": "3 فصول في كل منها 26 تلميذًا تزور حديقة الحيوان. كل سيارة تتسع لـ 9. كم سيارة نحتاج؟"
+      },
+      "options": {
+        "en": [
+          "9",
+          "8",
+          "8 R 6",
+          "6"
+        ],
+        "ar": [
+          "9",
+          "8",
+          "8 والباقي 6",
+          "6"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "3 × 26 = 78 pupils. 78 ÷ 9 = 8 R 6. The 6 pupils left need a van too: 9 vans.",
+        "ar": "3 × 26 = 78 تلميذًا. 78 ÷ 9 = 8 والباقي 6. التلاميذ الستة الباقون يحتاجون سيارة أيضًا: 9 سيارات."
+      },
+      "say": {
+        "en": "Three classes of twenty-six pupils visit the zoo. Each van seats nine. How many vans are needed?",
+        "ar": "ثلاثة فصول في كل منها ستة وعشرون تلميذًا تزور حديقة الحيوان. كل سيارة تتسع لتسعة. كم سيارة نحتاج؟"
+      }
+    }
+  ]
+}

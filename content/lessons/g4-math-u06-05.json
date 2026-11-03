@@ -1,0 +1,412 @@
+{
+  "id": "g4-math-u06-05",
+  "title": {
+    "en": "Common Factors and the Greatest Common Factor",
+    "ar": "العوامل المشتركة والعامل المشترك الأكبر"
+  },
+  "objective": {
+    "en": "Find the common factors of two numbers and their greatest common factor (GCF), and use it to share things into equal groups.",
+    "ar": "أن يجد التلميذ العوامل المشتركة لعددين والعامل المشترك الأكبر لهما، ويستخدمه في توزيع الأشياء في مجموعات متساوية."
+  },
+  "refs": {
+    "egypt": [
+      "U6 · Common factors and GCF"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 3,
+        "cols": 4,
+        "label": {
+          "en": "12 red balloons in 3 bunches",
+          "ar": "12 بالونة حمراء في 3 باقات"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "Is 3 a factor of both 12 and 18?",
+          "ar": "هل 3 عامل لكل من 12 و 18؟"
+        },
+        "options": {
+          "en": [
+            "Yes",
+            "No"
+          ],
+          "ar": [
+            "نعم",
+            "لا"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "A teacher has 12 red and 18 blue balloons. She wants bunches that are all the same.\n\n3 works for both: 12 ÷ 3 = 4 and 18 ÷ 3 = 6.\n\nA number that is a factor of both is a **common factor**.",
+        "ar": "مع المعلمة 12 بالونة حمراء و 18 بالونة زرقاء، وتريد عمل باقات متماثلة.\n\nالعدد 3 يصلح للاثنين: 12 ÷ 3 = 4 و 18 ÷ 3 = 6.\n\nالعدد الذي يكون عاملًا لكل من العددين يسمى **عاملًا مشتركًا**."
+      },
+      "say": {
+        "en": "A teacher has twelve red and eighteen blue balloons. She wants bunches that are all the same. Three works for both: twelve divided by three is four, and eighteen divided by three is six. A number that is a factor of both is a common factor.",
+        "ar": "مع المعلمة اثنتا عشرة بالونة حمراء وثماني عشرة بالونة زرقاء، وتريد عمل باقات متماثلة. العدد ثلاثة يصلح للاثنين: اثنا عشر على ثلاثة يساوي أربعة، وثمانية عشر على ثلاثة يساوي ستة. والعدد الذي يكون عاملًا لكل من العددين يسمى عاملًا مشتركًا."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "array",
+        "rows": 3,
+        "cols": 6,
+        "label": {
+          "en": "18 blue balloons",
+          "ar": "18 بالونة زرقاء"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "Guess: what is the greatest common factor of 12 and 18?",
+          "ar": "خمّن: ما العامل المشترك الأكبر للعددين 12 و 18؟"
+        },
+        "options": {
+          "en": [
+            "3",
+            "6",
+            "36"
+          ],
+          "ar": [
+            "3",
+            "6",
+            "36"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "**Greatest common factor (GCF):** list the factors of each number, circle the ones in both, and pick the biggest.",
+        "ar": "**العامل المشترك الأكبر:** نكتب عوامل كل عدد، ونحدد العوامل الموجودة في القائمتين، ونختار أكبرها."
+      },
+      "lines": {
+        "en": [
+          "Factors of 12: **1, 2, 3**, 4, **6**, 12",
+          "Factors of 18: **1, 2, 3, 6**, 9, 18",
+          "Common factors: 1, 2, 3, 6",
+          "GCF of 12 and 18 = 6"
+        ],
+        "ar": [
+          "عوامل 12: **1، 2، 3**، 4، **6**، 12",
+          "عوامل 18: **1، 2، 3، 6**، 9، 18",
+          "العوامل المشتركة: 1، 2، 3، 6",
+          "العامل المشترك الأكبر للعددين 12 و 18 = 6"
+        ]
+      },
+      "say": {
+        "en": "Greatest common factor. The factors of twelve are one, two, three, four, six and twelve. The factors of eighteen are one, two, three, six, nine and eighteen. The common factors are one, two, three and six. The greatest common factor of twelve and eighteen is six.",
+        "ar": "العامل المشترك الأكبر. عوامل اثني عشر هي: واحد، واثنان، وثلاثة، وأربعة، وستة، واثنا عشر. وعوامل ثمانية عشر هي: واحد، واثنان، وثلاثة، وستة، وتسعة، وثمانية عشر. العوامل المشتركة هي: واحد، واثنان، وثلاثة، وستة. إذن العامل المشترك الأكبر للعددين اثني عشر وثمانية عشر هو ستة."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "array",
+      "params": {
+        "exact": [
+          6,
+          2
+        ]
+      },
+      "text": {
+        "en": "With the GCF, the teacher makes 6 bunches. Share the 12 red balloons into 6 equal rows.",
+        "ar": "باستخدام العامل المشترك الأكبر تصنع المعلمة 6 باقات. وزّع الـ 12 بالونة حمراء في 6 صفوف متساوية."
+      },
+      "prompt": {
+        "en": "Build 12 balloons as 6 equal rows.",
+        "ar": "ابنِ 12 بالونة في 6 صفوف متساوية."
+      },
+      "say": {
+        "en": "With the greatest common factor, the teacher makes six bunches. Share the twelve red balloons into six equal rows. How many red balloons are in each bunch?",
+        "ar": "باستخدام العامل المشترك الأكبر تصنع المعلمة ست باقات. وزّع الاثنتي عشرة بالونة حمراء في ستة صفوف متساوية. كم بالونة حمراء في كل باقة؟"
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "array",
+        "rows": 12,
+        "cols": 3,
+        "label": {
+          "en": "36 pencils in 12 bags: 12 × 3",
+          "ar": "36 قلمًا رصاصًا في 12 كيسًا: 12 × 3"
+        }
+      },
+      "text": {
+        "en": "**Gift bags:** the school has 24 pens and 36 pencils. Make the **greatest** number of identical bags with nothing left over.",
+        "ar": "**أكياس الهدايا:** في المدرسة 24 قلمًا جافًا و 36 قلمًا رصاصًا. نريد **أكبر** عدد من الأكياس المتماثلة دون أن يتبقى شيء."
+      },
+      "lines": {
+        "en": [
+          "Factors of 24: 1, 2, 3, 4, 6, 8, **12**, 24",
+          "Factors of 36: 1, 2, 3, 4, 6, 9, **12**, 18, 36",
+          "GCF = 12, so 12 bags.",
+          "Each bag: 24 ÷ 12 = 2 pens and 36 ÷ 12 = 3 pencils."
+        ],
+        "ar": [
+          "عوامل 24: 1، 2، 3، 4، 6، 8، **12**، 24",
+          "عوامل 36: 1، 2، 3، 4، 6، 9، **12**، 18، 36",
+          "العامل المشترك الأكبر = 12، إذن 12 كيسًا.",
+          "في كل كيس: 24 ÷ 12 = 2 قلم جاف و 36 ÷ 12 = 3 أقلام رصاص."
+        ]
+      },
+      "say": {
+        "en": "Gift bags: the school has twenty four pens and thirty six pencils. The factors of twenty four are one, two, three, four, six, eight, twelve and twenty four. The factors of thirty six are one, two, three, four, six, nine, twelve, eighteen and thirty six. The greatest common factor is twelve. So we make twelve bags, each with two pens and three pencils.",
+        "ar": "أكياس الهدايا: في المدرسة أربعة وعشرون قلمًا جافًا وستة وثلاثون قلمًا رصاصًا. عوامل أربعة وعشرين هي: واحد، واثنان، وثلاثة، وأربعة، وستة، وثمانية، واثنا عشر، وأربعة وعشرون. وعوامل ستة وثلاثين هي: واحد، واثنان، وثلاثة، وأربعة، وستة، وتسعة، واثنا عشر، وثمانية عشر، وستة وثلاثون. العامل المشترك الأكبر هو اثنا عشر. إذن نصنع اثني عشر كيسًا، في كل كيس قلمان جافان وثلاثة أقلام رصاص."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "array",
+      "params": {
+        "exact": [
+          12,
+          2
+        ],
+        "max": 12
+      },
+      "text": {
+        "en": "Now share the 24 pens into the 12 bags. Build 12 rows.",
+        "ar": "وزّع الآن الـ 24 قلمًا جافًا على الـ 12 كيسًا. ابنِ 12 صفًا."
+      },
+      "prompt": {
+        "en": "Build 24 pens as 12 equal rows.",
+        "ar": "ابنِ 24 قلمًا في 12 صفًا متساويًا."
+      },
+      "say": {
+        "en": "Now share the twenty four pens into the twelve bags. Build twelve equal rows.",
+        "ar": "وزّع الآن الأربعة والعشرين قلمًا جافًا على الاثني عشر كيسًا. ابنِ اثني عشر صفًا متساويًا."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 2,
+        "cols": 3,
+        "label": {
+          "en": "6 = 2 × 3",
+          "ar": "6 = 2 × 3"
+        }
+      },
+      "text": {
+        "en": "**Remember:**\n\n**Common factor:** a factor of both numbers.\n\n**GCF:** the biggest common factor.\n\nList the factors of each number, find the ones in both lists, and choose the biggest. 1 is always a common factor.",
+        "ar": "**تذكّر:**\n\n**العامل المشترك:** عامل لكل من العددين.\n\n**العامل المشترك الأكبر:** أكبر العوامل المشتركة.\n\nنكتب عوامل كل عدد، ونجد العوامل الموجودة في القائمتين، ونختار أكبرها. والعدد 1 عامل مشترك دائمًا."
+      },
+      "say": {
+        "en": "Remember. A common factor is a factor of both numbers. The greatest common factor is the biggest common factor. List the factors of each number, find the ones in both lists, and choose the biggest. One is always a common factor.",
+        "ar": "تذكّر. العامل المشترك عامل لكل من العددين. والعامل المشترك الأكبر هو أكبر العوامل المشتركة. نكتب عوامل كل عدد، ونجد العوامل الموجودة في القائمتين، ونختار أكبرها. والعدد واحد عامل مشترك دائمًا."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "What is the GCF of 8 and 12?",
+        "ar": "ما العامل المشترك الأكبر للعددين 8 و 12؟"
+      },
+      "options": {
+        "en": [
+          "4",
+          "2",
+          "24",
+          "8"
+        ],
+        "ar": [
+          "4",
+          "2",
+          "24",
+          "8"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Common factors of 8 and 12: 1, 2, 4. The greatest is 4. 2 is common but not the greatest; 24 is a common multiple.",
+        "ar": "العوامل المشتركة للعددين 8 و 12 هي: 1، 2، 4، وأكبرها 4. أما 2 فمشترك لكنه ليس الأكبر، و 24 مضاعف مشترك."
+      },
+      "say": {
+        "en": "What is the greatest common factor of eight and twelve?",
+        "ar": "ما العامل المشترك الأكبر للعددين ثمانية واثني عشر؟"
+      }
+    },
+    {
+      "q": {
+        "en": "What are the common factors of 10 and 15?",
+        "ar": "ما العوامل المشتركة للعددين 10 و 15؟"
+      },
+      "options": {
+        "en": [
+          "1 and 5",
+          "1, 2 and 5",
+          "5, 10 and 15",
+          "30"
+        ],
+        "ar": [
+          "1 و 5",
+          "1 و 2 و 5",
+          "5 و 10 و 15",
+          "30"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Factors of 10: 1, 2, 5, 10. Factors of 15: 1, 3, 5, 15. In both: 1 and 5. 2 is not a factor of 15.",
+        "ar": "عوامل 10: 1، 2، 5، 10. وعوامل 15: 1، 3، 5، 15. المشترك: 1 و 5. أما 2 فليس عاملًا للعدد 15."
+      },
+      "say": {
+        "en": "What are the common factors of ten and fifteen?",
+        "ar": "ما العوامل المشتركة للعددين عشرة وخمسة عشر؟"
+      }
+    },
+    {
+      "q": {
+        "en": "What is the GCF of 7 and 14?",
+        "ar": "ما العامل المشترك الأكبر للعددين 7 و 14؟"
+      },
+      "options": {
+        "en": [
+          "7",
+          "1",
+          "14",
+          "2"
+        ],
+        "ar": [
+          "7",
+          "1",
+          "14",
+          "2"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "7 is a factor of 7 and of 14 (7 × 2 = 14). 14 is not a factor of 7.",
+        "ar": "7 عامل للعدد 7 وللعدد 14 (7 × 2 = 14). أما 14 فليس عاملًا للعدد 7."
+      },
+      "say": {
+        "en": "What is the greatest common factor of seven and fourteen?",
+        "ar": "ما العامل المشترك الأكبر للعددين سبعة وأربعة عشر؟"
+      }
+    },
+    {
+      "q": {
+        "en": "What is the GCF of 9 and 10?",
+        "ar": "ما العامل المشترك الأكبر للعددين 9 و 10؟"
+      },
+      "options": {
+        "en": [
+          "1",
+          "9",
+          "90",
+          "19"
+        ],
+        "ar": [
+          "1",
+          "9",
+          "90",
+          "19"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Factors of 9: 1, 3, 9. Factors of 10: 1, 2, 5, 10. The only common factor is 1.",
+        "ar": "عوامل 9: 1، 3، 9. وعوامل 10: 1، 2، 5، 10. العامل المشترك الوحيد هو 1."
+      },
+      "say": {
+        "en": "What is the greatest common factor of nine and ten?",
+        "ar": "ما العامل المشترك الأكبر للعددين تسعة وعشرة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "16 girls and 24 boys make teams. Every team has the same mix and no one is left out. What is the greatest number of teams?",
+        "ar": "16 بنتًا و 24 ولدًا يكوّنون فرقًا متماثلة دون أن يتبقى أحد. ما أكبر عدد من الفرق؟"
+      },
+      "options": {
+        "en": [
+          "8",
+          "4",
+          "40",
+          "2"
+        ],
+        "ar": [
+          "8",
+          "4",
+          "40",
+          "2"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "GCF of 16 and 24 is 8, so 8 teams of 2 girls and 3 boys. 40 is 16 + 24.",
+        "ar": "العامل المشترك الأكبر للعددين 16 و 24 هو 8، إذن 8 فرق، في كل فريق بنتان و 3 أولاد. أما 40 فهو 16 + 24."
+      },
+      "say": {
+        "en": "Sixteen girls and twenty four boys make teams. Every team has the same mix and no one is left out. What is the greatest number of teams?",
+        "ar": "ست عشرة بنتًا وأربعة وعشرون ولدًا يكوّنون فرقًا متماثلة دون أن يتبقى أحد. ما أكبر عدد من الفرق؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which number is a common factor of 20 and 30?",
+        "ar": "أي عدد عامل مشترك للعددين 20 و 30؟"
+      },
+      "options": {
+        "en": [
+          "10",
+          "3",
+          "60",
+          "4"
+        ],
+        "ar": [
+          "10",
+          "3",
+          "60",
+          "4"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "20 = 10 × 2 and 30 = 10 × 3. 3 is not a factor of 20, 4 is not a factor of 30, and 60 is a multiple.",
+        "ar": "20 = 10 × 2 و 30 = 10 × 3. أما 3 فليس عاملًا للعدد 20، و 4 ليس عاملًا للعدد 30، و 60 مضاعف."
+      },
+      "say": {
+        "en": "Which number is a common factor of twenty and thirty?",
+        "ar": "أي عدد عامل مشترك للعددين عشرين وثلاثين؟"
+      }
+    },
+    {
+      "q": {
+        "en": "What is the GCF of 18 and 27?",
+        "ar": "ما العامل المشترك الأكبر للعددين 18 و 27؟"
+      },
+      "options": {
+        "en": [
+          "9",
+          "3",
+          "54",
+          "6"
+        ],
+        "ar": [
+          "9",
+          "3",
+          "54",
+          "6"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Factors of 18: 1, 2, 3, 6, 9, 18. Factors of 27: 1, 3, 9, 27. Common: 1, 3, 9. The greatest is 9.",
+        "ar": "عوامل 18: 1، 2، 3، 6، 9، 18. وعوامل 27: 1، 3، 9، 27. المشترك: 1، 3، 9، وأكبرها 9."
+      },
+      "say": {
+        "en": "What is the greatest common factor of eighteen and twenty seven?",
+        "ar": "ما العامل المشترك الأكبر للعددين ثمانية عشر وسبعة وعشرين؟"
+      }
+    }
+  ]
+}

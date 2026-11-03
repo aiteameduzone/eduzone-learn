@@ -1,0 +1,400 @@
+{
+  "id": "g4-math-u06-03",
+  "title": {
+    "en": "Divisibility Rules for 2, 3, 5 and 10",
+    "ar": "قابلية القسمة على 2 و 3 و 5 و 10"
+  },
+  "objective": {
+    "en": "Use divisibility rules to decide quickly whether a number is a multiple of 2, 3, 5 or 10.",
+    "ar": "أن يستخدم التلميذ قواعد قابلية القسمة ليحدد بسرعة هل العدد من مضاعفات 2 أو 3 أو 5 أو 10."
+  },
+  "refs": {
+    "egypt": [
+      "U6 · Divisibility rules 2, 3, 5, 10"
+    ],
+    "ccss": [
+      "4.OA.B.4"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 2,
+        "cols": 9,
+        "label": {
+          "en": "18 pupils in 2 lines",
+          "ar": "18 تلميذًا في صفين"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "Can 17 pupils stand in 2 equal lines?",
+          "ar": "هل يمكن أن يقف 17 تلميذًا في صفين متساويين؟"
+        },
+        "options": {
+          "en": [
+            "Yes",
+            "No"
+          ],
+          "ar": [
+            "نعم",
+            "لا"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "18 pupils stand in 2 equal lines of 9.\n\nA number can be split into 2 equal groups when it is **even**: its ones digit is 0, 2, 4, 6 or 8.\n\nSo 18 is **divisible by 2**.",
+        "ar": "يقف 18 تلميذًا في صفين متساويين، في كل صف 9.\n\nالعدد يُقسم على 2 دون باقٍ إذا كان **زوجيًا**: رقم آحاده 0 أو 2 أو 4 أو 6 أو 8.\n\nإذن 18 **يقبل القسمة على 2**."
+      },
+      "say": {
+        "en": "Eighteen pupils stand in two equal lines of nine. A number can be split into two equal groups when it is even: its ones digit is zero, two, four, six or eight. So eighteen is divisible by two.",
+        "ar": "يقف ثمانية عشر تلميذًا في صفين متساويين، في كل صف تسعة. العدد يُقسم على اثنين دون باقٍ إذا كان زوجيًا، أي رقم آحاده صفر أو اثنان أو أربعة أو ستة أو ثمانية. إذن ثمانية عشر يقبل القسمة على اثنين."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 5,
+        "cols": 6,
+        "label": {
+          "en": "30 = 5 × 6 = 10 × 3",
+          "ar": "30 = 5 × 6 = 10 × 3"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "Which can be packed in bags of 10 with nothing left: 75 or 70 pens?",
+          "ar": "أيهما يمكن تعبئته في أكياس كل منها 10 أقلام دون باقٍ: 75 أم 70 قلمًا؟"
+        },
+        "options": {
+          "en": [
+            "75",
+            "70"
+          ],
+          "ar": [
+            "75",
+            "70"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "**Divisible by 5:** the ones digit is 0 or 5 (25, 70, 135).\n\n**Divisible by 10:** the ones digit is 0 (70, 300, 1,250).\n\nEvery number divisible by 10 is also divisible by 2 and by 5.",
+        "ar": "**قابلية القسمة على 5:** رقم الآحاد 0 أو 5 (25، 70، 135).\n\n**قابلية القسمة على 10:** رقم الآحاد 0 (70، 300، 1,250).\n\nكل عدد يقبل القسمة على 10 يقبل القسمة على 2 وعلى 5 أيضًا."
+      },
+      "say": {
+        "en": "Divisible by five: the ones digit is zero or five, like twenty five, seventy, one hundred thirty five. Divisible by ten: the ones digit is zero, like seventy, three hundred, one thousand two hundred fifty. Every number divisible by ten is also divisible by two and by five.",
+        "ar": "قابلية القسمة على خمسة: رقم الآحاد صفر أو خمسة، مثل خمسة وعشرين وسبعين ومائة وخمسة وثلاثين. قابلية القسمة على عشرة: رقم الآحاد صفر، مثل سبعين وثلاثمائة وألف ومائتين وخمسين. وكل عدد يقبل القسمة على عشرة يقبل القسمة على اثنين وعلى خمسة أيضًا."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "blocks",
+        "n": 156
+      },
+      "text": {
+        "en": "**Divisible by 3:** add the digits. If the sum is divisible by 3, so is the number.",
+        "ar": "**قابلية القسمة على 3:** نجمع أرقام العدد. إذا كان المجموع يقبل القسمة على 3 فالعدد يقبلها أيضًا."
+      },
+      "lines": {
+        "en": [
+          "156: 1 + 5 + 6 = 12",
+          "12 ÷ 3 = 4, so 156 is divisible by 3 (156 ÷ 3 = 52).",
+          "254: 2 + 5 + 4 = 11",
+          "11 is not divisible by 3, so 254 is not."
+        ],
+        "ar": [
+          "156: 1 + 5 + 6 = 12",
+          "12 ÷ 3 = 4، إذن 156 يقبل القسمة على 3 (156 ÷ 3 = 52).",
+          "254: 2 + 5 + 4 = 11",
+          "11 لا يقبل القسمة على 3، إذن 254 لا يقبلها."
+        ]
+      },
+      "say": {
+        "en": "Divisible by three: add the digits. For one hundred fifty six, one plus five plus six is twelve, and twelve is divisible by three, so one hundred fifty six is divisible by three. In fact, one hundred fifty six divided by three is fifty two. For two hundred fifty four, two plus five plus four is eleven, and eleven is not divisible by three, so two hundred fifty four is not.",
+        "ar": "قابلية القسمة على ثلاثة: نجمع أرقام العدد. في العدد مائة وستة وخمسين: واحد زائد خمسة زائد ستة يساوي اثني عشر، واثنا عشر يقبل القسمة على ثلاثة، إذن مائة وستة وخمسون يقبل القسمة على ثلاثة، وناتج القسمة اثنان وخمسون. وفي العدد مائتين وأربعة وخمسين: اثنان زائد خمسة زائد أربعة يساوي أحد عشر، وأحد عشر لا يقبل القسمة على ثلاثة، إذن العدد لا يقبلها."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "array",
+      "params": {
+        "exact": [
+          3,
+          9
+        ]
+      },
+      "text": {
+        "en": "27: 2 + 7 = 9, and 9 is divisible by 3. So 27 should split into 3 equal rows.",
+        "ar": "27: 2 + 7 = 9، و 9 يقبل القسمة على 3. إذن يمكن تقسيم 27 إلى 3 صفوف متساوية."
+      },
+      "prompt": {
+        "en": "Build 27 as 3 equal rows.",
+        "ar": "ابنِ 27 في 3 صفوف متساوية."
+      },
+      "say": {
+        "en": "Twenty seven: two plus seven is nine, and nine is divisible by three. Build twenty seven as three equal rows.",
+        "ar": "سبعة وعشرون: اثنان زائد سبعة يساوي تسعة، وتسعة يقبل القسمة على ثلاثة. ابنِ سبعة وعشرين في ثلاثة صفوف متساوية."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "blocks",
+        "n": 60
+      },
+      "text": {
+        "en": "**Test 60 with every rule.**",
+        "ar": "**نختبر العدد 60 بكل القواعد.**"
+      },
+      "lines": {
+        "en": [
+          "÷ 2: ones digit 0 is even. Yes",
+          "÷ 5: ones digit is 0. Yes",
+          "÷ 10: ones digit is 0. Yes",
+          "÷ 3: 6 + 0 = 6, and 6 ÷ 3 = 2. Yes"
+        ],
+        "ar": [
+          "÷ 2: رقم الآحاد 0 زوجي. نعم",
+          "÷ 5: رقم الآحاد 0. نعم",
+          "÷ 10: رقم الآحاد 0. نعم",
+          "÷ 3: 6 + 0 = 6، و 6 ÷ 3 = 2. نعم"
+        ]
+      },
+      "say": {
+        "en": "Test sixty with every rule. Its ones digit is zero, so it is divisible by two, by five and by ten. Six plus zero is six, and six is divisible by three, so sixty is divisible by three too.",
+        "ar": "نختبر العدد ستين بكل القواعد. رقم آحاده صفر، إذن يقبل القسمة على اثنين وعلى خمسة وعلى عشرة. وستة زائد صفر يساوي ستة، وستة يقبل القسمة على ثلاثة، إذن ستون يقبل القسمة على ثلاثة أيضًا."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 2,
+        "cols": 5,
+        "label": {
+          "en": "10 = 2 × 5",
+          "ar": "10 = 2 × 5"
+        }
+      },
+      "text": {
+        "en": "**Remember:**\n\n÷ 2: ones digit 0, 2, 4, 6, 8\n\n÷ 5: ones digit 0 or 5\n\n÷ 10: ones digit 0\n\n÷ 3: the sum of the digits is divisible by 3",
+        "ar": "**تذكّر:**\n\n÷ 2: رقم الآحاد 0، 2، 4، 6، 8\n\n÷ 5: رقم الآحاد 0 أو 5\n\n÷ 10: رقم الآحاد 0\n\n÷ 3: مجموع الأرقام يقبل القسمة على 3"
+      },
+      "say": {
+        "en": "Remember. Divisible by two: ones digit zero, two, four, six or eight. By five: ones digit zero or five. By ten: ones digit zero. By three: the sum of the digits is divisible by three.",
+        "ar": "تذكّر. القسمة على اثنين: رقم الآحاد صفر أو اثنان أو أربعة أو ستة أو ثمانية. القسمة على خمسة: رقم الآحاد صفر أو خمسة. القسمة على عشرة: رقم الآحاد صفر. القسمة على ثلاثة: مجموع الأرقام يقبل القسمة على ثلاثة."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "Which number is divisible by 2?",
+        "ar": "أي عدد يقبل القسمة على 2؟"
+      },
+      "options": {
+        "en": [
+          "348",
+          "357",
+          "125",
+          "243"
+        ],
+        "ar": [
+          "348",
+          "357",
+          "125",
+          "243"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Look only at the ones digit: 8 is even. 357 starts with 3, but that does not matter.",
+        "ar": "ننظر إلى رقم الآحاد فقط: 8 زوجي. أما رقم المئات فلا يهم."
+      },
+      "say": {
+        "en": "Which number is divisible by two?",
+        "ar": "أي عدد يقبل القسمة على اثنين؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which number is divisible by 5 but NOT by 10?",
+        "ar": "أي عدد يقبل القسمة على 5 ولا يقبل القسمة على 10؟"
+      },
+      "options": {
+        "en": [
+          "85",
+          "80",
+          "58",
+          "100"
+        ],
+        "ar": [
+          "85",
+          "80",
+          "58",
+          "100"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "85 ends in 5: divisible by 5, not by 10. 80 and 100 end in 0, so they are divisible by both. 58 ends in 8.",
+        "ar": "85 آحاده 5: يقبل القسمة على 5 لا على 10. أما 80 و 100 فآحادهما 0 فيقبلان الاثنين، و 58 آحاده 8."
+      },
+      "say": {
+        "en": "Which number is divisible by five but not by ten?",
+        "ar": "أي عدد يقبل القسمة على خمسة ولا يقبل القسمة على عشرة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which number is divisible by 3?",
+        "ar": "أي عدد يقبل القسمة على 3؟"
+      },
+      "options": {
+        "en": [
+          "471",
+          "472",
+          "103",
+          "250"
+        ],
+        "ar": [
+          "471",
+          "472",
+          "103",
+          "250"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "4 + 7 + 1 = 12, and 12 is divisible by 3. 103 ends in 3, but 1 + 0 + 3 = 4, so it is not.",
+        "ar": "4 + 7 + 1 = 12، و 12 يقبل القسمة على 3. أما 103 فآحاده 3 لكن 1 + 0 + 3 = 4، فلا يقبلها."
+      },
+      "say": {
+        "en": "Which number is divisible by three?",
+        "ar": "أي عدد يقبل القسمة على ثلاثة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which number is divisible by 10?",
+        "ar": "أي عدد يقبل القسمة على 10؟"
+      },
+      "options": {
+        "en": [
+          "450",
+          "405",
+          "145",
+          "1,005"
+        ],
+        "ar": [
+          "450",
+          "405",
+          "145",
+          "1,005"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Only 450 has 0 in the ones place. 405 has a 0, but in the tens place.",
+        "ar": "450 فقط رقم آحاده 0. أما 405 ففيه 0 لكن في منزلة العشرات."
+      },
+      "say": {
+        "en": "Which number is divisible by ten?",
+        "ar": "أي عدد يقبل القسمة على عشرة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "2,340 is divisible by which numbers?",
+        "ar": "العدد 2,340 يقبل القسمة على أي الأعداد؟"
+      },
+      "options": {
+        "en": [
+          "2, 3, 5 and 10",
+          "2 and 10 only",
+          "5 and 10 only",
+          "2 only"
+        ],
+        "ar": [
+          "2 و 3 و 5 و 10",
+          "2 و 10 فقط",
+          "5 و 10 فقط",
+          "2 فقط"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Ones digit 0: divisible by 2, 5 and 10. 2 + 3 + 4 + 0 = 9: divisible by 3 too.",
+        "ar": "رقم الآحاد 0: يقبل القسمة على 2 و 5 و 10. و 2 + 3 + 4 + 0 = 9: يقبل القسمة على 3 أيضًا."
+      },
+      "say": {
+        "en": "Two thousand three hundred forty is divisible by which numbers?",
+        "ar": "العدد ألفان وثلاثمائة وأربعون يقبل القسمة على أي الأعداد؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Sara has 123 stickers. Can she share them equally among 3 friends?",
+        "ar": "مع سارة 123 ملصقًا. هل يمكنها توزيعها بالتساوي على 3 صديقات؟"
+      },
+      "options": {
+        "en": [
+          "Yes, because 1 + 2 + 3 = 6",
+          "No, because 123 is odd",
+          "No, because 123 does not end in 0",
+          "No, because 123 ends in 3"
+        ],
+        "ar": [
+          "نعم، لأن 1 + 2 + 3 = 6",
+          "لا، لأن 123 فردي",
+          "لا، لأن آحاد 123 ليس 0",
+          "لا، لأن آحاد 123 هو 3"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "The digit sum 6 is divisible by 3, so 123 ÷ 3 = 41 with nothing left. Odd numbers can still be divisible by 3.",
+        "ar": "مجموع الأرقام 6 يقبل القسمة على 3، إذن 123 ÷ 3 = 41 دون باقٍ. والعدد الفردي قد يقبل القسمة على 3."
+      },
+      "say": {
+        "en": "Sara has one hundred twenty three stickers. Can she share them equally among three friends?",
+        "ar": "مع سارة مائة وثلاثة وعشرون ملصقًا. هل يمكنها توزيعها بالتساوي على ثلاث صديقات؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which digit in the box makes 4□ divisible by 5?",
+        "ar": "أي رقم في المربع يجعل 4□ يقبل القسمة على 5؟"
+      },
+      "options": {
+        "en": [
+          "5",
+          "4",
+          "2",
+          "3"
+        ],
+        "ar": [
+          "5",
+          "4",
+          "2",
+          "3"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "45 ends in 5, so it is divisible by 5 (45 ÷ 5 = 9).",
+        "ar": "45 آحاده 5، إذن يقبل القسمة على 5 (45 ÷ 5 = 9)."
+      },
+      "say": {
+        "en": "Which digit in the box makes forty something divisible by five?",
+        "ar": "أي رقم نضعه في المربع بعد الرقم أربعة ليقبل العدد القسمة على خمسة؟"
+      }
+    }
+  ]
+}

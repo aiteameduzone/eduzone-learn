@@ -1,0 +1,441 @@
+{
+  "id": "g4-math-u08-03",
+  "title": {
+    "en": "Brackets Come First",
+    "ar": "الأقواس أولًا"
+  },
+  "objective": {
+    "en": "Work out what is inside brackets first, then follow the order of operations.",
+    "ar": "أن يُجري التلميذ ما بين الأقواس أولًا، ثم يكمل حسب ترتيب العمليات."
+  },
+  "refs": {
+    "egypt": [
+      "U8 · 8.1"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 7,
+        "cols": 2,
+        "label": {
+          "en": "(3 + 4) × 2",
+          "ar": "(3 + 4) × 2"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "(3 + 4) × 2 = ?",
+          "ar": "(3 + 4) × 2 = ؟"
+        },
+        "options": {
+          "en": [
+            "14",
+            "11"
+          ],
+          "ar": [
+            "14",
+            "11"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "Brackets ( ) say: **do me first!** They change the order.\n\n3 + 4 × 2 = 3 + 8 = 11.\n\nBut (3 + 4) × 2 = 7 × 2 = **14**.",
+        "ar": "الأقواس ( ) تقول: **احسبني أولًا!** فهي تغيّر الترتيب.\n\n3 + 4 × 2 = 3 + 8 = 11.\n\nلكن (3 + 4) × 2 = 7 × 2 = **14**."
+      },
+      "say": {
+        "en": "Brackets say: do me first! They change the order. Three plus four times two is three plus eight, eleven. But three plus four in brackets, times two, is seven times two, fourteen.",
+        "ar": "الأقواس تقول: احسبني أولًا! فهي تغيّر الترتيب. ثلاثة زائد أربعة في اثنين يساوي ثلاثة زائد ثمانية، أي أحد عشر. لكن ثلاثة زائد أربعة بين قوسين، في اثنين، يساوي سبعة في اثنين، أي أربعة عشر."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "array",
+        "rows": 8,
+        "cols": 10,
+        "label": {
+          "en": "8 friends × 10 pounds",
+          "ar": "8 أصدقاء × 10 جنيهات"
+        },
+        "emoji": "🚌"
+      },
+      "check": {
+        "q": {
+          "en": "(5 + 3) × 10 = ?",
+          "ar": "(5 + 3) × 10 = ؟"
+        },
+        "options": {
+          "en": [
+            "80",
+            "35"
+          ],
+          "ar": [
+            "80",
+            "35"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "School trip! 5 friends from class 4A and 3 from class 4B each pay 10 pounds: **(5 + 3) × 10**.",
+        "ar": "رحلة مدرسية! 5 أصدقاء من فصل رابعة أ و 3 من فصل رابعة ب، يدفع كل منهم 10 جنيهات: **(5 + 3) × 10**."
+      },
+      "lines": {
+        "en": [
+          "(5 + 3) × 10",
+          "Brackets first: 5 + 3 = 8 friends",
+          "Then multiply: 8 × 10 = 80",
+          "They pay 80 pounds together."
+        ],
+        "ar": [
+          "(5 + 3) × 10",
+          "الأقواس أولًا: 5 + 3 = 8 أصدقاء",
+          "ثم نضرب: 8 × 10 = 80",
+          "يدفعون معًا 80 جنيهًا."
+        ]
+      },
+      "say": {
+        "en": "School trip! Five friends from class four A and three from class four B each pay ten pounds: five plus three in brackets, times ten. Brackets first: five plus three is eight friends. Then multiply: eight times ten is eighty. They pay eighty pounds together.",
+        "ar": "رحلة مدرسية! خمسة أصدقاء من فصل رابعة أ، وثلاثة من فصل رابعة ب، يدفع كل منهم عشرة جنيهات: خمسة زائد ثلاثة بين قوسين، في عشرة. الأقواس أولًا: خمسة زائد ثلاثة يساوي ثمانية أصدقاء. ثم نضرب: ثمانية في عشرة يساوي ثمانين. يدفعون معًا ثمانين جنيهًا."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "blocks",
+        "n": 20,
+        "emoji": "🍬"
+      },
+      "check": {
+        "q": {
+          "en": "Do 20 − (6 + 4) and 20 − 6 + 4 give the same answer?",
+          "ar": "هل يعطي 20 − (6 + 4) و 20 − 6 + 4 الناتج نفسه؟"
+        },
+        "options": {
+          "en": [
+            "No: 10 and 18",
+            "Yes: both 10",
+            "Yes: both 18"
+          ],
+          "ar": [
+            "لا: 10 و 18",
+            "نعم: كلاهما 10",
+            "نعم: كلاهما 18"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "You have 20 sweets.\n\n20 − (6 + 4): brackets first, 6 + 4 = 10, then 20 − 10 = **10**.\n\n20 − 6 + 4: left to right, 20 − 6 = 14, then 14 + 4 = **18**.\n\nThe brackets changed the answer!",
+        "ar": "معك 20 قطعة حلوى.\n\n20 − (6 + 4): الأقواس أولًا، 6 + 4 = 10، ثم 20 − 10 = **10**.\n\n20 − 6 + 4: من اليسار إلى اليمين، 20 − 6 = 14، ثم 14 + 4 = **18**.\n\nالأقواس غيّرت الناتج!"
+      },
+      "say": {
+        "en": "You have twenty sweets. Twenty minus, in brackets, six plus four: brackets first, six plus four is ten, then twenty minus ten is ten. Twenty minus six plus four: left to right, twenty minus six is fourteen, then fourteen plus four is eighteen. The brackets changed the answer!",
+        "ar": "معك عشرون قطعة حلوى. عشرون ناقص، بين قوسين، ستة زائد أربعة: الأقواس أولًا، ستة زائد أربعة يساوي عشرة، ثم عشرون ناقص عشرة يساوي عشرة. أما عشرون ناقص ستة زائد أربعة: فمن اليسار إلى اليمين، عشرون ناقص ستة يساوي أربعة عشر، ثم أربعة عشر زائد أربعة يساوي ثمانية عشر. الأقواس غيّرت الناتج!"
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "array",
+        "rows": 6,
+        "cols": 6,
+        "label": {
+          "en": "36 ÷ 6 = 6",
+          "ar": "36 ÷ 6 = 6"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "36 ÷ (2 × 3) = ?",
+          "ar": "36 ÷ (2 × 3) = ؟"
+        },
+        "options": {
+          "en": [
+            "6",
+            "54"
+          ],
+          "ar": [
+            "6",
+            "54"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "Brackets win even over × and ÷.",
+        "ar": "الأقواس تسبق حتى الضرب والقسمة."
+      },
+      "lines": {
+        "en": [
+          "36 ÷ (2 × 3)",
+          "Brackets first: 2 × 3 = 6",
+          "Then 36 ÷ 6 = 6",
+          "Without brackets: 36 ÷ 2 × 3 = 18 × 3 = 54"
+        ],
+        "ar": [
+          "36 ÷ (2 × 3)",
+          "الأقواس أولًا: 2 × 3 = 6",
+          "ثم 36 ÷ 6 = 6",
+          "بدون أقواس: 36 ÷ 2 × 3 = 18 × 3 = 54"
+        ]
+      },
+      "say": {
+        "en": "Brackets win even over times and divide. Thirty-six divided by, in brackets, two times three. Brackets first: two times three is six. Then thirty-six divided by six is six. Without brackets, thirty-six divided by two times three is eighteen times three, fifty-four.",
+        "ar": "الأقواس تسبق حتى الضرب والقسمة. ستة وثلاثون مقسومًا على، بين قوسين، اثنين في ثلاثة. الأقواس أولًا: اثنان في ثلاثة يساوي ستة. ثم ستة وثلاثون مقسومًا على ستة يساوي ستة. وبدون أقواس: ستة وثلاثون مقسومًا على اثنين في ثلاثة يساوي ثمانية عشر في ثلاثة، أي أربعة وخمسين."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "array",
+      "params": {
+        "exact": [
+          5,
+          4
+        ],
+        "max": 10
+      },
+      "text": {
+        "en": "In (2 + 3) × 4, first work out the brackets. Then build that many rows of 4.",
+        "ar": "في (2 + 3) × 4 احسب ما بين القوسين أولًا، ثم ابنِ هذا العدد من الصفوف في كل صف 4."
+      },
+      "prompt": {
+        "en": "Build (2 + 3) × 4.",
+        "ar": "ابنِ (2 + 3) × 4."
+      },
+      "say": {
+        "en": "In two plus three in brackets, times four, first work out the brackets. Then build that many rows of four.",
+        "ar": "في اثنين زائد ثلاثة بين قوسين، في أربعة، احسب ما بين القوسين أولًا، ثم ابنِ هذا العدد من الصفوف في كل صف أربعة."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 5,
+        "cols": 4,
+        "label": {
+          "en": "(2 + 3) × 4 = 20",
+          "ar": "(2 + 3) × 4 = 20"
+        }
+      },
+      "text": {
+        "en": "**The full order of operations:**\n\n1. Brackets ( )\n\n2. × and ÷, left to right\n\n3. + and −, left to right",
+        "ar": "**ترتيب العمليات كاملًا:**\n\n1. الأقواس ( )\n\n2. الضرب والقسمة، من اليسار إلى اليمين\n\n3. الجمع والطرح، من اليسار إلى اليمين"
+      },
+      "say": {
+        "en": "The full order of operations. One: brackets. Two: times and divide, from left to right. Three: plus and minus, from left to right.",
+        "ar": "ترتيب العمليات كاملًا. أولًا: الأقواس. ثانيًا: الضرب والقسمة من اليسار إلى اليمين. ثالثًا: الجمع والطرح من اليسار إلى اليمين."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "(8 + 2) × 3 = ?",
+        "ar": "(8 + 2) × 3 = ؟"
+      },
+      "options": {
+        "en": [
+          "30",
+          "14",
+          "13",
+          "24"
+        ],
+        "ar": [
+          "30",
+          "14",
+          "13",
+          "24"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Brackets first: 8 + 2 = 10, then 10 × 3 = 30. 14 comes from ignoring the brackets.",
+        "ar": "الأقواس أولًا: 8 + 2 = 10، ثم 10 × 3 = 30. أما 14 فتأتي من إهمال الأقواس."
+      },
+      "say": {
+        "en": "Eight plus two in brackets, times three, equals what?",
+        "ar": "ثمانية زائد اثنين بين قوسين، في ثلاثة، يساوي كم؟"
+      }
+    },
+    {
+      "q": {
+        "en": "25 − (5 + 10) = ?",
+        "ar": "25 − (5 + 10) = ؟"
+      },
+      "options": {
+        "en": [
+          "10",
+          "30",
+          "20",
+          "40"
+        ],
+        "ar": [
+          "10",
+          "30",
+          "20",
+          "40"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Brackets first: 5 + 10 = 15, then 25 − 15 = 10. 30 comes from ignoring the brackets.",
+        "ar": "الأقواس أولًا: 5 + 10 = 15، ثم 25 − 15 = 10. أما 30 فتأتي من إهمال الأقواس."
+      },
+      "say": {
+        "en": "Twenty-five minus, in brackets, five plus ten, equals what?",
+        "ar": "خمسة وعشرون ناقص، بين قوسين، خمسة زائد عشرة، يساوي كم؟"
+      }
+    },
+    {
+      "q": {
+        "en": "(12 − 4) ÷ 2 = ?",
+        "ar": "(12 − 4) ÷ 2 = ؟"
+      },
+      "options": {
+        "en": [
+          "4",
+          "10",
+          "8",
+          "6"
+        ],
+        "ar": [
+          "4",
+          "10",
+          "8",
+          "6"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Brackets first: 12 − 4 = 8, then 8 ÷ 2 = 4. 10 comes from dividing first: 12 − 2.",
+        "ar": "الأقواس أولًا: 12 − 4 = 8، ثم 8 ÷ 2 = 4. أما 10 فتأتي من القسمة أولًا: 12 − 2."
+      },
+      "say": {
+        "en": "Twelve minus four in brackets, divided by two, equals what?",
+        "ar": "اثنا عشر ناقص أربعة بين قوسين، مقسومًا على اثنين، يساوي كم؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which expression equals 20?",
+        "ar": "أي تعبير ناتجه 20؟"
+      },
+      "options": {
+        "en": [
+          "(1 + 4) × 4",
+          "1 + 4 × 4",
+          "1 × 4 + 4",
+          "4 × 4 + 1"
+        ],
+        "ar": [
+          "(1 + 4) × 4",
+          "1 + 4 × 4",
+          "1 × 4 + 4",
+          "4 × 4 + 1"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "(1 + 4) × 4 = 5 × 4 = 20. Without brackets, 1 + 4 × 4 = 17.",
+        "ar": "(1 + 4) × 4 = 5 × 4 = 20. وبدون أقواس 1 + 4 × 4 = 17."
+      },
+      "say": {
+        "en": "Which expression equals twenty?",
+        "ar": "أي تعبير ناتجه عشرون؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Where do the brackets go so that 6 + 2 × 5 equals 40?",
+        "ar": "أين نضع الأقواس ليصبح ناتج 6 + 2 × 5 هو 40؟"
+      },
+      "options": {
+        "en": [
+          "(6 + 2) × 5",
+          "6 + (2 × 5)",
+          "No brackets needed",
+          "It can never be 40"
+        ],
+        "ar": [
+          "(6 + 2) × 5",
+          "6 + (2 × 5)",
+          "لا نحتاج إلى أقواس",
+          "لا يمكن أن يكون 40"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "(6 + 2) × 5 = 8 × 5 = 40. Brackets around 2 × 5 change nothing: the answer stays 16.",
+        "ar": "(6 + 2) × 5 = 8 × 5 = 40. أما الأقواس حول 2 × 5 فلا تغيّر شيئًا: يبقى الناتج 16."
+      },
+      "say": {
+        "en": "Where do the brackets go so that six plus two times five equals forty?",
+        "ar": "أين نضع الأقواس ليصبح ناتج ستة زائد اثنين في خمسة هو أربعين؟"
+      }
+    },
+    {
+      "q": {
+        "en": "5 children each get 4 biscuits and 2 sweets: (4 + 2) × 5. How many treats in all?",
+        "ar": "يأخذ كل طفل من 5 أطفال 4 قطع بسكويت و 2 حلوى: (4 + 2) × 5. كم قطعة في المجموع؟"
+      },
+      "options": {
+        "en": [
+          "30",
+          "14",
+          "11",
+          "40"
+        ],
+        "ar": [
+          "30",
+          "14",
+          "11",
+          "40"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Each child gets 4 + 2 = 6 treats, and 6 × 5 = 30.",
+        "ar": "كل طفل يأخذ 4 + 2 = 6 قطع، و 6 × 5 = 30."
+      },
+      "say": {
+        "en": "Five children each get four biscuits and two sweets. How many treats in all?",
+        "ar": "يأخذ كل طفل من خمسة أطفال أربع قطع بسكويت وقطعتي حلوى. كم قطعة في المجموع؟"
+      }
+    },
+    {
+      "q": {
+        "en": "18 ÷ (3 + 3) = ?",
+        "ar": "18 ÷ (3 + 3) = ؟"
+      },
+      "options": {
+        "en": [
+          "3",
+          "9",
+          "6",
+          "12"
+        ],
+        "ar": [
+          "3",
+          "9",
+          "6",
+          "12"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Brackets first: 3 + 3 = 6, then 18 ÷ 6 = 3. 9 comes from ignoring the brackets: 6 + 3.",
+        "ar": "الأقواس أولًا: 3 + 3 = 6، ثم 18 ÷ 6 = 3. أما 9 فتأتي من إهمال الأقواس: 6 + 3."
+      },
+      "say": {
+        "en": "Eighteen divided by, in brackets, three plus three, equals what?",
+        "ar": "ثمانية عشر مقسومًا على، بين قوسين، ثلاثة زائد ثلاثة، يساوي كم؟"
+      }
+    }
+  ]
+}

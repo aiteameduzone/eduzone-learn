@@ -1,0 +1,416 @@
+{
+  "id": "g4-math-u06-02",
+  "title": {
+    "en": "Multiples and Common Multiples",
+    "ar": "المضاعفات والمضاعفات المشتركة"
+  },
+  "objective": {
+    "en": "List multiples of a number by skip-counting, find common multiples of two numbers, and explain how factors and multiples are related.",
+    "ar": "أن يكتب التلميذ مضاعفات عدد بالعد القفزي، ويجد المضاعفات المشتركة لعددين، ويوضح العلاقة بين العوامل والمضاعفات."
+  },
+  "refs": {
+    "egypt": [
+      "U6 · Multiples and common multiples"
+    ],
+    "ccss": [
+      "4.OA.B.4"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 3,
+        "cols": 4,
+        "label": {
+          "en": "3 trains × 4 minutes",
+          "ar": "3 قطارات × 4 دقائق"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "The first train comes at minute 4. Will a train come at minute 10?",
+          "ar": "يصل أول قطار عند الدقيقة 4. هل يصل قطار عند الدقيقة 10؟"
+        },
+        "options": {
+          "en": [
+            "Yes",
+            "No"
+          ],
+          "ar": [
+            "نعم",
+            "لا"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "A metro train comes every 4 minutes: at 4, 8, 12, 16, 20 ...\n\nThese are the **multiples** of 4: 4 × 1, 4 × 2, 4 × 3, 4 × 4, 4 × 5 ...\n\n12 is a multiple of 4 because 4 × 3 = 12.",
+        "ar": "يصل قطار المترو كل 4 دقائق: عند 4، 8، 12، 16، 20 ...\n\nهذه هي **مضاعفات** العدد 4: 4 × 1، 4 × 2، 4 × 3، 4 × 4، 4 × 5 ...\n\nالعدد 12 مضاعف للعدد 4 لأن 4 × 3 = 12."
+      },
+      "say": {
+        "en": "A metro train comes every four minutes: at four, eight, twelve, sixteen, twenty. These are the multiples of four: four times one, four times two, four times three, and so on. Twelve is a multiple of four because four times three is twelve.",
+        "ar": "يصل قطار المترو كل أربع دقائق: عند أربعة، وثمانية، واثني عشر، وستة عشر، وعشرين. هذه هي مضاعفات العدد أربعة: أربعة في واحد، وأربعة في اثنين، وأربعة في ثلاثة، وهكذا. اثنا عشر مضاعف للعدد أربعة لأن أربعة في ثلاثة يساوي اثني عشر."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "number-line",
+      "params": {
+        "min": 0,
+        "max": 30,
+        "divisions": 1,
+        "target": [
+          24,
+          1
+        ]
+      },
+      "text": {
+        "en": "Skip-count by 4 on the number line: 4, 8, 12 ...",
+        "ar": "عُدّ بالقفز 4 على خط الأعداد: 4، 8، 12 ..."
+      },
+      "prompt": {
+        "en": "Put a point on the 6th multiple of 4.",
+        "ar": "ضع نقطة عند المضاعف السادس للعدد 4."
+      },
+      "say": {
+        "en": "Skip count by four on the number line. Put a point on the sixth multiple of four.",
+        "ar": "عُدّ بالقفز أربعة أربعة على خط الأعداد. ضع نقطة عند المضاعف السادس للعدد أربعة."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "array",
+        "rows": 3,
+        "cols": 5,
+        "label": {
+          "en": "3 × 5 = 15",
+          "ar": "3 × 5 = 15"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "3 × 5 = 15. So 15 is a ___ of 3.",
+          "ar": "3 × 5 = 15. إذن 15 ___ للعدد 3."
+        },
+        "options": {
+          "en": [
+            "factor",
+            "multiple"
+          ],
+          "ar": [
+            "عامل",
+            "مضاعف"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "**Factors and multiples are partners.** One multiplication fact tells us both.",
+        "ar": "**العوامل والمضاعفات مرتبطة.** حقيقة ضرب واحدة تخبرنا بالاثنين."
+      },
+      "lines": {
+        "en": [
+          "3 × 5 = 15",
+          "3 and 5 are factors of 15.",
+          "15 is a multiple of 3 and a multiple of 5."
+        ],
+        "ar": [
+          "3 × 5 = 15",
+          "3 و 5 عاملان من عوامل 15.",
+          "15 مضاعف للعدد 3 ومضاعف للعدد 5."
+        ]
+      },
+      "say": {
+        "en": "Factors and multiples are partners. Three times five is fifteen. So three and five are factors of fifteen, and fifteen is a multiple of three and a multiple of five. Factors are small and go into the number. Multiples are big and come out of it.",
+        "ar": "العوامل والمضاعفات مرتبطة. ثلاثة في خمسة يساوي خمسة عشر. إذن ثلاثة وخمسة عاملان من عوامل خمسة عشر، وخمسة عشر مضاعف للعدد ثلاثة ومضاعف للعدد خمسة. العامل يدخل في العدد، والمضاعف ينتج من الضرب."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "array",
+        "rows": 2,
+        "cols": 6,
+        "label": {
+          "en": "12 = 3 × 4 = 2 × 6",
+          "ar": "12 = 3 × 4 = 2 × 6"
+        }
+      },
+      "text": {
+        "en": "**Two buses:** bus A leaves the school every 4 minutes and bus B every 6 minutes. When do they leave **together**?",
+        "ar": "**حافلتان:** تغادر الحافلة (أ) المدرسة كل 4 دقائق والحافلة (ب) كل 6 دقائق. متى تغادران **معًا**؟"
+      },
+      "lines": {
+        "en": [
+          "Multiples of 4: 4, 8, **12**, 16, 20, **24**",
+          "Multiples of 6: 6, **12**, 18, **24**",
+          "Common multiples: 12, 24 ...",
+          "Together first at minute 12."
+        ],
+        "ar": [
+          "مضاعفات 4: 4، 8، **12**، 16، 20، **24**",
+          "مضاعفات 6: 6، **12**، 18، **24**",
+          "المضاعفات المشتركة: 12، 24 ...",
+          "تغادران معًا أول مرة عند الدقيقة 12."
+        ]
+      },
+      "say": {
+        "en": "Two buses: bus A leaves every four minutes and bus B every six minutes. Multiples of four are four, eight, twelve, sixteen, twenty, twenty four. Multiples of six are six, twelve, eighteen, twenty four. The common multiples are twelve and twenty four. So the buses first leave together at minute twelve.",
+        "ar": "حافلتان: تغادر الحافلة الأولى كل أربع دقائق والثانية كل ست دقائق. مضاعفات أربعة هي: أربعة، وثمانية، واثنا عشر، وستة عشر، وعشرون، وأربعة وعشرون. ومضاعفات ستة هي: ستة، واثنا عشر، وثمانية عشر، وأربعة وعشرون. المضاعفات المشتركة هي اثنا عشر وأربعة وعشرون. إذن تغادر الحافلتان معًا أول مرة عند الدقيقة الثانية عشرة."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "number-line",
+      "params": {
+        "min": 0,
+        "max": 30,
+        "divisions": 1,
+        "target": [
+          15,
+          1
+        ]
+      },
+      "text": {
+        "en": "Bus A every 3 minutes, bus B every 5 minutes. Both leave at 0. Jump along the line.",
+        "ar": "الحافلة (أ) كل 3 دقائق والحافلة (ب) كل 5 دقائق، وتبدآن معًا عند الصفر. اقفز على الخط."
+      },
+      "prompt": {
+        "en": "Put a point at the first common multiple of 3 and 5.",
+        "ar": "ضع نقطة عند أول مضاعف مشترك للعددين 3 و 5."
+      },
+      "say": {
+        "en": "Bus A leaves every three minutes and bus B every five minutes. Both leave at zero. Put a point at the first minute after zero when they leave together.",
+        "ar": "تغادر الحافلة الأولى كل ثلاث دقائق والثانية كل خمس دقائق، وتبدآن معًا عند الصفر. ضع نقطة عند أول دقيقة بعد الصفر تغادران فيها معًا."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 3,
+        "cols": 6,
+        "label": {
+          "en": "6, 12, 18: multiples of 6",
+          "ar": "6، 12، 18: مضاعفات 6"
+        }
+      },
+      "text": {
+        "en": "**Remember:**\n\nMultiples of a number: skip-count by it (6, 12, 18 ...). They never end.\n\nA **common multiple** is in both lists.\n\nIf a × b = c, then a and b are factors of c, and c is a multiple of a and of b.",
+        "ar": "**تذكّر:**\n\nمضاعفات العدد: نعدّ بالقفز به (6، 12، 18 ...)، وهي لا تنتهي.\n\n**المضاعف المشترك** يظهر في القائمتين.\n\nإذا كان أ × ب = ج، فإن أ و ب عاملان للعدد ج، و ج مضاعف لكل من أ و ب."
+      },
+      "say": {
+        "en": "Remember. To find multiples of a number, skip count by it: six, twelve, eighteen. They never end. A common multiple is in both lists. If a times b equals c, then a and b are factors of c, and c is a multiple of a and of b.",
+        "ar": "تذكّر. لنجد مضاعفات عدد نعدّ بالقفز به: ستة، واثنا عشر، وثمانية عشر، وهي لا تنتهي. المضاعف المشترك يظهر في القائمتين. وإذا كان حاصل ضرب عددين يساوي عددًا ثالثًا، فالعددان عاملان له، وهو مضاعف لكل منهما."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "Which number is a multiple of 7?",
+        "ar": "أي عدد من مضاعفات العدد 7؟"
+      },
+      "options": {
+        "en": [
+          "21",
+          "17",
+          "27",
+          "1"
+        ],
+        "ar": [
+          "21",
+          "17",
+          "27",
+          "1"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "7 × 3 = 21. 17 and 27 contain a 7 but are not multiples. 1 is a factor of 7, not a multiple.",
+        "ar": "7 × 3 = 21. العددان 17 و 27 فيهما الرقم 7 لكنهما ليسا مضاعفين. و 1 عامل للعدد 7 وليس مضاعفًا."
+      },
+      "say": {
+        "en": "Which number is a multiple of seven?",
+        "ar": "أي عدد من مضاعفات العدد سبعة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which list shows multiples of 6?",
+        "ar": "أي قائمة تبين مضاعفات العدد 6؟"
+      },
+      "options": {
+        "en": [
+          "6, 12, 18, 24",
+          "1, 2, 3, 6",
+          "6, 11, 16, 21",
+          "12, 14, 16, 18"
+        ],
+        "ar": [
+          "6، 12، 18، 24",
+          "1، 2، 3، 6",
+          "6، 11، 16، 21",
+          "12، 14، 16، 18"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Skip-count by 6. 1, 2, 3, 6 are the factors of 6, not its multiples.",
+        "ar": "نعدّ بالقفز 6. أما 1، 2، 3، 6 فهي عوامل العدد 6 وليست مضاعفاته."
+      },
+      "say": {
+        "en": "Which list shows multiples of six?",
+        "ar": "أي قائمة تبين مضاعفات العدد ستة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "What is the 5th multiple of 9?",
+        "ar": "ما المضاعف الخامس للعدد 9؟"
+      },
+      "options": {
+        "en": [
+          "45",
+          "14",
+          "54",
+          "36"
+        ],
+        "ar": [
+          "45",
+          "14",
+          "54",
+          "36"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "9 × 5 = 45. 14 is 9 + 5. 36 is the 4th multiple and 54 the 6th.",
+        "ar": "9 × 5 = 45. أما 14 فهو 9 + 5، و 36 هو المضاعف الرابع، و 54 هو السادس."
+      },
+      "say": {
+        "en": "What is the fifth multiple of nine?",
+        "ar": "ما المضاعف الخامس للعدد تسعة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "4 × 7 = 28. Which sentence is true?",
+        "ar": "4 × 7 = 28. أي جملة صحيحة؟"
+      },
+      "options": {
+        "en": [
+          "28 is a multiple of 4",
+          "4 is a multiple of 28",
+          "28 is a factor of 7",
+          "7 is a multiple of 28"
+        ],
+        "ar": [
+          "28 مضاعف للعدد 4",
+          "4 مضاعف للعدد 28",
+          "28 عامل للعدد 7",
+          "7 مضاعف للعدد 28"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "The answer of the multiplication, 28, is the multiple. 4 and 7 are its factors.",
+        "ar": "ناتج الضرب 28 هو المضاعف، أما 4 و 7 فهما عاملاه."
+      },
+      "say": {
+        "en": "Four times seven is twenty eight. Which sentence is true?",
+        "ar": "أربعة في سبعة يساوي ثمانية وعشرين. أي جملة صحيحة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A bus leaves every 15 minutes, starting at minute 0. At which minute does it NOT leave?",
+        "ar": "تغادر حافلة كل 15 دقيقة بدءًا من الدقيقة 0. في أي دقيقة لا تغادر؟"
+      },
+      "options": {
+        "en": [
+          "50",
+          "45",
+          "30",
+          "60"
+        ],
+        "ar": [
+          "50",
+          "45",
+          "30",
+          "60"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Multiples of 15: 15, 30, 45, 60. 50 is not on the list.",
+        "ar": "مضاعفات 15 هي: 15، 30، 45، 60، والعدد 50 ليس منها."
+      },
+      "say": {
+        "en": "A bus leaves every fifteen minutes, starting at minute zero. At which minute does it not leave?",
+        "ar": "تغادر حافلة كل خمس عشرة دقيقة بدءًا من الدقيقة صفر. في أي دقيقة لا تغادر؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which number is a common multiple of 2 and 5?",
+        "ar": "أي عدد مضاعف مشترك للعددين 2 و 5؟"
+      },
+      "options": {
+        "en": [
+          "10",
+          "7",
+          "5",
+          "12"
+        ],
+        "ar": [
+          "10",
+          "7",
+          "5",
+          "12"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "10 = 2 × 5 = 5 × 2, so it is in both lists. 5 is not a multiple of 2, and 12 is not a multiple of 5. 7 is 2 + 5.",
+        "ar": "10 = 2 × 5، فهو في القائمتين. أما 5 فليس مضاعفًا للعدد 2، و 12 ليس مضاعفًا للعدد 5، و 7 هو 2 + 5."
+      },
+      "say": {
+        "en": "Which number is a common multiple of two and five?",
+        "ar": "أي عدد مضاعف مشترك للعددين اثنين وخمسة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which number is a multiple of BOTH 3 and 4?",
+        "ar": "أي عدد مضاعف لكل من 3 و 4؟"
+      },
+      "options": {
+        "en": [
+          "24",
+          "7",
+          "16",
+          "18"
+        ],
+        "ar": [
+          "24",
+          "7",
+          "16",
+          "18"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "24 = 3 × 8 = 4 × 6. 16 is only a multiple of 4, 18 only of 3, and 7 is 3 + 4.",
+        "ar": "24 = 3 × 8 = 4 × 6. أما 16 فمضاعف للعدد 4 فقط، و 18 للعدد 3 فقط، و 7 هو 3 + 4."
+      },
+      "say": {
+        "en": "Which number is a multiple of both three and four?",
+        "ar": "أي عدد مضاعف لكل من ثلاثة وأربعة؟"
+      }
+    }
+  ]
+}

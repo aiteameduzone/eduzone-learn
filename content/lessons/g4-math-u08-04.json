@@ -1,0 +1,445 @@
+{
+  "id": "g4-math-u08-04",
+  "title": {
+    "en": "One Expression for a Story Problem",
+    "ar": "تعبير عددي واحد للمسألة الحياتية"
+  },
+  "objective": {
+    "en": "Write one expression for a multi-step story problem, then solve it with the order of operations.",
+    "ar": "أن يكتب التلميذ تعبيرًا عدديًا واحدًا لمسألة حياتية متعددة الخطوات، ثم يوجد ناتجه باستخدام ترتيب العمليات."
+  },
+  "refs": {
+    "egypt": [
+      "U8 · 8.1"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 3,
+        "cols": 5,
+        "label": {
+          "en": "3 sandwiches × 5 pounds",
+          "ar": "3 سندوتشات × 5 جنيهات"
+        },
+        "emoji": "🛒"
+      },
+      "check": {
+        "q": {
+          "en": "Ahmed buys 3 sandwiches at 5 pounds each and one juice for 4 pounds. Which expression shows his bill?",
+          "ar": "اشترى أحمد 3 سندوتشات ثمن الواحد 5 جنيهات وعصيرًا بـ 4 جنيهات. أي تعبير يمثل حسابه؟"
+        },
+        "options": {
+          "en": [
+            "3 × 5 + 4",
+            "3 + 5 × 4",
+            "(3 + 5) × 4"
+          ],
+          "ar": [
+            "3 × 5 + 4",
+            "3 + 5 × 4",
+            "(3 + 5) × 4"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "Look for the **groups**: 3 sandwiches **of** 5 pounds is 3 × 5. Then the juice **adds** 4.\n\n3 × 5 + 4 = 15 + 4 = **19 pounds**.",
+        "ar": "ابحث عن **المجموعات**: 3 سندوتشات ثمن كل منها 5 جنيهات هي 3 × 5. ثم **نضيف** ثمن العصير 4.\n\n3 × 5 + 4 = 15 + 4 = **19 جنيهًا**."
+      },
+      "say": {
+        "en": "Look for the groups: three sandwiches of five pounds is three times five. Then the juice adds four. Three times five plus four is fifteen plus four, nineteen pounds.",
+        "ar": "ابحث عن المجموعات: ثلاثة سندوتشات ثمن كل منها خمسة جنيهات هي ثلاثة في خمسة. ثم نضيف ثمن العصير أربعة. ثلاثة في خمسة زائد أربعة يساوي خمسة عشر زائد أربعة، أي تسعة عشر جنيهًا."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "array",
+        "rows": 4,
+        "cols": 6,
+        "label": {
+          "en": "24 sweets ÷ 4 friends",
+          "ar": "24 حلوى ÷ 4 أصدقاء"
+        },
+        "emoji": "🍬"
+      },
+      "check": {
+        "q": {
+          "en": "Mariam has 30 sweets. She keeps 6 and shares the rest equally among 4 friends. Do we need brackets?",
+          "ar": "مع مريم 30 قطعة حلوى. احتفظت بـ 6 ووزعت الباقي بالتساوي على 4 صديقات. هل نحتاج إلى أقواس؟"
+        },
+        "options": {
+          "en": [
+            "Yes: (30 − 6) ÷ 4",
+            "No: 30 − 6 ÷ 4"
+          ],
+          "ar": [
+            "نعم: (30 − 6) ÷ 4",
+            "لا: 30 − 6 ÷ 4"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "We must find the rest **before** sharing, so the subtraction goes in brackets.",
+        "ar": "يجب أن نعرف الباقي **قبل** التوزيع، لذلك نضع الطرح بين قوسين."
+      },
+      "lines": {
+        "en": [
+          "The rest: 30 − 6",
+          "Share among 4: (30 − 6) ÷ 4",
+          "Brackets first: 30 − 6 = 24",
+          "24 ÷ 4 = 6 sweets for each friend"
+        ],
+        "ar": [
+          "الباقي: 30 − 6",
+          "التوزيع على 4: (30 − 6) ÷ 4",
+          "الأقواس أولًا: 30 − 6 = 24",
+          "24 ÷ 4 = 6 قطع لكل صديقة"
+        ]
+      },
+      "say": {
+        "en": "We must find the rest before sharing, so the subtraction goes in brackets. The rest is thirty minus six. Share among four: thirty minus six in brackets, divided by four. Brackets first: thirty minus six is twenty-four. Twenty-four divided by four is six sweets for each friend.",
+        "ar": "يجب أن نعرف الباقي قبل التوزيع، لذلك نضع الطرح بين قوسين. الباقي ثلاثون ناقص ستة. التوزيع على أربع صديقات: ثلاثون ناقص ستة بين قوسين، مقسومًا على أربعة. الأقواس أولًا: ثلاثون ناقص ستة يساوي أربعة وعشرين. أربعة وعشرون مقسومًا على أربعة يساوي ست قطع لكل صديقة."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "blocks",
+        "n": 350,
+        "emoji": "🚌"
+      },
+      "check": {
+        "q": {
+          "en": "A school trip: the bus costs 200 pounds, and each of 6 students pays 25 pounds for a ticket. Which expression gives the total?",
+          "ar": "رحلة مدرسية: الأتوبيس بـ 200 جنيه، وكل تلميذ من 6 تلاميذ يدفع 25 جنيهًا للتذكرة. أي تعبير يعطي المجموع؟"
+        },
+        "options": {
+          "en": [
+            "200 + 6 × 25",
+            "(200 + 6) × 25"
+          ],
+          "ar": [
+            "200 + 6 × 25",
+            "(200 + 6) × 25"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "The tickets are 6 groups of 25. The bus is added once.",
+        "ar": "التذاكر 6 مجموعات في كل منها 25، والأتوبيس يُضاف مرة واحدة."
+      },
+      "lines": {
+        "en": [
+          "200 + 6 × 25",
+          "Multiply first: 6 × 25 = 150",
+          "Then add: 200 + 150 = 350",
+          "The trip costs 350 pounds."
+        ],
+        "ar": [
+          "200 + 6 × 25",
+          "نضرب أولًا: 6 × 25 = 150",
+          "ثم نجمع: 200 + 150 = 350",
+          "تكلفة الرحلة 350 جنيهًا."
+        ]
+      },
+      "say": {
+        "en": "The tickets are six groups of twenty-five. The bus is added once. Two hundred plus six times twenty-five. Multiply first: six times twenty-five is one hundred fifty. Then add: two hundred plus one hundred fifty is three hundred fifty. The trip costs three hundred fifty pounds.",
+        "ar": "التذاكر ست مجموعات في كل منها خمسة وعشرون، والأتوبيس يُضاف مرة واحدة. مئتان زائد ستة في خمسة وعشرين. نضرب أولًا: ستة في خمسة وعشرين يساوي مئة وخمسين. ثم نجمع: مئتان زائد مئة وخمسين يساوي ثلاثمئة وخمسين. تكلفة الرحلة ثلاثمئة وخمسون جنيهًا."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 2,
+        "cols": 15,
+        "label": {
+          "en": "2 books × 15 pounds",
+          "ar": "2 كتب × 15 جنيهًا"
+        },
+        "emoji": "🛒"
+      },
+      "check": {
+        "q": {
+          "en": "Omar has 50 pounds and buys 2 books at 15 pounds each. Which expression shows what is left?",
+          "ar": "مع عمر 50 جنيهًا، واشترى كتابين ثمن الواحد 15 جنيهًا. أي تعبير يبيّن ما تبقى معه؟"
+        },
+        "options": {
+          "en": [
+            "50 − 2 × 15",
+            "(50 − 2) × 15",
+            "50 − 2 + 15"
+          ],
+          "ar": [
+            "50 − 2 × 15",
+            "(50 − 2) × 15",
+            "50 − 2 + 15"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "The books cost 2 × 15. We take that away from 50. Multiplication comes first anyway, so no brackets are needed.\n\n50 − 2 × 15 = 50 − 30 = **20 pounds**.",
+        "ar": "ثمن الكتابين 2 × 15، ونطرحه من 50. الضرب يأتي أولًا على أي حال، فلا نحتاج إلى أقواس.\n\n50 − 2 × 15 = 50 − 30 = **20 جنيهًا**."
+      },
+      "say": {
+        "en": "The books cost two times fifteen. We take that away from fifty. Multiplication comes first anyway, so no brackets are needed. Fifty minus two times fifteen is fifty minus thirty, twenty pounds.",
+        "ar": "ثمن الكتابين اثنان في خمسة عشر، ونطرحه من خمسين. الضرب يأتي أولًا على أي حال، فلا نحتاج إلى أقواس. خمسون ناقص اثنين في خمسة عشر يساوي خمسين ناقص ثلاثين، أي عشرين جنيهًا."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "array",
+      "params": {
+        "exact": [
+          4,
+          3
+        ],
+        "max": 10
+      },
+      "text": {
+        "en": "Hana fills 4 bags with 3 pencils each and has 2 pencils left over: 4 × 3 + 2.",
+        "ar": "ملأت هنا 4 أكياس في كل كيس 3 أقلام، وبقي معها قلمان: 4 × 3 + 2."
+      },
+      "prompt": {
+        "en": "Build the part we work out first: 4 × 3.",
+        "ar": "ابنِ الجزء الذي نحسبه أولًا: 4 × 3."
+      },
+      "say": {
+        "en": "Hana fills four bags with three pencils each and has two pencils left over: four times three plus two. Build the part we work out first: four times three.",
+        "ar": "ملأت هنا أربعة أكياس في كل كيس ثلاثة أقلام، وبقي معها قلمان: أربعة في ثلاثة زائد اثنين. ابنِ الجزء الذي نحسبه أولًا: أربعة في ثلاثة."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 4,
+        "cols": 3,
+        "label": {
+          "en": "4 × 3 + 2 = 14",
+          "ar": "4 × 3 + 2 = 14"
+        }
+      },
+      "text": {
+        "en": "**Steps for a story problem:**\n\n1. Find the equal groups (× or ÷).\n\n2. Find what is added or taken away (+ or −).\n\n3. Use brackets if a + or − must happen first.\n\n4. Solve with the order of operations.",
+        "ar": "**خطوات حل المسألة الحياتية:**\n\n1. ابحث عن المجموعات المتساوية (ضرب أو قسمة).\n\n2. ابحث عما يُضاف أو يُطرح (جمع أو طرح).\n\n3. استخدم الأقواس إذا وجب أن يأتي الجمع أو الطرح أولًا.\n\n4. أوجد الناتج حسب ترتيب العمليات."
+      },
+      "say": {
+        "en": "Steps for a story problem. One: find the equal groups, times or divide. Two: find what is added or taken away, plus or minus. Three: use brackets if a plus or minus must happen first. Four: solve with the order of operations. Four times three plus two is fourteen.",
+        "ar": "خطوات حل المسألة الحياتية. أولًا: ابحث عن المجموعات المتساوية، ضرب أو قسمة. ثانيًا: ابحث عما يُضاف أو يُطرح، جمع أو طرح. ثالثًا: استخدم الأقواس إذا وجب أن يأتي الجمع أو الطرح أولًا. رابعًا: أوجد الناتج حسب ترتيب العمليات. أربعة في ثلاثة زائد اثنين يساوي أربعة عشر."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "Laila buys 4 pens at 3 pounds each and a ruler for 5 pounds. Which expression shows the cost?",
+        "ar": "اشترت ليلى 4 أقلام ثمن الواحد 3 جنيهات ومسطرة بـ 5 جنيهات. أي تعبير يمثل التكلفة؟"
+      },
+      "options": {
+        "en": [
+          "4 × 3 + 5",
+          "4 + 3 × 5",
+          "(4 + 3) × 5",
+          "4 × 3 × 5"
+        ],
+        "ar": [
+          "4 × 3 + 5",
+          "4 + 3 × 5",
+          "(4 + 3) × 5",
+          "4 × 3 × 5"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "The pens are 4 groups of 3 pounds (4 × 3), and the ruler adds 5.",
+        "ar": "الأقلام 4 مجموعات في كل منها 3 جنيهات (4 × 3)، والمسطرة نضيف لها 5."
+      },
+      "say": {
+        "en": "Laila buys four pens at three pounds each and a ruler for five pounds. Which expression shows the cost?",
+        "ar": "اشترت ليلى أربعة أقلام ثمن الواحد ثلاثة جنيهات ومسطرة بخمسة جنيهات. أي تعبير يمثل التكلفة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Laila buys 4 pens at 3 pounds each and a ruler for 5 pounds. How much does she pay?",
+        "ar": "اشترت ليلى 4 أقلام ثمن الواحد 3 جنيهات ومسطرة بـ 5 جنيهات. كم تدفع؟"
+      },
+      "options": {
+        "en": [
+          "17 pounds",
+          "19 pounds",
+          "35 pounds",
+          "12 pounds"
+        ],
+        "ar": [
+          "17 جنيهًا",
+          "19 جنيهًا",
+          "35 جنيهًا",
+          "12 جنيهًا"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "4 × 3 + 5 = 12 + 5 = 17 pounds. 12 forgets the ruler.",
+        "ar": "4 × 3 + 5 = 12 + 5 = 17 جنيهًا. أما 12 فقد نسيت ثمن المسطرة."
+      },
+      "say": {
+        "en": "Laila buys four pens at three pounds each and a ruler for five pounds. How much does she pay?",
+        "ar": "اشترت ليلى أربعة أقلام ثمن الواحد ثلاثة جنيهات ومسطرة بخمسة جنيهات. كم تدفع؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A class has 28 students. 4 are absent, and the rest sit equally at 6 tables. Which expression gives the students at each table?",
+        "ar": "في فصل 28 تلميذًا، غاب منهم 4، وجلس الباقون بالتساوي على 6 طاولات. أي تعبير يعطي عدد التلاميذ على كل طاولة؟"
+      },
+      "options": {
+        "en": [
+          "(28 − 4) ÷ 6",
+          "28 − 4 ÷ 6",
+          "28 ÷ 4 − 6",
+          "(28 + 4) ÷ 6"
+        ],
+        "ar": [
+          "(28 − 4) ÷ 6",
+          "28 − 4 ÷ 6",
+          "28 ÷ 4 − 6",
+          "(28 + 4) ÷ 6"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "First find who is present (28 − 4 = 24), so it needs brackets. Then 24 ÷ 6 = 4 at each table.",
+        "ar": "نوجد الحاضرين أولًا (28 − 4 = 24)، لذلك نحتاج إلى أقواس. ثم 24 ÷ 6 = 4 على كل طاولة."
+      },
+      "say": {
+        "en": "A class has twenty-eight students. Four are absent, and the rest sit equally at six tables. Which expression gives the students at each table?",
+        "ar": "في فصل ثمانية وعشرون تلميذًا، غاب منهم أربعة، وجلس الباقون بالتساوي على ست طاولات. أي تعبير يعطي عدد التلاميذ على كل طاولة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Karim has 100 pounds. He buys 3 tickets at 20 pounds each. How much is left?",
+        "ar": "مع كريم 100 جنيه. اشترى 3 تذاكر ثمن الواحدة 20 جنيهًا. كم تبقى معه؟"
+      },
+      "options": {
+        "en": [
+          "40 pounds",
+          "1940 pounds",
+          "77 pounds",
+          "60 pounds"
+        ],
+        "ar": [
+          "40 جنيهًا",
+          "1940 جنيهًا",
+          "77 جنيهًا",
+          "60 جنيهًا"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "100 − 3 × 20 = 100 − 60 = 40 pounds. 1940 comes from subtracting first: (100 − 3) × 20.",
+        "ar": "100 − 3 × 20 = 100 − 60 = 40 جنيهًا. أما 1940 فتأتي من الطرح أولًا: (100 − 3) × 20."
+      },
+      "say": {
+        "en": "Karim has one hundred pounds. He buys three tickets at twenty pounds each. How much is left?",
+        "ar": "مع كريم مئة جنيه. اشترى ثلاث تذاكر ثمن الواحدة عشرون جنيهًا. كم تبقى معه؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which story matches 5 × 4 + 3?",
+        "ar": "أي قصة تناسب 5 × 4 + 3؟"
+      },
+      "options": {
+        "en": [
+          "5 boxes of 4 cakes, and 3 more cakes",
+          "5 cakes, and 4 boxes of 3 cakes",
+          "5 boxes of 7 cakes",
+          "4 boxes of 3 cakes"
+        ],
+        "ar": [
+          "5 علب في كل منها 4 كعكات، و 3 كعكات أخرى",
+          "5 كعكات، و 4 علب في كل منها 3 كعكات",
+          "5 علب في كل منها 7 كعكات",
+          "4 علب في كل منها 3 كعكات"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "5 groups of 4 is 5 × 4, then 3 more is + 3. The second story is 5 + 4 × 3.",
+        "ar": "5 مجموعات في كل منها 4 هي 5 × 4، ثم 3 أخرى هي + 3. أما القصة الثانية فهي 5 + 4 × 3."
+      },
+      "say": {
+        "en": "Which story matches five times four plus three?",
+        "ar": "أي قصة تناسب خمسة في أربعة زائد ثلاثة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "School trip: 3 buses carry 40 students each, and 15 more students come by car. How many students go?",
+        "ar": "رحلة مدرسية: 3 أتوبيسات يحمل كل منها 40 تلميذًا، و 15 تلميذًا آخرون يأتون بالسيارات. كم تلميذًا في الرحلة؟"
+      },
+      "options": {
+        "en": [
+          "135",
+          "165",
+          "58",
+          "120"
+        ],
+        "ar": [
+          "135",
+          "165",
+          "58",
+          "120"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "3 × 40 + 15 = 120 + 15 = 135. 165 comes from (40 + 15) × 3, adding first. 120 forgets the cars.",
+        "ar": "3 × 40 + 15 = 120 + 15 = 135. أما 165 فتأتي من (40 + 15) × 3 أي الجمع أولًا، و 120 تنسى السيارات."
+      },
+      "say": {
+        "en": "School trip: three buses carry forty students each, and fifteen more students come by car. How many students go?",
+        "ar": "رحلة مدرسية: ثلاثة أتوبيسات يحمل كل منها أربعين تلميذًا، وخمسة عشر تلميذًا آخرون يأتون بالسيارات. كم تلميذًا في الرحلة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Sara has 2 bags with 12 sweets each. She shares all of them equally among 6 friends. Which expression gives each friend's share?",
+        "ar": "مع سارة كيسان في كل منهما 12 قطعة حلوى. وزعتها كلها بالتساوي على 6 صديقات. أي تعبير يعطي نصيب كل صديقة؟"
+      },
+      "options": {
+        "en": [
+          "2 × 12 ÷ 6",
+          "12 ÷ 6",
+          "2 × (12 + 6)",
+          "2 + 12 + 6"
+        ],
+        "ar": [
+          "2 × 12 ÷ 6",
+          "12 ÷ 6",
+          "2 × (12 + 6)",
+          "2 + 12 + 6"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "All the sweets are 2 × 12 = 24. Left to right: 24 ÷ 6 = 4 sweets each.",
+        "ar": "كل الحلوى 2 × 12 = 24. ومن اليسار إلى اليمين: 24 ÷ 6 = 4 قطع لكل صديقة."
+      },
+      "say": {
+        "en": "Sara has two bags with twelve sweets each. She shares all of them equally among six friends. Which expression gives each friend's share?",
+        "ar": "مع سارة كيسان في كل منهما اثنتا عشرة قطعة حلوى. وزعتها كلها بالتساوي على ست صديقات. أي تعبير يعطي نصيب كل صديقة؟"
+      }
+    }
+  ]
+}

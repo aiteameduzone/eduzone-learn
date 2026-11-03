@@ -1,0 +1,513 @@
+{
+  "id": "g4-math-u05-03",
+  "title": {
+    "en": "Times as Many or More Than?",
+    "ar": "أمثال أم أكثر من؟"
+  },
+  "objective": {
+    "en": "Tell multiplicative comparison (\"times as many\") from additive comparison (\"more than\"), and solve one- and two-step word problems.",
+    "ar": "أن يميّز التلميذ المقارنة بالضرب (\"أمثال\") من المقارنة بالجمع (\"أكثر من\")، ويحل مسائل لفظية من خطوة أو خطوتين."
+  },
+  "refs": {
+    "egypt": [
+      "U5 · 5.1 Comparison word problems"
+    ],
+    "ccss": [
+      "4.OA.A.2"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "bars",
+        "items": [
+          {
+            "f": [
+              5,
+              9
+            ],
+            "label": {
+              "en": "Ali: 5",
+              "ar": "علي: 5"
+            }
+          },
+          {
+            "f": [
+              9,
+              9
+            ],
+            "label": {
+              "en": "Omar: 9",
+              "ar": "عمر: 9"
+            },
+            "color": "blue"
+          }
+        ],
+        "hideLabels": true,
+        "emoji": "🎈"
+      },
+      "check": {
+        "q": {
+          "en": "Ali has 5 balloons. Omar has 4 MORE. How many does Omar have?",
+          "ar": "مع علي 5 بالونات، ومع عمر أكثر منه بـ 4. كم بالونًا مع عمر؟"
+        },
+        "options": {
+          "en": [
+            "20",
+            "9",
+            "1"
+          ],
+          "ar": [
+            "20",
+            "9",
+            "1"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "Ali has 5 balloons. Omar has **4 more** than Ali.\n\n\"More than\" means **add**: 5 + 4 = **9** balloons.",
+        "ar": "مع علي 5 بالونات، ومع عمر **أكثر** منه بـ **4**.\n\n\"أكثر من\" تعني أن **نجمع**: 5 + 4 = **9** بالونات."
+      },
+      "say": {
+        "en": "Ali has five balloons. Omar has four more than Ali. More than means add. Five plus four is nine balloons.",
+        "ar": "مع علي خمسة بالونات، ومع عمر أكثر منه بأربعة. أكثر من تعني أن نجمع. خمسة زائد أربعة يساوي تسعة بالونات."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "bars",
+        "items": [
+          {
+            "f": [
+              5,
+              20
+            ],
+            "label": {
+              "en": "Ali: 5",
+              "ar": "علي: 5"
+            }
+          },
+          {
+            "f": [
+              20,
+              20
+            ],
+            "label": {
+              "en": "Omar: 20",
+              "ar": "عمر: 20"
+            },
+            "color": "blue"
+          }
+        ],
+        "hideLabels": true,
+        "emoji": "🎈"
+      },
+      "check": {
+        "q": {
+          "en": "Ali has 5 balloons. Omar has 4 TIMES as many. How many does Omar have?",
+          "ar": "مع علي 5 بالونات، ومع عمر أربعة أمثالها. كم بالونًا مع عمر؟"
+        },
+        "options": {
+          "en": [
+            "9",
+            "54",
+            "20"
+          ],
+          "ar": [
+            "9",
+            "54",
+            "20"
+          ]
+        },
+        "answer": 2
+      },
+      "text": {
+        "en": "Now Omar has **4 times as many** as Ali.\n\n\"Times as many\" means **multiply**: 4 × 5 = **20** balloons.\n\nSame numbers, different words, different answer!",
+        "ar": "الآن مع عمر **أربعة أمثال** ما مع علي.\n\n\"أمثال\" تعني أن **نضرب**: 4 × 5 = **20** بالونًا.\n\nالأعداد نفسها، والكلمات مختلفة، فاختلف الناتج!"
+      },
+      "say": {
+        "en": "Now Omar has four times as many as Ali. Times as many means multiply. Four times five is twenty balloons. Same numbers, different words, different answer!",
+        "ar": "الآن مع عمر أربعة أمثال ما مع علي. أمثال تعني أن نضرب. أربعة في خمسة يساوي عشرين بالونًا. الأعداد نفسها، والكلمات مختلفة، فاختلف الناتج!"
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "bars",
+        "items": [
+          {
+            "f": [
+              1,
+              3
+            ],
+            "label": {
+              "en": "mango: 6 EGP",
+              "ar": "المانجو: 6 ج"
+            }
+          },
+          {
+            "f": [
+              3,
+              3
+            ],
+            "label": {
+              "en": "melon: 18 EGP",
+              "ar": "البطيخة: 18 ج"
+            },
+            "color": "blue"
+          }
+        ]
+      },
+      "text": {
+        "en": "**Look for the key words.**",
+        "ar": "**ابحث عن الكلمات المفتاحية.**"
+      },
+      "lines": {
+        "en": [
+          "\"more than / fewer than\" → add or subtract",
+          "\"times as many / twice / 3 times\" → multiply or divide",
+          "Mango 6 EGP, melon 3 times as much: 3 × 6 = 18 EGP"
+        ],
+        "ar": [
+          "\"أكثر من / أقل من\" ← نجمع أو نطرح",
+          "\"أمثال / مثلا / ثلاثة أمثال\" ← نضرب أو نقسم",
+          "المانجو 6 ج، والبطيخة ثلاثة أمثالها: 3 × 6 = 18 ج"
+        ]
+      },
+      "say": {
+        "en": "Look for the key words. More than or fewer than: add or subtract. Times as many, twice, three times: multiply or divide. Example: a mango costs six pounds and a melon costs three times as much. Three times six is eighteen pounds.",
+        "ar": "ابحث عن الكلمات المفتاحية. أكثر من أو أقل من: نجمع أو نطرح. أمثال أو مثلا أو ثلاثة أمثال: نضرب أو نقسم. مثال: ثمن حبة المانجو ستة جنيهات، وثمن البطيخة ثلاثة أمثالها. ثلاثة في ستة يساوي ثمانية عشر جنيهًا."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "bars",
+        "items": [
+          {
+            "f": [
+              1,
+              3
+            ],
+            "label": {
+              "en": "Mona: 20",
+              "ar": "منى: 20"
+            }
+          },
+          {
+            "f": [
+              3,
+              3
+            ],
+            "label": {
+              "en": "brother: 60",
+              "ar": "أخوها: 60"
+            },
+            "color": "blue"
+          }
+        ],
+        "emoji": "💰"
+      },
+      "text": {
+        "en": "**Two steps:** Mona saved 20 EGP. Her brother saved 3 times as much. How much **more** did her brother save?",
+        "ar": "**مسألة من خطوتين:** ادّخرت منى 20 جنيهًا، وادّخر أخوها ثلاثة أمثال ما ادّخرته. كم جنيهًا ادّخر أخوها **أكثر** منها؟"
+      },
+      "lines": {
+        "en": [
+          "Step 1: brother = 3 × 20 = 60 EGP",
+          "Step 2: 60 − 20 = 40",
+          "He saved 40 EGP more."
+        ],
+        "ar": [
+          "الخطوة 1: الأخ = 3 × 20 = 60 جنيهًا",
+          "الخطوة 2: 60 − 20 = 40",
+          "ادّخر 40 جنيهًا أكثر منها."
+        ]
+      },
+      "say": {
+        "en": "Two steps. Mona saved twenty pounds. Her brother saved three times as much. How much more did her brother save? Step one: three times twenty is sixty pounds. Step two: sixty minus twenty is forty. Her brother saved forty pounds more.",
+        "ar": "مسألة من خطوتين. ادّخرت منى عشرين جنيهًا، وادّخر أخوها ثلاثة أمثال ما ادّخرته. كم جنيهًا ادّخر أخوها أكثر منها؟ الخطوة الأولى: ثلاثة في عشرين يساوي ستين جنيهًا. الخطوة الثانية: ستون ناقص عشرين يساوي أربعين. ادّخر أخوها أربعين جنيهًا أكثر منها."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "array",
+      "params": {
+        "target": 28,
+        "rows": 1,
+        "cols": 7,
+        "exact": [
+          4,
+          7
+        ]
+      },
+      "text": {
+        "en": "Laila has 7 stickers. Sami has 4 times as many. Show Sami's stickers as rows of 7.",
+        "ar": "مع ليلى 7 ملصقات، ومع سامي أربعة أمثالها. مثّل ملصقات سامي صفوفًا في كل منها 7."
+      },
+      "prompt": {
+        "en": "Build Sami's stickers: 4 rows of 7.",
+        "ar": "كوّن ملصقات سامي: 4 صفوف في كل صف 7."
+      },
+      "say": {
+        "en": "Laila has seven stickers. Sami has four times as many. Build Sami's stickers: four rows of seven.",
+        "ar": "مع ليلى سبعة ملصقات، ومع سامي أربعة أمثالها. كوّن ملصقات سامي: أربعة صفوف في كل صف سبعة."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "bars",
+        "items": [
+          {
+            "f": [
+              3,
+              18
+            ],
+            "label": {
+              "en": "3",
+              "ar": "3"
+            }
+          },
+          {
+            "f": [
+              9,
+              18
+            ],
+            "label": {
+              "en": "3 + 6 = 9",
+              "ar": "3 + 6 = 9"
+            }
+          },
+          {
+            "f": [
+              18,
+              18
+            ],
+            "label": {
+              "en": "6 × 3 = 18",
+              "ar": "6 × 3 = 18"
+            },
+            "color": "blue"
+          }
+        ]
+      },
+      "text": {
+        "en": "**Remember:**\n\n\"6 more than 3\" → 3 + 6 = 9\n\n\"6 times as many as 3\" → 6 × 3 = 18\n\nRead the question twice before you choose the operation.",
+        "ar": "**تذكّر:**\n\n\"أكثر من 3 بـ 6\" ← 3 + 6 = 9\n\n\"ستة أمثال 3\" ← 6 × 3 = 18\n\nاقرأ السؤال مرتين قبل أن تختار العملية."
+      },
+      "say": {
+        "en": "Remember. Six more than three is three plus six, which is nine. Six times as many as three is six times three, which is eighteen. Read the question twice before you choose the operation.",
+        "ar": "تذكّر. أكثر من ثلاثة بستة: ثلاثة زائد ستة يساوي تسعة. ستة أمثال ثلاثة: ستة في ثلاثة يساوي ثمانية عشر. اقرأ السؤال مرتين قبل أن تختار العملية."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "Nour has 8 marbles. Adam has 3 more than Nour. How many marbles does Adam have?",
+        "ar": "مع نور 8 بِلْيات، ومع آدم أكثر منها بـ 3. كم بلية مع آدم؟"
+      },
+      "options": {
+        "en": [
+          "11",
+          "24",
+          "5",
+          "83"
+        ],
+        "ar": [
+          "11",
+          "24",
+          "5",
+          "83"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "\"More than\" means add: 8 + 3 = 11. 24 multiplies by mistake.",
+        "ar": "\"أكثر من\" تعني الجمع: 8 + 3 = 11. أما 24 فضربت خطأً."
+      },
+      "say": {
+        "en": "Nour has eight marbles. Adam has three more than Nour. How many marbles does Adam have?",
+        "ar": "مع نور ثماني بِلْيات، ومع آدم أكثر منها بثلاث. كم بلية مع آدم؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Nour has 8 marbles. Adam has 3 times as many. How many marbles does Adam have?",
+        "ar": "مع نور 8 بِلْيات، ومع آدم ثلاثة أمثالها. كم بلية مع آدم؟"
+      },
+      "options": {
+        "en": [
+          "24",
+          "11",
+          "5",
+          "38"
+        ],
+        "ar": [
+          "24",
+          "11",
+          "5",
+          "38"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "\"Times as many\" means multiply: 3 × 8 = 24. 11 adds by mistake.",
+        "ar": "\"أمثال\" تعني الضرب: 3 × 8 = 24. أما 11 فجمعت خطأً."
+      },
+      "say": {
+        "en": "Nour has eight marbles. Adam has three times as many. How many marbles does Adam have?",
+        "ar": "مع نور ثماني بِلْيات، ومع آدم ثلاثة أمثالها. كم بلية مع آدم؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which problem is solved by multiplying?",
+        "ar": "أي مسألة نحلها بالضرب؟"
+      },
+      "options": {
+        "en": [
+          "Ali has 6 cards. Sara has 5 times as many.",
+          "Ali has 6 cards. Sara has 5 more.",
+          "Ali has 6 cards. Sara has 5 fewer.",
+          "Ali has 6 cards and gives away 5."
+        ],
+        "ar": [
+          "مع علي 6 كروت، ومع سارة خمسة أمثالها.",
+          "مع علي 6 كروت، ومع سارة أكثر منه بـ 5.",
+          "مع علي 6 كروت، ومع سارة أقل منه بـ 5.",
+          "مع علي 6 كروت وأعطى منها 5."
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "\"Times as many\" is a multiplicative comparison. The others add or subtract.",
+        "ar": "\"أمثال\" مقارنة بالضرب. أما الباقي فبالجمع أو الطرح."
+      },
+      "say": {
+        "en": "Which problem is solved by multiplying?",
+        "ar": "أي مسألة نحلها بالضرب؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A box of mangoes costs 90 EGP. That is 3 times the price of a melon. What does the melon cost?",
+        "ar": "صندوق المانجو بـ 90 جنيهًا، وهذا ثلاثة أمثال ثمن البطيخة. كم ثمن البطيخة؟"
+      },
+      "options": {
+        "en": [
+          "30 EGP",
+          "87 EGP",
+          "93 EGP",
+          "270 EGP"
+        ],
+        "ar": [
+          "30 جنيهًا",
+          "87 جنيهًا",
+          "93 جنيهًا",
+          "270 جنيهًا"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "90 = 3 × m, and 3 × 30 = 90. The melon is the small amount.",
+        "ar": "90 = 3 × ب، و 3 × 30 = 90. البطيخة هي الكمية الصغيرة."
+      },
+      "say": {
+        "en": "A box of mangoes costs ninety pounds. That is three times the price of a melon. What does the melon cost?",
+        "ar": "صندوق المانجو بتسعين جنيهًا، وهذا ثلاثة أمثال ثمن البطيخة. كم ثمن البطيخة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A bus has 40 seats. A microbus has 26 fewer seats. How many seats does the microbus have?",
+        "ar": "في الأتوبيس 40 مقعدًا، وفي الميكروباص مقاعد أقل منه بـ 26. كم مقعدًا في الميكروباص؟"
+      },
+      "options": {
+        "en": [
+          "14",
+          "66",
+          "26",
+          "10"
+        ],
+        "ar": [
+          "14",
+          "66",
+          "26",
+          "10"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "\"Fewer than\" means subtract: 40 − 26 = 14.",
+        "ar": "\"أقل من\" تعني الطرح: 40 − 26 = 14."
+      },
+      "say": {
+        "en": "A bus has forty seats. A microbus has twenty six fewer seats. How many seats does the microbus have?",
+        "ar": "في الأتوبيس أربعون مقعدًا، وفي الميكروباص مقاعد أقل منه بستة وعشرين. كم مقعدًا في الميكروباص؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Hana read 9 pages. Kareem read 4 times as many. How many MORE pages did Kareem read?",
+        "ar": "قرأت هنا 9 صفحات، وقرأ كريم أربعة أمثالها. كم صفحة قرأ كريم أكثر منها؟"
+      },
+      "options": {
+        "en": [
+          "27",
+          "36",
+          "13",
+          "45"
+        ],
+        "ar": [
+          "27",
+          "36",
+          "13",
+          "45"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Step 1: 4 × 9 = 36. Step 2: 36 − 9 = 27. 36 forgets the second step.",
+        "ar": "الخطوة 1: 4 × 9 = 36. الخطوة 2: 36 − 9 = 27. أما 36 فنسيت الخطوة الثانية."
+      },
+      "say": {
+        "en": "Hana read nine pages. Kareem read four times as many. How many more pages did Kareem read?",
+        "ar": "قرأت هنا تسع صفحات، وقرأ كريم أربعة أمثالها. كم صفحة قرأ كريم أكثر منها؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Tamer is 8 years old. His grandfather is 9 times as old. How old is his grandfather?",
+        "ar": "عمر تامر 8 سنوات، وعمر جده تسعة أمثال عمره. كم عمر الجد؟"
+      },
+      "options": {
+        "en": [
+          "72",
+          "17",
+          "81",
+          "89"
+        ],
+        "ar": [
+          "72",
+          "17",
+          "81",
+          "89"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "9 × 8 = 72 years. 17 adds instead of multiplying.",
+        "ar": "9 × 8 = 72 سنة. أما 17 فجمعت بدلًا من الضرب."
+      },
+      "say": {
+        "en": "Tamer is eight years old. His grandfather is nine times as old. How old is his grandfather?",
+        "ar": "عمر تامر ثماني سنوات، وعمر جده تسعة أمثال عمره. كم عمر الجد؟"
+      }
+    }
+  ]
+}

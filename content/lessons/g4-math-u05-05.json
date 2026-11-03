@@ -1,0 +1,409 @@
+{
+  "id": "g4-math-u05-05",
+  "title": {
+    "en": "Grouping and Splitting",
+    "ar": "خاصيتا التجميع والتوزيع"
+  },
+  "objective": {
+    "en": "Use the associative property to group factors in an easy order, and the distributive property to split a factor and multiply in parts.",
+    "ar": "أن يستخدم التلميذ خاصية التجميع لتجميع العوامل بترتيب سهل، وخاصية التوزيع لتجزئة أحد العددين والضرب على أجزاء."
+  },
+  "refs": {
+    "egypt": [
+      "U5 · 5.2 Associative and distributive properties"
+    ],
+    "ccss": [
+      "4.NBT.B.5"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 6,
+        "cols": 5,
+        "label": {
+          "en": "2 × 3 × 5",
+          "ar": "2 × 3 × 5"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "What is 2 × 3 × 5?",
+          "ar": "كم يساوي 2 × 3 × 5؟"
+        },
+        "options": {
+          "en": [
+            "10",
+            "30",
+            "25"
+          ],
+          "ar": [
+            "10",
+            "30",
+            "25"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "2 boxes. Each box has 3 rows of 5 mangoes. How many mangoes?\n\n(2 × 3) × 5 = 6 × 5 = **30**\n\n2 × (3 × 5) = 2 × 15 = **30**\n\nThis is the **associative property**: grouping the factors differently gives the same product.",
+        "ar": "صندوقان، في كل صندوق 3 صفوف في كل صف 5 حبات مانجو. كم حبة في المجموع؟\n\n(2 × 3) × 5 = 6 × 5 = **30**\n\n2 × (3 × 5) = 2 × 15 = **30**\n\nهذه **خاصية التجميع**: تغيير طريقة تجميع العوامل لا يغيّر حاصل الضرب."
+      },
+      "say": {
+        "en": "Two boxes. Each box has three rows of five mangoes. How many mangoes? Two times three, then times five, is six times five, which is thirty. Two times fifteen is also thirty. This is the associative property: grouping the factors differently gives the same product.",
+        "ar": "صندوقان، في كل صندوق ثلاثة صفوف في كل صف خمس حبات مانجو. كم حبة في المجموع؟ اثنان في ثلاثة ثم في خمسة يساوي ستة في خمسة، أي ثلاثين. واثنان في خمسة عشر يساوي ثلاثين أيضًا. هذه خاصية التجميع: تغيير طريقة تجميع العوامل لا يغيّر حاصل الضرب."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "array",
+        "rows": 7,
+        "cols": 10,
+        "label": {
+          "en": "7 × 10 = 70",
+          "ar": "7 × 10 = 70"
+        }
+      },
+      "text": {
+        "en": "**Tip:** look for a pair that makes **10**, and multiply it first.",
+        "ar": "**نصيحة:** ابحث عن عددين حاصل ضربهما **10**، واضربهما أولًا."
+      },
+      "lines": {
+        "en": [
+          "5 × 7 × 2",
+          "= 7 × (5 × 2)",
+          "= 7 × 10 = 70"
+        ],
+        "ar": [
+          "5 × 7 × 2",
+          "= 7 × (5 × 2)",
+          "= 7 × 10 = 70"
+        ]
+      },
+      "say": {
+        "en": "Tip: look for a pair that makes ten, and multiply it first. Five times seven times two equals seven times five times two. Five times two is ten, and seven times ten is seventy.",
+        "ar": "نصيحة: ابحث عن عددين حاصل ضربهما عشرة، واضربهما أولًا. خمسة في سبعة في اثنين يساوي سبعة في خمسة في اثنين. خمسة في اثنين يساوي عشرة، وسبعة في عشرة يساوي سبعين."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 7,
+        "cols": 6
+      },
+      "check": {
+        "q": {
+          "en": "7 × 6 = 5 × 6 + ___",
+          "ar": "أكمل: 7 × 6 = 5 × 6 + ___"
+        },
+        "options": {
+          "en": [
+            "2 + 6",
+            "7 × 2",
+            "2 × 6"
+          ],
+          "ar": [
+            "2 + 6",
+            "7 × 2",
+            "2 × 6"
+          ]
+        },
+        "answer": 2
+      },
+      "text": {
+        "en": "Split the 7 rows into 5 rows and 2 rows.\n\n7 × 6 = 5 × 6 + 2 × 6 = 30 + 12 = **42**\n\nThis is the **distributive property**: split one factor, multiply each part, then add.",
+        "ar": "جزّئ الصفوف السبعة إلى 5 صفوف وصفين.\n\n7 × 6 = 5 × 6 + 2 × 6 = 30 + 12 = **42**\n\nهذه **خاصية التوزيع**: نجزّئ أحد العددين، ونضرب كل جزء، ثم نجمع."
+      },
+      "say": {
+        "en": "Split the seven rows into five rows and two rows. Seven times six equals five times six plus two times six, which is thirty plus twelve, forty two. This is the distributive property: split one factor, multiply each part, then add.",
+        "ar": "جزّئ الصفوف السبعة إلى خمسة صفوف وصفين. سبعة في ستة يساوي خمسة في ستة زائد اثنين في ستة، أي ثلاثين زائد اثني عشر، يساوي اثنين وأربعين. هذه خاصية التوزيع: نجزّئ أحد العددين، ونضرب كل جزء، ثم نجمع."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "array",
+        "rows": 6,
+        "cols": 14,
+        "label": {
+          "en": "6 × 14 = 6 × 10 + 6 × 4",
+          "ar": "6 × 14 = 6 × 10 + 6 × 4"
+        }
+      },
+      "text": {
+        "en": "Split a big number into **tens and ones**: 6 × 14.",
+        "ar": "جزّئ العدد الكبير إلى **عشرات وآحاد**: 6 × 14."
+      },
+      "lines": {
+        "en": [
+          "6 × 14 = 6 × (10 + 4)",
+          "= 6 × 10 + 6 × 4",
+          "= 60 + 24 = 84"
+        ],
+        "ar": [
+          "6 × 14 = 6 × (10 + 4)",
+          "= 6 × 10 + 6 × 4",
+          "= 60 + 24 = 84"
+        ]
+      },
+      "say": {
+        "en": "Split a big number into tens and ones. Six times fourteen equals six times ten plus six times four, which is sixty plus twenty four, eighty four.",
+        "ar": "جزّئ العدد الكبير إلى عشرات وآحاد. ستة في أربعة عشر يساوي ستة في عشرة زائد ستة في أربعة، أي ستين زائد أربعة وعشرين، يساوي أربعة وثمانين."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "array",
+      "params": {
+        "target": 56,
+        "rows": 5,
+        "cols": 7,
+        "exact": [
+          8,
+          7
+        ]
+      },
+      "text": {
+        "en": "This is 5 rows of 7 = 35. Add 3 more rows of 7 to make 8 × 7.\n\n8 × 7 = 5 × 7 + 3 × 7 = 35 + 21 = 56.",
+        "ar": "هذه 5 صفوف في كل منها 7 = 35. أضف 3 صفوف أخرى في كل منها 7 لتكوّن 8 × 7.\n\n8 × 7 = 5 × 7 + 3 × 7 = 35 + 21 = 56."
+      },
+      "prompt": {
+        "en": "Build 8 rows of 7.",
+        "ar": "كوّن 8 صفوف في كل صف 7."
+      },
+      "say": {
+        "en": "This is five rows of seven, which is thirty five. Add three more rows of seven to make eight times seven. Eight times seven equals five times seven plus three times seven, thirty five plus twenty one, fifty six.",
+        "ar": "هذه خمسة صفوف في كل منها سبعة، أي خمسة وثلاثون. أضف ثلاثة صفوف أخرى في كل منها سبعة لتكوّن ثمانية في سبعة. ثمانية في سبعة يساوي خمسة في سبعة زائد ثلاثة في سبعة، أي خمسة وثلاثين زائد واحد وعشرين، يساوي ستة وخمسين."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 4,
+        "cols": 12,
+        "label": {
+          "en": "4 × 12 = 4 × 10 + 4 × 2 = 48",
+          "ar": "4 × 12 = 4 × 10 + 4 × 2 = 48"
+        }
+      },
+      "text": {
+        "en": "**Remember:**\n\n**Associative:** (a × b) × c = a × (b × c). Group to make 10 first.\n\n**Distributive:** a × (b + c) = a × b + a × c. Split, multiply, add.",
+        "ar": "**تذكّر:**\n\n**التجميع:** (أ × ب) × ج = أ × (ب × ج). جمّع لتكوّن 10 أولًا.\n\n**التوزيع:** أ × (ب + ج) = أ × ب + أ × ج. جزّئ ثم اضرب ثم اجمع."
+      },
+      "say": {
+        "en": "Remember. Associative: a times b, then times c, equals a times the product of b and c. Group to make ten first. Distributive: a times b plus c equals a times b plus a times c. Split, multiply, add.",
+        "ar": "تذكّر. خاصية التجميع: أ في ب ثم في ج يساوي أ في حاصل ضرب ب في ج. جمّع لتكوّن عشرة أولًا. خاصية التوزيع: أ في مجموع ب و ج يساوي أ في ب زائد أ في ج. جزّئ ثم اضرب ثم اجمع."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "(4 × 5) × 3 = 4 × (5 × ___)",
+        "ar": "أكمل: (4 × 5) × 3 = 4 × (5 × ___)"
+      },
+      "options": {
+        "en": [
+          "3",
+          "4",
+          "5",
+          "20"
+        ],
+        "ar": [
+          "3",
+          "4",
+          "5",
+          "20"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Associative property: the same three factors 4, 5, 3, grouped differently.",
+        "ar": "خاصية التجميع: العوامل الثلاثة نفسها 4 و 5 و 3 مجمّعة بطريقة مختلفة."
+      },
+      "say": {
+        "en": "Four times five, then times three, equals four times five times what?",
+        "ar": "أربعة في خمسة ثم في ثلاثة يساوي أربعة في خمسة في كم؟"
+      }
+    },
+    {
+      "q": {
+        "en": "What is the easiest way to work out 25 × 7 × 4?",
+        "ar": "ما أسهل طريقة لحساب 25 × 7 × 4؟"
+      },
+      "options": {
+        "en": [
+          "(25 × 4) × 7 = 100 × 7",
+          "(25 × 7) × 4",
+          "25 + 7 + 4",
+          "25 × 11"
+        ],
+        "ar": [
+          "(25 × 4) × 7 = 100 × 7",
+          "(25 × 7) × 4",
+          "25 + 7 + 4",
+          "25 × 11"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "25 × 4 = 100, and 100 × 7 = 700 is easy. Adding the factors is wrong.",
+        "ar": "25 × 4 = 100، و 100 × 7 = 700 سهلة. أما جمع العوامل فخطأ."
+      },
+      "say": {
+        "en": "What is the easiest way to work out twenty five times seven times four?",
+        "ar": "ما أسهل طريقة لحساب خمسة وعشرين في سبعة في أربعة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "2 × 9 × 5 = ?",
+        "ar": "2 × 9 × 5 = ؟"
+      },
+      "options": {
+        "en": [
+          "90",
+          "16",
+          "45",
+          "18"
+        ],
+        "ar": [
+          "90",
+          "16",
+          "45",
+          "18"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "2 × 5 = 10, then 10 × 9 = 90. 16 adds the numbers.",
+        "ar": "2 × 5 = 10، ثم 10 × 9 = 90. أما 16 فجمعت الأعداد."
+      },
+      "say": {
+        "en": "Two times nine times five equals?",
+        "ar": "اثنان في تسعة في خمسة يساوي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "8 × 6 = 8 × 5 + 8 × ___",
+        "ar": "أكمل: 8 × 6 = 8 × 5 + 8 × ___"
+      },
+      "options": {
+        "en": [
+          "1",
+          "6",
+          "5",
+          "8"
+        ],
+        "ar": [
+          "1",
+          "6",
+          "5",
+          "8"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "6 = 5 + 1, so 8 × 6 = 8 × 5 + 8 × 1 = 40 + 8 = 48.",
+        "ar": "6 = 5 + 1، إذن 8 × 6 = 8 × 5 + 8 × 1 = 40 + 8 = 48."
+      },
+      "say": {
+        "en": "Eight times six equals eight times five plus eight times what?",
+        "ar": "ثمانية في ستة يساوي ثمانية في خمسة زائد ثمانية في كم؟"
+      }
+    },
+    {
+      "q": {
+        "en": "4 × 13 = 4 × 10 + 4 × 3 = ?",
+        "ar": "4 × 13 = 4 × 10 + 4 × 3 = ؟"
+      },
+      "options": {
+        "en": [
+          "52",
+          "43",
+          "17",
+          "40"
+        ],
+        "ar": [
+          "52",
+          "43",
+          "17",
+          "40"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "40 + 12 = 52. 43 forgot to multiply the 3 by 4.",
+        "ar": "40 + 12 = 52. أما 43 فنسيت ضرب 3 في 4."
+      },
+      "say": {
+        "en": "Four times thirteen equals four times ten plus four times three, which equals?",
+        "ar": "أربعة في ثلاثة عشر يساوي أربعة في عشرة زائد أربعة في ثلاثة، ويساوي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which property is this? 3 × (2 × 4) = (3 × 2) × 4",
+        "ar": "ما الخاصية؟ 3 × (2 × 4) = (3 × 2) × 4"
+      },
+      "options": {
+        "en": [
+          "Associative",
+          "Commutative",
+          "Distributive",
+          "Multiplying by 1"
+        ],
+        "ar": [
+          "خاصية التجميع",
+          "خاصية الإبدال",
+          "خاصية التوزيع",
+          "الضرب في الواحد"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Same factors in the same order, only the brackets moved: associative.",
+        "ar": "العوامل نفسها بالترتيب نفسه، وتغيّر مكان القوسين فقط: خاصية التجميع."
+      },
+      "say": {
+        "en": "Which property is this? Three times the product of two and four equals three times two, then times four.",
+        "ar": "ما الخاصية؟ ثلاثة في حاصل ضرب اثنين في أربعة يساوي ثلاثة في اثنين ثم في أربعة."
+      }
+    },
+    {
+      "q": {
+        "en": "Which is equal to 9 × 12?",
+        "ar": "أي مما يلي يساوي 9 × 12؟"
+      },
+      "options": {
+        "en": [
+          "9 × 10 + 9 × 2",
+          "9 × 10 + 2",
+          "9 + 12",
+          "9 × 10 × 2"
+        ],
+        "ar": [
+          "9 × 10 + 9 × 2",
+          "9 × 10 + 2",
+          "9 + 12",
+          "9 × 10 × 2"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Split 12 into 10 + 2 and multiply BOTH parts by 9: 90 + 18 = 108.",
+        "ar": "نجزّئ 12 إلى 10 + 2 ونضرب الجزأين كليهما في 9: 90 + 18 = 108."
+      },
+      "say": {
+        "en": "Which is equal to nine times twelve?",
+        "ar": "أي مما يلي يساوي تسعة في اثني عشر؟"
+      }
+    }
+  ]
+}

@@ -1,0 +1,383 @@
+{
+  "id": "g4-math-u08-01",
+  "title": {
+    "en": "Why Order Matters",
+    "ar": "لماذا نحتاج إلى ترتيب العمليات؟"
+  },
+  "objective": {
+    "en": "Understand that an expression must have only one answer, and multiply before adding.",
+    "ar": "أن يدرك التلميذ أن للتعبير العددي ناتجًا واحدًا فقط، وأن يُجري الضرب قبل الجمع."
+  },
+  "refs": {
+    "egypt": [
+      "U8 · 8.1"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 4,
+        "cols": 2
+      },
+      "check": {
+        "q": {
+          "en": "Mona and Karim both solved 3 + 4 × 2. Mona got 14 and Karim got 11. Who is right?",
+          "ar": "حلّت منى وكريم التعبير 3 + 4 × 2. حصلت منى على 14 وحصل كريم على 11. من على صواب؟"
+        },
+        "options": {
+          "en": [
+            "Mona: 14",
+            "Karim: 11"
+          ],
+          "ar": [
+            "منى: 14",
+            "كريم: 11"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "Mona added first: 3 + 4 = 7, then 7 × 2 = 14.\n\nKarim multiplied first: 4 × 2 = 8, then 3 + 8 = 11.\n\nOne question cannot have two answers! So everyone agreed on an **order of operations**: **multiply before you add**. Karim is right: **11**.",
+        "ar": "جمعت منى أولًا: 3 + 4 = 7، ثم 7 × 2 = 14.\n\nوضرب كريم أولًا: 4 × 2 = 8، ثم 3 + 8 = 11.\n\nلا يصح أن يكون للسؤال الواحد ناتجان! لذلك اتفق الجميع على **ترتيب العمليات**: **نضرب قبل أن نجمع**. إذن كريم على صواب: **11**."
+      },
+      "say": {
+        "en": "Mona added first: three plus four is seven, then seven times two is fourteen. Karim multiplied first: four times two is eight, then three plus eight is eleven. One question cannot have two answers! So everyone agreed on an order of operations: multiply before you add. Karim is right: eleven.",
+        "ar": "جمعت منى أولًا: ثلاثة زائد أربعة يساوي سبعة، ثم سبعة في اثنين يساوي أربعة عشر. وضرب كريم أولًا: أربعة في اثنين يساوي ثمانية، ثم ثلاثة زائد ثمانية يساوي أحد عشر. لا يصح أن يكون للسؤال الواحد ناتجان! لذلك اتفق الجميع على ترتيب العمليات: نضرب قبل أن نجمع. إذن كريم على صواب: أحد عشر."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "array",
+        "rows": 4,
+        "cols": 2,
+        "label": {
+          "en": "4 packs × 2 pounds",
+          "ar": "4 علب × 2 جنيه"
+        },
+        "emoji": "🛒"
+      },
+      "check": {
+        "q": {
+          "en": "In 3 + 4 × 2, which part do we work out first?",
+          "ar": "في التعبير 3 + 4 × 2، أي جزء نحسبه أولًا؟"
+        },
+        "options": {
+          "en": [
+            "4 × 2",
+            "3 + 4"
+          ],
+          "ar": [
+            "4 × 2",
+            "3 + 4"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "At the koshk, Salma buys one juice for 3 pounds and 4 packs of biscuits at 2 pounds each. Her bill is **3 + 4 × 2**.",
+        "ar": "تشتري سلمى من الكشك عصيرًا بـ 3 جنيهات، و 4 علب بسكويت ثمن العلبة 2 جنيه. حسابها هو **3 + 4 × 2**."
+      },
+      "lines": {
+        "en": [
+          "3 + 4 × 2",
+          "Multiply first: 4 × 2 = 8 (the biscuits)",
+          "Then add: 3 + 8 = 11",
+          "Salma pays 11 pounds."
+        ],
+        "ar": [
+          "3 + 4 × 2",
+          "نضرب أولًا: 4 × 2 = 8 (ثمن البسكويت)",
+          "ثم نجمع: 3 + 8 = 11",
+          "تدفع سلمى 11 جنيهًا."
+        ]
+      },
+      "say": {
+        "en": "At the koshk, Salma buys one juice for three pounds and four packs of biscuits at two pounds each. Her bill is three plus four times two. Multiply first: four times two is eight, that is the biscuits. Then add: three plus eight is eleven. Salma pays eleven pounds.",
+        "ar": "تشتري سلمى من الكشك عصيرًا بثلاثة جنيهات، وأربع علب بسكويت ثمن العلبة جنيهان. حسابها هو ثلاثة زائد أربعة في اثنين. نضرب أولًا: أربعة في اثنين يساوي ثمانية، وهذا ثمن البسكويت. ثم نجمع: ثلاثة زائد ثمانية يساوي أحد عشر. تدفع سلمى أحد عشر جنيهًا."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 2,
+        "cols": 3
+      },
+      "check": {
+        "q": {
+          "en": "5 + 2 × 3 = ?",
+          "ar": "5 + 2 × 3 = ؟"
+        },
+        "options": {
+          "en": [
+            "11",
+            "21"
+          ],
+          "ar": [
+            "11",
+            "21"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "Multiply first: 2 × 3 = 6. Then add: 5 + 6 = **11**.\n\nAdding first gives 7 × 3 = 21. That breaks the rule.\n\nThe × can come first in the line too: 2 × 3 + 5 = 6 + 5 = **11**.",
+        "ar": "نضرب أولًا: 2 × 3 = 6. ثم نجمع: 5 + 6 = **11**.\n\nأما الجمع أولًا فيعطي 7 × 3 = 21، وهذا يخالف القاعدة.\n\nوقد يأتي الضرب في أول التعبير: 2 × 3 + 5 = 6 + 5 = **11**."
+      },
+      "say": {
+        "en": "Multiply first: two times three is six. Then add: five plus six is eleven. Adding first gives seven times three, twenty-one. That breaks the rule. The times sign can come first too: two times three plus five is six plus five, eleven.",
+        "ar": "نضرب أولًا: اثنان في ثلاثة يساوي ستة. ثم نجمع: خمسة زائد ستة يساوي أحد عشر. أما الجمع أولًا فيعطي سبعة في ثلاثة يساوي واحدًا وعشرين، وهذا يخالف القاعدة. وقد يأتي الضرب في أول التعبير: اثنان في ثلاثة زائد خمسة يساوي ستة زائد خمسة، أي أحد عشر."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "array",
+      "params": {
+        "exact": [
+          3,
+          4
+        ],
+        "max": 10
+      },
+      "text": {
+        "en": "In 7 + 3 × 4 the multiplication is done first. Build it as an array.",
+        "ar": "في التعبير 7 + 3 × 4 نُجري الضرب أولًا. ابنِه في صورة نموذج صفوف."
+      },
+      "prompt": {
+        "en": "Build 3 × 4: 3 rows of 4.",
+        "ar": "ابنِ 3 × 4: ثلاثة صفوف في كل صف 4."
+      },
+      "say": {
+        "en": "In seven plus three times four, the multiplication is done first. Build three times four: three rows of four.",
+        "ar": "في التعبير سبعة زائد ثلاثة في أربعة نُجري الضرب أولًا. ابنِ ثلاثة في أربعة: ثلاثة صفوف في كل صف أربعة."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 3,
+        "cols": 4
+      },
+      "check": {
+        "q": {
+          "en": "So 7 + 3 × 4 = ?",
+          "ar": "إذن 7 + 3 × 4 = ؟"
+        },
+        "options": {
+          "en": [
+            "19",
+            "40"
+          ],
+          "ar": [
+            "19",
+            "40"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "3 × 4 = 12 dots. Then 7 + 12 = **19**.\n\nAdding first would give 10 × 4 = 40, which is wrong.",
+        "ar": "3 × 4 = 12 نقطة. ثم 7 + 12 = **19**.\n\nالجمع أولًا يعطي 10 × 4 = 40، وهذا خطأ."
+      },
+      "say": {
+        "en": "Three times four is twelve dots. Then seven plus twelve is nineteen. Adding first would give ten times four, forty, which is wrong.",
+        "ar": "ثلاثة في أربعة يساوي اثنتي عشرة نقطة. ثم سبعة زائد اثني عشر يساوي تسعة عشر. الجمع أولًا يعطي عشرة في أربعة يساوي أربعين، وهذا خطأ."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "blocks",
+        "n": 19
+      },
+      "text": {
+        "en": "**Remember:** when an expression has + and ×, do the **×** first, then the **+**.\n\n7 + 3 × 4 = 7 + 12 = 19. Everyone gets the same answer!",
+        "ar": "**تذكّر:** إذا كان في التعبير جمع وضرب، نُجري **الضرب** أولًا ثم **الجمع**.\n\n7 + 3 × 4 = 7 + 12 = 19. وهكذا يحصل الجميع على الناتج نفسه!"
+      },
+      "say": {
+        "en": "Remember: when an expression has plus and times, do the times first, then the plus. Seven plus three times four is seven plus twelve, nineteen. Everyone gets the same answer!",
+        "ar": "تذكّر: إذا كان في التعبير جمع وضرب، نُجري الضرب أولًا ثم الجمع. سبعة زائد ثلاثة في أربعة يساوي سبعة زائد اثني عشر، أي تسعة عشر. وهكذا يحصل الجميع على الناتج نفسه!"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "4 + 5 × 2 = ?",
+        "ar": "4 + 5 × 2 = ؟"
+      },
+      "options": {
+        "en": [
+          "14",
+          "18",
+          "11",
+          "20"
+        ],
+        "ar": [
+          "14",
+          "18",
+          "11",
+          "20"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Multiply first: 5 × 2 = 10, then 4 + 10 = 14. 18 comes from adding first.",
+        "ar": "نضرب أولًا: 5 × 2 = 10، ثم 4 + 10 = 14. أما 18 فتأتي من الجمع أولًا."
+      },
+      "say": {
+        "en": "Four plus five times two equals what?",
+        "ar": "أربعة زائد خمسة في اثنين يساوي كم؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which do you work out first in 9 + 6 × 3?",
+        "ar": "ماذا نحسب أولًا في 9 + 6 × 3؟"
+      },
+      "options": {
+        "en": [
+          "6 × 3",
+          "9 + 6",
+          "Either one",
+          "Always the left one"
+        ],
+        "ar": [
+          "6 × 3",
+          "9 + 6",
+          "أيهما",
+          "دائمًا الجزء الأيسر"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Multiplication comes before addition, wherever it is in the line.",
+        "ar": "الضرب يسبق الجمع أينما كان موضعه في التعبير."
+      },
+      "say": {
+        "en": "Which do you work out first in nine plus six times three?",
+        "ar": "ماذا نحسب أولًا في تسعة زائد ستة في ثلاثة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "6 × 2 + 8 = ?",
+        "ar": "6 × 2 + 8 = ؟"
+      },
+      "options": {
+        "en": [
+          "20",
+          "60",
+          "16",
+          "14"
+        ],
+        "ar": [
+          "20",
+          "60",
+          "16",
+          "14"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "6 × 2 = 12, then 12 + 8 = 20. 60 comes from adding 2 + 8 first.",
+        "ar": "6 × 2 = 12، ثم 12 + 8 = 20. أما 60 فتأتي من جمع 2 + 8 أولًا."
+      },
+      "say": {
+        "en": "Six times two plus eight equals what?",
+        "ar": "ستة في اثنين زائد ثمانية يساوي كم؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Hany has 10 pounds. He gets 3 more coins of 5 pounds each: 10 + 3 × 5. How much does he have now?",
+        "ar": "مع هاني 10 جنيهات، وأخذ 3 عملات أخرى قيمة كل منها 5 جنيهات: 10 + 3 × 5. كم معه الآن؟"
+      },
+      "options": {
+        "en": [
+          "25 pounds",
+          "65 pounds",
+          "18 pounds",
+          "15 pounds"
+        ],
+        "ar": [
+          "25 جنيهًا",
+          "65 جنيهًا",
+          "18 جنيهًا",
+          "15 جنيهًا"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "The coins are 3 × 5 = 15 pounds, then 10 + 15 = 25 pounds.",
+        "ar": "العملات 3 × 5 = 15 جنيهًا، ثم 10 + 15 = 25 جنيهًا."
+      },
+      "say": {
+        "en": "Hany has ten pounds. He gets three more coins of five pounds each. How much does he have now?",
+        "ar": "مع هاني عشرة جنيهات، وأخذ ثلاث عملات أخرى قيمة كل منها خمسة جنيهات. كم معه الآن؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which is correct?",
+        "ar": "أي مما يلي صحيح؟"
+      },
+      "options": {
+        "en": [
+          "2 + 3 × 4 = 14",
+          "2 + 3 × 4 = 20",
+          "2 + 3 × 4 = 9",
+          "2 + 3 × 4 = 24"
+        ],
+        "ar": [
+          "2 + 3 × 4 = 14",
+          "2 + 3 × 4 = 20",
+          "2 + 3 × 4 = 9",
+          "2 + 3 × 4 = 24"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "3 × 4 = 12, then 2 + 12 = 14. 20 comes from adding first.",
+        "ar": "3 × 4 = 12، ثم 2 + 12 = 14. أما 20 فتأتي من الجمع أولًا."
+      },
+      "say": {
+        "en": "Which is correct?",
+        "ar": "أي مما يلي صحيح؟"
+      }
+    },
+    {
+      "q": {
+        "en": "8 × 3 + 2 = ?",
+        "ar": "8 × 3 + 2 = ؟"
+      },
+      "options": {
+        "en": [
+          "26",
+          "40",
+          "13",
+          "48"
+        ],
+        "ar": [
+          "26",
+          "40",
+          "13",
+          "48"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "8 × 3 = 24, then 24 + 2 = 26. 40 comes from 8 × 5, adding first.",
+        "ar": "8 × 3 = 24، ثم 24 + 2 = 26. أما 40 فتأتي من 8 × 5 أي من الجمع أولًا."
+      },
+      "say": {
+        "en": "Eight times three plus two equals what?",
+        "ar": "ثمانية في ثلاثة زائد اثنين يساوي كم؟"
+      }
+    }
+  ]
+}

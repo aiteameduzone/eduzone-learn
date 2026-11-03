@@ -1,0 +1,386 @@
+{
+  "id": "g4-math-u07-01",
+  "title": {
+    "en": "Area Model and the Distributive Property",
+    "ar": "نموذج المساحة وخاصية التوزيع"
+  },
+  "objective": {
+    "en": "Multiply a two-digit number by a one-digit number by splitting it into tens and ones with an area model.",
+    "ar": "أن يضرب التلميذ عددًا مكونًا من رقمين في عدد مكون من رقم واحد بتجزئته إلى عشرات وآحاد باستخدام نموذج المساحة."
+  },
+  "refs": {
+    "egypt": [
+      "U7 · 7.1 Area model & distributive property"
+    ],
+    "ccss": [
+      "4.NBT.B.5"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "text": {
+        "en": "The school theatre has **6 rows** with **14 chairs** in each row.\n\nSplit 14 into **10 + 4**. The rectangle splits into two smaller rectangles:\n\n6 × 10 = 60 and 6 × 4 = 24\n\n60 + 24 = **84 chairs**",
+        "ar": "في مسرح المدرسة **6 صفوف**، في كل صف **14 كرسيًا**.\n\nنجزّئ 14 إلى **10 + 4**، فينقسم المستطيل إلى مستطيلين أصغر:\n\n6 × 10 = 60 و 6 × 4 = 24\n\n60 + 24 = **84 كرسيًا**"
+      },
+      "say": {
+        "en": "The school theatre has six rows with fourteen chairs in each row. Split fourteen into ten plus four. Six times ten is sixty, and six times four is twenty-four. Sixty plus twenty-four is eighty-four chairs.",
+        "ar": "في مسرح المدرسة ستة صفوف، في كل صف أربعة عشر كرسيًا. نجزّئ أربعة عشر إلى عشرة زائد أربعة، فينقسم المستطيل إلى مستطيلين أصغر. ستة في عشرة يساوي ستين، وستة في أربعة يساوي أربعة وعشرين. ستون زائد أربعة وعشرين يساوي أربعة وثمانين كرسيًا."
+      },
+      "visual": {
+        "kind": "grid",
+        "w": 14,
+        "h": 6,
+        "label": {
+          "en": "6 × 14",
+          "ar": "6 × 14"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "6 × 14 is the same as ...",
+          "ar": "6 × 14 هو نفسه ..."
+        },
+        "options": {
+          "en": [
+            "6 × 10 + 6 × 4",
+            "6 × 10 + 4",
+            "6 + 14"
+          ],
+          "ar": [
+            "6 × 10 + 6 × 4",
+            "6 × 10 + 4",
+            "6 + 14"
+          ]
+        },
+        "answer": 0
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "array",
+      "params": {
+        "exact": [
+          6,
+          10
+        ],
+        "max": 10
+      },
+      "text": {
+        "en": "The big part of 6 × 14 is the **tens part**: 6 rows of 10.",
+        "ar": "الجزء الكبير من 6 × 14 هو **جزء العشرات**: 6 صفوف في كل منها 10."
+      },
+      "prompt": {
+        "en": "Build the tens part of 6 × 14: 6 rows of 10.",
+        "ar": "ابنِ جزء العشرات من 6 × 14: ستة صفوف في كل منها عشرة."
+      },
+      "say": {
+        "en": "Build the tens part of six times fourteen: six rows of ten.",
+        "ar": "ابنِ جزء العشرات من ستة في أربعة عشر: ستة صفوف في كل صف عشرة."
+      }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "**Area model:** a felucca company has 7 boats with 23 seats each. Find 7 × 23.",
+        "ar": "**نموذج المساحة:** شركة فلوكات لديها 7 مراكب، في كل مركب 23 مقعدًا. أوجد 7 × 23."
+      },
+      "lines": {
+        "en": [
+          "23 = 20 + 3",
+          "7 × 20 = 140",
+          "7 × 3 = 21",
+          "140 + 21 = 161 seats"
+        ],
+        "ar": [
+          "23 = 20 + 3",
+          "7 × 20 = 140",
+          "7 × 3 = 21",
+          "140 + 21 = 161 مقعدًا"
+        ]
+      },
+      "say": {
+        "en": "Area model. A felucca company has seven boats with twenty-three seats each. Split twenty-three into twenty and three. Seven times twenty is one hundred forty. Seven times three is twenty-one. One hundred forty plus twenty-one is one hundred sixty-one seats.",
+        "ar": "نموذج المساحة. شركة فلوكات لديها سبعة مراكب، في كل مركب ثلاثة وعشرون مقعدًا. نجزّئ ثلاثة وعشرين إلى عشرين وثلاثة. سبعة في عشرين يساوي مائة وأربعين. سبعة في ثلاثة يساوي واحدًا وعشرين. مائة وأربعون زائد واحد وعشرين يساوي مائة وواحدًا وستين مقعدًا."
+      },
+      "visual": {
+        "kind": "grid",
+        "w": 23,
+        "h": 7,
+        "label": {
+          "en": "7 × 20 + 7 × 3",
+          "ar": "7 × 20 + 7 × 3"
+        }
+      }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Distributive property:** multiply each part, then add the partial products.\n\n5 × 18 = 5 × (10 + 8)\n\n= 5 × 10 + 5 × 8 = 50 + 40 = **90**",
+        "ar": "**خاصية التوزيع:** نضرب كل جزء، ثم نجمع النواتج الجزئية.\n\n5 × 18 = 5 × (10 + 8)\n\n= 5 × 10 + 5 × 8 = 50 + 40 = **90**"
+      },
+      "say": {
+        "en": "Distributive property: multiply each part, then add the partial products. Five times eighteen is five times ten plus five times eight. That is fifty plus forty, which is ninety.",
+        "ar": "خاصية التوزيع: نضرب كل جزء، ثم نجمع النواتج الجزئية. خمسة في ثمانية عشر يساوي خمسة في عشرة زائد خمسة في ثمانية. أي خمسون زائد أربعين، ويساوي تسعين."
+      },
+      "visual": {
+        "kind": "grid",
+        "w": 18,
+        "h": 5,
+        "label": {
+          "en": "5 × 18",
+          "ar": "5 × 18"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "5 × 18 = 5 × 10 + 5 × ?",
+          "ar": "5 × 18 = 5 × 10 + 5 × ؟"
+        },
+        "options": {
+          "en": [
+            "8",
+            "18",
+            "10"
+          ],
+          "ar": [
+            "8",
+            "18",
+            "10"
+          ]
+        },
+        "answer": 0
+      }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "Bigger tens: a dates shop fills 4 trays with 36 dates each. Find 4 × 36.",
+        "ar": "عشرات أكبر: محل تمور يملأ 4 صوانٍ، في كل صينية 36 تمرة. أوجد 4 × 36."
+      },
+      "lines": {
+        "en": [
+          "36 = 30 + 6",
+          "4 × 30 = 120",
+          "4 × 6 = 24",
+          "120 + 24 = 144 dates"
+        ],
+        "ar": [
+          "36 = 30 + 6",
+          "4 × 30 = 120",
+          "4 × 6 = 24",
+          "120 + 24 = 144 تمرة"
+        ]
+      },
+      "say": {
+        "en": "Bigger tens. A dates shop fills four trays with thirty-six dates each. Thirty-six is thirty plus six. Four times thirty is one hundred twenty. Four times six is twenty-four. One hundred twenty plus twenty-four is one hundred forty-four dates.",
+        "ar": "عشرات أكبر. محل تمور يملأ أربع صوانٍ، في كل صينية ستة وثلاثون تمرة. ستة وثلاثون تساوي ثلاثين زائد ستة. أربعة في ثلاثين يساوي مائة وعشرين. أربعة في ستة يساوي أربعة وعشرين. مائة وعشرون زائد أربعة وعشرين يساوي مائة وأربعًا وأربعين تمرة."
+      },
+      "visual": {
+        "kind": "grid",
+        "w": 36,
+        "h": 4,
+        "label": {
+          "en": "4 × 30 + 4 × 6",
+          "ar": "4 × 30 + 4 × 6"
+        }
+      }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Remember:**\n\nSplit the big number into tens and ones.\n\nMultiply **both** parts.\n\nAdd the partial products.",
+        "ar": "**تذكّر:**\n\nجزّئ العدد الكبير إلى عشرات وآحاد.\n\nاضرب **الجزأين** كليهما.\n\nاجمع النواتج الجزئية."
+      },
+      "say": {
+        "en": "Remember. Split the big number into tens and ones. Multiply both parts. Add the partial products.",
+        "ar": "تذكّر. جزّئ العدد الكبير إلى عشرات وآحاد. اضرب الجزأين كليهما. ثم اجمع النواتج الجزئية."
+      },
+      "visual": {
+        "kind": "grid",
+        "w": 14,
+        "h": 6,
+        "label": {
+          "en": "6 × 10 + 6 × 4 = 84",
+          "ar": "6 × 10 + 6 × 4 = 84"
+        }
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "3 × 17 = 3 × 10 + 3 × 7 = ?",
+        "ar": "3 × 17 = 3 × 10 + 3 × 7 = ؟"
+      },
+      "options": {
+        "en": [
+          "51",
+          "37",
+          "20",
+          "50"
+        ],
+        "ar": [
+          "51",
+          "37",
+          "20",
+          "50"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "3 × 10 = 30 and 3 × 7 = 21, so 30 + 21 = 51. 37 forgets to multiply the 7.",
+        "ar": "3 × 10 = 30 و 3 × 7 = 21، إذن 30 + 21 = 51. أما 37 فنسي ضرب الآحاد 7."
+      },
+      "say": {
+        "en": "Three times seventeen equals three times ten plus three times seven. What is the answer?",
+        "ar": "ثلاثة في سبعة عشر يساوي ثلاثة في عشرة زائد ثلاثة في سبعة. كم الناتج؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which is equal to 8 × 24?",
+        "ar": "أي مما يلي يساوي 8 × 24؟"
+      },
+      "options": {
+        "en": [
+          "8 × 20 + 8 × 4",
+          "8 × 20 + 4",
+          "8 + 20 + 4",
+          "8 × 2 + 8 × 4"
+        ],
+        "ar": [
+          "8 × 20 + 8 × 4",
+          "8 × 20 + 4",
+          "8 + 20 + 4",
+          "8 × 2 + 8 × 4"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "24 = 20 + 4, and we multiply BOTH parts by 8. The 2 in 24 means 20, not 2.",
+        "ar": "24 = 20 + 4، ونضرب الجزأين كليهما في 8. والرقم 2 في 24 قيمته 20 وليس 2."
+      },
+      "say": {
+        "en": "Which is equal to eight times twenty-four?",
+        "ar": "أي مما يلي يساوي ثمانية في أربعة وعشرين؟"
+      }
+    },
+    {
+      "q": {
+        "en": "9 × 12 = ?",
+        "ar": "9 × 12 = ؟"
+      },
+      "options": {
+        "en": [
+          "108",
+          "92",
+          "21",
+          "118"
+        ],
+        "ar": [
+          "108",
+          "92",
+          "21",
+          "118"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "9 × 10 = 90 and 9 × 2 = 18, so 90 + 18 = 108.",
+        "ar": "9 × 10 = 90 و 9 × 2 = 18، إذن 90 + 18 = 108."
+      },
+      "say": {
+        "en": "Nine times twelve equals what?",
+        "ar": "تسعة في اثني عشر يساوي كم؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A 6 by 25 rectangle is split into 6 × 20 and 6 × 5. What are the two partial products?",
+        "ar": "مستطيل أبعاده 6 و 25 قُسّم إلى 6 × 20 و 6 × 5. ما الناتجان الجزئيان؟"
+      },
+      "options": {
+        "en": [
+          "120 and 30",
+          "12 and 30",
+          "120 and 5",
+          "26 and 11"
+        ],
+        "ar": [
+          "120 و 30",
+          "12 و 30",
+          "120 و 5",
+          "26 و 11"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "6 × 20 = 120 and 6 × 5 = 30. Together they make 150.",
+        "ar": "6 × 20 = 120 و 6 × 5 = 30، ومجموعهما 150."
+      },
+      "say": {
+        "en": "A six by twenty-five rectangle is split into six times twenty and six times five. What are the two partial products?",
+        "ar": "مستطيل أبعاده ستة وخمسة وعشرون قُسّم إلى ستة في عشرين وستة في خمسة. ما الناتجان الجزئيان؟"
+      }
+    },
+    {
+      "q": {
+        "en": "7 feluccas each carry 15 people. How many people in total?",
+        "ar": "7 فلوكات تحمل كل منها 15 شخصًا. كم شخصًا في المجموع؟"
+      },
+      "options": {
+        "en": [
+          "105",
+          "75",
+          "22",
+          "115"
+        ],
+        "ar": [
+          "105",
+          "75",
+          "22",
+          "115"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "7 × 10 = 70 and 7 × 5 = 35, so 70 + 35 = 105. 75 multiplies only the 10.",
+        "ar": "7 × 10 = 70 و 7 × 5 = 35، إذن 70 + 35 = 105. أما 75 فضرب العشرة فقط."
+      },
+      "say": {
+        "en": "Seven feluccas each carry fifteen people. How many people in total?",
+        "ar": "سبع فلوكات تحمل كل منها خمسة عشر شخصًا. كم شخصًا في المجموع؟"
+      }
+    },
+    {
+      "q": {
+        "en": "4 × 38 = 4 × 30 + ?",
+        "ar": "4 × 38 = 4 × 30 + ؟"
+      },
+      "options": {
+        "en": [
+          "32",
+          "8",
+          "12",
+          "38"
+        ],
+        "ar": [
+          "32",
+          "8",
+          "12",
+          "38"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "38 = 30 + 8, so the missing part is 4 × 8 = 32.",
+        "ar": "38 = 30 + 8، إذن الجزء الناقص هو 4 × 8 = 32."
+      },
+      "say": {
+        "en": "Four times thirty-eight equals four times thirty plus what?",
+        "ar": "أربعة في ثمانية وثلاثين يساوي أربعة في ثلاثين زائد كم؟"
+      }
+    }
+  ]
+}
