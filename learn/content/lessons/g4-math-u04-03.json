@@ -1,0 +1,342 @@
+{
+  "id": "g4-math-u04-03",
+  "title": {
+    "en": "Area: Counting Unit Squares",
+    "ar": "المساحة: عدّ الوحدات المربعة"
+  },
+  "objective": {
+    "en": "Understand area as the number of unit squares that cover a shape, and find it by counting rows of squares.",
+    "ar": "أن يتعرّف التلميذ المساحة بأنها عدد الوحدات المربعة التي تغطي الشكل، ويوجدها بعدّ صفوف المربعات."
+  },
+  "refs": {
+    "egypt": [
+      "U4 · Area with unit squares"
+    ],
+    "ccss": [
+      "4.MD.A.3"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "grid",
+        "w": 4,
+        "h": 3,
+        "label": {
+          "en": "How many squares?",
+          "ar": "كم مربعًا؟"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "How many unit squares cover this rectangle?",
+          "ar": "كم وحدة مربعة تغطي هذا المستطيل؟"
+        },
+        "options": {
+          "en": [
+            "7",
+            "12",
+            "14"
+          ],
+          "ar": [
+            "7",
+            "12",
+            "14"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "Perimeter goes **around** a shape. **Area** is the space **inside** it.\n\nWe measure area by counting the **unit squares** that cover it with no gaps.",
+        "ar": "المحيط يدور **حول** الشكل، أما **المساحة** فهي ما **داخل** الشكل.\n\nنقيس المساحة بعدّ **الوحدات المربعة** التي تغطيه دون فراغات."
+      },
+      "say": {
+        "en": "Perimeter goes around a shape. Area is the space inside it. We measure area by counting the unit squares that cover it with no gaps. There are three rows of four squares, so twelve unit squares.",
+        "ar": "المحيط يدور حول الشكل، أما المساحة فهي ما داخل الشكل. نقيس المساحة بعدّ الوحدات المربعة التي تغطيه دون فراغات. هنا ثلاثة صفوف في كل صف أربعة مربعات، أي اثنتا عشرة وحدة مربعة."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "grid",
+        "w": 5,
+        "h": 3
+      },
+      "text": {
+        "en": "**Count by rows.** Count the squares in one row, then add a row at a time. Each square is **1 square unit**.",
+        "ar": "**العدّ بالصفوف.** نعدّ مربعات صف واحد، ثم نضيف صفًا بعد صف. كل مربع = **وحدة مربعة واحدة**."
+      },
+      "lines": {
+        "en": [
+          "1 row = 5 squares",
+          "5, 10, 15",
+          "Area = 15 square units"
+        ],
+        "ar": [
+          "الصف الواحد = 5 مربعات",
+          "5 ، 10 ، 15",
+          "المساحة = 15 وحدة مربعة"
+        ]
+      },
+      "say": {
+        "en": "Count by rows. Count the squares in one row, then add a row at a time. Each square is one square unit. This shape has three rows of five. Five, ten, fifteen. The area is fifteen square units.",
+        "ar": "العدّ بالصفوف. نعدّ مربعات صف واحد، ثم نضيف صفًا بعد صف. كل مربع وحدة مربعة واحدة. هذا الشكل فيه ثلاثة صفوف في كل منها خمسة مربعات. خمسة، عشرة، خمسة عشر. إذن المساحة خمس عشرة وحدة مربعة."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "grid",
+        "w": 5,
+        "h": 2
+      },
+      "check": {
+        "q": {
+          "en": "Which number is the AREA of this 5 × 2 shape?",
+          "ar": "أي عدد هو مساحة هذا الشكل 5 × 2؟"
+        },
+        "options": {
+          "en": [
+            "10 square units",
+            "14 units",
+            "7 units"
+          ],
+          "ar": [
+            "10 وحدات مربعة",
+            "14 وحدة",
+            "7 وحدات"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "Area and perimeter are **different**. This 5 × 2 shape:\n\nArea = 10 square units (squares inside).\n\nPerimeter = 5 + 2 + 5 + 2 = 14 units (edge around).",
+        "ar": "المساحة والمحيط **مختلفان**. هذا الشكل 5 × 2:\n\nالمساحة = 10 وحدات مربعة (المربعات داخله).\n\nالمحيط = 5 + 2 + 5 + 2 = 14 وحدة (الحدود حوله)."
+      },
+      "say": {
+        "en": "Area and perimeter are different. This shape is five by two. The area is ten square units, the squares inside. The perimeter is five plus two plus five plus two, fourteen units, the edge around.",
+        "ar": "المساحة والمحيط مختلفان. هذا الشكل خمسة في اثنين. المساحة عشر وحدات مربعة، وهي المربعات داخله. والمحيط خمسة زائد اثنين زائد خمسة زائد اثنين، أي أربع عشرة وحدة، وهو الحدود حوله."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "area-grid",
+      "params": {
+        "target": {
+          "area": 12
+        },
+        "w": 1,
+        "h": 1
+      },
+      "text": {
+        "en": "Each coloured square is 1 square unit. Change the length and width.",
+        "ar": "كل مربع ملوّن = وحدة مربعة واحدة. غيّر الطول والعرض."
+      },
+      "prompt": {
+        "en": "Make a rectangle that covers exactly 12 unit squares.",
+        "ar": "كوّن مستطيلًا يغطي 12 وحدة مربعة بالضبط."
+      },
+      "say": {
+        "en": "Each coloured square is one square unit. Make a rectangle that covers exactly twelve unit squares.",
+        "ar": "كل مربع ملوّن وحدة مربعة واحدة. كوّن مستطيلًا يغطي اثنتي عشرة وحدة مربعة بالضبط."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "grid",
+        "w": 6,
+        "h": 4,
+        "label": {
+          "en": "24 square units",
+          "ar": "24 وحدة مربعة"
+        }
+      },
+      "text": {
+        "en": "**Remember:**\n\nArea = how many unit squares cover the inside.\n\nCount by rows to be fast.\n\nWe write area in **square units**, like square centimetres (cm²) or square metres (m²).",
+        "ar": "**تذكّر:**\n\nالمساحة = عدد الوحدات المربعة التي تغطي داخل الشكل.\n\nنعدّ بالصفوف لنكون أسرع.\n\nنكتب المساحة **بالوحدات المربعة** مثل السنتيمتر المربع (سم²) أو المتر المربع (م²)."
+      },
+      "say": {
+        "en": "Remember. Area is how many unit squares cover the inside. Count by rows to be fast. We write area in square units, like square centimetres or square metres. Here, four rows of six make twenty-four square units.",
+        "ar": "تذكّر. المساحة هي عدد الوحدات المربعة التي تغطي داخل الشكل. نعدّ بالصفوف لنكون أسرع. نكتب المساحة بالوحدات المربعة مثل السنتيمتر المربع أو المتر المربع. هنا أربعة صفوف في كل منها ستة، أي أربع وعشرون وحدة مربعة."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "A rectangle has 3 rows of 7 unit squares. What is its area?",
+        "ar": "مستطيل فيه 3 صفوف، في كل صف 7 وحدات مربعة. ما مساحته؟"
+      },
+      "options": {
+        "en": [
+          "10 square units",
+          "20 square units",
+          "21 square units",
+          "14 square units"
+        ],
+        "ar": [
+          "10 وحدات مربعة",
+          "20 وحدة مربعة",
+          "21 وحدة مربعة",
+          "14 وحدة مربعة"
+        ]
+      },
+      "answer": 2,
+      "explain": {
+        "en": "7, 14, 21: three rows of 7 make 21. 20 is the perimeter, and 10 just adds 3 + 7.",
+        "ar": "7، 14، 21: ثلاثة صفوف من 7 تساوي 21. أما 20 فهو المحيط، و 10 هو 3 + 7 فقط."
+      },
+      "say": {
+        "en": "A rectangle has three rows of seven unit squares. What is its area?",
+        "ar": "مستطيل فيه ثلاثة صفوف، في كل صف سبع وحدات مربعة. ما مساحته؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which unit do we use for area?",
+        "ar": "أي وحدة نستخدمها لقياس المساحة؟"
+      },
+      "options": {
+        "en": [
+          "square centimetre (cm²)",
+          "centimetre (cm)",
+          "kilogram (kg)",
+          "litre (L)"
+        ],
+        "ar": [
+          "السنتيمتر المربع (سم²)",
+          "السنتيمتر (سم)",
+          "الكيلوجرام (كجم)",
+          "اللتر (ل)"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Area counts squares, so we use square units. Centimetres measure length, like perimeter.",
+        "ar": "المساحة عدّ للمربعات، فنستخدم الوحدات المربعة. أما السنتيمتر فيقيس الأطوال مثل المحيط."
+      },
+      "say": {
+        "en": "Which unit do we use for area: square centimetre, centimetre, kilogram or litre?",
+        "ar": "أي وحدة نستخدمها لقياس المساحة: السنتيمتر المربع أم السنتيمتر أم الكيلوجرام أم اللتر؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A kitchen floor has 5 rows of 6 square tiles. How many tiles cover the floor?",
+        "ar": "أرضية مطبخ فيها 5 صفوف، في كل صف 6 بلاطات مربعة. كم بلاطة تغطي الأرضية؟"
+      },
+      "options": {
+        "en": [
+          "11",
+          "22",
+          "36",
+          "30"
+        ],
+        "ar": [
+          "11",
+          "22",
+          "36",
+          "30"
+        ]
+      },
+      "answer": 3,
+      "explain": {
+        "en": "6, 12, 18, 24, 30: five rows of 6 tiles is 30 tiles. 22 is the perimeter.",
+        "ar": "6، 12، 18، 24، 30: خمسة صفوف من 6 بلاطات = 30 بلاطة. أما 22 فهو المحيط."
+      },
+      "say": {
+        "en": "A kitchen floor has five rows of six square tiles. How many tiles cover the floor?",
+        "ar": "أرضية مطبخ فيها خمسة صفوف، في كل صف ست بلاطات مربعة. كم بلاطة تغطي الأرضية؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which one is an area?",
+        "ar": "أيّ مما يلي يمثل مساحة؟"
+      },
+      "options": {
+        "en": [
+          "The fence around a garden",
+          "The carpet covering a classroom floor",
+          "The frame around a picture",
+          "The line around a football pitch"
+        ],
+        "ar": [
+          "السور حول الحديقة",
+          "السجادة التي تغطي أرضية الفصل",
+          "الإطار حول الصورة",
+          "الخط حول ملعب كرة القدم"
+        ]
+      },
+      "answer": 1,
+      "explain": {
+        "en": "Area is the surface that is covered, like a carpet on a floor. Fences, frames and edge lines go around: that is perimeter.",
+        "ar": "المساحة هي السطح الذي نغطيه، مثل السجادة على الأرضية. أما السور والإطار والخط فتدور حول الشكل، وهذا هو المحيط."
+      },
+      "say": {
+        "en": "Which one is an area?",
+        "ar": "أيّ مما يلي يمثل مساحة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A rectangle has 2 rows of 9 unit squares. What are its area and perimeter?",
+        "ar": "مستطيل فيه صفّان، في كل صف 9 وحدات مربعة. ما مساحته وما محيطه؟"
+      },
+      "options": {
+        "en": [
+          "Area 18, perimeter 22",
+          "Area 22, perimeter 18",
+          "Area 11, perimeter 18",
+          "Area 18, perimeter 11"
+        ],
+        "ar": [
+          "المساحة 18، المحيط 22",
+          "المساحة 22، المحيط 18",
+          "المساحة 11، المحيط 18",
+          "المساحة 18، المحيط 11"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Area: 9 + 9 = 18 squares. Perimeter: 9 + 2 + 9 + 2 = 22 units. Don't swap them!",
+        "ar": "المساحة: 9 + 9 = 18 مربعًا. المحيط: 9 + 2 + 9 + 2 = 22 وحدة. لا تخلط بينهما!"
+      },
+      "say": {
+        "en": "A rectangle has two rows of nine unit squares. What are its area and perimeter?",
+        "ar": "مستطيل فيه صفّان، في كل صف تسع وحدات مربعة. ما مساحته وما محيطه؟ هل المساحة ثمانية عشر والمحيط اثنان وعشرون، أم المساحة اثنان وعشرون والمحيط ثمانية عشر، أم المساحة أحد عشر والمحيط ثمانية عشر، أم المساحة ثمانية عشر والمحيط أحد عشر؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A square has 4 rows of 4 unit squares. What is its area?",
+        "ar": "مربع فيه 4 صفوف، في كل صف 4 وحدات مربعة. ما مساحته؟"
+      },
+      "options": {
+        "en": [
+          "8 square units",
+          "16 square units",
+          "12 square units",
+          "4 square units"
+        ],
+        "ar": [
+          "8 وحدات مربعة",
+          "16 وحدة مربعة",
+          "12 وحدة مربعة",
+          "4 وحدات مربعة"
+        ]
+      },
+      "answer": 1,
+      "explain": {
+        "en": "4, 8, 12, 16: four rows of 4 make 16 squares.",
+        "ar": "4، 8، 12، 16: أربعة صفوف من 4 تساوي 16 مربعًا."
+      },
+      "say": {
+        "en": "A square has four rows of four unit squares. What is its area?",
+        "ar": "مربع فيه أربعة صفوف، في كل صف أربع وحدات مربعة. ما مساحته؟"
+      }
+    }
+  ]
+}

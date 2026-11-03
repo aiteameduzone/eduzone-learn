@@ -1,0 +1,459 @@
+{
+  "id": "g4-math-u05-04",
+  "title": {
+    "en": "Turn-Around, One and Zero",
+    "ar": "خاصية الإبدال والضرب في الواحد والصفر"
+  },
+  "objective": {
+    "en": "Use the commutative property, multiplying by 1 and multiplying by 0 to find products quickly.",
+    "ar": "أن يستخدم التلميذ خاصية الإبدال والضرب في الواحد والضرب في الصفر لإيجاد نواتج الضرب بسرعة."
+  },
+  "refs": {
+    "egypt": [
+      "U5 · 5.2 Commutative, identity and zero properties"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 3,
+        "cols": 5
+      },
+      "check": {
+        "q": {
+          "en": "3 × 5 = 15. So what is 5 × 3?",
+          "ar": "3 × 5 = 15. إذن كم يساوي 5 × 3؟"
+        },
+        "options": {
+          "en": [
+            "8",
+            "53",
+            "15"
+          ],
+          "ar": [
+            "8",
+            "53",
+            "15"
+          ]
+        },
+        "answer": 2
+      },
+      "text": {
+        "en": "This array has 3 rows of 5: **3 × 5 = 15**.\n\nTurn it on its side: now it has 5 rows of 3. Same dots, so **5 × 3 = 15** too.\n\nThis is the **commutative property**: changing the order does not change the product.",
+        "ar": "في هذه المصفوفة 3 صفوف في كل منها 5: **3 × 5 = 15**.\n\nأدِرها على جنبها: تصبح 5 صفوف في كل منها 3. النقاط نفسها، إذن **5 × 3 = 15** أيضًا.\n\nهذه **خاصية الإبدال**: تغيير ترتيب العددين لا يغيّر حاصل الضرب."
+      },
+      "say": {
+        "en": "This array has three rows of five. Three times five is fifteen. Turn it on its side: now it has five rows of three. Same dots, so five times three is fifteen too. This is the commutative property: changing the order does not change the product.",
+        "ar": "في هذه المصفوفة ثلاثة صفوف في كل منها خمسة. ثلاثة في خمسة يساوي خمسة عشر. أدِرها على جنبها فتصبح خمسة صفوف في كل منها ثلاثة. النقاط نفسها، إذن خمسة في ثلاثة يساوي خمسة عشر أيضًا. هذه خاصية الإبدال: تغيير ترتيب العددين لا يغيّر حاصل الضرب."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "array",
+      "params": {
+        "target": 24,
+        "rows": 1,
+        "cols": 1,
+        "exact": [
+          6,
+          4
+        ]
+      },
+      "text": {
+        "en": "4 × 6 = 24. Build it either way: 4 rows of 6 or 6 rows of 4. Both show 24 dots!",
+        "ar": "4 × 6 = 24. كوّنها بأي ترتيب: 4 صفوف في كل منها 6، أو 6 صفوف في كل منها 4. كلتاهما فيها 24 نقطة!"
+      },
+      "prompt": {
+        "en": "Build an array for 4 × 6 or 6 × 4.",
+        "ar": "كوّن مصفوفة لـ 4 × 6 أو 6 × 4."
+      },
+      "say": {
+        "en": "Four times six is twenty four. Build it either way: four rows of six, or six rows of four. Both show twenty four dots!",
+        "ar": "أربعة في ستة يساوي أربعة وعشرين. كوّنها بأي ترتيب: أربعة صفوف في كل منها ستة، أو ستة صفوف في كل منها أربعة. كلتاهما فيها أربع وعشرون نقطة!"
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "array",
+        "rows": 1,
+        "cols": 7,
+        "label": {
+          "en": "1 × 7 = 7",
+          "ar": "1 × 7 = 7"
+        }
+      },
+      "text": {
+        "en": "**Multiplying by 1:** one group of 7 is just 7. Any number × 1 is the number itself.",
+        "ar": "**الضرب في الواحد:** مجموعة واحدة من 7 هي 7. أي عدد × 1 = العدد نفسه."
+      },
+      "lines": {
+        "en": [
+          "1 × 7 = 7",
+          "250 × 1 = 250"
+        ],
+        "ar": [
+          "1 × 7 = 7",
+          "250 × 1 = 250"
+        ]
+      },
+      "say": {
+        "en": "Multiplying by one: one group of seven is just seven. Any number times one is the number itself. One times seven is seven. Two hundred and fifty times one is two hundred and fifty.",
+        "ar": "الضرب في الواحد: مجموعة واحدة من سبعة هي سبعة. أي عدد في واحد يساوي العدد نفسه. واحد في سبعة يساوي سبعة. مئتان وخمسون في واحد يساوي مئتين وخمسين."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "bars",
+        "items": [
+          {
+            "f": [
+              0,
+              1
+            ],
+            "label": {
+              "en": "0",
+              "ar": "0"
+            }
+          },
+          {
+            "f": [
+              0,
+              1
+            ],
+            "label": {
+              "en": "0",
+              "ar": "0"
+            }
+          },
+          {
+            "f": [
+              0,
+              1
+            ],
+            "label": {
+              "en": "0",
+              "ar": "0"
+            }
+          },
+          {
+            "f": [
+              0,
+              1
+            ],
+            "label": {
+              "en": "0",
+              "ar": "0"
+            }
+          },
+          {
+            "f": [
+              0,
+              1
+            ],
+            "label": {
+              "en": "0",
+              "ar": "0"
+            },
+            "color": "blue"
+          }
+        ],
+        "ops": [
+          "+",
+          "+",
+          "+",
+          "="
+        ],
+        "hideLabels": true,
+        "emoji": "🍽️"
+      },
+      "check": {
+        "q": {
+          "en": "4 plates, 0 ta'ameya on each. How many in all?",
+          "ar": "4 أطباق، على كل طبق 0 طعمية. كم قرصًا في المجموع؟"
+        },
+        "options": {
+          "en": [
+            "4",
+            "0",
+            "1"
+          ],
+          "ar": [
+            "4",
+            "0",
+            "1"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "**Multiplying by 0:** 4 plates with **no** ta'ameya on each one: 0 + 0 + 0 + 0 = 0.\n\nSo **4 × 0 = 0**. Any number × 0 is 0.",
+        "ar": "**الضرب في الصفر:** 4 أطباق **ليس** على أي منها طعمية: 0 + 0 + 0 + 0 = 0.\n\nإذن **4 × 0 = 0**. أي عدد × 0 = 0."
+      },
+      "say": {
+        "en": "Multiplying by zero: four plates with no ta'ameya on each one. Zero plus zero plus zero plus zero is zero. So four times zero is zero. Any number times zero is zero.",
+        "ar": "الضرب في الصفر: أربعة أطباق ليس على أي منها طعمية. صفر زائد صفر زائد صفر زائد صفر يساوي صفرًا. إذن أربعة في صفر يساوي صفرًا. أي عدد في صفر يساوي صفرًا."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "array",
+        "rows": 7,
+        "cols": 9,
+        "label": {
+          "en": "7 × 9 = 9 × 7 = 63",
+          "ar": "7 × 9 = 9 × 7 = 63"
+        }
+      },
+      "text": {
+        "en": "Use the properties to answer fast, with no long working.",
+        "ar": "استخدم الخواص لتجيب بسرعة دون حسابات طويلة."
+      },
+      "lines": {
+        "en": [
+          "7 × 9 = 63 → 9 × 7 = 63 (commutative)",
+          "1 × 358 = 358 (times 1)",
+          "0 × 1,250 = 0 (times 0)"
+        ],
+        "ar": [
+          "7 × 9 = 63 ← 9 × 7 = 63 (الإبدال)",
+          "1 × 358 = 358 (الضرب في الواحد)",
+          "0 × 1250 = 0 (الضرب في الصفر)"
+        ]
+      },
+      "say": {
+        "en": "Use the properties to answer fast. Seven times nine is sixty three, so nine times seven is sixty three. One times three hundred and fifty eight is three hundred and fifty eight. Zero times one thousand two hundred and fifty is zero.",
+        "ar": "استخدم الخواص لتجيب بسرعة. سبعة في تسعة يساوي ثلاثة وستين، إذن تسعة في سبعة يساوي ثلاثة وستين. واحد في ثلاثمئة وثمانية وخمسين يساوي ثلاثمئة وثمانية وخمسين. صفر في ألف ومئتين وخمسين يساوي صفرًا."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 2,
+        "cols": 6,
+        "label": {
+          "en": "2 × 6 = 6 × 2 = 12",
+          "ar": "2 × 6 = 6 × 2 = 12"
+        }
+      },
+      "text": {
+        "en": "**Remember:**\n\na × b = b × a\n\nnumber × 1 = the number\n\nnumber × 0 = 0",
+        "ar": "**تذكّر:**\n\nأ × ب = ب × أ\n\nالعدد × 1 = العدد نفسه\n\nالعدد × 0 = 0"
+      },
+      "say": {
+        "en": "Remember. A times b equals b times a. A number times one is the number itself. A number times zero is zero.",
+        "ar": "تذكّر. أ في ب يساوي ب في أ. العدد في واحد يساوي العدد نفسه. العدد في صفر يساوي صفرًا."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "8 × 6 = 48. So 6 × 8 = ?",
+        "ar": "8 × 6 = 48. إذن 6 × 8 = ؟"
+      },
+      "options": {
+        "en": [
+          "48",
+          "14",
+          "86",
+          "2"
+        ],
+        "ar": [
+          "48",
+          "14",
+          "86",
+          "2"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Commutative property: the order changes, the product stays 48.",
+        "ar": "خاصية الإبدال: تغيّر الترتيب ويبقى الناتج 48."
+      },
+      "say": {
+        "en": "Eight times six is forty eight. So six times eight equals?",
+        "ar": "ثمانية في ستة يساوي ثمانية وأربعين. إذن ستة في ثمانية يساوي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which shows the commutative property?",
+        "ar": "أي مما يلي يوضح خاصية الإبدال؟"
+      },
+      "options": {
+        "en": [
+          "4 × 9 = 9 × 4",
+          "4 × 9 = 4 + 9",
+          "4 × 1 = 4",
+          "4 × 0 = 0"
+        ],
+        "ar": [
+          "4 × 9 = 9 × 4",
+          "4 × 9 = 4 + 9",
+          "4 × 1 = 4",
+          "4 × 0 = 0"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Commutative means swapping the order of the two factors.",
+        "ar": "خاصية الإبدال تعني تبديل ترتيب العددين المضروبين."
+      },
+      "say": {
+        "en": "Which shows the commutative property?",
+        "ar": "أي مما يلي يوضح خاصية الإبدال؟"
+      }
+    },
+    {
+      "q": {
+        "en": "1 × 275 = ?",
+        "ar": "1 × 275 = ؟"
+      },
+      "options": {
+        "en": [
+          "275",
+          "1",
+          "276",
+          "0"
+        ],
+        "ar": [
+          "275",
+          "1",
+          "276",
+          "0"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Any number × 1 is the number itself. 276 adds 1 instead.",
+        "ar": "أي عدد × 1 = العدد نفسه. أما 276 فجمعت 1."
+      },
+      "say": {
+        "en": "One times two hundred and seventy five equals?",
+        "ar": "واحد في مئتين وخمسة وسبعين يساوي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "0 × 538 = ?",
+        "ar": "0 × 538 = ؟"
+      },
+      "options": {
+        "en": [
+          "0",
+          "538",
+          "1",
+          "5,380"
+        ],
+        "ar": [
+          "0",
+          "538",
+          "1",
+          "5380"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Any number × 0 is 0. Zero groups of anything is nothing.",
+        "ar": "أي عدد × 0 = 0. صفر من المجموعات لا شيء."
+      },
+      "say": {
+        "en": "Zero times five hundred and thirty eight equals?",
+        "ar": "صفر في خمسمئة وثمانية وثلاثين يساوي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "7 × ___ = 7",
+        "ar": "أكمل: 7 × ___ = 7"
+      },
+      "options": {
+        "en": [
+          "1",
+          "0",
+          "7",
+          "49"
+        ],
+        "ar": [
+          "1",
+          "0",
+          "7",
+          "49"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Only × 1 keeps the number the same. 7 × 0 = 0 and 7 × 7 = 49.",
+        "ar": "الضرب في 1 فقط يُبقي العدد كما هو. 7 × 0 = 0 و 7 × 7 = 49."
+      },
+      "say": {
+        "en": "Seven times what equals seven?",
+        "ar": "سبعة في كم يساوي سبعة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "There are 5 boxes and every box is empty. How many mangoes are there in all?",
+        "ar": "عندنا 5 صناديق، وكلها فارغة. كم حبة مانجو في المجموع؟"
+      },
+      "options": {
+        "en": [
+          "0",
+          "5",
+          "1",
+          "50"
+        ],
+        "ar": [
+          "0",
+          "5",
+          "1",
+          "50"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "5 × 0 = 0. Five boxes of nothing is nothing.",
+        "ar": "5 × 0 = 0. خمسة صناديق فارغة لا تحوي شيئًا."
+      },
+      "say": {
+        "en": "There are five boxes and every box is empty. How many mangoes are there in all?",
+        "ar": "عندنا خمسة صناديق، وكلها فارغة. كم حبة مانجو في المجموع؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which one is NOT equal to 12?",
+        "ar": "أي مما يلي لا يساوي 12؟"
+      },
+      "options": {
+        "en": [
+          "12 × 0",
+          "12 × 1",
+          "3 × 4",
+          "4 × 3"
+        ],
+        "ar": [
+          "12 × 0",
+          "12 × 1",
+          "3 × 4",
+          "4 × 3"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "12 × 0 = 0. The others are all 12.",
+        "ar": "12 × 0 = 0. أما الباقي فكله يساوي 12."
+      },
+      "say": {
+        "en": "Which one is not equal to twelve?",
+        "ar": "أي مما يلي لا يساوي اثني عشر؟"
+      }
+    }
+  ]
+}

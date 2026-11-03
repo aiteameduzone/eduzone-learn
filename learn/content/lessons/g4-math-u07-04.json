@@ -1,0 +1,378 @@
+{
+  "id": "g4-math-u07-04",
+  "title": {
+    "en": "Division: Sharing, Grouping and Multiplication",
+    "ar": "القسمة: التوزيع والتجميع وعلاقتها بالضرب"
+  },
+  "objective": {
+    "en": "Understand division as equal sharing and as equal grouping, name its parts, use multiplication facts to divide and check, and divide multiples of 10, 100 and 1,000.",
+    "ar": "أن يفهم التلميذ القسمة كتوزيع متساوٍ وكتجميع متساوٍ، ويسمي أجزاءها، ويستخدم حقائق الضرب للقسمة والتحقق، ويقسم مضاعفات العشرة والمائة والألف."
+  },
+  "refs": {
+    "egypt": [
+      "U7 · 7.2 Division & multiplication, patterns"
+    ],
+    "ccss": [
+      "4.NBT.B.6"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Sharing:** 24 sweets are shared equally among 4 children.\n\n24 ÷ 4 = **6** sweets each.\n\n24 is the **dividend**, 4 is the **divisor**, 6 is the **quotient**.",
+        "ar": "**التوزيع:** وُزّعت 24 حلوى بالتساوي على 4 أطفال.\n\n24 ÷ 4 = **6** حلوى لكل طفل.\n\n24 هو **المقسوم**، و 4 هو **المقسوم عليه**، و 6 هو **خارج القسمة**."
+      },
+      "say": {
+        "en": "Sharing: twenty-four sweets are shared equally among four children. Twenty-four divided by four is six sweets each. Twenty-four is the dividend, four is the divisor, and six is the quotient.",
+        "ar": "التوزيع: وُزّعت أربع وعشرون حلوى بالتساوي على أربعة أطفال. أربعة وعشرون مقسومًا على أربعة يساوي ست حلوى لكل طفل. أربعة وعشرون هو المقسوم، وأربعة هو المقسوم عليه، وستة هو خارج القسمة."
+      },
+      "visual": {
+        "kind": "blocks",
+        "n": 24
+      },
+      "check": {
+        "q": {
+          "en": "24 sweets shared equally by 4 children. How many each?",
+          "ar": "24 حلوى توزّع بالتساوي على 4 أطفال. كم حلوى لكل طفل؟"
+        },
+        "options": {
+          "en": [
+            "6",
+            "20",
+            "28",
+            "4"
+          ],
+          "ar": [
+            "6",
+            "20",
+            "28",
+            "4"
+          ]
+        },
+        "answer": 0
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "array",
+      "params": {
+        "exact": [
+          4,
+          6
+        ],
+        "max": 10
+      },
+      "text": {
+        "en": "Each row is one child. Put the 24 sweets into 4 equal rows.",
+        "ar": "كل صف هو طفل واحد. ضع الـ 24 حلوى في 4 صفوف متساوية."
+      },
+      "prompt": {
+        "en": "Share 24 sweets into 4 equal rows.",
+        "ar": "وزّع 24 حلوى على 4 صفوف متساوية."
+      },
+      "say": {
+        "en": "Share twenty-four sweets into four equal rows.",
+        "ar": "وزّع أربعًا وعشرين حلوى على أربعة صفوف متساوية."
+      }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Grouping:** 24 dates are packed **6 in each box**. How many boxes?\n\n24 ÷ 6 = **4 boxes**\n\nThe same array shows both: 4 rows of 6.",
+        "ar": "**التجميع:** تُعبّأ 24 تمرة، **6 في كل علبة**. كم علبة؟\n\n24 ÷ 6 = **4 علب**\n\nالترتيب نفسه يوضح الحالتين: 4 صفوف في كل منها 6."
+      },
+      "say": {
+        "en": "Grouping: twenty-four dates are packed six in each box. How many boxes? Twenty-four divided by six is four boxes. The same array shows both: four rows of six.",
+        "ar": "التجميع: تُعبّأ أربع وعشرون تمرة، ست تمرات في كل علبة. كم علبة؟ أربعة وعشرون مقسومًا على ستة يساوي أربع علب. الترتيب نفسه يوضح الحالتين: أربعة صفوف في كل منها ستة."
+      },
+      "visual": {
+        "kind": "array",
+        "rows": 4,
+        "cols": 6,
+        "label": {
+          "en": "24 ÷ 6 = 4",
+          "ar": "24 ÷ 6 = 4"
+        }
+      }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "**Division and multiplication are a family.** Use a multiplication fact to divide, and to check.",
+        "ar": "**القسمة والضرب عائلة واحدة.** استخدم حقيقة ضرب لتقسم ولتتحقق."
+      },
+      "lines": {
+        "en": [
+          "7 × 8 = 56 and 8 × 7 = 56",
+          "56 ÷ 7 = 8 and 56 ÷ 8 = 7",
+          "Check: 8 × 7 = 56 ✓"
+        ],
+        "ar": [
+          "7 × 8 = 56 و 8 × 7 = 56",
+          "56 ÷ 7 = 8 و 56 ÷ 8 = 7",
+          "التحقق: 8 × 7 = 56 ✓"
+        ]
+      },
+      "say": {
+        "en": "Division and multiplication are a family. Seven times eight is fifty-six, and eight times seven is fifty-six. So fifty-six divided by seven is eight, and fifty-six divided by eight is seven. To check a division: quotient times divisor equals the dividend. Eight times seven is fifty-six.",
+        "ar": "القسمة والضرب عائلة واحدة. سبعة في ثمانية يساوي ستة وخمسين، وثمانية في سبعة يساوي ستة وخمسين. إذن ستة وخمسون مقسومًا على سبعة يساوي ثمانية، وستة وخمسون مقسومًا على ثمانية يساوي سبعة. للتحقق من القسمة: خارج القسمة في المقسوم عليه يساوي المقسوم، وثمانية في سبعة يساوي ستة وخمسين."
+      },
+      "visual": {
+        "kind": "array",
+        "rows": 7,
+        "cols": 8,
+        "label": {
+          "en": "7 × 8 = 56",
+          "ar": "7 × 8 = 56"
+        }
+      }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "**Patterns in division:** think in tens, hundreds and thousands.",
+        "ar": "**أنماط في القسمة:** فكّر بالعشرات والمئات والآلاف."
+      },
+      "lines": {
+        "en": [
+          "8 ÷ 4 = 2",
+          "80 ÷ 4 = 20 (8 tens ÷ 4 = 2 tens)",
+          "800 ÷ 4 = 200",
+          "2,400 ÷ 6 = 400 (24 hundreds ÷ 6 = 4 hundreds)"
+        ],
+        "ar": [
+          "8 ÷ 4 = 2",
+          "80 ÷ 4 = 20 (8 عشرات ÷ 4 = 2 عشرة)",
+          "800 ÷ 4 = 200",
+          "2,400 ÷ 6 = 400 (24 مائة ÷ 6 = 4 مئات)"
+        ]
+      },
+      "say": {
+        "en": "Patterns in division. Eight divided by four is two. Eighty is eight tens, and eight tens divided by four is two tens, which is twenty. Eight hundred divided by four is two hundred. Two thousand four hundred is twenty-four hundreds, and twenty-four hundreds divided by six is four hundreds, which is four hundred.",
+        "ar": "أنماط في القسمة. ثمانية مقسومًا على أربعة يساوي اثنين. ثمانون هي ثماني عشرات، وثماني عشرات مقسومة على أربعة تساوي عشرتين أي عشرين. ثمانمائة مقسومًا على أربعة يساوي مائتين. ألفان وأربعمائة هي أربع وعشرون مائة، وأربع وعشرون مائة مقسومة على ستة تساوي أربع مئات أي أربعمائة."
+      },
+      "visual": {
+        "kind": "blocks",
+        "n": 80
+      },
+      "check": {
+        "q": {
+          "en": "80 ÷ 4 = ?",
+          "ar": "80 ÷ 4 = ؟"
+        },
+        "options": {
+          "en": [
+            "20",
+            "2",
+            "200",
+            "84"
+          ],
+          "ar": [
+            "20",
+            "2",
+            "200",
+            "84"
+          ]
+        },
+        "answer": 0
+      }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Remember:**\n\nSharing: how many in each group?\n\nGrouping: how many groups?\n\nCheck: quotient × divisor = dividend.",
+        "ar": "**تذكّر:**\n\nالتوزيع: كم في كل مجموعة؟\n\nالتجميع: كم مجموعة؟\n\nالتحقق: خارج القسمة × المقسوم عليه = المقسوم."
+      },
+      "say": {
+        "en": "Remember. Sharing asks how many in each group. Grouping asks how many groups. To check, quotient times divisor equals the dividend.",
+        "ar": "تذكّر. التوزيع يسأل: كم في كل مجموعة؟ والتجميع يسأل: كم مجموعة؟ وللتحقق: خارج القسمة في المقسوم عليه يساوي المقسوم."
+      },
+      "visual": {
+        "kind": "array",
+        "rows": 3,
+        "cols": 5,
+        "label": {
+          "en": "15 ÷ 3 = 5 ↔ 3 × 5 = 15",
+          "ar": "15 ÷ 3 = 5 ↔ 3 × 5 = 15"
+        }
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "36 ÷ 9 = ?",
+        "ar": "36 ÷ 9 = ؟"
+      },
+      "options": {
+        "en": [
+          "4",
+          "27",
+          "45",
+          "5"
+        ],
+        "ar": [
+          "4",
+          "27",
+          "45",
+          "5"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "9 × 4 = 36, so 36 ÷ 9 = 4.",
+        "ar": "9 × 4 = 36، إذن 36 ÷ 9 = 4."
+      },
+      "say": {
+        "en": "Thirty-six divided by nine equals what?",
+        "ar": "ستة وثلاثون مقسومًا على تسعة يساوي كم؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which multiplication checks 42 ÷ 6 = 7?",
+        "ar": "أي عملية ضرب تتحقق من أن 42 ÷ 6 = 7؟"
+      },
+      "options": {
+        "en": [
+          "6 × 7 = 42",
+          "42 × 6 = 252",
+          "6 + 7 = 13",
+          "42 − 6 = 36"
+        ],
+        "ar": [
+          "6 × 7 = 42",
+          "42 × 6 = 252",
+          "6 + 7 = 13",
+          "42 − 6 = 36"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Quotient × divisor = dividend: 7 × 6 = 42.",
+        "ar": "خارج القسمة × المقسوم عليه = المقسوم: 7 × 6 = 42."
+      },
+      "say": {
+        "en": "Which multiplication checks that forty-two divided by six is seven?",
+        "ar": "أي عملية ضرب تتحقق من أن اثنين وأربعين مقسومًا على ستة يساوي سبعة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "In 63 ÷ 7 = 9, which number is the divisor?",
+        "ar": "في 63 ÷ 7 = 9، ما المقسوم عليه؟"
+      },
+      "options": {
+        "en": [
+          "7",
+          "63",
+          "9",
+          "1"
+        ],
+        "ar": [
+          "7",
+          "63",
+          "9",
+          "1"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "The divisor is the number we divide by: 7. 63 is the dividend and 9 is the quotient.",
+        "ar": "المقسوم عليه هو العدد الذي نقسم عليه: 7. أما 63 فهو المقسوم، و 9 خارج القسمة."
+      },
+      "say": {
+        "en": "In sixty-three divided by seven equals nine, which number is the divisor?",
+        "ar": "في ثلاثة وستين مقسومًا على سبعة يساوي تسعة، ما المقسوم عليه؟"
+      }
+    },
+    {
+      "q": {
+        "en": "600 ÷ 3 = ?",
+        "ar": "600 ÷ 3 = ؟"
+      },
+      "options": {
+        "en": [
+          "200",
+          "20",
+          "2,000",
+          "180"
+        ],
+        "ar": [
+          "200",
+          "20",
+          "2,000",
+          "180"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "6 hundreds ÷ 3 = 2 hundreds = 200. Check: 200 × 3 = 600.",
+        "ar": "6 مئات ÷ 3 = 2 مائة = 200. التحقق: 200 × 3 = 600."
+      },
+      "say": {
+        "en": "Six hundred divided by three equals what?",
+        "ar": "ستمائة مقسومًا على ثلاثة يساوي كم؟"
+      }
+    },
+    {
+      "q": {
+        "en": "48 dates are packed 8 in each box. How many boxes?",
+        "ar": "تُعبّأ 48 تمرة، 8 في كل علبة. كم علبة؟"
+      },
+      "options": {
+        "en": [
+          "6",
+          "40",
+          "56",
+          "384"
+        ],
+        "ar": [
+          "6",
+          "40",
+          "56",
+          "384"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "This is grouping: 48 ÷ 8 = 6, because 6 × 8 = 48.",
+        "ar": "هذا تجميع: 48 ÷ 8 = 6، لأن 6 × 8 = 48."
+      },
+      "say": {
+        "en": "Forty-eight dates are packed eight in each box. How many boxes?",
+        "ar": "تُعبّأ ثمان وأربعون تمرة، ثماني تمرات في كل علبة. كم علبة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "3,500 ÷ 7 = ?",
+        "ar": "3,500 ÷ 7 = ؟"
+      },
+      "options": {
+        "en": [
+          "500",
+          "50",
+          "5,000",
+          "5"
+        ],
+        "ar": [
+          "500",
+          "50",
+          "5,000",
+          "5"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "3,500 is 35 hundreds. 35 hundreds ÷ 7 = 5 hundreds = 500.",
+        "ar": "3,500 هي 35 مائة. 35 مائة ÷ 7 = 5 مئات = 500."
+      },
+      "say": {
+        "en": "Three thousand five hundred divided by seven equals what?",
+        "ar": "ثلاثة آلاف وخمسمائة مقسومًا على سبعة يساوي كم؟"
+      }
+    }
+  ]
+}

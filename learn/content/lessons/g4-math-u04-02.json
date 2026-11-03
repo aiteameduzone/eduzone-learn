@@ -1,0 +1,369 @@
+{
+  "id": "g4-math-u04-02",
+  "title": {
+    "en": "Perimeter of a Rectangle and a Square",
+    "ar": "محيط المستطيل ومحيط المربع"
+  },
+  "objective": {
+    "en": "Use the rules perimeter = (length + width) × 2 for a rectangle and side × 4 for a square.",
+    "ar": "أن يستخدم التلميذ القاعدتين: محيط المستطيل = (الطول + العرض) × 2، ومحيط المربع = طول الضلع × 4."
+  },
+  "refs": {
+    "egypt": [
+      "U4 · Perimeter formulas"
+    ],
+    "ccss": [
+      "4.MD.A.3"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "grid",
+        "w": 8,
+        "h": 3,
+        "label": {
+          "en": "length 8, width 3",
+          "ar": "الطول 8 ، العرض 3"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "This rectangle is 8 long and 3 wide. Which is a quick way to find its perimeter?",
+          "ar": "هذا المستطيل طوله 8 وعرضه 3. ما الطريقة السريعة لإيجاد محيطه؟"
+        },
+        "options": {
+          "en": [
+            "8 + 3",
+            "8 × 3",
+            "(8 + 3) × 2"
+          ],
+          "ar": [
+            "8 + 3",
+            "8 × 3",
+            "(8 + 3) × 2"
+          ]
+        },
+        "answer": 2
+      },
+      "text": {
+        "en": "A rectangle has 2 lengths and 2 widths. So we can add the length and width **once**, then double it.\n\n(8 + 3) × 2 = 11 × 2 = 22",
+        "ar": "للمستطيل طولان وعرضان. لذلك نجمع الطول والعرض **مرة واحدة** ثم نضرب في 2.\n\n(8 + 3) × 2 = 11 × 2 = 22"
+      },
+      "say": {
+        "en": "A rectangle has two lengths and two widths. So we can add the length and width once, then double it. Eight plus three is eleven, and eleven times two is twenty-two.",
+        "ar": "للمستطيل طولان وعرضان. لذلك نجمع الطول والعرض مرة واحدة ثم نضرب في اثنين. ثمانية زائد ثلاثة يساوي أحد عشر، وأحد عشر في اثنين يساوي اثنين وعشرين."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "grid",
+        "w": 9,
+        "h": 6,
+        "label": {
+          "en": "⚽ 9 cm × 6 cm",
+          "ar": "⚽ 9 سم × 6 سم"
+        }
+      },
+      "text": {
+        "en": "**Rectangle rule:** Perimeter = (length + width) × 2",
+        "ar": "**قاعدة المستطيل:** المحيط = (الطول + العرض) × 2"
+      },
+      "lines": {
+        "en": [
+          "Football pitch drawing: 9 cm × 6 cm",
+          "9 + 6 = 15",
+          "15 × 2 = 30",
+          "Perimeter = 30 cm"
+        ],
+        "ar": [
+          "رسم ملعب كرة قدم: 9 سم × 6 سم",
+          "9 + 6 = 15",
+          "15 × 2 = 30",
+          "المحيط = 30 سم"
+        ]
+      },
+      "say": {
+        "en": "Rectangle rule: perimeter equals length plus width, times two. A football pitch is drawn on paper nine centimetres long and six centimetres wide. Nine plus six is fifteen. Fifteen times two is thirty. The perimeter is thirty centimetres.",
+        "ar": "قاعدة المستطيل: المحيط يساوي الطول زائد العرض، والناتج في اثنين. رسمنا ملعب كرة قدم على ورقة طوله تسعة سنتيمترات وعرضه ستة سنتيمترات. تسعة زائد ستة يساوي خمسة عشر. خمسة عشر في اثنين يساوي ثلاثين. إذن المحيط ثلاثون سنتيمترًا."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "grid",
+        "w": 7,
+        "h": 7,
+        "label": {
+          "en": "Balcony: 7 m × 7 m",
+          "ar": "شرفة: 7 م × 7 م"
+        }
+      },
+      "text": {
+        "en": "**Square rule:** a square has 4 equal sides, so Perimeter = side × 4.",
+        "ar": "**قاعدة المربع:** للمربع 4 أضلاع متساوية، إذن المحيط = طول الضلع × 4."
+      },
+      "lines": {
+        "en": [
+          "Square balcony, side 7 m",
+          "7 × 4 = 28",
+          "Perimeter = 28 m"
+        ],
+        "ar": [
+          "شرفة مربعة طول ضلعها 7 م",
+          "7 × 4 = 28",
+          "المحيط = 28 م"
+        ]
+      },
+      "say": {
+        "en": "Square rule: a square has four equal sides, so the perimeter equals the side times four. A square balcony has a side of seven metres. Seven times four is twenty-eight. The perimeter is twenty-eight metres.",
+        "ar": "قاعدة المربع: للمربع أربعة أضلاع متساوية، إذن المحيط يساوي طول الضلع في أربعة. شرفة مربعة طول ضلعها سبعة أمتار. سبعة في أربعة يساوي ثمانية وعشرين. إذن المحيط ثمانية وعشرون مترًا."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "area-grid",
+      "params": {
+        "target": {
+          "perimeter": 16,
+          "area": 16
+        },
+        "w": 1,
+        "h": 1
+      },
+      "text": {
+        "en": "A square has the same length and width.",
+        "ar": "المربع طوله يساوي عرضه."
+      },
+      "prompt": {
+        "en": "Make a square with a perimeter of 16 units.",
+        "ar": "كوّن مربعًا محيطه 16 وحدة."
+      },
+      "say": {
+        "en": "A square has the same length and width. Make a square with a perimeter of sixteen units.",
+        "ar": "المربع طوله يساوي عرضه. كوّن مربعًا محيطه ست عشرة وحدة."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "area-grid",
+      "params": {
+        "target": {
+          "perimeter": 18
+        },
+        "w": 2,
+        "h": 2
+      },
+      "text": {
+        "en": "Try different lengths and widths. Use (length + width) × 2 to check.",
+        "ar": "جرّب أطوالًا وعروضًا مختلفة، واستخدم (الطول + العرض) × 2 للتحقق."
+      },
+      "prompt": {
+        "en": "Make a rectangle with a perimeter of 18 units.",
+        "ar": "كوّن مستطيلًا محيطه 18 وحدة."
+      },
+      "say": {
+        "en": "Try different lengths and widths. Use length plus width, times two, to check. Make a rectangle with a perimeter of eighteen units.",
+        "ar": "جرّب أطوالًا وعروضًا مختلفة، واستخدم الطول زائد العرض في اثنين للتحقق. كوّن مستطيلًا محيطه ثماني عشرة وحدة."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "grid",
+        "w": 5,
+        "h": 5,
+        "label": {
+          "en": "side × 4",
+          "ar": "طول الضلع × 4"
+        }
+      },
+      "text": {
+        "en": "**Remember:**\n\nRectangle: Perimeter = (length + width) × 2\n\nSquare: Perimeter = side × 4\n\nHalf the perimeter = length + width.",
+        "ar": "**تذكّر:**\n\nالمستطيل: المحيط = (الطول + العرض) × 2\n\nالمربع: المحيط = طول الضلع × 4\n\nنصف المحيط = الطول + العرض."
+      },
+      "say": {
+        "en": "Remember. Rectangle: perimeter equals length plus width, times two. Square: perimeter equals side times four. Half the perimeter is the length plus the width.",
+        "ar": "تذكّر. المستطيل: المحيط يساوي الطول زائد العرض، والناتج في اثنين. المربع: المحيط يساوي طول الضلع في أربعة. نصف المحيط يساوي الطول زائد العرض."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "A rectangle is 12 cm long and 5 cm wide. What is its perimeter?",
+        "ar": "مستطيل طوله 12 سم وعرضه 5 سم. ما محيطه؟"
+      },
+      "options": {
+        "en": [
+          "17 cm",
+          "60 cm",
+          "34 cm",
+          "29 cm"
+        ],
+        "ar": [
+          "17 سم",
+          "60 سم",
+          "34 سم",
+          "29 سم"
+        ]
+      },
+      "answer": 2,
+      "explain": {
+        "en": "(12 + 5) × 2 = 17 × 2 = 34 cm. 17 forgot to double, 60 is 12 × 5.",
+        "ar": "(12 + 5) × 2 = 17 × 2 = 34 سم. أما 17 فلم نضربه في 2، و 60 هو 12 × 5."
+      },
+      "say": {
+        "en": "A rectangle is twelve centimetres long and five centimetres wide. What is its perimeter?",
+        "ar": "مستطيل طوله اثنا عشر سنتيمترًا وعرضه خمسة سنتيمترات. ما محيطه؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A square has a side of 9 cm. What is its perimeter?",
+        "ar": "مربع طول ضلعه 9 سم. ما محيطه؟"
+      },
+      "options": {
+        "en": [
+          "36 cm",
+          "18 cm",
+          "81 cm",
+          "13 cm"
+        ],
+        "ar": [
+          "36 سم",
+          "18 سم",
+          "81 سم",
+          "13 سم"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "9 × 4 = 36 cm. 81 is 9 × 9, and 18 counts only two sides.",
+        "ar": "9 × 4 = 36 سم. أما 81 فهو 9 × 9، و 18 يحسب ضلعين فقط."
+      },
+      "say": {
+        "en": "A square has a side of nine centimetres. What is its perimeter?",
+        "ar": "مربع طول ضلعه تسعة سنتيمترات. ما محيطه؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which rule gives the perimeter of a rectangle?",
+        "ar": "أي قاعدة تعطي محيط المستطيل؟"
+      },
+      "options": {
+        "en": [
+          "length × width",
+          "(length + width) × 2",
+          "length + width",
+          "length × 4"
+        ],
+        "ar": [
+          "الطول × العرض",
+          "(الطول + العرض) × 2",
+          "الطول + العرض",
+          "الطول × 4"
+        ]
+      },
+      "answer": 1,
+      "explain": {
+        "en": "A rectangle has 2 lengths and 2 widths, so we add them and double.",
+        "ar": "للمستطيل طولان وعرضان، فنجمع الطول والعرض ونضرب في 2."
+      },
+      "say": {
+        "en": "Which rule gives the perimeter of a rectangle?",
+        "ar": "أي قاعدة تعطي محيط المستطيل؟ الطول زائد العرض في اثنين، أم الطول في العرض، أم الطول زائد العرض، أم الطول في أربعة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A school courtyard is 10 m long and 4 m wide. How much rope goes all the way around it?",
+        "ar": "فناء مدرسة طوله 10 م وعرضه 4 م. كم مترًا من الحبل يلزم للدوران حوله كله؟"
+      },
+      "options": {
+        "en": [
+          "14 m",
+          "40 m",
+          "24 m",
+          "28 m"
+        ],
+        "ar": [
+          "14 م",
+          "40 م",
+          "24 م",
+          "28 م"
+        ]
+      },
+      "answer": 3,
+      "explain": {
+        "en": "(10 + 4) × 2 = 14 × 2 = 28 m.",
+        "ar": "(10 + 4) × 2 = 14 × 2 = 28 م."
+      },
+      "say": {
+        "en": "A school courtyard is ten metres long and four metres wide. How much rope goes all the way around it?",
+        "ar": "فناء مدرسة طوله عشرة أمتار وعرضه أربعة أمتار. كم مترًا من الحبل يلزم للدوران حوله كله؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A photo frame is 30 cm long and 20 cm wide. What is its perimeter?",
+        "ar": "إطار صورة طوله 30 سم وعرضه 20 سم. ما محيطه؟"
+      },
+      "options": {
+        "en": [
+          "50 cm",
+          "100 cm",
+          "600 cm",
+          "80 cm"
+        ],
+        "ar": [
+          "50 سم",
+          "100 سم",
+          "600 سم",
+          "80 سم"
+        ]
+      },
+      "answer": 1,
+      "explain": {
+        "en": "(30 + 20) × 2 = 50 × 2 = 100 cm. 600 is 30 × 20.",
+        "ar": "(30 + 20) × 2 = 50 × 2 = 100 سم. أما 600 فهو 30 × 20."
+      },
+      "say": {
+        "en": "A photo frame is thirty centimetres long and twenty centimetres wide. What is its perimeter?",
+        "ar": "إطار صورة طوله ثلاثون سنتيمترًا وعرضه عشرون سنتيمترًا. ما محيطه؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which has the bigger perimeter: a square with side 6 cm, or a rectangle 8 cm × 3 cm?",
+        "ar": "أيهما محيطه أكبر: مربع طول ضلعه 6 سم، أم مستطيل 8 سم × 3 سم؟"
+      },
+      "options": {
+        "en": [
+          "The square (24 cm)",
+          "The rectangle (22 cm)",
+          "They are equal",
+          "The rectangle (24 cm)"
+        ],
+        "ar": [
+          "المربع (24 سم)",
+          "المستطيل (22 سم)",
+          "متساويان",
+          "المستطيل (24 سم)"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Square: 6 × 4 = 24 cm. Rectangle: (8 + 3) × 2 = 22 cm. 24 > 22.",
+        "ar": "المربع: 6 × 4 = 24 سم. المستطيل: (8 + 3) × 2 = 22 سم. و 24 > 22."
+      },
+      "say": {
+        "en": "Which has the bigger perimeter: a square with side six centimetres, or a rectangle eight by three centimetres?",
+        "ar": "أيهما محيطه أكبر: مربع طول ضلعه ستة سنتيمترات، أم مستطيل طوله ثمانية سنتيمترات وعرضه ثلاثة سنتيمترات؟ المربع أربعة وعشرون، والمستطيل اثنان وعشرون."
+      }
+    }
+  ]
+}

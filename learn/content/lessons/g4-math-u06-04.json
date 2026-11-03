@@ -1,0 +1,453 @@
+{
+  "id": "g4-math-u06-04",
+  "title": {
+    "en": "Prime and Composite Numbers",
+    "ar": "الأعداد الأولية وغير الأولية"
+  },
+  "objective": {
+    "en": "Decide whether a whole number up to 100 is prime or composite by finding its factors.",
+    "ar": "أن يحدد التلميذ هل العدد الصحيح حتى 100 أولي أم غير أولي بإيجاد عوامله."
+  },
+  "refs": {
+    "egypt": [
+      "U6 · Prime and composite numbers"
+    ],
+    "ccss": [
+      "4.OA.B.4"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 1,
+        "cols": 7,
+        "label": {
+          "en": "7 chairs",
+          "ar": "7 كراسي"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "Can 7 chairs make 2 or more equal rows?",
+          "ar": "هل يمكن ترتيب 7 كراسي في صفين متساويين أو أكثر؟"
+        },
+        "options": {
+          "en": [
+            "Yes",
+            "No"
+          ],
+          "ar": [
+            "نعم",
+            "لا"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "Try to set out 7 chairs in equal rows. Only one way works: 1 row of 7.\n\nThe factors of 7 are just 1 and 7.\n\nA number with **exactly two factors**, 1 and itself, is a **prime number**.",
+        "ar": "حاول ترتيب 7 كراسي في صفوف متساوية. طريقة واحدة فقط تصلح: صف واحد فيه 7.\n\nعوامل العدد 7 هي 1 و 7 فقط.\n\nالعدد الذي له **عاملان فقط** هما 1 والعدد نفسه يسمى **عددًا أوليًا**."
+      },
+      "say": {
+        "en": "Try to set out seven chairs in equal rows. Only one way works: one row of seven. The factors of seven are just one and seven. A number with exactly two factors, one and itself, is a prime number.",
+        "ar": "حاول ترتيب سبعة كراسي في صفوف متساوية. طريقة واحدة فقط تصلح: صف واحد فيه سبعة. عوامل العدد سبعة هي واحد وسبعة فقط. والعدد الذي له عاملان فقط هما واحد والعدد نفسه يسمى عددًا أوليًا."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "array",
+        "rows": 3,
+        "cols": 4,
+        "label": {
+          "en": "12 = 3 × 4",
+          "ar": "12 = 3 × 4"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "How many factors does 12 have?",
+          "ar": "كم عاملًا للعدد 12؟"
+        },
+        "options": {
+          "en": [
+            "2",
+            "6",
+            "4"
+          ],
+          "ar": [
+            "2",
+            "6",
+            "4"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "12 chairs can make many rectangles. A number with **more than two factors** is a **composite number**.",
+        "ar": "يمكن ترتيب 12 كرسيًا في مستطيلات كثيرة. العدد الذي له **أكثر من عاملين** يسمى **عددًا غير أولي**."
+      },
+      "lines": {
+        "en": [
+          "12 = 1 × 12 = 2 × 6 = 3 × 4",
+          "Factors: 1, 2, 3, 4, 6, 12 (six factors)",
+          "So 12 is composite."
+        ],
+        "ar": [
+          "12 = 1 × 12 = 2 × 6 = 3 × 4",
+          "العوامل: 1، 2، 3، 4، 6، 12 (ستة عوامل)",
+          "إذن 12 عدد غير أولي."
+        ]
+      },
+      "say": {
+        "en": "Twelve chairs can make many rectangles: one times twelve, two times six, three times four. Twelve has six factors: one, two, three, four, six and twelve. A number with more than two factors is a composite number.",
+        "ar": "يمكن ترتيب اثني عشر كرسيًا في مستطيلات كثيرة: واحد في اثني عشر، واثنان في ستة، وثلاثة في أربعة. للعدد اثني عشر ستة عوامل: واحد، واثنان، وثلاثة، وأربعة، وستة، واثنا عشر. والعدد الذي له أكثر من عاملين يسمى عددًا غير أولي."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "array",
+      "params": {
+        "target": 15,
+        "notTrivial": true
+      },
+      "text": {
+        "en": "Is 15 composite? If you can build it with more than one row, it is.",
+        "ar": "هل 15 عدد غير أولي؟ إذا استطعت بناءه في أكثر من صف فهو غير أولي."
+      },
+      "prompt": {
+        "en": "Build 15 with more than 1 row and more than 1 column.",
+        "ar": "ابنِ 15 في أكثر من صف واحد وأكثر من عمود واحد."
+      },
+      "say": {
+        "en": "Is fifteen composite? Build fifteen with more than one row and more than one column.",
+        "ar": "هل خمسة عشر عدد غير أولي؟ ابنِ خمسة عشر في أكثر من صف وأكثر من عمود."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "array",
+        "rows": 1,
+        "cols": 2,
+        "label": {
+          "en": "2 = 1 × 2: prime",
+          "ar": "2 = 1 × 2: عدد أولي"
+        }
+      },
+      "text": {
+        "en": "**Two special numbers:**",
+        "ar": "**عددان مميزان:**"
+      },
+      "lines": {
+        "en": [
+          "1 has only one factor: 1 is neither prime nor composite.",
+          "2 has factors 1 and 2: 2 is prime.",
+          "2 is the only even prime. 4, 6, 8 ... all have 2 as a factor."
+        ],
+        "ar": [
+          "العدد 1 له عامل واحد فقط: 1 ليس أوليًا وليس غير أولي.",
+          "العدد 2 عاملاه 1 و 2: إذن 2 عدد أولي.",
+          "2 هو العدد الأولي الزوجي الوحيد. أما 4، 6، 8 ... فكلها من عواملها 2."
+        ]
+      },
+      "say": {
+        "en": "Two special numbers. One has only one factor, itself, so one is neither prime nor composite. Two has exactly two factors, one and two, so two is prime. Two is the only even prime number. Every other even number is composite, because two is one of its factors.",
+        "ar": "عددان مميزان. العدد واحد له عامل واحد فقط هو نفسه، إذن الواحد ليس أوليًا وليس غير أولي. والعدد اثنان له عاملان فقط هما واحد واثنان، إذن اثنان عدد أولي، وهو العدد الأولي الزوجي الوحيد. وكل عدد زوجي آخر غير أولي لأن اثنين من عوامله."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "array",
+      "params": {
+        "target": 21,
+        "notTrivial": true
+      },
+      "text": {
+        "en": "Prove that 21 is composite: find an array with more than one row.",
+        "ar": "أثبت أن 21 عدد غير أولي: أوجد مصفوفة فيها أكثر من صف."
+      },
+      "prompt": {
+        "en": "Build 21 with more than 1 row and more than 1 column.",
+        "ar": "ابنِ 21 في أكثر من صف واحد وأكثر من عمود واحد."
+      },
+      "say": {
+        "en": "Prove that twenty one is composite. Find an array with more than one row and more than one column.",
+        "ar": "أثبت أن واحدًا وعشرين عدد غير أولي. أوجد مصفوفة فيها أكثر من صف وأكثر من عمود."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "array",
+        "rows": 1,
+        "cols": 19,
+        "label": {
+          "en": "19 = 1 × 19: prime",
+          "ar": "19 = 1 × 19: عدد أولي"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "Is 9 a prime number?",
+          "ar": "هل 9 عدد أولي؟"
+        },
+        "options": {
+          "en": [
+            "Yes, it is odd",
+            "No"
+          ],
+          "ar": [
+            "نعم، لأنه فردي",
+            "لا"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "**Prime numbers less than 20.** Test each number: does anything other than 1 and itself divide it?",
+        "ar": "**الأعداد الأولية الأقل من 20.** نختبر كل عدد: هل يقسمه عدد غير 1 والعدد نفسه؟"
+      },
+      "lines": {
+        "en": [
+          "Primes less than 20: 2, 3, 5, 7, 11, 13, 17, 19",
+          "9 = 3 × 3, so 9 is composite. Odd does not mean prime!"
+        ],
+        "ar": [
+          "الأعداد الأولية الأقل من 20: 2، 3، 5، 7، 11، 13، 17، 19",
+          "9 = 3 × 3، إذن 9 غير أولي. ليس كل عدد فردي أوليًا!"
+        ]
+      },
+      "say": {
+        "en": "Prime numbers less than twenty: two, three, five, seven, eleven, thirteen, seventeen and nineteen. Nine is odd but not prime, because three times three is nine.",
+        "ar": "الأعداد الأولية الأقل من عشرين هي: اثنان، وثلاثة، وخمسة، وسبعة، وأحد عشر، وثلاثة عشر، وسبعة عشر، وتسعة عشر. أما تسعة فعدد فردي لكنه غير أولي، لأن ثلاثة في ثلاثة يساوي تسعة."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "array",
+        "rows": 1,
+        "cols": 11,
+        "label": {
+          "en": "11 = 1 × 11: prime",
+          "ar": "11 = 1 × 11: عدد أولي"
+        }
+      },
+      "text": {
+        "en": "**Remember:**\n\n**Prime:** exactly 2 factors (1 and itself). Only one array.\n\n**Composite:** more than 2 factors. More than one array.\n\n1 is neither. 2 is the only even prime.",
+        "ar": "**تذكّر:**\n\n**العدد الأولي:** له عاملان فقط (1 والعدد نفسه)، ومصفوفة واحدة فقط.\n\n**العدد غير الأولي:** له أكثر من عاملين، وأكثر من مصفوفة.\n\nالعدد 1 ليس أوليًا ولا غير أولي، و 2 هو العدد الأولي الزوجي الوحيد."
+      },
+      "say": {
+        "en": "Remember. A prime number has exactly two factors, one and itself, and only one array. A composite number has more than two factors and more than one array. One is neither. Two is the only even prime.",
+        "ar": "تذكّر. العدد الأولي له عاملان فقط، واحد والعدد نفسه، ومصفوفة واحدة فقط. والعدد غير الأولي له أكثر من عاملين وأكثر من مصفوفة. الواحد ليس أوليًا ولا غير أولي، واثنان هو العدد الأولي الزوجي الوحيد."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "Which number is prime?",
+        "ar": "أي عدد أولي؟"
+      },
+      "options": {
+        "en": [
+          "13",
+          "9",
+          "15",
+          "21"
+        ],
+        "ar": [
+          "13",
+          "9",
+          "15",
+          "21"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "13 has only the factors 1 and 13. 9 = 3 × 3, 15 = 3 × 5 and 21 = 3 × 7.",
+        "ar": "13 له عاملان فقط هما 1 و 13. أما 9 = 3 × 3 و 15 = 3 × 5 و 21 = 3 × 7."
+      },
+      "say": {
+        "en": "Which number is prime?",
+        "ar": "أي عدد أولي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which number is composite?",
+        "ar": "أي عدد غير أولي؟"
+      },
+      "options": {
+        "en": [
+          "25",
+          "23",
+          "2",
+          "17"
+        ],
+        "ar": [
+          "25",
+          "23",
+          "2",
+          "17"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "25 = 5 × 5, so it has the factors 1, 5 and 25. The others are prime.",
+        "ar": "25 = 5 × 5، فعوامله 1 و 5 و 25. أما الأعداد الأخرى فأولية."
+      },
+      "say": {
+        "en": "Which number is composite?",
+        "ar": "أي عدد غير أولي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "What is the number 1?",
+        "ar": "ما نوع العدد 1؟"
+      },
+      "options": {
+        "en": [
+          "Neither prime nor composite",
+          "Prime",
+          "Composite",
+          "Both prime and composite"
+        ],
+        "ar": [
+          "ليس أوليًا ولا غير أولي",
+          "أولي",
+          "غير أولي",
+          "أولي وغير أولي معًا"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "A prime needs exactly 2 factors. 1 has only one factor, so it is neither.",
+        "ar": "العدد الأولي له عاملان بالضبط، والعدد 1 له عامل واحد فقط، فهو ليس أوليًا ولا غير أولي."
+      },
+      "say": {
+        "en": "What is the number one?",
+        "ar": "ما نوع العدد واحد؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which is the only even prime number?",
+        "ar": "ما العدد الأولي الزوجي الوحيد؟"
+      },
+      "options": {
+        "en": [
+          "2",
+          "4",
+          "1",
+          "12"
+        ],
+        "ar": [
+          "2",
+          "4",
+          "1",
+          "12"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "2 has factors 1 and 2 only. Every other even number also has 2 as a factor.",
+        "ar": "العدد 2 عاملاه 1 و 2 فقط، وكل عدد زوجي آخر من عوامله 2 أيضًا."
+      },
+      "say": {
+        "en": "Which is the only even prime number?",
+        "ar": "ما العدد الأولي الزوجي الوحيد؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which number has exactly 2 factors?",
+        "ar": "أي عدد له عاملان فقط؟"
+      },
+      "options": {
+        "en": [
+          "19",
+          "1",
+          "49",
+          "27"
+        ],
+        "ar": [
+          "19",
+          "1",
+          "49",
+          "27"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "19 is prime: 1 and 19. 49 = 7 × 7 and 27 = 3 × 9. 1 has only one factor.",
+        "ar": "19 عدد أولي: عاملاه 1 و 19. أما 49 = 7 × 7 و 27 = 3 × 9، و 1 له عامل واحد فقط."
+      },
+      "say": {
+        "en": "Which number has exactly two factors?",
+        "ar": "أي عدد له عاملان فقط؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Omar wants to set out 29 chairs in equal rows. What can he do?",
+        "ar": "يريد عمر ترتيب 29 كرسيًا في صفوف متساوية. ماذا يمكنه أن يفعل؟"
+      },
+      "options": {
+        "en": [
+          "Only 1 row of 29",
+          "3 rows",
+          "2 rows",
+          "9 rows"
+        ],
+        "ar": [
+          "صف واحد فقط فيه 29",
+          "3 صفوف",
+          "صفان",
+          "9 صفوف"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "29 is prime, so its only array is 1 × 29. It is odd, so 2 rows fail, and 29 ÷ 3 and 29 ÷ 9 leave a remainder.",
+        "ar": "29 عدد أولي، فمصفوفته الوحيدة 1 × 29. هو فردي فلا يصلح صفان، و 29 ÷ 3 و 29 ÷ 9 لهما باقٍ."
+      },
+      "say": {
+        "en": "Omar wants to set out twenty nine chairs in equal rows. What can he do?",
+        "ar": "يريد عمر ترتيب تسعة وعشرين كرسيًا في صفوف متساوية. ماذا يمكنه أن يفعل؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which list has ONLY prime numbers?",
+        "ar": "أي قائمة كل أعدادها أولية؟"
+      },
+      "options": {
+        "en": [
+          "2, 3, 5, 7",
+          "1, 3, 5, 7",
+          "3, 5, 7, 9",
+          "2, 4, 6, 8"
+        ],
+        "ar": [
+          "2، 3، 5، 7",
+          "1، 3، 5، 7",
+          "3، 5، 7، 9",
+          "2، 4، 6، 8"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1 is not prime, 9 = 3 × 3, and 4, 6, 8 are even numbers bigger than 2.",
+        "ar": "العدد 1 ليس أوليًا، و 9 = 3 × 3، و 4، 6، 8 أعداد زوجية أكبر من 2."
+      },
+      "say": {
+        "en": "Which list has only prime numbers?",
+        "ar": "أي قائمة كل أعدادها أولية؟"
+      }
+    }
+  ]
+}

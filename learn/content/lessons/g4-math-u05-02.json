@@ -1,0 +1,460 @@
+{
+  "id": "g4-math-u05-02",
+  "title": {
+    "en": "Comparison Equations",
+    "ar": "معادلات المقارنة"
+  },
+  "objective": {
+    "en": "Write a multiplicative comparison as an equation with a letter for the unknown, and solve it.",
+    "ar": "أن يكتب التلميذ المقارنة بالضرب في صورة معادلة يرمز فيها حرف للعدد المجهول، ويحلها."
+  },
+  "refs": {
+    "egypt": [
+      "U5 · 5.1 Comparison equations"
+    ],
+    "ccss": [
+      "4.OA.A.1",
+      "4.OA.A.2"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "bars",
+        "items": [
+          {
+            "f": [
+              1,
+              4
+            ],
+            "label": {
+              "en": "box: n",
+              "ar": "الصندوق: ن"
+            }
+          },
+          {
+            "f": [
+              4,
+              4
+            ],
+            "label": {
+              "en": "crate: 32",
+              "ar": "القفص: 32"
+            },
+            "color": "blue"
+          }
+        ],
+        "emoji": "🥭"
+      },
+      "check": {
+        "q": {
+          "en": "32 = 4 × n. What is n?",
+          "ar": "32 = 4 × ن. ما قيمة ن؟"
+        },
+        "options": {
+          "en": [
+            "28",
+            "8",
+            "128"
+          ],
+          "ar": [
+            "28",
+            "8",
+            "128"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "A crate has 32 mangoes. That is **4 times as many** as a box. How many are in the box?\n\nCall the unknown **n**: **32 = 4 × n**.\n\n4 × 8 = 32, so **n = 8** mangoes.",
+        "ar": "في قفص 32 حبة مانجو، وهذا **أربعة أمثال** ما في صندوق. كم حبة في الصندوق؟\n\nنرمز للمجهول بالحرف **ن**: **32 = 4 × ن**.\n\n4 × 8 = 32، إذن **ن = 8** حبات."
+      },
+      "say": {
+        "en": "A crate has thirty two mangoes. That is four times as many as a box. How many are in the box? Call the unknown n. Thirty two equals four times n. Four times eight is thirty two, so n equals eight mangoes.",
+        "ar": "في قفص اثنتان وثلاثون حبة مانجو، وهذا أربعة أمثال ما في صندوق. كم حبة في الصندوق؟ نرمز للمجهول بالحرف نون. اثنان وثلاثون يساوي أربعة في نون. أربعة في ثمانية يساوي اثنين وثلاثين، إذن نون تساوي ثماني حبات."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "array",
+        "rows": 4,
+        "cols": 9,
+        "label": {
+          "en": "36 = 4 × 9",
+          "ar": "36 = 4 × 9"
+        }
+      },
+      "text": {
+        "en": "The letter can stand for **any** of the three numbers.",
+        "ar": "الحرف يمكن أن يرمز إلى **أي** عدد من الأعداد الثلاثة."
+      },
+      "lines": {
+        "en": [
+          "Big amount: a = 3 × 9 → a = 27",
+          "Small amount: 45 = 5 × b → b = 9",
+          "How many times: 36 = c × 9 → c = 4"
+        ],
+        "ar": [
+          "الكمية الكبيرة: أ = 3 × 9 ← أ = 27",
+          "الكمية الصغيرة: 45 = 5 × ب ← ب = 9",
+          "عدد الأمثال: 36 = ج × 9 ← ج = 4"
+        ]
+      },
+      "say": {
+        "en": "The letter can stand for any of the three numbers. Find the big amount: a equals three times nine, so a is twenty seven. Find the small amount: forty five equals five times b, so b is nine. Find how many times: thirty six equals c times nine, so c is four.",
+        "ar": "الحرف يمكن أن يرمز إلى أي عدد من الأعداد الثلاثة. لإيجاد الكمية الكبيرة: أ تساوي ثلاثة في تسعة، إذن أ تساوي سبعة وعشرين. لإيجاد الكمية الصغيرة: خمسة وأربعون يساوي خمسة في ب، إذن ب تساوي تسعة. لإيجاد عدد الأمثال: ستة وثلاثون يساوي ج في تسعة، إذن ج تساوي أربعة."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "array",
+      "params": {
+        "target": 28,
+        "rows": 4,
+        "cols": 1,
+        "exact": [
+          4,
+          7
+        ]
+      },
+      "text": {
+        "en": "Keep 4 rows. Add columns until you have 28 dots.",
+        "ar": "اترك 4 صفوف، وزد الأعمدة حتى تصل إلى 28 نقطة."
+      },
+      "prompt": {
+        "en": "Solve 4 × n = 28 with an array.",
+        "ar": "حلّ 4 × ن = 28 باستخدام مصفوفة."
+      },
+      "say": {
+        "en": "Keep four rows. Add columns until you have twenty eight dots. Solve four times n equals twenty eight.",
+        "ar": "اترك أربعة صفوف، وزد الأعمدة حتى تصل إلى ثماني وعشرين نقطة. حلّ أربعة في نون يساوي ثمانية وعشرين."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "bars",
+        "items": [
+          {
+            "f": [
+              7,
+              14
+            ],
+            "label": {
+              "en": "car: 7",
+              "ar": "السيارة: 7"
+            }
+          },
+          {
+            "f": [
+              14,
+              14
+            ],
+            "label": {
+              "en": "microbus: 14",
+              "ar": "الميكروباص: 14"
+            },
+            "color": "blue"
+          }
+        ],
+        "emoji": "🚐"
+      },
+      "check": {
+        "q": {
+          "en": "14 = n × 7. What is n?",
+          "ar": "14 = ن × 7. ما قيمة ن؟"
+        },
+        "options": {
+          "en": [
+            "2",
+            "7",
+            "21"
+          ],
+          "ar": [
+            "2",
+            "7",
+            "21"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "A family car has 7 seats. A microbus has 14 seats. How many times as many seats does the microbus have?\n\n**14 = n × 7**. 2 × 7 = 14, so **n = 2**: the microbus has twice as many seats.",
+        "ar": "في سيارة الأسرة 7 مقاعد، وفي الميكروباص 14 مقعدًا. كم مثلًا من مقاعد السيارة في الميكروباص؟\n\n**14 = ن × 7**. 2 × 7 = 14، إذن **ن = 2**: في الميكروباص مثلا عدد المقاعد."
+      },
+      "say": {
+        "en": "A family car has seven seats. A microbus has fourteen seats. How many times as many seats does the microbus have? Fourteen equals n times seven. Two times seven is fourteen, so n equals two. The microbus has twice as many seats.",
+        "ar": "في سيارة الأسرة سبعة مقاعد، وفي الميكروباص أربعة عشر مقعدًا. كم مثلًا من مقاعد السيارة في الميكروباص؟ أربعة عشر يساوي نون في سبعة. اثنان في سبعة يساوي أربعة عشر، إذن نون تساوي اثنين. في الميكروباص مثلا عدد المقاعد."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "array",
+      "params": {
+        "target": 48,
+        "rows": 6,
+        "cols": 1,
+        "exact": [
+          6,
+          8
+        ]
+      },
+      "text": {
+        "en": "Dalia has 48 beads. That is 6 times as many as Nada has. Keep 6 rows and find the size of each row.",
+        "ar": "مع داليا 48 خرزة، وهذا ستة أمثال ما مع ندى. اترك 6 صفوف وأوجد عدد كل صف."
+      },
+      "prompt": {
+        "en": "Solve 48 = 6 × n.",
+        "ar": "حلّ 48 = 6 × ن."
+      },
+      "say": {
+        "en": "Dalia has forty eight beads. That is six times as many as Nada has. Solve forty eight equals six times n.",
+        "ar": "مع داليا ثمانٍ وأربعون خرزة، وهذا ستة أمثال ما مع ندى. حلّ ثمانية وأربعين يساوي ستة في نون."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "bars",
+        "items": [
+          {
+            "f": [
+              1,
+              3
+            ],
+            "label": {
+              "en": "small",
+              "ar": "الصغيرة"
+            }
+          },
+          {
+            "f": [
+              3,
+              3
+            ],
+            "label": {
+              "en": "big = 3 × small",
+              "ar": "الكبيرة = 3 × الصغيرة"
+            },
+            "color": "blue"
+          }
+        ]
+      },
+      "text": {
+        "en": "**Remember:**\n\nbig amount = times × small amount\n\nPut a letter for the number you don't know, then ask: which multiplication fact fits?",
+        "ar": "**تذكّر:**\n\nالكمية الكبيرة = عدد الأمثال × الكمية الصغيرة\n\nضع حرفًا مكان العدد المجهول، ثم اسأل: أي حقيقة ضرب تناسب؟"
+      },
+      "say": {
+        "en": "Remember. The big amount equals the number of times, times the small amount. Put a letter for the number you don't know, then ask which multiplication fact fits.",
+        "ar": "تذكّر. الكمية الكبيرة تساوي عدد الأمثال في الكمية الصغيرة. ضع حرفًا مكان العدد المجهول، ثم اسأل: أي حقيقة ضرب تناسب؟"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "Solve: 5 × n = 45",
+        "ar": "حلّ: 5 × ن = 45"
+      },
+      "options": {
+        "en": [
+          "n = 9",
+          "n = 40",
+          "n = 50",
+          "n = 225"
+        ],
+        "ar": [
+          "ن = 9",
+          "ن = 40",
+          "ن = 50",
+          "ن = 225"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "5 × 9 = 45. 40 subtracts and 50 adds instead.",
+        "ar": "5 × 9 = 45. أما 40 فطرحت و 50 جمعت."
+      },
+      "say": {
+        "en": "Solve five times n equals forty five.",
+        "ar": "حلّ خمسة في نون يساوي خمسة وأربعين."
+      }
+    },
+    {
+      "q": {
+        "en": "A box has 6 mangoes. A crate has 7 times as many. Which equation finds m, the mangoes in the crate?",
+        "ar": "في صندوق 6 حبات مانجو، وفي القفص سبعة أمثالها. أي معادلة تعطي م، عدد حبات القفص؟"
+      },
+      "options": {
+        "en": [
+          "m = 7 × 6",
+          "m = 7 + 6",
+          "6 = 7 × m",
+          "m = 7 − 6"
+        ],
+        "ar": [
+          "م = 7 × 6",
+          "م = 7 + 6",
+          "6 = 7 × م",
+          "م = 7 − 6"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "The crate is the big amount: m = 7 × 6 = 42.",
+        "ar": "القفص هو الكمية الكبيرة: م = 7 × 6 = 42."
+      },
+      "say": {
+        "en": "A box has six mangoes. A crate has seven times as many. Which equation finds m?",
+        "ar": "في صندوق ست حبات مانجو، وفي القفص سبعة أمثالها. أي معادلة تعطي ميم، عدد حبات القفص؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Dina scored 54 points. That is 6 times as many as Karim. How many points did Karim score?",
+        "ar": "أحرزت دينا 54 نقطة، وهذا ستة أمثال ما أحرزه كريم. كم نقطة أحرز كريم؟"
+      },
+      "options": {
+        "en": [
+          "9",
+          "48",
+          "60",
+          "324"
+        ],
+        "ar": [
+          "9",
+          "48",
+          "60",
+          "324"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "54 = 6 × k, and 6 × 9 = 54, so Karim scored 9.",
+        "ar": "54 = 6 × ك، و 6 × 9 = 54، إذن أحرز كريم 9 نقاط."
+      },
+      "say": {
+        "en": "Dina scored fifty four points. That is six times as many as Karim. How many points did Karim score?",
+        "ar": "أحرزت دينا أربعًا وخمسين نقطة، وهذا ستة أمثال ما أحرزه كريم. كم نقطة أحرز كريم؟"
+      }
+    },
+    {
+      "q": {
+        "en": "63 = n × 9. What is n?",
+        "ar": "63 = ن × 9. ما قيمة ن؟"
+      },
+      "options": {
+        "en": [
+          "7",
+          "54",
+          "72",
+          "8"
+        ],
+        "ar": [
+          "7",
+          "54",
+          "72",
+          "8"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "7 × 9 = 63. 8 × 9 is 72, too big.",
+        "ar": "7 × 9 = 63. أما 8 × 9 فتساوي 72، وهي أكبر."
+      },
+      "say": {
+        "en": "Sixty three equals n times nine. What is n?",
+        "ar": "ثلاثة وستون يساوي نون في تسعة. ما قيمة نون؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A pencil costs 3 EGP. A notebook costs 8 times as much. How much is the notebook?",
+        "ar": "ثمن القلم 3 جنيهات، وثمن الكشكول ثمانية أمثال ثمن القلم. كم ثمن الكشكول؟"
+      },
+      "options": {
+        "en": [
+          "24 EGP",
+          "11 EGP",
+          "5 EGP",
+          "38 EGP"
+        ],
+        "ar": [
+          "24 جنيهًا",
+          "11 جنيهًا",
+          "5 جنيهات",
+          "38 جنيهًا"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "8 × 3 = 24 EGP. 11 adds 8 instead of multiplying.",
+        "ar": "8 × 3 = 24 جنيهًا. أما 11 فجمعت 8 بدلًا من الضرب."
+      },
+      "say": {
+        "en": "A pencil costs three pounds. A notebook costs eight times as much. How much is the notebook?",
+        "ar": "ثمن القلم ثلاثة جنيهات، وثمن الكشكول ثمانية أمثال ثمن القلم. كم ثمن الكشكول؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which sentence matches 56 = 8 × n?",
+        "ar": "أي جملة تناسب 56 = 8 × ن؟"
+      },
+      "options": {
+        "en": [
+          "56 is 8 times as many as n",
+          "56 is 8 more than n",
+          "n is 8 times as many as 56",
+          "8 is 56 times as many as n"
+        ],
+        "ar": [
+          "56 يساوي ثمانية أمثال ن",
+          "56 أكبر من ن بمقدار 8",
+          "ن يساوي ثمانية أمثال 56",
+          "8 يساوي 56 مثلًا من ن"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "56 is the big amount, 8 is the number of times, and n is the small amount.",
+        "ar": "56 هو الكمية الكبيرة، و 8 عدد الأمثال، و ن هي الكمية الصغيرة."
+      },
+      "say": {
+        "en": "Which sentence matches fifty six equals eight times n?",
+        "ar": "أي جملة تناسب ستة وخمسين يساوي ثمانية في نون؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A plate of koshary costs 35 EGP. That is 5 times the price of a ta'ameya sandwich. What does the sandwich cost?",
+        "ar": "طبق الكشري بـ 35 جنيهًا، وهذا خمسة أمثال ثمن ساندويتش الطعمية. كم ثمن الساندويتش؟"
+      },
+      "options": {
+        "en": [
+          "7 EGP",
+          "30 EGP",
+          "40 EGP",
+          "175 EGP"
+        ],
+        "ar": [
+          "7 جنيهات",
+          "30 جنيهًا",
+          "40 جنيهًا",
+          "175 جنيهًا"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "35 = 5 × s, and 5 × 7 = 35, so the sandwich costs 7 EGP.",
+        "ar": "35 = 5 × س، و 5 × 7 = 35، إذن ثمن الساندويتش 7 جنيهات."
+      },
+      "say": {
+        "en": "A plate of koshary costs thirty five pounds. That is five times the price of a ta'ameya sandwich. What does the sandwich cost?",
+        "ar": "طبق الكشري بخمسة وثلاثين جنيهًا، وهذا خمسة أمثال ثمن ساندويتش الطعمية. كم ثمن الساندويتش؟"
+      }
+    }
+  ]
+}

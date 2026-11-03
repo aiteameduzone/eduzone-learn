@@ -1,0 +1,398 @@
+{
+  "id": "g4-math-u07-02",
+  "title": {
+    "en": "Partial Products: Multi-Digit by One Digit",
+    "ar": "النواتج الجزئية: الضرب في عدد من رقم واحد"
+  },
+  "objective": {
+    "en": "Multiply a three- or four-digit number by a one-digit number using partial products and the column method with regrouping.",
+    "ar": "أن يضرب التلميذ عددًا من ثلاثة أو أربعة أرقام في عدد من رقم واحد باستخدام النواتج الجزئية والطريقة الرأسية مع إعادة التجميع."
+  },
+  "refs": {
+    "egypt": [
+      "U7 · 7.1 Partial products, × 1-digit"
+    ],
+    "ccss": [
+      "4.NBT.B.5"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "text": {
+        "en": "A farm sends **3 boxes** with **213 dates** in each box. Find 3 × 213.\n\nSplit 213 into **200 + 10 + 3** and multiply each part by 3:\n\n600 + 30 + 9 = **639 dates**",
+        "ar": "ترسل مزرعة **3 صناديق**، في كل صندوق **213 تمرة**. أوجد 3 × 213.\n\nنجزّئ 213 إلى **200 + 10 + 3** ونضرب كل جزء في 3:\n\n600 + 30 + 9 = **639 تمرة**"
+      },
+      "say": {
+        "en": "A farm sends three boxes with two hundred thirteen dates in each box. Split two hundred thirteen into two hundred, ten and three, and multiply each part by three. Six hundred plus thirty plus nine is six hundred thirty-nine dates.",
+        "ar": "ترسل مزرعة ثلاثة صناديق، في كل صندوق مائتان وثلاث عشرة تمرة. نجزّئ مائتين وثلاثة عشر إلى مائتين وعشرة وثلاثة، ونضرب كل جزء في ثلاثة. ستمائة زائد ثلاثين زائد تسعة يساوي ستمائة وتسعًا وثلاثين تمرة."
+      },
+      "visual": {
+        "kind": "blocks",
+        "n": 213
+      },
+      "check": {
+        "q": {
+          "en": "In 3 × 213, what is 3 × 200?",
+          "ar": "في 3 × 213، كم يساوي 3 × 200؟"
+        },
+        "options": {
+          "en": [
+            "600",
+            "60",
+            "6,000",
+            "203"
+          ],
+          "ar": [
+            "600",
+            "60",
+            "6,000",
+            "203"
+          ]
+        },
+        "answer": 0
+      }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "**Partial products:** find 4 × 236.",
+        "ar": "**النواتج الجزئية:** أوجد 4 × 236."
+      },
+      "lines": {
+        "en": [
+          "236 = 200 + 30 + 6",
+          "4 × 200 = 800",
+          "4 × 30 = 120",
+          "4 × 6 = 24",
+          "800 + 120 + 24 = 944"
+        ],
+        "ar": [
+          "236 = 200 + 30 + 6",
+          "4 × 200 = 800",
+          "4 × 30 = 120",
+          "4 × 6 = 24",
+          "800 + 120 + 24 = 944"
+        ]
+      },
+      "say": {
+        "en": "Partial products: find four times two hundred thirty-six. Two hundred thirty-six is two hundred plus thirty plus six. Four times two hundred is eight hundred. Four times thirty is one hundred twenty. Four times six is twenty-four. Eight hundred plus one hundred twenty plus twenty-four is nine hundred forty-four.",
+        "ar": "النواتج الجزئية: أوجد أربعة في مائتين وستة وثلاثين. مائتان وستة وثلاثون تساوي مائتين زائد ثلاثين زائد ستة. أربعة في مائتين يساوي ثمانمائة. أربعة في ثلاثين يساوي مائة وعشرين. أربعة في ستة يساوي أربعة وعشرين. ثمانمائة زائد مائة وعشرين زائد أربعة وعشرين يساوي تسعمائة وأربعة وأربعين."
+      },
+      "visual": {
+        "kind": "blocks",
+        "n": 236
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": {
+        "places": 4,
+        "target": 944
+      },
+      "text": {
+        "en": "Add the partial products 800 + 120 + 24, then show the product.",
+        "ar": "اجمع النواتج الجزئية 800 + 120 + 24، ثم اعرض حاصل الضرب."
+      },
+      "prompt": {
+        "en": "Build the product of 4 × 236 in the chart.",
+        "ar": "كوّن حاصل ضرب 4 × 236 في الجدول."
+      },
+      "say": {
+        "en": "Add the partial products: eight hundred plus one hundred twenty plus twenty-four. Then build the product of four times two hundred thirty-six in the chart.",
+        "ar": "اجمع النواتج الجزئية: ثمانمائة زائد مائة وعشرين زائد أربعة وعشرين. ثم كوّن حاصل ضرب أربعة في مائتين وستة وثلاثين في جدول القيمة المكانية."
+      }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "**Four digits:** a school buys 3 sets of 1,215 pencils. Find 3 × 1,215. Estimate first: 3 × 1,200 = 3,600.",
+        "ar": "**أربعة أرقام:** تشتري مدرسة 3 مجموعات، في كل منها 1,215 قلمًا. أوجد 3 × 1,215. قدّر أولًا: 3 × 1,200 = 3,600."
+      },
+      "lines": {
+        "en": [
+          "3 × 1,000 = 3,000",
+          "3 × 200 = 600",
+          "3 × 10 = 30",
+          "3 × 5 = 15",
+          "3,000 + 600 + 30 + 15 = 3,645"
+        ],
+        "ar": [
+          "3 × 1,000 = 3,000",
+          "3 × 200 = 600",
+          "3 × 10 = 30",
+          "3 × 5 = 15",
+          "3,000 + 600 + 30 + 15 = 3,645"
+        ]
+      },
+      "say": {
+        "en": "Four digits. A school buys three sets of one thousand two hundred fifteen pencils. Estimate first: three times one thousand two hundred is three thousand six hundred. Three times one thousand is three thousand. Three times two hundred is six hundred. Three times ten is thirty. Three times five is fifteen. Three thousand plus six hundred plus thirty plus fifteen is three thousand six hundred forty-five. That is close to our estimate.",
+        "ar": "أربعة أرقام. تشتري مدرسة ثلاث مجموعات، في كل منها ألف ومائتان وخمسة عشر قلمًا. قدّر أولًا: ثلاثة في ألف ومائتين يساوي ثلاثة آلاف وستمائة. ثلاثة في ألف يساوي ثلاثة آلاف. ثلاثة في مائتين يساوي ستمائة. ثلاثة في عشرة يساوي ثلاثين. ثلاثة في خمسة يساوي خمسة عشر. ثلاثة آلاف زائد ستمائة زائد ثلاثين زائد خمسة عشر يساوي ثلاثة آلاف وستمائة وخمسة وأربعين، وهو قريب من التقدير."
+      },
+      "visual": {
+        "kind": "blocks",
+        "n": 1215
+      },
+      "check": {
+        "q": {
+          "en": "3 × 1,215 is about ...",
+          "ar": "3 × 1,215 يساوي تقريبًا ..."
+        },
+        "options": {
+          "en": [
+            "3,600",
+            "360",
+            "36,000"
+          ],
+          "ar": [
+            "3,600",
+            "360",
+            "36,000"
+          ]
+        },
+        "answer": 0
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": {
+        "places": 4,
+        "target": 3645
+      },
+      "text": {
+        "en": "Now show the exact product.",
+        "ar": "اعرض الآن حاصل الضرب الدقيق."
+      },
+      "prompt": {
+        "en": "Build 3 × 1,215 in the chart.",
+        "ar": "كوّن 3 × 1,215 في الجدول."
+      },
+      "say": {
+        "en": "Build three times one thousand two hundred fifteen in the chart.",
+        "ar": "كوّن ثلاثة في ألف ومائتين وخمسة عشر في جدول القيمة المكانية."
+      }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "**Column method with regrouping:** find 6 × 457. Start with the ones.",
+        "ar": "**الطريقة الرأسية مع إعادة التجميع:** أوجد 6 × 457. ابدأ بالآحاد."
+      },
+      "lines": {
+        "en": [
+          "Ones: 6 × 7 = 42 → write 2, carry 4",
+          "Tens: 6 × 5 = 30, 30 + 4 = 34 → write 4, carry 3",
+          "Hundreds: 6 × 4 = 24, 24 + 3 = 27 → write 27",
+          "6 × 457 = 2,742"
+        ],
+        "ar": [
+          "الآحاد: 6 × 7 = 42 ← نكتب 2 ونحمل 4",
+          "العشرات: 6 × 5 = 30، 30 + 4 = 34 ← نكتب 4 ونحمل 3",
+          "المئات: 6 × 4 = 24، 24 + 3 = 27 ← نكتب 27",
+          "6 × 457 = 2,742"
+        ]
+      },
+      "say": {
+        "en": "Column method with regrouping: find six times four hundred fifty-seven. Start with the ones. Six times seven is forty-two: write two and carry four tens. Six times five tens is thirty tens, plus four is thirty-four tens: write four and carry three hundreds. Six times four hundreds is twenty-four hundreds, plus three is twenty-seven hundreds. The product is two thousand seven hundred forty-two.",
+        "ar": "الطريقة الرأسية مع إعادة التجميع: أوجد ستة في أربعمائة وسبعة وخمسين. ابدأ بالآحاد. ستة في سبعة يساوي اثنين وأربعين: نكتب اثنين ونحمل أربع عشرات. ستة في خمس عشرات يساوي ثلاثين عشرة، زائد أربعة يساوي أربعًا وثلاثين عشرة: نكتب أربعة ونحمل ثلاث مئات. ستة في أربع مئات يساوي أربعًا وعشرين مائة، زائد ثلاثة يساوي سبعًا وعشرين مائة. حاصل الضرب ألفان وسبعمائة واثنان وأربعون."
+      },
+      "visual": {
+        "kind": "blocks",
+        "n": 457
+      }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Remember:**\n\nSplit the number by place value.\n\nMultiply every part, keeping its zeros.\n\nAdd the partial products, and estimate to check.",
+        "ar": "**تذكّر:**\n\nجزّئ العدد حسب القيمة المكانية.\n\nاضرب كل جزء مع الحفاظ على أصفاره.\n\nاجمع النواتج الجزئية، وقدّر لتتحقق."
+      },
+      "say": {
+        "en": "Remember. Split the number by place value. Multiply every part, keeping its zeros. Add the partial products, and estimate to check.",
+        "ar": "تذكّر. جزّئ العدد حسب القيمة المكانية. اضرب كل جزء مع الحفاظ على أصفاره. اجمع النواتج الجزئية، وقدّر لتتحقق."
+      },
+      "visual": {
+        "kind": "blocks",
+        "n": 944
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "5 × 132 = ?",
+        "ar": "5 × 132 = ؟"
+      },
+      "options": {
+        "en": [
+          "660",
+          "532",
+          "650",
+          "600"
+        ],
+        "ar": [
+          "660",
+          "532",
+          "650",
+          "600"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "5 × 100 = 500, 5 × 30 = 150, 5 × 2 = 10. 500 + 150 + 10 = 660.",
+        "ar": "5 × 100 = 500 و 5 × 30 = 150 و 5 × 2 = 10. إذن 500 + 150 + 10 = 660."
+      },
+      "say": {
+        "en": "Five times one hundred thirty-two equals what?",
+        "ar": "خمسة في مائة واثنين وثلاثين يساوي كم؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which partial products give 2 × 1,324?",
+        "ar": "ما النواتج الجزئية لـ 2 × 1,324؟"
+      },
+      "options": {
+        "en": [
+          "2,000 + 600 + 40 + 8",
+          "2,000 + 300 + 20 + 4",
+          "2 + 6 + 4 + 8",
+          "200 + 60 + 4 + 8"
+        ],
+        "ar": [
+          "2,000 + 600 + 40 + 8",
+          "2,000 + 300 + 20 + 4",
+          "2 + 6 + 4 + 8",
+          "200 + 60 + 4 + 8"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "2 × 1,000 = 2,000, 2 × 300 = 600, 2 × 20 = 40, 2 × 4 = 8. Each part keeps its place value.",
+        "ar": "2 × 1,000 = 2,000 و 2 × 300 = 600 و 2 × 20 = 40 و 2 × 4 = 8. كل جزء يحتفظ بقيمته المكانية."
+      },
+      "say": {
+        "en": "Which partial products give two times one thousand three hundred twenty-four?",
+        "ar": "ما النواتج الجزئية لاثنين في ألف وثلاثمائة وأربعة وعشرين؟"
+      }
+    },
+    {
+      "q": {
+        "en": "7 × 48 = ?",
+        "ar": "7 × 48 = ؟"
+      },
+      "options": {
+        "en": [
+          "336",
+          "286",
+          "2,856",
+          "346"
+        ],
+        "ar": [
+          "336",
+          "286",
+          "2,856",
+          "346"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "7 × 8 = 56: write 6, carry 5. 7 × 4 = 28, plus 5 = 33. Answer 336. 286 forgets the carried 5.",
+        "ar": "7 × 8 = 56: نكتب 6 ونحمل 5. 7 × 4 = 28، زائد 5 = 33. الناتج 336. أما 286 فنسي الـ 5 المحمولة."
+      },
+      "say": {
+        "en": "Seven times forty-eight equals what?",
+        "ar": "سبعة في ثمانية وأربعين يساوي كم؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A bakery makes 125 feteer every day. How many in 6 days?",
+        "ar": "مخبز يصنع 125 فطيرة كل يوم. كم فطيرة في 6 أيام؟"
+      },
+      "options": {
+        "en": [
+          "750",
+          "650",
+          "131",
+          "615"
+        ],
+        "ar": [
+          "750",
+          "650",
+          "131",
+          "615"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "6 × 100 = 600, 6 × 20 = 120, 6 × 5 = 30. 600 + 120 + 30 = 750. 131 adds instead of multiplying.",
+        "ar": "6 × 100 = 600 و 6 × 20 = 120 و 6 × 5 = 30. إذن 600 + 120 + 30 = 750. أما 131 فجمع بدل أن يضرب."
+      },
+      "say": {
+        "en": "A bakery makes one hundred twenty-five feteer every day. How many in six days?",
+        "ar": "مخبز يصنع مائة وخمسًا وعشرين فطيرة كل يوم. كم فطيرة في ستة أيام؟"
+      }
+    },
+    {
+      "q": {
+        "en": "4 × 2,103 = ?",
+        "ar": "4 × 2,103 = ؟"
+      },
+      "options": {
+        "en": [
+          "8,412",
+          "8,012",
+          "2,107",
+          "80,412"
+        ],
+        "ar": [
+          "8,412",
+          "8,012",
+          "2,107",
+          "80,412"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "4 × 2,000 = 8,000, 4 × 100 = 400, 4 × 0 = 0, 4 × 3 = 12. Total 8,412. 8,012 forgets the 400.",
+        "ar": "4 × 2,000 = 8,000 و 4 × 100 = 400 و 4 × 0 = 0 و 4 × 3 = 12. المجموع 8,412. أما 8,012 فنسي الـ 400."
+      },
+      "say": {
+        "en": "Four times two thousand one hundred three equals what?",
+        "ar": "أربعة في ألفين ومائة وثلاثة يساوي كم؟"
+      }
+    },
+    {
+      "q": {
+        "en": "5 × 389 is about ...",
+        "ar": "5 × 389 يساوي تقريبًا ..."
+      },
+      "options": {
+        "en": [
+          "2,000",
+          "200",
+          "20,000",
+          "1,500"
+        ],
+        "ar": [
+          "2,000",
+          "200",
+          "20,000",
+          "1,500"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "389 is close to 400, and 5 × 400 = 2,000. (The exact answer is 1,945.)",
+        "ar": "389 قريب من 400، و 5 × 400 = 2,000. (الناتج الدقيق 1,945.)"
+      },
+      "say": {
+        "en": "Five times three hundred eighty-nine is about how much?",
+        "ar": "خمسة في ثلاثمائة وتسعة وثمانين يساوي تقريبًا كم؟"
+      }
+    }
+  ]
+}
