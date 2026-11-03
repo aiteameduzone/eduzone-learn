@@ -16,7 +16,7 @@
       right: "Correct!", wrong: "Not quite.", question: "Question", of: "of",
       finish: "Finish", score: "Your score", again: "Try again", back_unit: "Back to lessons",
       none_for_cur: "No units mapped to this curriculum yet.", objective: "Objective",
-      do_it_first: "Complete the activity to continue", continue: "Continue", show_step: "Show next step"
+      do_it_first: "Complete the activity to continue", continue: "Continue", term: "Term", show_step: "Show next step"
     },
     ar: {
       learn: "تعلّم", cur_egypt: "المنهج المصري", cur_ccss: "المنهج الأمريكي",
@@ -31,7 +31,7 @@
       right: "صحيح!", wrong: "ليست صحيحة.", question: "سؤال", of: "من",
       finish: "إنهاء", score: "نتيجتك", again: "أعد المحاولة", back_unit: "العودة للدروس",
       none_for_cur: "لا توجد وحدات لهذا المنهج بعد.", objective: "الهدف",
-      do_it_first: "أكمل النشاط للمتابعة", continue: "تابع", show_step: "اعرض الخطوة التالية"
+      do_it_first: "أكمل النشاط للمتابعة", continue: "تابع", term: "الترم", show_step: "اعرض الخطوة التالية"
     }
   };
 
@@ -135,15 +135,21 @@
     var html = document.documentElement;
     html.lang = state.lang;
     html.dir = state.lang === "ar" ? "rtl" : "ltr";
-    document.getElementById("langBtn").textContent = state.lang === "ar" ? "English" : "عربي";
+    document.querySelectorAll(".lang-switch button").forEach(function (b) {
+      b.classList.toggle("on", b.dataset.lang === state.lang);
+      b.setAttribute("aria-pressed", b.dataset.lang === state.lang);
+    });
     document.querySelectorAll("[data-i18n]").forEach(function (e) { e.textContent = t(e.dataset.i18n); });
     document.getElementById("curriculum").value = state.cur;
   }
-  document.getElementById("langBtn").onclick = function () {
-    state.lang = state.lang === "ar" ? "en" : "ar";
-    store.set("ez_lang", state.lang);
-    stopAudio(); applyLang(); route();
-  };
+  document.querySelectorAll(".lang-switch button").forEach(function (b) {
+    b.onclick = function () {
+      if (state.lang === b.dataset.lang) return;
+      state.lang = b.dataset.lang;
+      store.set("ez_lang", state.lang);
+      stopAudio(); applyLang(); route();
+    };
+  });
   document.getElementById("curriculum").onchange = function (e) {
     state.cur = e.target.value; store.set("ez_cur", state.cur); route();
   };
@@ -184,10 +190,18 @@
     });
     html += "</div>";
 
-    var units = c.units.filter(function (u) { return u.grade === g && u.subject === s && u.refs[state.cur]; });
+    var units = c.units.filter(function (u) { return u.grade === g && u.subject === s && u.refs[state.cur]; })
+      .sort(function (a, b) { return (a.order || 0) - (b.order || 0); });
+    var term = null;
     if (!units.length) html += '<div class="empty">' + t("soon") + " 🚧</div>";
     units.forEach(function (u) {
-      html += '<h2>' + esc(L(u.title)) + ' <span class="code">' + esc(L(u.refs[state.cur])) + "</span></h2><div class=\"cards\">";
+      if (u.term && u.term !== term && state.cur === "egypt") { term = u.term; html += '<div class="term">' + t("term") + " " + digits(term) + "</div>"; }
+      if (!u.lessons.length) {
+        html += '<div class="unit-soon"><span class="num">' + digits(u.num || "") + "</span><b>" + esc(L(u.title)) +
+          '</b><span class="code">' + digits(esc(L(u.refs[state.cur]))) + '</span><span class="soon-tag">' + t("soon") + "</span></div>";
+        return;
+      }
+      html += '<h2>' + esc(L(u.title)) + ' <span class="code">' + digits(esc(L(u.refs[state.cur]))) + "</span></h2><div class=\"cards\">";
       u.lessons.forEach(function (lsn, n) {
         var p = prog[lsn.id];
         html += '<a class="lcard" href="#/lesson/' + lsn.id + '"><span class="num">' + digits(n + 1) + "</span>" +
