@@ -259,6 +259,11 @@
 
     function frame(inner, pos) {
       var refs = (lsn.refs && lsn.refs[state.cur]) || [];
+      // Egypt refs are written "U4 · topic" in English: show just the unit, in the page language
+      if (state.cur === "egypt") refs = refs.map(function (r) {
+        var m = /^U(\d+)/.exec(r);
+        return m ? (state.lang === "ar" ? "الوحدة " : "Unit ") + digits(m[1]) : r;
+      }).filter(function (r, i, a) { return a.indexOf(r) === i; });
       app.innerHTML = crumbs([[t("back_unit"), backHref], [L(lsn.title), null]]) +
         "<h1>" + esc(L(lsn.title)) + "</h1>" +
         '<p class="sub"><b>' + t("objective") + ":</b> " + inline(L(lsn.objective)) + " " +

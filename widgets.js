@@ -85,6 +85,9 @@
   W["number-line"] = function (el, p, ctx) {
     var min = p.min || 0, max = p.max || 1, div = p.divisions || 4;
     var tn = p.target[0], td = p.target[1];
+    // scale: each whole step on the line is worth `scale` (e.g. 1000 for rounding big numbers)
+    var scale = p.scale || 0;
+    function big(v) { return ctx.num(Math.round(v).toLocaleString("en-US")); }
     var total = (max - min) * div;
     var line = h("div", "nline");
     line.appendChild(h("div", "axis"));
@@ -95,7 +98,7 @@
       var t = h("div", "tick"); t.style.left = x + "%"; line.appendChild(t);
       var whole = i % div === 0;
       if (whole || p.labelAll) {
-        var l = h("div", "lbl", whole ? ctx.num(min + i / div) : ctx.frac(min * div + i, div));
+        var l = h("div", "lbl", scale ? big((min + i / div) * scale) : whole ? ctx.num(min + i / div) : ctx.frac(min * div + i, div));
         l.style.left = x + "%";
         line.appendChild(l);
       }
@@ -113,7 +116,7 @@
       dot.style.left = (i / total) * 100 + "%";
       var pn = min * div + i;
       if (pn * td === tn * div) { status(st, true, ctx.say("correct")); ctx.done(); }
-      else status(st, false, ctx.say("you_placed") + " " + ctx.frac(pn, div) + " - " + ctx.say("try_again"));
+      else status(st, false, ctx.say("you_placed") + " " + (scale ? big(pn / div * scale) : ctx.frac(pn, div)) + " - " + ctx.say("try_again"));
     });
   };
 
@@ -181,6 +184,71 @@
     el.appendChild(st);
   };
 
+  // +/- stepper used by array and area-grid
+  function stepper(label, val, min, max, onChange, ctx) {
+    var box = h("div", "stepper");
+    box.appendChild(h("span", "st-lbl", label));
+    var minus = h("button", null, "&minus;"), v = h("b", "st-val", ctx.num(val)), plus = h("button", null, "+");
+    minus.onclick = function () { if (val > min) { val--; v.innerHTML = ctx.num(val); onChange(val); } };
+    plus.onclick = function () { if (val < max) { val++; v.innerHTML = ctx.num(val); onChange(val); } };
+    box.appendChild(minus); box.appendChild(v); box.appendChild(plus);
+    return box;
+  }
+
+  function dotGrid(rows, cols) {
+    var g = h("div", "dots");
+    g.style.gridTemplateColumns = "repeat(" + cols + ", 1fr)";
+    for (var i = 0; i < rows * cols; i++) g.appendChild(h("span", "dot-c"));
+    return g;
+  }
+
+  // Build an array of rows x cols. Done when the product (or exact shape) matches.
+  // params: {target, rows?, cols?, max?, exact?: [r, c]}
+  var ROWS = { en: "Rows", ar: "صفوف" }, COLS = { en: "Columns", ar: "أعمدة" };
+  W["array"] = function (el, p, ctx) {
+    var r = p.rows || 1, c = p.cols || 1, max = p.max || 10;
+    var wrap = h("div", "w-row"), pic = h("div", "dots-wrap"), read = h("div", "w-readout"), st = h("div", "w-status");
+    wrap.appendChild(stepper(ROWS[ctx.lang], r, 1, max, function (x) { r = x; upd(); }, ctx));
+    wrap.appendChild(stepper(COLS[ctx.lang], c, 1, max, function (x) { c = x; upd(); }, ctx));
+    el.appendChild(wrap); el.appendChild(pic); el.appendChild(read); el.appendChild(st);
+    function upd() {
+      pic.innerHTML = ""; pic.appendChild(dotGrid(r, c));
+      read.innerHTML = '<span dir="ltr">' + ctx.num(r) + " × " + ctx.num(c) + " = " + ctx.num(r * c) + "</span>";
+      var ok = p.exact ? (r === p.exact[0] && c === p.exact[1]) || (r === p.exact[1] && c === p.exact[0])
+                       : r * c === p.target && (!p.notTrivial || (r > 1 && c > 1));
+      if (ok) { status(st, true, ctx.say("correct")); ctx.done(); } else status(st, false, "");
+    }
+    upd();
+  };
+
+  // Rectangle on a square grid: shows area and perimeter.
+  // params: {target: {area?, perimeter?, w?, h?}, w?, h?, maxW?, maxH?}
+  var WD = { en: "Length", ar: "الطول" }, HT = { en: "Width", ar: "العرض" };
+  var AREA = { en: "Area", ar: "المساحة" }, PERI = { en: "Perimeter", ar: "المحيط" };
+  W["area-grid"] = function (el, p, ctx) {
+    var w = p.w || 1, ht = p.h || 1, mw = p.maxW || 10, mh = p.maxH || 8, tg = p.target || {};
+    var wrap = h("div", "w-row"), pic = h("div", "grid-wrap"), read = h("div", "w-readout area-read"), st = h("div", "w-status");
+    wrap.appendChild(stepper(WD[ctx.lang], w, 1, mw, function (x) { w = x; upd(); }, ctx));
+    wrap.appendChild(stepper(HT[ctx.lang], ht, 1, mh, function (x) { ht = x; upd(); }, ctx));
+    el.appendChild(wrap); el.appendChild(pic); el.appendChild(read); el.appendChild(st);
+    function upd() {
+      pic.innerHTML = ""; pic.appendChild(gridPic(w, ht, mw, mh));
+      read.innerHTML = '<span dir="ltr">' + AREA[ctx.lang] + " = " + ctx.num(w) + " × " + ctx.num(ht) + " = <b>" + ctx.num(w * ht) +
+        "</b></span><br><span dir=\"ltr\">" + PERI[ctx.lang] + " = " + ctx.num(w) + " + " + ctx.num(ht) + " + " + ctx.num(w) + " + " + ctx.num(ht) + " = <b>" + ctx.num(2 * (w + ht)) + "</b></span>";
+      var ok = (tg.area == null || w * ht === tg.area) && (tg.perimeter == null || 2 * (w + ht) === tg.perimeter) &&
+               (tg.w == null || (w === tg.w && ht === tg.h) || (w === tg.h && ht === tg.w));
+      if (ok) { status(st, true, ctx.say("correct")); ctx.done(); } else status(st, false, "");
+    }
+    upd();
+  };
+
+  function gridPic(w, ht, mw, mh) {
+    var g = h("div", "sqgrid");
+    g.style.gridTemplateColumns = "repeat(" + mw + ", 1fr)";
+    for (var y = 0; y < mh; y++) for (var x = 0; x < mw; x++) g.appendChild(h("span", "sq" + (x < w && y < ht ? " on" : "")));
+    return g;
+  }
+
   // ---------- Read-only animated visuals for explain/example steps ----------
   // visual = {kind: "pies"|"bars", items: [{f:[n,d], label?, color?}], ops?: ["+","="...], emoji?}
   var SVGNS = "http://www.w3.org/2000/svg";
@@ -207,7 +275,36 @@
     return svg;
   }
 
+  // Base-ten blocks: thousands (cube), hundreds (flat), tens (rod), ones (unit).
+  var PLACE4 = { en: ["thousands", "hundreds", "tens", "ones"], ar: ["آلاف", "مئات", "عشرات", "آحاد"] };
+  function blocks(el, v, ctx) {
+    var n = v.n, d = [Math.floor(n / 1000) % 10, Math.floor(n / 100) % 10, Math.floor(n / 10) % 10, n % 10];
+    var row = h("div", "vis blocks");
+    d.forEach(function (k, i) {
+      if (!k && n < Math.pow(10, 3 - i)) return; // skip leading zeros; inner zeros keep an empty column
+      var col = h("div", "vis-item");
+      var pile = h("div", "pile pile-" + i);
+      for (var j = 0; j < k; j++) { var b = h("span", "blk blk-" + i); b.style.animationDelay = (j * 0.08) + "s"; pile.appendChild(b); }
+      col.appendChild(pile);
+      col.appendChild(h("div", "vis-label small", ctx.num(k) + " " + PLACE4[ctx.lang][i]));
+      row.appendChild(col);
+    });
+    el.appendChild(row);
+    el.appendChild(h("div", "vis-total", ctx.num(n.toLocaleString("en-US"))));
+  }
+
   W.visual = function (el, v, ctx) {
+    if (v.kind === "blocks") { if (v.emoji) el.appendChild(h("div", "vis-emoji", v.emoji)); return blocks(el, v, ctx); }
+    if (v.kind === "array" || v.kind === "grid") {
+      if (v.emoji) el.appendChild(h("div", "vis-emoji", v.emoji));
+      var box = h("div", "vis vis-" + v.kind);
+      if (v.kind === "array") box.appendChild(dotGrid(v.rows, v.cols));
+      else { var gp = gridPic(v.w, v.h, v.w, v.h); gp.style.width = Math.min(300, v.w * 34) + "px"; box.appendChild(gp); }
+      el.appendChild(box);
+      el.appendChild(h("div", "vis-total", v.label ? ctx.inline(ctx.L(v.label)) :
+        '<span dir="ltr">' + ctx.num(v.kind === "array" ? v.rows : v.w) + " × " + ctx.num(v.kind === "array" ? v.cols : v.h) + "</span>"));
+      return;
+    }
     var row = h("div", "vis vis-" + v.kind);
     var ops = v.ops || [];
     v.items.forEach(function (it, i) {

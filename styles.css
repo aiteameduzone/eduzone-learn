@@ -261,3 +261,30 @@ html[data-theme="dark"] .vis-op { color: var(--ink); }
   .controls select { max-width: 118px; padding: 5px 8px; font-size: .8rem; }
   .lang-switch button { padding: 5px 9px; font-size: .82rem; }
 }
+
+/* Stepper, arrays, area grid */
+.stepper { display: inline-flex; align-items: center; gap: 6px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 4px 8px; }
+.stepper button { width: 34px; height: 34px; border-radius: 9px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); font-weight: 800; font-size: 1.1rem; }
+.st-lbl { font-size: .85rem; color: var(--muted); font-weight: 700; }
+.st-val { min-width: 26px; text-align: center; font-size: 1.2rem; }
+.dots-wrap, .grid-wrap { margin-top: 12px; direction: ltr; }
+.dots { display: inline-grid; gap: 6px; }
+.dot-c { width: 18px; height: 18px; border-radius: 50%; background: var(--orange); animation: pop .3s ease-out; }
+.sqgrid { display: grid; gap: 2px; max-width: 360px; }
+.sq { aspect-ratio: 1; background: var(--card); border: 1px solid var(--line); border-radius: 2px; transition: background .15s; }
+.sq.on { background: var(--blue); border-color: var(--navy); }
+.vis-grid .sqgrid { max-width: 260px; margin: 0 auto; }
+.vis-array { justify-content: center; }
+.area-read { font-size: 1.1rem; line-height: 1.8; }
+.vis-total { text-align: center; font-size: 1.5rem; font-weight: 800; margin-top: 6px; }
+
+/* Base-ten blocks */
+.blocks { align-items: flex-end; gap: 18px; }
+.pile { display: flex; flex-wrap: wrap; gap: 4px; align-items: flex-end; justify-content: center; max-width: 150px; min-height: 30px; }
+.blk { display: inline-block; animation: pop .35s ease-out both; }
+.blk-0 { width: 40px; height: 40px; background: var(--navy); border-radius: 4px; box-shadow: 5px -5px 0 #2e86c1; margin: 6px 6px 0 0; }
+.blk-1 { width: 34px; height: 34px; background: var(--blue); border-radius: 3px;
+  background-image: linear-gradient(rgba(255,255,255,.35) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.35) 1px, transparent 1px); background-size: 3.4px 3.4px; }
+.blk-2 { width: 7px; height: 34px; background: var(--orange); border-radius: 2px; }
+.blk-3 { width: 11px; height: 11px; background: var(--green); border-radius: 2px; }
+.vis-label.small { font-size: .85rem; font-weight: 700; }
