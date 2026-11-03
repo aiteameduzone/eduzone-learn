@@ -17,6 +17,165 @@
   },
   "units": [
     {
+      "id": "g4-math-u01",
+      "grade": 4,
+      "subject": "math",
+      "order": 1,
+      "term": 1,
+      "num": 1,
+      "title": {
+        "en": "Place Value",
+        "ar": "القيمة المكانية"
+      },
+      "refs": {
+        "egypt": {
+          "en": "Unit 1 · Term 1",
+          "ar": "الوحدة 1 · الترم الأول"
+        },
+        "ccss": "4.NBT.A"
+      },
+      "lessons": []
+    },
+    {
+      "id": "g4-math-u02",
+      "grade": 4,
+      "subject": "math",
+      "order": 2,
+      "term": 1,
+      "num": 2,
+      "title": {
+        "en": "Addition and Subtraction Strategies",
+        "ar": "إستراتيجيات الجمع والطرح"
+      },
+      "refs": {
+        "egypt": {
+          "en": "Unit 2 · Term 1",
+          "ar": "الوحدة 2 · الترم الأول"
+        },
+        "ccss": "4.NBT.B.4"
+      },
+      "lessons": []
+    },
+    {
+      "id": "g4-math-u03",
+      "grade": 4,
+      "subject": "math",
+      "order": 3,
+      "term": 1,
+      "num": 3,
+      "title": {
+        "en": "Measurement",
+        "ar": "مفاهيم القياس"
+      },
+      "refs": {
+        "egypt": {
+          "en": "Unit 3 · Term 1",
+          "ar": "الوحدة 3 · الترم الأول"
+        },
+        "ccss": "4.MD.A.1-2"
+      },
+      "lessons": []
+    },
+    {
+      "id": "g4-math-u04",
+      "grade": 4,
+      "subject": "math",
+      "order": 4,
+      "term": 1,
+      "num": 4,
+      "title": {
+        "en": "Area and Perimeter",
+        "ar": "المساحة والمحيط"
+      },
+      "refs": {
+        "egypt": {
+          "en": "Unit 4 · Term 1",
+          "ar": "الوحدة 4 · الترم الأول"
+        },
+        "ccss": "4.MD.A.3"
+      },
+      "lessons": []
+    },
+    {
+      "id": "g4-math-u05",
+      "grade": 4,
+      "subject": "math",
+      "order": 5,
+      "term": 1,
+      "num": 5,
+      "title": {
+        "en": "Multiplication as a Relationship",
+        "ar": "الضرب كعلاقة"
+      },
+      "refs": {
+        "egypt": {
+          "en": "Unit 5 · Term 1",
+          "ar": "الوحدة 5 · الترم الأول"
+        },
+        "ccss": "4.OA.A"
+      },
+      "lessons": []
+    },
+    {
+      "id": "g4-math-u06",
+      "grade": 4,
+      "subject": "math",
+      "order": 6,
+      "term": 1,
+      "num": 6,
+      "title": {
+        "en": "Factors and Multiples",
+        "ar": "العوامل والمضاعفات"
+      },
+      "refs": {
+        "egypt": {
+          "en": "Unit 6 · Term 1",
+          "ar": "الوحدة 6 · الترم الأول"
+        },
+        "ccss": "4.OA.B.4"
+      },
+      "lessons": []
+    },
+    {
+      "id": "g4-math-u07",
+      "grade": 4,
+      "subject": "math",
+      "order": 7,
+      "term": 1,
+      "num": 7,
+      "title": {
+        "en": "Multiplication and Division",
+        "ar": "الضرب والقسمة"
+      },
+      "refs": {
+        "egypt": {
+          "en": "Unit 7 · Term 1",
+          "ar": "الوحدة 7 · الترم الأول"
+        },
+        "ccss": "4.NBT.B.5-6"
+      },
+      "lessons": []
+    },
+    {
+      "id": "g4-math-u08",
+      "grade": 4,
+      "subject": "math",
+      "order": 8,
+      "term": 1,
+      "num": 8,
+      "title": {
+        "en": "Order of Operations",
+        "ar": "ترتيب العمليات"
+      },
+      "refs": {
+        "egypt": {
+          "en": "Unit 8 · Term 1",
+          "ar": "الوحدة 8 · الترم الأول"
+        }
+      },
+      "lessons": []
+    },
+    {
       "id": "g4-math-frac",
       "grade": 4,
       "subject": "math",
@@ -141,7 +300,90 @@
             ]
           }
         }
-      ]
+      ],
+      "order": 9,
+      "term": 2,
+      "num": 9
+    },
+    {
+      "id": "g4-math-u10",
+      "grade": 4,
+      "subject": "math",
+      "order": 10,
+      "term": 2,
+      "num": 10,
+      "title": {
+        "en": "Decimals",
+        "ar": "الكسور العشرية"
+      },
+      "refs": {
+        "egypt": {
+          "en": "Unit 10 · Term 2",
+          "ar": "الوحدة 10 · الترم الثاني"
+        },
+        "ccss": "4.NF.C"
+      },
+      "lessons": []
+    },
+    {
+      "id": "g4-math-u11",
+      "grade": 4,
+      "subject": "math",
+      "order": 11,
+      "term": 2,
+      "num": 11,
+      "title": {
+        "en": "Data with Fractions",
+        "ar": "بيانات تحتوي على كسور"
+      },
+      "refs": {
+        "egypt": {
+          "en": "Unit 11 · Term 2",
+          "ar": "الوحدة 11 · الترم الثاني"
+        },
+        "ccss": "4.MD.B.4"
+      },
+      "lessons": []
+    },
+    {
+      "id": "g4-math-u12",
+      "grade": 4,
+      "subject": "math",
+      "order": 12,
+      "term": 2,
+      "num": 12,
+      "title": {
+        "en": "Geometry: Lines, Angles and Shapes",
+        "ar": "الهندسة: الخطوط والزوايا والأشكال"
+      },
+      "refs": {
+        "egypt": {
+          "en": "Unit 12 · Term 2",
+          "ar": "الوحدة 12 · الترم الثاني"
+        },
+        "ccss": "4.G.A"
+      },
+      "lessons": []
+    },
+    {
+      "id": "g4-math-u13",
+      "grade": 4,
+      "subject": "math",
+      "order": 13,
+      "term": 2,
+      "num": 13,
+      "title": {
+        "en": "Measuring Angles",
+        "ar": "قياس الزوايا"
+      },
+      "refs": {
+        "egypt": {
+          "en": "Unit 13 · Term 2",
+          "ar": "الوحدة 13 · الترم الثاني"
+        },
+        "ccss": "4.MD.C"
+      },
+      "lessons": []
     }
   ]
 }
