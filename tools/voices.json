@@ -1,12 +1,22 @@
 {
   "en": {
-    "voice_id": "",
+    "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
     "model_id": "eleven_multilingual_v2",
-    "settings": {"stability": 0.55, "similarity_boost": 0.75, "speed": 0.95}
+    "settings": {
+      "stability": 0.55,
+      "similarity_boost": 0.75,
+      "speed": 0.95
+    },
+    "name": "Alice - Clear, Engaging Educator"
   },
   "ar": {
-    "voice_id": "",
+    "voice_id": "qi4PkV9c01kb869Vh7Su",
     "model_id": "eleven_multilingual_v2",
-    "settings": {"stability": 0.55, "similarity_boost": 0.75, "speed": 0.95}
+    "settings": {
+      "stability": 0.6,
+      "similarity_boost": 0.75,
+      "speed": 0.95
+    },
+    "name": "Asmaa - Calm, Encouraging and Clear"
   }
 }

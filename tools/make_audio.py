@@ -11,12 +11,14 @@ Files land in audio/<key>.mp3 and audio/manifest.json lists them. The key is
 djb2 over UTF-16 code units of "<lang>|<text>" - the same function as app.js -
 so only new or edited text is ever re-generated.
 """
-import argparse, glob, json, os, re, sys, urllib.request, urllib.error
+import argparse, glob, json, os, re, sys, time, urllib.request, urllib.error
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 AUDIO = os.path.join(ROOT, "audio")
 VOICES = os.path.join(ROOT, "tools", "voices.json")
 API = "https://api.elevenlabs.io/v1"
+# Key lives outside the repo: env ELEVENLABS_API_KEY, or this file (chmod 600).
+KEYFILE = os.path.expanduser("~/.config/eduzone/elevenlabs_key")
 
 
 def djb2(s):
@@ -52,6 +54,10 @@ def texts(lesson, lang):
     return [t for t in out if t]
 
 
+def write_manifest(have):
+    json.dump({"keys": sorted(have)}, open(os.path.join(AUDIO, "manifest.json"), "w"), indent=0)
+
+
 def api(path, key, body=None):
     req = urllib.request.Request(API + path, headers={"xi-api-key": key, "Content-Type": "application/json"})
     if body is not None:
@@ -70,6 +76,8 @@ def main():
     a = ap.parse_args()
 
     key = os.environ.get("ELEVENLABS_API_KEY", "")
+    if not key and os.path.exists(KEYFILE):
+        key = open(KEYFILE).read().strip()
     if (a.list_voices or not a.dry_run) and not key:
         sys.exit("Set ELEVENLABS_API_KEY in your shell first.")
 
@@ -106,15 +114,22 @@ def main():
         if not v.get("voice_id"):
             sys.exit("Set a voice_id for '%s' in tools/voices.json (use --list-voices)." % lang)
         body = {"text": t, "model_id": v["model_id"], "voice_settings": v["settings"]}
-        try:
-            mp3 = api("/text-to-speech/" + v["voice_id"], key, body)
-        except urllib.error.HTTPError as e:
-            sys.exit("ElevenLabs error %s: %s" % (e.code, e.read()[:300]))
+        for attempt in range(4):
+            try:
+                mp3 = api("/text-to-speech/" + v["voice_id"], key, body)
+                break
+            except urllib.error.HTTPError as e:
+                sys.exit("ElevenLabs error %s: %s" % (e.code, e.read()[:300]))
+            except (urllib.error.URLError, OSError) as e:
+                if attempt == 3:
+                    sys.exit("Network error, re-run to resume: %s" % e)
+                time.sleep(5 * (attempt + 1))
         open(os.path.join(AUDIO, k + ".mp3"), "wb").write(mp3)
         have.add(k)
+        write_manifest(have)
         print("[%d/%d] %s %s  %s" % (i, len(todo), lang, k, t[:60]))
 
-    json.dump({"keys": sorted(have)}, open(os.path.join(AUDIO, "manifest.json"), "w"), indent=0)
+    write_manifest(have)
     print("manifest: %d clips" % len(have))
 
 
