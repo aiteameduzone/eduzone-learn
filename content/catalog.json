@@ -34,7 +34,95 @@
         },
         "ccss": "4.NBT.A"
       },
-      "lessons": []
+      "lessons": [
+        {
+          "id": "g4-math-u01-01",
+          "title": {
+            "en": "Place and Value of a Digit",
+            "ar": "منزلة الرقم وقيمته"
+          },
+          "refs": {
+            "egypt": [
+              "U1 · 1.1 Place value of a digit"
+            ],
+            "ccss": [
+              "4.NBT.A.2"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u01-02",
+          "title": {
+            "en": "Each Place Is Ten Times Bigger",
+            "ar": "كل منزلة عشرة أمثال التي على يمينها"
+          },
+          "refs": {
+            "egypt": [
+              "U1 · 1.1 Changing place values (×10 pattern)"
+            ],
+            "ccss": [
+              "4.NBT.A.1"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u01-03",
+          "title": {
+            "en": "Standard, Expanded and Word Forms",
+            "ar": "الصورة القياسية والممتدة واللفظية"
+          },
+          "refs": {
+            "egypt": [
+              "U1 · 1.1 Number forms; compose and decompose"
+            ],
+            "ccss": [
+              "4.NBT.A.2"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u01-04",
+          "title": {
+            "en": "Comparing and Ordering Numbers",
+            "ar": "مقارنة الأعداد وترتيبها"
+          },
+          "refs": {
+            "egypt": [
+              "U1 · 1.2 Comparing and ordering"
+            ],
+            "ccss": [
+              "4.NBT.A.2"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u01-05",
+          "title": {
+            "en": "Rounding Numbers",
+            "ar": "تقريب الأعداد"
+          },
+          "refs": {
+            "egypt": [
+              "U1 · 1.2 Rounding"
+            ],
+            "ccss": [
+              "4.NBT.A.3"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u01-06",
+          "title": {
+            "en": "Millions and Billions",
+            "ar": "الملايين والمليارات"
+          },
+          "refs": {
+            "egypt": [
+              "U1 · 1.1 Big numbers to the billions"
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "g4-math-u02",
@@ -54,7 +142,98 @@
         },
         "ccss": "4.NBT.B.4"
       },
-      "lessons": []
+      "lessons": [
+        {
+          "id": "g4-math-u02-01",
+          "title": {
+            "en": "Properties of Addition and Mental Strategies",
+            "ar": "خصائص الجمع والحساب الذهني"
+          },
+          "refs": {
+            "egypt": [
+              "U2 · 2.1 Properties of addition, mental strategies"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u02-02",
+          "title": {
+            "en": "Estimating Sums and Differences",
+            "ar": "تقدير ناتج الجمع والطرح"
+          },
+          "refs": {
+            "egypt": [
+              "U2 · 2.1 Estimating to check reasonableness"
+            ],
+            "ccss": [
+              "4.NBT.A.3",
+              "4.OA.A.3"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u02-03",
+          "title": {
+            "en": "Adding with Regrouping",
+            "ar": "الجمع مع إعادة التجميع"
+          },
+          "refs": {
+            "egypt": [
+              "U2 · 2.1 Addition with regrouping"
+            ],
+            "ccss": [
+              "4.NBT.B.4"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u02-04",
+          "title": {
+            "en": "Subtracting with Regrouping",
+            "ar": "الطرح مع إعادة التجميع"
+          },
+          "refs": {
+            "egypt": [
+              "U2 · 2.1 Subtraction with regrouping"
+            ],
+            "ccss": [
+              "4.NBT.B.4"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u02-05",
+          "title": {
+            "en": "Inverse Operations and Finding the Unknown",
+            "ar": "العملية العكسية وإيجاد المجهول"
+          },
+          "refs": {
+            "egypt": [
+              "U2 · 2.1-2.2 Inverse operations, bar models, unknowns"
+            ],
+            "ccss": [
+              "4.NBT.B.4",
+              "4.OA.A.3"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u02-06",
+          "title": {
+            "en": "Multistep Story Problems",
+            "ar": "المسائل متعددة الخطوات"
+          },
+          "refs": {
+            "egypt": [
+              "U2 · 2.2 Multistep story problems"
+            ],
+            "ccss": [
+              "4.OA.A.3",
+              "4.NBT.B.4"
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "g4-math-u03",
@@ -74,7 +253,100 @@
         },
         "ccss": "4.MD.A.1-2"
       },
-      "lessons": []
+      "lessons": [
+        {
+          "id": "g4-math-u03-01",
+          "title": {
+            "en": "Units of Length",
+            "ar": "وحدات الطول"
+          },
+          "refs": {
+            "egypt": [
+              "U3 · 3.1 Units of length"
+            ],
+            "ccss": [
+              "4.MD.A.1"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u03-02",
+          "title": {
+            "en": "Mass: Kilograms and Grams",
+            "ar": "الكتلة: الكيلوجرام والجرام"
+          },
+          "refs": {
+            "egypt": [
+              "U3 · 3.1 Mass (kg, g)"
+            ],
+            "ccss": [
+              "4.MD.A.1",
+              "4.MD.A.2"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u03-03",
+          "title": {
+            "en": "Capacity: Litres and Millilitres",
+            "ar": "السعة: اللتر والمليلتر"
+          },
+          "refs": {
+            "egypt": [
+              "U3 · 3.1 Capacity (L, mL)"
+            ],
+            "ccss": [
+              "4.MD.A.1",
+              "4.MD.A.2"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u03-04",
+          "title": {
+            "en": "Conversion Tables",
+            "ar": "جداول التحويل"
+          },
+          "refs": {
+            "egypt": [
+              "U3 · 3.1 Conversion tables"
+            ],
+            "ccss": [
+              "4.MD.A.1"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u03-05",
+          "title": {
+            "en": "Units of Time",
+            "ar": "وحدات الزمن"
+          },
+          "refs": {
+            "egypt": [
+              "U3 · 3.2 Units of time"
+            ],
+            "ccss": [
+              "4.MD.A.1"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u03-06",
+          "title": {
+            "en": "Elapsed Time and Measurement Problems",
+            "ar": "الزمن المنقضي ومسائل القياس"
+          },
+          "refs": {
+            "egypt": [
+              "U3 · 3.2 Elapsed time and word problems"
+            ],
+            "ccss": [
+              "4.MD.A.2"
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "g4-math-u04",
@@ -94,7 +366,83 @@
         },
         "ccss": "4.MD.A.3"
       },
-      "lessons": []
+      "lessons": [
+        {
+          "id": "g4-math-u04-01",
+          "title": {
+            "en": "Perimeter: Walking Around the Edge",
+            "ar": "المحيط: السير حول الحدود"
+          },
+          "refs": {
+            "egypt": [
+              "U4 · Perimeter by adding sides"
+            ],
+            "ccss": [
+              "4.MD.A.3"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u04-02",
+          "title": {
+            "en": "Perimeter of a Rectangle and a Square",
+            "ar": "محيط المستطيل ومحيط المربع"
+          },
+          "refs": {
+            "egypt": [
+              "U4 · Perimeter formulas"
+            ],
+            "ccss": [
+              "4.MD.A.3"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u04-03",
+          "title": {
+            "en": "Area: Counting Unit Squares",
+            "ar": "المساحة: عدّ الوحدات المربعة"
+          },
+          "refs": {
+            "egypt": [
+              "U4 · Area with unit squares"
+            ],
+            "ccss": [
+              "4.MD.A.3"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u04-04",
+          "title": {
+            "en": "Area of a Rectangle and a Square",
+            "ar": "مساحة المستطيل ومساحة المربع"
+          },
+          "refs": {
+            "egypt": [
+              "U4 · Area formulas"
+            ],
+            "ccss": [
+              "4.MD.A.3"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u04-05",
+          "title": {
+            "en": "Finding a Missing Side",
+            "ar": "إيجاد طول ضلع مجهول"
+          },
+          "refs": {
+            "egypt": [
+              "U4 · Unknown side; same area, different perimeter"
+            ],
+            "ccss": [
+              "4.MD.A.3"
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "g4-math-u05",
@@ -114,7 +462,97 @@
         },
         "ccss": "4.OA.A"
       },
-      "lessons": []
+      "lessons": [
+        {
+          "id": "g4-math-u05-01",
+          "title": {
+            "en": "Times as Many",
+            "ar": "المقارنة باستخدام الضرب"
+          },
+          "refs": {
+            "egypt": [
+              "U5 · 5.1 Times as many"
+            ],
+            "ccss": [
+              "4.OA.A.1"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u05-02",
+          "title": {
+            "en": "Comparison Equations",
+            "ar": "معادلات المقارنة"
+          },
+          "refs": {
+            "egypt": [
+              "U5 · 5.1 Comparison equations"
+            ],
+            "ccss": [
+              "4.OA.A.1",
+              "4.OA.A.2"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u05-03",
+          "title": {
+            "en": "Times as Many or More Than?",
+            "ar": "أمثال أم أكثر من؟"
+          },
+          "refs": {
+            "egypt": [
+              "U5 · 5.1 Comparison word problems"
+            ],
+            "ccss": [
+              "4.OA.A.2"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u05-04",
+          "title": {
+            "en": "Turn-Around, One and Zero",
+            "ar": "خاصية الإبدال والضرب في الواحد والصفر"
+          },
+          "refs": {
+            "egypt": [
+              "U5 · 5.2 Commutative, identity and zero properties"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u05-05",
+          "title": {
+            "en": "Grouping and Splitting",
+            "ar": "خاصيتا التجميع والتوزيع"
+          },
+          "refs": {
+            "egypt": [
+              "U5 · 5.2 Associative and distributive properties"
+            ],
+            "ccss": [
+              "4.NBT.B.5"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u05-06",
+          "title": {
+            "en": "Patterns with 10, 100 and 1,000",
+            "ar": "أنماط الضرب في 10 و 100 و 1000"
+          },
+          "refs": {
+            "egypt": [
+              "U5 · 5.2 Patterns with multiples of 10, 100, 1,000"
+            ],
+            "ccss": [
+              "4.NBT.B.5",
+              "4.OA.C.5"
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "g4-math-u06",
@@ -134,7 +572,80 @@
         },
         "ccss": "4.OA.B.4"
       },
-      "lessons": []
+      "lessons": [
+        {
+          "id": "g4-math-u06-01",
+          "title": {
+            "en": "Factors and Factor Pairs",
+            "ar": "العوامل وأزواج العوامل"
+          },
+          "refs": {
+            "egypt": [
+              "U6 · Factors and factor pairs"
+            ],
+            "ccss": [
+              "4.OA.B.4"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u06-02",
+          "title": {
+            "en": "Multiples and Common Multiples",
+            "ar": "المضاعفات والمضاعفات المشتركة"
+          },
+          "refs": {
+            "egypt": [
+              "U6 · Multiples and common multiples"
+            ],
+            "ccss": [
+              "4.OA.B.4"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u06-03",
+          "title": {
+            "en": "Divisibility Rules for 2, 3, 5 and 10",
+            "ar": "قابلية القسمة على 2 و 3 و 5 و 10"
+          },
+          "refs": {
+            "egypt": [
+              "U6 · Divisibility rules 2, 3, 5, 10"
+            ],
+            "ccss": [
+              "4.OA.B.4"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u06-04",
+          "title": {
+            "en": "Prime and Composite Numbers",
+            "ar": "الأعداد الأولية وغير الأولية"
+          },
+          "refs": {
+            "egypt": [
+              "U6 · Prime and composite numbers"
+            ],
+            "ccss": [
+              "4.OA.B.4"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u06-05",
+          "title": {
+            "en": "Common Factors and the Greatest Common Factor",
+            "ar": "العوامل المشتركة والعامل المشترك الأكبر"
+          },
+          "refs": {
+            "egypt": [
+              "U6 · Common factors and GCF"
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "g4-math-u07",
@@ -154,7 +665,99 @@
         },
         "ccss": "4.NBT.B.5-6"
       },
-      "lessons": []
+      "lessons": [
+        {
+          "id": "g4-math-u07-01",
+          "title": {
+            "en": "Area Model and the Distributive Property",
+            "ar": "نموذج المساحة وخاصية التوزيع"
+          },
+          "refs": {
+            "egypt": [
+              "U7 · 7.1 Area model & distributive property"
+            ],
+            "ccss": [
+              "4.NBT.B.5"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u07-02",
+          "title": {
+            "en": "Partial Products: Multi-Digit by One Digit",
+            "ar": "النواتج الجزئية: الضرب في عدد من رقم واحد"
+          },
+          "refs": {
+            "egypt": [
+              "U7 · 7.1 Partial products, × 1-digit"
+            ],
+            "ccss": [
+              "4.NBT.B.5"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u07-03",
+          "title": {
+            "en": "Multiplying by Multiples of 10",
+            "ar": "الضرب في مضاعفات العشرة"
+          },
+          "refs": {
+            "egypt": [
+              "U7 · 7.1 2-digit × multiple of 10"
+            ],
+            "ccss": [
+              "4.NBT.B.5"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u07-04",
+          "title": {
+            "en": "Division: Sharing, Grouping and Multiplication",
+            "ar": "القسمة: التوزيع والتجميع وعلاقتها بالضرب"
+          },
+          "refs": {
+            "egypt": [
+              "U7 · 7.2 Division & multiplication, patterns"
+            ],
+            "ccss": [
+              "4.NBT.B.6"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u07-05",
+          "title": {
+            "en": "Dividing with Remainders",
+            "ar": "القسمة بباقٍ"
+          },
+          "refs": {
+            "egypt": [
+              "U7 · 7.2 Remainders, partial quotients, algorithm"
+            ],
+            "ccss": [
+              "4.NBT.B.6"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u07-06",
+          "title": {
+            "en": "Word Problems: What Does the Remainder Mean?",
+            "ar": "مسائل لفظية: ماذا يعني الباقي؟"
+          },
+          "refs": {
+            "egypt": [
+              "U7 · 7.2 Division word problems, remainders"
+            ],
+            "ccss": [
+              "4.OA.A.3",
+              "4.NBT.B.6"
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "g4-math-u08",
@@ -173,7 +776,56 @@
           "ar": "الوحدة 8 · الترم الأول"
         }
       },
-      "lessons": []
+      "lessons": [
+        {
+          "id": "g4-math-u08-01",
+          "title": {
+            "en": "Why Order Matters",
+            "ar": "لماذا نحتاج إلى ترتيب العمليات؟"
+          },
+          "refs": {
+            "egypt": [
+              "U8 · 8.1"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u08-02",
+          "title": {
+            "en": "× and ÷ First, Then Left to Right",
+            "ar": "الضرب والقسمة أولًا، ثم من اليسار إلى اليمين"
+          },
+          "refs": {
+            "egypt": [
+              "U8 · 8.1"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u08-03",
+          "title": {
+            "en": "Brackets Come First",
+            "ar": "الأقواس أولًا"
+          },
+          "refs": {
+            "egypt": [
+              "U8 · 8.1"
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u08-04",
+          "title": {
+            "en": "One Expression for a Story Problem",
+            "ar": "تعبير عددي واحد للمسألة الحياتية"
+          },
+          "refs": {
+            "egypt": [
+              "U8 · 8.1"
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "g4-math-frac",
