@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EduZone Learn</title>
+<meta name="description" content="Interactive Math and Science practice for Grades 1-12 - English and Arabic - Egyptian National and American curricula.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=15">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/">
+    <span class="logo">EZ</span>
+    <span class="brand-text"><b>EduZone</b> <span data-i18n="learn">Learn</span></span>
+  </a>
+  <div class="controls"><a class="unified-back" href="../index.html" style="color:#fff;background:#134e65;border:1px solid #60baca;border-radius:14px;text-decoration:none;padding:10px 14px;font-weight:800">⌂ Learning Hub</a>
+    <select id="curriculum" aria-label="Curriculum">
+      <option value="egypt" data-i18n="cur_egypt">Egyptian National</option>
+      <option value="ccss" data-i18n="cur_ccss">American</option>
+    </select>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button data-lang="en">English</button>
+      <button data-lang="ar">العربية</button>
+    </div>
+  </div>
+</header>
+<main id="app" aria-live="polite"></main>
+<footer class="foot"><span data-i18n="foot">EduZone Tech - Cairo</span></footer>
+<script src="widgets.js?v=12"></script>
+<script src="lab.js?v=15"></script>
+<script src="unit.js?v=12"></script>
+<script src="app.js?v=12"></script>
+</body>
+</html>
