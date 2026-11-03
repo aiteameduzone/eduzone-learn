@@ -1,38 +1,35 @@
-# EduZone Learn
+# EduZone Learn — Unified Learning Hub
 
-Interactive, bilingual (English / Arabic) Math and Science practice for Grades 1-12,
-aligned to the Egyptian National and American curricula. Static site, runs on GitHub Pages.
+A browser-based, GitHub Pages-ready unified front end assembled from the two supplied projects:
+- **EduZone Learn Code**: 51 original lesson JSON files in 13 units, their step-by-step activities, quizzes, English/Arabic switching, and its interactive widgets. All of these are preserved under `learn/`.
+- **NileStem**: a science/STEM discovery concept adapted into four self-contained interactive mini labs under `labs.html` (circuit/Ohm's law, density and buoyancy, square-pyramid volume, pH). These are lightweight new implementations inspired by the uploaded simulations, not exact React component ports.
 
-## Run locally
-```bash
+## Launch
+
+To test locally:
+
+```sh
 python3 -m http.server 8000
 ```
-Open http://localhost:8000
 
-## Layout
-| Path | What |
-|---|---|
-| `index.html`, `app.js`, `widgets.js`, `styles.css` | the app (no build step) |
-| `content/catalog.json` | grades, subjects, units, lesson list + curriculum refs |
-| `content/lessons/*.json` | one lesson: steps, interactive widgets, MCQ quiz |
-| `research/` | curriculum maps the content agent works from |
-| `audio/` | ElevenLabs narration (`manifest.json` lists generated clips) |
-| `tools/validate.py` | checks every lesson (run before each commit) |
-| `tools/make_audio.py` | generates narration; skips clips that already exist |
-| `.claude/agents/curriculum-agent.md` | Claude Code agent that researches + writes content |
+Open http://localhost:8000 . Do **not** open `index.html` using `file://`, since lesson JSON is fetched by JavaScript.
 
-## Add content
-In Claude Code inside this folder: *"Use curriculum-agent to add Grade 5 Math, Fractions unit, Egypt + American."*
-Then `python3 tools/validate.py`.
+## GitHub Pages
 
-## Narration
-```bash
-export ELEVENLABS_API_KEY=...       # keep it out of the repo
-python3 tools/make_audio.py --list-voices   # pick EN + AR voice ids -> tools/voices.json
-python3 tools/make_audio.py --dry-run       # character count = cost
-python3 tools/make_audio.py
-```
-Without audio files the app falls back to the browser's built-in voice.
+Upload **the contents** of this directory (not the enclosing directory) to a public repository. In Settings → Pages, deploy from `main` → `/ (root)`; `index.html` is the landing page. All navigation uses relative paths, so a repository subdirectory URL is supported. No build step, API key, or server needed.
 
-## Publish (GitHub Pages)
-Push to a repo, then Settings -> Pages -> Deploy from branch -> `main` / root.
+## Key limits
+
+- Grade 4 Mathematics is where the uploaded EduZone project contains a substantial lesson library. The marketing descriptions of K–12 coverage in the original projects do not mean complete lesson curricula for all grades; this hub does not claim that.
+- NileStem's full React interface and six original detailed simulators are **not** ported here. Four simplified, working experiments are integrated into this static application. Their results are educational approximations.
+- The NileStem AI curriculum agent needs a backend and a protected API key; it is deliberately excluded from this public static version.
+- Browser text-to-speech varies by device and is not suitable as verified Arabic pronunciation instruction.
+- Your two original ZIP archives were **not modified**. This ZIP is a new combined user-facing app.
+
+## Structure
+
+`index.html`, `unified.css`, `unified.js` — new friendly learning hub.
+
+`labs.html`, `labs.js` — four responsive science mini labs.
+
+`learn/` — complete original EduZone Learn static lesson player, lesson catalog, step content and widgets.
