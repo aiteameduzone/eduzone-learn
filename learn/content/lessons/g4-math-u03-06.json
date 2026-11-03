@@ -1,0 +1,598 @@
+{
+  "id": "g4-math-u03-06",
+  "title": {
+    "en": "Elapsed Time and Measurement Problems",
+    "ar": "الزمن المنقضي ومسائل القياس"
+  },
+  "objective": {
+    "en": "Find elapsed time and end times, and solve measurement story problems about length, mass, capacity, time and money using the four operations.",
+    "ar": "أن يحسب التلميذ الزمن المنقضي ووقت الانتهاء، ويحل مسائل حياتية على الطول والكتلة والسعة والزمن والنقود باستخدام العمليات الأربع."
+  },
+  "refs": {
+    "egypt": [
+      "U3 · 3.2 Elapsed time and word problems"
+    ],
+    "ccss": [
+      "4.MD.A.2"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "pies",
+        "emoji": "🚇",
+        "hideLabels": true,
+        "items": [
+          {
+            "f": [
+              9,
+              12
+            ],
+            "label": {
+              "en": "45 min",
+              "ar": "45 دقيقة"
+            },
+            "color": "blue"
+          }
+        ]
+      },
+      "check": {
+        "q": {
+          "en": "7:10 to 7:55. How long is the metro trip?",
+          "ar": "من 7:10 إلى 7:55. كم استغرقت رحلة المترو؟"
+        },
+        "options": {
+          "en": [
+            "55 minutes",
+            "45 minutes",
+            "65 minutes"
+          ],
+          "ar": [
+            "55 دقيقة",
+            "45 دقيقة",
+            "65 دقيقة"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "**Elapsed time** is how much time passes from the start to the end.\n\nThe metro leaves Helwan at 7:10 and reaches Sadat at 7:55. The hour is the same, so subtract the minutes: 55 − 10 = **45 minutes**.",
+        "ar": "**الزمن المنقضي** هو الوقت الذي يمر من البداية حتى النهاية.\n\nيتحرك المترو من حلوان الساعة 7:10 ويصل إلى السادات الساعة 7:55. الساعة واحدة، فنطرح الدقائق: 55 − 10 = **45 دقيقة**."
+      },
+      "say": {
+        "en": "Elapsed time is how much time passes from the start to the end. The metro leaves Helwan at ten past seven and reaches Sadat at seven fifty five. The hour is the same, so subtract the minutes: fifty five minus ten is forty five minutes.",
+        "ar": "الزمن المنقضي هو الوقت الذي يمر من البداية حتى النهاية. يتحرك المترو من حلوان الساعة السابعة وعشر دقائق، ويصل إلى السادات الساعة السابعة وخمس وخمسين دقيقة. الساعة واحدة، فنطرح الدقائق: خمس وخمسون ناقص عشرة يساوي خمسًا وأربعين دقيقة."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "pies",
+        "items": [
+          {
+            "f": [
+              4,
+              12
+            ],
+            "label": {
+              "en": "20 min",
+              "ar": "20 دقيقة"
+            }
+          },
+          {
+            "f": [
+              12,
+              12
+            ],
+            "label": {
+              "en": "1 h",
+              "ar": "1 ساعة"
+            },
+            "color": "blue"
+          },
+          {
+            "f": [
+              1,
+              12
+            ],
+            "label": {
+              "en": "5 min",
+              "ar": "5 دقائق"
+            }
+          }
+        ],
+        "ops": [
+          "+",
+          "+"
+        ]
+      },
+      "text": {
+        "en": "**Crossing the hour: jump to the next o'clock.** Ahmed starts his homework at 4:40 and finishes at 6:05. How long did it take?",
+        "ar": "**عبور الساعة: نقفز إلى الساعة التامة.** بدأ أحمد واجبه الساعة 4:40 وانتهى الساعة 6:05. كم استغرق؟"
+      },
+      "lines": {
+        "en": [
+          "4:40 → 5:00 = 20 min",
+          "5:00 → 6:00 = 1 h",
+          "6:00 → 6:05 = 5 min",
+          "Total: 1 h 25 min = 85 min"
+        ],
+        "ar": [
+          "4:40 ← 5:00 = 20 دقيقة",
+          "5:00 ← 6:00 = 1 ساعة",
+          "6:00 ← 6:05 = 5 دقائق",
+          "المجموع: 1 ساعة و 25 دقيقة = 85 دقيقة"
+        ]
+      },
+      "say": {
+        "en": "Crossing the hour: jump to the next o'clock. Ahmed starts his homework at four forty and finishes at five past six. From four forty to five o'clock is twenty minutes. From five to six is one hour. From six to five past six is five minutes. In total, one hour and twenty five minutes, which is eighty five minutes.",
+        "ar": "عبور الساعة: نقفز إلى الساعة التامة. بدأ أحمد واجبه الساعة الرابعة وأربعين دقيقة، وانتهى الساعة السادسة وخمس دقائق. من الرابعة وأربعين إلى الخامسة عشرون دقيقة. ومن الخامسة إلى السادسة ساعة واحدة. ومن السادسة إلى السادسة وخمس دقائق خمس دقائق. المجموع ساعة وخمس وعشرون دقيقة، أي خمس وثمانون دقيقة."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "number-line",
+      "params": {
+        "min": 0,
+        "max": 2,
+        "divisions": 4,
+        "target": [
+          6,
+          4
+        ],
+        "scale": 60
+      },
+      "text": {
+        "en": "The school football match starts at 9:15 and ends at 10:45. Count jumps of 15 minutes from the start.",
+        "ar": "تبدأ مباراة كرة القدم المدرسية الساعة 9:15 وتنتهي الساعة 10:45. عُدّ قفزات كل منها 15 دقيقة من البداية."
+      },
+      "prompt": {
+        "en": "How many minutes did the match last?",
+        "ar": "كم دقيقة استغرقت المباراة؟"
+      },
+      "say": {
+        "en": "The school football match starts at nine fifteen and ends at ten forty five. Count jumps of fifteen minutes from the start. Put a point at how many minutes the match lasted.",
+        "ar": "تبدأ مباراة كرة القدم المدرسية الساعة التاسعة وربعًا وتنتهي الساعة العاشرة وخمسًا وأربعين دقيقة. عُدّ قفزات كل منها خمس عشرة دقيقة من البداية. ضع نقطة عند عدد دقائق المباراة."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "pies",
+        "emoji": "🚌",
+        "items": [
+          {
+            "f": [
+              4,
+              4
+            ],
+            "label": {
+              "en": "1 h",
+              "ar": "1 ساعة"
+            }
+          },
+          {
+            "f": [
+              3,
+              4
+            ],
+            "label": {
+              "en": "45 min",
+              "ar": "45 دقيقة"
+            },
+            "color": "blue"
+          }
+        ],
+        "ops": [
+          "+"
+        ]
+      },
+      "check": {
+        "q": {
+          "en": "Leaves 8:30, ride 1 h 45 min. Arrives at?",
+          "ar": "يتحرك 8:30 والرحلة 1 ساعة و 45 دقيقة. متى يصل؟"
+        },
+        "options": {
+          "en": [
+            "9:75",
+            "10:15",
+            "10:45"
+          ],
+          "ar": [
+            "9:75",
+            "10:15",
+            "10:45"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "**Finding the end time: add.** The school trip bus leaves at 8:30. The ride takes 1 h 45 min. When does it arrive?",
+        "ar": "**إيجاد وقت الانتهاء: نجمع.** يتحرك أتوبيس الرحلة المدرسية الساعة 8:30، وتستغرق الرحلة 1 ساعة و 45 دقيقة. متى يصل؟"
+      },
+      "lines": {
+        "en": [
+          "8:30 + 1 h = 9:30",
+          "9:30 + 30 min = 10:00",
+          "10:00 + 15 min = 10:15",
+          "45 min = 30 + 15. It arrives at 10:15"
+        ],
+        "ar": [
+          "8:30 + 1 ساعة = 9:30",
+          "9:30 + 30 دقيقة = 10:00",
+          "10:00 + 15 دقيقة = 10:15",
+          "45 دقيقة = 30 + 15. يصل الساعة 10:15"
+        ]
+      },
+      "say": {
+        "en": "Finding the end time: add. The bus leaves at eight thirty and the ride takes one hour and forty five minutes. Eight thirty plus one hour is nine thirty. Nine thirty plus thirty minutes is ten o'clock. Fifteen minutes more is ten fifteen. The bus arrives at ten fifteen.",
+        "ar": "إيجاد وقت الانتهاء: نجمع. يتحرك الأتوبيس الساعة الثامنة والنصف، وتستغرق الرحلة ساعة وخمسًا وأربعين دقيقة. الثامنة والنصف زائد ساعة تساوي التاسعة والنصف. التاسعة والنصف زائد ثلاثين دقيقة تساوي العاشرة. وخمس عشرة دقيقة أخرى تساوي العاشرة وربعًا. يصل الأتوبيس الساعة العاشرة وربعًا."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "bars",
+        "emoji": "🪢",
+        "items": [
+          {
+            "f": [
+              4,
+              4
+            ],
+            "label": {
+              "en": "600 cm ÷ 4 = 150 cm",
+              "ar": "600 سم ÷ 4 = 150 سم"
+            }
+          }
+        ]
+      },
+      "text": {
+        "en": "**Length problem (division):** A 6 m rope is cut into 4 equal pieces. How long is each piece in centimetres?",
+        "ar": "**مسألة طول (قسمة):** حبل طوله 6 م قُطع إلى 4 قطع متساوية. ما طول كل قطعة بالسنتيمتر؟"
+      },
+      "lines": {
+        "en": [
+          "6 m = 6 × 100 = 600 cm",
+          "600 ÷ 4 = 150 cm",
+          "Each piece: 150 cm = 1 m 50 cm"
+        ],
+        "ar": [
+          "6 م = 6 × 100 = 600 سم",
+          "600 ÷ 4 = 150 سم",
+          "كل قطعة: 150 سم = 1 م و 50 سم"
+        ]
+      },
+      "say": {
+        "en": "Length problem. A six metre rope is cut into four equal pieces. How long is each piece? Six metres is six hundred centimetres. Six hundred divided by four is one hundred and fifty. Each piece is one hundred and fifty centimetres, which is one metre and fifty centimetres.",
+        "ar": "مسألة طول. حبل طوله ستة أمتار قُطع إلى أربع قطع متساوية. ما طول كل قطعة؟ ستة أمتار تساوي ستمائة سنتيمتر. ستمائة على أربعة يساوي مائة وخمسين. إذن طول كل قطعة مائة وخمسون سنتيمترًا، أي متر وخمسون سنتيمترًا."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "array",
+        "rows": 5,
+        "cols": 16,
+        "emoji": "🍚",
+        "label": {
+          "en": "5 days × 3,200 g",
+          "ar": "5 أيام × 3,200 جم"
+        }
+      },
+      "text": {
+        "en": "**Mass problem (multiplication):** A koshary shop uses 3 kg 200 g of rice every day. How much rice in 5 days? Each dot below is 200 g.",
+        "ar": "**مسألة كتلة (ضرب):** يستخدم محل كشري 3 كجم و 200 جم أرز كل يوم. كم كيلوجرامًا يستخدم في 5 أيام؟ كل نقطة بالأسفل = 200 جم."
+      },
+      "lines": {
+        "en": [
+          "3 kg 200 g = 3,000 + 200 = 3,200 g",
+          "5 × 3,200 = 16,000 g",
+          "16,000 g = 16 kg"
+        ],
+        "ar": [
+          "3 كجم و 200 جم = 3,000 + 200 = 3,200 جم",
+          "5 × 3,200 = 16,000 جم",
+          "16,000 جم = 16 كجم"
+        ]
+      },
+      "say": {
+        "en": "Mass problem. A koshary shop uses three kilograms and two hundred grams of rice every day. How much in five days? Three kilograms two hundred grams is three thousand two hundred grams. Five times three thousand two hundred is sixteen thousand grams, which is sixteen kilograms.",
+        "ar": "مسألة كتلة. يستخدم محل كشري ثلاثة كيلوجرامات ومائتي جرام من الأرز كل يوم. كم يستخدم في خمسة أيام؟ ثلاثة كيلوجرامات ومائتا جرام تساوي ثلاثة آلاف ومائتي جرام. خمسة في ثلاثة آلاف ومائتين يساوي ستة عشر ألف جرام، أي ستة عشر كيلوجرامًا."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "pies",
+        "emoji": "🧮",
+        "items": [
+          {
+            "f": [
+              1,
+              4
+            ],
+            "label": {
+              "en": "Read",
+              "ar": "اقرأ"
+            }
+          },
+          {
+            "f": [
+              2,
+              4
+            ],
+            "label": {
+              "en": "Same unit",
+              "ar": "وحّد الوحدة"
+            }
+          },
+          {
+            "f": [
+              3,
+              4
+            ],
+            "label": {
+              "en": "Operation",
+              "ar": "العملية"
+            }
+          },
+          {
+            "f": [
+              4,
+              4
+            ],
+            "label": {
+              "en": "Answer + unit",
+              "ar": "الناتج + الوحدة"
+            },
+            "color": "blue"
+          }
+        ]
+      },
+      "text": {
+        "en": "**Solving a measurement problem:**\n\n1. Read: what do I know, what do I need?\n\n2. Change to the **same unit**.\n\n3. Choose the operation: + − × ÷\n\n4. Write the answer **with its unit**.",
+        "ar": "**خطوات حل مسألة القياس:**\n\n1. اقرأ: ماذا أعرف؟ وماذا أريد؟\n\n2. حوّل إلى **الوحدة نفسها**.\n\n3. اختر العملية: + − × ÷\n\n4. اكتب الناتج **مع وحدته**."
+      },
+      "say": {
+        "en": "Solving a measurement problem. One: read. What do I know, and what do I need? Two: change to the same unit. Three: choose the operation: add, subtract, multiply or divide. Four: write the answer with its unit.",
+        "ar": "خطوات حل مسألة القياس. أولًا: اقرأ. ماذا أعرف؟ وماذا أريد؟ ثانيًا: حوّل إلى الوحدة نفسها. ثالثًا: اختر العملية: الجمع أو الطرح أو الضرب أو القسمة. رابعًا: اكتب الناتج مع وحدته."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "A film starts at 6:20 and ends at 8:05. How long is it?",
+        "ar": "يبدأ فيلم الساعة 6:20 وينتهي الساعة 8:05. كم مدته؟"
+      },
+      "options": {
+        "en": [
+          "1 h 45 min",
+          "2 h 15 min",
+          "1 h 85 min",
+          "2 h 45 min"
+        ],
+        "ar": [
+          "1 ساعة و 45 دقيقة",
+          "2 ساعة و 15 دقيقة",
+          "1 ساعة و 85 دقيقة",
+          "2 ساعة و 45 دقيقة"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "6:20 → 7:00 = 40 min, 7:00 → 8:00 = 1 h, 8:00 → 8:05 = 5 min. Total 1 h 45 min.",
+        "ar": "6:20 ← 7:00 = 40 دقيقة، 7:00 ← 8:00 = 1 ساعة، 8:00 ← 8:05 = 5 دقائق. المجموع 1 ساعة و 45 دقيقة."
+      },
+      "say": {
+        "en": "A film starts at six twenty and ends at five past eight. How long is it?",
+        "ar": "يبدأ فيلم الساعة السادسة وعشرين دقيقة وينتهي الساعة الثامنة وخمس دقائق. كم مدته؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A lesson starts at 10:25 and lasts 45 minutes. When does it end?",
+        "ar": "تبدأ حصة الساعة 10:25 ومدتها 45 دقيقة. متى تنتهي؟"
+      },
+      "options": {
+        "en": [
+          "11:10",
+          "10:70",
+          "11:20",
+          "11:45"
+        ],
+        "ar": [
+          "11:10",
+          "10:70",
+          "11:20",
+          "11:45"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "10:25 + 35 min = 11:00, then 10 more minutes = 11:10. There is no 10:70: after 59 minutes comes a new hour.",
+        "ar": "10:25 + 35 دقيقة = 11:00، ثم 10 دقائق أخرى = 11:10. لا يوجد 10:70: بعد 59 دقيقة تبدأ ساعة جديدة."
+      },
+      "say": {
+        "en": "A lesson starts at ten twenty five and lasts forty five minutes. When does it end?",
+        "ar": "تبدأ حصة الساعة العاشرة وخمس وعشرين دقيقة ومدتها خمس وأربعون دقيقة. متى تنتهي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Hana sleeps at 9:30 at night and wakes at 6:30 in the morning. How long does she sleep?",
+        "ar": "تنام هنا الساعة 9:30 مساءً وتستيقظ الساعة 6:30 صباحًا. كم ساعة تنام؟"
+      },
+      "options": {
+        "en": [
+          "9 hours",
+          "3 hours",
+          "15 hours",
+          "8 hours"
+        ],
+        "ar": [
+          "9 ساعات",
+          "3 ساعات",
+          "15 ساعة",
+          "8 ساعات"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "9:30 → 12:00 midnight = 2 h 30 min, then 12:00 → 6:30 = 6 h 30 min. Total 9 hours. 3 hours just subtracts 9 − 6.",
+        "ar": "9:30 ← 12:00 منتصف الليل = 2 ساعة و 30 دقيقة، ثم 12:00 ← 6:30 = 6 ساعات و 30 دقيقة. المجموع 9 ساعات. أما 3 ساعات فطرحت 9 − 6 فقط."
+      },
+      "say": {
+        "en": "Hana sleeps at nine thirty at night and wakes at six thirty in the morning. How long does she sleep?",
+        "ar": "تنام هنا الساعة التاسعة والنصف مساءً وتستيقظ الساعة السادسة والنصف صباحًا. كم ساعة تنام؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A rope is 5 m long. Omar cuts off 2 m 40 cm. How much is left?",
+        "ar": "حبل طوله 5 م. قطع عمر منه 2 م و 40 سم. كم بقي؟"
+      },
+      "options": {
+        "en": [
+          "2 m 60 cm",
+          "3 m 40 cm",
+          "3 m 60 cm",
+          "2 m 40 cm"
+        ],
+        "ar": [
+          "2 م و 60 سم",
+          "3 م و 40 سم",
+          "3 م و 60 سم",
+          "2 م و 40 سم"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "500 − 240 = 260 cm = 2 m 60 cm.",
+        "ar": "500 − 240 = 260 سم = 2 م و 60 سم."
+      },
+      "say": {
+        "en": "A rope is five metres long. Omar cuts off two metres and forty centimetres. How much is left?",
+        "ar": "حبل طوله خمسة أمتار. قطع عمر منه مترين وأربعين سنتيمترًا. كم بقي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "6 bottles hold 750 mL each. What is the total?",
+        "ar": "6 زجاجات سعة كل منها 750 مل. ما السعة الكلية؟"
+      },
+      "options": {
+        "en": [
+          "4 L 500 mL",
+          "4 L 200 mL",
+          "45 L",
+          "756 mL"
+        ],
+        "ar": [
+          "4 لتر و 500 مل",
+          "4 لتر و 200 مل",
+          "45 لتر",
+          "756 مل"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "6 × 750 = 4,500 mL = 4 L 500 mL. 756 adds 6 instead of multiplying.",
+        "ar": "6 × 750 = 4,500 مل = 4 لتر و 500 مل. أما 756 فجمعت 6 بدلًا من الضرب."
+      },
+      "say": {
+        "en": "Six bottles hold seven hundred and fifty millilitres each. What is the total?",
+        "ar": "ست زجاجات سعة كل منها سبعمائة وخمسون مليلترًا. ما السعة الكلية؟"
+      }
+    },
+    {
+      "q": {
+        "en": "2 kg of oranges are shared equally into 4 bags. How much is in each bag?",
+        "ar": "2 كجم برتقال وُزّعت بالتساوي على 4 أكياس. كم في كل كيس؟"
+      },
+      "options": {
+        "en": [
+          "500 g",
+          "50 g",
+          "8 kg",
+          "250 g"
+        ],
+        "ar": [
+          "500 جم",
+          "50 جم",
+          "8 كجم",
+          "250 جم"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "2 kg = 2,000 g, and 2,000 ÷ 4 = 500 g. 8 kg multiplies instead of dividing.",
+        "ar": "2 كجم = 2,000 جم، و 2,000 ÷ 4 = 500 جم. أما 8 كجم فضربت بدلًا من القسمة."
+      },
+      "say": {
+        "en": "Two kilograms of oranges are shared equally into four bags. How much is in each bag?",
+        "ar": "كيلوجرامان من البرتقال وُزّعا بالتساوي على أربعة أكياس. كم في كل كيس؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Omar has 50 pounds. He buys 2 kg of oranges at 12 pounds per kg. How much change does he get?",
+        "ar": "مع عمر 50 جنيهًا. اشترى 2 كجم برتقال، سعر الكيلوجرام 12 جنيهًا. كم الباقي معه؟"
+      },
+      "options": {
+        "en": [
+          "26 pounds",
+          "38 pounds",
+          "24 pounds",
+          "62 pounds"
+        ],
+        "ar": [
+          "26 جنيهًا",
+          "38 جنيهًا",
+          "24 جنيهًا",
+          "62 جنيهًا"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Cost: 2 × 12 = 24 pounds. Change: 50 − 24 = 26 pounds. 38 forgets to pay for the second kilogram.",
+        "ar": "الثمن: 2 × 12 = 24 جنيهًا. الباقي: 50 − 24 = 26 جنيهًا. أما 38 فنسيت ثمن الكيلوجرام الثاني."
+      },
+      "say": {
+        "en": "Omar has fifty pounds. He buys two kilograms of oranges at twelve pounds per kilogram. How much change does he get?",
+        "ar": "مع عمر خمسون جنيهًا. اشترى كيلوجرامين من البرتقال، سعر الكيلوجرام اثنا عشر جنيهًا. كم الباقي معه؟"
+      }
+    },
+    {
+      "q": {
+        "en": "The metro ride takes 35 minutes. Youssef must arrive by 8:00. What is the latest time he can leave?",
+        "ar": "رحلة المترو تستغرق 35 دقيقة. يجب أن يصل يوسف قبل 8:00. ما آخر موعد يمكن أن يتحرك فيه؟"
+      },
+      "options": {
+        "en": [
+          "7:25",
+          "7:35",
+          "8:35",
+          "7:65"
+        ],
+        "ar": [
+          "7:25",
+          "7:35",
+          "8:35",
+          "7:65"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Count back: 8:00 − 35 min = 7:25. 8:35 adds instead of going back.",
+        "ar": "نعدّ للخلف: 8:00 − 35 دقيقة = 7:25. أما 8:35 فجمعت بدلًا من الرجوع للخلف."
+      },
+      "say": {
+        "en": "The metro ride takes thirty five minutes. Youssef must arrive by eight o'clock. What is the latest time he can leave?",
+        "ar": "رحلة المترو تستغرق خمسًا وثلاثين دقيقة. يجب أن يصل يوسف قبل الساعة الثامنة. ما آخر موعد يمكن أن يتحرك فيه؟"
+      }
+    }
+  ]
+}

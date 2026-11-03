@@ -1,0 +1,412 @@
+{
+  "id": "g4-math-u01-06",
+  "title": {
+    "en": "Millions and Billions",
+    "ar": "الملايين والمليارات"
+  },
+  "objective": {
+    "en": "Read, write, compare and round numbers through the billions (milliards) place, using periods and the ×10 pattern.",
+    "ar": "أن يقرأ التلميذ الأعداد حتى منزلة المليارات ويكتبها ويقارنها ويقرّبها، مستخدمًا الدورات ونمط الضرب في 10."
+  },
+  "refs": {
+    "egypt": [
+      "U1 · 1.1 Big numbers to the billions"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "blocks",
+        "n": 1000
+      },
+      "check": {
+        "q": {
+          "en": "How many thousands make one million?",
+          "ar": "كم ألفًا تكوّن مليونًا واحدًا؟"
+        },
+        "options": {
+          "en": [
+            "1,000",
+            "100",
+            "10"
+          ],
+          "ar": [
+            "1,000",
+            "100",
+            "10"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "1,000 ones = 1 thousand.\n\n1,000 thousands = **1 million** (1,000,000).\n\nA million has **7 digits**. The millions make a new **period** to the left of the thousands.",
+        "ar": "1,000 آحاد = 1 ألف.\n\n1,000 ألف = **1 مليون** (1,000,000).\n\nالمليون مكوّن من **7 أرقام**، والملايين تكوّن **دورة** جديدة على يسار دورة الألوف."
+      },
+      "say": {
+        "en": "One thousand ones make one thousand. One thousand thousands make one million. A million has seven digits. The millions make a new period to the left of the thousands.",
+        "ar": "ألف آحاد تساوي ألفًا واحدًا. وألف ألف تساوي مليونًا واحدًا. المليون مكوّن من سبعة أرقام، والملايين تكوّن دورة جديدة على يسار دورة الألوف."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "blocks",
+        "n": 107
+      },
+      "text": {
+        "en": "**Read by periods.** Egypt has about 107,000,000 people. Read the millions period like a small number, then say \"million\".",
+        "ar": "**اقرأ بالدورات.** عدد سكان مصر نحو 107,000,000 نسمة. اقرأ دورة الملايين كأنها عدد صغير، ثم قل «مليون»."
+      },
+      "lines": {
+        "en": [
+          "107 | 000 | 000",
+          "millions | thousands | ones",
+          "one hundred seven million"
+        ],
+        "ar": [
+          "107 | 000 | 000",
+          "ملايين | ألوف | آحاد",
+          "مائة وسبعة ملايين"
+        ]
+      },
+      "say": {
+        "en": "Read by periods. Egypt has about one hundred seven million people. The millions period shows one hundred seven, so we read one hundred seven million. The thousands period and the ones period are all zeros, so we say nothing more.",
+        "ar": "اقرأ بالدورات. عدد سكان مصر نحو مائة وسبعة ملايين نسمة. دورة الملايين فيها مائة وسبعة، فنقرأ مائة وسبعة ملايين. ودورة الألوف ودورة الآحاد كلها أصفار، فلا نقول شيئًا بعدها."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": {
+        "places": 7,
+        "target": 5280400
+      },
+      "text": {
+        "en": "The chart now has a millions place.",
+        "ar": "الجدول الآن فيه منزلة الملايين."
+      },
+      "prompt": {
+        "en": "Build 5,280,400.",
+        "ar": "كوّن العدد 5,280,400."
+      },
+      "say": {
+        "en": "Build five million, two hundred eighty thousand, four hundred.",
+        "ar": "كوّن العدد خمسة ملايين ومئتين وثمانين ألفًا وأربعمائة."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "blocks",
+        "n": 2350
+      },
+      "check": {
+        "q": {
+          "en": "How many digits does 1 billion (1,000,000,000) have?",
+          "ar": "كم رقمًا في المليار الواحد (1,000,000,000)؟"
+        },
+        "options": {
+          "en": [
+            "10",
+            "9",
+            "7"
+          ],
+          "ar": [
+            "10",
+            "9",
+            "7"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "**One billion (milliard).** 1,000 millions = 1 billion = 1,000,000,000.\n\nRead 2,350,000,000 period by period.",
+        "ar": "**المليار.** 1,000 مليون = 1 مليار = 1,000,000,000.\n\nاقرأ العدد 2,350,000,000 دورةً دورة."
+      },
+      "lines": {
+        "en": [
+          "2 | 350 | 000 | 000",
+          "billions | millions | thousands | ones",
+          "two billion, three hundred fifty million",
+          "Value of 3: 300,000,000"
+        ],
+        "ar": [
+          "2 | 350 | 000 | 000",
+          "مليارات | ملايين | ألوف | آحاد",
+          "ملياران وثلاثمائة وخمسون مليونًا",
+          "قيمة الرقم 3: 300,000,000"
+        ]
+      },
+      "say": {
+        "en": "One billion, or milliard. One thousand millions make one billion. Read two billion three hundred fifty million period by period. The billions period shows two, and the millions period shows three hundred fifty. The digit three is in the hundred millions place, so it is worth three hundred million.",
+        "ar": "المليار. ألف مليون تساوي مليارًا واحدًا. اقرأ العدد ملياران وثلاثمائة وخمسون مليونًا دورةً دورة. دورة المليارات فيها اثنان، ودورة الملايين فيها ثلاثمائة وخمسون. الرقم ثلاثة في منزلة مئات الملايين، إذن قيمته ثلاثمائة مليون."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "blocks",
+        "n": 1000
+      },
+      "text": {
+        "en": "**The ×10 pattern keeps going.** Each place to the left is still 10 times bigger.",
+        "ar": "**نمط الضرب في 10 مستمر.** كل منزلة إلى اليسار ما زالت عشرة أمثال التي على يمينها."
+      },
+      "lines": {
+        "en": [
+          "1,000,000 × 10 = 10,000,000",
+          "10,000,000 × 10 = 100,000,000",
+          "100,000,000 × 10 = 1,000,000,000"
+        ],
+        "ar": [
+          "1,000,000 × 10 = 10,000,000",
+          "10,000,000 × 10 = 100,000,000",
+          "100,000,000 × 10 = 1,000,000,000"
+        ]
+      },
+      "say": {
+        "en": "The times ten pattern keeps going. One million times ten is ten million. Ten million times ten is one hundred million. One hundred million times ten is one billion.",
+        "ar": "نمط الضرب في عشرة مستمر. مليون في عشرة يساوي عشرة ملايين. وعشرة ملايين في عشرة تساوي مائة مليون. ومائة مليون في عشرة تساوي مليارًا."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": {
+        "places": 7,
+        "target": 9060000
+      },
+      "text": {
+        "en": "Read the words carefully, then build the number.",
+        "ar": "اقرأ العدد بالحروف جيدًا ثم كوّنه."
+      },
+      "prompt": {
+        "en": "Build: nine million, sixty thousand.",
+        "ar": "كوّن العدد: تسعة ملايين وستون ألفًا."
+      },
+      "say": {
+        "en": "Build the number nine million, sixty thousand.",
+        "ar": "كوّن العدد تسعة ملايين وستين ألفًا."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "blocks",
+        "n": 999
+      },
+      "text": {
+        "en": "**Remember:**\n\nPeriods from the right: ones, thousands, millions, billions.\n\nEach period has 3 places, split by commas.\n\n1,000 thousands = 1 million. 1,000 millions = 1 billion.\n\nCompare and round big numbers with the same rules as before.",
+        "ar": "**تذكّر:**\n\nالدورات من اليمين: الآحاد، الألوف، الملايين، المليارات.\n\nكل دورة فيها 3 منازل، ونفصل بينها بفاصلة.\n\n1,000 ألف = 1 مليون. 1,000 مليون = 1 مليار.\n\nنقارن الأعداد الكبيرة ونقرّبها بالقواعد نفسها."
+      },
+      "say": {
+        "en": "Remember. The periods from the right are ones, thousands, millions and billions. Each period has three places, split by commas. One thousand thousands make one million, and one thousand millions make one billion. Compare and round big numbers with the same rules as before.",
+        "ar": "تذكّر. الدورات من اليمين هي الآحاد ثم الألوف ثم الملايين ثم المليارات. كل دورة فيها ثلاث منازل، ونفصل بينها بفاصلة. ألف ألف تساوي مليونًا، وألف مليون تساوي مليارًا. ونقارن الأعداد الكبيرة ونقرّبها بالقواعد نفسها."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "What is the value of the digit 6 in 46,250,000?",
+        "ar": "ما قيمة الرقم 6 في العدد 46,250,000؟"
+      },
+      "options": {
+        "en": [
+          "6,000,000",
+          "600,000",
+          "60,000,000",
+          "6"
+        ],
+        "ar": [
+          "6,000,000",
+          "600,000",
+          "60,000,000",
+          "6"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "The millions period is 46: 4 ten millions and 6 millions. So 6 is worth 6,000,000.",
+        "ar": "دورة الملايين هي 46: 4 عشرات ملايين و 6 ملايين. إذن قيمة الرقم 6 هي 6,000,000."
+      },
+      "say": {
+        "en": "What is the value of the digit six in forty-six million, two hundred fifty thousand?",
+        "ar": "ما قيمة الرقم ستة في العدد ستة وأربعين مليونًا ومئتين وخمسين ألفًا؟"
+      }
+    },
+    {
+      "q": {
+        "en": "How do we read 3,000,000,000?",
+        "ar": "كيف نقرأ العدد 3,000,000,000؟"
+      },
+      "options": {
+        "en": [
+          "three billion",
+          "three million",
+          "thirty million",
+          "three hundred million"
+        ],
+        "ar": [
+          "ثلاثة مليارات",
+          "ثلاثة ملايين",
+          "ثلاثون مليونًا",
+          "ثلاثمائة مليون"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "There are 4 periods: 3 | 000 | 000 | 000. The 3 is in the billions period.",
+        "ar": "فيه 4 دورات: 3 | 000 | 000 | 000. الرقم 3 في دورة المليارات."
+      },
+      "say": {
+        "en": "How do we read three followed by nine zeros?",
+        "ar": "كيف نقرأ الرقم ثلاثة وبعده تسعة أصفار؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which is 12,005,000 in expanded form?",
+        "ar": "ما الصورة الممتدة للعدد 12,005,000؟"
+      },
+      "options": {
+        "en": [
+          "10,000,000 + 2,000,000 + 5,000",
+          "10,000,000 + 2,000,000 + 500",
+          "1,000,000 + 2,000,000 + 5,000",
+          "12,000,000 + 50,000"
+        ],
+        "ar": [
+          "10,000,000 + 2,000,000 + 5,000",
+          "10,000,000 + 2,000,000 + 500",
+          "1,000,000 + 2,000,000 + 5,000",
+          "12,000,000 + 50,000"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1 ten million, 2 millions, 0 hundred thousands, 0 ten thousands, 5 thousands.",
+        "ar": "1 عشرة ملايين، 2 ملايين، 0 مئات ألوف، 0 عشرات ألوف، 5 آلاف."
+      },
+      "say": {
+        "en": "Which is twelve million five thousand in expanded form?",
+        "ar": "ما الصورة الممتدة للعدد اثني عشر مليونًا وخمسة آلاف؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which sign makes this true? 9,870,000 __ 10,200,000",
+        "ar": "ما الرمز الصحيح؟ 9,870,000 __ 10,200,000"
+      },
+      "options": {
+        "en": [
+          "<",
+          ">",
+          "="
+        ],
+        "ar": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "9,870,000 has 7 digits; 10,200,000 has 8 digits, so it is greater.",
+        "ar": "العدد 9,870,000 له 7 أرقام، و 10,200,000 له 8 أرقام، إذن هو الأكبر."
+      },
+      "say": {
+        "en": "Compare nine million eight hundred seventy thousand and ten million two hundred thousand.",
+        "ar": "قارن بين تسعة ملايين وثمانمائة وسبعين ألفًا، وعشرة ملايين ومئتي ألف."
+      }
+    },
+    {
+      "q": {
+        "en": "Egypt has about 107,000,000 people. Round this to the nearest ten million.",
+        "ar": "عدد سكان مصر نحو 107,000,000 نسمة. قرّب هذا العدد لأقرب عشرة ملايين."
+      },
+      "options": {
+        "en": [
+          "110,000,000",
+          "100,000,000",
+          "107,000,000",
+          "200,000,000"
+        ],
+        "ar": [
+          "110,000,000",
+          "100,000,000",
+          "107,000,000",
+          "200,000,000"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Ten millions digit 0, the millions digit is 7 (5 or more), so 0 becomes 1: 110,000,000.",
+        "ar": "رقم عشرات الملايين 0، ورقم الملايين 7 (خمسة أو أكثر)، إذن يصبح 0 هو 1: 110,000,000."
+      },
+      "say": {
+        "en": "Egypt has about one hundred seven million people. Round this to the nearest ten million.",
+        "ar": "عدد سكان مصر نحو مائة وسبعة ملايين نسمة. قرّب هذا العدد لأقرب عشرة ملايين."
+      }
+    },
+    {
+      "q": {
+        "en": "How many millions make one billion?",
+        "ar": "كم مليونًا تكوّن مليارًا واحدًا؟"
+      },
+      "options": {
+        "en": [
+          "1,000",
+          "100",
+          "10",
+          "1,000,000"
+        ],
+        "ar": [
+          "1,000",
+          "100",
+          "10",
+          "1,000,000"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1 billion = 1,000,000,000 = 1,000 × 1,000,000.",
+        "ar": "1 مليار = 1,000,000,000 = 1,000 × 1,000,000."
+      },
+      "say": {
+        "en": "How many millions make one billion?",
+        "ar": "كم مليونًا تكوّن مليارًا واحدًا؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Order descending: 2,500,000 · 25,000,000 · 250,000 · 2,050,000",
+        "ar": "رتّب تنازليًا: 2,500,000 · 25,000,000 · 250,000 · 2,050,000"
+      },
+      "options": {
+        "en": [
+          "25,000,000; 2,500,000; 2,050,000; 250,000",
+          "250,000; 2,050,000; 2,500,000; 25,000,000",
+          "2,500,000; 2,050,000; 25,000,000; 250,000",
+          "25,000,000; 2,050,000; 2,500,000; 250,000"
+        ],
+        "ar": [
+          "25,000,000؛ 2,500,000؛ 2,050,000؛ 250,000",
+          "250,000؛ 2,050,000؛ 2,500,000؛ 25,000,000",
+          "2,500,000؛ 2,050,000؛ 25,000,000؛ 250,000",
+          "25,000,000؛ 2,050,000؛ 2,500,000؛ 250,000"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Descending starts with the greatest: 8 digits, then the two 7-digit numbers (hundred thousands: 5 > 0), then 6 digits.",
+        "ar": "الترتيب التنازلي يبدأ بالأكبر: 8 أرقام، ثم العددان المكوّنان من 7 أرقام (مئات الألوف: 5 > 0)، ثم 6 أرقام."
+      },
+      "say": {
+        "en": "Order descending: two million five hundred thousand, twenty-five million, two hundred fifty thousand, and two million fifty thousand.",
+        "ar": "رتّب تنازليًا: مليونين وخمسمائة ألف، وخمسة وعشرين مليونًا، ومئتين وخمسين ألفًا، ومليونين وخمسين ألفًا."
+      }
+    }
+  ]
+}

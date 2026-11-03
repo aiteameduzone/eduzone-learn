@@ -1,0 +1,584 @@
+{
+  "id": "g4-math-u03-01",
+  "title": {
+    "en": "Units of Length",
+    "ar": "وحدات الطول"
+  },
+  "objective": {
+    "en": "Know the metric units of length (km, m, cm, mm), how big each one is, and change a bigger unit into a smaller one.",
+    "ar": "أن يتعرف التلميذ وحدات الطول المترية (كم، م، سم، مم) ويقدّر حجم كل منها، ويحوّل من وحدة كبيرة إلى وحدة أصغر."
+  },
+  "refs": {
+    "egypt": [
+      "U3 · 3.1 Units of length"
+    ],
+    "ccss": [
+      "4.MD.A.1"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "bars",
+        "emoji": "📏",
+        "items": [
+          {
+            "f": [
+              1,
+              4
+            ],
+            "label": {
+              "en": "mm",
+              "ar": "مم"
+            }
+          },
+          {
+            "f": [
+              2,
+              4
+            ],
+            "label": {
+              "en": "cm",
+              "ar": "سم"
+            }
+          },
+          {
+            "f": [
+              3,
+              4
+            ],
+            "label": {
+              "en": "m",
+              "ar": "م"
+            }
+          },
+          {
+            "f": [
+              4,
+              4
+            ],
+            "label": {
+              "en": "km",
+              "ar": "كم"
+            },
+            "color": "blue"
+          }
+        ],
+        "ops": [
+          "<",
+          "<",
+          "<"
+        ]
+      },
+      "check": {
+        "q": {
+          "en": "Which unit is best for the length of your pencil?",
+          "ar": "ما أنسب وحدة لقياس طول قلمك الرصاص؟"
+        },
+        "options": {
+          "en": [
+            "kilometre",
+            "centimetre",
+            "kilogram"
+          ],
+          "ar": [
+            "الكيلومتر",
+            "السنتيمتر",
+            "الكيلوجرام"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "We measure length with **metric units**. From the smallest to the biggest:\n\n**millimetre (mm)** - the thickness of a coin\n\n**centimetre (cm)** - the width of your finger\n\n**metre (m)** - one big step\n\n**kilometre (km)** - a long walk, like from one metro station to the next",
+        "ar": "نقيس الطول بـ**وحدات مترية**. من الأصغر إلى الأكبر:\n\n**المليمتر (مم)** - سُمك العملة المعدنية\n\n**السنتيمتر (سم)** - عرض إصبعك\n\n**المتر (م)** - خطوة واسعة\n\n**الكيلومتر (كم)** - مشوار طويل، مثل المسافة بين محطتي مترو"
+      },
+      "say": {
+        "en": "We measure length with metric units. From the smallest to the biggest: the millimetre, the thickness of a coin. The centimetre, the width of your finger. The metre, one big step. And the kilometre, a long walk, like from one metro station to the next.",
+        "ar": "نقيس الطول بوحدات مترية. من الأصغر إلى الأكبر: المليمتر، وهو سُمك العملة المعدنية. والسنتيمتر، وهو عرض إصبعك. والمتر، وهو خطوة واسعة. والكيلومتر، وهو مشوار طويل مثل المسافة بين محطتي مترو."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "bars",
+        "hideLabels": true,
+        "items": [
+          {
+            "f": [
+              10,
+              10
+            ],
+            "label": {
+              "en": "1 m = 100 cm",
+              "ar": "1 م = 100 سم"
+            }
+          }
+        ]
+      },
+      "check": {
+        "q": {
+          "en": "How many centimetres make 1 metre?",
+          "ar": "كم سنتيمترًا في المتر الواحد؟"
+        },
+        "options": {
+          "en": [
+            "10",
+            "100",
+            "1,000"
+          ],
+          "ar": [
+            "10",
+            "100",
+            "1,000"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "**How the units fit together.** Each bigger unit is made of many smaller ones. This bar is 1 metre, cut into 10 parts of 10 cm.",
+        "ar": "**العلاقة بين الوحدات.** كل وحدة كبيرة تتكوّن من وحدات أصغر كثيرة. هذا الشريط طوله 1 متر، مقسّم إلى 10 أجزاء كل جزء 10 سم."
+      },
+      "lines": {
+        "en": [
+          "1 cm = 10 mm",
+          "1 m = 100 cm",
+          "1 km = 1,000 m"
+        ],
+        "ar": [
+          "1 سم = 10 مم",
+          "1 م = 100 سم",
+          "1 كم = 1,000 م"
+        ]
+      },
+      "say": {
+        "en": "How the units fit together. Each bigger unit is made of many smaller ones. This bar is one metre, cut into ten parts of ten centimetres. One centimetre equals ten millimetres. One metre equals one hundred centimetres. One kilometre equals one thousand metres.",
+        "ar": "العلاقة بين الوحدات. كل وحدة كبيرة تتكوّن من وحدات أصغر كثيرة. هذا الشريط طوله متر واحد، مقسّم إلى عشرة أجزاء كل جزء عشرة سنتيمترات. السنتيمتر يساوي عشرة مليمترات. والمتر يساوي مائة سنتيمتر. والكيلومتر يساوي ألف متر."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "bars",
+        "items": [
+          {
+            "f": [
+              10,
+              10
+            ],
+            "label": {
+              "en": "100 cm",
+              "ar": "100 سم"
+            }
+          },
+          {
+            "f": [
+              10,
+              10
+            ],
+            "label": {
+              "en": "100 cm",
+              "ar": "100 سم"
+            }
+          },
+          {
+            "f": [
+              10,
+              10
+            ],
+            "label": {
+              "en": "100 cm",
+              "ar": "100 سم"
+            }
+          },
+          {
+            "f": [
+              10,
+              10
+            ],
+            "label": {
+              "en": "100 cm",
+              "ar": "100 سم"
+            }
+          }
+        ],
+        "ops": [
+          "+",
+          "+",
+          "+"
+        ]
+      },
+      "text": {
+        "en": "**Big unit to small unit: multiply.** The pieces get smaller, so we need more of them and the number gets bigger.",
+        "ar": "**من وحدة كبيرة إلى وحدة صغيرة: نضرب.** القطع تصغر، فنحتاج عددًا أكبر منها، فيكبر العدد."
+      },
+      "lines": {
+        "en": [
+          "4 m = 4 × 100 = 400 cm",
+          "3 km = 3 × 1,000 = 3,000 m",
+          "7 cm = 7 × 10 = 70 mm",
+          "2 m 35 cm = 200 + 35 = 235 cm"
+        ],
+        "ar": [
+          "4 م = 4 × 100 = 400 سم",
+          "3 كم = 3 × 1,000 = 3,000 م",
+          "7 سم = 7 × 10 = 70 مم",
+          "2 م و 35 سم = 200 + 35 = 235 سم"
+        ]
+      },
+      "say": {
+        "en": "Big unit to small unit: multiply. The pieces get smaller, so we need more of them. Four metres is four times one hundred, which is four hundred centimetres. Three kilometres is three times one thousand, which is three thousand metres. Seven centimetres is seven times ten, which is seventy millimetres. Two metres and thirty five centimetres is two hundred plus thirty five, which is two hundred and thirty five centimetres.",
+        "ar": "من وحدة كبيرة إلى وحدة صغيرة نضرب. القطع تصغر فنحتاج عددًا أكبر منها. أربعة أمتار تساوي أربعة في مائة، أي أربعمائة سنتيمتر. وثلاثة كيلومترات تساوي ثلاثة في ألف، أي ثلاثة آلاف متر. وسبعة سنتيمترات تساوي سبعة في عشرة، أي سبعين مليمترًا. ومتران وخمسة وثلاثون سنتيمترًا تساوي مائتين زائد خمسة وثلاثين، أي مائتين وخمسة وثلاثين سنتيمترًا."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "number-line",
+      "params": {
+        "min": 0,
+        "max": 2,
+        "divisions": 10,
+        "target": [
+          15,
+          10
+        ],
+        "scale": 1000
+      },
+      "text": {
+        "en": "Hana walks 1 km and 500 m to school. The line counts in metres. Each small jump is 100 m.",
+        "ar": "تمشي هنا 1 كم و 500 م إلى المدرسة. خط الأعداد بالأمتار، وكل قفزة صغيرة 100 م."
+      },
+      "prompt": {
+        "en": "Put a point at 1 km 500 m (in metres).",
+        "ar": "ضع نقطة عند 1 كم و 500 م (بالأمتار)."
+      },
+      "say": {
+        "en": "Hana walks one kilometre and five hundred metres to school. Each small jump is one hundred metres. Put a point at her distance in metres.",
+        "ar": "تمشي هنا كيلومترًا واحدًا وخمسمائة متر إلى المدرسة. كل قفزة صغيرة مائة متر. ضع نقطة عند المسافة بالأمتار."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "bars",
+        "hideLabels": true,
+        "items": [
+          {
+            "f": [
+              6,
+              6
+            ],
+            "label": {
+              "en": "3 m = 300 cm",
+              "ar": "3 م = 300 سم"
+            }
+          },
+          {
+            "f": [
+              5,
+              6
+            ],
+            "label": {
+              "en": "250 cm",
+              "ar": "250 سم"
+            },
+            "color": "blue"
+          }
+        ],
+        "ops": [
+          ">"
+        ]
+      },
+      "check": {
+        "q": {
+          "en": "Which is longer: 3 m or 250 cm?",
+          "ar": "أيهما أطول: 3 م أم 250 سم؟"
+        },
+        "options": {
+          "en": [
+            "250 cm",
+            "3 m",
+            "They are equal"
+          ],
+          "ar": [
+            "250 سم",
+            "3 م",
+            "متساويان"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "**Comparing lengths:** first change both to the **same unit**, then compare.",
+        "ar": "**مقارنة الأطوال:** نحوّل الطولين أولًا إلى **الوحدة نفسها**، ثم نقارن."
+      },
+      "lines": {
+        "en": [
+          "3 m = 3 × 100 = 300 cm",
+          "300 cm > 250 cm",
+          "So 3 m > 250 cm"
+        ],
+        "ar": [
+          "3 م = 3 × 100 = 300 سم",
+          "300 سم > 250 سم",
+          "إذن 3 م > 250 سم"
+        ]
+      },
+      "say": {
+        "en": "Comparing lengths: first change both to the same unit. Three metres is three times one hundred, which is three hundred centimetres. Three hundred centimetres is more than two hundred and fifty centimetres. So three metres is longer.",
+        "ar": "مقارنة الأطوال: نحوّل الطولين أولًا إلى الوحدة نفسها. ثلاثة أمتار تساوي ثلاثة في مائة، أي ثلاثمائة سنتيمتر. وثلاثمائة سنتيمتر أكبر من مائتين وخمسين سنتيمترًا. إذن ثلاثة أمتار أطول."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "blocks",
+        "n": 1000,
+        "emoji": "🚶"
+      },
+      "text": {
+        "en": "**Remember:**\n\n1 km = 1,000 m, 1 m = 100 cm, 1 cm = 10 mm.\n\nBig unit to small unit: **multiply**.\n\nTo compare, use the **same unit**.",
+        "ar": "**تذكّر:**\n\n1 كم = 1,000 م، 1 م = 100 سم، 1 سم = 10 مم.\n\nمن وحدة كبيرة إلى وحدة صغيرة: **نضرب**.\n\nللمقارنة نستخدم **الوحدة نفسها**."
+      },
+      "say": {
+        "en": "Remember: one kilometre is one thousand metres, one metre is one hundred centimetres, and one centimetre is ten millimetres. Big unit to small unit: multiply. To compare, use the same unit.",
+        "ar": "تذكّر: الكيلومتر يساوي ألف متر، والمتر يساوي مائة سنتيمتر، والسنتيمتر يساوي عشرة مليمترات. من وحدة كبيرة إلى وحدة صغيرة نضرب. وللمقارنة نستخدم الوحدة نفسها."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "6 m = ? cm",
+        "ar": "6 م = ؟ سم"
+      },
+      "options": {
+        "en": [
+          "600 cm",
+          "60 cm",
+          "6,000 cm",
+          "106 cm"
+        ],
+        "ar": [
+          "600 سم",
+          "60 سم",
+          "6,000 سم",
+          "106 سم"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1 m = 100 cm, so 6 × 100 = 600 cm. 60 multiplies by 10 instead of 100.",
+        "ar": "1 م = 100 سم، إذن 6 × 100 = 600 سم. أما 60 فضربت في 10 بدلًا من 100."
+      },
+      "say": {
+        "en": "Six metres equals how many centimetres?",
+        "ar": "ستة أمتار تساوي كم سنتيمترًا؟"
+      }
+    },
+    {
+      "q": {
+        "en": "5 km = ? m",
+        "ar": "5 كم = ؟ م"
+      },
+      "options": {
+        "en": [
+          "5,000 m",
+          "500 m",
+          "50 m",
+          "1,005 m"
+        ],
+        "ar": [
+          "5,000 م",
+          "500 م",
+          "50 م",
+          "1,005 م"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1 km = 1,000 m, so 5 × 1,000 = 5,000 m.",
+        "ar": "1 كم = 1,000 م، إذن 5 × 1,000 = 5,000 م."
+      },
+      "say": {
+        "en": "Five kilometres equals how many metres?",
+        "ar": "خمسة كيلومترات تساوي كم مترًا؟"
+      }
+    },
+    {
+      "q": {
+        "en": "9 cm = ? mm",
+        "ar": "9 سم = ؟ مم"
+      },
+      "options": {
+        "en": [
+          "90 mm",
+          "900 mm",
+          "19 mm",
+          "9,000 mm"
+        ],
+        "ar": [
+          "90 مم",
+          "900 مم",
+          "19 مم",
+          "9,000 مم"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1 cm = 10 mm, so 9 × 10 = 90 mm. Do not add the 10.",
+        "ar": "1 سم = 10 مم، إذن 9 × 10 = 90 مم. لا نجمع 10."
+      },
+      "say": {
+        "en": "Nine centimetres equals how many millimetres?",
+        "ar": "تسعة سنتيمترات تساوي كم مليمترًا؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which unit is best for the distance from Cairo to Alexandria?",
+        "ar": "ما أنسب وحدة لقياس المسافة من القاهرة إلى الإسكندرية؟"
+      },
+      "options": {
+        "en": [
+          "kilometre",
+          "metre",
+          "centimetre",
+          "millimetre"
+        ],
+        "ar": [
+          "الكيلومتر",
+          "المتر",
+          "السنتيمتر",
+          "المليمتر"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Long distances between cities are measured in kilometres.",
+        "ar": "المسافات الطويلة بين المدن تقاس بالكيلومتر."
+      },
+      "say": {
+        "en": "Which unit is best for the distance from Cairo to Alexandria?",
+        "ar": "ما أنسب وحدة لقياس المسافة من القاهرة إلى الإسكندرية؟"
+      }
+    },
+    {
+      "q": {
+        "en": "4 m 20 cm = ? cm",
+        "ar": "4 م و 20 سم = ؟ سم"
+      },
+      "options": {
+        "en": [
+          "420 cm",
+          "402 cm",
+          "4,020 cm",
+          "24 cm"
+        ],
+        "ar": [
+          "420 سم",
+          "402 سم",
+          "4,020 سم",
+          "24 سم"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "4 m = 400 cm, and 400 + 20 = 420 cm. 24 adds 4 and 20 without changing the metres.",
+        "ar": "4 م = 400 سم، و 400 + 20 = 420 سم. أما 24 فجمعت 4 و 20 دون تحويل الأمتار."
+      },
+      "say": {
+        "en": "Four metres and twenty centimetres equals how many centimetres?",
+        "ar": "أربعة أمتار وعشرون سنتيمترًا تساوي كم سنتيمترًا؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which is longer: 2 km or 1,800 m?",
+        "ar": "أيهما أطول: 2 كم أم 1,800 م؟"
+      },
+      "options": {
+        "en": [
+          "2 km",
+          "1,800 m",
+          "They are equal",
+          "We cannot know"
+        ],
+        "ar": [
+          "2 كم",
+          "1,800 م",
+          "متساويان",
+          "لا يمكن المعرفة"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "2 km = 2,000 m, and 2,000 m > 1,800 m. A bigger number does not always mean longer: check the unit!",
+        "ar": "2 كم = 2,000 م، و 2,000 م > 1,800 م. العدد الأكبر لا يعني دائمًا طولًا أكبر: انتبه للوحدة!"
+      },
+      "say": {
+        "en": "Which is longer: two kilometres or one thousand eight hundred metres?",
+        "ar": "أيهما أطول: كيلومتران أم ألف وثمانمائة متر؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which is the same as 7,000 m?",
+        "ar": "أي مما يلي يساوي 7,000 م؟"
+      },
+      "options": {
+        "en": [
+          "7 km",
+          "70 km",
+          "700 km",
+          "7 m"
+        ],
+        "ar": [
+          "7 كم",
+          "70 كم",
+          "700 كم",
+          "7 م"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "7 × 1,000 = 7,000, so 7,000 m = 7 km.",
+        "ar": "7 × 1,000 = 7,000، إذن 7,000 م = 7 كم."
+      },
+      "say": {
+        "en": "Which is the same as seven thousand metres?",
+        "ar": "أي مما يلي يساوي سبعة آلاف متر؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Order from shortest to longest: 1 m, 90 cm, 1,200 mm",
+        "ar": "رتّب من الأقصر إلى الأطول: 1 م، 90 سم، 1,200 مم"
+      },
+      "options": {
+        "en": [
+          "90 cm, 1 m, 1,200 mm",
+          "1 m, 90 cm, 1,200 mm",
+          "1,200 mm, 90 cm, 1 m",
+          "90 cm, 1,200 mm, 1 m"
+        ],
+        "ar": [
+          "90 سم، 1 م، 1,200 مم",
+          "1 م، 90 سم، 1,200 مم",
+          "1,200 مم، 90 سم، 1 م",
+          "90 سم، 1,200 مم، 1 م"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "In millimetres: 90 cm = 900 mm, 1 m = 1,000 mm, and 1,200 mm.",
+        "ar": "بالمليمتر: 90 سم = 900 مم، و 1 م = 1,000 مم، ثم 1,200 مم."
+      },
+      "say": {
+        "en": "Order from shortest to longest: one metre, ninety centimetres, one thousand two hundred millimetres.",
+        "ar": "رتّب من الأقصر إلى الأطول: متر واحد، تسعون سنتيمترًا، ألف ومائتا مليمتر."
+      }
+    }
+  ]
+}

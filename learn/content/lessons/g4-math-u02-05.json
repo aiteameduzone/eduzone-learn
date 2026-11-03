@@ -1,0 +1,271 @@
+{
+  "id": "g4-math-u02-05",
+  "title": {
+    "en": "Inverse Operations and Finding the Unknown",
+    "ar": "العملية العكسية وإيجاد المجهول"
+  },
+  "objective": {
+    "en": "Check addition with subtraction and subtraction with addition, and use a bar model and a letter for the unknown to solve problems.",
+    "ar": "أن يتحقق التلميذ من الجمع بالطرح ومن الطرح بالجمع، ويستخدم النموذج الشريطي وحرفًا للتعبير عن المجهول لحل المسائل."
+  },
+  "refs": {
+    "egypt": ["U2 · 2.1-2.2 Inverse operations, bar models, unknowns"],
+    "ccss": ["4.NBT.B.4", "4.OA.A.3"]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "check": {
+        "q": {
+          "en": "3,256 + 1,419 = 4,675. Which subtraction checks it?",
+          "ar": "3256 + 1419 = 4675. أي عملية طرح تتحقق من ذلك؟"
+        },
+        "options": {
+          "en": ["4,675 − 1,419", "3,256 − 1,419", "4,675 + 1,419"],
+          "ar": ["4675 − 1419", "3256 − 1419", "4675 + 1419"]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "**Inverse operations:** subtraction undoes addition, and addition undoes subtraction.\n\nIf 3,256 + 1,419 = 4,675, then 4,675 − 1,419 must give back 3,256.\n\nIf it does not, there is a mistake somewhere.",
+        "ar": "**العمليتان العكسيتان:** الطرح عكس الجمع، والجمع عكس الطرح.\n\nإذا كان 3256 + 1419 = 4675، فإن 4675 − 1419 يجب أن يعطي 3256\n\nوإذا لم يعطِه، فهناك خطأ."
+      },
+      "say": {
+        "en": "Inverse operations: subtraction undoes addition, and addition undoes subtraction. If three thousand two hundred fifty-six plus one thousand four hundred nineteen equals four thousand six hundred seventy-five, then four thousand six hundred seventy-five minus one thousand four hundred nineteen must give back three thousand two hundred fifty-six. If it does not, there is a mistake somewhere.",
+        "ar": "العمليتان العكسيتان: الطرح عكس الجمع، والجمع عكس الطرح. إذا كان ثلاثة آلاف ومئتان وستة وخمسون زائد ألف وأربعمئة وتسعة عشر يساوي أربعة آلاف وستمئة وخمسة وسبعين، فإن أربعة آلاف وستمئة وخمسة وسبعين ناقص ألف وأربعمئة وتسعة عشر يجب أن يعطي ثلاثة آلاف ومئتين وستة وخمسين. وإذا لم يعطِه، فهناك خطأ."
+      },
+      "visual": { "kind": "blocks", "n": 4675 }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "**Check a subtraction with addition.** Add the answer to the number you took away. You should get the first number back.",
+        "ar": "**التحقق من الطرح بالجمع.** نجمع الناتج مع العدد المطروح، فيجب أن نحصل على العدد الأول."
+      },
+      "lines": {
+        "en": [
+          "7,023 − 2,846 = 4,177",
+          "Check: 4,177 + 2,846 = ?",
+          "4,177 + 2,846 = 7,023",
+          "We got 7,023 back, so the answer is correct ✓"
+        ],
+        "ar": [
+          "7023 − 2846 = 4177",
+          "التحقق: 4177 + 2846 = ؟",
+          "4177 + 2846 = 7023",
+          "حصلنا على 7023، إذن الناتج صحيح ✓"
+        ]
+      },
+      "say": {
+        "en": "Check a subtraction with addition. Add the answer to the number you took away. Seven thousand twenty-three minus two thousand eight hundred forty-six is four thousand one hundred seventy-seven. Check: four thousand one hundred seventy-seven plus two thousand eight hundred forty-six is seven thousand twenty-three. We got seven thousand twenty-three back, so the answer is correct.",
+        "ar": "التحقق من الطرح بالجمع. نجمع الناتج مع العدد المطروح. سبعة آلاف وثلاثة وعشرون ناقص ألفين وثمانمئة وستة وأربعين يساوي أربعة آلاف ومئة وسبعة وسبعين. التحقق: أربعة آلاف ومئة وسبعة وسبعون زائد ألفين وثمانمئة وستة وأربعين يساوي سبعة آلاف وثلاثة وعشرين. حصلنا على سبعة آلاف وثلاثة وعشرين، إذن الناتج صحيح."
+      },
+      "visual": { "kind": "blocks", "n": 7023 }
+    },
+    {
+      "type": "example",
+      "check": {
+        "q": {
+          "en": "Omar had some money (a). He got 1,250 EGP for Eid and now has 3,400 EGP. Which equation fits?",
+          "ar": "كان مع عمر مبلغ (س). أخذ 1250 جنيهًا عيدية فأصبح معه 3400 جنيه. أي معادلة تناسب المسألة؟"
+        },
+        "options": {
+          "en": ["a + 1,250 = 3,400", "a = 3,400 + 1,250", "1,250 − a = 3,400"],
+          "ar": ["س + 1250 = 3400", "س = 3400 + 1250", "1250 − س = 3400"]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "**Bar model:** the whole bar is 3,400. It has two parts: the unknown **a** and 1,250.\n\nWhen a **part** is unknown, subtract.",
+        "ar": "**النموذج الشريطي:** الشريط كله 3400، وله جزآن: المجهول **س** و 1250\n\nعندما يكون **الجزء** مجهولًا نطرح."
+      },
+      "lines": {
+        "en": [
+          "[ ——————— 3,400 ——————— ]",
+          "[ —— a —— ][ —— 1,250 —— ]",
+          "a + 1,250 = 3,400",
+          "a = 3,400 − 1,250",
+          "a = 2,150 EGP"
+        ],
+        "ar": [
+          "[ ——————— 3400 ——————— ]",
+          "[ —— 1250 —— ][ —— س —— ]",
+          "س + 1250 = 3400",
+          "س = 3400 − 1250",
+          "س = 2150 جنيهًا"
+        ]
+      },
+      "say": {
+        "en": "Bar model: the whole bar is three thousand four hundred. It has two parts: the unknown a, and one thousand two hundred fifty. When a part is unknown, subtract. a plus one thousand two hundred fifty equals three thousand four hundred, so a equals three thousand four hundred minus one thousand two hundred fifty, which is two thousand one hundred fifty pounds.",
+        "ar": "النموذج الشريطي: الشريط كله ثلاثة آلاف وأربعمئة، وله جزآن: المجهول سين، وألف ومئتان وخمسون. عندما يكون الجزء مجهولًا نطرح. سين زائد ألف ومئتين وخمسين يساوي ثلاثة آلاف وأربعمئة، إذن سين يساوي ثلاثة آلاف وأربعمئة ناقص ألف ومئتين وخمسين، أي ألفين ومئة وخمسين جنيهًا."
+      },
+      "visual": { "kind": "blocks", "n": 3400 }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": { "places": 4, "target": 4025 },
+      "text": {
+        "en": "b − 1,385 = 2,640. Here **b** is the whole, so add the two parts: b = 2,640 + 1,385.",
+        "ar": "ب − 1385 = 2640. هنا **ب** هو الكل، فنجمع الجزأين: ب = 2640 + 1385"
+      },
+      "prompt": {
+        "en": "Build the value of b.",
+        "ar": "كوِّن قيمة ب."
+      },
+      "say": {
+        "en": "b minus one thousand three hundred eighty-five equals two thousand six hundred forty. Here b is the whole, so add the two parts: two thousand six hundred forty plus one thousand three hundred eighty-five. Build the value of b.",
+        "ar": "باء ناقص ألف وثلاثمئة وخمسة وثمانين يساوي ألفين وستمئة وأربعين. هنا باء هو الكل، فنجمع الجزأين: ألفان وستمئة وأربعون زائد ألف وثلاثمئة وخمسة وثمانين. كوِّن قيمة باء."
+      }
+    },
+    {
+      "type": "explain",
+      "check": {
+        "q": {
+          "en": "4,500 − m = 1,800. How do you find m?",
+          "ar": "4500 − م = 1800. كيف تجد م؟"
+        },
+        "options": {
+          "en": ["4,500 − 1,800", "4,500 + 1,800", "1,800 − 4,500"],
+          "ar": ["4500 − 1800", "4500 + 1800", "1800 − 4500"]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "**Whole unknown?** Add the parts.\n\n**Part unknown?** Subtract the known part from the whole.\n\nIn 4,500 − m = 1,800, the whole is 4,500 and the parts are m and 1,800.\n\nm = 4,500 − 1,800 = 2,700",
+        "ar": "**الكل مجهول؟** نجمع الأجزاء.\n\n**جزء مجهول؟** نطرح الجزء المعلوم من الكل.\n\nفي 4500 − م = 1800، الكل هو 4500 والجزآن هما م و 1800\n\nم = 4500 − 1800 = 2700"
+      },
+      "say": {
+        "en": "Whole unknown? Add the parts. Part unknown? Subtract the known part from the whole. In four thousand five hundred minus m equals one thousand eight hundred, the whole is four thousand five hundred and the parts are m and one thousand eight hundred. So m equals four thousand five hundred minus one thousand eight hundred, which is two thousand seven hundred.",
+        "ar": "الكل مجهول؟ نجمع الأجزاء. جزء مجهول؟ نطرح الجزء المعلوم من الكل. في أربعة آلاف وخمسمئة ناقص ميم يساوي ألفًا وثمانمئة، الكل هو أربعة آلاف وخمسمئة، والجزآن هما ميم وألف وثمانمئة. إذن ميم يساوي أربعة آلاف وخمسمئة ناقص ألف وثمانمئة، أي ألفين وسبعمئة."
+      },
+      "visual": { "kind": "blocks", "n": 4500 }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Remember:**\n\nCheck + with −, and check − with +.\n\nIn a bar model, the whole = the sum of the parts.\n\nUse a letter for the unknown, then use the inverse operation to find it. Omar had 2,150 EGP at first.",
+        "ar": "**تذكّر:**\n\nنتحقق من الجمع بالطرح، ومن الطرح بالجمع.\n\nفي النموذج الشريطي: الكل = مجموع الأجزاء.\n\nنرمز للمجهول بحرف، ثم نستخدم العملية العكسية لإيجاده. كان مع عمر 2150 جنيهًا في البداية."
+      },
+      "say": {
+        "en": "Remember. Check addition with subtraction, and subtraction with addition. In a bar model, the whole is the sum of the parts. Use a letter for the unknown, then use the inverse operation to find it. Omar had two thousand one hundred fifty pounds at first.",
+        "ar": "تذكّر. نتحقق من الجمع بالطرح، ومن الطرح بالجمع. في النموذج الشريطي الكل يساوي مجموع الأجزاء. نرمز للمجهول بحرف، ثم نستخدم العملية العكسية لإيجاده. كان مع عمر ألفان ومئة وخمسون جنيهًا في البداية."
+      },
+      "visual": { "kind": "blocks", "n": 2150 }
+    }
+  ],
+  "quiz": [
+    {
+      "q": { "en": "Which checks 5,630 − 2,148 = 3,482?", "ar": "أي عملية تتحقق من أن 5630 − 2148 = 3482؟" },
+      "options": {
+        "en": ["3,482 + 2,148", "3,482 − 2,148", "5,630 + 2,148", "2,148 − 3,482"],
+        "ar": ["3482 + 2148", "3482 − 2148", "5630 + 2148", "2148 − 3482"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Addition undoes subtraction: answer + number taken away = first number. 3,482 + 2,148 = 5,630 ✓",
+        "ar": "الجمع عكس الطرح: الناتج + العدد المطروح = العدد الأول. 3482 + 2148 = 5630 ✓"
+      },
+      "say": {
+        "en": "Which checks that five thousand six hundred thirty minus two thousand one hundred forty-eight equals three thousand four hundred eighty-two?",
+        "ar": "أي عملية تتحقق من أن خمسة آلاف وستمئة وثلاثين ناقص ألفين ومئة وثمانية وأربعين يساوي ثلاثة آلاف وأربعمئة واثنين وثمانين؟"
+      }
+    },
+    {
+      "q": { "en": "Ali wrote 6,245 + 1,378 = 7,523. Check it. Is he right?", "ar": "كتب علي 6245 + 1378 = 7523. تحقق. هل هو على صواب؟" },
+      "options": {
+        "en": ["No, the sum is 7,623", "Yes, he is right", "No, the sum is 7,613", "No, the sum is 7,513"],
+        "ar": ["لا، الناتج 7623", "نعم، هو على صواب", "لا، الناتج 7613", "لا، الناتج 7513"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Check: 7,523 − 1,378 = 6,145, not 6,245, so Ali is wrong. He forgot a carry in the hundreds: 2 + 3 + 1 = 6. The sum is 7,623.",
+        "ar": "التحقق: 7523 − 1378 = 6145 وليس 6245، إذن أخطأ علي. نسي الواحد المحمول في المئات: 2 + 3 + 1 = 6. الناتج 7623"
+      },
+      "say": {
+        "en": "Ali wrote six thousand two hundred forty-five plus one thousand three hundred seventy-eight equals seven thousand five hundred twenty-three. Check it. Is he right?",
+        "ar": "كتب علي: ستة آلاف ومئتان وخمسة وأربعون زائد ألف وثلاثمئة وثمانية وسبعين يساوي سبعة آلاف وخمسمئة وثلاثة وعشرين. تحقق. هل هو على صواب؟"
+      }
+    },
+    {
+      "q": { "en": "n + 2,750 = 6,000. What is n?", "ar": "ن + 2750 = 6000. ما قيمة ن؟" },
+      "options": {
+        "en": ["3,250", "8,750", "4,750", "3,350"],
+        "ar": ["3250", "8750", "4750", "3350"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "n is a part, so subtract: n = 6,000 − 2,750 = 3,250. Check: 3,250 + 2,750 = 6,000 ✓. 8,750 adds instead of subtracting.",
+        "ar": "ن جزء، فنطرح: ن = 6000 − 2750 = 3250. التحقق: 3250 + 2750 = 6000 ✓. أما 8750 فجمعت بدلًا من الطرح."
+      },
+      "say": {
+        "en": "n plus two thousand seven hundred fifty equals six thousand. What is n?",
+        "ar": "نون زائد ألفين وسبعمئة وخمسين يساوي ستة آلاف. ما قيمة نون؟"
+      }
+    },
+    {
+      "q": { "en": "k − 1,465 = 2,380. What is k?", "ar": "ك − 1465 = 2380. ما قيمة ك؟" },
+      "options": {
+        "en": ["3,845", "915", "3,745", "3,835"],
+        "ar": ["3845", "915", "3745", "3835"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "k is the whole, so add the parts: 2,380 + 1,465 = 3,845. 915 subtracts instead of adding; 3,745 forgets the carry.",
+        "ar": "ك هو الكل، فنجمع الجزأين: 2380 + 1465 = 3845. أما 915 فطرحت بدلًا من الجمع، و 3745 نسيت الواحد المحمول."
+      },
+      "say": {
+        "en": "k minus one thousand four hundred sixty-five equals two thousand three hundred eighty. What is k?",
+        "ar": "كاف ناقص ألف وأربعمئة وخمسة وستين يساوي ألفين وثلاثمئة وثمانين. ما قيمة كاف؟"
+      }
+    },
+    {
+      "q": { "en": "A bar model: the whole is 5,200 and the parts are 3,750 and p. What is p?", "ar": "نموذج شريطي: الكل 5200 والجزآن هما 3750 و ع. ما قيمة ع؟" },
+      "options": {
+        "en": ["1,450", "8,950", "2,550", "1,550"],
+        "ar": ["1450", "8950", "2550", "1550"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Part unknown: p = 5,200 − 3,750 = 1,450. 2,550 takes the smaller digit from the bigger; 8,950 adds.",
+        "ar": "الجزء مجهول: ع = 5200 − 3750 = 1450. أما 2550 فطرحت الرقم الأصغر من الأكبر، و 8950 جمعت."
+      },
+      "say": {
+        "en": "A bar model: the whole is five thousand two hundred and the parts are three thousand seven hundred fifty and p. What is p?",
+        "ar": "نموذج شريطي: الكل خمسة آلاف ومئتان، والجزآن هما ثلاثة آلاف وسبعمئة وخمسون وعين. ما قيمة عين؟"
+      }
+    },
+    {
+      "q": { "en": "A school collected 2,875 EGP on Monday. After Tuesday it had 4,310 EGP in all. Which equation finds Tuesday's money t?", "ar": "جمعت مدرسة 2875 جنيهًا يوم الاثنين، وبعد يوم الثلاثاء أصبح معها 4310 جنيهات. أي معادلة تجد مبلغ الثلاثاء ت؟" },
+      "options": {
+        "en": ["2,875 + t = 4,310", "t = 4,310 + 2,875", "t − 2,875 = 4,310", "2,875 − t = 4,310"],
+        "ar": ["2875 + ت = 4310", "ت = 4310 + 2875", "ت − 2875 = 4310", "2875 − ت = 4310"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Monday's money plus Tuesday's money makes the whole, 4,310.",
+        "ar": "مبلغ الاثنين زائد مبلغ الثلاثاء يساوي الكل، وهو 4310"
+      },
+      "say": {
+        "en": "A school collected two thousand eight hundred seventy-five pounds on Monday. After Tuesday it had four thousand three hundred ten pounds in all. Which equation finds Tuesday's money t?",
+        "ar": "جمعت مدرسة ألفين وثمانمئة وخمسة وسبعين جنيهًا يوم الاثنين، وبعد يوم الثلاثاء أصبح معها أربعة آلاف وثلاثمئة وعشرة جنيهات. أي معادلة تجد مبلغ الثلاثاء تاء؟"
+      }
+    },
+    {
+      "q": { "en": "2,875 + t = 4,310. What is t?", "ar": "2875 + ت = 4310. ما قيمة ت؟" },
+      "options": {
+        "en": ["1,435", "7,185", "2,565", "1,535"],
+        "ar": ["1435", "7185", "2565", "1535"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "t = 4,310 − 2,875 = 1,435. Check: 2,875 + 1,435 = 4,310 ✓. 2,565 takes the smaller digit from the bigger.",
+        "ar": "ت = 4310 − 2875 = 1435. التحقق: 2875 + 1435 = 4310 ✓. أما 2565 فطرحت الرقم الأصغر من الأكبر."
+      },
+      "say": {
+        "en": "Two thousand eight hundred seventy-five plus t equals four thousand three hundred ten. What is t?",
+        "ar": "ألفان وثمانمئة وخمسة وسبعون زائد تاء يساوي أربعة آلاف وثلاثمئة وعشرة. ما قيمة تاء؟"
+      }
+    }
+  ]
+}

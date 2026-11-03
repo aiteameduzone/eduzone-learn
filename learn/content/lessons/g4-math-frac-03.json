@@ -1,0 +1,433 @@
+{
+  "id": "g4-math-frac-03",
+  "title": {
+    "en": "Comparing Fractions",
+    "ar": "مقارنة الكسور"
+  },
+  "objective": {
+    "en": "Compare fractions with the same denominator, the same numerator, or by using the benchmark [1/2], and write >, < or =.",
+    "ar": "أن يقارن التلميذ الكسور متحدة المقام أو متحدة البسط أو باستخدام الكسر المرجعي [1/2]، ويكتب > أو < أو =."
+  },
+  "refs": {
+    "egypt": [
+      "U9 · 9.2 L8-12"
+    ],
+    "ccss": [
+      "4.NF.A.2"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Same denominator:** the pieces are the same size, so more pieces means more.\n\n[5/8] > [3/8] because 5 pieces are more than 3 pieces.",
+        "ar": "**مقامات متساوية:** القطع لها الحجم نفسه، فالعدد الأكبر من القطع هو الأكبر.\n\n[5/8] > [3/8] لأن 5 قطع أكثر من 3 قطع."
+      },
+      "say": {
+        "en": "Same denominator: the pieces are the same size, so more pieces means more. Five eighths is greater than three eighths.",
+        "ar": "مقامات متساوية: القطع لها الحجم نفسه، فالعدد الأكبر من القطع هو الأكبر. خمسة أثمان أكبر من ثلاثة أثمان."
+      },
+      "visual": {
+        "kind": "bars",
+        "items": [
+          {
+            "f": [
+              5,
+              8
+            ]
+          },
+          {
+            "f": [
+              3,
+              8
+            ],
+            "color": "blue"
+          }
+        ]
+      },
+      "check": {
+        "q": {
+          "en": "Which is bigger: [5/8] or [3/8]?",
+          "ar": "أيهما أكبر: [5/8] أم [3/8]؟"
+        },
+        "options": {
+          "en": [
+            "[5/8]",
+            "[3/8]",
+            "="
+          ],
+          "ar": [
+            "[5/8]",
+            "[3/8]",
+            "="
+          ]
+        },
+        "answer": 0
+      }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Same numerator:** we have the same number of pieces, so look at their size.\n\nCutting into **more** parts makes **smaller** pieces. So [1/3] > [1/6].",
+        "ar": "**بسوط متساوية:** معنا العدد نفسه من القطع، فننظر إلى حجمها.\n\nكلما قسّمنا إلى أجزاء **أكثر** صارت القطع **أصغر**. إذن [1/3] > [1/6]."
+      },
+      "say": {
+        "en": "Same numerator: we have the same number of pieces, so look at their size. Cutting into more parts makes smaller pieces. So one third is greater than one sixth.",
+        "ar": "بسوط متساوية: معنا العدد نفسه من القطع، فننظر إلى حجمها. كلما قسّمنا إلى أجزاء أكثر صارت القطع أصغر. إذن الثلث أكبر من السدس."
+      },
+      "visual": {
+        "kind": "pies",
+        "emoji": "🍕",
+        "items": [
+          {
+            "f": [
+              1,
+              3
+            ]
+          },
+          {
+            "f": [
+              1,
+              6
+            ],
+            "color": "blue"
+          }
+        ],
+        "ops": [
+          ">"
+        ]
+      },
+      "check": {
+        "q": {
+          "en": "Would you rather have [1/3] or [1/6] of a pizza?",
+          "ar": "هل تفضّل [1/3] بيتزا أم [1/6] بيتزا؟"
+        },
+        "options": {
+          "en": [
+            "[1/3]",
+            "[1/6]"
+          ],
+          "ar": [
+            "[1/3]",
+            "[1/6]"
+          ]
+        },
+        "answer": 0
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "compare",
+      "params": {
+        "a": [
+          2,
+          3
+        ],
+        "b": [
+          2,
+          5
+        ]
+      },
+      "text": {
+        "en": "Look at both bars, then pick the right sign.",
+        "ar": "انظر إلى الشريطين، ثم اختر الرمز الصحيح."
+      },
+      "prompt": {
+        "en": "Compare [2/3] and [2/5].",
+        "ar": "قارن بين [2/3] و [2/5]."
+      },
+      "say": {
+        "en": "Compare two thirds and two fifths. Pick the right sign.",
+        "ar": "قارن بين ثلثين وخُمسين. اختر الرمز الصحيح."
+      }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "**Benchmark [1/2]:** when the numbers are different, ask: is each fraction more or less than one half?",
+        "ar": "**الكسر المرجعي [1/2]:** عندما تختلف الأعداد، اسأل: هل كل كسر أكبر أم أصغر من النصف؟"
+      },
+      "lines": {
+        "en": [
+          "Compare [3/8] and [4/6].",
+          "Half of 8 is 4, and 3 is less, so [3/8] < [1/2].",
+          "Half of 6 is 3, and 4 is more, so [4/6] > [1/2].",
+          "So [3/8] < [4/6]."
+        ],
+        "ar": [
+          "قارن بين [3/8] و [4/6].",
+          "نصف 8 هو 4، و 3 أقل منه، إذن [3/8] < [1/2].",
+          "نصف 6 هو 3، و 4 أكبر منه، إذن [4/6] > [1/2].",
+          "إذن [3/8] < [4/6]."
+        ]
+      },
+      "say": {
+        "en": "Benchmark one half. Compare three eighths and four sixths. Half of eight is four, and three is less, so three eighths is less than one half. Half of six is three, and four is more, so four sixths is more than one half. So three eighths is less than four sixths.",
+        "ar": "الكسر المرجعي النصف. قارن بين ثلاثة أثمان وأربعة أسداس. نصف الثمانية أربعة، والثلاثة أصغر، إذن ثلاثة أثمان أصغر من النصف. ونصف الستة ثلاثة، والأربعة أكبر، إذن أربعة أسداس أكبر من النصف. إذن ثلاثة أثمان أصغر من أربعة أسداس."
+      },
+      "visual": {
+        "kind": "bars",
+        "items": [
+          {
+            "f": [
+              3,
+              8
+            ]
+          },
+          {
+            "f": [
+              1,
+              2
+            ],
+            "label": {
+              "en": "half",
+              "ar": "النصف"
+            }
+          },
+          {
+            "f": [
+              4,
+              6
+            ],
+            "color": "blue"
+          }
+        ]
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "compare",
+      "params": {
+        "a": [
+          3,
+          8
+        ],
+        "b": [
+          4,
+          6
+        ]
+      },
+      "text": {
+        "en": "Now you try with the benchmark.",
+        "ar": "جرّب الآن باستخدام الكسر المرجعي."
+      },
+      "prompt": {
+        "en": "Compare [3/8] and [4/6].",
+        "ar": "قارن بين [3/8] و [4/6]."
+      },
+      "say": {
+        "en": "Now compare three eighths and four sixths.",
+        "ar": "قارن الآن بين ثلاثة أثمان وأربعة أسداس."
+      }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Remember:**\n\nSame bottom: bigger top wins.\n\nSame top: smaller bottom wins (bigger pieces).\n\nDifferent? Compare each with [1/2].",
+        "ar": "**تذكّر:**\n\nالمقام نفسه: الأكبر بسطًا هو الأكبر.\n\nالبسط نفسه: الأصغر مقامًا هو الأكبر (قطعه أكبر).\n\nمختلفان؟ قارن كل كسر بـ [1/2]."
+      },
+      "say": {
+        "en": "Remember. Same bottom: the bigger top wins. Same top: the smaller bottom wins, because its pieces are bigger. Different? Compare each with one half.",
+        "ar": "تذكّر. إذا تساوى المقامان فالأكبر بسطًا هو الأكبر. وإذا تساوى البسطان فالأصغر مقامًا هو الأكبر لأن قطعه أكبر. وإذا اختلفا فقارن كل كسر بالنصف."
+      },
+      "visual": {
+        "kind": "pies",
+        "items": [
+          {
+            "f": [
+              3,
+              4
+            ]
+          },
+          {
+            "f": [
+              2,
+              4
+            ],
+            "color": "blue"
+          },
+          {
+            "f": [
+              1,
+              4
+            ]
+          }
+        ],
+        "ops": [
+          ">",
+          ">"
+        ]
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "Which sign makes this true? [4/9] __ [7/9]",
+        "ar": "ما الرمز الصحيح؟ [4/9] __ [7/9]"
+      },
+      "options": {
+        "en": [
+          "<",
+          ">",
+          "="
+        ],
+        "ar": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Same denominator, and 4 pieces are fewer than 7.",
+        "ar": "المقام نفسه، و 4 قطع أقل من 7."
+      },
+      "say": {
+        "en": "Compare four ninths and seven ninths.",
+        "ar": "قارن بين أربعة أتساع وسبعة أتساع."
+      }
+    },
+    {
+      "q": {
+        "en": "Which fraction is the biggest?",
+        "ar": "أي كسر هو الأكبر؟"
+      },
+      "options": {
+        "en": [
+          "[1/2]",
+          "[1/4]",
+          "[1/8]",
+          "[1/10]"
+        ],
+        "ar": [
+          "[1/2]",
+          "[1/4]",
+          "[1/8]",
+          "[1/10]"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "All have numerator 1. Fewer parts means bigger pieces, so [1/2] is biggest. A bigger denominator does NOT mean a bigger fraction.",
+        "ar": "كلها بسطها 1. كلما قلّ عدد الأجزاء كبرت القطعة، إذن [1/2] هو الأكبر. المقام الأكبر لا يعني كسرًا أكبر."
+      },
+      "say": {
+        "en": "Which fraction is the biggest: one half, one fourth, one eighth, or one tenth?",
+        "ar": "أي كسر هو الأكبر: النصف أم الربع أم الثمن أم العشر؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which sign makes this true? [3/5] __ [3/4]",
+        "ar": "ما الرمز الصحيح؟ [3/5] __ [3/4]"
+      },
+      "options": {
+        "en": [
+          "<",
+          ">",
+          "="
+        ],
+        "ar": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Same numerator. Fifths are smaller pieces than fourths, so [3/5] < [3/4].",
+        "ar": "البسط نفسه. الأخماس قطع أصغر من الأرباع، إذن [3/5] < [3/4]."
+      },
+      "say": {
+        "en": "Compare three fifths and three fourths.",
+        "ar": "قارن بين ثلاثة أخماس وثلاثة أرباع."
+      }
+    },
+    {
+      "q": {
+        "en": "Which fraction is MORE than [1/2]?",
+        "ar": "أي كسر أكبر من [1/2]؟"
+      },
+      "options": {
+        "en": [
+          "[5/8]",
+          "[2/6]",
+          "[3/10]",
+          "[4/8]"
+        ],
+        "ar": [
+          "[5/8]",
+          "[2/6]",
+          "[3/10]",
+          "[4/8]"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Half of 8 is 4, and 5 is more than 4. [4/8] is exactly one half, not more.",
+        "ar": "نصف 8 هو 4، و 5 أكبر من 4. أما [4/8] فيساوي النصف تمامًا وليس أكبر منه."
+      },
+      "say": {
+        "en": "Which fraction is more than one half?",
+        "ar": "أي كسر أكبر من النصف؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Youssef ran [2/3] km and Hana ran [2/5] km. Who ran farther?",
+        "ar": "جرى يوسف [2/3] كم وجرت هنا [2/5] كم. من جرى مسافة أطول؟"
+      },
+      "options": {
+        "en": [
+          "Youssef",
+          "Hana",
+          "They ran the same",
+          "We cannot know"
+        ],
+        "ar": [
+          "يوسف",
+          "هنا",
+          "المسافة نفسها",
+          "لا يمكن المعرفة"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Same numerator, and thirds are bigger than fifths.",
+        "ar": "البسط نفسه، والأثلاث أكبر من الأخماس."
+      },
+      "say": {
+        "en": "Youssef ran two thirds of a kilometre and Hana ran two fifths of a kilometre. Who ran farther?",
+        "ar": "جرى يوسف ثلثي كيلومتر، وجرت هنا خُمسي كيلومتر. من جرى مسافة أطول؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which sign makes this true? [2/4] __ [5/10]",
+        "ar": "ما الرمز الصحيح؟ [2/4] __ [5/10]"
+      },
+      "options": {
+        "en": [
+          "=",
+          "<",
+          ">"
+        ],
+        "ar": [
+          "=",
+          "<",
+          ">"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Both are exactly one half, so they are equal.",
+        "ar": "كلاهما يساوي النصف تمامًا، إذن هما متساويان."
+      },
+      "say": {
+        "en": "Compare two fourths and five tenths.",
+        "ar": "قارن بين ربعين وخمسة أعشار."
+      }
+    }
+  ]
+}

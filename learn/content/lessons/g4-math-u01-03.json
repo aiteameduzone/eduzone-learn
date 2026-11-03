@@ -1,0 +1,388 @@
+{
+  "id": "g4-math-u01-03",
+  "title": {
+    "en": "Standard, Expanded and Word Forms",
+    "ar": "الصورة القياسية والممتدة واللفظية"
+  },
+  "objective": {
+    "en": "Read and write numbers in standard, expanded and word form, and compose and decompose them in different ways.",
+    "ar": "أن يقرأ التلميذ الأعداد ويكتبها بالصورة القياسية والممتدة واللفظية، ويكوّنها ويحللها بطرق مختلفة."
+  },
+  "refs": {
+    "egypt": [
+      "U1 · 1.1 Number forms; compose and decompose"
+    ],
+    "ccss": [
+      "4.NBT.A.2"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "blocks",
+        "n": 3256
+      },
+      "check": {
+        "q": {
+          "en": "Which is 3,256 in expanded form?",
+          "ar": "أيٌّ مما يلي هو العدد 3,256 بالصورة الممتدة؟"
+        },
+        "options": {
+          "en": [
+            "3,000 + 200 + 50 + 6",
+            "3 + 2 + 5 + 6",
+            "300 + 200 + 50 + 6"
+          ],
+          "ar": [
+            "3,000 + 200 + 50 + 6",
+            "3 + 2 + 5 + 6",
+            "300 + 200 + 50 + 6"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "One number, three ways to write it:\n\n**Standard form:** 3,256\n\n**Expanded form:** 3,000 + 200 + 50 + 6\n\n**Word form:** three thousand, two hundred fifty-six",
+        "ar": "عدد واحد وثلاث صور لكتابته:\n\n**الصورة القياسية:** 3,256\n\n**الصورة الممتدة:** 3,000 + 200 + 50 + 6\n\n**الصورة اللفظية:** ثلاثة آلاف ومئتان وستة وخمسون"
+      },
+      "say": {
+        "en": "One number, three ways to write it. Standard form: three thousand two hundred fifty-six, written with digits. Expanded form: three thousand plus two hundred plus fifty plus six. Word form: three thousand, two hundred fifty-six, written in words.",
+        "ar": "عدد واحد وثلاث صور لكتابته. الصورة القياسية: ثلاثة آلاف ومئتان وستة وخمسون مكتوبًا بالأرقام. الصورة الممتدة: ثلاثة آلاف زائد مئتين زائد خمسين زائد ستة. الصورة اللفظية: ثلاثة آلاف ومئتان وستة وخمسون مكتوبًا بالحروف."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "blocks",
+        "n": 7048
+      },
+      "text": {
+        "en": "**Numbers with a zero.** A zero place adds nothing, so it is left out of the expanded form and the word form.",
+        "ar": "**أعداد فيها صفر.** المنزلة الصفرية لا تضيف شيئًا، فلا نكتبها في الصورة الممتدة ولا في الصورة اللفظية."
+      },
+      "lines": {
+        "en": [
+          "Standard: 7,048",
+          "Expanded: 7,000 + 40 + 8",
+          "Words: seven thousand forty-eight"
+        ],
+        "ar": [
+          "القياسية: 7,048",
+          "الممتدة: 7,000 + 40 + 8",
+          "اللفظية: سبعة آلاف وثمانية وأربعون"
+        ]
+      },
+      "say": {
+        "en": "Numbers with a zero. A zero place adds nothing, so it is left out of the expanded form and the word form. Seven thousand forty-eight has zero hundreds. Expanded form: seven thousand plus forty plus eight. Word form: seven thousand forty-eight.",
+        "ar": "أعداد فيها صفر. المنزلة الصفرية لا تضيف شيئًا، فلا نكتبها في الصورة الممتدة ولا في الصورة اللفظية. العدد سبعة آلاف وثمانية وأربعون ليس فيه مئات. صورته الممتدة: سبعة آلاف زائد أربعين زائد ثمانية. وصورته اللفظية: سبعة آلاف وثمانية وأربعون."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": {
+        "places": 6,
+        "target": 405030
+      },
+      "text": {
+        "en": "Read the words, then build the number. Watch for empty places!",
+        "ar": "اقرأ العدد بالحروف ثم كوّنه. انتبه للمنازل الفارغة!"
+      },
+      "prompt": {
+        "en": "Build: four hundred five thousand, thirty.",
+        "ar": "كوّن العدد: أربعمائة وخمسة آلاف وثلاثون."
+      },
+      "say": {
+        "en": "Build the number four hundred five thousand, thirty.",
+        "ar": "كوّن العدد أربعمائة وخمسة آلاف وثلاثين."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "blocks",
+        "n": 2350
+      },
+      "check": {
+        "q": {
+          "en": "How many whole hundreds are in 2,350?",
+          "ar": "كم مائة كاملة في العدد 2,350؟"
+        },
+        "options": {
+          "en": [
+            "23",
+            "3",
+            "235"
+          ],
+          "ar": [
+            "23",
+            "3",
+            "235"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "**Decompose in different ways.** 2,350 can be split by thousands, by hundreds or by tens.",
+        "ar": "**حلّل العدد بطرق مختلفة.** يمكن تحليل العدد 2,350 بالآلاف أو بالمئات أو بالعشرات."
+      },
+      "lines": {
+        "en": [
+          "2,350 = 2 thousands + 3 hundreds + 5 tens",
+          "2,350 = 23 hundreds + 5 tens",
+          "2,350 = 235 tens"
+        ],
+        "ar": [
+          "2,350 = 2 آلاف + 3 مئات + 5 عشرات",
+          "2,350 = 23 مائة + 5 عشرات",
+          "2,350 = 235 عشرة"
+        ]
+      },
+      "say": {
+        "en": "Decompose in different ways. Two thousand three hundred fifty is two thousands, three hundreds and five tens. It is also twenty-three hundreds and five tens, because two thousands are twenty hundreds. It is also two hundred thirty-five tens.",
+        "ar": "حلّل العدد بطرق مختلفة. العدد ألفان وثلاثمائة وخمسون يساوي ألفين وثلاث مئات وخمس عشرات. ويساوي أيضًا ثلاثًا وعشرين مائة وخمس عشرات، لأن الألفين تساويان عشرين مائة. ويساوي كذلك مئتين وخمسًا وثلاثين عشرة."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": {
+        "places": 6,
+        "target": 602070
+      },
+      "text": {
+        "en": "Put the expanded form back together.",
+        "ar": "اجمع الصورة الممتدة لتكوّن العدد."
+      },
+      "prompt": {
+        "en": "Build 600,000 + 2,000 + 70.",
+        "ar": "كوّن العدد 600,000 + 2,000 + 70."
+      },
+      "say": {
+        "en": "Build six hundred thousand plus two thousand plus seventy.",
+        "ar": "كوّن العدد ستمائة ألف زائد ألفين زائد سبعين."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "blocks",
+        "n": 1234
+      },
+      "text": {
+        "en": "**Remember:**\n\nStandard = digits.\n\nExpanded = the value of each digit added together.\n\nWord = the number written in words.\n\nA zero is skipped in expanded and word form, but **kept** in standard form.",
+        "ar": "**تذكّر:**\n\nالقياسية = بالأرقام.\n\nالممتدة = مجموع قيم الأرقام.\n\nاللفظية = العدد مكتوبًا بالحروف.\n\nنتخطى الصفر في الصورة الممتدة واللفظية، لكن **نكتبه** في الصورة القياسية."
+      },
+      "say": {
+        "en": "Remember. Standard form uses digits. Expanded form adds the value of each digit. Word form writes the number in words. A zero is skipped in expanded and word form, but kept in standard form.",
+        "ar": "تذكّر. الصورة القياسية بالأرقام. والصورة الممتدة هي مجموع قيم الأرقام. والصورة اللفظية هي العدد مكتوبًا بالحروف. نتخطى الصفر في الصورة الممتدة واللفظية، لكن نكتبه في الصورة القياسية."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "Write 50,000 + 3,000 + 40 + 2 in standard form.",
+        "ar": "اكتب 50,000 + 3,000 + 40 + 2 بالصورة القياسية."
+      },
+      "options": {
+        "en": [
+          "53,042",
+          "5,342",
+          "53,420",
+          "50,342"
+        ],
+        "ar": [
+          "53,042",
+          "5,342",
+          "53,420",
+          "50,342"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "5 ten thousands, 3 thousands, 0 hundreds, 4 tens, 2 ones = 53,042. The zero holds the hundreds place.",
+        "ar": "5 عشرات ألوف، 3 آلاف، 0 مئات، 4 عشرات، 2 آحاد = 53,042. الصفر يحجز منزلة المئات."
+      },
+      "say": {
+        "en": "Write fifty thousand plus three thousand plus forty plus two in standard form.",
+        "ar": "اكتب خمسين ألفًا زائد ثلاثة آلاف زائد أربعين زائد اثنين بالصورة القياسية."
+      }
+    },
+    {
+      "q": {
+        "en": "What is 8,605 in expanded form?",
+        "ar": "ما الصورة الممتدة للعدد 8,605؟"
+      },
+      "options": {
+        "en": [
+          "8,000 + 600 + 5",
+          "8,000 + 600 + 50",
+          "800 + 60 + 5",
+          "8 + 6 + 0 + 5"
+        ],
+        "ar": [
+          "8,000 + 600 + 5",
+          "8,000 + 600 + 50",
+          "800 + 60 + 5",
+          "8 + 6 + 0 + 5"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "8 thousands, 6 hundreds, 0 tens, 5 ones. Write each digit's value, not the digit alone.",
+        "ar": "8 آلاف، 6 مئات، 0 عشرات، 5 آحاد. نكتب قيمة كل رقم وليس الرقم وحده."
+      },
+      "say": {
+        "en": "What is eight thousand six hundred five in expanded form?",
+        "ar": "ما الصورة الممتدة للعدد ثمانية آلاف وستمائة وخمسة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which number is \"twelve thousand nine\"?",
+        "ar": "أي عدد هو «اثنا عشر ألفًا وتسعة»؟"
+      },
+      "options": {
+        "en": [
+          "12,009",
+          "12,900",
+          "1,209",
+          "12,090"
+        ],
+        "ar": [
+          "12,009",
+          "12,900",
+          "1,209",
+          "12,090"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "12 thousands, then 0 hundreds, 0 tens and 9 ones: 12,009.",
+        "ar": "12 ألفًا، ثم 0 مئات و 0 عشرات و 9 آحاد: 12,009."
+      },
+      "say": {
+        "en": "Which number is twelve thousand nine?",
+        "ar": "أي عدد هو اثنا عشر ألفًا وتسعة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "4,700 is the same as how many hundreds?",
+        "ar": "العدد 4,700 يساوي كم مائة؟"
+      },
+      "options": {
+        "en": [
+          "47 hundreds",
+          "7 hundreds",
+          "470 hundreds",
+          "4 hundreds"
+        ],
+        "ar": [
+          "47 مائة",
+          "7 مئات",
+          "470 مائة",
+          "4 مئات"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "4 thousands = 40 hundreds, plus 7 hundreds = 47 hundreds.",
+        "ar": "4 آلاف = 40 مائة، و 7 مئات أخرى = 47 مائة."
+      },
+      "say": {
+        "en": "Four thousand seven hundred is the same as how many hundreds?",
+        "ar": "أربعة آلاف وسبعمائة تساوي كم مائة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which is NOT equal to 3,060?",
+        "ar": "أيٌّ مما يلي لا يساوي 3,060؟"
+      },
+      "options": {
+        "en": [
+          "3 thousands + 6 hundreds",
+          "3 thousands + 6 tens",
+          "306 tens",
+          "30 hundreds + 60"
+        ],
+        "ar": [
+          "3 آلاف + 6 مئات",
+          "3 آلاف + 6 عشرات",
+          "306 عشرات",
+          "30 مائة + 60"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "3 thousands + 6 hundreds = 3,600, not 3,060. The 6 in 3,060 is in the tens.",
+        "ar": "3 آلاف + 6 مئات = 3,600 وليس 3,060. الرقم 6 في العدد 3,060 في منزلة العشرات."
+      },
+      "say": {
+        "en": "Which is not equal to three thousand sixty?",
+        "ar": "أيٌّ مما يلي لا يساوي ثلاثة آلاف وستين؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A TV costs 12,450 EGP. What is this price in expanded form?",
+        "ar": "سعر تليفزيون 12,450 جنيهًا. ما الصورة الممتدة لهذا السعر؟"
+      },
+      "options": {
+        "en": [
+          "10,000 + 2,000 + 400 + 50",
+          "1,000 + 2,000 + 400 + 50",
+          "10,000 + 2,000 + 40 + 5",
+          "1 + 2 + 4 + 5 + 0"
+        ],
+        "ar": [
+          "10,000 + 2,000 + 400 + 50",
+          "1,000 + 2,000 + 400 + 50",
+          "10,000 + 2,000 + 40 + 5",
+          "1 + 2 + 4 + 5 + 0"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1 ten thousand, 2 thousands, 4 hundreds, 5 tens: 10,000 + 2,000 + 400 + 50 = 12,450.",
+        "ar": "1 عشرة ألوف، 2 آلاف، 4 مئات، 5 عشرات: 10,000 + 2,000 + 400 + 50 = 12,450."
+      },
+      "say": {
+        "en": "A TV costs twelve thousand four hundred fifty pounds. What is this price in expanded form?",
+        "ar": "سعر تليفزيون اثنا عشر ألفًا وأربعمائة وخمسون جنيهًا. ما الصورة الممتدة لهذا السعر؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which is the standard form of \"six hundred thousand eighty\"?",
+        "ar": "ما الصورة القياسية للعدد «ستمائة ألف وثمانون»؟"
+      },
+      "options": {
+        "en": [
+          "600,080",
+          "680,000",
+          "600,800",
+          "60,080"
+        ],
+        "ar": [
+          "600,080",
+          "680,000",
+          "600,800",
+          "60,080"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "600 thousands, then 0 hundreds, 8 tens, 0 ones: 600,080.",
+        "ar": "600 ألف، ثم 0 مئات، 8 عشرات، 0 آحاد: 600,080."
+      },
+      "say": {
+        "en": "Which is the standard form of six hundred thousand eighty?",
+        "ar": "ما الصورة القياسية للعدد ستمائة ألف وثمانين؟"
+      }
+    }
+  ]
+}

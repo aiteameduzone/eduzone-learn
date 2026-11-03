@@ -1,0 +1,572 @@
+{
+  "id": "g4-math-u03-03",
+  "title": {
+    "en": "Capacity: Litres and Millilitres",
+    "ar": "السعة: اللتر والمليلتر"
+  },
+  "objective": {
+    "en": "Use litres and millilitres, know that 1 L = 1,000 mL, change litres to millilitres, and solve capacity problems.",
+    "ar": "أن يستخدم التلميذ اللتر والمليلتر، ويعرف أن 1 لتر = 1,000 مل، ويحوّل اللترات إلى مليلترات، ويحل مسائل على السعة."
+  },
+  "refs": {
+    "egypt": [
+      "U3 · 3.1 Capacity (L, mL)"
+    ],
+    "ccss": [
+      "4.MD.A.1",
+      "4.MD.A.2"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "bars",
+        "emoji": "🧃",
+        "hideLabels": true,
+        "items": [
+          {
+            "f": [
+              4,
+              4
+            ],
+            "label": {
+              "en": "1 L",
+              "ar": "1 لتر"
+            }
+          },
+          {
+            "f": [
+              1,
+              4
+            ],
+            "label": {
+              "en": "250 mL",
+              "ar": "250 مل"
+            },
+            "color": "blue"
+          }
+        ],
+        "ops": [
+          ">"
+        ]
+      },
+      "check": {
+        "q": {
+          "en": "Which holds more: a 1 L bottle or a 250 mL juice box?",
+          "ar": "أيهما يحمل أكثر: زجاجة 1 لتر أم علبة عصير 250 مل؟"
+        },
+        "options": {
+          "en": [
+            "The 1 L bottle",
+            "The 250 mL box",
+            "They hold the same"
+          ],
+          "ar": [
+            "زجاجة 1 لتر",
+            "علبة 250 مل",
+            "يحملان الكمية نفسها"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "**Capacity** is how much liquid a container can hold. We use **litres (L)** for big containers and **millilitres (mL)** for small ones.\n\n**1 L = 1,000 mL**. A small juice box holds 250 mL - only [1/4] of a litre.",
+        "ar": "**السعة** هي كمية السائل التي يمكن أن يحملها الإناء. نستخدم **اللتر** للأواني الكبيرة و**المليلتر (مل)** للأواني الصغيرة.\n\n**1 لتر = 1,000 مل**. علبة العصير الصغيرة تحمل 250 مل - أي [1/4] لتر فقط."
+      },
+      "say": {
+        "en": "Capacity is how much liquid a container can hold. We use litres for big containers and millilitres for small ones. One litre equals one thousand millilitres. A small juice box holds two hundred and fifty millilitres, only one quarter of a litre.",
+        "ar": "السعة هي كمية السائل التي يمكن أن يحملها الإناء. نستخدم اللتر للأواني الكبيرة والمليلتر للأواني الصغيرة. اللتر يساوي ألف مليلتر. وعلبة العصير الصغيرة تحمل مائتين وخمسين مليلترًا، أي ربع لتر فقط."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "bars",
+        "items": [
+          {
+            "f": [
+              1,
+              4
+            ],
+            "label": {
+              "en": "250 mL",
+              "ar": "250 مل"
+            }
+          },
+          {
+            "f": [
+              2,
+              4
+            ],
+            "label": {
+              "en": "500 mL",
+              "ar": "500 مل"
+            }
+          },
+          {
+            "f": [
+              3,
+              4
+            ],
+            "label": {
+              "en": "750 mL",
+              "ar": "750 مل"
+            }
+          },
+          {
+            "f": [
+              4,
+              4
+            ],
+            "label": {
+              "en": "1,000 mL",
+              "ar": "1,000 مل"
+            },
+            "color": "blue"
+          }
+        ]
+      },
+      "text": {
+        "en": "**Parts of a litre.** Four juice boxes of 250 mL fill a 1 L bottle.",
+        "ar": "**أجزاء اللتر.** أربع علب عصير سعة كل منها 250 مل تملأ زجاجة 1 لتر."
+      },
+      "lines": {
+        "en": [
+          "[1/4] L = 250 mL",
+          "[1/2] L = 500 mL",
+          "[3/4] L = 750 mL",
+          "[4/4] L = 1,000 mL = 1 L"
+        ],
+        "ar": [
+          "[1/4] لتر = 250 مل",
+          "[1/2] لتر = 500 مل",
+          "[3/4] لتر = 750 مل",
+          "[4/4] لتر = 1,000 مل = 1 لتر"
+        ]
+      },
+      "say": {
+        "en": "Parts of a litre. Four juice boxes of two hundred and fifty millilitres fill a one litre bottle. A quarter litre is two hundred and fifty millilitres. Half a litre is five hundred millilitres. Three quarters of a litre is seven hundred and fifty millilitres. And four quarters is one thousand millilitres, one whole litre.",
+        "ar": "أجزاء اللتر. أربع علب عصير سعة كل منها مائتان وخمسون مليلترًا تملأ زجاجة لتر واحد. ربع اللتر يساوي مائتين وخمسين مليلترًا. ونصف اللتر يساوي خمسمائة مليلتر. وثلاثة أرباع اللتر تساوي سبعمائة وخمسين مليلترًا. وأربعة أرباع تساوي ألف مليلتر، أي لترًا كاملًا."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "fraction-shade",
+      "params": {
+        "parts": 4,
+        "target": 3
+      },
+      "text": {
+        "en": "This 1 L bottle has 4 equal parts. Each part is 250 mL.",
+        "ar": "هذه الزجاجة سعتها 1 لتر ومقسّمة إلى 4 أجزاء متساوية. كل جزء 250 مل."
+      },
+      "prompt": {
+        "en": "Shade 750 mL of juice.",
+        "ar": "ظلّل 750 مل من العصير."
+      },
+      "say": {
+        "en": "This one litre bottle has four equal parts. Each part is two hundred and fifty millilitres. Shade seven hundred and fifty millilitres.",
+        "ar": "هذه الزجاجة سعتها لتر واحد ومقسّمة إلى أربعة أجزاء متساوية. كل جزء مائتان وخمسون مليلترًا. ظلّل سبعمائة وخمسين مليلترًا."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "bars",
+        "emoji": "🧴",
+        "items": [
+          {
+            "f": [
+              4,
+              4
+            ],
+            "label": {
+              "en": "1 L",
+              "ar": "1 لتر"
+            }
+          },
+          {
+            "f": [
+              2,
+              4
+            ],
+            "label": {
+              "en": "500 mL",
+              "ar": "500 مل"
+            },
+            "color": "blue"
+          }
+        ],
+        "ops": [
+          "+"
+        ]
+      },
+      "check": {
+        "q": {
+          "en": "1 L 500 mL = ? mL",
+          "ar": "1 لتر و 500 مل = ؟ مل"
+        },
+        "options": {
+          "en": [
+            "501 mL",
+            "1,050 mL",
+            "1,500 mL"
+          ],
+          "ar": [
+            "501 مل",
+            "1,050 مل",
+            "1,500 مل"
+          ]
+        },
+        "answer": 2
+      },
+      "text": {
+        "en": "**Litres to millilitres: multiply by 1,000.** Then add any extra millilitres.",
+        "ar": "**من اللتر إلى المليلتر: نضرب في 1,000.** ثم نضيف المليلترات الزائدة."
+      },
+      "lines": {
+        "en": [
+          "2 L = 2 × 1,000 = 2,000 mL",
+          "1 L 500 mL = 1,000 + 500 = 1,500 mL",
+          "3 L 75 mL = 3,000 + 75 = 3,075 mL"
+        ],
+        "ar": [
+          "2 لتر = 2 × 1,000 = 2,000 مل",
+          "1 لتر و 500 مل = 1,000 + 500 = 1,500 مل",
+          "3 لتر و 75 مل = 3,000 + 75 = 3,075 مل"
+        ]
+      },
+      "say": {
+        "en": "Litres to millilitres: multiply by one thousand. Two litres is two thousand millilitres. One litre and five hundred millilitres is one thousand plus five hundred, which is one thousand five hundred millilitres. Three litres and seventy five millilitres is three thousand plus seventy five, which is three thousand and seventy five millilitres.",
+        "ar": "من اللتر إلى المليلتر نضرب في ألف. لتران يساويان ألفي مليلتر. ولتر وخمسمائة مليلتر تساوي ألفًا زائد خمسمائة، أي ألفًا وخمسمائة مليلتر. وثلاثة لترات وخمسة وسبعون مليلترًا تساوي ثلاثة آلاف زائد خمسة وسبعين، أي ثلاثة آلاف وخمسة وسبعين مليلترًا."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "number-line",
+      "params": {
+        "min": 0,
+        "max": 3,
+        "divisions": 4,
+        "target": [
+          9,
+          4
+        ],
+        "scale": 1000
+      },
+      "text": {
+        "en": "A water cooler at school has 2 L 250 mL left. The line counts in millilitres. Each small jump is 250 mL.",
+        "ar": "في مبرّد المياه بالمدرسة بقي 2 لتر و 250 مل. خط الأعداد بالمليلترات، وكل قفزة صغيرة 250 مل."
+      },
+      "prompt": {
+        "en": "Put a point at 2 L 250 mL (in millilitres).",
+        "ar": "ضع نقطة عند 2 لتر و 250 مل (بالمليلترات)."
+      },
+      "say": {
+        "en": "A water cooler at school has two litres and two hundred and fifty millilitres left. Each small jump is two hundred and fifty millilitres. Put a point at that amount in millilitres.",
+        "ar": "في مبرّد المياه بالمدرسة بقي لتران ومائتان وخمسون مليلترًا. كل قفزة صغيرة مائتان وخمسون مليلترًا. ضع نقطة عند هذه الكمية بالمليلترات."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "bars",
+        "emoji": "🥭",
+        "items": [
+          {
+            "f": [
+              2,
+              8
+            ],
+            "label": {
+              "en": "500 mL left",
+              "ar": "بقي 500 مل"
+            }
+          }
+        ]
+      },
+      "text": {
+        "en": "**Problem:** A big bottle has 2 L of mango juice. Hana pours 6 glasses of 250 mL. How much juice is left?",
+        "ar": "**مسألة:** زجاجة كبيرة فيها 2 لتر عصير مانجو. صبّت هنا 6 أكواب سعة كل منها 250 مل. كم بقي من العصير؟"
+      },
+      "lines": {
+        "en": [
+          "Poured: 6 × 250 = 1,500 mL",
+          "Bottle: 2 L = 2,000 mL",
+          "Left: 2,000 − 1,500 = 500 mL"
+        ],
+        "ar": [
+          "المصبوب: 6 × 250 = 1,500 مل",
+          "الزجاجة: 2 لتر = 2,000 مل",
+          "الباقي: 2,000 − 1,500 = 500 مل"
+        ]
+      },
+      "say": {
+        "en": "Problem. A big bottle has two litres of mango juice. Hana pours six glasses of two hundred and fifty millilitres. How much is left? Six times two hundred and fifty is one thousand five hundred millilitres. Two litres is two thousand millilitres. Two thousand minus one thousand five hundred is five hundred millilitres left.",
+        "ar": "مسألة. زجاجة كبيرة فيها لتران من عصير المانجو. صبّت هنا ستة أكواب سعة كل منها مائتان وخمسون مليلترًا. كم بقي؟ ستة في مائتين وخمسين يساوي ألفًا وخمسمائة مليلتر. واللتران يساويان ألفي مليلتر. ألفان ناقص ألف وخمسمائة يساوي خمسمائة مليلتر باقية."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "pies",
+        "emoji": "🧃",
+        "items": [
+          {
+            "f": [
+              4,
+              4
+            ],
+            "label": {
+              "en": "1 L = 1,000 mL",
+              "ar": "1 لتر = 1,000 مل"
+            }
+          }
+        ]
+      },
+      "text": {
+        "en": "**Remember:**\n\n1 L = 1,000 mL.\n\n[1/2] L = 500 mL and [1/4] L = 250 mL.\n\nL to mL: **multiply by 1,000**.",
+        "ar": "**تذكّر:**\n\n1 لتر = 1,000 مل.\n\n[1/2] لتر = 500 مل و [1/4] لتر = 250 مل.\n\nمن اللتر إلى المليلتر: **نضرب في 1,000**."
+      },
+      "say": {
+        "en": "Remember: one litre is one thousand millilitres. Half a litre is five hundred millilitres and a quarter litre is two hundred and fifty millilitres. Litres to millilitres: multiply by one thousand.",
+        "ar": "تذكّر: اللتر يساوي ألف مليلتر. نصف اللتر يساوي خمسمائة مليلتر، وربع اللتر يساوي مائتين وخمسين مليلترًا. من اللتر إلى المليلتر نضرب في ألف."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "4 L = ? mL",
+        "ar": "4 لتر = ؟ مل"
+      },
+      "options": {
+        "en": [
+          "4,000 mL",
+          "400 mL",
+          "40 mL",
+          "1,004 mL"
+        ],
+        "ar": [
+          "4,000 مل",
+          "400 مل",
+          "40 مل",
+          "1,004 مل"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1 L = 1,000 mL, so 4 × 1,000 = 4,000 mL.",
+        "ar": "1 لتر = 1,000 مل، إذن 4 × 1,000 = 4,000 مل."
+      },
+      "say": {
+        "en": "Four litres equals how many millilitres?",
+        "ar": "أربعة لترات تساوي كم مليلترًا؟"
+      }
+    },
+    {
+      "q": {
+        "en": "[1/2] L = ? mL",
+        "ar": "[1/2] لتر = ؟ مل"
+      },
+      "options": {
+        "en": [
+          "500 mL",
+          "50 mL",
+          "200 mL",
+          "250 mL"
+        ],
+        "ar": [
+          "500 مل",
+          "50 مل",
+          "200 مل",
+          "250 مل"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1,000 ÷ 2 = 500 mL. 250 mL is a quarter of a litre.",
+        "ar": "1,000 ÷ 2 = 500 مل. أما 250 مل فهي ربع لتر."
+      },
+      "say": {
+        "en": "Half a litre equals how many millilitres?",
+        "ar": "نصف لتر يساوي كم مليلترًا؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which container holds about 5 mL?",
+        "ar": "أي إناء يحمل حوالي 5 مل؟"
+      },
+      "options": {
+        "en": [
+          "a teaspoon",
+          "a bucket",
+          "a bathtub",
+          "a big water bottle"
+        ],
+        "ar": [
+          "ملعقة صغيرة",
+          "جردل",
+          "حوض استحمام",
+          "زجاجة مياه كبيرة"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "5 mL is a tiny amount, about one teaspoon.",
+        "ar": "5 مل كمية صغيرة جدًا، تقريبًا ملعقة صغيرة."
+      },
+      "say": {
+        "en": "Which container holds about five millilitres?",
+        "ar": "أي إناء يحمل حوالي خمسة مليلترات؟"
+      }
+    },
+    {
+      "q": {
+        "en": "2 L 300 mL = ? mL",
+        "ar": "2 لتر و 300 مل = ؟ مل"
+      },
+      "options": {
+        "en": [
+          "2,300 mL",
+          "2,030 mL",
+          "230 mL",
+          "302 mL"
+        ],
+        "ar": [
+          "2,300 مل",
+          "2,030 مل",
+          "230 مل",
+          "302 مل"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "2 L = 2,000 mL, and 2,000 + 300 = 2,300 mL.",
+        "ar": "2 لتر = 2,000 مل، و 2,000 + 300 = 2,300 مل."
+      },
+      "say": {
+        "en": "Two litres and three hundred millilitres equals how many millilitres?",
+        "ar": "لتران وثلاثمائة مليلتر تساوي كم مليلترًا؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which is more: 3 L or 2,900 mL?",
+        "ar": "أيهما أكثر: 3 لتر أم 2,900 مل؟"
+      },
+      "options": {
+        "en": [
+          "3 L",
+          "2,900 mL",
+          "They are equal",
+          "We cannot compare"
+        ],
+        "ar": [
+          "3 لتر",
+          "2,900 مل",
+          "متساويان",
+          "لا يمكن المقارنة"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "3 L = 3,000 mL, and 3,000 > 2,900.",
+        "ar": "3 لتر = 3,000 مل، و 3,000 > 2,900."
+      },
+      "say": {
+        "en": "Which is more: three litres or two thousand nine hundred millilitres?",
+        "ar": "أيهما أكثر: ثلاثة لترات أم ألفان وتسعمائة مليلتر؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A juice box holds 200 mL. How many boxes fill 1 L?",
+        "ar": "علبة عصير سعتها 200 مل. كم علبة تملأ 1 لتر؟"
+      },
+      "options": {
+        "en": [
+          "5",
+          "10",
+          "50",
+          "4"
+        ],
+        "ar": [
+          "5",
+          "10",
+          "50",
+          "4"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1,000 ÷ 200 = 5 boxes. 4 boxes would be right only for 250 mL boxes.",
+        "ar": "1,000 ÷ 200 = 5 علب. الإجابة 4 تصح فقط لعلب سعتها 250 مل."
+      },
+      "say": {
+        "en": "A juice box holds two hundred millilitres. How many boxes fill one litre?",
+        "ar": "علبة عصير سعتها مائتا مليلتر. كم علبة تملأ لترًا واحدًا؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Mona drinks 250 mL of milk every day. How much does she drink in 4 days?",
+        "ar": "تشرب منى 250 مل لبن كل يوم. كم تشرب في 4 أيام؟"
+      },
+      "options": {
+        "en": [
+          "1 L",
+          "254 mL",
+          "10 L",
+          "1,250 mL"
+        ],
+        "ar": [
+          "1 لتر",
+          "254 مل",
+          "10 لتر",
+          "1,250 مل"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "4 × 250 = 1,000 mL = 1 L.",
+        "ar": "4 × 250 = 1,000 مل = 1 لتر."
+      },
+      "say": {
+        "en": "Mona drinks two hundred and fifty millilitres of milk every day. How much does she drink in four days?",
+        "ar": "تشرب منى مائتين وخمسين مليلترًا من اللبن كل يوم. كم تشرب في أربعة أيام؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A tank has 10 L of water. We use 3 L 500 mL. How much is left?",
+        "ar": "خزان فيه 10 لتر ماء. استخدمنا 3 لتر و 500 مل. كم بقي؟"
+      },
+      "options": {
+        "en": [
+          "6 L 500 mL",
+          "7 L 500 mL",
+          "7 L",
+          "6 L"
+        ],
+        "ar": [
+          "6 لتر و 500 مل",
+          "7 لتر و 500 مل",
+          "7 لتر",
+          "6 لتر"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "10,000 − 3,500 = 6,500 mL = 6 L 500 mL. 7 L 500 mL forgets to borrow a litre.",
+        "ar": "10,000 − 3,500 = 6,500 مل = 6 لتر و 500 مل. أما 7 لتر و 500 مل فنسيت الاستلاف من اللترات."
+      },
+      "say": {
+        "en": "A tank has ten litres of water. We use three litres and five hundred millilitres. How much is left?",
+        "ar": "خزان فيه عشرة لترات ماء. استخدمنا ثلاثة لترات وخمسمائة مليلتر. كم بقي؟"
+      }
+    }
+  ]
+}

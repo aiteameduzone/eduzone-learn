@@ -1,0 +1,480 @@
+{
+  "id": "g4-math-frac-01",
+  "title": {
+    "en": "Unit Fractions: Building Fractions",
+    "ar": "الكسور الأحادية: تكوين الكسور"
+  },
+  "objective": {
+    "en": "Know the numerator and denominator, and build a fraction by joining unit fractions.",
+    "ar": "أن يعرف التلميذ البسط والمقام، ويكوّن الكسر بتجميع كسور أحادية."
+  },
+  "refs": {
+    "egypt": [
+      "U9 · 9.1 L1-3"
+    ],
+    "ccss": [
+      "4.NF.B.3",
+      "4.NF.B.4.a"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "text": {
+        "en": "Mona cuts a feteer into **4 equal pieces** and eats **3** of them.\n\nShe ate [3/4] of the feteer.",
+        "ar": "قطّعت منى فطيرة إلى **4 أجزاء متساوية** وأكلت **3** منها.\n\nإذن أكلت [3/4] الفطيرة."
+      },
+      "say": {
+        "en": "Mona cuts a feteer into four equal pieces and eats three of them. She ate three fourths of the feteer.",
+        "ar": "قطّعت منى فطيرة إلى أربعة أجزاء متساوية، وأكلت ثلاثة منها. إذن أكلت ثلاثة أرباع الفطيرة."
+      },
+      "visual": {
+        "kind": "pies",
+        "emoji": "🥧",
+        "items": [
+          {
+            "f": [
+              3,
+              4
+            ]
+          }
+        ],
+        "hideLabels": true
+      },
+      "check": {
+        "q": {
+          "en": "Mona ate 3 of 4 equal pieces. How much did she eat?",
+          "ar": "أكلت منى 3 من 4 قطع متساوية. كم أكلت؟"
+        },
+        "options": {
+          "en": [
+            "[3/4]",
+            "[4/3]",
+            "[1/4]"
+          ],
+          "ar": [
+            "[3/4]",
+            "[4/3]",
+            "[1/4]"
+          ]
+        },
+        "answer": 0
+      }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "A fraction has two numbers.\n\nThe **bottom number (denominator)** tells how many **equal** parts the whole is cut into.\n\nThe **top number (numerator)** tells how many of those parts we take.",
+        "ar": "الكسر له عددان.\n\n**المقام** (العدد السفلي) يخبرنا بعدد الأجزاء **المتساوية** التي قُسِّم إليها الكل.\n\n**البسط** (العدد العلوي) يخبرنا بعدد الأجزاء التي أخذناها."
+      },
+      "visual": {
+        "kind": "bars",
+        "items": [
+          {
+            "f": [
+              2,
+              5
+            ],
+            "label": {
+              "en": "**2** taken / **5** parts",
+              "ar": "**2** مأخوذة / **5** أجزاء"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "fraction-shade",
+      "params": {
+        "parts": 5,
+        "target": 2
+      },
+      "text": {
+        "en": "Your turn. Tap the parts of the bar to shade them.",
+        "ar": "دورك الآن. اضغط على أجزاء الشريط لتظليلها."
+      },
+      "prompt": {
+        "en": "Shade [2/5] of the bar.",
+        "ar": "ظلّل [2/5] الشريط."
+      },
+      "say": {
+        "en": "Your turn. Shade two fifths of the bar.",
+        "ar": "دورك الآن. ظلّل خُمسين من الشريط."
+      }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "A **unit fraction** has 1 on top, like [1/4]. Every fraction is made of unit fractions.",
+        "ar": "**الكسر الأحادي** بسطه 1، مثل [1/4]. وكل كسر يتكوّن من كسور أحادية."
+      },
+      "lines": {
+        "en": [
+          "[3/4] means 3 pieces, each [1/4].",
+          "[3/4] = [1/4] + [1/4] + [1/4]",
+          "[5/6] = [1/6] + [1/6] + [1/6] + [1/6] + [1/6]"
+        ],
+        "ar": [
+          "[3/4] تعني 3 أجزاء، كل جزء [1/4].",
+          "[3/4] = [1/4] + [1/4] + [1/4]",
+          "[5/6] = [1/6] + [1/6] + [1/6] + [1/6] + [1/6]"
+        ]
+      },
+      "say": {
+        "en": "A unit fraction has one on top, like one fourth. Every fraction is made of unit fractions. Three fourths means three pieces, each one fourth. So three fourths equals one fourth plus one fourth plus one fourth.",
+        "ar": "الكسر الأحادي بسطه واحد، مثل رُبع. وكل كسر يتكوّن من كسور أحادية. ثلاثة أرباع تعني ثلاثة أجزاء، كل جزء رُبع. إذن ثلاثة أرباع تساوي رُبعًا زائد رُبع زائد رُبع."
+      },
+      "visual": {
+        "kind": "pies",
+        "items": [
+          {
+            "f": [
+              1,
+              4
+            ]
+          },
+          {
+            "f": [
+              1,
+              4
+            ]
+          },
+          {
+            "f": [
+              1,
+              4
+            ]
+          },
+          {
+            "f": [
+              3,
+              4
+            ]
+          }
+        ],
+        "ops": [
+          "+",
+          "+",
+          "="
+        ]
+      }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "Fractions also live on a number line. Split the space from 0 to 1 into equal jumps.",
+        "ar": "الكسور لها مكان على خط الأعداد أيضًا. نقسّم المسافة من 0 إلى 1 إلى قفزات متساوية."
+      },
+      "lines": {
+        "en": [
+          "The bottom number 3 means: split 0 to 1 into 3 equal jumps.",
+          "The top number 2 means: count 2 jumps from 0.",
+          "The point you land on is [2/3]."
+        ],
+        "ar": [
+          "المقام 3 يعني: نقسّم المسافة من 0 إلى 1 إلى 3 قفزات متساوية.",
+          "البسط 2 يعني: نعدّ قفزتين من الصفر.",
+          "النقطة التي نصل إليها هي [2/3]."
+        ]
+      },
+      "say": {
+        "en": "Fractions also live on a number line. The denominator three means split zero to one into three equal jumps. The numerator two means count two jumps from zero. You land on two thirds.",
+        "ar": "الكسور لها مكان على خط الأعداد أيضًا. المقام ثلاثة يعني أن نقسّم المسافة من صفر إلى واحد إلى ثلاث قفزات متساوية. والبسط اثنان يعني أن نعدّ قفزتين من الصفر. فنصل إلى ثلثين."
+      },
+      "visual": {
+        "kind": "bars",
+        "items": [
+          {
+            "f": [
+              1,
+              3
+            ]
+          },
+          {
+            "f": [
+              2,
+              3
+            ]
+          },
+          {
+            "f": [
+              3,
+              3
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "number-line",
+      "params": {
+        "min": 0,
+        "max": 1,
+        "divisions": 4,
+        "target": [
+          3,
+          4
+        ]
+      },
+      "text": {
+        "en": "Tap the number line to place the point.",
+        "ar": "اضغط على خط الأعداد لتضع النقطة."
+      },
+      "prompt": {
+        "en": "Put a point at [3/4].",
+        "ar": "ضع نقطة عند [3/4]."
+      },
+      "say": {
+        "en": "Tap the number line to put a point at three fourths.",
+        "ar": "اضغط على خط الأعداد لتضع نقطة عند ثلاثة أرباع."
+      }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Remember:**\n\nThe parts must be **equal**.\n\nDenominator = how many equal parts. Numerator = how many parts we take.",
+        "ar": "**تذكّر:**\n\nيجب أن تكون الأجزاء **متساوية**.\n\nالمقام = عدد الأجزاء المتساوية. البسط = عدد الأجزاء التي نأخذها."
+      },
+      "say": {
+        "en": "Remember: the parts must be equal. The denominator tells how many equal parts. The numerator tells how many parts we take.",
+        "ar": "تذكّر: يجب أن تكون الأجزاء متساوية. المقام يخبرنا بعدد الأجزاء المتساوية، والبسط يخبرنا بعدد الأجزاء التي نأخذها."
+      },
+      "visual": {
+        "kind": "pies",
+        "items": [
+          {
+            "f": [
+              1,
+              2
+            ]
+          },
+          {
+            "f": [
+              2,
+              3
+            ]
+          },
+          {
+            "f": [
+              3,
+              4
+            ]
+          },
+          {
+            "f": [
+              5,
+              6
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "A pizza is cut into 8 equal slices. Ali eats 3. What fraction did he eat?",
+        "ar": "قُسّمت بيتزا إلى 8 شرائح متساوية، وأكل علي 3 منها. ما الكسر الذي أكله؟"
+      },
+      "options": {
+        "en": [
+          "[3/8]",
+          "[8/3]",
+          "[3/5]",
+          "[5/8]"
+        ],
+        "ar": [
+          "[3/8]",
+          "[8/3]",
+          "[3/5]",
+          "[5/8]"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "8 equal slices is the denominator, the 3 eaten is the numerator.",
+        "ar": "الشرائح الثماني المتساوية هي المقام، والثلاث التي أكلها هي البسط."
+      },
+      "say": {
+        "en": "A pizza is cut into eight equal slices. Ali eats three. What fraction did he eat?",
+        "ar": "قُسّمت بيتزا إلى ثماني شرائح متساوية، وأكل علي ثلاثًا منها. ما الكسر الذي أكله؟"
+      }
+    },
+    {
+      "q": {
+        "en": "In [5/6], what does the 6 tell us?",
+        "ar": "في الكسر [5/6]، ماذا يخبرنا العدد 6؟"
+      },
+      "options": {
+        "en": [
+          "The whole is cut into 6 equal parts",
+          "We took 6 parts",
+          "There are 6 wholes",
+          "6 parts are left over"
+        ],
+        "ar": [
+          "الكل مقسوم إلى 6 أجزاء متساوية",
+          "أخذنا 6 أجزاء",
+          "يوجد 6 وحدات كاملة",
+          "تبقّى 6 أجزاء"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "The denominator counts the equal parts in one whole.",
+        "ar": "المقام يعدّ الأجزاء المتساوية في الكل الواحد."
+      },
+      "say": {
+        "en": "In five sixths, what does the six tell us?",
+        "ar": "في الكسر خمسة أسداس، ماذا يخبرنا العدد ستة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A bar has 4 equal parts and 1 part is shaded. Which fraction is shaded?",
+        "ar": "شريط مقسوم إلى 4 أجزاء متساوية، وجزء واحد منه مظلل. ما الكسر المظلل؟"
+      },
+      "options": {
+        "en": [
+          "[1/4]",
+          "[1/3]",
+          "[4/1]",
+          "[3/4]"
+        ],
+        "ar": [
+          "[1/4]",
+          "[1/3]",
+          "[4/1]",
+          "[3/4]"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1 shaded out of 4 equal parts is [1/4]. [3/4] is the part that is NOT shaded.",
+        "ar": "جزء مظلل من 4 أجزاء متساوية هو [1/4]. أما [3/4] فهو الجزء غير المظلل."
+      },
+      "say": {
+        "en": "A bar has four equal parts and one part is shaded. Which fraction is shaded?",
+        "ar": "شريط مقسوم إلى أربعة أجزاء متساوية، وجزء واحد منه مظلل. ما الكسر المظلل؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which sum equals [4/5]?",
+        "ar": "أي مجموع يساوي [4/5]؟"
+      },
+      "options": {
+        "en": [
+          "[1/5] + [1/5] + [1/5] + [1/5]",
+          "[1/4] + [1/4] + [1/4] + [1/4] + [1/4]",
+          "[4/1] + [1/5]",
+          "[1/5] + [1/5] + [1/5] + [1/5] + [1/5]"
+        ],
+        "ar": [
+          "[1/5] + [1/5] + [1/5] + [1/5]",
+          "[1/4] + [1/4] + [1/4] + [1/4] + [1/4]",
+          "[4/1] + [1/5]",
+          "[1/5] + [1/5] + [1/5] + [1/5] + [1/5]"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "[4/5] is 4 unit fractions of size [1/5]. Five of them would make [5/5] = 1.",
+        "ar": "[4/5] هو 4 كسور أحادية كل منها [1/5]. أما خمسة منها فتساوي [5/5] = 1."
+      },
+      "say": {
+        "en": "Which sum equals four fifths?",
+        "ar": "أي مجموع يساوي أربعة أخماس؟"
+      }
+    },
+    {
+      "q": {
+        "en": "On a number line, 0 to 1 is split into 5 equal jumps. Where is [2/5]?",
+        "ar": "على خط أعداد، قُسّمت المسافة من 0 إلى 1 إلى 5 قفزات متساوية. أين يقع [2/5]؟"
+      },
+      "options": {
+        "en": [
+          "2 jumps from 0",
+          "5 jumps from 0",
+          "2 jumps back from 1",
+          "Exactly at 1"
+        ],
+        "ar": [
+          "بعد قفزتين من الصفر",
+          "بعد 5 قفزات من الصفر",
+          "قبل الواحد بقفزتين",
+          "عند الواحد تمامًا"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Count numerator jumps from 0: 2 jumps of [1/5].",
+        "ar": "نعدّ من الصفر عددًا من القفزات يساوي البسط: قفزتان كل منهما [1/5]."
+      },
+      "say": {
+        "en": "On a number line, zero to one is split into five equal jumps. Where is two fifths?",
+        "ar": "على خط أعداد، قُسّمت المسافة من صفر إلى واحد إلى خمس قفزات متساوية. أين يقع خُمسان؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A cake is cut into 3 pieces that are NOT the same size. Can we call one piece [1/3]?",
+        "ar": "قُطّعت كعكة إلى 3 قطع غير متساوية. هل نسمّي القطعة الواحدة [1/3]؟"
+      },
+      "options": {
+        "en": [
+          "No, the parts must be equal",
+          "Yes, there are 3 pieces",
+          "Yes, if it is the biggest piece",
+          "Only if we eat it"
+        ],
+        "ar": [
+          "لا، يجب أن تكون الأجزاء متساوية",
+          "نعم، لأن عدد القطع 3",
+          "نعم، إذا كانت أكبر قطعة",
+          "فقط إذا أكلناها"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Fractions only work with equal parts.",
+        "ar": "الكسور لا تصلح إلا مع الأجزاء المتساوية."
+      },
+      "say": {
+        "en": "A cake is cut into three pieces that are not the same size. Can we call one piece one third?",
+        "ar": "قُطّعت كعكة إلى ثلاث قطع غير متساوية. هل نسمّي القطعة الواحدة ثُلثًا؟"
+      }
+    },
+    {
+      "q": {
+        "en": "There are 6 equal parts and 6 are shaded. Which fraction is that?",
+        "ar": "شكل به 6 أجزاء متساوية، وكلها مظللة. ما الكسر؟"
+      },
+      "options": {
+        "en": [
+          "[6/6], one whole",
+          "[0/6]",
+          "[1/6]",
+          "[6/1]"
+        ],
+        "ar": [
+          "[6/6]، أي واحد صحيح",
+          "[0/6]",
+          "[1/6]",
+          "[6/1]"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "All parts taken = the whole, so [6/6] = 1.",
+        "ar": "إذا أخذنا كل الأجزاء نحصل على الكل، إذن [6/6] = 1."
+      },
+      "say": {
+        "en": "There are six equal parts and all six are shaded. Which fraction is that?",
+        "ar": "شكل به ستة أجزاء متساوية، وكلها مظللة. ما الكسر؟"
+      }
+    }
+  ]
+}

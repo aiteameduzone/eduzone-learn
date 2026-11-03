@@ -1,0 +1,584 @@
+{
+  "id": "g4-math-u03-02",
+  "title": {
+    "en": "Mass: Kilograms and Grams",
+    "ar": "الكتلة: الكيلوجرام والجرام"
+  },
+  "objective": {
+    "en": "Use kilograms and grams, know that 1 kg = 1,000 g, change kilograms to grams, and compare and add masses.",
+    "ar": "أن يستخدم التلميذ الكيلوجرام والجرام، ويعرف أن 1 كجم = 1,000 جم، ويحوّل الكيلوجرامات إلى جرامات، ويقارن الكتل ويجمعها."
+  },
+  "refs": {
+    "egypt": [
+      "U3 · 3.1 Mass (kg, g)"
+    ],
+    "ccss": [
+      "4.MD.A.1",
+      "4.MD.A.2"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "pies",
+        "emoji": "⚖️",
+        "hideLabels": true,
+        "items": [
+          {
+            "f": [
+              1,
+              1
+            ],
+            "label": {
+              "en": "1 kg rice",
+              "ar": "1 كجم أرز"
+            }
+          },
+          {
+            "f": [
+              4,
+              4
+            ],
+            "label": {
+              "en": "1,000 g lentils",
+              "ar": "1,000 جم عدس"
+            },
+            "color": "blue"
+          }
+        ],
+        "ops": [
+          "="
+        ]
+      },
+      "check": {
+        "q": {
+          "en": "Which is heavier: 1 kg of rice or 1,000 g of lentils?",
+          "ar": "أيهما أثقل: 1 كجم أرز أم 1,000 جم عدس؟"
+        },
+        "options": {
+          "en": [
+            "1 kg of rice",
+            "1,000 g of lentils",
+            "They are the same"
+          ],
+          "ar": [
+            "1 كجم أرز",
+            "1,000 جم عدس",
+            "لهما الكتلة نفسها"
+          ]
+        },
+        "answer": 2
+      },
+      "text": {
+        "en": "**Mass** tells us how heavy something is. We use **kilograms (kg)** for heavy things and **grams (g)** for light things.\n\n**1 kg = 1,000 g**. So 1 kg of rice and 1,000 g of lentils weigh the same!",
+        "ar": "**الكتلة** تخبرنا كم يكون الشيء ثقيلًا. نستخدم **الكيلوجرام (كجم)** للأشياء الثقيلة و**الجرام (جم)** للأشياء الخفيفة.\n\n**1 كجم = 1,000 جم**. إذن 1 كجم أرز و 1,000 جم عدس لهما الكتلة نفسها!"
+      },
+      "say": {
+        "en": "Mass tells us how heavy something is. We use kilograms for heavy things and grams for light things. One kilogram equals one thousand grams. So one kilogram of rice and one thousand grams of lentils weigh the same.",
+        "ar": "الكتلة تخبرنا كم يكون الشيء ثقيلًا. نستخدم الكيلوجرام للأشياء الثقيلة والجرام للأشياء الخفيفة. الكيلوجرام يساوي ألف جرام. إذن كيلوجرام أرز وألف جرام عدس لهما الكتلة نفسها."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "pies",
+        "items": [
+          {
+            "f": [
+              2,
+              4
+            ],
+            "label": {
+              "en": "500 g",
+              "ar": "500 جم"
+            }
+          },
+          {
+            "f": [
+              1,
+              4
+            ],
+            "label": {
+              "en": "250 g",
+              "ar": "250 جم"
+            }
+          },
+          {
+            "f": [
+              3,
+              4
+            ],
+            "label": {
+              "en": "750 g",
+              "ar": "750 جم"
+            },
+            "color": "blue"
+          }
+        ]
+      },
+      "text": {
+        "en": "**Parts of a kilogram.** Cut 1,000 g into equal parts.",
+        "ar": "**أجزاء الكيلوجرام.** نقسم 1,000 جم إلى أجزاء متساوية."
+      },
+      "lines": {
+        "en": [
+          "1 kg = 1,000 g",
+          "[1/2] kg = 1,000 ÷ 2 = 500 g",
+          "[1/4] kg = 1,000 ÷ 4 = 250 g",
+          "[3/4] kg = 3 × 250 = 750 g"
+        ],
+        "ar": [
+          "1 كجم = 1,000 جم",
+          "[1/2] كجم = 1,000 ÷ 2 = 500 جم",
+          "[1/4] كجم = 1,000 ÷ 4 = 250 جم",
+          "[3/4] كجم = 3 × 250 = 750 جم"
+        ]
+      },
+      "say": {
+        "en": "Parts of a kilogram. Cut one thousand grams into equal parts. One kilogram is one thousand grams. Half a kilogram is one thousand divided by two, which is five hundred grams. A quarter of a kilogram is one thousand divided by four, which is two hundred and fifty grams. Three quarters is three times two hundred and fifty, which is seven hundred and fifty grams.",
+        "ar": "أجزاء الكيلوجرام. نقسم ألف جرام إلى أجزاء متساوية. الكيلوجرام يساوي ألف جرام. ونصف الكيلوجرام يساوي ألفًا على اثنين، أي خمسمائة جرام. وربع الكيلوجرام يساوي ألفًا على أربعة، أي مائتين وخمسين جرامًا. وثلاثة أرباع الكيلوجرام تساوي ثلاثة في مائتين وخمسين، أي سبعمائة وخمسين جرامًا."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "blocks",
+        "n": 2450,
+        "emoji": "⚖️"
+      },
+      "check": {
+        "q": {
+          "en": "2 kg 450 g = ? g",
+          "ar": "2 كجم و 450 جم = ؟ جم"
+        },
+        "options": {
+          "en": [
+            "452 g",
+            "2,450 g",
+            "24,500 g"
+          ],
+          "ar": [
+            "452 جم",
+            "2,450 جم",
+            "24,500 جم"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "**Kilograms to grams: multiply by 1,000.** For kilograms and grams together, change the kilograms, then add the grams.",
+        "ar": "**من الكيلوجرام إلى الجرام: نضرب في 1,000.** وإذا كانت كيلوجرامات وجرامات معًا، نحوّل الكيلوجرامات ثم نضيف الجرامات."
+      },
+      "lines": {
+        "en": [
+          "3 kg = 3 × 1,000 = 3,000 g",
+          "2 kg 450 g = 2,000 + 450 = 2,450 g",
+          "5 kg 60 g = 5,000 + 60 = 5,060 g (not 5,600!)"
+        ],
+        "ar": [
+          "3 كجم = 3 × 1,000 = 3,000 جم",
+          "2 كجم و 450 جم = 2,000 + 450 = 2,450 جم",
+          "5 كجم و 60 جم = 5,000 + 60 = 5,060 جم (وليس 5,600!)"
+        ]
+      },
+      "say": {
+        "en": "Kilograms to grams: multiply by one thousand. Three kilograms is three times one thousand, which is three thousand grams. Two kilograms and four hundred and fifty grams is two thousand plus four hundred and fifty, which is two thousand four hundred and fifty grams. Five kilograms and sixty grams is five thousand plus sixty, which is five thousand and sixty grams, not five thousand six hundred.",
+        "ar": "من الكيلوجرام إلى الجرام نضرب في ألف. ثلاثة كيلوجرامات تساوي ثلاثة في ألف، أي ثلاثة آلاف جرام. وكيلوجرامان وأربعمائة وخمسون جرامًا تساوي ألفين زائد أربعمائة وخمسين، أي ألفين وأربعمائة وخمسين جرامًا. وخمسة كيلوجرامات وستون جرامًا تساوي خمسة آلاف زائد ستين، أي خمسة آلاف وستين جرامًا، وليس خمسة آلاف وستمائة."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "number-line",
+      "params": {
+        "min": 0,
+        "max": 3,
+        "divisions": 10,
+        "target": [
+          23,
+          10
+        ],
+        "scale": 1000
+      },
+      "text": {
+        "en": "A bag of tomatoes weighs 2 kg 300 g. The line counts in grams. Each small jump is 100 g.",
+        "ar": "كيس طماطم كتلته 2 كجم و 300 جم. خط الأعداد بالجرامات، وكل قفزة صغيرة 100 جم."
+      },
+      "prompt": {
+        "en": "Put a point at 2 kg 300 g (in grams).",
+        "ar": "ضع نقطة عند 2 كجم و 300 جم (بالجرامات)."
+      },
+      "say": {
+        "en": "A bag of tomatoes weighs two kilograms and three hundred grams. Each small jump is one hundred grams. Put a point at its mass in grams.",
+        "ar": "كيس طماطم كتلته كيلوجرامان وثلاثمائة جرام. كل قفزة صغيرة مائة جرام. ضع نقطة عند كتلته بالجرامات."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "bars",
+        "hideLabels": true,
+        "items": [
+          {
+            "f": [
+              10,
+              10
+            ],
+            "label": {
+              "en": "4 kg = 4,000 g",
+              "ar": "4 كجم = 4,000 جم"
+            }
+          },
+          {
+            "f": [
+              9,
+              10
+            ],
+            "label": {
+              "en": "3,600 g",
+              "ar": "3,600 جم"
+            },
+            "color": "blue"
+          }
+        ],
+        "ops": [
+          ">"
+        ]
+      },
+      "text": {
+        "en": "**Comparing masses:** change both to grams, then compare.",
+        "ar": "**مقارنة الكتل:** نحوّل الكتلتين إلى جرامات، ثم نقارن."
+      },
+      "lines": {
+        "en": [
+          "4 kg = 4 × 1,000 = 4,000 g",
+          "4,000 g > 3,600 g",
+          "So 4 kg > 3,600 g"
+        ],
+        "ar": [
+          "4 كجم = 4 × 1,000 = 4,000 جم",
+          "4,000 جم > 3,600 جم",
+          "إذن 4 كجم > 3,600 جم"
+        ]
+      },
+      "say": {
+        "en": "Comparing masses: change both to grams. Four kilograms is four times one thousand, which is four thousand grams. Four thousand grams is more than three thousand six hundred grams. So the four kilogram bag is heavier.",
+        "ar": "مقارنة الكتل: نحوّل الكتلتين إلى جرامات. أربعة كيلوجرامات تساوي أربعة في ألف، أي أربعة آلاف جرام. وأربعة آلاف جرام أكبر من ثلاثة آلاف وستمائة جرام. إذن الكيس الذي كتلته أربعة كيلوجرامات أثقل."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "pies",
+        "emoji": "🍚",
+        "items": [
+          {
+            "f": [
+              8,
+              4
+            ],
+            "label": {
+              "en": "2 kg",
+              "ar": "2 كجم"
+            }
+          },
+          {
+            "f": [
+              3,
+              4
+            ],
+            "label": {
+              "en": "750 g",
+              "ar": "750 جم"
+            },
+            "color": "blue"
+          }
+        ],
+        "ops": [
+          "+"
+        ]
+      },
+      "text": {
+        "en": "**Koshary shopping:** Mama buys 2 kg of rice and 750 g of lentils. What is the total mass?",
+        "ar": "**مشتريات الكشري:** اشترت ماما 2 كجم أرز و 750 جم عدس. ما الكتلة الكلية؟"
+      },
+      "lines": {
+        "en": [
+          "2 kg = 2,000 g",
+          "2,000 + 750 = 2,750 g",
+          "= 2 kg 750 g"
+        ],
+        "ar": [
+          "2 كجم = 2,000 جم",
+          "2,000 + 750 = 2,750 جم",
+          "= 2 كجم و 750 جم"
+        ]
+      },
+      "say": {
+        "en": "Koshary shopping. Mama buys two kilograms of rice and seven hundred and fifty grams of lentils. What is the total mass? Two kilograms is two thousand grams. Two thousand plus seven hundred and fifty is two thousand seven hundred and fifty grams, which is two kilograms and seven hundred and fifty grams.",
+        "ar": "مشتريات الكشري. اشترت ماما كيلوجرامين أرزًا وسبعمائة وخمسين جرامًا عدسًا. ما الكتلة الكلية؟ كيلوجرامان يساويان ألفي جرام. ألفان زائد سبعمائة وخمسين يساوي ألفين وسبعمائة وخمسين جرامًا، أي كيلوجرامين وسبعمائة وخمسين جرامًا."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "pies",
+        "emoji": "⚖️",
+        "items": [
+          {
+            "f": [
+              4,
+              4
+            ],
+            "label": {
+              "en": "1 kg = 1,000 g",
+              "ar": "1 كجم = 1,000 جم"
+            }
+          }
+        ]
+      },
+      "text": {
+        "en": "**Remember:**\n\n1 kg = 1,000 g.\n\nkg to g: **multiply by 1,000**, then add any extra grams.\n\nTo compare or add, use the **same unit**.",
+        "ar": "**تذكّر:**\n\n1 كجم = 1,000 جم.\n\nمن الكيلوجرام إلى الجرام: **نضرب في 1,000** ثم نضيف الجرامات الزائدة.\n\nللمقارنة أو الجمع نستخدم **الوحدة نفسها**."
+      },
+      "say": {
+        "en": "Remember: one kilogram is one thousand grams. Kilograms to grams: multiply by one thousand, then add any extra grams. To compare or add, use the same unit.",
+        "ar": "تذكّر: الكيلوجرام يساوي ألف جرام. من الكيلوجرام إلى الجرام نضرب في ألف ثم نضيف الجرامات الزائدة. وللمقارنة أو الجمع نستخدم الوحدة نفسها."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "7 kg = ? g",
+        "ar": "7 كجم = ؟ جم"
+      },
+      "options": {
+        "en": [
+          "7,000 g",
+          "700 g",
+          "70 g",
+          "1,007 g"
+        ],
+        "ar": [
+          "7,000 جم",
+          "700 جم",
+          "70 جم",
+          "1,007 جم"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1 kg = 1,000 g, so 7 × 1,000 = 7,000 g.",
+        "ar": "1 كجم = 1,000 جم، إذن 7 × 1,000 = 7,000 جم."
+      },
+      "say": {
+        "en": "Seven kilograms equals how many grams?",
+        "ar": "سبعة كيلوجرامات تساوي كم جرامًا؟"
+      }
+    },
+    {
+      "q": {
+        "en": "3 kg 25 g = ? g",
+        "ar": "3 كجم و 25 جم = ؟ جم"
+      },
+      "options": {
+        "en": [
+          "3,025 g",
+          "3,250 g",
+          "325 g",
+          "28 g"
+        ],
+        "ar": [
+          "3,025 جم",
+          "3,250 جم",
+          "325 جم",
+          "28 جم"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "3 kg = 3,000 g, and 3,000 + 25 = 3,025 g. The 25 goes in the tens and ones, not the hundreds.",
+        "ar": "3 كجم = 3,000 جم، و 3,000 + 25 = 3,025 جم. العدد 25 يكون في العشرات والآحاد وليس في المئات."
+      },
+      "say": {
+        "en": "Three kilograms and twenty five grams equals how many grams?",
+        "ar": "ثلاثة كيلوجرامات وخمسة وعشرون جرامًا تساوي كم جرامًا؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which is heavier: 2 kg or 1,950 g?",
+        "ar": "أيهما أثقل: 2 كجم أم 1,950 جم؟"
+      },
+      "options": {
+        "en": [
+          "2 kg",
+          "1,950 g",
+          "They are equal",
+          "We cannot know"
+        ],
+        "ar": [
+          "2 كجم",
+          "1,950 جم",
+          "متساويان",
+          "لا يمكن المعرفة"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "2 kg = 2,000 g, and 2,000 g > 1,950 g.",
+        "ar": "2 كجم = 2,000 جم، و 2,000 جم > 1,950 جم."
+      },
+      "say": {
+        "en": "Which is heavier: two kilograms or one thousand nine hundred and fifty grams?",
+        "ar": "أيهما أثقل: كيلوجرامان أم ألف وتسعمائة وخمسون جرامًا؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Half a kilogram = ? g",
+        "ar": "نصف كيلوجرام = ؟ جم"
+      },
+      "options": {
+        "en": [
+          "500 g",
+          "250 g",
+          "50 g",
+          "1,500 g"
+        ],
+        "ar": [
+          "500 جم",
+          "250 جم",
+          "50 جم",
+          "1,500 جم"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1,000 ÷ 2 = 500 g. 250 g is a quarter of a kilogram.",
+        "ar": "1,000 ÷ 2 = 500 جم. أما 250 جم فهي ربع كيلوجرام."
+      },
+      "say": {
+        "en": "Half a kilogram equals how many grams?",
+        "ar": "نصف كيلوجرام يساوي كم جرامًا؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which unit is best for the mass of a watermelon?",
+        "ar": "ما أنسب وحدة لقياس كتلة بطيخة؟"
+      },
+      "options": {
+        "en": [
+          "kilogram",
+          "gram",
+          "litre",
+          "kilometre"
+        ],
+        "ar": [
+          "الكيلوجرام",
+          "الجرام",
+          "اللتر",
+          "الكيلومتر"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "A watermelon is heavy, so we use kilograms. Litres measure liquids and kilometres measure distance.",
+        "ar": "البطيخة ثقيلة، لذلك نستخدم الكيلوجرام. اللتر لقياس السوائل والكيلومتر لقياس المسافة."
+      },
+      "say": {
+        "en": "Which unit is best for the mass of a watermelon?",
+        "ar": "ما أنسب وحدة لقياس كتلة بطيخة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A baker has 5 kg of flour and uses 2 kg 500 g. How much is left?",
+        "ar": "مع خبّاز 5 كجم دقيق، استخدم منها 2 كجم و 500 جم. كم بقي؟"
+      },
+      "options": {
+        "en": [
+          "2 kg 500 g",
+          "3 kg 500 g",
+          "7 kg 500 g",
+          "3 kg"
+        ],
+        "ar": [
+          "2 كجم و 500 جم",
+          "3 كجم و 500 جم",
+          "7 كجم و 500 جم",
+          "3 كجم"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "5,000 − 2,500 = 2,500 g = 2 kg 500 g. 7 kg 500 g adds instead of subtracting.",
+        "ar": "5,000 − 2,500 = 2,500 جم = 2 كجم و 500 جم. أما 7 كجم و 500 جم فجمعت بدلًا من الطرح."
+      },
+      "say": {
+        "en": "A baker has five kilograms of flour and uses two kilograms and five hundred grams. How much is left?",
+        "ar": "مع خبّاز خمسة كيلوجرامات دقيق، استخدم منها كيلوجرامين وخمسمائة جرام. كم بقي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Order from lightest to heaviest: 1 kg, 800 g, 1,100 g",
+        "ar": "رتّب من الأخف إلى الأثقل: 1 كجم، 800 جم، 1,100 جم"
+      },
+      "options": {
+        "en": [
+          "800 g, 1 kg, 1,100 g",
+          "1 kg, 800 g, 1,100 g",
+          "800 g, 1,100 g, 1 kg",
+          "1,100 g, 1 kg, 800 g"
+        ],
+        "ar": [
+          "800 جم، 1 كجم، 1,100 جم",
+          "1 كجم، 800 جم، 1,100 جم",
+          "800 جم، 1,100 جم، 1 كجم",
+          "1,100 جم، 1 كجم، 800 جم"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1 kg = 1,000 g, which is between 800 g and 1,100 g.",
+        "ar": "1 كجم = 1,000 جم، وهي بين 800 جم و 1,100 جم."
+      },
+      "say": {
+        "en": "Order from lightest to heaviest: one kilogram, eight hundred grams, one thousand one hundred grams.",
+        "ar": "رتّب من الأخف إلى الأثقل: كيلوجرام واحد، ثمانمائة جرام، ألف ومائة جرام."
+      }
+    },
+    {
+      "q": {
+        "en": "4 packets of tea weigh 250 g each. What is the total mass?",
+        "ar": "4 علب شاي كتلة كل منها 250 جم. ما الكتلة الكلية؟"
+      },
+      "options": {
+        "en": [
+          "1 kg",
+          "254 g",
+          "1,250 g",
+          "10 kg"
+        ],
+        "ar": [
+          "1 كجم",
+          "254 جم",
+          "1,250 جم",
+          "10 كجم"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "4 × 250 = 1,000 g = 1 kg. 254 adds 4 instead of multiplying.",
+        "ar": "4 × 250 = 1,000 جم = 1 كجم. أما 254 فجمعت 4 بدلًا من الضرب."
+      },
+      "say": {
+        "en": "Four packets of tea weigh two hundred and fifty grams each. What is the total mass?",
+        "ar": "أربع علب شاي كتلة كل منها مائتان وخمسون جرامًا. ما الكتلة الكلية؟"
+      }
+    }
+  ]
+}

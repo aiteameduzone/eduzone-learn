@@ -1,0 +1,407 @@
+{
+  "id": "g4-math-frac-07",
+  "title": {
+    "en": "Mixed Numbers",
+    "ar": "الأعداد الكسرية"
+  },
+  "objective": {
+    "en": "Change improper fractions to mixed numbers and back, and add and subtract mixed numbers with the same denominator.",
+    "ar": "أن يحوّل التلميذ الكسر غير الحقيقي إلى عدد كسري والعكس، ويجمع ويطرح الأعداد الكسرية متحدة المقام."
+  },
+  "refs": {
+    "egypt": [
+      "U9 · 9.1 L4-7"
+    ],
+    "ccss": [
+      "4.NF.B.3.c"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "pies",
+        "emoji": "🥧",
+        "items": [
+          {
+            "f": [
+              7,
+              4
+            ]
+          }
+        ],
+        "hideLabels": true
+      },
+      "check": {
+        "q": {
+          "en": "How many quarter-pieces of feteer are shaded?",
+          "ar": "كم ربعًا من الفطير مظلل؟"
+        },
+        "options": {
+          "en": [
+            "7",
+            "4",
+            "3"
+          ],
+          "ar": [
+            "7",
+            "4",
+            "3"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "7 quarters is [7/4]. The top is **bigger** than the bottom, so it is an **improper fraction**: more than one whole.\n\n4 quarters make 1 whole feteer, with 3 quarters left over. So [7/4] = **1 and [3/4]**. That is a **mixed number**.",
+        "ar": "سبعة أرباع هي [7/4]. البسط **أكبر** من المقام، لذلك هو **كسر غير حقيقي**: أكبر من الواحد الصحيح.\n\nكل 4 أرباع تكوّن فطيرة كاملة، ويتبقّى 3 أرباع. إذن [7/4] = **1 و [3/4]**. وهذا **عدد كسري**."
+      },
+      "say": {
+        "en": "Seven quarters is seven fourths. The top is bigger than the bottom, so it is an improper fraction: more than one whole. Four quarters make one whole feteer, with three quarters left over. So seven fourths equals one and three fourths. That is a mixed number.",
+        "ar": "سبعة أرباع. البسط أكبر من المقام، لذلك هو كسر غير حقيقي، أي أكبر من الواحد الصحيح. كل أربعة أرباع تكوّن فطيرة كاملة، ويتبقّى ثلاثة أرباع. إذن سبعة أرباع تساوي واحدًا وثلاثة أرباع. وهذا عدد كسري."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "pies",
+        "items": [
+          {
+            "f": [
+              11,
+              5
+            ]
+          }
+        ]
+      },
+      "text": {
+        "en": "**Improper fraction → mixed number:** how many wholes fit, and what is left?",
+        "ar": "**من كسر غير حقيقي إلى عدد كسري:** كم واحدًا صحيحًا يوجد، وكم يتبقّى؟"
+      },
+      "lines": {
+        "en": [
+          "[11/5]: each whole is 5 fifths.",
+          "11 ÷ 5 = 2 wholes, remainder 1.",
+          "[11/5] = 2 and [1/5]"
+        ],
+        "ar": [
+          "[11/5]: كل واحد صحيح = 5 أخماس.",
+          "11 ÷ 5 = 2 صحيح، والباقي 1.",
+          "[11/5] = 2 و [1/5]"
+        ]
+      },
+      "say": {
+        "en": "Improper fraction to mixed number. Eleven fifths. Each whole is five fifths. Eleven divided by five is two wholes, remainder one. So eleven fifths equals two and one fifth.",
+        "ar": "من كسر غير حقيقي إلى عدد كسري. أحد عشر خُمسًا. كل واحد صحيح خمسة أخماس. أحد عشر على خمسة يساوي اثنين صحيحين والباقي واحد. إذن أحد عشر خُمسًا تساوي اثنين وخُمسًا."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "number-line",
+      "params": {
+        "min": 0,
+        "max": 3,
+        "divisions": 4,
+        "target": [
+          7,
+          4
+        ]
+      },
+      "text": {
+        "en": "Mixed numbers live between whole numbers on the number line.",
+        "ar": "الأعداد الكسرية تقع بين الأعداد الصحيحة على خط الأعداد."
+      },
+      "prompt": {
+        "en": "Put a point at 1 and [3/4].",
+        "ar": "ضع نقطة عند 1 و [3/4]."
+      },
+      "say": {
+        "en": "Put a point at one and three fourths.",
+        "ar": "ضع نقطة عند واحد وثلاثة أرباع."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "pies",
+        "items": [
+          {
+            "f": [
+              8,
+              3
+            ]
+          }
+        ]
+      },
+      "text": {
+        "en": "**Mixed number → improper fraction:** turn the wholes into pieces, then add the extra pieces.",
+        "ar": "**من عدد كسري إلى كسر غير حقيقي:** نحوّل الصحيح إلى أجزاء، ثم نضيف الأجزاء الزائدة."
+      },
+      "lines": {
+        "en": [
+          "2 and [2/3]",
+          "2 wholes = 2 × 3 = 6 thirds",
+          "6 + 2 = 8 thirds, so 2 and [2/3] = [8/3]"
+        ],
+        "ar": [
+          "2 و [2/3]",
+          "2 صحيح = 2 × 3 = 6 أثلاث",
+          "6 + 2 = 8 أثلاث، إذن 2 و [2/3] = [8/3]"
+        ]
+      },
+      "say": {
+        "en": "Mixed number to improper fraction. Two and two thirds. Two wholes is two times three, six thirds. Six plus two is eight thirds. So two and two thirds equals eight thirds.",
+        "ar": "من عدد كسري إلى كسر غير حقيقي. اثنان وثلثان. الاثنان الصحيحان يساويان اثنين في ثلاثة، أي ستة أثلاث. ستة زائد اثنين يساوي ثمانية أثلاث. إذن اثنان وثلثان تساوي ثمانية أثلاث."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "pies",
+        "emoji": "🍉",
+        "items": [
+          {
+            "f": [
+              9,
+              4
+            ]
+          },
+          {
+            "f": [
+              6,
+              4
+            ],
+            "color": "blue"
+          },
+          {
+            "f": [
+              15,
+              4
+            ]
+          }
+        ],
+        "ops": [
+          "+",
+          "="
+        ]
+      },
+      "text": {
+        "en": "**Adding mixed numbers:** add the wholes, then add the fractions.\n\nMama buys 2 and [1/4] kg of watermelon, then 1 and [2/4] kg more.",
+        "ar": "**جمع الأعداد الكسرية:** نجمع الأعداد الصحيحة، ثم نجمع الكسور.\n\nاشترت ماما 2 و [1/4] كجم بطيخ، ثم 1 و [2/4] كجم أخرى."
+      },
+      "lines": {
+        "en": [
+          "Wholes: 2 + 1 = 3",
+          "Fractions: [1/4] + [2/4] = [3/4]",
+          "Total: 3 and [3/4] kg"
+        ],
+        "ar": [
+          "الصحيح: 2 + 1 = 3",
+          "الكسور: [1/4] + [2/4] = [3/4]",
+          "المجموع: 3 و [3/4] كجم"
+        ]
+      },
+      "say": {
+        "en": "Adding mixed numbers: add the wholes, then add the fractions. Mama buys two and one fourth kilograms of watermelon, then one and two fourths more. Wholes: two plus one is three. Fractions: one fourth plus two fourths is three fourths. Total: three and three fourths kilograms.",
+        "ar": "جمع الأعداد الكسرية: نجمع الأعداد الصحيحة ثم نجمع الكسور. اشترت ماما اثنين وربع كيلوجرام بطيخ، ثم واحدًا وربعين أخرى. الصحيح: اثنان زائد واحد يساوي ثلاثة. الكسور: ربع زائد ربعين يساوي ثلاثة أرباع. المجموع: ثلاثة وثلاثة أرباع كيلوجرام."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "pies",
+        "items": [
+          {
+            "f": [
+              5,
+              2
+            ]
+          }
+        ]
+      },
+      "text": {
+        "en": "**Remember:**\n\nTop bigger than bottom = improper fraction = more than 1.\n\nImproper → mixed: divide. Mixed → improper: multiply, then add.",
+        "ar": "**تذكّر:**\n\nالبسط أكبر من المقام = كسر غير حقيقي = أكبر من 1.\n\nمن غير حقيقي إلى كسري: نقسم. ومن كسري إلى غير حقيقي: نضرب ثم نجمع."
+      },
+      "say": {
+        "en": "Remember: if the top is bigger than the bottom, it is an improper fraction, more than one. Improper to mixed: divide. Mixed to improper: multiply, then add.",
+        "ar": "تذكّر: إذا كان البسط أكبر من المقام فهو كسر غير حقيقي، أي أكبر من واحد. من غير حقيقي إلى كسري نقسم، ومن كسري إلى غير حقيقي نضرب ثم نجمع."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "Which is an improper fraction?",
+        "ar": "أي مما يلي كسر غير حقيقي؟"
+      },
+      "options": {
+        "en": [
+          "[9/5]",
+          "[4/5]",
+          "[1/5]",
+          "[5/9]"
+        ],
+        "ar": [
+          "[9/5]",
+          "[4/5]",
+          "[1/5]",
+          "[5/9]"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "In [9/5] the numerator is bigger than the denominator, so it is more than 1.",
+        "ar": "في [9/5] البسط أكبر من المقام، إذن هو أكبر من 1."
+      },
+      "say": {
+        "en": "Which is an improper fraction?",
+        "ar": "أي مما يلي كسر غير حقيقي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "[13/4] as a mixed number is:",
+        "ar": "[13/4] في صورة عدد كسري هو:"
+      },
+      "options": {
+        "en": [
+          "3 and [1/4]",
+          "4 and [1/3]",
+          "1 and [3/4]",
+          "3 and [3/4]"
+        ],
+        "ar": [
+          "3 و [1/4]",
+          "4 و [1/3]",
+          "1 و [3/4]",
+          "3 و [3/4]"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "13 ÷ 4 = 3 remainder 1, so 3 and [1/4].",
+        "ar": "13 ÷ 4 = 3 والباقي 1، إذن 3 و [1/4]."
+      },
+      "say": {
+        "en": "Thirteen fourths as a mixed number is?",
+        "ar": "ثلاثة عشر ربعًا في صورة عدد كسري هو؟"
+      }
+    },
+    {
+      "q": {
+        "en": "1 and [2/5] as an improper fraction is:",
+        "ar": "1 و [2/5] في صورة كسر غير حقيقي هو:"
+      },
+      "options": {
+        "en": [
+          "[7/5]",
+          "[3/5]",
+          "[12/5]",
+          "[5/7]"
+        ],
+        "ar": [
+          "[7/5]",
+          "[3/5]",
+          "[12/5]",
+          "[5/7]"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1 whole = 5 fifths. 5 + 2 = 7 fifths.",
+        "ar": "الواحد الصحيح = 5 أخماس. 5 + 2 = 7 أخماس."
+      },
+      "say": {
+        "en": "One and two fifths as an improper fraction is?",
+        "ar": "واحد وخُمسان في صورة كسر غير حقيقي هو؟"
+      }
+    },
+    {
+      "q": {
+        "en": "1 and [1/3] + 2 and [1/3] = ?",
+        "ar": "1 و [1/3] + 2 و [1/3] = ؟"
+      },
+      "options": {
+        "en": [
+          "3 and [2/3]",
+          "3 and [2/6]",
+          "2 and [2/3]",
+          "3 and [1/3]"
+        ],
+        "ar": [
+          "3 و [2/3]",
+          "3 و [2/6]",
+          "2 و [2/3]",
+          "3 و [1/3]"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Wholes 1 + 2 = 3, fractions [1/3] + [1/3] = [2/3].",
+        "ar": "الصحيح 1 + 2 = 3، والكسور [1/3] + [1/3] = [2/3]."
+      },
+      "say": {
+        "en": "One and one third plus two and one third equals?",
+        "ar": "واحد وثلث زائد اثنين وثلث يساوي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A ribbon is 3 and [4/5] m. Salma cuts off 1 and [1/5] m. How much is left?",
+        "ar": "شريط طوله 3 و [4/5] م. قصّت سلمى منه 1 و [1/5] م. كم تبقّى؟"
+      },
+      "options": {
+        "en": [
+          "2 and [3/5] m",
+          "2 and [5/5] m",
+          "4 and [3/5] m",
+          "2 and [3/10] m"
+        ],
+        "ar": [
+          "2 و [3/5] م",
+          "2 و [5/5] م",
+          "4 و [3/5] م",
+          "2 و [3/10] م"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Wholes 3 − 1 = 2, fractions [4/5] − [1/5] = [3/5].",
+        "ar": "الصحيح 3 − 1 = 2، والكسور [4/5] − [1/5] = [3/5]."
+      },
+      "say": {
+        "en": "A ribbon is three and four fifths metres. Salma cuts off one and one fifth metres. How much is left?",
+        "ar": "شريط طوله ثلاثة أمتار وأربعة أخماس. قصّت سلمى منه مترًا وخُمسًا. كم تبقّى؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Where is [5/2] on the number line?",
+        "ar": "أين يقع [5/2] على خط الأعداد؟"
+      },
+      "options": {
+        "en": [
+          "Between 2 and 3",
+          "Between 0 and 1",
+          "Exactly at 5",
+          "Between 1 and 2"
+        ],
+        "ar": [
+          "بين 2 و 3",
+          "بين 0 و 1",
+          "عند 5 تمامًا",
+          "بين 1 و 2"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "[5/2] = 2 and [1/2], halfway between 2 and 3.",
+        "ar": "[5/2] = 2 و [1/2]، أي في منتصف المسافة بين 2 و 3."
+      },
+      "say": {
+        "en": "Where is five halves on the number line?",
+        "ar": "أين يقع خمسة أنصاف على خط الأعداد؟"
+      }
+    }
+  ]
+}

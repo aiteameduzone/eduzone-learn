@@ -1,0 +1,279 @@
+{
+  "id": "g4-math-u02-03",
+  "title": {
+    "en": "Adding with Regrouping",
+    "ar": "الجمع مع إعادة التجميع"
+  },
+  "objective": {
+    "en": "Add multi-digit numbers in columns, regrouping 10 ones as 1 ten, 10 tens as 1 hundred and 10 hundreds as 1 thousand.",
+    "ar": "أن يجمع التلميذ أعدادًا متعددة الأرقام رأسيًا مع إعادة التجميع: كل 10 آحاد = 1 عشرة، وكل 10 عشرات = 1 مئة، وكل 10 مئات = 1 ألف."
+  },
+  "refs": {
+    "egypt": ["U2 · 2.1 Addition with regrouping"],
+    "ccss": ["4.NBT.B.4"]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "check": {
+        "q": {
+          "en": "48 + 5: 8 ones + 5 ones = 13 ones. How do we write 13 ones?",
+          "ar": "48 + 5: 8 آحاد + 5 آحاد = 13 آحادًا. كيف نكتب 13 آحادًا؟"
+        },
+        "options": {
+          "en": ["1 ten and 3 ones", "13 in the ones place", "3 tens and 1 one"],
+          "ar": ["1 عشرة و 3 آحاد", "نكتب 13 في خانة الآحاد", "3 عشرات و 1 آحاد"]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "**Regrouping:** each place can hold only one digit, 0 to 9.\n\n13 ones = 1 ten and 3 ones.\n\nWrite 3 in the ones and carry 1 ten to the tens. So 48 + 5 = 53.",
+        "ar": "**إعادة التجميع:** كل خانة يُكتب فيها رقم واحد فقط، من 0 إلى 9.\n\n13 آحادًا = 1 عشرة و 3 آحاد.\n\nنكتب 3 في خانة الآحاد ونحمل 1 إلى العشرات. إذن 48 + 5 = 53"
+      },
+      "say": {
+        "en": "Forty-eight plus five. Eight ones plus five ones is thirteen ones. Regrouping: each place can hold only one digit, zero to nine. Thirteen ones is one ten and three ones. Write three in the ones and carry one ten to the tens. So forty-eight plus five is fifty-three.",
+        "ar": "ثمانية وأربعون زائد خمسة. ثمانية آحاد زائد خمسة آحاد يساوي ثلاثة عشر آحادًا. إعادة التجميع: كل خانة يُكتب فيها رقم واحد فقط، من صفر إلى تسعة. ثلاثة عشر آحادًا تساوي عشرة واحدة وثلاثة آحاد. نكتب ثلاثة في خانة الآحاد ونحمل واحدًا إلى العشرات. إذن ثمانية وأربعون زائد خمسة يساوي ثلاثة وخمسين."
+      },
+      "visual": { "kind": "blocks", "n": 48 }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "**Column addition:** line up the places and start from the ones.\n\n2,758 + 1,469",
+        "ar": "**الجمع الرأسي:** نرتّب الأرقام في خاناتها ونبدأ من الآحاد.\n\n2758 + 1469"
+      },
+      "lines": {
+        "en": [
+          "Ones: 8 + 9 = 17 → write 7, carry 1",
+          "Tens: 5 + 6 + 1 = 12 → write 2, carry 1",
+          "Hundreds: 7 + 4 + 1 = 12 → write 2, carry 1",
+          "Thousands: 2 + 1 + 1 = 4",
+          "2,758 + 1,469 = 4,227"
+        ],
+        "ar": [
+          "الآحاد: 8 + 9 = 17، نكتب 7 ونحمل 1",
+          "العشرات: 5 + 6 + 1 = 12، نكتب 2 ونحمل 1",
+          "المئات: 7 + 4 + 1 = 12، نكتب 2 ونحمل 1",
+          "الآلاف: 2 + 1 + 1 = 4",
+          "2758 + 1469 = 4227"
+        ]
+      },
+      "say": {
+        "en": "Column addition: line up the places and start from the ones. Two thousand seven hundred fifty-eight plus one thousand four hundred sixty-nine. Ones: eight plus nine is seventeen, write seven, carry one. Tens: five plus six plus one is twelve, write two, carry one. Hundreds: seven plus four plus one is twelve, write two, carry one. Thousands: two plus one plus one is four. The sum is four thousand two hundred twenty-seven.",
+        "ar": "الجمع الرأسي: نرتّب الأرقام في خاناتها ونبدأ من الآحاد. ألفان وسبعمئة وثمانية وخمسون زائد ألف وأربعمئة وتسعة وستين. الآحاد: ثمانية زائد تسعة يساوي سبعة عشر، نكتب سبعة ونحمل واحدًا. العشرات: خمسة زائد ستة زائد واحد يساوي اثني عشر، نكتب اثنين ونحمل واحدًا. المئات: سبعة زائد أربعة زائد واحد يساوي اثني عشر، نكتب اثنين ونحمل واحدًا. الآلاف: اثنان زائد واحد زائد واحد يساوي أربعة. الناتج أربعة آلاف ومئتان وسبعة وعشرون."
+      },
+      "visual": { "kind": "blocks", "n": 4227 }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": { "places": 4, "target": 6331 },
+      "text": {
+        "en": "Add in columns, starting from the ones. Remember to add the carried 1.",
+        "ar": "اجمع رأسيًا بادئًا من الآحاد. لا تنسَ جمع الواحد المحمول."
+      },
+      "prompt": {
+        "en": "Build the sum 3,586 + 2,745.",
+        "ar": "كوِّن ناتج 3586 + 2745"
+      },
+      "say": {
+        "en": "Add three thousand five hundred eighty-six plus two thousand seven hundred forty-five in columns, starting from the ones. Remember to add the carried one. Build the sum.",
+        "ar": "اجمع ثلاثة آلاف وخمسمئة وستة وثمانين زائد ألفين وسبعمئة وخمسة وأربعين رأسيًا بادئًا من الآحاد. لا تنسَ جمع الواحد المحمول. كوِّن الناتج."
+      }
+    },
+    {
+      "type": "explain",
+      "check": {
+        "q": {
+          "en": "Karim got 642 for 467 + 285. What went wrong?",
+          "ar": "حصل كريم على 642 ناتجًا لـ 467 + 285. ما الخطأ؟"
+        },
+        "options": {
+          "en": ["He forgot to carry", "He added the ones wrong", "Nothing, 642 is right"],
+          "ar": ["نسي أن يحمل", "أخطأ في جمع الآحاد", "لا خطأ، 642 صحيح"]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "**Don't forget the carry!**\n\nOnes: 7 + 5 = 12 → write 2, carry 1.\n\nTens: 6 + 8 + 1 = 15 → write 5, carry 1.\n\nHundreds: 4 + 2 + 1 = 7.\n\nThe sum is 752, not 642.",
+        "ar": "**لا تنسَ الواحد المحمول!**\n\nالآحاد: 7 + 5 = 12، نكتب 2 ونحمل 1\n\nالعشرات: 6 + 8 + 1 = 15، نكتب 5 ونحمل 1\n\nالمئات: 4 + 2 + 1 = 7\n\nالناتج 752 وليس 642"
+      },
+      "say": {
+        "en": "Karim got six hundred forty-two for four hundred sixty-seven plus two hundred eighty-five. Don't forget the carry! Ones: seven plus five is twelve, write two, carry one. Tens: six plus eight plus one is fifteen, write five, carry one. Hundreds: four plus two plus one is seven. The sum is seven hundred fifty-two, not six hundred forty-two.",
+        "ar": "حصل كريم على ستمئة واثنين وأربعين ناتجًا لأربعمئة وسبعة وستين زائد مئتين وخمسة وثمانين. لا تنسَ الواحد المحمول! الآحاد: سبعة زائد خمسة يساوي اثني عشر، نكتب اثنين ونحمل واحدًا. العشرات: ستة زائد ثمانية زائد واحد يساوي خمسة عشر، نكتب خمسة ونحمل واحدًا. المئات: أربعة زائد اثنين زائد واحد يساوي سبعة. الناتج سبعمئة واثنان وخمسون وليس ستمئة واثنين وأربعين."
+      },
+      "visual": { "kind": "blocks", "n": 467 }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "**School trip:** the bus costs 1,385 EGP and the tickets cost 2,618 EGP. What is the total cost?",
+        "ar": "**رحلة مدرسية:** الأتوبيس يكلّف 1385 جنيهًا والتذاكر تكلّف 2618 جنيهًا. ما التكلفة الكلية؟"
+      },
+      "lines": {
+        "en": [
+          "Ones: 5 + 8 = 13 → write 3, carry 1",
+          "Tens: 8 + 1 + 1 = 10 → write 0, carry 1",
+          "Hundreds: 3 + 6 + 1 = 10 → write 0, carry 1",
+          "Thousands: 1 + 2 + 1 = 4",
+          "Total: 4,003 EGP"
+        ],
+        "ar": [
+          "الآحاد: 5 + 8 = 13، نكتب 3 ونحمل 1",
+          "العشرات: 8 + 1 + 1 = 10، نكتب 0 ونحمل 1",
+          "المئات: 3 + 6 + 1 = 10، نكتب 0 ونحمل 1",
+          "الآلاف: 1 + 2 + 1 = 4",
+          "التكلفة الكلية: 4003 جنيهات"
+        ]
+      },
+      "say": {
+        "en": "School trip: the bus costs one thousand three hundred eighty-five pounds and the tickets cost two thousand six hundred eighteen pounds. What is the total? Ones: five plus eight is thirteen, write three, carry one. Tens: eight plus one plus one is ten, write zero, carry one. Hundreds: three plus six plus one is ten, write zero, carry one. Thousands: one plus two plus one is four. The total is four thousand and three pounds.",
+        "ar": "رحلة مدرسية: الأتوبيس يكلّف ألفًا وثلاثمئة وخمسة وثمانين جنيهًا، والتذاكر تكلّف ألفين وستمئة وثمانية عشر جنيهًا. ما التكلفة الكلية؟ الآحاد: خمسة زائد ثمانية يساوي ثلاثة عشر، نكتب ثلاثة ونحمل واحدًا. العشرات: ثمانية زائد واحد زائد واحد يساوي عشرة، نكتب صفرًا ونحمل واحدًا. المئات: ثلاثة زائد ستة زائد واحد يساوي عشرة، نكتب صفرًا ونحمل واحدًا. الآلاف: واحد زائد اثنين زائد واحد يساوي أربعة. التكلفة الكلية أربعة آلاف وثلاثة جنيهات."
+      },
+      "visual": { "kind": "blocks", "n": 4003 }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": { "places": 4, "target": 4822 },
+      "text": {
+        "en": "One metro station had 2,946 riders and another had 1,876. How many riders in all?",
+        "ar": "ركب من محطة مترو 2946 راكبًا ومن محطة أخرى 1876 راكبًا. كم راكبًا في المجموع؟"
+      },
+      "prompt": {
+        "en": "Build the sum 2,946 + 1,876.",
+        "ar": "كوِّن ناتج 2946 + 1876"
+      },
+      "say": {
+        "en": "One metro station had two thousand nine hundred forty-six riders and another had one thousand eight hundred seventy-six. How many riders in all? Build the sum.",
+        "ar": "ركب من محطة مترو ألفان وتسعمئة وستة وأربعون راكبًا، ومن محطة أخرى ألف وثمانمئة وستة وسبعون راكبًا. كم راكبًا في المجموع؟ كوِّن الناتج."
+      }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Remember:**\n\nStart from the ones.\n\nIf a column adds up to 10 or more, write the ones digit and carry 1 to the next place.\n\n10 hundreds = 1 thousand.\n\nAlways add the carried 1, and estimate to check.",
+        "ar": "**تذكّر:**\n\nابدأ من الآحاد.\n\nإذا كان مجموع خانة 10 أو أكثر، اكتب رقم الآحاد واحمل 1 إلى الخانة التالية.\n\n10 مئات = 1 ألف.\n\nاجمع دائمًا الواحد المحمول، وقدّر الناتج لتتحقق."
+      },
+      "say": {
+        "en": "Remember. Start from the ones. If a column adds up to ten or more, write the ones digit and carry one to the next place. Ten hundreds is one thousand. Always add the carried one, and estimate to check.",
+        "ar": "تذكّر. ابدأ من الآحاد. إذا كان مجموع خانة عشرة أو أكثر، اكتب رقم الآحاد واحمل واحدًا إلى الخانة التالية. عشر مئات تساوي ألفًا واحدًا. اجمع دائمًا الواحد المحمول، وقدّر الناتج لتتحقق."
+      },
+      "visual": { "kind": "blocks", "n": 1000 }
+    }
+  ],
+  "quiz": [
+    {
+      "q": { "en": "356 + 478 = ?", "ar": "356 + 478 = ؟" },
+      "options": {
+        "en": ["834", "724", "734", "824"],
+        "ar": ["834", "724", "734", "824"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Ones: 6 + 8 = 14, carry 1. Tens: 5 + 7 + 1 = 13, carry 1. Hundreds: 3 + 4 + 1 = 8. The other answers forget one or both carries.",
+        "ar": "الآحاد: 6 + 8 = 14 ونحمل 1. العشرات: 5 + 7 + 1 = 13 ونحمل 1. المئات: 3 + 4 + 1 = 8. الإجابات الأخرى نسيت واحدًا محمولًا أو أكثر."
+      },
+      "say": {
+        "en": "Three hundred fifty-six plus four hundred seventy-eight equals?",
+        "ar": "ثلاثمئة وستة وخمسون زائد أربعمئة وثمانية وسبعين يساوي؟"
+      }
+    },
+    {
+      "q": { "en": "2,465 + 3,578 = ?", "ar": "2465 + 3578 = ؟" },
+      "options": {
+        "en": ["6,043", "5,933", "6,033", "5,043"],
+        "ar": ["6043", "5933", "6033", "5043"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Ones: 13, write 3, carry 1. Tens: 6 + 7 + 1 = 14, write 4, carry 1. Hundreds: 4 + 5 + 1 = 10, write 0, carry 1. Thousands: 2 + 3 + 1 = 6.",
+        "ar": "الآحاد: 13، نكتب 3 ونحمل 1. العشرات: 6 + 7 + 1 = 14، نكتب 4 ونحمل 1. المئات: 4 + 5 + 1 = 10، نكتب 0 ونحمل 1. الآلاف: 2 + 3 + 1 = 6"
+      },
+      "say": {
+        "en": "Two thousand four hundred sixty-five plus three thousand five hundred seventy-eight equals?",
+        "ar": "ألفان وأربعمئة وخمسة وستون زائد ثلاثة آلاف وخمسمئة وثمانية وسبعين يساوي؟"
+      }
+    },
+    {
+      "q": { "en": "Ones column: 7 + 5 = 12. What do you do?", "ar": "خانة الآحاد: 7 + 5 = 12. ماذا تفعل؟" },
+      "options": {
+        "en": ["Write 2, carry 1", "Write 1, carry 2", "Write 12 in the ones", "Write 2, carry nothing"],
+        "ar": ["نكتب 2 ونحمل 1", "نكتب 1 ونحمل 2", "نكتب 12 في خانة الآحاد", "نكتب 2 ولا نحمل شيئًا"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "12 ones = 1 ten and 2 ones. The 2 stays in the ones; the 1 ten moves to the tens column.",
+        "ar": "12 آحادًا = 1 عشرة و 2 آحاد. الرقم 2 يبقى في الآحاد، والعشرة تنتقل إلى خانة العشرات."
+      },
+      "say": {
+        "en": "Ones column: seven plus five is twelve. What do you do?",
+        "ar": "خانة الآحاد: سبعة زائد خمسة يساوي اثني عشر. ماذا تفعل؟ هل نكتب اثنين ونحمل واحدًا، أم نكتب واحدًا ونحمل اثنين؟"
+      }
+    },
+    {
+      "q": { "en": "A library has 3,758 Arabic books and 1,694 English books. How many books in all?", "ar": "في مكتبة 3758 كتابًا عربيًا و 1694 كتابًا إنجليزيًا. كم كتابًا في المجموع؟" },
+      "options": {
+        "en": ["5,452", "4,342", "5,442", "5,352"],
+        "ar": ["5452", "4342", "5442", "5352"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "8 + 4 = 12, carry 1. 5 + 9 + 1 = 15, carry 1. 7 + 6 + 1 = 14, carry 1. 3 + 1 + 1 = 5. So 5,452. 4,342 forgets every carry.",
+        "ar": "8 + 4 = 12 ونحمل 1. 5 + 9 + 1 = 15 ونحمل 1. 7 + 6 + 1 = 14 ونحمل 1. 3 + 1 + 1 = 5. إذن 5452، أما 4342 فنسي كل الأرقام المحمولة."
+      },
+      "say": {
+        "en": "A library has three thousand seven hundred fifty-eight Arabic books and one thousand six hundred ninety-four English books. How many books in all?",
+        "ar": "في مكتبة ثلاثة آلاف وسبعمئة وثمانية وخمسون كتابًا عربيًا، وألف وستمئة وأربعة وتسعون كتابًا إنجليزيًا. كم كتابًا في المجموع؟"
+      }
+    },
+    {
+      "q": { "en": "Which sum needs NO regrouping?", "ar": "أي عملية جمع لا تحتاج إلى إعادة تجميع؟" },
+      "options": {
+        "en": ["4,213 + 3,564", "2,345 + 1,276", "3,508 + 1,492", "1,670 + 2,450"],
+        "ar": ["4213 + 3564", "2345 + 1276", "3508 + 1492", "1670 + 2450"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "In 4,213 + 3,564 every column adds to 7, which is less than 10. The others have a column of 10 or more (5 + 6, 8 + 2, 7 + 5).",
+        "ar": "في 4213 + 3564 مجموع كل خانة 7، وهو أقل من 10. أما الباقي ففيه خانة مجموعها 10 أو أكثر (5 + 6 و 8 + 2 و 7 + 5)."
+      },
+      "say": {
+        "en": "Which sum needs no regrouping?",
+        "ar": "أي عملية جمع لا تحتاج إلى إعادة تجميع؟ أربعة آلاف ومئتان وثلاثة عشر زائد ثلاثة آلاف وخمسمئة وأربعة وستين، أم العمليات الأخرى؟"
+      }
+    },
+    {
+      "q": { "en": "Find the missing digit: 3,4_6 + 1,275 = 4,761", "ar": "أوجد الرقم الناقص: 34_6 + 1275 = 4761" },
+      "options": {
+        "en": ["8", "9", "5", "4"],
+        "ar": ["8", "9", "5", "4"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Ones: 6 + 5 = 11, carry 1. Tens: _ + 7 + 1 must end in 6, so 8 + 7 + 1 = 16. Choosing 9 forgets the carried 1.",
+        "ar": "الآحاد: 6 + 5 = 11 ونحمل 1. العشرات: الرقم الناقص + 7 + 1 يجب أن ينتهي بـ 6، إذن 8 + 7 + 1 = 16. واختيار 9 ينسى الواحد المحمول."
+      },
+      "say": {
+        "en": "Find the missing tens digit: three thousand four hundred blank six, plus one thousand two hundred seventy-five, equals four thousand seven hundred sixty-one.",
+        "ar": "أوجد رقم العشرات الناقص: ثلاثة آلاف وأربعمئة وعشرات مجهولة وستة آحاد، زائد ألف ومئتين وخمسة وسبعين، يساوي أربعة آلاف وسبعمئة وواحدًا وستين."
+      }
+    },
+    {
+      "q": { "en": "2,904 + 3,198 = ?", "ar": "2904 + 3198 = ؟" },
+      "options": {
+        "en": ["6,102", "5,092", "6,002", "6,112"],
+        "ar": ["6102", "5092", "6002", "6112"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Ones: 4 + 8 = 12, carry 1. Tens: 0 + 9 + 1 = 10, write 0, carry 1. Hundreds: 9 + 1 + 1 = 11, write 1, carry 1. Thousands: 2 + 3 + 1 = 6. Estimate: 2,900 + 3,200 = 6,100.",
+        "ar": "الآحاد: 4 + 8 = 12 ونحمل 1. العشرات: 0 + 9 + 1 = 10، نكتب 0 ونحمل 1. المئات: 9 + 1 + 1 = 11، نكتب 1 ونحمل 1. الآلاف: 2 + 3 + 1 = 6. التقدير: 2900 + 3200 = 6100"
+      },
+      "say": {
+        "en": "Two thousand nine hundred four plus three thousand one hundred ninety-eight equals?",
+        "ar": "ألفان وتسعمئة وأربعة زائد ثلاثة آلاف ومئة وثمانية وتسعين يساوي؟"
+      }
+    }
+  ]
+}

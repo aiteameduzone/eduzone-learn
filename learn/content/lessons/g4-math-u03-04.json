@@ -1,0 +1,516 @@
+{
+  "id": "g4-math-u03-04",
+  "title": {
+    "en": "Conversion Tables",
+    "ar": "جداول التحويل"
+  },
+  "objective": {
+    "en": "Make conversion tables for length, mass and capacity, find the rule, and use it to compare and order measurements.",
+    "ar": "أن يكوّن التلميذ جداول تحويل للطول والكتلة والسعة، ويكتشف القاعدة، ويستخدمها في مقارنة القياسات وترتيبها."
+  },
+  "refs": {
+    "egypt": [
+      "U3 · 3.1 Conversion tables"
+    ],
+    "ccss": [
+      "4.MD.A.1"
+    ]
+  },
+  "steps": [
+    {
+      "type": "example",
+      "visual": {
+        "kind": "array",
+        "rows": 3,
+        "cols": 10,
+        "label": {
+          "en": "3 m = 300 cm (each dot = 10 cm)",
+          "ar": "3 م = 300 سم (كل نقطة = 10 سم)"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "1 m = 100 cm, 2 m = 200 cm, 3 m = 300 cm. So 4 m = ?",
+          "ar": "1 م = 100 سم، 2 م = 200 سم، 3 م = 300 سم. إذن 4 م = ؟"
+        },
+        "options": {
+          "en": [
+            "301 cm",
+            "400 cm",
+            "40 cm"
+          ],
+          "ar": [
+            "301 سم",
+            "400 سم",
+            "40 سم"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "A **conversion table** puts equal measurements side by side. Here each row of dots is 1 metre, and each dot is 10 cm.\n\nEvery new metre adds **100 cm**.",
+        "ar": "**جدول التحويل** يضع القياسات المتساوية جنبًا إلى جنب. هنا كل صف من النقاط متر واحد، وكل نقطة 10 سم.\n\nكل متر جديد يضيف **100 سم**."
+      },
+      "lines": {
+        "en": [
+          "m | cm",
+          "1 | 100",
+          "2 | 200",
+          "3 | 300",
+          "4 | 400   (rule: × 100)"
+        ],
+        "ar": [
+          "م | سم",
+          "1 | 100",
+          "2 | 200",
+          "3 | 300",
+          "4 | 400   (القاعدة: × 100)"
+        ]
+      },
+      "say": {
+        "en": "A conversion table puts equal measurements side by side. Each row of dots is one metre, and each dot is ten centimetres. Every new metre adds one hundred centimetres. One metre is one hundred centimetres, two metres is two hundred, three metres is three hundred, and four metres is four hundred centimetres.",
+        "ar": "جدول التحويل يضع القياسات المتساوية جنبًا إلى جنب. كل صف من النقاط متر واحد، وكل نقطة عشرة سنتيمترات. كل متر جديد يضيف مائة سنتيمتر. متر واحد يساوي مائة سنتيمتر، ومتران مائتين، وثلاثة أمتار ثلاثمائة، وأربعة أمتار أربعمائة سنتيمتر."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "blocks",
+        "n": 5000,
+        "emoji": "⚖️"
+      },
+      "text": {
+        "en": "**Kilograms and grams table.** The rule is **× 1,000**. The same rule works for litres and millilitres.",
+        "ar": "**جدول الكيلوجرام والجرام.** القاعدة هي **× 1,000**. والقاعدة نفسها تصلح للتر والمليلتر."
+      },
+      "lines": {
+        "en": [
+          "kg | g",
+          "1 | 1,000",
+          "2 | 2,000",
+          "5 | 5,000",
+          "8 | 8,000   (rule: × 1,000)"
+        ],
+        "ar": [
+          "كجم | جم",
+          "1 | 1,000",
+          "2 | 2,000",
+          "5 | 5,000",
+          "8 | 8,000   (القاعدة: × 1,000)"
+        ]
+      },
+      "say": {
+        "en": "Kilograms and grams table. The rule is times one thousand. One kilogram is one thousand grams, two kilograms is two thousand grams, five kilograms is five thousand grams, and eight kilograms is eight thousand grams. The same rule works for litres and millilitres.",
+        "ar": "جدول الكيلوجرام والجرام. القاعدة هي الضرب في ألف. كيلوجرام واحد يساوي ألف جرام، وكيلوجرامان ألفي جرام، وخمسة كيلوجرامات خمسة آلاف جرام، وثمانية كيلوجرامات ثمانية آلاف جرام. والقاعدة نفسها تصلح للتر والمليلتر."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": {
+        "places": 4,
+        "target": 6000
+      },
+      "text": {
+        "en": "Use the rule for litres: L × 1,000 = mL.",
+        "ar": "استخدم قاعدة اللتر: لتر × 1,000 = مل."
+      },
+      "prompt": {
+        "en": "Complete the table: 6 L = ? mL",
+        "ar": "أكمل الجدول: 6 لتر = ؟ مل"
+      },
+      "say": {
+        "en": "Use the rule for litres: litres times one thousand gives millilitres. Six litres equals how many millilitres? Build the number.",
+        "ar": "استخدم قاعدة اللتر: نضرب عدد اللترات في ألف لنحصل على المليلترات. ستة لترات تساوي كم مليلترًا؟ كوّن العدد."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "bars",
+        "hideLabels": true,
+        "items": [
+          {
+            "f": [
+              15,
+              20
+            ],
+            "label": {
+              "en": "1 m 50 cm = 150 cm",
+              "ar": "1 م و 50 سم = 150 سم"
+            }
+          },
+          {
+            "f": [
+              14,
+              20
+            ],
+            "label": {
+              "en": "140 cm",
+              "ar": "140 سم"
+            },
+            "color": "blue"
+          },
+          {
+            "f": [
+              20,
+              20
+            ],
+            "label": {
+              "en": "2 m = 200 cm",
+              "ar": "2 م = 200 سم"
+            }
+          }
+        ]
+      },
+      "check": {
+        "q": {
+          "en": "Which is shortest: 1 m 50 cm, 140 cm or 2 m?",
+          "ar": "أيها الأقصر: 1 م و 50 سم أم 140 سم أم 2 م؟"
+        },
+        "options": {
+          "en": [
+            "2 m",
+            "1 m 50 cm",
+            "140 cm"
+          ],
+          "ar": [
+            "2 م",
+            "1 م و 50 سم",
+            "140 سم"
+          ]
+        },
+        "answer": 2
+      },
+      "text": {
+        "en": "**Ordering:** change every length to **centimetres** first, then order.",
+        "ar": "**الترتيب:** نحوّل كل الأطوال إلى **سنتيمترات** أولًا، ثم نرتّب."
+      },
+      "lines": {
+        "en": [
+          "1 m 50 cm = 100 + 50 = 150 cm",
+          "2 m = 200 cm",
+          "140 cm < 150 cm < 200 cm",
+          "Order: 140 cm, 1 m 50 cm, 2 m"
+        ],
+        "ar": [
+          "1 م و 50 سم = 100 + 50 = 150 سم",
+          "2 م = 200 سم",
+          "140 سم < 150 سم < 200 سم",
+          "الترتيب: 140 سم، 1 م و 50 سم، 2 م"
+        ]
+      },
+      "say": {
+        "en": "Ordering: change every length to centimetres first. One metre fifty centimetres is one hundred and fifty centimetres. Two metres is two hundred centimetres. And one hundred and forty centimetres stays the same. From shortest: one hundred and forty centimetres, then one metre fifty, then two metres.",
+        "ar": "الترتيب: نحوّل كل الأطوال إلى سنتيمترات أولًا. متر وخمسون سنتيمترًا يساوي مائة وخمسين سنتيمترًا. ومتران يساويان مائتي سنتيمتر. ومائة وأربعون سنتيمترًا تبقى كما هي. من الأقصر: مائة وأربعون سنتيمترًا، ثم متر وخمسون سنتيمترًا، ثم متران."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "number-line",
+      "params": {
+        "min": 0,
+        "max": 3,
+        "divisions": 10,
+        "target": [
+          25,
+          10
+        ],
+        "scale": 100
+      },
+      "text": {
+        "en": "A door is 2 m 50 cm tall. The line counts in centimetres. Each small jump is 10 cm.",
+        "ar": "باب ارتفاعه 2 م و 50 سم. خط الأعداد بالسنتيمترات، وكل قفزة صغيرة 10 سم."
+      },
+      "prompt": {
+        "en": "Put a point at 2 m 50 cm (in centimetres).",
+        "ar": "ضع نقطة عند 2 م و 50 سم (بالسنتيمترات)."
+      },
+      "say": {
+        "en": "A door is two metres and fifty centimetres tall. Each small jump is ten centimetres. Put a point at its height in centimetres.",
+        "ar": "باب ارتفاعه متران وخمسون سنتيمترًا. كل قفزة صغيرة عشرة سنتيمترات. ضع نقطة عند ارتفاعه بالسنتيمترات."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "bars",
+        "items": [
+          {
+            "f": [
+              10,
+              10
+            ],
+            "label": {
+              "en": "1 m = 100 cm",
+              "ar": "1 م = 100 سم"
+            }
+          },
+          {
+            "f": [
+              4,
+              4
+            ],
+            "label": {
+              "en": "1 kg = 1,000 g",
+              "ar": "1 كجم = 1,000 جم"
+            },
+            "color": "blue"
+          },
+          {
+            "f": [
+              4,
+              4
+            ],
+            "label": {
+              "en": "1 L = 1,000 mL",
+              "ar": "1 لتر = 1,000 مل"
+            }
+          }
+        ]
+      },
+      "text": {
+        "en": "**Table rules:**\n\nkm → m: × 1,000\n\nm → cm: × 100\n\ncm → mm: × 10\n\nkg → g: × 1,000\n\nL → mL: × 1,000",
+        "ar": "**قواعد الجداول:**\n\nكم ← م: × 1,000\n\nم ← سم: × 100\n\nسم ← مم: × 10\n\nكجم ← جم: × 1,000\n\nلتر ← مل: × 1,000"
+      },
+      "say": {
+        "en": "Table rules. Kilometres to metres: times one thousand. Metres to centimetres: times one hundred. Centimetres to millimetres: times ten. Kilograms to grams: times one thousand. Litres to millilitres: times one thousand.",
+        "ar": "قواعد الجداول. من الكيلومتر إلى المتر نضرب في ألف. ومن المتر إلى السنتيمتر نضرب في مائة. ومن السنتيمتر إلى المليمتر نضرب في عشرة. ومن الكيلوجرام إلى الجرام نضرب في ألف. ومن اللتر إلى المليلتر نضرب في ألف."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "In a m-to-cm table, 5 m = ?",
+        "ar": "في جدول تحويل الأمتار إلى سنتيمترات، 5 م = ؟"
+      },
+      "options": {
+        "en": [
+          "500 cm",
+          "50 cm",
+          "5,000 cm",
+          "105 cm"
+        ],
+        "ar": [
+          "500 سم",
+          "50 سم",
+          "5,000 سم",
+          "105 سم"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "The rule is × 100: 5 × 100 = 500 cm.",
+        "ar": "القاعدة × 100: 5 × 100 = 500 سم."
+      },
+      "say": {
+        "en": "In a metres to centimetres table, five metres equals?",
+        "ar": "في جدول تحويل الأمتار إلى سنتيمترات، خمسة أمتار تساوي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "1 kg = 1,000 g, 2 kg = 2,000 g. So 3 kg = ?",
+        "ar": "1 كجم = 1,000 جم، 2 كجم = 2,000 جم. إذن 3 كجم = ؟"
+      },
+      "options": {
+        "en": [
+          "3,000 g",
+          "300 g",
+          "30,000 g",
+          "3,100 g"
+        ],
+        "ar": [
+          "3,000 جم",
+          "300 جم",
+          "30,000 جم",
+          "3,100 جم"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Each kilogram adds 1,000 g: 3 × 1,000 = 3,000 g.",
+        "ar": "كل كيلوجرام يضيف 1,000 جم: 3 × 1,000 = 3,000 جم."
+      },
+      "say": {
+        "en": "One kilogram is one thousand grams, two kilograms is two thousand grams. So three kilograms equals?",
+        "ar": "كيلوجرام واحد يساوي ألف جرام، وكيلوجرامان ألفي جرام. إذن ثلاثة كيلوجرامات تساوي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A table shows 1 → 10, 2 → 20, 3 → 30 (cm to mm). What is the rule?",
+        "ar": "جدول فيه 1 ← 10، 2 ← 20، 3 ← 30 (سم إلى مم). ما القاعدة؟"
+      },
+      "options": {
+        "en": [
+          "multiply by 10",
+          "multiply by 100",
+          "add 10",
+          "multiply by 1,000"
+        ],
+        "ar": [
+          "الضرب في 10",
+          "الضرب في 100",
+          "جمع 10",
+          "الضرب في 1,000"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1 cm = 10 mm, so each number is multiplied by 10. Adding 10 fails: 2 + 10 is 12, not 20.",
+        "ar": "1 سم = 10 مم، إذن نضرب كل عدد في 10. جمع 10 لا يصح: 2 + 10 = 12 وليس 20."
+      },
+      "say": {
+        "en": "A table shows one to ten, two to twenty, three to thirty, centimetres to millimetres. What is the rule?",
+        "ar": "جدول فيه واحد إلى عشرة، واثنان إلى عشرين، وثلاثة إلى ثلاثين، من السنتيمتر إلى المليمتر. ما القاعدة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which table row is WRONG?",
+        "ar": "أي سطر في الجدول خطأ؟"
+      },
+      "options": {
+        "en": [
+          "3 km = 300 m",
+          "4 L = 4,000 mL",
+          "7 m = 700 cm",
+          "6 cm = 60 mm"
+        ],
+        "ar": [
+          "3 كم = 300 م",
+          "4 لتر = 4,000 مل",
+          "7 م = 700 سم",
+          "6 سم = 60 مم"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1 km = 1,000 m, so 3 km = 3,000 m, not 300 m.",
+        "ar": "1 كم = 1,000 م، إذن 3 كم = 3,000 م وليس 300 م."
+      },
+      "say": {
+        "en": "Which table row is wrong?",
+        "ar": "أي سطر في الجدول خطأ؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Order from most to least: 3 L, 2,500 mL, 3,200 mL",
+        "ar": "رتّب من الأكثر إلى الأقل: 3 لتر، 2,500 مل، 3,200 مل"
+      },
+      "options": {
+        "en": [
+          "3,200 mL, 3 L, 2,500 mL",
+          "3 L, 3,200 mL, 2,500 mL",
+          "2,500 mL, 3 L, 3,200 mL",
+          "3,200 mL, 2,500 mL, 3 L"
+        ],
+        "ar": [
+          "3,200 مل، 3 لتر، 2,500 مل",
+          "3 لتر، 3,200 مل، 2,500 مل",
+          "2,500 مل، 3 لتر، 3,200 مل",
+          "3,200 مل، 2,500 مل، 3 لتر"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "3 L = 3,000 mL, which is less than 3,200 mL and more than 2,500 mL.",
+        "ar": "3 لتر = 3,000 مل، وهي أقل من 3,200 مل وأكثر من 2,500 مل."
+      },
+      "say": {
+        "en": "Order from most to least: three litres, two thousand five hundred millilitres, three thousand two hundred millilitres.",
+        "ar": "رتّب من الأكثر إلى الأقل: ثلاثة لترات، ألفان وخمسمائة مليلتر، ثلاثة آلاف ومائتا مليلتر."
+      }
+    },
+    {
+      "q": {
+        "en": "Compare 9 m and 900 cm.",
+        "ar": "قارن بين 9 م و 900 سم."
+      },
+      "options": {
+        "en": [
+          "They are equal",
+          "9 m is longer",
+          "900 cm is longer",
+          "We cannot compare"
+        ],
+        "ar": [
+          "متساويان",
+          "9 م أطول",
+          "900 سم أطول",
+          "لا يمكن المقارنة"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "9 × 100 = 900, so 9 m = 900 cm.",
+        "ar": "9 × 100 = 900، إذن 9 م = 900 سم."
+      },
+      "say": {
+        "en": "Compare nine metres and nine hundred centimetres.",
+        "ar": "قارن بين تسعة أمتار وتسعمائة سنتيمتر."
+      }
+    },
+    {
+      "q": {
+        "en": "Which is the same as 6,000 g?",
+        "ar": "أي مما يلي يساوي 6,000 جم؟"
+      },
+      "options": {
+        "en": [
+          "6 kg",
+          "60 kg",
+          "600 kg",
+          "6 g"
+        ],
+        "ar": [
+          "6 كجم",
+          "60 كجم",
+          "600 كجم",
+          "6 جم"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "6 × 1,000 = 6,000, so 6,000 g = 6 kg.",
+        "ar": "6 × 1,000 = 6,000، إذن 6,000 جم = 6 كجم."
+      },
+      "say": {
+        "en": "Which is the same as six thousand grams?",
+        "ar": "أي مما يلي يساوي ستة آلاف جرام؟"
+      }
+    },
+    {
+      "q": {
+        "en": "2 km 50 m = ? m",
+        "ar": "2 كم و 50 م = ؟ م"
+      },
+      "options": {
+        "en": [
+          "2,050 m",
+          "2,500 m",
+          "250 m",
+          "2,005 m"
+        ],
+        "ar": [
+          "2,050 م",
+          "2,500 م",
+          "250 م",
+          "2,005 م"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "2 km = 2,000 m, and 2,000 + 50 = 2,050 m.",
+        "ar": "2 كم = 2,000 م، و 2,000 + 50 = 2,050 م."
+      },
+      "say": {
+        "en": "Two kilometres and fifty metres equals how many metres?",
+        "ar": "كيلومتران وخمسون مترًا تساوي كم مترًا؟"
+      }
+    }
+  ]
+}

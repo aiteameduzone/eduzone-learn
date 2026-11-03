@@ -1,0 +1,347 @@
+{
+  "id": "g4-math-u04-01",
+  "title": {
+    "en": "Perimeter: Walking Around the Edge",
+    "ar": "المحيط: السير حول الحدود"
+  },
+  "objective": {
+    "en": "Understand perimeter as the distance around a shape and find it by adding the lengths of all its sides.",
+    "ar": "أن يتعرّف التلميذ المحيط بأنه طول الحدود الخارجية للشكل، ويحسبه بجمع أطوال جميع أضلاعه."
+  },
+  "refs": {
+    "egypt": [
+      "U4 · Perimeter by adding sides"
+    ],
+    "ccss": [
+      "4.MD.A.3"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "grid",
+        "w": 5,
+        "h": 3,
+        "label": {
+          "en": "Walk around the edge 🐜",
+          "ar": "سِر حول الحافة 🐜"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "The rectangle is 5 units long and 3 units wide. How far does the ant walk to get all the way around?",
+          "ar": "طول المستطيل 5 وحدات وعرضه 3 وحدات. كم تمشي النملة لتدور حوله كله؟"
+        },
+        "options": {
+          "en": [
+            "16 units",
+            "8 units",
+            "15 units"
+          ],
+          "ar": [
+            "16 وحدة",
+            "8 وحدات",
+            "15 وحدة"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "An ant walks all the way around this rectangle, along the edge.\n\nThe **perimeter** is the total length of that walk: the distance **around** a shape.",
+        "ar": "تمشي نملة حول هذا المستطيل كله على حافته.\n\n**المحيط** هو طول هذه الرحلة كلها: أي طول الحدود الخارجية **حول** الشكل."
+      },
+      "say": {
+        "en": "An ant walks all the way around this rectangle, along the edge. The perimeter is the total length of that walk, the distance around a shape. The rectangle is five units long and three units wide. Five plus three plus five plus three is sixteen units.",
+        "ar": "تمشي نملة حول هذا المستطيل كله على حافته. المحيط هو طول هذه الرحلة كلها، أي طول الحدود الخارجية حول الشكل. طول المستطيل خمس وحدات وعرضه ثلاث وحدات. خمسة زائد ثلاثة زائد خمسة زائد ثلاثة يساوي ستة عشر وحدة."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "grid",
+        "w": 6,
+        "h": 4,
+        "label": {
+          "en": "Carpet: 6 m × 4 m",
+          "ar": "سجادة: 6 م × 4 م"
+        }
+      },
+      "text": {
+        "en": "**Add every side.** Go around the shape and add each side once. Don't skip any!",
+        "ar": "**اجمع كل الأضلاع.** دُر حول الشكل واجمع طول كل ضلع مرة واحدة، ولا تنسَ أي ضلع!"
+      },
+      "lines": {
+        "en": [
+          "A classroom carpet is 6 m long and 4 m wide.",
+          "Sides: 6, 4, 6, 4",
+          "6 + 4 + 6 + 4 = 20",
+          "Perimeter = 20 m"
+        ],
+        "ar": [
+          "سجادة فصل طولها 6 م وعرضها 4 م.",
+          "الأضلاع: 6 ، 4 ، 6 ، 4",
+          "6 + 4 + 6 + 4 = 20",
+          "المحيط = 20 م"
+        ]
+      },
+      "say": {
+        "en": "Add every side. Go around the shape and add each side once. A classroom carpet is six metres long and four metres wide. Six plus four plus six plus four equals twenty. The perimeter is twenty metres.",
+        "ar": "اجمع كل الأضلاع. دُر حول الشكل واجمع طول كل ضلع مرة واحدة. سجادة فصل طولها ستة أمتار وعرضها أربعة أمتار. ستة زائد أربعة زائد ستة زائد أربعة يساوي عشرين. إذن المحيط عشرون مترًا."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "grid",
+        "w": 8,
+        "h": 5,
+        "label": {
+          "en": "Notebook: 8 cm × 5 cm",
+          "ar": "كراسة: 8 سم × 5 سم"
+        }
+      },
+      "text": {
+        "en": "In a rectangle, **opposite sides are equal**. Know the length and the width, and you know all 4 sides.",
+        "ar": "في المستطيل **كل ضلعين متقابلين متساويان**. إذا عرفت الطول والعرض عرفت الأضلاع الأربعة."
+      },
+      "lines": {
+        "en": [
+          "Notebook cover: 8 cm long, 5 cm wide",
+          "Sides: 8, 5, 8, 5",
+          "8 + 5 + 8 + 5 = 26",
+          "Perimeter = 26 cm"
+        ],
+        "ar": [
+          "غلاف كراسة: الطول 8 سم ، العرض 5 سم",
+          "الأضلاع: 8 ، 5 ، 8 ، 5",
+          "8 + 5 + 8 + 5 = 26",
+          "المحيط = 26 سم"
+        ]
+      },
+      "say": {
+        "en": "In a rectangle, opposite sides are equal. Know the length and the width, and you know all four sides. A notebook cover is eight centimetres long and five centimetres wide. Eight plus five plus eight plus five equals twenty-six. The perimeter is twenty-six centimetres.",
+        "ar": "في المستطيل كل ضلعين متقابلين متساويان. إذا عرفت الطول والعرض عرفت الأضلاع الأربعة. غلاف كراسة طوله ثمانية سنتيمترات وعرضه خمسة سنتيمترات. ثمانية زائد خمسة زائد ثمانية زائد خمسة يساوي ستة وعشرين. إذن المحيط ستة وعشرون سنتيمترًا."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "area-grid",
+      "params": {
+        "target": {
+          "perimeter": 14
+        },
+        "w": 1,
+        "h": 1
+      },
+      "text": {
+        "en": "Use the steppers to change the length and width. Watch the perimeter change.",
+        "ar": "استخدم الأزرار لتغيير الطول والعرض، وراقب كيف يتغير المحيط."
+      },
+      "prompt": {
+        "en": "Make a rectangle with a perimeter of 14 units.",
+        "ar": "كوّن مستطيلًا محيطه 14 وحدة."
+      },
+      "say": {
+        "en": "Change the length and width. Make a rectangle with a perimeter of fourteen units.",
+        "ar": "غيّر الطول والعرض. كوّن مستطيلًا محيطه أربع عشرة وحدة."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "grid",
+        "w": 4,
+        "h": 2,
+        "label": {
+          "en": "4 + 2 + 4 + 2 = 12",
+          "ar": "4 + 2 + 4 + 2 = 12"
+        }
+      },
+      "text": {
+        "en": "**Remember:**\n\nPerimeter = the distance all the way around.\n\nAdd **all** the sides, not just two.\n\nPerimeter is a length, so we write it in cm or m.",
+        "ar": "**تذكّر:**\n\nالمحيط = طول الحدود حول الشكل كله.\n\nنجمع أطوال **كل** الأضلاع وليس ضلعين فقط.\n\nالمحيط طول، فنكتبه بالسنتيمتر أو بالمتر."
+      },
+      "say": {
+        "en": "Remember. Perimeter is the distance all the way around. Add all the sides, not just two. Perimeter is a length, so we write it in centimetres or metres. Here, four plus two plus four plus two is twelve.",
+        "ar": "تذكّر. المحيط هو طول الحدود حول الشكل كله. نجمع أطوال كل الأضلاع وليس ضلعين فقط. المحيط طول، فنكتبه بالسنتيمتر أو بالمتر. هنا أربعة زائد اثنين زائد أربعة زائد اثنين يساوي اثني عشر."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "A rectangle is 7 cm long and 3 cm wide. What is its perimeter?",
+        "ar": "مستطيل طوله 7 سم وعرضه 3 سم. ما محيطه؟"
+      },
+      "options": {
+        "en": [
+          "10 cm",
+          "20 cm",
+          "21 cm",
+          "17 cm"
+        ],
+        "ar": [
+          "10 سم",
+          "20 سم",
+          "21 سم",
+          "17 سم"
+        ]
+      },
+      "answer": 1,
+      "explain": {
+        "en": "7 + 3 + 7 + 3 = 20. Adding only two sides gives 10, and 21 is 7 × 3, which is not the perimeter.",
+        "ar": "7 + 3 + 7 + 3 = 20. جمع ضلعين فقط يعطي 10، و 21 هو 7 × 3 وهو ليس المحيط."
+      },
+      "say": {
+        "en": "A rectangle is seven centimetres long and three centimetres wide. What is its perimeter?",
+        "ar": "مستطيل طوله سبعة سنتيمترات وعرضه ثلاثة سنتيمترات. ما محيطه؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A triangle has sides 4 cm, 6 cm and 8 cm. What is its perimeter?",
+        "ar": "مثلث أطوال أضلاعه 4 سم و 6 سم و 8 سم. ما محيطه؟"
+      },
+      "options": {
+        "en": [
+          "10 cm",
+          "14 cm",
+          "18 cm",
+          "24 cm"
+        ],
+        "ar": [
+          "10 سم",
+          "14 سم",
+          "18 سم",
+          "24 سم"
+        ]
+      },
+      "answer": 2,
+      "explain": {
+        "en": "Add all three sides: 4 + 6 + 8 = 18 cm.",
+        "ar": "نجمع الأضلاع الثلاثة: 4 + 6 + 8 = 18 سم."
+      },
+      "say": {
+        "en": "A triangle has sides four, six and eight centimetres. What is its perimeter?",
+        "ar": "مثلث أطوال أضلاعه أربعة وستة وثمانية سنتيمترات. ما محيطه؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A square tile has sides of 5 cm. What is its perimeter?",
+        "ar": "بلاطة مربعة طول ضلعها 5 سم. ما محيطها؟"
+      },
+      "options": {
+        "en": [
+          "20 cm",
+          "10 cm",
+          "25 cm",
+          "15 cm"
+        ],
+        "ar": [
+          "20 سم",
+          "10 سم",
+          "25 سم",
+          "15 سم"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "A square has 4 equal sides: 5 + 5 + 5 + 5 = 20 cm. 15 forgets one side.",
+        "ar": "للمربع 4 أضلاع متساوية: 5 + 5 + 5 + 5 = 20 سم. أما 15 فنسي ضلعًا."
+      },
+      "say": {
+        "en": "A square tile has sides of five centimetres. What is its perimeter?",
+        "ar": "بلاطة مربعة طول ضلعها خمسة سنتيمترات. ما محيطها؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A shape has 5 sides: 3 m, 4 m, 5 m, 2 m and 6 m. What is its perimeter?",
+        "ar": "شكل له 5 أضلاع أطوالها 3 م و 4 م و 5 م و 2 م و 6 م. ما محيطه؟"
+      },
+      "options": {
+        "en": [
+          "18 m",
+          "14 m",
+          "5 m",
+          "20 m"
+        ],
+        "ar": [
+          "18 م",
+          "14 م",
+          "5 م",
+          "20 م"
+        ]
+      },
+      "answer": 3,
+      "explain": {
+        "en": "3 + 4 + 5 + 2 + 6 = 20 m. Count that you added 5 sides.",
+        "ar": "3 + 4 + 5 + 2 + 6 = 20 م. تأكّد أنك جمعت 5 أضلاع."
+      },
+      "say": {
+        "en": "A shape has five sides: three, four, five, two and six metres. What is its perimeter?",
+        "ar": "شكل له خمسة أضلاع أطوالها ثلاثة وأربعة وخمسة واثنان وستة أمتار. ما محيطه؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A farmer puts a fence around a garden 9 m long and 5 m wide. How long is the fence?",
+        "ar": "يضع فلاح سورًا حول حديقة طولها 9 م وعرضها 5 م. ما طول السور؟"
+      },
+      "options": {
+        "en": [
+          "14 m",
+          "28 m",
+          "45 m",
+          "23 m"
+        ],
+        "ar": [
+          "14 م",
+          "28 م",
+          "45 م",
+          "23 م"
+        ]
+      },
+      "answer": 1,
+      "explain": {
+        "en": "The fence goes all the way around: 9 + 5 + 9 + 5 = 28 m. 45 is 9 × 5, the inside, not the fence.",
+        "ar": "السور يدور حول الحديقة كلها: 9 + 5 + 9 + 5 = 28 م. أما 45 فهو 9 × 5، أي الداخل وليس السور."
+      },
+      "say": {
+        "en": "A farmer puts a fence around a garden nine metres long and five metres wide. How long is the fence?",
+        "ar": "يضع فلاح سورًا حول حديقة طولها تسعة أمتار وعرضها خمسة أمتار. ما طول السور؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which one is a perimeter?",
+        "ar": "أيّ مما يلي يمثل محيطًا؟"
+      },
+      "options": {
+        "en": [
+          "The paint covering a wall",
+          "The tiles covering a floor",
+          "The ribbon around a picture frame",
+          "The grass covering a field"
+        ],
+        "ar": [
+          "الطلاء الذي يغطي حائطًا",
+          "البلاط الذي يغطي أرضية",
+          "الشريط حول إطار صورة",
+          "العشب الذي يغطي ملعبًا"
+        ]
+      },
+      "answer": 2,
+      "explain": {
+        "en": "Perimeter is the edge around a shape, like a ribbon around a frame. Covering a surface is something else (area).",
+        "ar": "المحيط هو الحدود حول الشكل، مثل الشريط حول الإطار. أما تغطية السطح فشيء آخر (المساحة)."
+      },
+      "say": {
+        "en": "Which one is a perimeter?",
+        "ar": "أيّ مما يلي يمثل محيطًا؟"
+      }
+    }
+  ]
+}

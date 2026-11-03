@@ -1,0 +1,249 @@
+{
+  "id": "g4-math-u02-02",
+  "title": {
+    "en": "Estimating Sums and Differences",
+    "ar": "تقدير ناتج الجمع والطرح"
+  },
+  "objective": {
+    "en": "Round numbers to estimate sums and differences, and use an estimate to decide whether an answer is reasonable.",
+    "ar": "أن يقرّب التلميذ الأعداد ليقدّر ناتج الجمع والطرح، ويستخدم التقدير ليحكم على معقولية الناتج."
+  },
+  "refs": {
+    "egypt": ["U2 · 2.1 Estimating to check reasonableness"],
+    "ccss": ["4.NBT.A.3", "4.OA.A.3"]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "check": {
+        "q": {
+          "en": "The metro carried 4,812 riders in the morning and 3,105 in the evening. About how many in all?",
+          "ar": "نقل المترو 4812 راكبًا في الصباح و 3105 راكبًا في المساء. كم راكبًا تقريبًا في المجموع؟"
+        },
+        "options": {
+          "en": ["about 8,000", "about 7,000", "about 80,000"],
+          "ar": ["نحو 8000", "نحو 7000", "نحو 80000"]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "**Estimating** gives a quick answer that is close to the exact one.\n\nRound each number to the nearest thousand, then add:\n\n4,812 → 5,000 and 3,105 → 3,000\n\n5,000 + 3,000 = 8,000. About 8,000 riders.",
+        "ar": "**التقدير** يعطي إجابة سريعة قريبة من الإجابة الدقيقة.\n\nنقرّب كل عدد لأقرب ألف، ثم نجمع:\n\n4812 تقريبًا 5000، و 3105 تقريبًا 3000\n\n5000 + 3000 = 8000. إذن نحو 8000 راكب."
+      },
+      "say": {
+        "en": "Estimating gives a quick answer that is close to the exact one. Round each number to the nearest thousand, then add. Four thousand eight hundred twelve rounds to five thousand, and three thousand one hundred five rounds to three thousand. Five thousand plus three thousand is eight thousand. About eight thousand riders.",
+        "ar": "التقدير يعطي إجابة سريعة قريبة من الإجابة الدقيقة. نقرّب كل عدد لأقرب ألف، ثم نجمع. أربعة آلاف وثمانمئة واثنا عشر تقريبًا خمسة آلاف، وثلاثة آلاف ومئة وخمسة تقريبًا ثلاثة آلاف. خمسة آلاف زائد ثلاثة آلاف يساوي ثمانية آلاف. إذن نحو ثمانية آلاف راكب، وأقل من ثمانين ألفًا بكثير، وأكثر من سبعة آلاف."
+      },
+      "visual": { "kind": "blocks", "n": 4812 }
+    },
+    {
+      "type": "interactive",
+      "widget": "number-line",
+      "params": { "min": 4, "max": 5, "divisions": 10, "scale": 1000, "target": [48, 10] },
+      "text": {
+        "en": "4,812 is just after 4,800. Put a point at 4,800. Is it nearer to 4,000 or to 5,000?",
+        "ar": "العدد 4812 يأتي بعد 4800 بقليل. ضع نقطة عند 4800. هل هي أقرب إلى 4000 أم إلى 5000؟"
+      },
+      "prompt": {
+        "en": "Put a point at 4,800.",
+        "ar": "ضع نقطة عند 4800"
+      },
+      "say": {
+        "en": "Four thousand eight hundred twelve is just after four thousand eight hundred. Put a point at four thousand eight hundred. Is it nearer to four thousand or to five thousand?",
+        "ar": "العدد أربعة آلاف وثمانمئة واثنا عشر يأتي بعد أربعة آلاف وثمانمئة بقليل. ضع نقطة عند أربعة آلاف وثمانمئة. هل هي أقرب إلى أربعة آلاف أم إلى خمسة آلاف؟"
+      }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "**Estimate a difference.** A school fair sold tickets for 3,725 EGP and spent 1,290 EGP. About how much is left? Round to the nearest hundred.",
+        "ar": "**تقدير ناتج الطرح.** باع معرض المدرسة تذاكر بمبلغ 3725 جنيهًا وأنفق 1290 جنيهًا. كم يتبقى تقريبًا؟ قرّب لأقرب مئة."
+      },
+      "lines": {
+        "en": [
+          "3,725: the tens digit is 2 (less than 5), round down → 3,700",
+          "1,290: the tens digit is 9 (5 or more), round up → 1,300",
+          "3,700 − 1,300 = 2,400",
+          "About 2,400 EGP is left."
+        ],
+        "ar": [
+          "3725: رقم العشرات 2 (أقل من 5)، نقرّب لأسفل: 3700",
+          "1290: رقم العشرات 9 (5 أو أكثر)، نقرّب لأعلى: 1300",
+          "3700 − 1300 = 2400",
+          "يتبقى نحو 2400 جنيه."
+        ]
+      },
+      "say": {
+        "en": "Estimate a difference. A school fair sold tickets for three thousand seven hundred twenty-five pounds and spent one thousand two hundred ninety pounds. About how much is left? Round to the nearest hundred. In three thousand seven hundred twenty-five, the tens digit is two, less than five, so round down to three thousand seven hundred. In one thousand two hundred ninety, the tens digit is nine, five or more, so round up to one thousand three hundred. Three thousand seven hundred minus one thousand three hundred is two thousand four hundred. About two thousand four hundred pounds is left.",
+        "ar": "تقدير ناتج الطرح. باع معرض المدرسة تذاكر بمبلغ ثلاثة آلاف وسبعمئة وخمسة وعشرين جنيهًا، وأنفق ألفًا ومئتين وتسعين جنيهًا. كم يتبقى تقريبًا؟ قرّب لأقرب مئة. في ثلاثة آلاف وسبعمئة وخمسة وعشرين رقم العشرات اثنان، وهو أقل من خمسة، فنقرّب لأسفل إلى ثلاثة آلاف وسبعمئة. وفي ألف ومئتين وتسعين رقم العشرات تسعة، وهو خمسة أو أكثر، فنقرّب لأعلى إلى ألف وثلاثمئة. ثلاثة آلاف وسبعمئة ناقص ألف وثلاثمئة يساوي ألفين وأربعمئة. يتبقى نحو ألفين وأربعمئة جنيه."
+      },
+      "visual": { "kind": "blocks", "n": 2400 }
+    },
+    {
+      "type": "explain",
+      "check": {
+        "q": {
+          "en": "Ziad worked out 2,486 + 3,391 and got 8,877. Is that reasonable?",
+          "ar": "حسب زياد 2486 + 3391 فحصل على 8877. هل هذا الناتج معقول؟"
+        },
+        "options": {
+          "en": ["No, it is too big", "Yes, it is reasonable"],
+          "ar": ["لا، إنه كبير جدًّا", "نعم، إنه معقول"]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "**Check if it is reasonable.** Round to the nearest hundred:\n\n2,500 + 3,400 = 5,900\n\n8,877 is far from 5,900, so Ziad made a mistake. The exact sum is 5,877, which is close to the estimate.",
+        "ar": "**هل الناتج معقول؟** نقرّب لأقرب مئة:\n\n2500 + 3400 = 5900\n\nالعدد 8877 بعيد عن 5900، إذن أخطأ زياد. الناتج الصحيح 5877، وهو قريب من التقدير."
+      },
+      "say": {
+        "en": "Check if it is reasonable. Round to the nearest hundred. Two thousand five hundred plus three thousand four hundred is five thousand nine hundred. Eight thousand eight hundred seventy-seven is far from five thousand nine hundred, so Ziad made a mistake. The exact sum is five thousand eight hundred seventy-seven, which is close to the estimate.",
+        "ar": "هل الناتج معقول؟ زياد جمع ألفين وأربعمئة وستة وثمانين وثلاثة آلاف وثلاثمئة وواحدًا وتسعين. نقرّب لأقرب مئة. ألفان وخمسمئة زائد ثلاثة آلاف وأربعمئة يساوي خمسة آلاف وتسعمئة. العدد ثمانية آلاف وثمانمئة وسبعة وسبعون بعيد عن خمسة آلاف وتسعمئة، إذن أخطأ زياد. الناتج الصحيح خمسة آلاف وثمانمئة وسبعة وسبعون، وهو قريب من التقدير."
+      },
+      "visual": { "kind": "blocks", "n": 2486 }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": { "places": 4, "target": 7900 },
+      "text": {
+        "en": "Round each number to the nearest hundred: 5,610 and 2,280. Then add the rounded numbers.",
+        "ar": "قرّب كل عدد لأقرب مئة: 5610 و 2280، ثم اجمع العددين بعد التقريب."
+      },
+      "prompt": {
+        "en": "Build the estimate of 5,610 + 2,280.",
+        "ar": "كوِّن تقدير ناتج 5610 + 2280"
+      },
+      "say": {
+        "en": "Round each number to the nearest hundred: five thousand six hundred ten and two thousand two hundred eighty. Then add the rounded numbers and build the estimate.",
+        "ar": "قرّب كل عدد لأقرب مئة: خمسة آلاف وستمئة وعشرة، وألفان ومئتان وثمانون. ثم اجمع العددين بعد التقريب، وكوِّن التقدير."
+      }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Remember:**\n\nRound first, then add or subtract.\n\nThe digit to the right decides: 0-4 round down, 5-9 round up.\n\nIf an exact answer is far from the estimate, check your work again.",
+        "ar": "**تذكّر:**\n\nقرّب أولًا، ثم اجمع أو اطرح.\n\nالرقم على اليمين هو الذي يحدد: من 0 إلى 4 نقرّب لأسفل، ومن 5 إلى 9 نقرّب لأعلى.\n\nإذا كان الناتج الدقيق بعيدًا عن التقدير، راجع الحل."
+      },
+      "say": {
+        "en": "Remember. Round first, then add or subtract. The digit to the right decides: zero to four, round down; five to nine, round up. If an exact answer is far from the estimate, check your work again.",
+        "ar": "تذكّر. قرّب أولًا، ثم اجمع أو اطرح. الرقم على اليمين هو الذي يحدد: من صفر إلى أربعة نقرّب لأسفل، ومن خمسة إلى تسعة نقرّب لأعلى. إذا كان الناتج الدقيق بعيدًا عن التقدير، راجع الحل."
+      },
+      "visual": { "kind": "blocks", "n": 5000 }
+    }
+  ],
+  "quiz": [
+    {
+      "q": { "en": "Round 3,468 to the nearest hundred.", "ar": "قرّب 3468 لأقرب مئة." },
+      "options": {
+        "en": ["3,500", "3,400", "3,000", "3,470"],
+        "ar": ["3500", "3400", "3000", "3470"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "The tens digit is 6, which is 5 or more, so round up to 3,500. 3,470 is rounding to the nearest ten.",
+        "ar": "رقم العشرات 6، وهو 5 أو أكثر، فنقرّب لأعلى إلى 3500. أما 3470 فهو تقريب لأقرب عشرة."
+      },
+      "say": {
+        "en": "Round three thousand four hundred sixty-eight to the nearest hundred.",
+        "ar": "قرّب ثلاثة آلاف وأربعمئة وثمانية وستين لأقرب مئة."
+      }
+    },
+    {
+      "q": { "en": "Estimate 6,712 + 1,945 by rounding to the nearest thousand.", "ar": "قدّر ناتج 6712 + 1945 بالتقريب لأقرب ألف." },
+      "options": {
+        "en": ["9,000", "8,000", "8,657", "7,000"],
+        "ar": ["9000", "8000", "8657", "7000"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "6,712 → 7,000 and 1,945 → 2,000, so 7,000 + 2,000 = 9,000. 8,657 is the exact sum, not an estimate.",
+        "ar": "6712 تقريبًا 7000، و 1945 تقريبًا 2000، إذن 7000 + 2000 = 9000. أما 8657 فهو الناتج الدقيق وليس تقديرًا."
+      },
+      "say": {
+        "en": "Estimate six thousand seven hundred twelve plus one thousand nine hundred forty-five by rounding to the nearest thousand.",
+        "ar": "قدّر ناتج ستة آلاف وسبعمئة واثني عشر زائد ألف وتسعمئة وخمسة وأربعين بالتقريب لأقرب ألف."
+      }
+    },
+    {
+      "q": { "en": "Estimate 8,204 − 3,870 by rounding to the nearest thousand.", "ar": "قدّر ناتج 8204 − 3870 بالتقريب لأقرب ألف." },
+      "options": {
+        "en": ["4,000", "5,000", "4,334", "12,000"],
+        "ar": ["4000", "5000", "4334", "12000"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "8,204 → 8,000 and 3,870 → 4,000 (8 hundreds, round up). 8,000 − 4,000 = 4,000. 5,000 comes from rounding 3,870 down by mistake.",
+        "ar": "8204 تقريبًا 8000، و 3870 تقريبًا 4000 (رقم المئات 8 فنقرّب لأعلى). 8000 − 4000 = 4000. أما 5000 فتأتي من تقريب 3870 لأسفل خطأً."
+      },
+      "say": {
+        "en": "Estimate eight thousand two hundred four minus three thousand eight hundred seventy by rounding to the nearest thousand.",
+        "ar": "قدّر ناتج ثمانية آلاف ومئتين وأربعة ناقص ثلاثة آلاف وثمانمئة وسبعين بالتقريب لأقرب ألف."
+      }
+    },
+    {
+      "q": { "en": "Nour worked out 1,598 + 2,307 = 3,905. Is her answer reasonable?", "ar": "حسبت نور 1598 + 2307 = 3905. هل الناتج معقول؟" },
+      "options": {
+        "en": ["Yes, it is close to 3,900", "No, it should be about 4,900", "No, it should be about 2,900", "We cannot tell"],
+        "ar": ["نعم، إنه قريب من 3900", "لا، يجب أن يكون نحو 4900", "لا، يجب أن يكون نحو 2900", "لا يمكن أن نعرف"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "To the nearest hundred: 1,600 + 2,300 = 3,900. 3,905 is very close, so it is reasonable.",
+        "ar": "لأقرب مئة: 1600 + 2300 = 3900. والعدد 3905 قريب جدًّا منه، إذن الناتج معقول."
+      },
+      "say": {
+        "en": "Nour worked out one thousand five hundred ninety-eight plus two thousand three hundred seven equals three thousand nine hundred five. Is her answer reasonable?",
+        "ar": "حسبت نور ألفًا وخمسمئة وثمانية وتسعين زائد ألفين وثلاثمئة وسبعة فكان الناتج ثلاثة آلاف وتسعمئة وخمسة. هل الناتج معقول؟"
+      }
+    },
+    {
+      "q": { "en": "A bakery sold bread for 2,450 EGP on Saturday and 3,520 EGP on Sunday. About how much in all? (nearest hundred)", "ar": "باع مخبز خبزًا بمبلغ 2450 جنيهًا يوم السبت و 3520 جنيهًا يوم الأحد. كم المبلغ تقريبًا في المجموع؟ (لأقرب مئة)" },
+      "options": {
+        "en": ["about 6,000 EGP", "about 5,900 EGP", "about 5,000 EGP", "about 7,000 EGP"],
+        "ar": ["نحو 6000 جنيه", "نحو 5900 جنيه", "نحو 5000 جنيه", "نحو 7000 جنيه"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "2,450 has 5 tens, so it rounds up to 2,500. 3,520 → 3,500. 2,500 + 3,500 = 6,000. Rounding 2,450 down gives 5,900, which is a mistake.",
+        "ar": "في 2450 رقم العشرات 5 فنقرّب لأعلى إلى 2500، و 3520 تقريبًا 3500. 2500 + 3500 = 6000. وتقريب 2450 لأسفل يعطي 5900، وهذا خطأ."
+      },
+      "say": {
+        "en": "A bakery sold bread for two thousand four hundred fifty pounds on Saturday and three thousand five hundred twenty pounds on Sunday. About how much in all, to the nearest hundred?",
+        "ar": "باع مخبز خبزًا بمبلغ ألفين وأربعمئة وخمسين جنيهًا يوم السبت، وثلاثة آلاف وخمسمئة وعشرين جنيهًا يوم الأحد. كم المبلغ تقريبًا في المجموع لأقرب مئة؟"
+      }
+    },
+    {
+      "q": { "en": "Which number rounds to 5,000 (nearest thousand)?", "ar": "أي عدد يُقرَّب إلى 5000 (لأقرب ألف)؟" },
+      "options": {
+        "en": ["4,612", "4,388", "5,500", "5,731"],
+        "ar": ["4612", "4388", "5500", "5731"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "4,612 has 6 hundreds, so it rounds up to 5,000. 4,388 rounds to 4,000; 5,500 and 5,731 round to 6,000.",
+        "ar": "في 4612 رقم المئات 6 فنقرّب لأعلى إلى 5000. أما 4388 فيُقرَّب إلى 4000، و 5500 و 5731 يُقرَّبان إلى 6000."
+      },
+      "say": {
+        "en": "Which number rounds to five thousand, to the nearest thousand?",
+        "ar": "أي عدد يُقرَّب إلى خمسة آلاف لأقرب ألف؟ أربعة آلاف وستمئة واثنا عشر، أم أربعة آلاف وثلاثمئة وثمانية وثمانون، أم خمسة آلاف وخمسمئة، أم خمسة آلاف وسبعمئة وواحد وثلاثون؟"
+      }
+    },
+    {
+      "q": { "en": "Cairo to Alexandria is about 220 km. A bus has gone 138 km. About how far is left? (nearest ten)", "ar": "المسافة من القاهرة إلى الإسكندرية نحو 220 كم. قطع أتوبيس 138 كم. كم يتبقى تقريبًا؟ (لأقرب عشرة)" },
+      "options": {
+        "en": ["about 80 km", "about 90 km", "about 360 km", "about 100 km"],
+        "ar": ["نحو 80 كم", "نحو 90 كم", "نحو 360 كم", "نحو 100 كم"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "138 → 140, and 220 − 140 = 80. 90 comes from rounding 138 down to 130; 360 adds instead of subtracting.",
+        "ar": "138 تقريبًا 140، و 220 − 140 = 80. أما 90 فتأتي من تقريب 138 لأسفل إلى 130، و 360 جمعت بدلًا من الطرح."
+      },
+      "say": {
+        "en": "Cairo to Alexandria is about two hundred twenty kilometres. A bus has gone one hundred thirty-eight kilometres. About how far is left, to the nearest ten?",
+        "ar": "المسافة من القاهرة إلى الإسكندرية نحو مئتين وعشرين كيلومترًا. قطع أتوبيس مئة وثمانية وثلاثين كيلومترًا. كم يتبقى تقريبًا لأقرب عشرة؟"
+      }
+    }
+  ]
+}

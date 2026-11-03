@@ -1,0 +1,432 @@
+{
+  "id": "g4-math-frac-04",
+  "title": {
+    "en": "Adding and Subtracting Fractions",
+    "ar": "جمع الكسور وطرحها"
+  },
+  "objective": {
+    "en": "Add and subtract fractions with the same denominator, including word problems.",
+    "ar": "أن يجمع التلميذ ويطرح الكسور متحدة المقام، بما في ذلك المسائل اللفظية."
+  },
+  "refs": {
+    "egypt": [
+      "U9 · 9.1 L4-7"
+    ],
+    "ccss": [
+      "4.NF.B.3.a",
+      "4.NF.B.3.d"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "text": {
+        "en": "Karim eats [2/8] of a cake. Laila eats [3/8].\n\nThey are the same size pieces (eighths), so we just count them: 2 pieces + 3 pieces = 5 pieces.\n\n[2/8] + [3/8] = [5/8]",
+        "ar": "أكل كريم [2/8] كعكة، وأكلت ليلى [3/8].\n\nالقطع لها الحجم نفسه (أثمان)، فنعدّها فقط: 2 قطعة + 3 قطع = 5 قطع.\n\n[2/8] + [3/8] = [5/8]"
+      },
+      "say": {
+        "en": "Karim eats two eighths of a cake. Laila eats three eighths. The pieces are the same size, so we just count them. Two pieces plus three pieces is five pieces. Two eighths plus three eighths equals five eighths.",
+        "ar": "أكل كريم ثُمنين من كعكة، وأكلت ليلى ثلاثة أثمان. القطع لها الحجم نفسه، فنعدّها فقط. قطعتان وثلاث قطع تساوي خمس قطع. ثُمنان زائد ثلاثة أثمان يساوي خمسة أثمان."
+      },
+      "visual": {
+        "kind": "pies",
+        "emoji": "🎂",
+        "items": [
+          {
+            "f": [
+              2,
+              8
+            ]
+          },
+          {
+            "f": [
+              3,
+              8
+            ],
+            "color": "blue"
+          },
+          {
+            "f": [
+              5,
+              8
+            ]
+          }
+        ],
+        "ops": [
+          "+",
+          "="
+        ]
+      },
+      "check": {
+        "q": {
+          "en": "2 slices + 3 slices of eighths. How many eighths?",
+          "ar": "قطعتان + 3 قطع من الأثمان. كم ثُمنًا؟"
+        },
+        "options": {
+          "en": [
+            "[5/8]",
+            "[5/16]",
+            "[6/8]"
+          ],
+          "ar": [
+            "[5/8]",
+            "[5/16]",
+            "[6/8]"
+          ]
+        },
+        "answer": 0
+      }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "**The rule:** add or subtract the numerators. The denominator **stays the same**, because the size of the pieces does not change.",
+        "ar": "**القاعدة:** نجمع البسوط أو نطرحها، ويبقى المقام **كما هو** لأن حجم القطع لا يتغير."
+      },
+      "lines": {
+        "en": [
+          "[1/5] + [3/5] = [4/5]",
+          "[7/10] − [4/10] = [3/10]",
+          "Wrong: [1/5] + [3/5] = [4/10]. We never add the denominators!"
+        ],
+        "ar": [
+          "[1/5] + [3/5] = [4/5]",
+          "[7/10] − [4/10] = [3/10]",
+          "خطأ: [1/5] + [3/5] = [4/10]. لا نجمع المقامات أبدًا!"
+        ]
+      },
+      "say": {
+        "en": "The rule: add or subtract the numerators. The denominator stays the same, because the size of the pieces does not change. One fifth plus three fifths is four fifths. Seven tenths minus four tenths is three tenths. Never add the denominators!",
+        "ar": "القاعدة: نجمع البسوط أو نطرحها، ويبقى المقام كما هو لأن حجم القطع لا يتغير. خُمس زائد ثلاثة أخماس يساوي أربعة أخماس. سبعة أعشار ناقص أربعة أعشار يساوي ثلاثة أعشار. لا نجمع المقامات أبدًا!"
+      },
+      "visual": {
+        "kind": "bars",
+        "items": [
+          {
+            "f": [
+              1,
+              5
+            ]
+          },
+          {
+            "f": [
+              3,
+              5
+            ],
+            "color": "blue"
+          },
+          {
+            "f": [
+              4,
+              5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "fraction-shade",
+      "params": {
+        "parts": 6,
+        "target": 5
+      },
+      "text": {
+        "en": "Show the answer on the bar.",
+        "ar": "مثّل الناتج على الشريط."
+      },
+      "prompt": {
+        "en": "Shade the answer: [2/6] + [3/6] = ?",
+        "ar": "ظلّل الناتج: [2/6] + [3/6] = ؟"
+      },
+      "say": {
+        "en": "Shade the answer to two sixths plus three sixths.",
+        "ar": "ظلّل ناتج سُدسين زائد ثلاثة أسداس."
+      }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "**Word problem:** Dad buys [5/6] kg of koshary. The family eats [4/6] kg. How much is left?",
+        "ar": "**مسألة:** اشترى أبي [5/6] كجم كشري، وأكلت الأسرة [4/6] كجم. كم تبقّى؟"
+      },
+      "lines": {
+        "en": [
+          "\"Left\" means subtract.",
+          "[5/6] − [4/6] = [1/6]",
+          "[1/6] kg of koshary is left."
+        ],
+        "ar": [
+          "كلمة «تبقّى» تعني الطرح.",
+          "[5/6] − [4/6] = [1/6]",
+          "تبقّى [1/6] كجم من الكشري."
+        ]
+      },
+      "say": {
+        "en": "Word problem. Dad buys five sixths of a kilogram of koshary. The family eats four sixths. How much is left? Left means subtract. Five sixths minus four sixths is one sixth. One sixth of a kilogram is left.",
+        "ar": "مسألة. اشترى أبي خمسة أسداس كيلوجرام كشري، وأكلت الأسرة أربعة أسداس. كم تبقّى؟ كلمة تبقّى تعني الطرح. خمسة أسداس ناقص أربعة أسداس يساوي سُدسًا. إذن تبقّى سُدس كيلوجرام."
+      },
+      "visual": {
+        "kind": "pies",
+        "emoji": "🍲",
+        "items": [
+          {
+            "f": [
+              5,
+              6
+            ]
+          },
+          {
+            "f": [
+              4,
+              6
+            ],
+            "color": "blue"
+          },
+          {
+            "f": [
+              1,
+              6
+            ]
+          }
+        ],
+        "ops": [
+          "−",
+          "="
+        ]
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "number-line",
+      "params": {
+        "min": 0,
+        "max": 1,
+        "divisions": 8,
+        "target": [
+          6,
+          8
+        ]
+      },
+      "text": {
+        "en": "Start at [1/8] and jump forward [5/8].",
+        "ar": "ابدأ من [1/8] واقفز للأمام [5/8]."
+      },
+      "prompt": {
+        "en": "Where do you land? [1/8] + [5/8] = ?",
+        "ar": "أين تصل؟ [1/8] + [5/8] = ؟"
+      },
+      "say": {
+        "en": "Start at one eighth and jump forward five eighths. Where do you land?",
+        "ar": "ابدأ من ثُمن واقفز للأمام خمسة أثمان. أين تصل؟"
+      }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Remember:** same denominator? Add or subtract the tops. Keep the bottom.",
+        "ar": "**تذكّر:** المقامات متساوية؟ اجمع أو اطرح البسوط، واترك المقام كما هو."
+      },
+      "visual": {
+        "kind": "bars",
+        "items": [
+          {
+            "f": [
+              2,
+              6
+            ]
+          },
+          {
+            "f": [
+              3,
+              6
+            ],
+            "color": "blue"
+          },
+          {
+            "f": [
+              5,
+              6
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "[3/7] + [2/7] = ?",
+        "ar": "[3/7] + [2/7] = ؟"
+      },
+      "options": {
+        "en": [
+          "[5/7]",
+          "[5/14]",
+          "[6/7]",
+          "[1/7]"
+        ],
+        "ar": [
+          "[5/7]",
+          "[5/14]",
+          "[6/7]",
+          "[1/7]"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Add the tops: 3 + 2 = 5. Keep sevenths. [5/14] adds the denominators, which is wrong.",
+        "ar": "نجمع البسوط: 3 + 2 = 5، ويبقى المقام 7. أما [5/14] فجمع المقامات وهذا خطأ."
+      },
+      "say": {
+        "en": "Three sevenths plus two sevenths equals?",
+        "ar": "ثلاثة أسباع زائد سُبعين يساوي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "[9/10] − [6/10] = ?",
+        "ar": "[9/10] − [6/10] = ؟"
+      },
+      "options": {
+        "en": [
+          "[3/10]",
+          "[3/0]",
+          "[15/10]",
+          "[3/20]"
+        ],
+        "ar": [
+          "[3/10]",
+          "[3/0]",
+          "[15/10]",
+          "[3/20]"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "9 − 6 = 3 tenths. The denominator stays 10.",
+        "ar": "9 − 6 = 3 أعشار، ويبقى المقام 10."
+      },
+      "say": {
+        "en": "Nine tenths minus six tenths equals?",
+        "ar": "تسعة أعشار ناقص ستة أعشار يساوي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Mariam reads [2/5] of a story on Sunday and [2/5] on Monday. How much did she read?",
+        "ar": "قرأت مريم [2/5] قصة يوم الأحد و [2/5] يوم الاثنين. كم قرأت؟"
+      },
+      "options": {
+        "en": [
+          "[4/5]",
+          "[4/10]",
+          "[2/5]",
+          "[1/5]"
+        ],
+        "ar": [
+          "[4/5]",
+          "[4/10]",
+          "[2/5]",
+          "[1/5]"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "2 fifths + 2 fifths = 4 fifths.",
+        "ar": "خُمسان + خُمسان = 4 أخماس."
+      },
+      "say": {
+        "en": "Mariam reads two fifths of a story on Sunday and two fifths on Monday. How much did she read?",
+        "ar": "قرأت مريم خُمسي قصة يوم الأحد، وخُمسين يوم الاثنين. كم قرأت؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A bottle has [7/8] litre of juice. Ahmed drinks [3/8] litre. How much is left?",
+        "ar": "زجاجة بها [7/8] لتر عصير. شرب أحمد [3/8] لتر. كم تبقّى؟"
+      },
+      "options": {
+        "en": [
+          "[4/8]",
+          "[10/8]",
+          "[4/16]",
+          "[4/0]"
+        ],
+        "ar": [
+          "[4/8]",
+          "[10/8]",
+          "[4/16]",
+          "[4/0]"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "\"Left\" means subtract: 7 − 3 = 4 eighths. That is also [1/2] litre.",
+        "ar": "«تبقّى» تعني الطرح: 7 − 3 = 4 أثمان، أي نصف لتر."
+      },
+      "say": {
+        "en": "A bottle has seven eighths of a litre of juice. Ahmed drinks three eighths. How much is left?",
+        "ar": "زجاجة بها سبعة أثمان لتر عصير. شرب أحمد ثلاثة أثمان. كم تبقّى؟"
+      }
+    },
+    {
+      "q": {
+        "en": "[1/4] + [1/4] + [1/4] + [1/4] = ?",
+        "ar": "[1/4] + [1/4] + [1/4] + [1/4] = ؟"
+      },
+      "options": {
+        "en": [
+          "1 whole",
+          "[4/16]",
+          "[1/16]",
+          "[1/4]"
+        ],
+        "ar": [
+          "واحد صحيح",
+          "[4/16]",
+          "[1/16]",
+          "[1/4]"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "4 fourths = [4/4] = 1 whole.",
+        "ar": "4 أرباع = [4/4] = 1 صحيح."
+      },
+      "say": {
+        "en": "One fourth plus one fourth plus one fourth plus one fourth equals?",
+        "ar": "ربع زائد ربع زائد ربع زائد ربع يساوي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "[5/6] − [?/6] = [2/6]. What is the missing number?",
+        "ar": "[5/6] − [؟/6] = [2/6]. ما العدد المجهول؟"
+      },
+      "options": {
+        "en": [
+          "3",
+          "7",
+          "2",
+          "4"
+        ],
+        "ar": [
+          "3",
+          "7",
+          "2",
+          "4"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "5 − 3 = 2, so 3 sixths were taken away.",
+        "ar": "5 − 3 = 2، إذن طرحنا 3 أسداس."
+      },
+      "say": {
+        "en": "Five sixths minus what over six equals two sixths?",
+        "ar": "خمسة أسداس ناقص كم على ستة يساوي سُدسين؟"
+      }
+    }
+  ]
+}

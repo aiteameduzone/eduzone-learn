@@ -1,0 +1,427 @@
+{
+  "id": "g4-math-u01-05",
+  "title": {
+    "en": "Rounding Numbers",
+    "ar": "تقريب الأعداد"
+  },
+  "objective": {
+    "en": "Round multi-digit numbers to the nearest ten, hundred, thousand, ten thousand and hundred thousand, and judge which estimate is closer.",
+    "ar": "أن يقرّب التلميذ الأعداد لأقرب عشرة ومائة وألف وعشرة آلاف ومائة ألف، ويحكم أي التقديرين أقرب."
+  },
+  "refs": {
+    "egypt": [
+      "U1 · 1.2 Rounding"
+    ],
+    "ccss": [
+      "4.NBT.A.3"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "blocks",
+        "n": 46
+      },
+      "check": {
+        "q": {
+          "en": "Is 46 closer to 40 or to 50?",
+          "ar": "هل العدد 46 أقرب إلى 40 أم إلى 50؟"
+        },
+        "options": {
+          "en": [
+            "50",
+            "40",
+            "Exactly in the middle"
+          ],
+          "ar": [
+            "50",
+            "40",
+            "في المنتصف تمامًا"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "**Rounding** means finding the nearest friendly number.\n\n46 is between 40 and 50. It is 6 away from 40 but only 4 away from 50.\n\nSo 46 rounded to the nearest ten is **50**.",
+        "ar": "**التقريب** يعني إيجاد أقرب عدد سهل.\n\nالعدد 46 بين 40 و 50. بُعده عن 40 هو 6، وبُعده عن 50 هو 4 فقط.\n\nإذن 46 مقرّبًا لأقرب عشرة هو **50**."
+      },
+      "say": {
+        "en": "Rounding means finding the nearest friendly number. Forty-six is between forty and fifty. It is six away from forty but only four away from fifty. So forty-six rounded to the nearest ten is fifty.",
+        "ar": "التقريب يعني إيجاد أقرب عدد سهل. العدد ستة وأربعون بين الأربعين والخمسين. بُعده عن الأربعين ستة، وبُعده عن الخمسين أربعة فقط. إذن ستة وأربعون مقرّبًا لأقرب عشرة هو خمسون."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "blocks",
+        "n": 4637
+      },
+      "text": {
+        "en": "**The rounding rule.** Look at the digit just to the **right** of the rounding place.\n\n0, 1, 2, 3, 4 → keep the digit (round down).\n\n5, 6, 7, 8, 9 → add 1 (round up).\n\nAll places to the right become 0.",
+        "ar": "**قاعدة التقريب.** انظر إلى الرقم الذي على **يمين** منزلة التقريب مباشرة.\n\n0 أو 1 أو 2 أو 3 أو 4 ← يبقى الرقم كما هو.\n\n5 أو 6 أو 7 أو 8 أو 9 ← نزيد الرقم 1.\n\nوكل المنازل التي على اليمين تصبح أصفارًا."
+      },
+      "lines": {
+        "en": [
+          "Round 4,637 to the nearest hundred.",
+          "Hundreds digit: 6. Digit to its right: 3",
+          "3 < 5, so 6 stays",
+          "4,637 ≈ 4,600"
+        ],
+        "ar": [
+          "قرّب 4,637 لأقرب مائة.",
+          "رقم المئات: 6. الرقم على يمينه: 3",
+          "3 < 5، إذن يبقى 6",
+          "4,637 ≈ 4,600"
+        ]
+      },
+      "say": {
+        "en": "The rounding rule. Look at the digit just to the right of the rounding place. If it is zero, one, two, three or four, keep the digit. If it is five, six, seven, eight or nine, add one. All places to the right become zero. Round four thousand six hundred thirty-seven to the nearest hundred. The hundreds digit is six. The digit to its right is three, which is less than five, so six stays. The answer is four thousand six hundred.",
+        "ar": "قاعدة التقريب. انظر إلى الرقم الذي على يمين منزلة التقريب مباشرة. إذا كان صفرًا أو واحدًا أو اثنين أو ثلاثة أو أربعة يبقى الرقم كما هو. وإذا كان خمسة أو ستة أو سبعة أو ثمانية أو تسعة نزيد الرقم واحدًا. وكل المنازل التي على اليمين تصبح أصفارًا. قرّب العدد أربعة آلاف وستمائة وسبعة وثلاثين لأقرب مائة. رقم المئات ستة، والرقم الذي على يمينه ثلاثة وهو أصغر من خمسة، فيبقى الستة كما هو. الناتج أربعة آلاف وستمائة."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "number-line",
+      "params": {
+        "min": 4,
+        "max": 5,
+        "divisions": 10,
+        "scale": 1000,
+        "target": [
+          46,
+          10
+        ]
+      },
+      "text": {
+        "en": "Each small step on this line is 100.",
+        "ar": "كل خطوة صغيرة على هذا الخط تساوي 100."
+      },
+      "prompt": {
+        "en": "Put a point at 4,637 rounded to the nearest hundred.",
+        "ar": "ضع نقطة عند العدد 4,637 مقرّبًا لأقرب مائة."
+      },
+      "say": {
+        "en": "Each small step on this line is one hundred. Put a point at four thousand six hundred thirty-seven rounded to the nearest hundred.",
+        "ar": "كل خطوة صغيرة على هذا الخط تساوي مائة. ضع نقطة عند العدد أربعة آلاف وستمائة وسبعة وثلاثين مقرّبًا لأقرب مائة."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "blocks",
+        "n": 4637
+      },
+      "check": {
+        "q": {
+          "en": "Round 4,637 to the nearest thousand.",
+          "ar": "قرّب 4,637 لأقرب ألف."
+        },
+        "options": {
+          "en": [
+            "5,000",
+            "4,000",
+            "4,600"
+          ],
+          "ar": [
+            "5,000",
+            "4,000",
+            "4,600"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "**Same number, nearest thousand.** Now the rounding place is the thousands, so we look at the hundreds digit.",
+        "ar": "**العدد نفسه لأقرب ألف.** منزلة التقريب الآن هي الآلاف، فننظر إلى رقم المئات."
+      },
+      "lines": {
+        "en": [
+          "Thousands digit: 4. Digit to its right: 6",
+          "6 ≥ 5, so 4 becomes 5",
+          "4,637 ≈ 5,000"
+        ],
+        "ar": [
+          "رقم الآلاف: 4. الرقم على يمينه: 6",
+          "6 ≥ 5، إذن يصبح 4 هو 5",
+          "4,637 ≈ 5,000"
+        ]
+      },
+      "say": {
+        "en": "Same number, nearest thousand. Now the rounding place is the thousands, so we look at the hundreds digit. Four thousand six hundred thirty-seven: the thousands digit is four, and the hundreds digit is six. Six is five or more, so four becomes five. The answer is five thousand.",
+        "ar": "العدد نفسه لأقرب ألف. منزلة التقريب الآن هي الآلاف، فننظر إلى رقم المئات. في العدد أربعة آلاف وستمائة وسبعة وثلاثين رقم الآلاف أربعة، ورقم المئات ستة. الستة أكبر من الخمسة أو تساويها، فتصبح الأربعة خمسة. الناتج خمسة آلاف."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "number-line",
+      "params": {
+        "min": 4,
+        "max": 5,
+        "divisions": 10,
+        "scale": 1000,
+        "target": [
+          40,
+          10
+        ]
+      },
+      "text": {
+        "en": "Find 4,250 on the line first, then decide: 4,000 or 5,000?",
+        "ar": "حدّد مكان 4,250 على الخط أولًا، ثم قرّر: 4,000 أم 5,000؟"
+      },
+      "prompt": {
+        "en": "Put a point at 4,250 rounded to the nearest thousand.",
+        "ar": "ضع نقطة عند العدد 4,250 مقرّبًا لأقرب ألف."
+      },
+      "say": {
+        "en": "Find four thousand two hundred fifty on the line, then put a point at it rounded to the nearest thousand.",
+        "ar": "حدّد مكان أربعة آلاف ومئتين وخمسين على الخط، ثم ضع نقطة عنده مقرّبًا لأقرب ألف."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "blocks",
+        "n": 7850
+      },
+      "text": {
+        "en": "**Which estimate is closer?** Round 7,850 two ways and see which answer is nearer to the real number.",
+        "ar": "**أي التقديرين أقرب؟** قرّب 7,850 بطريقتين، وانظر أي الناتجين أقرب إلى العدد الحقيقي."
+      },
+      "lines": {
+        "en": [
+          "Nearest hundred: 7,850 ≈ 7,900 (50 away)",
+          "Nearest thousand: 7,850 ≈ 8,000 (150 away)",
+          "7,900 is the closer estimate"
+        ],
+        "ar": [
+          "لأقرب مائة: 7,850 ≈ 7,900 (الفرق 50)",
+          "لأقرب ألف: 7,850 ≈ 8,000 (الفرق 150)",
+          "7,900 هو التقدير الأقرب"
+        ]
+      },
+      "say": {
+        "en": "Which estimate is closer? Round seven thousand eight hundred fifty two ways. To the nearest hundred: the tens digit is five, so eight becomes nine, giving seven thousand nine hundred. To the nearest thousand: the hundreds digit is eight, so seven becomes eight, giving eight thousand. Seven thousand nine hundred is only fifty away, but eight thousand is one hundred fifty away. Rounding to a smaller place gives a closer estimate.",
+        "ar": "أي التقديرين أقرب؟ قرّب العدد سبعة آلاف وثمانمائة وخمسين بطريقتين. لأقرب مائة: رقم العشرات خمسة، فتصبح الثمانية تسعة، والناتج سبعة آلاف وتسعمائة. ولأقرب ألف: رقم المئات ثمانية، فتصبح السبعة ثمانية، والناتج ثمانية آلاف. سبعة آلاف وتسعمائة تبعد خمسين فقط، أما ثمانية آلاف فتبعد مائة وخمسين. التقريب لمنزلة أصغر يعطي تقديرًا أقرب."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "blocks",
+        "n": 5
+      },
+      "text": {
+        "en": "**Remember:**\n\n1. Find the rounding place.\n\n2. Look at the digit on its right.\n\n3. 5 or more → round up. Less than 5 → keep it.\n\n4. Change every digit to the right into 0.",
+        "ar": "**تذكّر:**\n\n1. حدّد منزلة التقريب.\n\n2. انظر إلى الرقم الذي على يمينها.\n\n3. 5 أو أكثر ← نزيد 1. أقل من 5 ← يبقى كما هو.\n\n4. حوّل كل الأرقام التي على اليمين إلى أصفار."
+      },
+      "say": {
+        "en": "Remember. One: find the rounding place. Two: look at the digit on its right. Three: five or more, round up; less than five, keep it. Four: change every digit to the right into zero.",
+        "ar": "تذكّر. أولًا: حدّد منزلة التقريب. ثانيًا: انظر إلى الرقم الذي على يمينها. ثالثًا: إذا كان خمسة أو أكثر نزيد واحدًا، وإذا كان أقل من خمسة يبقى كما هو. رابعًا: حوّل كل الأرقام التي على اليمين إلى أصفار."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "Round 3,482 to the nearest hundred.",
+        "ar": "قرّب 3,482 لأقرب مائة."
+      },
+      "options": {
+        "en": [
+          "3,500",
+          "3,400",
+          "3,480",
+          "4,000"
+        ],
+        "ar": [
+          "3,500",
+          "3,400",
+          "3,480",
+          "4,000"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Hundreds digit 4, the digit to its right is 8 (5 or more), so 4 becomes 5: 3,500.",
+        "ar": "رقم المئات 4، والرقم على يمينه 8 (خمسة أو أكثر)، إذن يصبح 4 هو 5: 3,500."
+      },
+      "say": {
+        "en": "Round three thousand four hundred eighty-two to the nearest hundred.",
+        "ar": "قرّب العدد ثلاثة آلاف وأربعمائة واثنين وثمانين لأقرب مائة."
+      }
+    },
+    {
+      "q": {
+        "en": "Round 61,749 to the nearest thousand.",
+        "ar": "قرّب 61,749 لأقرب ألف."
+      },
+      "options": {
+        "en": [
+          "62,000",
+          "61,000",
+          "61,700",
+          "60,000"
+        ],
+        "ar": [
+          "62,000",
+          "61,000",
+          "61,700",
+          "60,000"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Thousands digit 1, the hundreds digit is 7 (5 or more), so 1 becomes 2: 62,000.",
+        "ar": "رقم الآلاف 1، ورقم المئات 7 (خمسة أو أكثر)، إذن يصبح 1 هو 2: 62,000."
+      },
+      "say": {
+        "en": "Round sixty-one thousand seven hundred forty-nine to the nearest thousand.",
+        "ar": "قرّب العدد واحدًا وستين ألفًا وسبعمائة وتسعة وأربعين لأقرب ألف."
+      }
+    },
+    {
+      "q": {
+        "en": "Round 845,210 to the nearest ten thousand.",
+        "ar": "قرّب 845,210 لأقرب عشرة آلاف."
+      },
+      "options": {
+        "en": [
+          "850,000",
+          "840,000",
+          "845,000",
+          "800,000"
+        ],
+        "ar": [
+          "850,000",
+          "840,000",
+          "845,000",
+          "800,000"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Ten thousands digit 4, the thousands digit is 5, so 4 becomes 5: 850,000. 845,000 is only rounded to the thousands.",
+        "ar": "رقم عشرات الألوف 4، ورقم الآلاف 5، إذن يصبح 4 هو 5: 850,000. أما 845,000 فهو تقريب لأقرب ألف فقط."
+      },
+      "say": {
+        "en": "Round eight hundred forty-five thousand two hundred ten to the nearest ten thousand.",
+        "ar": "قرّب العدد ثمانمائة وخمسة وأربعين ألفًا ومئتين وعشرة لأقرب عشرة آلاف."
+      }
+    },
+    {
+      "q": {
+        "en": "A phone costs 8,750 EGP. What is the price rounded to the nearest thousand pounds?",
+        "ar": "سعر هاتف 8,750 جنيهًا. ما السعر مقرّبًا لأقرب ألف جنيه؟"
+      },
+      "options": {
+        "en": [
+          "9,000 EGP",
+          "8,000 EGP",
+          "8,800 EGP",
+          "8,700 EGP"
+        ],
+        "ar": [
+          "9,000 جنيه",
+          "8,000 جنيه",
+          "8,800 جنيه",
+          "8,700 جنيه"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Thousands digit 8, the hundreds digit is 7, so 8 becomes 9: 9,000.",
+        "ar": "رقم الآلاف 8، ورقم المئات 7، إذن يصبح 8 هو 9: 9,000."
+      },
+      "say": {
+        "en": "A phone costs eight thousand seven hundred fifty pounds. What is the price rounded to the nearest thousand pounds?",
+        "ar": "سعر هاتف ثمانية آلاف وسبعمائة وخمسون جنيهًا. ما السعر مقرّبًا لأقرب ألف جنيه؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which number rounds to 600 when rounded to the nearest hundred?",
+        "ar": "أي عدد يصبح 600 عند تقريبه لأقرب مائة؟"
+      },
+      "options": {
+        "en": [
+          "649",
+          "651",
+          "549",
+          "700"
+        ],
+        "ar": [
+          "649",
+          "651",
+          "549",
+          "700"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "649: tens digit 4 < 5, so it stays 600. 651 rounds to 700 and 549 rounds to 500.",
+        "ar": "649: رقم العشرات 4 < 5، فيبقى 600. أما 651 فيصبح 700، و 549 يصبح 500."
+      },
+      "say": {
+        "en": "Which number rounds to six hundred when rounded to the nearest hundred?",
+        "ar": "أي عدد يصبح ستمائة عند تقريبه لأقرب مائة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "68,412 people watched a match. Which estimate is closer: 68,000 or 70,000?",
+        "ar": "شاهد مباراةً 68,412 مشجعًا. أي التقديرين أقرب: 68,000 أم 70,000؟"
+      },
+      "options": {
+        "en": [
+          "68,000",
+          "70,000",
+          "Both are equally close"
+        ],
+        "ar": [
+          "68,000",
+          "70,000",
+          "كلاهما بالقرب نفسه"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "68,412 − 68,000 = 412, but 70,000 − 68,412 = 1,588. Rounding to the thousands is closer.",
+        "ar": "68,412 − 68,000 = 412، أما 70,000 − 68,412 = 1,588. التقريب لأقرب ألف أقرب."
+      },
+      "say": {
+        "en": "Sixty-eight thousand four hundred twelve people watched a match. Which estimate is closer: sixty-eight thousand or seventy thousand?",
+        "ar": "شاهد مباراةً ثمانية وستون ألفًا وأربعمائة واثنا عشر مشجعًا. أي التقديرين أقرب: ثمانية وستون ألفًا أم سبعون ألفًا؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Round 999,500 to the nearest thousand.",
+        "ar": "قرّب 999,500 لأقرب ألف."
+      },
+      "options": {
+        "en": [
+          "1,000,000",
+          "999,000",
+          "990,000",
+          "100,000"
+        ],
+        "ar": [
+          "1,000,000",
+          "999,000",
+          "990,000",
+          "100,000"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "The hundreds digit is 5, so we round up. 999 thousands + 1 thousand = 1,000 thousands = 1,000,000.",
+        "ar": "رقم المئات 5، إذن نقرّب لأعلى. 999 ألفًا + 1 ألف = 1,000 ألف = 1,000,000."
+      },
+      "say": {
+        "en": "Round nine hundred ninety-nine thousand five hundred to the nearest thousand.",
+        "ar": "قرّب العدد تسعمائة وتسعة وتسعين ألفًا وخمسمائة لأقرب ألف."
+      }
+    }
+  ]
+}

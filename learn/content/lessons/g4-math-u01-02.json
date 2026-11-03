@@ -1,0 +1,393 @@
+{
+  "id": "g4-math-u01-02",
+  "title": {
+    "en": "Each Place Is Ten Times Bigger",
+    "ar": "كل منزلة عشرة أمثال التي على يمينها"
+  },
+  "objective": {
+    "en": "Recognise that a digit in one place is worth ten times what it is worth in the place to its right.",
+    "ar": "أن يدرك التلميذ أن قيمة الرقم في أي منزلة تساوي عشرة أمثال قيمته في المنزلة التي على يمينها."
+  },
+  "refs": {
+    "egypt": [
+      "U1 · 1.1 Changing place values (×10 pattern)"
+    ],
+    "ccss": [
+      "4.NBT.A.1"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "blocks",
+        "n": 1000
+      },
+      "check": {
+        "q": {
+          "en": "How many hundreds make one thousand?",
+          "ar": "كم مائة تكوّن ألفًا واحدًا؟"
+        },
+        "options": {
+          "en": [
+            "10",
+            "100",
+            "1,000"
+          ],
+          "ar": [
+            "10",
+            "100",
+            "1,000"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "10 ones make 1 ten.\n\n10 tens make 1 hundred.\n\n10 hundreds make 1 thousand.\n\nEvery step to the **left** is **10 times** bigger.",
+        "ar": "10 آحاد = 1 عشرة.\n\n10 عشرات = 1 مائة.\n\n10 مئات = 1 ألف.\n\nكل خطوة إلى **اليسار** تعني **عشرة أمثال**."
+      },
+      "say": {
+        "en": "Ten ones make one ten. Ten tens make one hundred. Ten hundreds make one thousand. Every step to the left is ten times bigger.",
+        "ar": "عشرة آحاد تساوي عشرة واحدة. وعشر عشرات تساوي مائة. وعشر مئات تساوي ألفًا. كل خطوة إلى اليسار تعني عشرة أمثال."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "blocks",
+        "n": 444
+      },
+      "text": {
+        "en": "**Watch the digit 4 move left.** Each move multiplies its value by 10.",
+        "ar": "**تابع الرقم 4 وهو ينتقل إلى اليسار.** كل انتقال يضرب قيمته في 10."
+      },
+      "lines": {
+        "en": [
+          "4 ones = 4",
+          "4 tens = 40 = 4 × 10",
+          "4 hundreds = 400 = 40 × 10",
+          "4 thousands = 4,000 = 400 × 10"
+        ],
+        "ar": [
+          "4 آحاد = 4",
+          "4 عشرات = 40 = 4 × 10",
+          "4 مئات = 400 = 40 × 10",
+          "4 آلاف = 4,000 = 400 × 10"
+        ]
+      },
+      "say": {
+        "en": "Watch the digit four move left. Each move multiplies its value by ten. Four ones is four. Four tens is forty, which is four times ten. Four hundreds is four hundred, which is forty times ten. Four thousands is four thousand, which is four hundred times ten.",
+        "ar": "تابع الرقم أربعة وهو ينتقل إلى اليسار. كل انتقال يضرب قيمته في عشرة. أربعة آحاد تساوي أربعة. وأربع عشرات تساوي أربعين، أي أربعة في عشرة. وأربع مئات تساوي أربعمائة، أي أربعين في عشرة. وأربعة آلاف تساوي أربعمائة في عشرة."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "blocks",
+        "n": 3330
+      },
+      "check": {
+        "q": {
+          "en": "The 3 in the thousands is how many times the 3 in the hundreds?",
+          "ar": "الـ 3 في منزلة الآلاف تساوي كم مثلًا من الـ 3 في منزلة المئات؟"
+        },
+        "options": {
+          "en": [
+            "10 times",
+            "100 times",
+            "The same"
+          ],
+          "ar": [
+            "10 أمثال",
+            "100 مثل",
+            "القيمة نفسها"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "**Compare two 3s.** In 3,330 the 3 in the thousands is worth 3,000 and the 3 in the hundreds is worth 300.",
+        "ar": "**قارن بين رقمين 3.** في العدد 3,330 قيمة الـ 3 في منزلة الآلاف 3,000، وقيمة الـ 3 في منزلة المئات 300."
+      },
+      "lines": {
+        "en": [
+          "300 × 10 = 3,000"
+        ],
+        "ar": [
+          "300 × 10 = 3,000"
+        ]
+      },
+      "say": {
+        "en": "Compare two threes. In three thousand three hundred thirty, the three in the thousands place is worth three thousand, and the three in the hundreds place is worth three hundred. Three hundred times ten is three thousand, so it is ten times as much.",
+        "ar": "قارن بين رقمين ثلاثة. في العدد ثلاثة آلاف وثلاثمائة وثلاثين، قيمة الثلاثة في منزلة الآلاف ثلاثة آلاف، وقيمة الثلاثة في منزلة المئات ثلاثمائة. ثلاثمائة في عشرة تساوي ثلاثة آلاف، إذن هي عشرة أمثالها."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": {
+        "places": 5,
+        "target": 70000
+      },
+      "text": {
+        "en": "The 7 in 7,000 moves one place to the left. What is it worth now?",
+        "ar": "الرقم 7 في العدد 7,000 ينتقل منزلة واحدة إلى اليسار. كم تصبح قيمته؟"
+      },
+      "prompt": {
+        "en": "Build 10 × 7,000.",
+        "ar": "كوّن العدد 10 × 7,000."
+      },
+      "say": {
+        "en": "The seven in seven thousand moves one place to the left. Build ten times seven thousand.",
+        "ar": "الرقم سبعة في سبعة آلاف ينتقل منزلة واحدة إلى اليسار. كوّن العدد عشرة في سبعة آلاف."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "blocks",
+        "n": 5050
+      },
+      "text": {
+        "en": "**Two places apart = 100 times.** In 5,050 the 5 in the thousands and the 5 in the tens are two places apart.",
+        "ar": "**بينهما منزلتان = 100 مثل.** في العدد 5,050 الرقم 5 في منزلة الآلاف والرقم 5 في منزلة العشرات بينهما منزلتان."
+      },
+      "lines": {
+        "en": [
+          "50 × 10 = 500",
+          "500 × 10 = 5,000",
+          "10 × 10 = 100, so 50 × 100 = 5,000"
+        ],
+        "ar": [
+          "50 × 10 = 500",
+          "500 × 10 = 5,000",
+          "10 × 10 = 100، إذن 50 × 100 = 5,000"
+        ]
+      },
+      "say": {
+        "en": "Two places apart means one hundred times. In five thousand fifty, the five in the thousands is worth five thousand and the five in the tens is worth fifty. Fifty times ten is five hundred, and five hundred times ten is five thousand. Ten times ten is one hundred, so five thousand is one hundred times fifty.",
+        "ar": "بينهما منزلتان يعني مائة مثل. في العدد خمسة آلاف وخمسين، قيمة الخمسة في منزلة الآلاف خمسة آلاف، وقيمة الخمسة في منزلة العشرات خمسون. خمسون في عشرة تساوي خمسمائة، وخمسمائة في عشرة تساوي خمسة آلاف. وعشرة في عشرة تساوي مائة، إذن خمسة آلاف تساوي مائة مثل الخمسين."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "blocks",
+        "n": 100
+      },
+      "text": {
+        "en": "**Remember:**\n\nOne place to the **left** → **× 10**.\n\nOne place to the **right** → **÷ 10**.\n\nTwo places to the left → **× 100**.",
+        "ar": "**تذكّر:**\n\nمنزلة واحدة إلى **اليسار** ← **× 10**.\n\nمنزلة واحدة إلى **اليمين** ← **÷ 10**.\n\nمنزلتان إلى اليسار ← **× 100**."
+      },
+      "say": {
+        "en": "Remember. One place to the left means times ten. One place to the right means divided by ten. Two places to the left means times one hundred.",
+        "ar": "تذكّر. الانتقال منزلة واحدة إلى اليسار يعني الضرب في عشرة. والانتقال منزلة واحدة إلى اليمين يعني القسمة على عشرة. والانتقال منزلتين إلى اليسار يعني الضرب في مائة."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "In 77, the 7 in the tens is how many times the 7 in the ones?",
+        "ar": "في العدد 77، الـ 7 في منزلة العشرات تساوي كم مثلًا من الـ 7 في منزلة الآحاد؟"
+      },
+      "options": {
+        "en": [
+          "10 times",
+          "7 times",
+          "70 times",
+          "100 times"
+        ],
+        "ar": [
+          "10 أمثال",
+          "7 أمثال",
+          "70 مثلًا",
+          "100 مثل"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "70 is 10 times 7. One place to the left is always 10 times.",
+        "ar": "70 تساوي 10 أمثال 7. الانتقال منزلة واحدة إلى اليسار دائمًا يعني 10 أمثال."
+      },
+      "say": {
+        "en": "In seventy-seven, the seven in the tens is how many times the seven in the ones?",
+        "ar": "في العدد سبعة وسبعين، السبعة في منزلة العشرات تساوي كم مثلًا من السبعة في منزلة الآحاد؟"
+      }
+    },
+    {
+      "q": {
+        "en": "What is 10 × 600?",
+        "ar": "ما ناتج 10 × 600؟"
+      },
+      "options": {
+        "en": [
+          "6,000",
+          "600",
+          "60,000",
+          "60"
+        ],
+        "ar": [
+          "6,000",
+          "600",
+          "60,000",
+          "60"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "6 hundreds move one place left and become 6 thousands: 6,000.",
+        "ar": "6 مئات تنتقل منزلة إلى اليسار فتصبح 6 آلاف: 6,000."
+      },
+      "say": {
+        "en": "What is ten times six hundred?",
+        "ar": "ما ناتج عشرة في ستمائة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "In 2,200, the 2 in the thousands is how many times the 2 in the hundreds?",
+        "ar": "في العدد 2,200، الـ 2 في منزلة الآلاف تساوي كم مثلًا من الـ 2 في منزلة المئات؟"
+      },
+      "options": {
+        "en": [
+          "10 times",
+          "100 times",
+          "2 times",
+          "1,000 times"
+        ],
+        "ar": [
+          "10 أمثال",
+          "100 مثل",
+          "مثلان",
+          "1,000 مثل"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "2,000 = 200 × 10. The places are next to each other.",
+        "ar": "2,000 = 200 × 10. المنزلتان متجاورتان."
+      },
+      "say": {
+        "en": "In two thousand two hundred, the two in the thousands is how many times the two in the hundreds?",
+        "ar": "في العدد ألفين ومئتين، الاثنان في منزلة الآلاف تساوي كم مثلًا من الاثنين في منزلة المئات؟"
+      }
+    },
+    {
+      "q": {
+        "en": "In 8,080, the 8 in the thousands is how many times the 8 in the tens?",
+        "ar": "في العدد 8,080، الـ 8 في منزلة الآلاف تساوي كم مثلًا من الـ 8 في منزلة العشرات؟"
+      },
+      "options": {
+        "en": [
+          "100 times",
+          "10 times",
+          "1,000 times",
+          "2 times"
+        ],
+        "ar": [
+          "100 مثل",
+          "10 أمثال",
+          "1,000 مثل",
+          "مثلان"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "They are two places apart: 80 × 100 = 8,000.",
+        "ar": "بينهما منزلتان: 80 × 100 = 8,000."
+      },
+      "say": {
+        "en": "In eight thousand eighty, the eight in the thousands is how many times the eight in the tens?",
+        "ar": "في العدد ثمانية آلاف وثمانين، الثمانية في منزلة الآلاف تساوي كم مثلًا من الثمانية في منزلة العشرات؟"
+      }
+    },
+    {
+      "q": {
+        "en": "How many tens are in 1,000?",
+        "ar": "كم عشرة في العدد 1,000؟"
+      },
+      "options": {
+        "en": [
+          "100",
+          "10",
+          "1,000",
+          "1"
+        ],
+        "ar": [
+          "100",
+          "10",
+          "1,000",
+          "1"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "10 tens make 100, and 10 hundreds make 1,000, so 10 × 10 = 100 tens.",
+        "ar": "10 عشرات = 100، و 10 مئات = 1,000، إذن 10 × 10 = 100 عشرة."
+      },
+      "say": {
+        "en": "How many tens are in one thousand?",
+        "ar": "كم عشرة في الألف؟"
+      }
+    },
+    {
+      "q": {
+        "en": "35 × 10 = ?",
+        "ar": "35 × 10 = ؟"
+      },
+      "options": {
+        "en": [
+          "350",
+          "3,500",
+          "305",
+          "45"
+        ],
+        "ar": [
+          "350",
+          "3,500",
+          "305",
+          "45"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Each digit moves one place left: 3 tens 5 ones become 3 hundreds 5 tens = 350. 45 adds 10 instead of multiplying.",
+        "ar": "كل رقم ينتقل منزلة إلى اليسار: 3 عشرات و 5 آحاد تصبح 3 مئات و 5 عشرات = 350. أما 45 فهو جمع 10 وليس ضربًا."
+      },
+      "say": {
+        "en": "Thirty-five times ten equals?",
+        "ar": "خمسة وثلاثون في عشرة يساوي؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which number is 10 times 4,000?",
+        "ar": "أي عدد يساوي 10 أمثال 4,000؟"
+      },
+      "options": {
+        "en": [
+          "40,000",
+          "400",
+          "400,000",
+          "4,010"
+        ],
+        "ar": [
+          "40,000",
+          "400",
+          "400,000",
+          "4,010"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "4 thousands move one place left to become 4 ten thousands: 40,000.",
+        "ar": "4 آلاف تنتقل منزلة إلى اليسار فتصبح 4 عشرات ألوف: 40,000."
+      },
+      "say": {
+        "en": "Which number is ten times four thousand?",
+        "ar": "أي عدد يساوي عشرة أمثال أربعة آلاف؟"
+      }
+    }
+  ]
+}

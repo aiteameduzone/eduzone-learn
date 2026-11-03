@@ -1,0 +1,394 @@
+{
+  "id": "g4-math-frac-02",
+  "title": {
+    "en": "Equivalent Fractions",
+    "ar": "الكسور المتكافئة"
+  },
+  "objective": {
+    "en": "Show with models that multiplying the numerator and denominator by the same number gives an equivalent fraction, and find missing numbers.",
+    "ar": "أن يوضّح التلميذ بالنماذج أن ضرب البسط والمقام في العدد نفسه ينتج كسرًا مكافئًا، وأن يوجد العدد المجهول."
+  },
+  "refs": {
+    "egypt": [
+      "U9 · 9.3 L13-15"
+    ],
+    "ccss": [
+      "4.NF.A.1"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "text": {
+        "en": "Omar eats [1/2] of a chocolate bar. Salma cuts the same bar into 4 pieces and eats 2.\n\nDid they eat the **same amount**? Yes! [1/2] and [2/4] are **equivalent fractions**.",
+        "ar": "أكل عمر [1/2] لوح شوكولاتة. وقسّمت سلمى لوحًا مماثلًا إلى 4 قطع وأكلت 2 منها.\n\nهل أكلا **الكمية نفسها**؟ نعم! الكسران [1/2] و[2/4] **كسران متكافئان**."
+      },
+      "say": {
+        "en": "Omar eats one half of a chocolate bar. Salma cuts the same bar into four pieces and eats two. Did they eat the same amount? Yes! One half and two fourths are equivalent fractions.",
+        "ar": "أكل عمر نصف لوح شوكولاتة. وقسّمت سلمى لوحًا مماثلًا إلى أربع قطع وأكلت اثنتين منها. هل أكلا الكمية نفسها؟ نعم! النصف والربعان كسران متكافئان."
+      },
+      "visual": {
+        "kind": "bars",
+        "emoji": "🍫",
+        "items": [
+          {
+            "f": [
+              1,
+              2
+            ]
+          },
+          {
+            "f": [
+              2,
+              4
+            ],
+            "color": "blue"
+          }
+        ]
+      },
+      "check": {
+        "q": {
+          "en": "Look at the bars. Who ate more chocolate?",
+          "ar": "انظر إلى الشريطين. من أكل شوكولاتة أكثر؟"
+        },
+        "options": {
+          "en": [
+            "Omar",
+            "Salma",
+            "The same"
+          ],
+          "ar": [
+            "عمر",
+            "سلمى",
+            "الكمية نفسها"
+          ]
+        },
+        "answer": 2
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "fraction-equivalent",
+      "params": {
+        "num": 2,
+        "den": 3,
+        "maxK": 4,
+        "targetDen": 12
+      },
+      "text": {
+        "en": "Move the slider to cut every part into smaller equal pieces. Watch the shaded amount.",
+        "ar": "حرّك المؤشر لتقسيم كل جزء إلى قطع أصغر متساوية. لاحظ الجزء المظلل."
+      },
+      "prompt": {
+        "en": "Find the fraction equal to [2/3] with 12 parts.",
+        "ar": "أوجد الكسر المكافئ لـ [2/3] الذي مقامه 12."
+      },
+      "say": {
+        "en": "Move the slider to cut every part into smaller pieces. Find the fraction equal to two thirds with twelve parts.",
+        "ar": "حرّك المؤشر لتقسيم كل جزء إلى قطع أصغر. أوجد الكسر المكافئ لثلثين، الذي مقامه اثنا عشر."
+      }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "**The rule:** multiply the numerator and the denominator by the **same** number.",
+        "ar": "**القاعدة:** نضرب البسط والمقام في العدد **نفسه**."
+      },
+      "lines": {
+        "en": [
+          "[2/3] = [8/12] because 2 × 4 = 8 and 3 × 4 = 12",
+          "We multiplied by [4/4], which equals 1, so the value does not change.",
+          "[3/5] = [6/10] (both × 2)"
+        ],
+        "ar": [
+          "[2/3] = [8/12] لأن 2 × 4 = 8 و 3 × 4 = 12",
+          "ضربنا في [4/4] وهي تساوي 1، لذلك لا تتغير القيمة.",
+          "[3/5] = [6/10] (ضربنا كليهما في 2)"
+        ]
+      },
+      "say": {
+        "en": "The rule: multiply the numerator and the denominator by the same number. Two thirds equals eight twelfths, because two times four is eight and three times four is twelve. We multiplied by four fourths, which equals one, so the value does not change.",
+        "ar": "القاعدة: نضرب البسط والمقام في العدد نفسه. ثلثان يساويان ثمانية من اثني عشر، لأن اثنين في أربعة يساوي ثمانية، وثلاثة في أربعة يساوي اثني عشر. ضربنا في أربعة على أربعة، وهي تساوي واحدًا، لذلك لا تتغير القيمة."
+      },
+      "visual": {
+        "kind": "bars",
+        "items": [
+          {
+            "f": [
+              2,
+              3
+            ]
+          },
+          {
+            "f": [
+              4,
+              6
+            ],
+            "color": "blue"
+          },
+          {
+            "f": [
+              8,
+              12
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "**Missing number:** [3/4] = [?/20]",
+        "ar": "**العدد المجهول:** [3/4] = [؟/20]"
+      },
+      "lines": {
+        "en": [
+          "What turns 4 into 20? 4 × 5 = 20",
+          "Do the same to the top: 3 × 5 = 15",
+          "So [3/4] = [15/20]"
+        ],
+        "ar": [
+          "ما الذي يحوّل 4 إلى 20؟ 4 × 5 = 20",
+          "نفعل الشيء نفسه مع البسط: 3 × 5 = 15",
+          "إذن [3/4] = [15/20]"
+        ]
+      },
+      "say": {
+        "en": "Missing number: three fourths equals what over twenty? Four times five is twenty, so do the same to the top. Three times five is fifteen. So three fourths equals fifteen twentieths.",
+        "ar": "العدد المجهول: ثلاثة أرباع تساوي كم على عشرين؟ أربعة في خمسة يساوي عشرين، فنفعل الشيء نفسه مع البسط. ثلاثة في خمسة يساوي خمسة عشر. إذن ثلاثة أرباع تساوي خمسة عشر على عشرين."
+      },
+      "visual": {
+        "kind": "pies",
+        "items": [
+          {
+            "f": [
+              3,
+              4
+            ]
+          },
+          {
+            "f": [
+              15,
+              20
+            ],
+            "color": "blue"
+          }
+        ],
+        "ops": [
+          "="
+        ]
+      }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Remember:** equivalent fractions are the **same amount**, cut into a different number of pieces.\n\nWhatever you do to the bottom, do to the top.",
+        "ar": "**تذكّر:** الكسور المتكافئة هي **الكمية نفسها** لكنها مقسّمة إلى عدد مختلف من القطع.\n\nما تفعله بالمقام، افعله بالبسط."
+      },
+      "visual": {
+        "kind": "pies",
+        "items": [
+          {
+            "f": [
+              1,
+              2
+            ]
+          },
+          {
+            "f": [
+              2,
+              4
+            ],
+            "color": "blue"
+          },
+          {
+            "f": [
+              4,
+              8
+            ]
+          }
+        ],
+        "ops": [
+          "=",
+          "="
+        ]
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "Which fraction is equivalent to [1/2]?",
+        "ar": "أي كسر يكافئ [1/2]؟"
+      },
+      "options": {
+        "en": [
+          "[3/6]",
+          "[2/3]",
+          "[1/4]",
+          "[2/2]"
+        ],
+        "ar": [
+          "[3/6]",
+          "[2/3]",
+          "[1/4]",
+          "[2/2]"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1 × 3 = 3 and 2 × 3 = 6, so [1/2] = [3/6].",
+        "ar": "1 × 3 = 3 و 2 × 3 = 6، إذن [1/2] = [3/6]."
+      },
+      "say": {
+        "en": "Which fraction is equivalent to one half?",
+        "ar": "أي كسر يكافئ النصف؟"
+      }
+    },
+    {
+      "q": {
+        "en": "[2/5] = [?/10]. What is the missing number?",
+        "ar": "[2/5] = [؟/10]. ما العدد المجهول؟"
+      },
+      "options": {
+        "en": [
+          "4",
+          "7",
+          "2",
+          "5"
+        ],
+        "ar": [
+          "4",
+          "7",
+          "2",
+          "5"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "5 × 2 = 10, so 2 × 2 = 4. Adding 5 to get 7 is a common mistake: we multiply, we don't add.",
+        "ar": "5 × 2 = 10، إذن 2 × 2 = 4. إضافة 5 للحصول على 7 خطأ شائع: نحن نضرب ولا نجمع."
+      },
+      "say": {
+        "en": "Two fifths equals what over ten?",
+        "ar": "خُمسان يساويان كم على عشرة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which pair is NOT equivalent?",
+        "ar": "أي زوج من الكسور غير متكافئ؟"
+      },
+      "options": {
+        "en": [
+          "[2/3] and [3/4]",
+          "[1/3] and [2/6]",
+          "[3/4] and [6/8]",
+          "[1/5] and [2/10]"
+        ],
+        "ar": [
+          "[2/3] و [3/4]",
+          "[1/3] و [2/6]",
+          "[3/4] و [6/8]",
+          "[1/5] و [2/10]"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Adding 1 to the top and bottom does not keep the value. [2/3] = [8/12] but [3/4] = [9/12].",
+        "ar": "إضافة 1 إلى البسط والمقام لا تحافظ على القيمة. [2/3] = [8/12] أما [3/4] = [9/12]."
+      },
+      "say": {
+        "en": "Which pair is not equivalent?",
+        "ar": "أي زوج من الكسور غير متكافئ؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Nour shaded [6/8] of a bar. Which fraction shows the same amount?",
+        "ar": "ظلّلت نور [6/8] شريط. أي كسر يمثل الكمية نفسها؟"
+      },
+      "options": {
+        "en": [
+          "[3/4]",
+          "[6/4]",
+          "[2/8]",
+          "[3/8]"
+        ],
+        "ar": [
+          "[3/4]",
+          "[6/4]",
+          "[2/8]",
+          "[3/8]"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Divide top and bottom by 2: 6 ÷ 2 = 3, 8 ÷ 2 = 4.",
+        "ar": "نقسم البسط والمقام على 2: 6 ÷ 2 = 3 و 8 ÷ 2 = 4."
+      },
+      "say": {
+        "en": "Nour shaded six eighths of a bar. Which fraction shows the same amount?",
+        "ar": "ظلّلت نور ستة أثمان شريط. أي كسر يمثل الكمية نفسها؟"
+      }
+    },
+    {
+      "q": {
+        "en": "[4/6] = [?/3]. What is the missing number?",
+        "ar": "[4/6] = [؟/3]. ما العدد المجهول؟"
+      },
+      "options": {
+        "en": [
+          "2",
+          "1",
+          "4",
+          "3"
+        ],
+        "ar": [
+          "2",
+          "1",
+          "4",
+          "3"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "6 ÷ 2 = 3, so 4 ÷ 2 = 2.",
+        "ar": "6 ÷ 2 = 3، إذن 4 ÷ 2 = 2."
+      },
+      "say": {
+        "en": "Four sixths equals what over three?",
+        "ar": "أربعة أسداس تساوي كم على ثلاثة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Why does multiplying by [5/5] not change a fraction's value?",
+        "ar": "لماذا لا يغيّر الضرب في [5/5] قيمة الكسر؟"
+      },
+      "options": {
+        "en": [
+          "Because [5/5] = 1",
+          "Because 5 is odd",
+          "Because the denominator gets bigger",
+          "It does change the value"
+        ],
+        "ar": [
+          "لأن [5/5] = 1",
+          "لأن 5 عدد فردي",
+          "لأن المقام يكبر",
+          "بل يغيّر القيمة"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Any number times 1 stays the same. That is why equivalent fractions are equal.",
+        "ar": "أي عدد مضروب في 1 يبقى كما هو. ولهذا تكون الكسور المتكافئة متساوية."
+      },
+      "say": {
+        "en": "Why does multiplying by five fifths not change a fraction's value?",
+        "ar": "لماذا لا يغيّر الضرب في خمسة على خمسة قيمة الكسر؟"
+      }
+    }
+  ]
+}
