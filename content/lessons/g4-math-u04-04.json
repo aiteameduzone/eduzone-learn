@@ -1,0 +1,344 @@
+{
+  "id": "g4-math-u04-04",
+  "title": {
+    "en": "Area of a Rectangle and a Square",
+    "ar": "مساحة المستطيل ومساحة المربع"
+  },
+  "objective": {
+    "en": "Use the rules area = length × width for a rectangle and side × side for a square, and solve real-life problems.",
+    "ar": "أن يستخدم التلميذ القاعدتين: مساحة المستطيل = الطول × العرض، ومساحة المربع = طول الضلع × نفسه، ويحل مسائل حياتية."
+  },
+  "refs": {
+    "egypt": [
+      "U4 · Area formulas"
+    ],
+    "ccss": [
+      "4.MD.A.3"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "grid",
+        "w": 8,
+        "h": 6,
+        "label": {
+          "en": "Classroom floor tiles",
+          "ar": "بلاط أرضية الفصل"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "The floor is 8 tiles long and 6 tiles wide. How many tiles in all?",
+          "ar": "الأرضية طولها 8 بلاطات وعرضها 6 بلاطات. كم بلاطة في المجموع؟"
+        },
+        "options": {
+          "en": [
+            "14",
+            "28",
+            "48"
+          ],
+          "ar": [
+            "14",
+            "28",
+            "48"
+          ]
+        },
+        "answer": 2
+      },
+      "text": {
+        "en": "Counting rows is the same as **multiplying**: the number of squares in a row × the number of rows.\n\nThis floor: 8 × 6 = 48 tiles.",
+        "ar": "عدّ الصفوف هو نفسه **الضرب**: عدد المربعات في الصف × عدد الصفوف.\n\nهذه الأرضية: 8 × 6 = 48 بلاطة."
+      },
+      "say": {
+        "en": "Counting rows is the same as multiplying: the number of squares in a row times the number of rows. This classroom floor is eight tiles long and six tiles wide. Eight times six is forty-eight tiles.",
+        "ar": "عدّ الصفوف هو نفسه الضرب: عدد المربعات في الصف في عدد الصفوف. أرضية الفصل هذه طولها ثماني بلاطات وعرضها ست بلاطات. ثمانية في ستة يساوي ثماني وأربعين بلاطة."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "grid",
+        "w": 7,
+        "h": 3,
+        "label": {
+          "en": "Balcony: 7 m × 3 m",
+          "ar": "شرفة: 7 م × 3 م"
+        }
+      },
+      "text": {
+        "en": "**Rectangle rule:** Area = length × width",
+        "ar": "**قاعدة المستطيل:** المساحة = الطول × العرض"
+      },
+      "lines": {
+        "en": [
+          "Balcony: length 7 m, width 3 m",
+          "Area = 7 × 3",
+          "= 21 m²"
+        ],
+        "ar": [
+          "شرفة: الطول 7 م ، العرض 3 م",
+          "المساحة = 7 × 3",
+          "= 21 م²"
+        ]
+      },
+      "say": {
+        "en": "Rectangle rule: area equals length times width. A balcony is seven metres long and three metres wide. Seven times three is twenty-one. The area is twenty-one square metres.",
+        "ar": "قاعدة المستطيل: المساحة تساوي الطول في العرض. شرفة طولها سبعة أمتار وعرضها ثلاثة أمتار. سبعة في ثلاثة يساوي واحدًا وعشرين. إذن المساحة واحد وعشرون مترًا مربعًا."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "grid",
+        "w": 6,
+        "h": 6,
+        "label": {
+          "en": "6 m × 6 m",
+          "ar": "6 م × 6 م"
+        }
+      },
+      "text": {
+        "en": "**Square rule:** length and width are equal, so Area = side × side.",
+        "ar": "**قاعدة المربع:** الطول يساوي العرض، إذن المساحة = طول الضلع × طول الضلع."
+      },
+      "lines": {
+        "en": [
+          "Square vegetable patch, side 6 m",
+          "Area = 6 × 6",
+          "= 36 m²"
+        ],
+        "ar": [
+          "قطعة أرض مربعة للخضار طول ضلعها 6 م",
+          "المساحة = 6 × 6",
+          "= 36 م²"
+        ]
+      },
+      "say": {
+        "en": "Square rule: length and width are equal, so the area equals side times side. A square vegetable patch has a side of six metres. Six times six is thirty-six. The area is thirty-six square metres.",
+        "ar": "قاعدة المربع: الطول يساوي العرض، إذن المساحة تساوي طول الضلع في نفسه. قطعة أرض مربعة لزراعة الخضار طول ضلعها ستة أمتار. ستة في ستة يساوي ستة وثلاثين. إذن المساحة ستة وثلاثون مترًا مربعًا."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "area-grid",
+      "params": {
+        "target": {
+          "area": 18,
+          "perimeter": 18
+        },
+        "w": 1,
+        "h": 1
+      },
+      "text": {
+        "en": "Find a rectangle where the area and the perimeter are the same number. Try different shapes!",
+        "ar": "ابحث عن مستطيل مساحته ومحيطه العدد نفسه. جرّب أشكالًا مختلفة!"
+      },
+      "prompt": {
+        "en": "Make a rectangle with area 18 square units and perimeter 18 units.",
+        "ar": "كوّن مستطيلًا مساحته 18 وحدة مربعة ومحيطه 18 وحدة."
+      },
+      "say": {
+        "en": "Find a rectangle where the area and the perimeter are the same number. Make a rectangle with area eighteen square units and perimeter eighteen units.",
+        "ar": "ابحث عن مستطيل مساحته ومحيطه العدد نفسه. كوّن مستطيلًا مساحته ثماني عشرة وحدة مربعة ومحيطه ثماني عشرة وحدة."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "grid",
+        "w": 5,
+        "h": 4,
+        "label": {
+          "en": "5 × 4 = 20",
+          "ar": "5 × 4 = 20"
+        }
+      },
+      "text": {
+        "en": "**Remember:**\n\nRectangle: Area = length × width\n\nSquare: Area = side × side\n\nArea is in square units (cm², m²). Perimeter is in units (cm, m).",
+        "ar": "**تذكّر:**\n\nالمستطيل: المساحة = الطول × العرض\n\nالمربع: المساحة = طول الضلع × طول الضلع\n\nالمساحة بالوحدات المربعة (سم²، م²)، والمحيط بوحدات الطول (سم، م)."
+      },
+      "say": {
+        "en": "Remember. Rectangle: area equals length times width. Square: area equals side times side. Area is in square units, like square centimetres and square metres. Perimeter is in units of length, like centimetres and metres. Here, five times four is twenty.",
+        "ar": "تذكّر. المستطيل: المساحة تساوي الطول في العرض. المربع: المساحة تساوي طول الضلع في نفسه. المساحة بالوحدات المربعة مثل السنتيمتر المربع والمتر المربع، والمحيط بوحدات الطول مثل السنتيمتر والمتر. هنا خمسة في أربعة يساوي عشرين."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "A rectangle is 9 cm long and 5 cm wide. What is its area?",
+        "ar": "مستطيل طوله 9 سم وعرضه 5 سم. ما مساحته؟"
+      },
+      "options": {
+        "en": [
+          "14 cm²",
+          "45 cm²",
+          "28 cm²",
+          "40 cm²"
+        ],
+        "ar": [
+          "14 سم²",
+          "45 سم²",
+          "28 سم²",
+          "40 سم²"
+        ]
+      },
+      "answer": 1,
+      "explain": {
+        "en": "9 × 5 = 45 cm². 28 is the perimeter, and 14 just adds 9 + 5.",
+        "ar": "9 × 5 = 45 سم². أما 28 فهو المحيط، و 14 هو 9 + 5 فقط."
+      },
+      "say": {
+        "en": "A rectangle is nine centimetres long and five centimetres wide. What is its area?",
+        "ar": "مستطيل طوله تسعة سنتيمترات وعرضه خمسة سنتيمترات. ما مساحته؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A square has a side of 8 cm. What is its area?",
+        "ar": "مربع طول ضلعه 8 سم. ما مساحته؟"
+      },
+      "options": {
+        "en": [
+          "32 cm²",
+          "16 cm²",
+          "48 cm²",
+          "64 cm²"
+        ],
+        "ar": [
+          "32 سم²",
+          "16 سم²",
+          "48 سم²",
+          "64 سم²"
+        ]
+      },
+      "answer": 3,
+      "explain": {
+        "en": "8 × 8 = 64 cm². 32 is 8 × 4, the perimeter.",
+        "ar": "8 × 8 = 64 سم². أما 32 فهو 8 × 4 أي المحيط."
+      },
+      "say": {
+        "en": "A square has a side of eight centimetres. What is its area?",
+        "ar": "مربع طول ضلعه ثمانية سنتيمترات. ما مساحته؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Mona draws a football pitch 10 cm long and 7 cm wide. How much paper does the pitch cover?",
+        "ar": "رسمت منى ملعب كرة قدم طوله 10 سم وعرضه 7 سم. ما مساحة الورقة التي يغطيها الملعب؟"
+      },
+      "options": {
+        "en": [
+          "70 cm²",
+          "34 cm²",
+          "17 cm²",
+          "77 cm²"
+        ],
+        "ar": [
+          "70 سم²",
+          "34 سم²",
+          "17 سم²",
+          "77 سم²"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Covering is area: 10 × 7 = 70 cm². 34 cm is the perimeter.",
+        "ar": "التغطية تعني المساحة: 10 × 7 = 70 سم². أما 34 فهو المحيط."
+      },
+      "say": {
+        "en": "Mona draws a football pitch ten centimetres long and seven centimetres wide. How much paper does the pitch cover?",
+        "ar": "رسمت منى ملعب كرة قدم طوله عشرة سنتيمترات وعرضه سبعة سنتيمترات. ما مساحة الورقة التي يغطيها الملعب؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which rule gives the area of a rectangle?",
+        "ar": "أي قاعدة تعطي مساحة المستطيل؟"
+      },
+      "options": {
+        "en": [
+          "(length + width) × 2",
+          "length + width",
+          "length × width",
+          "length × 4"
+        ],
+        "ar": [
+          "(الطول + العرض) × 2",
+          "الطول + العرض",
+          "الطول × العرض",
+          "الطول × 4"
+        ]
+      },
+      "answer": 2,
+      "explain": {
+        "en": "Area = length × width. (length + width) × 2 is the perimeter rule.",
+        "ar": "المساحة = الطول × العرض. أما (الطول + العرض) × 2 فهي قاعدة المحيط."
+      },
+      "say": {
+        "en": "Which rule gives the area of a rectangle?",
+        "ar": "أي قاعدة تعطي مساحة المستطيل؟ الطول في العرض، أم الطول زائد العرض في اثنين، أم الطول زائد العرض، أم الطول في أربعة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A bedroom floor is 4 m long and 3 m wide. Each tile covers 1 m². How many tiles are needed?",
+        "ar": "أرضية غرفة نوم طولها 4 م وعرضها 3 م. كل بلاطة تغطي 1 م². كم بلاطة نحتاج؟"
+      },
+      "options": {
+        "en": [
+          "7",
+          "12",
+          "14",
+          "16"
+        ],
+        "ar": [
+          "7",
+          "12",
+          "14",
+          "16"
+        ]
+      },
+      "answer": 1,
+      "explain": {
+        "en": "4 × 3 = 12 m², so 12 tiles. 14 is the perimeter.",
+        "ar": "4 × 3 = 12 م²، إذن 12 بلاطة. أما 14 فهو المحيط."
+      },
+      "say": {
+        "en": "A bedroom floor is four metres long and three metres wide. Each tile covers one square metre. How many tiles are needed?",
+        "ar": "أرضية غرفة نوم طولها أربعة أمتار وعرضها ثلاثة أمتار. كل بلاطة تغطي مترًا مربعًا واحدًا. كم بلاطة نحتاج؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which rectangle has the same area as a square with side 6 cm?",
+        "ar": "أي مستطيل له مساحة مربع طول ضلعه 6 سم نفسها؟"
+      },
+      "options": {
+        "en": [
+          "8 cm × 4 cm",
+          "10 cm × 2 cm",
+          "12 cm × 2 cm",
+          "9 cm × 4 cm"
+        ],
+        "ar": [
+          "8 سم × 4 سم",
+          "10 سم × 2 سم",
+          "12 سم × 2 سم",
+          "9 سم × 4 سم"
+        ]
+      },
+      "answer": 3,
+      "explain": {
+        "en": "Square: 6 × 6 = 36 cm². 9 × 4 = 36 cm² too. The others are 32, 20 and 24.",
+        "ar": "المربع: 6 × 6 = 36 سم². و 9 × 4 = 36 سم² أيضًا. أما البقية فمساحاتها 32 و 20 و 24."
+      },
+      "say": {
+        "en": "Which rectangle has the same area as a square with side six centimetres?",
+        "ar": "أي مستطيل له مساحة مربع طول ضلعه ستة سنتيمترات نفسها؟ تسعة في أربعة، أم ثمانية في أربعة، أم عشرة في اثنين، أم اثنا عشر في اثنين؟"
+      }
+    }
+  ]
+}

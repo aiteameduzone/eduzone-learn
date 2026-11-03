@@ -1,0 +1,624 @@
+{
+  "id": "g4-math-u03-05",
+  "title": {
+    "en": "Units of Time",
+    "ar": "وحدات الزمن"
+  },
+  "objective": {
+    "en": "Tell the time to the minute, know that 1 minute = 60 seconds, 1 hour = 60 minutes, 1 day = 24 hours and 1 week = 7 days, and change bigger time units into smaller ones.",
+    "ar": "أن يقرأ التلميذ الوقت لأقرب دقيقة، ويعرف أن الدقيقة = 60 ثانية والساعة = 60 دقيقة واليوم = 24 ساعة والأسبوع = 7 أيام، ويحوّل وحدات الزمن الكبيرة إلى أصغر."
+  },
+  "refs": {
+    "egypt": [
+      "U3 · 3.2 Units of time"
+    ],
+    "ccss": [
+      "4.MD.A.1"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "pies",
+        "emoji": "⏰",
+        "hideLabels": true,
+        "items": [
+          {
+            "f": [
+              12,
+              12
+            ],
+            "label": {
+              "en": "1 hour = 60 minutes",
+              "ar": "1 ساعة = 60 دقيقة"
+            }
+          }
+        ]
+      },
+      "check": {
+        "q": {
+          "en": "How many minutes are in 1 hour?",
+          "ar": "كم دقيقة في الساعة الواحدة؟"
+        },
+        "options": {
+          "en": [
+            "100",
+            "30",
+            "60"
+          ],
+          "ar": [
+            "100",
+            "30",
+            "60"
+          ]
+        },
+        "answer": 2
+      },
+      "text": {
+        "en": "The minute hand goes all the way round the clock in **1 hour = 60 minutes**.\n\nCareful: an hour has **60** minutes, not 100!",
+        "ar": "يدور عقرب الدقائق دورة كاملة حول الساعة في **1 ساعة = 60 دقيقة**.\n\nانتبه: الساعة فيها **60** دقيقة وليس 100!"
+      },
+      "say": {
+        "en": "The minute hand goes all the way round the clock in one hour, which is sixty minutes. Careful: an hour has sixty minutes, not one hundred.",
+        "ar": "يدور عقرب الدقائق دورة كاملة حول الساعة في ساعة واحدة، أي ستين دقيقة. انتبه: الساعة فيها ستون دقيقة وليس مائة."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "pies",
+        "items": [
+          {
+            "f": [
+              1,
+              4
+            ],
+            "label": {
+              "en": "15 min",
+              "ar": "15 دقيقة"
+            }
+          },
+          {
+            "f": [
+              2,
+              4
+            ],
+            "label": {
+              "en": "30 min",
+              "ar": "30 دقيقة"
+            }
+          },
+          {
+            "f": [
+              3,
+              4
+            ],
+            "label": {
+              "en": "45 min",
+              "ar": "45 دقيقة"
+            },
+            "color": "blue"
+          }
+        ]
+      },
+      "text": {
+        "en": "**Parts of an hour.** Cut the clock into 4 quarters. Each quarter is 60 ÷ 4 = 15 minutes.",
+        "ar": "**أجزاء الساعة.** نقسم الساعة إلى 4 أرباع. كل ربع = 60 ÷ 4 = 15 دقيقة."
+      },
+      "lines": {
+        "en": [
+          "[1/4] hour = 60 ÷ 4 = 15 minutes",
+          "[1/2] hour = 60 ÷ 2 = 30 minutes",
+          "[3/4] hour = 3 × 15 = 45 minutes"
+        ],
+        "ar": [
+          "[1/4] ساعة = 60 ÷ 4 = 15 دقيقة",
+          "[1/2] ساعة = 60 ÷ 2 = 30 دقيقة",
+          "[3/4] ساعة = 3 × 15 = 45 دقيقة"
+        ]
+      },
+      "say": {
+        "en": "Parts of an hour. Cut the clock into four quarters. Each quarter is sixty divided by four, which is fifteen minutes. A quarter hour is fifteen minutes. Half an hour is thirty minutes. Three quarters of an hour is forty five minutes.",
+        "ar": "أجزاء الساعة. نقسم الساعة إلى أربعة أرباع. كل ربع يساوي ستين على أربعة، أي خمس عشرة دقيقة. ربع الساعة خمس عشرة دقيقة. ونصف الساعة ثلاثون دقيقة. وثلاثة أرباع الساعة خمس وأربعون دقيقة."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "pies",
+        "hideLabels": true,
+        "items": [
+          {
+            "f": [
+              7,
+              12
+            ],
+            "label": {
+              "en": "up to the 7: 35 min",
+              "ar": "حتى الرقم 7: 35 دقيقة"
+            }
+          }
+        ]
+      },
+      "check": {
+        "q": {
+          "en": "The minute hand is on the 7. How many minutes past the hour?",
+          "ar": "عقرب الدقائق على الرقم 7. كم دقيقة بعد الساعة؟"
+        },
+        "options": {
+          "en": [
+            "35",
+            "7",
+            "70"
+          ],
+          "ar": [
+            "35",
+            "7",
+            "70"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "**Reading the time to the minute.** The clock has 12 numbers. From one number to the next is **5 minutes**. Here the hour hand is just after 4 and the minute hand is 2 small marks after the 7.",
+        "ar": "**قراءة الوقت لأقرب دقيقة.** على الساعة 12 رقمًا، ومن رقم إلى الذي يليه **5 دقائق**. هنا عقرب الساعات بعد 4 بقليل، وعقرب الدقائق بعد الرقم 7 بعلامتين صغيرتين."
+      },
+      "lines": {
+        "en": [
+          "Each number = 5 minutes",
+          "On the 7: 7 × 5 = 35 minutes",
+          "2 small marks more: 35 + 2 = 37",
+          "The time is 4:37"
+        ],
+        "ar": [
+          "كل رقم = 5 دقائق",
+          "عند الرقم 7: 7 × 5 = 35 دقيقة",
+          "علامتان صغيرتان أخريان: 35 + 2 = 37",
+          "الوقت هو 4:37"
+        ]
+      },
+      "say": {
+        "en": "Reading the time to the minute. The clock has twelve numbers. From one number to the next is five minutes. The minute hand is two small marks after the seven. Seven times five is thirty five minutes. Thirty five plus two is thirty seven. The hour hand is just after four, so the time is four thirty seven.",
+        "ar": "قراءة الوقت لأقرب دقيقة. على الساعة اثنا عشر رقمًا، ومن رقم إلى الذي يليه خمس دقائق. عقرب الدقائق بعد الرقم سبعة بعلامتين صغيرتين. سبعة في خمسة يساوي خمسًا وثلاثين دقيقة. خمس وثلاثون زائد اثنين يساوي سبعًا وثلاثين. وعقرب الساعات بعد الرابعة بقليل، إذن الوقت الرابعة وسبع وثلاثون دقيقة."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "pies",
+        "items": [
+          {
+            "f": [
+              4,
+              4
+            ],
+            "label": {
+              "en": "60 min",
+              "ar": "60 دقيقة"
+            }
+          },
+          {
+            "f": [
+              4,
+              4
+            ],
+            "label": {
+              "en": "60 min",
+              "ar": "60 دقيقة"
+            }
+          },
+          {
+            "f": [
+              4,
+              4
+            ],
+            "label": {
+              "en": "60 min",
+              "ar": "60 دقيقة"
+            }
+          },
+          {
+            "f": [
+              12,
+              4
+            ],
+            "label": {
+              "en": "180 min",
+              "ar": "180 دقيقة"
+            },
+            "color": "blue"
+          }
+        ],
+        "ops": [
+          "+",
+          "+",
+          "="
+        ]
+      },
+      "text": {
+        "en": "**Changing time units: multiply.**\n\n1 minute = 60 seconds, 1 hour = 60 minutes, 1 day = 24 hours, 1 week = 7 days.",
+        "ar": "**تحويل وحدات الزمن: نضرب.**\n\n1 دقيقة = 60 ثانية، 1 ساعة = 60 دقيقة، 1 يوم = 24 ساعة، 1 أسبوع = 7 أيام."
+      },
+      "lines": {
+        "en": [
+          "3 h = 3 × 60 = 180 min",
+          "2 min = 2 × 60 = 120 s",
+          "2 days = 2 × 24 = 48 h",
+          "3 weeks = 3 × 7 = 21 days",
+          "1 h 20 min = 60 + 20 = 80 min"
+        ],
+        "ar": [
+          "3 ساعات = 3 × 60 = 180 دقيقة",
+          "2 دقيقة = 2 × 60 = 120 ثانية",
+          "2 يوم = 2 × 24 = 48 ساعة",
+          "3 أسابيع = 3 × 7 = 21 يومًا",
+          "1 ساعة و 20 دقيقة = 60 + 20 = 80 دقيقة"
+        ]
+      },
+      "say": {
+        "en": "Changing time units: multiply. One minute is sixty seconds, one hour is sixty minutes, one day is twenty four hours, and one week is seven days. Three hours is three times sixty, which is one hundred and eighty minutes. Two minutes is two times sixty, which is one hundred and twenty seconds. Two days is two times twenty four, which is forty eight hours. Three weeks is three times seven, which is twenty one days. One hour and twenty minutes is sixty plus twenty, which is eighty minutes.",
+        "ar": "تحويل وحدات الزمن: نضرب. الدقيقة ستون ثانية، والساعة ستون دقيقة، واليوم أربع وعشرون ساعة، والأسبوع سبعة أيام. ثلاث ساعات تساوي ثلاثة في ستين، أي مائة وثمانين دقيقة. ودقيقتان تساويان اثنين في ستين، أي مائة وعشرين ثانية. ويومان يساويان اثنين في أربعة وعشرين، أي ثمانيًا وأربعين ساعة. وثلاثة أسابيع تساوي ثلاثة في سبعة، أي واحدًا وعشرين يومًا. وساعة وعشرون دقيقة تساوي ستين زائد عشرين، أي ثمانين دقيقة."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "number-line",
+      "params": {
+        "min": 0,
+        "max": 2,
+        "divisions": 4,
+        "target": [
+          5,
+          4
+        ],
+        "scale": 60
+      },
+      "text": {
+        "en": "The bus ride on the school trip lasted 1 hour 15 minutes. The line counts in minutes. Each small jump is 15 minutes.",
+        "ar": "استغرقت رحلة الأتوبيس في الرحلة المدرسية 1 ساعة و 15 دقيقة. خط الأعداد بالدقائق، وكل قفزة صغيرة 15 دقيقة."
+      },
+      "prompt": {
+        "en": "Put a point at 1 h 15 min (in minutes).",
+        "ar": "ضع نقطة عند 1 ساعة و 15 دقيقة (بالدقائق)."
+      },
+      "say": {
+        "en": "The bus ride on the school trip lasted one hour and fifteen minutes. Each small jump is fifteen minutes. Put a point at that time in minutes.",
+        "ar": "استغرقت رحلة الأتوبيس في الرحلة المدرسية ساعة وخمس عشرة دقيقة. كل قفزة صغيرة خمس عشرة دقيقة. ضع نقطة عند هذا الزمن بالدقائق."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "pies",
+        "hideLabels": true,
+        "items": [
+          {
+            "f": [
+              24,
+              12
+            ],
+            "label": {
+              "en": "2 h = 120 min",
+              "ar": "2 ساعة = 120 دقيقة"
+            }
+          },
+          {
+            "f": [
+              20,
+              12
+            ],
+            "label": {
+              "en": "100 min",
+              "ar": "100 دقيقة"
+            },
+            "color": "blue"
+          }
+        ],
+        "ops": [
+          ">"
+        ]
+      },
+      "check": {
+        "q": {
+          "en": "Which is longer: 2 hours or 100 minutes?",
+          "ar": "أيهما أطول: ساعتان أم 100 دقيقة؟"
+        },
+        "options": {
+          "en": [
+            "100 minutes",
+            "2 hours",
+            "They are equal"
+          ],
+          "ar": [
+            "100 دقيقة",
+            "ساعتان",
+            "متساويان"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "**Comparing times:** change both to minutes, then compare. Each clock here is one hour.",
+        "ar": "**مقارنة الأزمنة:** نحوّل الزمنين إلى دقائق، ثم نقارن. كل ساعة هنا تمثل ساعة واحدة."
+      },
+      "lines": {
+        "en": [
+          "2 h = 2 × 60 = 120 min",
+          "120 min > 100 min",
+          "So 2 hours is longer"
+        ],
+        "ar": [
+          "2 ساعة = 2 × 60 = 120 دقيقة",
+          "120 دقيقة > 100 دقيقة",
+          "إذن الساعتان أطول"
+        ]
+      },
+      "say": {
+        "en": "Comparing times: change both to minutes. Two hours is two times sixty, which is one hundred and twenty minutes. One hundred and twenty is more than one hundred. So two hours is longer than one hundred minutes.",
+        "ar": "مقارنة الأزمنة: نحوّل الزمنين إلى دقائق. ساعتان تساويان اثنين في ستين، أي مائة وعشرين دقيقة. ومائة وعشرون أكبر من مائة. إذن الساعتان أطول من مائة دقيقة."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "pies",
+        "emoji": "🕐",
+        "items": [
+          {
+            "f": [
+              12,
+              12
+            ],
+            "label": {
+              "en": "1 h = 60 min",
+              "ar": "1 ساعة = 60 دقيقة"
+            }
+          }
+        ]
+      },
+      "text": {
+        "en": "**Remember:**\n\n1 min = 60 s\n\n1 h = 60 min\n\n1 day = 24 h\n\n1 week = 7 days\n\nBig unit to small unit: **multiply**.",
+        "ar": "**تذكّر:**\n\n1 دقيقة = 60 ثانية\n\n1 ساعة = 60 دقيقة\n\n1 يوم = 24 ساعة\n\n1 أسبوع = 7 أيام\n\nمن وحدة كبيرة إلى وحدة صغيرة: **نضرب**."
+      },
+      "say": {
+        "en": "Remember: one minute is sixty seconds, one hour is sixty minutes, one day is twenty four hours, and one week is seven days. Big unit to small unit: multiply.",
+        "ar": "تذكّر: الدقيقة ستون ثانية، والساعة ستون دقيقة، واليوم أربع وعشرون ساعة، والأسبوع سبعة أيام. من وحدة كبيرة إلى وحدة صغيرة نضرب."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "4 hours = ? minutes",
+        "ar": "4 ساعات = ؟ دقيقة"
+      },
+      "options": {
+        "en": [
+          "240",
+          "400",
+          "64",
+          "24"
+        ],
+        "ar": [
+          "240",
+          "400",
+          "64",
+          "24"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1 hour = 60 minutes, so 4 × 60 = 240. 400 wrongly uses 100 minutes in an hour.",
+        "ar": "الساعة = 60 دقيقة، إذن 4 × 60 = 240. أما 400 فاعتبرت الساعة 100 دقيقة خطأً."
+      },
+      "say": {
+        "en": "Four hours equals how many minutes?",
+        "ar": "أربع ساعات تساوي كم دقيقة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "3 minutes = ? seconds",
+        "ar": "3 دقائق = ؟ ثانية"
+      },
+      "options": {
+        "en": [
+          "180",
+          "300",
+          "30",
+          "63"
+        ],
+        "ar": [
+          "180",
+          "300",
+          "30",
+          "63"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1 minute = 60 seconds, so 3 × 60 = 180 seconds.",
+        "ar": "الدقيقة = 60 ثانية، إذن 3 × 60 = 180 ثانية."
+      },
+      "say": {
+        "en": "Three minutes equals how many seconds?",
+        "ar": "ثلاث دقائق تساوي كم ثانية؟"
+      }
+    },
+    {
+      "q": {
+        "en": "How many hours are in 1 day?",
+        "ar": "كم ساعة في اليوم الواحد؟"
+      },
+      "options": {
+        "en": [
+          "24",
+          "12",
+          "60",
+          "7"
+        ],
+        "ar": [
+          "24",
+          "12",
+          "60",
+          "7"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "A full day and night is 24 hours. 12 is only half a day.",
+        "ar": "اليوم بليله ونهاره 24 ساعة. أما 12 فهي نصف يوم فقط."
+      },
+      "say": {
+        "en": "How many hours are in one day?",
+        "ar": "كم ساعة في اليوم الواحد؟"
+      }
+    },
+    {
+      "q": {
+        "en": "2 h 10 min = ? minutes",
+        "ar": "2 ساعة و 10 دقائق = ؟ دقيقة"
+      },
+      "options": {
+        "en": [
+          "130",
+          "210",
+          "70",
+          "12"
+        ],
+        "ar": [
+          "130",
+          "210",
+          "70",
+          "12"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "2 × 60 = 120, and 120 + 10 = 130 minutes. 210 just writes the numbers side by side.",
+        "ar": "2 × 60 = 120، و 120 + 10 = 130 دقيقة. أما 210 فكتبت العددين بجانب بعضهما."
+      },
+      "say": {
+        "en": "Two hours and ten minutes equals how many minutes?",
+        "ar": "ساعتان وعشر دقائق تساوي كم دقيقة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "The minute hand points at the 4. How many minutes past the hour?",
+        "ar": "عقرب الدقائق يشير إلى الرقم 4. كم دقيقة بعد الساعة؟"
+      },
+      "options": {
+        "en": [
+          "20",
+          "4",
+          "40",
+          "24"
+        ],
+        "ar": [
+          "20",
+          "4",
+          "40",
+          "24"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Each number is 5 minutes, so 4 × 5 = 20 minutes.",
+        "ar": "كل رقم = 5 دقائق، إذن 4 × 5 = 20 دقيقة."
+      },
+      "say": {
+        "en": "The minute hand points at the four. How many minutes past the hour?",
+        "ar": "عقرب الدقائق يشير إلى الرقم أربعة. كم دقيقة بعد الساعة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which is longer: 3 days or 70 hours?",
+        "ar": "أيهما أطول: 3 أيام أم 70 ساعة؟"
+      },
+      "options": {
+        "en": [
+          "3 days",
+          "70 hours",
+          "They are equal",
+          "We cannot know"
+        ],
+        "ar": [
+          "3 أيام",
+          "70 ساعة",
+          "متساويان",
+          "لا يمكن المعرفة"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "3 × 24 = 72 hours, and 72 > 70.",
+        "ar": "3 × 24 = 72 ساعة، و 72 > 70."
+      },
+      "say": {
+        "en": "Which is longer: three days or seventy hours?",
+        "ar": "أيهما أطول: ثلاثة أيام أم سبعون ساعة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "5 weeks = ? days",
+        "ar": "5 أسابيع = ؟ يومًا"
+      },
+      "options": {
+        "en": [
+          "35",
+          "50",
+          "12",
+          "30"
+        ],
+        "ar": [
+          "35",
+          "50",
+          "12",
+          "30"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1 week = 7 days, so 5 × 7 = 35 days.",
+        "ar": "الأسبوع = 7 أيام، إذن 5 × 7 = 35 يومًا."
+      },
+      "say": {
+        "en": "Five weeks equals how many days?",
+        "ar": "خمسة أسابيع تساوي كم يومًا؟"
+      }
+    },
+    {
+      "q": {
+        "en": "[3/4] of an hour = ? minutes",
+        "ar": "[3/4] ساعة = ؟ دقيقة"
+      },
+      "options": {
+        "en": [
+          "45",
+          "75",
+          "34",
+          "30"
+        ],
+        "ar": [
+          "45",
+          "75",
+          "34",
+          "30"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "A quarter hour is 15 minutes, so 3 × 15 = 45 minutes.",
+        "ar": "ربع الساعة 15 دقيقة، إذن 3 × 15 = 45 دقيقة."
+      },
+      "say": {
+        "en": "Three quarters of an hour equals how many minutes?",
+        "ar": "ثلاثة أرباع الساعة تساوي كم دقيقة؟"
+      }
+    }
+  ]
+}

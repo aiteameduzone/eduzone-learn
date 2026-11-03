@@ -1,0 +1,378 @@
+{
+  "id": "g4-math-u04-05",
+  "title": {
+    "en": "Finding a Missing Side",
+    "ar": "إيجاد طول ضلع مجهول"
+  },
+  "objective": {
+    "en": "Use the area and perimeter rules backwards to find an unknown side, and see that rectangles with the same area can have different perimeters.",
+    "ar": "أن يستخدم التلميذ قاعدتي المساحة والمحيط لإيجاد طول ضلع مجهول، ويلاحظ أن مستطيلات لها المساحة نفسها قد تختلف في المحيط."
+  },
+  "refs": {
+    "egypt": [
+      "U4 · Unknown side; same area, different perimeter"
+    ],
+    "ccss": [
+      "4.MD.A.3"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "grid",
+        "w": 6,
+        "h": 4,
+        "label": {
+          "en": "Area = 24, length = 6, width = ?",
+          "ar": "المساحة = 24 ، الطول = 6 ، العرض = ؟"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "A rectangle has area 24 square units and length 6 units. What is its width?",
+          "ar": "مستطيل مساحته 24 وحدة مربعة وطوله 6 وحدات. ما عرضه؟"
+        },
+        "options": {
+          "en": [
+            "4 units",
+            "18 units",
+            "6 units"
+          ],
+          "ar": [
+            "4 وحدات",
+            "18 وحدة",
+            "6 وحدات"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "If we know the **area** and one side, we **divide** to find the other side.\n\nArea 24, length 6: width = 24 ÷ 6 = 4.",
+        "ar": "إذا عرفنا **المساحة** وطول أحد البعدين، **نقسم** لنجد البعد الآخر.\n\nالمساحة 24 والطول 6: العرض = 24 ÷ 6 = 4."
+      },
+      "say": {
+        "en": "If we know the area and one side, we divide to find the other side. The area is twenty-four and the length is six. Six times what makes twenty-four? Twenty-four divided by six is four. The width is four.",
+        "ar": "إذا عرفنا المساحة وطول أحد البعدين، نقسم لنجد البعد الآخر. المساحة أربع وعشرون والطول ستة. ستة في كم يساوي أربعة وعشرين؟ أربعة وعشرون على ستة يساوي أربعة. إذن العرض أربعة."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "grid",
+        "w": 10,
+        "h": 5,
+        "label": {
+          "en": "Fence = 30 m, length = 10 m",
+          "ar": "السور = 30 م ، الطول = 10 م"
+        }
+      },
+      "text": {
+        "en": "If we know the **perimeter** and one side: halve the perimeter to get length + width, then subtract.",
+        "ar": "إذا عرفنا **المحيط** وطول أحد البعدين: نقسم المحيط على 2 فنحصل على الطول + العرض، ثم نطرح."
+      },
+      "lines": {
+        "en": [
+          "Fence (perimeter) = 30 m, length = 10 m",
+          "Length + width = 30 ÷ 2 = 15",
+          "Width = 15 − 10 = 5 m",
+          "Check: (10 + 5) × 2 = 30 ✓"
+        ],
+        "ar": [
+          "السور (المحيط) = 30 م ، الطول = 10 م",
+          "الطول + العرض = 30 ÷ 2 = 15",
+          "العرض = 15 − 10 = 5 م",
+          "التحقق: (10 + 5) × 2 = 30 ✓"
+        ]
+      },
+      "say": {
+        "en": "If we know the perimeter and one side, halve the perimeter to get length plus width, then subtract. A village garden has a fence of thirty metres. Its length is ten metres. Thirty divided by two is fifteen. Fifteen minus ten is five. The width is five metres. Check: ten plus five, times two, is thirty.",
+        "ar": "إذا عرفنا المحيط وطول أحد البعدين، نقسم المحيط على اثنين فنحصل على الطول زائد العرض، ثم نطرح. حديقة في القرية طول سورها ثلاثون مترًا، وطولها عشرة أمتار. ثلاثون على اثنين يساوي خمسة عشر. خمسة عشر ناقص عشرة يساوي خمسة. إذن العرض خمسة أمتار. للتحقق: عشرة زائد خمسة في اثنين يساوي ثلاثين."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "area-grid",
+      "params": {
+        "target": {
+          "area": 20,
+          "w": 5,
+          "h": 4
+        },
+        "w": 5,
+        "h": 1
+      },
+      "text": {
+        "en": "A carpet covers 20 m² and is 5 m long. Find its width, then build it.",
+        "ar": "سجادة مساحتها 20 م² وطولها 5 م. أوجد عرضها ثم كوّنها."
+      },
+      "prompt": {
+        "en": "Build the carpet: area 20, length 5.",
+        "ar": "كوّن السجادة: المساحة 20 والطول 5."
+      },
+      "say": {
+        "en": "A carpet covers twenty square metres and is five metres long. Find its width, then build it.",
+        "ar": "سجادة مساحتها عشرون مترًا مربعًا وطولها خمسة أمتار. أوجد عرضها ثم كوّنها."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "grid",
+        "w": 6,
+        "h": 2,
+        "label": {
+          "en": "Area 12",
+          "ar": "المساحة 12"
+        }
+      },
+      "check": {
+        "q": {
+          "en": "Two gardens both have area 12 m². Which one needs the SHORTER fence?",
+          "ar": "حديقتان مساحة كل منهما 12 م². أيهما تحتاج سورًا أقصر؟"
+        },
+        "options": {
+          "en": [
+            "12 m × 1 m",
+            "4 m × 3 m",
+            "Both the same"
+          ],
+          "ar": [
+            "12 م × 1 م",
+            "4 م × 3 م",
+            "الاثنتان متساويتان"
+          ]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "**Same area, different perimeter.** Each of these rectangles has area 12:\n\n12 × 1 → perimeter 26\n\n6 × 2 → perimeter 16\n\n4 × 3 → perimeter 14\n\nThe closer to a square, the **shorter** the perimeter.",
+        "ar": "**المساحة نفسها والمحيط مختلف.** كل مستطيل من هذه مساحته 12:\n\n12 × 1 ← المحيط 26\n\n6 × 2 ← المحيط 16\n\n4 × 3 ← المحيط 14\n\nكلما اقترب المستطيل من شكل المربع **قصر** محيطه."
+      },
+      "say": {
+        "en": "Same area, different perimeter. Each of these rectangles has an area of twelve. Twelve by one has a perimeter of twenty-six. Six by two has a perimeter of sixteen. Four by three has a perimeter of fourteen. The closer to a square, the shorter the perimeter.",
+        "ar": "المساحة نفسها والمحيط مختلف. كل مستطيل من هذه مساحته اثنتا عشرة. المستطيل اثنا عشر في واحد محيطه ستة وعشرون. والمستطيل ستة في اثنين محيطه ستة عشر. والمستطيل أربعة في ثلاثة محيطه أربعة عشر. كلما اقترب المستطيل من شكل المربع قصر محيطه."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "area-grid",
+      "params": {
+        "target": {
+          "area": 12,
+          "perimeter": 14
+        },
+        "w": 1,
+        "h": 1
+      },
+      "text": {
+        "en": "Hassan has 12 square tiles for a balcony. He wants the shortest border around it.",
+        "ar": "عند حسن 12 بلاطة مربعة لشرفة، ويريد أقصر إطار حولها."
+      },
+      "prompt": {
+        "en": "Make a rectangle with area 12 and perimeter 14.",
+        "ar": "كوّن مستطيلًا مساحته 12 ومحيطه 14."
+      },
+      "say": {
+        "en": "Hassan has twelve square tiles for a balcony. He wants the shortest border around it. Make a rectangle with area twelve and perimeter fourteen.",
+        "ar": "عند حسن اثنتا عشرة بلاطة مربعة لشرفة، ويريد أقصر إطار حولها. كوّن مستطيلًا مساحته اثنتا عشرة ومحيطه أربع عشرة."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "grid",
+        "w": 7,
+        "h": 3,
+        "label": {
+          "en": "21 ÷ 7 = 3",
+          "ar": "21 ÷ 7 = 3"
+        }
+      },
+      "text": {
+        "en": "**Remember:**\n\nKnow area + one side → other side = area ÷ side.\n\nKnow perimeter + one side → other side = (perimeter ÷ 2) − side.\n\nAlways check your answer with the rule.",
+        "ar": "**تذكّر:**\n\nنعرف المساحة وبُعدًا ← البعد الآخر = المساحة ÷ البعد المعلوم.\n\nنعرف المحيط وبُعدًا ← البعد الآخر = (المحيط ÷ 2) − البعد المعلوم.\n\nتحقّق دائمًا من إجابتك بالقاعدة."
+      },
+      "say": {
+        "en": "Remember. If you know the area and one side, the other side is the area divided by that side. If you know the perimeter and one side, the other side is half the perimeter minus that side. Always check your answer with the rule. Here, the area is twenty-one and the length is seven, so the width is three.",
+        "ar": "تذكّر. إذا عرفنا المساحة وبُعدًا، فالبعد الآخر يساوي المساحة مقسومة على البعد المعلوم. وإذا عرفنا المحيط وبُعدًا، فالبعد الآخر يساوي نصف المحيط ناقص البعد المعلوم. تحقّق دائمًا من إجابتك بالقاعدة. هنا المساحة واحد وعشرون والطول سبعة، إذن العرض ثلاثة."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "A rectangle has area 35 cm² and length 7 cm. What is its width?",
+        "ar": "مستطيل مساحته 35 سم² وطوله 7 سم. ما عرضه؟"
+      },
+      "options": {
+        "en": [
+          "28 cm",
+          "5 cm",
+          "42 cm",
+          "245 cm"
+        ],
+        "ar": [
+          "28 سم",
+          "5 سم",
+          "42 سم",
+          "245 سم"
+        ]
+      },
+      "answer": 1,
+      "explain": {
+        "en": "35 ÷ 7 = 5 cm. Check: 7 × 5 = 35. 28 subtracts instead of dividing.",
+        "ar": "35 ÷ 7 = 5 سم. للتحقق: 7 × 5 = 35. أما 28 فجاء من الطرح بدلًا من القسمة."
+      },
+      "say": {
+        "en": "A rectangle has an area of thirty-five square centimetres and a length of seven centimetres. What is its width?",
+        "ar": "مستطيل مساحته خمسة وثلاثون سنتيمترًا مربعًا وطوله سبعة سنتيمترات. ما عرضه؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A rectangle has perimeter 20 m and length 6 m. What is its width?",
+        "ar": "مستطيل محيطه 20 م وطوله 6 م. ما عرضه؟"
+      },
+      "options": {
+        "en": [
+          "14 m",
+          "8 m",
+          "4 m",
+          "2 m"
+        ],
+        "ar": [
+          "14 م",
+          "8 م",
+          "4 م",
+          "2 م"
+        ]
+      },
+      "answer": 2,
+      "explain": {
+        "en": "20 ÷ 2 = 10, and 10 − 6 = 4 m. 14 forgot to halve the perimeter: 20 − 6.",
+        "ar": "20 ÷ 2 = 10، و 10 − 6 = 4 م. أما 14 فنسي قسمة المحيط على 2: 20 − 6."
+      },
+      "say": {
+        "en": "A rectangle has a perimeter of twenty metres and a length of six metres. What is its width?",
+        "ar": "مستطيل محيطه عشرون مترًا وطوله ستة أمتار. ما عرضه؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A square has perimeter 28 cm. How long is each side?",
+        "ar": "مربع محيطه 28 سم. ما طول ضلعه؟"
+      },
+      "options": {
+        "en": [
+          "7 cm",
+          "14 cm",
+          "4 cm",
+          "24 cm"
+        ],
+        "ar": [
+          "7 سم",
+          "14 سم",
+          "4 سم",
+          "24 سم"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "A square has 4 equal sides: 28 ÷ 4 = 7 cm. 14 divides by 2 instead of 4.",
+        "ar": "للمربع 4 أضلاع متساوية: 28 ÷ 4 = 7 سم. أما 14 فقسم على 2 بدلًا من 4."
+      },
+      "say": {
+        "en": "A square has a perimeter of twenty-eight centimetres. How long is each side?",
+        "ar": "مربع محيطه ثمانية وعشرون سنتيمترًا. ما طول ضلعه؟"
+      }
+    },
+    {
+      "q": {
+        "en": "A football pitch drawing covers 48 cm² and is 8 cm long. How wide is it?",
+        "ar": "رسم ملعب كرة قدم مساحته 48 سم² وطوله 8 سم. ما عرضه؟"
+      },
+      "options": {
+        "en": [
+          "40 cm",
+          "16 cm",
+          "4 cm",
+          "6 cm"
+        ],
+        "ar": [
+          "40 سم",
+          "16 سم",
+          "4 سم",
+          "6 سم"
+        ]
+      },
+      "answer": 3,
+      "explain": {
+        "en": "48 ÷ 8 = 6 cm, because 8 × 6 = 48.",
+        "ar": "48 ÷ 8 = 6 سم، لأن 8 × 6 = 48."
+      },
+      "say": {
+        "en": "A football pitch drawing covers forty-eight square centimetres and is eight centimetres long. How wide is it?",
+        "ar": "رسم ملعب كرة قدم مساحته ثمانية وأربعون سنتيمترًا مربعًا وطوله ثمانية سنتيمترات. ما عرضه؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which rectangle has area 16 and the SHORTEST perimeter?",
+        "ar": "أي مستطيل مساحته 16 وله أقصر محيط؟"
+      },
+      "options": {
+        "en": [
+          "8 × 2",
+          "4 × 4",
+          "16 × 1",
+          "They all have the same perimeter"
+        ],
+        "ar": [
+          "8 × 2",
+          "4 × 4",
+          "16 × 1",
+          "كلها لها المحيط نفسه"
+        ]
+      },
+      "answer": 1,
+      "explain": {
+        "en": "All have area 16, but perimeters are 16, 20 and 34. The square 4 × 4 is shortest.",
+        "ar": "كلها مساحتها 16، لكن محيطاتها 16 و 20 و 34. المربع 4 × 4 هو الأقصر."
+      },
+      "say": {
+        "en": "Which rectangle has an area of sixteen and the shortest perimeter: four by four, eight by two, sixteen by one, or do they all have the same perimeter?",
+        "ar": "أي مستطيل مساحته ست عشرة وله أقصر محيط: أربعة في أربعة، أم ثمانية في اثنين، أم ستة عشر في واحد، أم كلها لها المحيط نفسه؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Omar has 18 m of fence for a rectangle garden. One side is 5 m. What is the garden's area?",
+        "ar": "عند عمر 18 م من السور لحديقة مستطيلة. أحد أبعادها 5 م. ما مساحة الحديقة؟"
+      },
+      "options": {
+        "en": [
+          "65 m²",
+          "90 m²",
+          "20 m²",
+          "13 m²"
+        ],
+        "ar": [
+          "65 م²",
+          "90 م²",
+          "20 م²",
+          "13 م²"
+        ]
+      },
+      "answer": 2,
+      "explain": {
+        "en": "18 ÷ 2 = 9, so the other side is 9 − 5 = 4 m. Area = 5 × 4 = 20 m². 65 used 13 (18 − 5) as the side.",
+        "ar": "18 ÷ 2 = 9، إذن البعد الآخر = 9 − 5 = 4 م. المساحة = 5 × 4 = 20 م². أما 65 فاستخدم 13 (18 − 5) بعدًا."
+      },
+      "say": {
+        "en": "Omar has eighteen metres of fence for a rectangle garden. One side is five metres. What is the garden's area?",
+        "ar": "عند عمر ثمانية عشر مترًا من السور لحديقة مستطيلة. أحد أبعادها خمسة أمتار. ما مساحة الحديقة؟"
+      }
+    }
+  ]
+}

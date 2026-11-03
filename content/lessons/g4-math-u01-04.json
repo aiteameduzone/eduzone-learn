@@ -1,0 +1,413 @@
+{
+  "id": "g4-math-u01-04",
+  "title": {
+    "en": "Comparing and Ordering Numbers",
+    "ar": "مقارنة الأعداد وترتيبها"
+  },
+  "objective": {
+    "en": "Compare multi-digit numbers, including numbers in different forms, using >, < and =, and order them ascending and descending.",
+    "ar": "أن يقارن التلميذ الأعداد الكبيرة، ومنها أعداد مكتوبة بصور مختلفة، باستخدام > و < و =، ويرتبها تصاعديًا وتنازليًا."
+  },
+  "refs": {
+    "egypt": [
+      "U1 · 1.2 Comparing and ordering"
+    ],
+    "ccss": [
+      "4.NBT.A.2"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "blocks",
+        "n": 2310
+      },
+      "check": {
+        "q": {
+          "en": "Which is greater: 2,310 or 2,130?",
+          "ar": "أيهما أكبر: 2,310 أم 2,130؟"
+        },
+        "options": {
+          "en": [
+            "2,310",
+            "2,130",
+            "They are equal"
+          ],
+          "ar": [
+            "2,310",
+            "2,130",
+            "متساويان"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "To compare, line up the places and start from the **left** (the biggest place).\n\n2,310 and 2,130: thousands are equal (2 = 2). Hundreds: 3 > 1.\n\nSo **2,310 > 2,130**.",
+        "ar": "للمقارنة نرتب المنازل ونبدأ من **اليسار** (أكبر منزلة).\n\n2,310 و 2,130: الآلاف متساوية (2 = 2). المئات: 3 > 1.\n\nإذن **2,310 > 2,130**."
+      },
+      "say": {
+        "en": "To compare, line up the places and start from the left, the biggest place. Two thousand three hundred ten and two thousand one hundred thirty: the thousands are equal, two and two. In the hundreds, three is greater than one. So two thousand three hundred ten is greater.",
+        "ar": "للمقارنة نرتب المنازل ونبدأ من اليسار، أي من أكبر منزلة. ألفان وثلاثمائة وعشرة، وألفان ومائة وثلاثون: الآلاف متساوية، اثنان واثنان. وفي المئات ثلاثة أكبر من واحد. إذن ألفان وثلاثمائة وعشرة هو الأكبر."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "blocks",
+        "n": 4682
+      },
+      "text": {
+        "en": "**Find the first place that is different.** Compare 4,628 and 4,682.",
+        "ar": "**ابحث عن أول منزلة مختلفة.** قارن بين 4,628 و 4,682."
+      },
+      "lines": {
+        "en": [
+          "Thousands: 4 = 4",
+          "Hundreds: 6 = 6",
+          "Tens: 2 < 8",
+          "So 4,628 < 4,682"
+        ],
+        "ar": [
+          "الآلاف: 4 = 4",
+          "المئات: 6 = 6",
+          "العشرات: 2 < 8",
+          "إذن 4,628 < 4,682"
+        ]
+      },
+      "say": {
+        "en": "Find the first place that is different. Compare four thousand six hundred twenty-eight and four thousand six hundred eighty-two. The thousands are both four. The hundreds are both six. In the tens, two is less than eight. So four thousand six hundred twenty-eight is less than four thousand six hundred eighty-two.",
+        "ar": "ابحث عن أول منزلة مختلفة. قارن بين أربعة آلاف وستمائة وثمانية وعشرين، وأربعة آلاف وستمائة واثنين وثمانين. الآلاف أربعة في العددين، والمئات ستة في العددين. وفي العشرات اثنان أصغر من ثمانية. إذن أربعة آلاف وستمائة وثمانية وعشرون أصغر من أربعة آلاف وستمائة واثنين وثمانين."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "blocks",
+        "n": 3405
+      },
+      "check": {
+        "q": {
+          "en": "Which is greater: 3,000 + 400 + 5 or 3,450?",
+          "ar": "أيهما أكبر: 3,000 + 400 + 5 أم 3,450؟"
+        },
+        "options": {
+          "en": [
+            "3,450",
+            "3,000 + 400 + 5",
+            "They are equal"
+          ],
+          "ar": [
+            "3,450",
+            "3,000 + 400 + 5",
+            "متساويان"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "**Different forms?** Change both numbers to standard form first, then compare.",
+        "ar": "**صور مختلفة؟** حوّل العددين إلى الصورة القياسية أولًا، ثم قارن."
+      },
+      "lines": {
+        "en": [
+          "3,000 + 400 + 5 = 3,405",
+          "Tens: 0 < 5",
+          "So 3,405 < 3,450"
+        ],
+        "ar": [
+          "3,000 + 400 + 5 = 3,405",
+          "العشرات: 0 < 5",
+          "إذن 3,405 < 3,450"
+        ]
+      },
+      "say": {
+        "en": "Different forms? Change both numbers to standard form first. Three thousand plus four hundred plus five is three thousand four hundred five. Compare it with three thousand four hundred fifty. In the tens, zero is less than five. So three thousand four hundred fifty is greater.",
+        "ar": "صور مختلفة؟ حوّل العددين إلى الصورة القياسية أولًا. ثلاثة آلاف زائد أربعمائة زائد خمسة يساوي ثلاثة آلاف وأربعمائة وخمسة. نقارنه بثلاثة آلاف وأربعمائة وخمسين. في العشرات صفر أصغر من خمسة. إذن ثلاثة آلاف وأربعمائة وخمسون هو الأكبر."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": {
+        "places": 4,
+        "target": 8631
+      },
+      "text": {
+        "en": "Use the digits 3, 8, 1 and 6 once each. Put the biggest digit in the biggest place.",
+        "ar": "استخدم الأرقام 3 و 8 و 1 و 6 مرة واحدة لكل رقم. ضع أكبر رقم في أكبر منزلة."
+      },
+      "prompt": {
+        "en": "Build the greatest number using 3, 8, 1, 6.",
+        "ar": "كوّن أكبر عدد من الأرقام 3 و 8 و 1 و 6."
+      },
+      "say": {
+        "en": "Use the digits three, eight, one and six once each. Build the greatest number you can.",
+        "ar": "استخدم الأرقام ثلاثة وثمانية وواحد وستة مرة واحدة لكل رقم. كوّن أكبر عدد ممكن."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "blocks",
+        "n": 5230
+      },
+      "text": {
+        "en": "**Ordering.** Ascending = smallest to greatest. Descending = greatest to smallest.\n\nOrder ascending: 52,300 · 25,300 · 52,030 · 5,230",
+        "ar": "**الترتيب.** تصاعديًا = من الأصغر إلى الأكبر. تنازليًا = من الأكبر إلى الأصغر.\n\nرتّب تصاعديًا: 52,300 · 25,300 · 52,030 · 5,230"
+      },
+      "lines": {
+        "en": [
+          "4 digits is smallest: 5,230",
+          "Ten thousands: 2 < 5, so 25,300 is next",
+          "52,030 < 52,300 (hundreds: 0 < 3)",
+          "Ascending: 5,230 < 25,300 < 52,030 < 52,300"
+        ],
+        "ar": [
+          "الأقل أرقامًا هو الأصغر: 5,230",
+          "عشرات الألوف: 2 < 5، إذن 25,300 بعده",
+          "52,030 < 52,300 (المئات: 0 < 3)",
+          "تصاعديًا: 5,230 < 25,300 < 52,030 < 52,300"
+        ]
+      },
+      "say": {
+        "en": "Ordering. Ascending means smallest to greatest. Descending means greatest to smallest. Order these ascending: fifty-two thousand three hundred, twenty-five thousand three hundred, fifty-two thousand thirty, and five thousand two hundred thirty. Five thousand two hundred thirty has only four digits, so it is the smallest. Twenty-five thousand three hundred has two ten thousands, so it comes next. Then compare fifty-two thousand thirty and fifty-two thousand three hundred: in the hundreds, zero is less than three.",
+        "ar": "الترتيب. تصاعديًا يعني من الأصغر إلى الأكبر، وتنازليًا يعني من الأكبر إلى الأصغر. رتّب تصاعديًا: اثنين وخمسين ألفًا وثلاثمائة، وخمسة وعشرين ألفًا وثلاثمائة، واثنين وخمسين ألفًا وثلاثين، وخمسة آلاف ومئتين وثلاثين. العدد خمسة آلاف ومئتان وثلاثون له أربعة أرقام فقط، فهو الأصغر. ثم خمسة وعشرون ألفًا وثلاثمائة لأن فيه عشرتي ألوف فقط. ثم نقارن اثنين وخمسين ألفًا وثلاثين باثنين وخمسين ألفًا وثلاثمائة: في المئات صفر أصغر من ثلاثة."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": {
+        "places": 6,
+        "target": 100000
+      },
+      "text": {
+        "en": "Think: which 6-digit number comes first?",
+        "ar": "فكّر: ما أول عدد مكوّن من 6 أرقام؟"
+      },
+      "prompt": {
+        "en": "Build the smallest 6-digit number.",
+        "ar": "كوّن أصغر عدد مكوّن من 6 أرقام."
+      },
+      "say": {
+        "en": "Build the smallest six-digit number.",
+        "ar": "كوّن أصغر عدد مكوّن من ستة أرقام."
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "blocks",
+        "n": 1000
+      },
+      "text": {
+        "en": "**Remember:**\n\nMore digits → greater number.\n\nSame number of digits → compare from the **left** until a place is different.\n\nDifferent forms → change to standard form first.",
+        "ar": "**تذكّر:**\n\nعدد أرقام أكثر ← عدد أكبر.\n\nعدد الأرقام نفسه ← قارن من **اليسار** حتى تجد منزلة مختلفة.\n\nصور مختلفة ← حوّل إلى الصورة القياسية أولًا."
+      },
+      "say": {
+        "en": "Remember. More digits means a greater number. The same number of digits: compare from the left until a place is different. Different forms: change to standard form first.",
+        "ar": "تذكّر. العدد الذي أرقامه أكثر هو الأكبر. وإذا تساوى عدد الأرقام نقارن من اليسار حتى نجد منزلة مختلفة. وإذا اختلفت الصور نحوّل إلى الصورة القياسية أولًا."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "Which sign makes this true? 67,429 __ 67,492",
+        "ar": "ما الرمز الصحيح؟ 67,429 __ 67,492"
+      },
+      "options": {
+        "en": [
+          "<",
+          ">",
+          "="
+        ],
+        "ar": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Same ten thousands, thousands and hundreds. Tens: 2 < 9.",
+        "ar": "عشرات الألوف والآلاف والمئات متساوية. العشرات: 2 < 9."
+      },
+      "say": {
+        "en": "Compare sixty-seven thousand four hundred twenty-nine and sixty-seven thousand four hundred ninety-two.",
+        "ar": "قارن بين سبعة وستين ألفًا وأربعمائة وتسعة وعشرين، وسبعة وستين ألفًا وأربعمائة واثنين وتسعين."
+      }
+    },
+    {
+      "q": {
+        "en": "Which sign makes this true? 100,000 __ 99,999",
+        "ar": "ما الرمز الصحيح؟ 100,000 __ 99,999"
+      },
+      "options": {
+        "en": [
+          ">",
+          "<",
+          "="
+        ],
+        "ar": [
+          ">",
+          "<",
+          "="
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "100,000 has 6 digits and 99,999 has only 5. Big digits like 9 don't beat an extra place.",
+        "ar": "العدد 100,000 له 6 أرقام، و 99,999 له 5 أرقام فقط. الأرقام الكبيرة مثل 9 لا تتفوق على منزلة زائدة."
+      },
+      "say": {
+        "en": "Compare one hundred thousand and ninety-nine thousand nine hundred ninety-nine.",
+        "ar": "قارن بين مائة ألف، وتسعة وتسعين ألفًا وتسعمائة وتسعة وتسعين."
+      }
+    },
+    {
+      "q": {
+        "en": "Which number is the greatest?",
+        "ar": "أي عدد هو الأكبر؟"
+      },
+      "options": {
+        "en": [
+          "850,000",
+          "805,000",
+          "85,000",
+          "580,000"
+        ],
+        "ar": [
+          "850,000",
+          "805,000",
+          "85,000",
+          "580,000"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "850,000 and 805,000 both have 8 hundred thousands. Ten thousands: 5 > 0.",
+        "ar": "850,000 و 805,000 في كل منهما 8 مئات ألوف. عشرات الألوف: 5 > 0."
+      },
+      "say": {
+        "en": "Which number is the greatest?",
+        "ar": "أي عدد هو الأكبر؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Order ascending: 4,099 · 4,909 · 4,990 · 4,900",
+        "ar": "رتّب تصاعديًا: 4,099 · 4,909 · 4,990 · 4,900"
+      },
+      "options": {
+        "en": [
+          "4,099; 4,900; 4,909; 4,990",
+          "4,990; 4,909; 4,900; 4,099",
+          "4,099; 4,909; 4,900; 4,990",
+          "4,900; 4,099; 4,909; 4,990"
+        ],
+        "ar": [
+          "4,099؛ 4,900؛ 4,909؛ 4,990",
+          "4,990؛ 4,909؛ 4,900؛ 4,099",
+          "4,099؛ 4,909؛ 4,900؛ 4,990",
+          "4,900؛ 4,099؛ 4,909؛ 4,990"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Ascending starts with the smallest. 4,099 has 0 hundreds. Then 4,900 < 4,909 < 4,990.",
+        "ar": "الترتيب التصاعدي يبدأ بالأصغر. 4,099 فيه 0 مئات. ثم 4,900 < 4,909 < 4,990."
+      },
+      "say": {
+        "en": "Order these numbers ascending: four thousand ninety-nine, four thousand nine hundred nine, four thousand nine hundred ninety, and four thousand nine hundred.",
+        "ar": "رتّب تصاعديًا: أربعة آلاف وتسعة وتسعين، وأربعة آلاف وتسعمائة وتسعة، وأربعة آلاف وتسعمائة وتسعين، وأربعة آلاف وتسعمائة."
+      }
+    },
+    {
+      "q": {
+        "en": "Which sign makes this true? 200,000 + 6,000 + 50 __ 206,500",
+        "ar": "ما الرمز الصحيح؟ 200,000 + 6,000 + 50 __ 206,500"
+      },
+      "options": {
+        "en": [
+          "<",
+          ">",
+          "="
+        ],
+        "ar": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "200,000 + 6,000 + 50 = 206,050. Hundreds: 0 < 5, so 206,050 < 206,500.",
+        "ar": "200,000 + 6,000 + 50 = 206,050. المئات: 0 < 5، إذن 206,050 < 206,500."
+      },
+      "say": {
+        "en": "Compare two hundred thousand plus six thousand plus fifty with two hundred six thousand five hundred.",
+        "ar": "قارن بين مئتي ألف زائد ستة آلاف زائد خمسين، ومئتين وستة آلاف وخمسمائة."
+      }
+    },
+    {
+      "q": {
+        "en": "A stadium in Cairo has about 75,000 seats. A stadium in Alexandria has about 86,000 seats. Which has more seats?",
+        "ar": "ملعب في القاهرة فيه نحو 75,000 مقعد، وملعب في الإسكندرية فيه نحو 86,000 مقعد. أيهما فيه مقاعد أكثر؟"
+      },
+      "options": {
+        "en": [
+          "The stadium in Alexandria",
+          "The stadium in Cairo",
+          "They are the same",
+          "We cannot know"
+        ],
+        "ar": [
+          "ملعب الإسكندرية",
+          "ملعب القاهرة",
+          "العدد نفسه",
+          "لا يمكن المعرفة"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Both have 5 digits. Ten thousands: 8 > 7, so 86,000 > 75,000.",
+        "ar": "كلاهما مكوّن من 5 أرقام. عشرات الألوف: 8 > 7، إذن 86,000 > 75,000."
+      },
+      "say": {
+        "en": "A stadium in Cairo has about seventy-five thousand seats. A stadium in Alexandria has about eighty-six thousand seats. Which has more seats?",
+        "ar": "ملعب في القاهرة فيه نحو خمسة وسبعين ألف مقعد، وملعب في الإسكندرية فيه نحو ستة وثمانين ألف مقعد. أيهما فيه مقاعد أكثر؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which number is between 39,800 and 40,100?",
+        "ar": "أي عدد يقع بين 39,800 و 40,100؟"
+      },
+      "options": {
+        "en": [
+          "40,010",
+          "39,080",
+          "40,110",
+          "41,000"
+        ],
+        "ar": [
+          "40,010",
+          "39,080",
+          "40,110",
+          "41,000"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "39,800 < 40,010 < 40,100. 39,080 is less than 39,800 (hundreds: 0 < 8).",
+        "ar": "39,800 < 40,010 < 40,100. أما 39,080 فأصغر من 39,800 (المئات: 0 < 8)."
+      },
+      "say": {
+        "en": "Which number is between thirty-nine thousand eight hundred and forty thousand one hundred?",
+        "ar": "أي عدد يقع بين تسعة وثلاثين ألفًا وثمانمائة، وأربعين ألفًا ومائة؟"
+      }
+    }
+  ]
+}

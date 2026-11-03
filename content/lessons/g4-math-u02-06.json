@@ -1,0 +1,277 @@
+{
+  "id": "g4-math-u02-06",
+  "title": {
+    "en": "Multistep Story Problems",
+    "ar": "المسائل متعددة الخطوات"
+  },
+  "objective": {
+    "en": "Solve two-step and multistep addition and subtraction story problems, using a bar model and a letter for the unknown, and check that the answer is reasonable.",
+    "ar": "أن يحل التلميذ مسائل جمع وطرح من خطوتين أو أكثر، مستخدمًا النموذج الشريطي وحرفًا للمجهول، ويتحقق من معقولية الناتج."
+  },
+  "refs": {
+    "egypt": ["U2 · 2.2 Multistep story problems"],
+    "ccss": ["4.OA.A.3", "4.NBT.B.4"]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "check": {
+        "q": {
+          "en": "A bus to the Pyramids has 48 seats. 23 students get on at school and 17 more at the next stop. How many seats are empty?",
+          "ar": "في أتوبيس رحلة الأهرامات 48 مقعدًا. ركب 23 تلميذًا من المدرسة و 17 تلميذًا آخرين في المحطة التالية. كم مقعدًا فارغًا؟"
+        },
+        "options": {
+          "en": ["8", "40", "88"],
+          "ar": ["8", "40", "88"]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "**Step 1:** students on the bus: 23 + 17 = 40.\n\n**Step 2:** empty seats: 48 − 40 = 8.\n\nA **multistep** problem has a hidden question. Answer it first, then use that answer for the next step.",
+        "ar": "**الخطوة 1:** عدد التلاميذ في الأتوبيس: 23 + 17 = 40\n\n**الخطوة 2:** المقاعد الفارغة: 48 − 40 = 8\n\nفي المسألة **متعددة الخطوات** سؤال مخفي. نجيب عنه أولًا، ثم نستخدم إجابته في الخطوة التالية."
+      },
+      "say": {
+        "en": "A bus to the Pyramids has forty-eight seats. Twenty-three students get on at school and seventeen more at the next stop. Step one: students on the bus: twenty-three plus seventeen is forty. Step two: empty seats: forty-eight minus forty is eight. A multistep problem has a hidden question. Answer it first, then use that answer for the next step. Adding everything to get eighty-eight is a mistake.",
+        "ar": "في أتوبيس رحلة الأهرامات ثمانية وأربعون مقعدًا. ركب ثلاثة وعشرون تلميذًا من المدرسة، وسبعة عشر تلميذًا آخرون في المحطة التالية. الخطوة الأولى: عدد التلاميذ في الأتوبيس ثلاثة وعشرون زائد سبعة عشر يساوي أربعين. الخطوة الثانية: المقاعد الفارغة ثمانية وأربعون ناقص أربعين يساوي ثمانية. في المسألة متعددة الخطوات سؤال مخفي. نجيب عنه أولًا، ثم نستخدم إجابته في الخطوة التالية. وجمع كل الأعداد للحصول على ثمانية وثمانين خطأ."
+      },
+      "visual": { "kind": "blocks", "n": 48 }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "Salma has 2,500 EGP. She buys a bike for 1,875 EGP and a helmet for 340 EGP. How much money is left?",
+        "ar": "مع سلمى 2500 جنيه. اشترت دراجة بـ 1875 جنيهًا وخوذة بـ 340 جنيهًا. كم يتبقى معها؟"
+      },
+      "lines": {
+        "en": [
+          "Hidden question: how much did she spend?",
+          "Step 1: 1,875 + 340 = 2,215 EGP",
+          "Step 2: 2,500 − 2,215 = 285 EGP",
+          "Estimate: 2,500 − 2,200 = 300. 285 is close ✓",
+          "Salma has 285 EGP left."
+        ],
+        "ar": [
+          "السؤال المخفي: كم أنفقت؟",
+          "الخطوة 1: 1875 + 340 = 2215 جنيهًا",
+          "الخطوة 2: 2500 − 2215 = 285 جنيهًا",
+          "التقدير: 2500 − 2200 = 300، والعدد 285 قريب منه ✓",
+          "يتبقى مع سلمى 285 جنيهًا."
+        ]
+      },
+      "say": {
+        "en": "Salma has two thousand five hundred pounds. She buys a bike for one thousand eight hundred seventy-five pounds and a helmet for three hundred forty pounds. How much is left? Hidden question: how much did she spend? Step one: one thousand eight hundred seventy-five plus three hundred forty is two thousand two hundred fifteen. Step two: two thousand five hundred minus two thousand two hundred fifteen is two hundred eighty-five. Estimate: two thousand five hundred minus two thousand two hundred is three hundred, and two hundred eighty-five is close. Salma has two hundred eighty-five pounds left.",
+        "ar": "مع سلمى ألفان وخمسمئة جنيه. اشترت دراجة بألف وثمانمئة وخمسة وسبعين جنيهًا، وخوذة بثلاثمئة وأربعين جنيهًا. كم يتبقى معها؟ السؤال المخفي: كم أنفقت؟ الخطوة الأولى: ألف وثمانمئة وخمسة وسبعون زائد ثلاثمئة وأربعين يساوي ألفين ومئتين وخمسة عشر جنيهًا. الخطوة الثانية: ألفان وخمسمئة ناقص ألفين ومئتين وخمسة عشر يساوي مئتين وخمسة وثمانين جنيهًا. التقدير: ألفان وخمسمئة ناقص ألفين ومئتين يساوي ثلاثمئة، ومئتان وخمسة وثمانون قريب منه. يتبقى مع سلمى مئتان وخمسة وثمانون جنيهًا."
+      },
+      "visual": { "kind": "blocks", "n": 2500 }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": { "places": 4, "target": 1557 },
+      "text": {
+        "en": "A metro train carries 1,346 riders. At Sadat station 518 get off and 729 get on. Step 1: subtract the riders who got off. Step 2: add the riders who got on.",
+        "ar": "في قطار مترو 1346 راكبًا. في محطة السادات نزل 518 راكبًا وركب 729 راكبًا. الخطوة 1: اطرح من نزلوا. الخطوة 2: أضف من ركبوا."
+      },
+      "prompt": {
+        "en": "Build the number of riders on the train now.",
+        "ar": "كوِّن عدد الركاب في القطار الآن."
+      },
+      "say": {
+        "en": "A metro train carries one thousand three hundred forty-six riders. At Sadat station five hundred eighteen get off and seven hundred twenty-nine get on. Step one: subtract the riders who got off. Step two: add the riders who got on. Build the number of riders on the train now.",
+        "ar": "في قطار مترو ألف وثلاثمئة وستة وأربعون راكبًا. في محطة السادات نزل خمسمئة وثمانية عشر راكبًا، وركب سبعمئة وتسعة وعشرون راكبًا. الخطوة الأولى: اطرح من نزلوا. الخطوة الثانية: أضف من ركبوا. كوِّن عدد الركاب في القطار الآن."
+      }
+    },
+    {
+      "type": "explain",
+      "check": {
+        "q": {
+          "en": "A library had 3,420 books. It gave away 650, then bought b new books. Now it has 4,000. What should we work out first?",
+          "ar": "كان في مكتبة 3420 كتابًا. أهدت 650 كتابًا، ثم اشترت ص كتابًا جديدًا، فأصبح فيها 4000 كتاب. ماذا نحسب أولًا؟"
+        },
+        "options": {
+          "en": ["Books left: 3,420 − 650", "3,420 + 4,000", "4,000 − 650"],
+          "ar": ["الكتب المتبقية: 3420 − 650", "3420 + 4000", "4000 − 650"]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "**Step 1:** books left after giving away: 3,420 − 650 = 2,770.\n\n**Step 2:** 2,770 + b = 4,000. The unknown b is a part, so subtract:\n\nb = 4,000 − 2,770 = 1,230 new books.",
+        "ar": "**الخطوة 1:** الكتب المتبقية بعد الإهداء: 3420 − 650 = 2770\n\n**الخطوة 2:** 2770 + ص = 4000. المجهول ص جزء، فنطرح:\n\nص = 4000 − 2770 = 1230 كتابًا جديدًا."
+      },
+      "say": {
+        "en": "A library had three thousand four hundred twenty books. It gave away six hundred fifty, then bought b new books, and now has four thousand. Step one: books left: three thousand four hundred twenty minus six hundred fifty is two thousand seven hundred seventy. Step two: two thousand seven hundred seventy plus b equals four thousand. The unknown b is a part, so subtract: four thousand minus two thousand seven hundred seventy is one thousand two hundred thirty new books.",
+        "ar": "كان في مكتبة ثلاثة آلاف وأربعمئة وعشرون كتابًا. أهدت ستمئة وخمسين كتابًا، ثم اشترت صاد كتابًا جديدًا، فأصبح فيها أربعة آلاف كتاب. الخطوة الأولى: الكتب المتبقية ثلاثة آلاف وأربعمئة وعشرون ناقص ستمئة وخمسين يساوي ألفين وسبعمئة وسبعين. الخطوة الثانية: ألفان وسبعمئة وسبعون زائد صاد يساوي أربعة آلاف. المجهول صاد جزء، فنطرح: أربعة آلاف ناقص ألفين وسبعمئة وسبعين يساوي ألفًا ومئتين وثلاثين كتابًا جديدًا."
+      },
+      "visual": { "kind": "blocks", "n": 3420 }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "A family drives from Cairo to Hurghada, about 460 km. They drive 175 km, stop for lunch, then drive 190 km more. How far is left?",
+        "ar": "تسافر أسرة بالسيارة من القاهرة إلى الغردقة، والمسافة نحو 460 كم. قطعت 175 كم، ثم توقفت للغداء، ثم قطعت 190 كم أخرى. كم كيلومترًا يتبقى؟"
+      },
+      "lines": {
+        "en": [
+          "Step 1: distance driven: 175 + 190 = 365 km",
+          "Step 2: distance left: 460 − 365 = 95 km",
+          "Check: 95 + 365 = 460 ✓",
+          "About 95 km are left."
+        ],
+        "ar": [
+          "الخطوة 1: المسافة المقطوعة: 175 + 190 = 365 كم",
+          "الخطوة 2: المسافة المتبقية: 460 − 365 = 95 كم",
+          "التحقق: 95 + 365 = 460 ✓",
+          "يتبقى نحو 95 كم."
+        ]
+      },
+      "say": {
+        "en": "A family drives from Cairo to Hurghada, about four hundred sixty kilometres. They drive one hundred seventy-five kilometres, stop for lunch, then drive one hundred ninety more. How far is left? Step one: one hundred seventy-five plus one hundred ninety is three hundred sixty-five kilometres. Step two: four hundred sixty minus three hundred sixty-five is ninety-five kilometres. Check: ninety-five plus three hundred sixty-five is four hundred sixty. About ninety-five kilometres are left.",
+        "ar": "تسافر أسرة بالسيارة من القاهرة إلى الغردقة، والمسافة نحو أربعمئة وستين كيلومترًا. قطعت مئة وخمسة وسبعين كيلومترًا، ثم توقفت للغداء، ثم قطعت مئة وتسعين كيلومترًا أخرى. كم يتبقى؟ الخطوة الأولى: مئة وخمسة وسبعون زائد مئة وتسعين يساوي ثلاثمئة وخمسة وستين كيلومترًا. الخطوة الثانية: أربعمئة وستون ناقص ثلاثمئة وخمسة وستين يساوي خمسة وتسعين كيلومترًا. التحقق: خمسة وتسعون زائد ثلاثمئة وخمسة وستين يساوي أربعمئة وستين. يتبقى نحو خمسة وتسعين كيلومترًا."
+      },
+      "visual": { "kind": "blocks", "n": 460 }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": { "places": 4, "target": 3815 },
+      "text": {
+        "en": "A shop had 5,000 EGP. On Monday it earned 1,280 EGP and spent 2,465 EGP. Add what it earned, then subtract what it spent.",
+        "ar": "كان مع محل 5000 جنيه. يوم الاثنين كسب 1280 جنيهًا وأنفق 2465 جنيهًا. أضف ما كسبه، ثم اطرح ما أنفقه."
+      },
+      "prompt": {
+        "en": "Build how much money the shop has now.",
+        "ar": "كوِّن المبلغ الذي مع المحل الآن."
+      },
+      "say": {
+        "en": "A shop had five thousand pounds. On Monday it earned one thousand two hundred eighty pounds and spent two thousand four hundred sixty-five pounds. Add what it earned, then subtract what it spent. Build how much money the shop has now.",
+        "ar": "كان مع محل خمسة آلاف جنيه. يوم الاثنين كسب ألفًا ومئتين وثمانين جنيهًا، وأنفق ألفين وأربعمئة وخمسة وستين جنيهًا. أضف ما كسبه، ثم اطرح ما أنفقه. كوِّن المبلغ الذي مع المحل الآن."
+      }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Remember:**\n\n1. Read the problem and draw a bar model.\n\n2. Find the hidden question.\n\n3. Solve one step at a time. Use a letter for the unknown.\n\n4. Check with an estimate or the inverse operation.",
+        "ar": "**تذكّر:**\n\n1. اقرأ المسألة وارسم نموذجًا شريطيًا.\n\n2. ابحث عن السؤال المخفي.\n\n3. حُلّ خطوة واحدة في كل مرة، ورمز للمجهول بحرف.\n\n4. تحقق بالتقدير أو بالعملية العكسية."
+      },
+      "say": {
+        "en": "Remember. One: read the problem and draw a bar model. Two: find the hidden question. Three: solve one step at a time, and use a letter for the unknown. Four: check with an estimate or the inverse operation.",
+        "ar": "تذكّر. أولًا: اقرأ المسألة وارسم نموذجًا شريطيًا. ثانيًا: ابحث عن السؤال المخفي. ثالثًا: حُلّ خطوة واحدة في كل مرة، ورمز للمجهول بحرف. رابعًا: تحقق بالتقدير أو بالعملية العكسية."
+      },
+      "visual": { "kind": "blocks", "n": 285 }
+    }
+  ],
+  "quiz": [
+    {
+      "q": { "en": "Hossam had 1,200 EGP. He spent 450 EGP on books and 380 EGP on clothes. How much is left?", "ar": "كان مع حسام 1200 جنيه. أنفق 450 جنيهًا على الكتب و 380 جنيهًا على الملابس. كم يتبقى معه؟" },
+      "options": {
+        "en": ["370 EGP", "2,030 EGP", "750 EGP", "470 EGP"],
+        "ar": ["370 جنيهًا", "2030 جنيهًا", "750 جنيهًا", "470 جنيهًا"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Spent: 450 + 380 = 830. Left: 1,200 − 830 = 370. 750 only takes away the books; 2,030 adds everything.",
+        "ar": "ما أنفقه: 450 + 380 = 830. المتبقي: 1200 − 830 = 370. أما 750 فطرحت ثمن الكتب فقط، و 2030 جمعت كل الأعداد."
+      },
+      "say": {
+        "en": "Hossam had one thousand two hundred pounds. He spent four hundred fifty pounds on books and three hundred eighty pounds on clothes. How much is left?",
+        "ar": "كان مع حسام ألف ومئتا جنيه. أنفق أربعمئة وخمسين جنيهًا على الكتب، وثلاثمئة وثمانين جنيهًا على الملابس. كم يتبقى معه؟"
+      }
+    },
+    {
+      "q": { "en": "A school has 645 boys and 578 girls. 1,000 students go on a trip. How many stay at school?", "ar": "في مدرسة 645 ولدًا و 578 بنتًا. ذهب 1000 تلميذ في رحلة. كم تلميذًا بقي في المدرسة؟" },
+      "options": {
+        "en": ["223", "1,223", "2,223", "123"],
+        "ar": ["223", "1223", "2223", "123"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "All students: 645 + 578 = 1,223. Stay: 1,223 − 1,000 = 223. 1,223 forgets the second step.",
+        "ar": "كل التلاميذ: 645 + 578 = 1223. الباقون: 1223 − 1000 = 223. أما 1223 فنسيت الخطوة الثانية."
+      },
+      "say": {
+        "en": "A school has six hundred forty-five boys and five hundred seventy-eight girls. One thousand students go on a trip. How many stay at school?",
+        "ar": "في مدرسة ستمئة وخمسة وأربعون ولدًا، وخمسمئة وثمانٍ وسبعون بنتًا. ذهب ألف تلميذ في رحلة. كم تلميذًا بقي في المدرسة؟"
+      }
+    },
+    {
+      "q": { "en": "Nada had 2,350 EGP. She spent s EGP, then got 800 EGP. Now she has 1,900 EGP. Which equation fits?", "ar": "كان مع ندى 2350 جنيهًا. أنفقت س جنيهًا، ثم أخذت 800 جنيه، فأصبح معها 1900 جنيه. أي معادلة تناسب المسألة؟" },
+      "options": {
+        "en": ["2,350 − s + 800 = 1,900", "2,350 + s + 800 = 1,900", "2,350 − 800 + s = 1,900", "s = 2,350 + 800 + 1,900"],
+        "ar": ["2350 − س + 800 = 1900", "2350 + س + 800 = 1900", "2350 − 800 + س = 1900", "س = 2350 + 800 + 1900"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Spending takes away (− s) and getting money adds (+ 800). The result is 1,900.",
+        "ar": "الإنفاق طرح (− س) وأخذ المال جمع (+ 800)، والناتج 1900"
+      },
+      "say": {
+        "en": "Nada had two thousand three hundred fifty pounds. She spent s pounds, then got eight hundred pounds. Now she has one thousand nine hundred pounds. Which equation fits?",
+        "ar": "كان مع ندى ألفان وثلاثمئة وخمسون جنيهًا. أنفقت سين جنيهًا، ثم أخذت ثمانمئة جنيه، فأصبح معها ألف وتسعمئة جنيه. أي معادلة تناسب المسألة؟"
+      }
+    },
+    {
+      "q": { "en": "2,350 − s + 800 = 1,900. How much did Nada spend?", "ar": "2350 − س + 800 = 1900. كم أنفقت ندى؟" },
+      "options": {
+        "en": ["1,250 EGP", "450 EGP", "5,050 EGP", "1,150 EGP"],
+        "ar": ["1250 جنيهًا", "450 جنيهًا", "5050 جنيهًا", "1150 جنيهًا"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Before spending, she had 2,350 + 800 = 3,150 in all. 3,150 − s = 1,900, so s = 3,150 − 1,900 = 1,250. 450 forgets the 800.",
+        "ar": "كل ما معها قبل الإنفاق: 2350 + 800 = 3150. و 3150 − س = 1900، إذن س = 3150 − 1900 = 1250. أما 450 فنسيت الـ 800"
+      },
+      "say": {
+        "en": "Two thousand three hundred fifty minus s plus eight hundred equals one thousand nine hundred. How much did Nada spend?",
+        "ar": "ألفان وثلاثمئة وخمسون ناقص سين زائد ثمانمئة يساوي ألفًا وتسعمئة. كم أنفقت ندى؟"
+      }
+    },
+    {
+      "q": { "en": "A train leaves Cairo with 960 passengers. In Tanta 285 get off and 147 get on. How many are on the train now?", "ar": "غادر قطار القاهرة وفيه 960 راكبًا. في طنطا نزل 285 راكبًا وركب 147 راكبًا. كم راكبًا في القطار الآن؟" },
+      "options": {
+        "en": ["822", "528", "1,392", "712"],
+        "ar": ["822", "528", "1392", "712"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "960 − 285 = 675, then 675 + 147 = 822. 528 subtracts the riders who got on; 712 forgets the carries.",
+        "ar": "960 − 285 = 675، ثم 675 + 147 = 822. أما 528 فطرحت من ركبوا، و 712 نسيت الأرقام المحمولة."
+      },
+      "say": {
+        "en": "A train leaves Cairo with nine hundred sixty passengers. In Tanta two hundred eighty-five get off and one hundred forty-seven get on. How many are on the train now?",
+        "ar": "غادر قطار القاهرة وفيه تسعمئة وستون راكبًا. في طنطا نزل مئتان وخمسة وثمانون راكبًا، وركب مئة وسبعة وأربعون راكبًا. كم راكبًا في القطار الآن؟"
+      }
+    },
+    {
+      "q": { "en": "Mariam worked out 3,980 − 1,215 − 1,490 and got 2,275. Is it reasonable?", "ar": "حسبت مريم 3980 − 1215 − 1490 فحصلت على 2275. هل الناتج معقول؟" },
+      "options": {
+        "en": ["No, the estimate is about 1,300", "Yes, it is about 2,300", "No, the estimate is about 6,700", "We cannot tell"],
+        "ar": ["لا، التقدير نحو 1300", "نعم، إنه نحو 2300", "لا، التقدير نحو 6700", "لا يمكن أن نعرف"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "To the nearest hundred: 4,000 − 1,200 − 1,500 = 1,300. 2,275 is too far away. The exact answer is 1,275.",
+        "ar": "لأقرب مئة: 4000 − 1200 − 1500 = 1300. والعدد 2275 بعيد جدًّا. الناتج الصحيح 1275"
+      },
+      "say": {
+        "en": "Mariam worked out three thousand nine hundred eighty minus one thousand two hundred fifteen minus one thousand four hundred ninety, and got two thousand two hundred seventy-five. Is it reasonable?",
+        "ar": "حسبت مريم ثلاثة آلاف وتسعمئة وثمانين ناقص ألف ومئتين وخمسة عشر ناقص ألف وأربعمئة وتسعين، فحصلت على ألفين ومئتين وخمسة وسبعين. هل الناتج معقول؟"
+      }
+    },
+    {
+      "q": { "en": "Ziad has 3 boxes with 125, 240 and 310 pens. He sells 500 pens. What is the FIRST step to find how many are left?", "ar": "مع زياد 3 صناديق فيها 125 و 240 و 310 أقلام. باع 500 قلم. ما الخطوة الأولى لإيجاد عدد الأقلام المتبقية؟" },
+      "options": {
+        "en": ["125 + 240 + 310 = 675", "675 − 500", "500 − 125", "3 + 500"],
+        "ar": ["125 + 240 + 310 = 675", "675 − 500", "500 − 125", "3 + 500"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "First find all the pens (the hidden question): 675. Then 675 − 500 = 175 pens are left.",
+        "ar": "أولًا نجد عدد كل الأقلام (السؤال المخفي): 675، ثم 675 − 500 = 175 قلمًا متبقيًا."
+      },
+      "say": {
+        "en": "Ziad has three boxes with one hundred twenty-five, two hundred forty and three hundred ten pens. He sells five hundred pens. What is the first step to find how many are left?",
+        "ar": "مع زياد ثلاثة صناديق فيها مئة وخمسة وعشرون، ومئتان وأربعون، وثلاثمئة وعشرة أقلام. باع خمسمئة قلم. ما الخطوة الأولى لإيجاد عدد الأقلام المتبقية؟"
+      }
+    }
+  ]
+}

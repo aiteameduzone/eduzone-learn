@@ -1,0 +1,256 @@
+{
+  "id": "g4-math-u02-01",
+  "title": {
+    "en": "Properties of Addition and Mental Strategies",
+    "ar": "خصائص الجمع والحساب الذهني"
+  },
+  "objective": {
+    "en": "Use the commutative, associative and zero properties of addition, test whether they work for subtraction, and add or subtract mentally by compensation.",
+    "ar": "أن يستخدم التلميذ خاصية الإبدال وخاصية التجميع وخاصية العنصر المحايد في الجمع، ويختبر هل تصلح للطرح، ويجمع ويطرح ذهنيًا بطريقة التعويض."
+  },
+  "refs": {
+    "egypt": ["U2 · 2.1 Properties of addition, mental strategies"]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "check": {
+        "q": {
+          "en": "Mona has 245 stickers and gets 130 more. Omar has 130 stickers and gets 245 more. Who has more?",
+          "ar": "مع منى 245 ملصقًا وأخذت 130 ملصقًا آخر. ومع عمر 130 ملصقًا وأخذ 245 ملصقًا آخر. مع مَن عدد أكبر؟"
+        },
+        "options": {
+          "en": ["Mona", "Omar", "They have the same"],
+          "ar": ["منى", "عمر", "معهما العدد نفسه"]
+        },
+        "answer": 2
+      },
+      "text": {
+        "en": "**Commutative property:** changing the order of the numbers we add does not change the sum.\n\n245 + 130 = 130 + 245 = 375",
+        "ar": "**خاصية الإبدال:** تغيير ترتيب الأعداد التي نجمعها لا يغيّر ناتج الجمع.\n\n245 + 130 = 130 + 245 = 375"
+      },
+      "say": {
+        "en": "Commutative property: changing the order of the numbers we add does not change the sum. Two hundred forty-five plus one hundred thirty equals one hundred thirty plus two hundred forty-five, which is three hundred seventy-five.",
+        "ar": "خاصية الإبدال: تغيير ترتيب الأعداد التي نجمعها لا يغيّر ناتج الجمع. مئتان وخمسة وأربعون زائد مئة وثلاثين يساوي مئة وثلاثين زائد مئتين وخمسة وأربعين، ويساوي ثلاثمئة وخمسة وسبعين."
+      },
+      "visual": { "kind": "blocks", "n": 375 }
+    },
+    {
+      "type": "explain",
+      "check": {
+        "q": {
+          "en": "In 38 + 17 + 62, which two numbers are easiest to add first?",
+          "ar": "في 38 + 17 + 62، أي عددين نجمعهما أولًا بسهولة؟"
+        },
+        "options": {
+          "en": ["38 + 62", "38 + 17", "17 + 62"],
+          "ar": ["38 + 62", "38 + 17", "17 + 62"]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "**Associative property:** we can group the numbers in any way and the sum stays the same.\n\nLook for a pair that makes 100:\n\n(38 + 62) + 17 = 100 + 17 = 117",
+        "ar": "**خاصية التجميع:** يمكننا تجميع الأعداد بأي طريقة ويبقى ناتج الجمع كما هو.\n\nابحث عن عددين مجموعهما 100:\n\n(38 + 62) + 17 = 100 + 17 = 117"
+      },
+      "say": {
+        "en": "Associative property: we can group the numbers in any way and the sum stays the same. Look for a pair that makes one hundred. Thirty-eight plus sixty-two is one hundred, and one hundred plus seventeen is one hundred seventeen.",
+        "ar": "خاصية التجميع: يمكننا تجميع الأعداد بأي طريقة ويبقى ناتج الجمع كما هو. ابحث عن عددين مجموعهما مئة. ثمانية وثلاثون زائد اثنين وستين يساوي مئة، ومئة زائد سبعة عشر يساوي مئة وسبعة عشر."
+      },
+      "visual": { "kind": "blocks", "n": 117 }
+    },
+    {
+      "type": "explain",
+      "check": {
+        "q": {
+          "en": "Is 9 − 4 the same as 4 − 9?",
+          "ar": "هل 9 − 4 هو نفسه 4 − 9؟"
+        },
+        "options": {
+          "en": ["Yes", "No"],
+          "ar": ["نعم", "لا"]
+        },
+        "answer": 1
+      },
+      "text": {
+        "en": "**Zero property:** adding 0 does not change a number: 4,507 + 0 = 4,507.\n\n**Subtraction is different.** 9 − 4 = 5, but 4 − 9 does not give 5.\n\n(10 − 4) − 2 = 4, but 10 − (4 − 2) = 8.\n\nSo order and grouping **do** change a subtraction.",
+        "ar": "**خاصية العنصر المحايد:** جمع 0 لا يغيّر العدد: 4507 + 0 = 4507\n\n**الطرح مختلف.** 9 − 4 = 5، لكن 4 − 9 لا يعطي 5.\n\n(10 − 4) − 2 = 4، أما 10 − (4 − 2) = 8\n\nإذن الترتيب والتجميع **يغيّران** ناتج الطرح."
+      },
+      "say": {
+        "en": "Zero property: adding zero does not change a number. Four thousand five hundred seven plus zero is four thousand five hundred seven. Subtraction is different. Nine minus four is five, but four minus nine does not give five. Ten minus four, then minus two, is four. But ten minus the answer of four minus two is eight. So order and grouping do change a subtraction.",
+        "ar": "خاصية العنصر المحايد: جمع الصفر لا يغيّر العدد. أربعة آلاف وخمسمئة وسبعة زائد صفر يساوي أربعة آلاف وخمسمئة وسبعة. الطرح مختلف. تسعة ناقص أربعة يساوي خمسة، لكن أربعة ناقص تسعة لا يعطي خمسة. عشرة ناقص أربعة ثم ناقص اثنين يساوي أربعة، أما عشرة ناقص ناتج أربعة ناقص اثنين فيساوي ثمانية. إذن الترتيب والتجميع يغيّران ناتج الطرح."
+      },
+      "visual": { "kind": "blocks", "n": 4507 }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "**Compensation:** change one number to a friendly number, add, then fix the answer.\n\nAdd 398 + 245 in your head.",
+        "ar": "**التعويض:** نغيّر أحد العددين إلى عدد سهل، ثم نجمع، ثم نصحّح الناتج.\n\nاجمع 398 + 245 ذهنيًا."
+      },
+      "lines": {
+        "en": [
+          "398 is 2 less than 400.",
+          "400 + 245 = 645",
+          "We added 2 too many, so take them back:",
+          "645 − 2 = 643",
+          "398 + 245 = 643"
+        ],
+        "ar": [
+          "398 أقل من 400 بمقدار 2",
+          "400 + 245 = 645",
+          "جمعنا 2 زيادة، فنطرحهما:",
+          "645 − 2 = 643",
+          "398 + 245 = 643"
+        ]
+      },
+      "say": {
+        "en": "Compensation: change one number to a friendly number, add, then fix the answer. Add three hundred ninety-eight plus two hundred forty-five in your head. Three hundred ninety-eight is two less than four hundred. Four hundred plus two hundred forty-five is six hundred forty-five. We added two too many, so take them back. Six hundred forty-five minus two is six hundred forty-three.",
+        "ar": "التعويض: نغيّر أحد العددين إلى عدد سهل، ثم نجمع، ثم نصحّح الناتج. اجمع ثلاثمئة وثمانية وتسعين زائد مئتين وخمسة وأربعين ذهنيًا. ثلاثمئة وثمانية وتسعون أقل من أربعمئة باثنين. أربعمئة زائد مئتين وخمسة وأربعين يساوي ستمئة وخمسة وأربعين. جمعنا اثنين زيادة، فنطرحهما. ستمئة وخمسة وأربعون ناقص اثنين يساوي ستمئة وثلاثة وأربعين. إذن ثلاثمئة وثمانية وتسعون زائد مئتين وخمسة وأربعين يساوي ستمئة وثلاثة وأربعين."
+      },
+      "visual": { "kind": "blocks", "n": 643 }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": { "places": 4, "target": 3465 },
+      "text": {
+        "en": "Think: 1,997 is 3 less than 2,000. Add 2,000 + 1,468, then take 3 away.",
+        "ar": "فكّر: 1997 أقل من 2000 بمقدار 3. اجمع 2000 + 1468، ثم اطرح 3"
+      },
+      "prompt": {
+        "en": "Build the answer to 1,997 + 1,468.",
+        "ar": "كوِّن ناتج 1997 + 1468"
+      },
+      "say": {
+        "en": "Think: one thousand nine hundred ninety-seven is three less than two thousand. Add two thousand plus one thousand four hundred sixty-eight, then take three away. Build the answer.",
+        "ar": "فكّر: ألف وتسعمئة وسبعة وتسعون أقل من ألفين بثلاثة. اجمع ألفين زائد ألف وأربعمئة وثمانية وستين، ثم اطرح ثلاثة. كوِّن ناتج ألف وتسعمئة وسبعة وتسعين زائد ألف وأربعمئة وثمانية وستين."
+      }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Remember:**\n\nOrder (commutative) and grouping (associative) do not change a sum. Adding 0 changes nothing.\n\nThese properties do **not** work for subtraction.\n\nCompensation: use a friendly number like 400, then fix the answer.",
+        "ar": "**تذكّر:**\n\nالترتيب (الإبدال) والتجميع لا يغيّران ناتج الجمع. وجمع 0 لا يغيّر شيئًا.\n\nهذه الخصائص **لا** تصلح للطرح.\n\nالتعويض: استخدم عددًا سهلًا مثل 400، ثم صحّح الناتج."
+      },
+      "say": {
+        "en": "Remember. Order and grouping do not change a sum. Adding zero changes nothing. These properties do not work for subtraction. Compensation: use a friendly number like four hundred, then fix the answer.",
+        "ar": "تذكّر. الترتيب والتجميع لا يغيّران ناتج الجمع، وجمع الصفر لا يغيّر شيئًا. هذه الخصائص لا تصلح للطرح. وفي التعويض استخدم عددًا سهلًا مثل أربعمئة، ثم صحّح الناتج."
+      },
+      "visual": { "kind": "blocks", "n": 400 }
+    }
+  ],
+  "quiz": [
+    {
+      "q": { "en": "Which is equal to 527 + 816?", "ar": "أي مما يلي يساوي 527 + 816؟" },
+      "options": {
+        "en": ["816 + 527", "816 − 527", "527 − 816", "527 + 618"],
+        "ar": ["816 + 527", "816 − 527", "527 − 816", "527 + 618"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Commutative property: swapping the order of an addition keeps the same sum. Subtraction is a different operation.",
+        "ar": "خاصية الإبدال: تبديل ترتيب العددين في الجمع يعطي الناتج نفسه. أما الطرح فعملية مختلفة."
+      },
+      "say": {
+        "en": "Which is equal to five hundred twenty-seven plus eight hundred sixteen?",
+        "ar": "أي مما يلي يساوي خمسمئة وسبعة وعشرين زائد ثمانمئة وستة عشر؟"
+      }
+    },
+    {
+      "q": { "en": "Which property is shown? (25 + 46) + 54 = 25 + (46 + 54)", "ar": "ما الخاصية المستخدمة؟ (25 + 46) + 54 = 25 + (46 + 54)" },
+      "options": {
+        "en": ["Associative property", "Commutative property", "Zero property", "It is not true"],
+        "ar": ["خاصية التجميع", "خاصية الإبدال", "خاصية العنصر المحايد", "العبارة غير صحيحة"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "The order stays the same; only the brackets (the grouping) move. Both sides equal 125.",
+        "ar": "الترتيب لم يتغيّر، وتغيّر مكان الأقواس فقط (التجميع). والطرفان يساويان 125."
+      },
+      "say": {
+        "en": "Which property is shown? Twenty-five plus forty-six, then plus fifty-four, equals twenty-five plus the sum of forty-six and fifty-four.",
+        "ar": "ما الخاصية المستخدمة؟ خمسة وعشرون زائد ستة وأربعين ثم زائد أربعة وخمسين، يساوي خمسة وعشرين زائد مجموع ستة وأربعين وأربعة وخمسين."
+      }
+    },
+    {
+      "q": { "en": "3,689 + 0 = ?", "ar": "3689 + 0 = ؟" },
+      "options": {
+        "en": ["3,689", "0", "3,690", "36,890"],
+        "ar": ["3689", "0", "3690", "36890"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Adding 0 changes nothing. Adding 0 is not the same as writing a 0 on the end.",
+        "ar": "جمع الصفر لا يغيّر العدد. وجمع الصفر ليس كتابة صفر في آخر العدد."
+      },
+      "say": {
+        "en": "Three thousand six hundred eighty-nine plus zero equals?",
+        "ar": "ثلاثة آلاف وستمئة وتسعة وثمانون زائد صفر يساوي؟"
+      }
+    },
+    {
+      "q": { "en": "Which is TRUE?", "ar": "أي العبارات صحيحة؟" },
+      "options": {
+        "en": ["(20 − 8) − 2 = 10", "(20 − 8) − 2 = 20 − (8 − 2)", "20 − 8 = 8 − 20", "20 − 0 = 0"],
+        "ar": ["(20 − 8) − 2 = 10", "(20 − 8) − 2 = 20 − (8 − 2)", "20 − 8 = 8 − 20", "20 − 0 = 0"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "(20 − 8) − 2 = 12 − 2 = 10. But 20 − (8 − 2) = 20 − 6 = 14, so grouping changes a subtraction. And 20 − 0 = 20.",
+        "ar": "(20 − 8) − 2 = 12 − 2 = 10. أما 20 − (8 − 2) = 20 − 6 = 14، فالتجميع يغيّر ناتج الطرح. و 20 − 0 = 20."
+      },
+      "say": {
+        "en": "Which is true?",
+        "ar": "أي العبارات صحيحة؟ عشرون ناقص ثمانية ثم ناقص اثنين يساوي عشرة، أم العبارات الأخرى؟"
+      }
+    },
+    {
+      "q": { "en": "47 + 29 + 53 = ?", "ar": "47 + 29 + 53 = ؟" },
+      "options": {
+        "en": ["129", "119", "139", "1,129"],
+        "ar": ["129", "119", "139", "1129"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Group the friendly pair first: 47 + 53 = 100, then 100 + 29 = 129.",
+        "ar": "نجمع العددين السهلين أولًا: 47 + 53 = 100، ثم 100 + 29 = 129."
+      },
+      "say": {
+        "en": "Forty-seven plus twenty-nine plus fifty-three equals?",
+        "ar": "سبعة وأربعون زائد تسعة وعشرين زائد ثلاثة وخمسين يساوي؟"
+      }
+    },
+    {
+      "q": { "en": "Use compensation: 599 + 236 = ?", "ar": "استخدم التعويض: 599 + 236 = ؟" },
+      "options": {
+        "en": ["835", "836", "837", "735"],
+        "ar": ["835", "836", "837", "735"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "600 + 236 = 836. We added 1 too many, so 836 − 1 = 835. 836 forgets to fix the answer; 837 adds the 1 instead of taking it away.",
+        "ar": "600 + 236 = 836. جمعنا 1 زيادة، إذن 836 − 1 = 835. الناتج 836 نسي التصحيح، و 837 جمع الواحد بدلًا من طرحه."
+      },
+      "say": {
+        "en": "Use compensation. Five hundred ninety-nine plus two hundred thirty-six equals?",
+        "ar": "استخدم التعويض. خمسمئة وتسعة وتسعون زائد مئتين وستة وثلاثين يساوي؟"
+      }
+    },
+    {
+      "q": { "en": "Hana works out 802 − 299 like this: 802 − 300 = 502. What should she do next?", "ar": "تحسب هنا 802 − 299 هكذا: 802 − 300 = 502. ماذا تفعل بعد ذلك؟" },
+      "options": {
+        "en": ["502 + 1 = 503", "502 − 1 = 501", "502 + 3 = 505", "Stop: the answer is 502"],
+        "ar": ["502 + 1 = 503", "502 − 1 = 501", "502 + 3 = 505", "تتوقف: الناتج 502"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "She took away 300, which is 1 more than 299. She took 1 too many, so she gives it back: 502 + 1 = 503.",
+        "ar": "طرحت 300، وهو أكبر من 299 بواحد. طرحت 1 زيادة، فتعيده: 502 + 1 = 503."
+      },
+      "say": {
+        "en": "Hana works out eight hundred two minus two hundred ninety-nine like this: eight hundred two minus three hundred is five hundred two. What should she do next?",
+        "ar": "تحسب هنا ثمانمئة واثنين ناقص مئتين وتسعة وتسعين هكذا: ثمانمئة واثنان ناقص ثلاثمئة يساوي خمسمئة واثنين. ماذا تفعل بعد ذلك؟"
+      }
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "id": "g4-math-u02-04",
+  "title": {
+    "en": "Subtracting with Regrouping",
+    "ar": "الطرح مع إعادة التجميع"
+  },
+  "objective": {
+    "en": "Subtract multi-digit numbers in columns, regrouping from the next place when the top digit is smaller, including across zeros.",
+    "ar": "أن يطرح التلميذ أعدادًا متعددة الأرقام رأسيًا، ويعيد التجميع من الخانة التالية عندما يكون الرقم العلوي أصغر، بما في ذلك الطرح عبر الأصفار."
+  },
+  "refs": {
+    "egypt": ["U2 · 2.1 Subtraction with regrouping"],
+    "ccss": ["4.NBT.B.4"]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "check": {
+        "q": {
+          "en": "52 − 7. Karim says: \"7 − 2 = 5, so the answer is 55.\" Is he right?",
+          "ar": "52 − 7. يقول كريم: «7 − 2 = 5، إذن الناتج 55». هل هو على صواب؟"
+        },
+        "options": {
+          "en": ["No", "Yes"],
+          "ar": ["لا", "نعم"]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "**Always top minus bottom.** We have 2 ones and must take away 7.\n\n**Regroup:** take 1 ten from the 5 tens and change it into 10 ones. Now there are 4 tens and 12 ones.\n\n12 − 7 = 5, and 4 tens stay. So 52 − 7 = 45.",
+        "ar": "**نطرح دائمًا السفلي من العلوي.** معنا 2 آحاد ويجب أن نطرح 7\n\n**نعيد التجميع:** نأخذ 1 عشرة من الـ 5 عشرات ونحوّلها إلى 10 آحاد. فيصبح معنا 4 عشرات و 12 آحادًا.\n\n12 − 7 = 5، وتبقى 4 عشرات. إذن 52 − 7 = 45"
+      },
+      "say": {
+        "en": "Fifty-two minus seven. Karim says seven minus two is five, so the answer is fifty-five. Always top minus bottom. We have two ones and must take away seven. Regroup: take one ten from the five tens and change it into ten ones. Now there are four tens and twelve ones. Twelve minus seven is five, and four tens stay. So fifty-two minus seven is forty-five.",
+        "ar": "اثنان وخمسون ناقص سبعة. يقول كريم: سبعة ناقص اثنين يساوي خمسة، إذن الناتج خمسة وخمسون. نطرح دائمًا السفلي من العلوي. معنا آحادان ويجب أن نطرح سبعة. نعيد التجميع: نأخذ عشرة واحدة من العشرات الخمس ونحوّلها إلى عشرة آحاد. فيصبح معنا أربع عشرات واثنا عشر آحادًا. اثنا عشر ناقص سبعة يساوي خمسة، وتبقى أربع عشرات. إذن اثنان وخمسون ناقص سبعة يساوي خمسة وأربعين."
+      },
+      "visual": { "kind": "blocks", "n": 52 }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "**Column subtraction:** start from the ones. Regroup whenever the top digit is smaller.\n\n6,342 − 2,758",
+        "ar": "**الطرح الرأسي:** نبدأ من الآحاد، ونعيد التجميع كلما كان الرقم العلوي أصغر.\n\n6342 − 2758"
+      },
+      "lines": {
+        "en": [
+          "Ones: 2 < 8. Regroup 1 ten: 12 − 8 = 4 (tens: 4 → 3)",
+          "Tens: 3 < 5. Regroup 1 hundred: 13 − 5 = 8 (hundreds: 3 → 2)",
+          "Hundreds: 2 < 7. Regroup 1 thousand: 12 − 7 = 5 (thousands: 6 → 5)",
+          "Thousands: 5 − 2 = 3",
+          "6,342 − 2,758 = 3,584"
+        ],
+        "ar": [
+          "الآحاد: 2 أصغر من 8. نعيد تجميع 1 عشرة: 12 − 8 = 4 (العشرات تصبح 3 بدل 4)",
+          "العشرات: 3 أصغر من 5. نعيد تجميع 1 مئة: 13 − 5 = 8 (المئات تصبح 2 بدل 3)",
+          "المئات: 2 أصغر من 7. نعيد تجميع 1 ألف: 12 − 7 = 5 (الآلاف تصبح 5 بدل 6)",
+          "الآلاف: 5 − 2 = 3",
+          "6342 − 2758 = 3584"
+        ]
+      },
+      "say": {
+        "en": "Column subtraction: start from the ones and regroup whenever the top digit is smaller. Six thousand three hundred forty-two minus two thousand seven hundred fifty-eight. Ones: two is less than eight, so regroup one ten. Twelve minus eight is four, and the tens go from four to three. Tens: three is less than five, so regroup one hundred. Thirteen minus five is eight, and the hundreds go from three to two. Hundreds: two is less than seven, so regroup one thousand. Twelve minus seven is five, and the thousands go from six to five. Thousands: five minus two is three. The answer is three thousand five hundred eighty-four.",
+        "ar": "الطرح الرأسي: نبدأ من الآحاد، ونعيد التجميع كلما كان الرقم العلوي أصغر. ستة آلاف وثلاثمئة واثنان وأربعون ناقص ألفين وسبعمئة وثمانية وخمسين. الآحاد: اثنان أصغر من ثمانية، فنعيد تجميع عشرة واحدة. اثنا عشر ناقص ثمانية يساوي أربعة، وتصبح العشرات ثلاثة بدل أربعة. العشرات: ثلاثة أصغر من خمسة، فنعيد تجميع مئة واحدة. ثلاثة عشر ناقص خمسة يساوي ثمانية، وتصبح المئات اثنتين بدل ثلاث. المئات: اثنان أصغر من سبعة، فنعيد تجميع ألف واحد. اثنا عشر ناقص سبعة يساوي خمسة، وتصبح الآلاف خمسة بدل ستة. الآلاف: خمسة ناقص اثنين يساوي ثلاثة. الناتج ثلاثة آلاف وخمسمئة وأربعة وثمانون."
+      },
+      "visual": { "kind": "blocks", "n": 6342 }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": { "places": 4, "target": 3787 },
+      "text": {
+        "en": "Subtract in columns. Regroup when the top digit is smaller.",
+        "ar": "اطرح رأسيًا، وأعد التجميع عندما يكون الرقم العلوي أصغر."
+      },
+      "prompt": {
+        "en": "Build the answer to 7,415 − 3,628.",
+        "ar": "كوِّن ناتج 7415 − 3628"
+      },
+      "say": {
+        "en": "Subtract seven thousand four hundred fifteen minus three thousand six hundred twenty-eight in columns. Regroup when the top digit is smaller. Build the answer.",
+        "ar": "اطرح سبعة آلاف وأربعمئة وخمسة عشر ناقص ثلاثة آلاف وستمئة وثمانية وعشرين رأسيًا، وأعد التجميع عندما يكون الرقم العلوي أصغر. كوِّن الناتج."
+      }
+    },
+    {
+      "type": "example",
+      "text": {
+        "en": "**Regrouping across zeros:** 5,003 − 1,748\n\nWe need ones, but the tens and hundreds are 0. Go to the thousands.",
+        "ar": "**إعادة التجميع عبر الأصفار:** 5003 − 1748\n\nنحتاج إلى آحاد، لكن العشرات والمئات أصفار. نذهب إلى الآلاف."
+      },
+      "lines": {
+        "en": [
+          "5,003 = 4 thousands, 9 hundreds, 9 tens, 13 ones",
+          "Ones: 13 − 8 = 5",
+          "Tens: 9 − 4 = 5",
+          "Hundreds: 9 − 7 = 2",
+          "Thousands: 4 − 1 = 3",
+          "5,003 − 1,748 = 3,255"
+        ],
+        "ar": [
+          "5003 = 4 آلاف و 9 مئات و 9 عشرات و 13 آحادًا",
+          "الآحاد: 13 − 8 = 5",
+          "العشرات: 9 − 4 = 5",
+          "المئات: 9 − 7 = 2",
+          "الآلاف: 4 − 1 = 3",
+          "5003 − 1748 = 3255"
+        ]
+      },
+      "say": {
+        "en": "Regrouping across zeros: five thousand three minus one thousand seven hundred forty-eight. We need ones, but the tens and hundreds are zero, so go to the thousands. Five thousand three is four thousands, nine hundreds, nine tens and thirteen ones. Ones: thirteen minus eight is five. Tens: nine minus four is five. Hundreds: nine minus seven is two. Thousands: four minus one is three. The answer is three thousand two hundred fifty-five.",
+        "ar": "إعادة التجميع عبر الأصفار: خمسة آلاف وثلاثة ناقص ألف وسبعمئة وثمانية وأربعين. نحتاج إلى آحاد، لكن العشرات والمئات أصفار، فنذهب إلى الآلاف. خمسة آلاف وثلاثة تساوي أربعة آلاف وتسع مئات وتسع عشرات وثلاثة عشر آحادًا. الآحاد: ثلاثة عشر ناقص ثمانية يساوي خمسة. العشرات: تسعة ناقص أربعة يساوي خمسة. المئات: تسعة ناقص سبعة يساوي اثنين. الآلاف: أربعة ناقص واحد يساوي ثلاثة. الناتج ثلاثة آلاف ومئتان وخمسة وخمسون."
+      },
+      "visual": { "kind": "blocks", "n": 5003 }
+    },
+    {
+      "type": "explain",
+      "check": {
+        "q": {
+          "en": "Mona got 342 for 834 − 576. What did she do wrong?",
+          "ar": "حصلت منى على 342 ناتجًا لـ 834 − 576. ما خطؤها؟"
+        },
+        "options": {
+          "en": ["She took the smaller digit from the bigger one", "She regrouped too many times", "Nothing, 342 is right"],
+          "ar": ["طرحت الرقم الأصغر من الأكبر في كل خانة", "أعادت التجميع مرات كثيرة", "لا خطأ، 342 صحيح"]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "In the ones Mona did 6 − 4, and in the tens 7 − 3. She turned the numbers upside down!\n\nThe top number is always the one we take from. Regroup instead:\n\n834 − 576 = 258",
+        "ar": "في الآحاد حسبت منى 6 − 4، وفي العشرات 7 − 3. لقد قلبت العددين!\n\nنطرح دائمًا من الرقم العلوي. نعيد التجميع بدلًا من ذلك:\n\n834 − 576 = 258"
+      },
+      "say": {
+        "en": "Mona got three hundred forty-two for eight hundred thirty-four minus five hundred seventy-six. In the ones she did six minus four, and in the tens seven minus three. She turned the numbers upside down! The top number is always the one we take from. Regroup instead. Eight hundred thirty-four minus five hundred seventy-six is two hundred fifty-eight.",
+        "ar": "حصلت منى على ثلاثمئة واثنين وأربعين ناتجًا لثمانمئة وأربعة وثلاثين ناقص خمسمئة وستة وسبعين. في الآحاد حسبت ستة ناقص أربعة، وفي العشرات سبعة ناقص ثلاثة. لقد قلبت العددين! نطرح دائمًا من الرقم العلوي. نعيد التجميع بدلًا من ذلك. ثمانمئة وأربعة وثلاثون ناقص خمسمئة وستة وسبعين يساوي مئتين وثمانية وخمسين."
+      },
+      "visual": { "kind": "blocks", "n": 834 }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": { "places": 4, "target": 3625 },
+      "text": {
+        "en": "Regroup across the zeros: 6,000 = 5 thousands, 9 hundreds, 9 tens and 10 ones.",
+        "ar": "أعد التجميع عبر الأصفار: 6000 = 5 آلاف و 9 مئات و 9 عشرات و 10 آحاد."
+      },
+      "prompt": {
+        "en": "Build the answer to 6,000 − 2,375.",
+        "ar": "كوِّن ناتج 6000 − 2375"
+      },
+      "say": {
+        "en": "Regroup across the zeros. Six thousand is five thousands, nine hundreds, nine tens and ten ones. Build the answer to six thousand minus two thousand three hundred seventy-five.",
+        "ar": "أعد التجميع عبر الأصفار. ستة آلاف تساوي خمسة آلاف وتسع مئات وتسع عشرات وعشرة آحاد. كوِّن ناتج ستة آلاف ناقص ألفين وثلاثمئة وخمسة وسبعين."
+      }
+    },
+    {
+      "type": "explain",
+      "text": {
+        "en": "**Remember:**\n\nAlways top minus bottom, starting from the ones.\n\nIf the top digit is smaller, regroup 1 from the next place: it becomes 10 here.\n\nAcross zeros, go to the first place that is not 0. The zeros become 9s.\n\n1 thousand = 10 hundreds.",
+        "ar": "**تذكّر:**\n\nنطرح دائمًا السفلي من العلوي، بادئين من الآحاد.\n\nإذا كان الرقم العلوي أصغر، نعيد تجميع 1 من الخانة التالية فيصبح 10 هنا.\n\nعبر الأصفار نذهب إلى أول خانة ليست 0، وتصبح الأصفار 9\n\n1 ألف = 10 مئات."
+      },
+      "say": {
+        "en": "Remember. Always top minus bottom, starting from the ones. If the top digit is smaller, regroup one from the next place: it becomes ten here. Across zeros, go to the first place that is not zero. The zeros become nines. One thousand is ten hundreds.",
+        "ar": "تذكّر. نطرح دائمًا السفلي من العلوي، بادئين من الآحاد. إذا كان الرقم العلوي أصغر، نعيد تجميع واحد من الخانة التالية فيصبح عشرة هنا. وعبر الأصفار نذهب إلى أول خانة ليست صفرًا، وتصبح الأصفار تسعات. الألف الواحد يساوي عشر مئات."
+      },
+      "visual": { "kind": "blocks", "n": 1000 }
+    }
+  ],
+  "quiz": [
+    {
+      "q": { "en": "723 − 458 = ?", "ar": "723 − 458 = ؟" },
+      "options": {
+        "en": ["265", "335", "275", "365"],
+        "ar": ["265", "335", "275", "365"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Ones: 13 − 8 = 5. Tens: 1 is left, so regroup: 11 − 5 = 6. Hundreds: 6 − 4 = 2. 335 takes the smaller digit from the bigger; 275 and 365 forget to lower a place after regrouping.",
+        "ar": "الآحاد: 13 − 8 = 5. العشرات: يتبقى 1 فنعيد التجميع: 11 − 5 = 6. المئات: 6 − 4 = 2. الناتج 335 يطرح الأصغر من الأكبر، و 275 و 365 نسيا إنقاص الخانة بعد إعادة التجميع."
+      },
+      "say": {
+        "en": "Seven hundred twenty-three minus four hundred fifty-eight equals?",
+        "ar": "سبعمئة وثلاثة وعشرون ناقص أربعمئة وثمانية وخمسين يساوي؟"
+      }
+    },
+    {
+      "q": { "en": "4,000 − 1,256 = ?", "ar": "4000 − 1256 = ؟" },
+      "options": {
+        "en": ["2,744", "3,256", "2,844", "3,744"],
+        "ar": ["2744", "3256", "2844", "3744"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "4,000 = 3 thousands, 9 hundreds, 9 tens, 10 ones. 10 − 6 = 4, 9 − 5 = 4, 9 − 2 = 7, 3 − 1 = 2. 3,256 comes from taking 6 − 0, 5 − 0 and 2 − 0.",
+        "ar": "4000 = 3 آلاف و 9 مئات و 9 عشرات و 10 آحاد. 10 − 6 = 4، و 9 − 5 = 4، و 9 − 2 = 7، و 3 − 1 = 2. أما 3256 فتأتي من حساب 6 − 0 و 5 − 0 و 2 − 0"
+      },
+      "say": {
+        "en": "Four thousand minus one thousand two hundred fifty-six equals?",
+        "ar": "أربعة آلاف ناقص ألف ومئتين وستة وخمسين يساوي؟"
+      }
+    },
+    {
+      "q": { "en": "In 5,206 − 1,834, which column needs regrouping first?", "ar": "في 5206 − 1834، أي خانة تحتاج أولًا إلى إعادة التجميع؟" },
+      "options": {
+        "en": ["The tens", "The ones", "The thousands", "None of them"],
+        "ar": ["العشرات", "الآحاد", "الآلاف", "لا شيء منها"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Ones: 6 − 4 is fine. Tens: 0 − 3 cannot be done, so regroup 1 hundred into 10 tens.",
+        "ar": "الآحاد: 6 − 4 ممكن. العشرات: 0 − 3 غير ممكن، فنعيد تجميع 1 مئة إلى 10 عشرات."
+      },
+      "say": {
+        "en": "In five thousand two hundred six minus one thousand eight hundred thirty-four, which column needs regrouping first?",
+        "ar": "في خمسة آلاف ومئتين وستة ناقص ألف وثمانمئة وأربعة وثلاثين، أي خانة تحتاج أولًا إلى إعادة التجميع؟"
+      }
+    },
+    {
+      "q": { "en": "A class has 2,430 EGP for a trip and spends 1,685 EGP. How much is left?", "ar": "مع فصل 2430 جنيهًا لرحلة وأنفق 1685 جنيهًا. كم يتبقى؟" },
+      "options": {
+        "en": ["745 EGP", "1,255 EGP", "845 EGP", "4,115 EGP"],
+        "ar": ["745 جنيهًا", "1255 جنيهًا", "845 جنيهًا", "4115 جنيهًا"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "2,430 − 1,685 = 745 (regroup three times). 1,255 takes the smaller digit from the bigger; 4,115 adds instead of subtracting.",
+        "ar": "2430 − 1685 = 745 (نعيد التجميع ثلاث مرات). أما 1255 فتطرح الأصغر من الأكبر، و 4115 تجمع بدلًا من الطرح."
+      },
+      "say": {
+        "en": "A class has two thousand four hundred thirty pounds for a trip and spends one thousand six hundred eighty-five pounds. How much is left?",
+        "ar": "مع فصل ألفان وأربعمئة وثلاثون جنيهًا لرحلة، وأنفق ألفًا وستمئة وخمسة وثمانين جنيهًا. كم يتبقى؟"
+      }
+    },
+    {
+      "q": { "en": "To take ones from 7,005, how do we regroup it?", "ar": "لكي نطرح آحادًا من 7005، كيف نعيد تجميعه؟" },
+      "options": {
+        "en": ["6 thousands, 9 hundreds, 9 tens, 15 ones", "7 thousands, 0 hundreds, 0 tens, 15 ones", "6 thousands, 10 hundreds, 10 tens, 15 ones", "6 thousands, 9 hundreds, 10 tens, 5 ones"],
+        "ar": ["6 آلاف و 9 مئات و 9 عشرات و 15 آحادًا", "7 آلاف و 0 مئات و 0 عشرات و 15 آحادًا", "6 آلاف و 10 مئات و 10 عشرات و 15 آحادًا", "6 آلاف و 9 مئات و 10 عشرات و 5 آحاد"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "1 thousand → 10 hundreds; 1 of those → 10 tens; 1 of those → 10 ones. So 6 thousands, 9 hundreds, 9 tens and 5 + 10 = 15 ones. It still equals 7,005.",
+        "ar": "1 ألف يصبح 10 مئات، ونأخذ 1 منها فتصبح 10 عشرات، ونأخذ 1 منها فتصبح 10 آحاد. إذن 6 آلاف و 9 مئات و 9 عشرات و 5 + 10 = 15 آحادًا، وما زال العدد 7005"
+      },
+      "say": {
+        "en": "To take ones from seven thousand five, how do we regroup it?",
+        "ar": "لكي نطرح آحادًا من سبعة آلاف وخمسة، كيف نعيد تجميعه؟ ستة آلاف وتسع مئات وتسع عشرات وخمسة عشر آحادًا، أم إجابة أخرى؟"
+      }
+    },
+    {
+      "q": { "en": "Aswan to Cairo is about 880 km by road. A train has gone 395 km. How far is left?", "ar": "المسافة من أسوان إلى القاهرة نحو 880 كم. قطع قطار 395 كم. كم كيلومترًا يتبقى؟" },
+      "options": {
+        "en": ["485 km", "515 km", "495 km", "1,275 km"],
+        "ar": ["485 كم", "515 كم", "495 كم", "1275 كم"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "880 − 395: ones 10 − 5 = 5; tens 7 − 9, regroup: 17 − 9 = 8; hundreds 7 − 3 = 4. So 485 km. Check: 485 + 395 = 880.",
+        "ar": "880 − 395: الآحاد 10 − 5 = 5، والعشرات 7 − 9 فنعيد التجميع: 17 − 9 = 8، والمئات 7 − 3 = 4. إذن 485 كم. للتحقق: 485 + 395 = 880"
+      },
+      "say": {
+        "en": "Aswan to Cairo is about eight hundred eighty kilometres by road. A train has gone three hundred ninety-five kilometres. How far is left?",
+        "ar": "المسافة من أسوان إلى القاهرة نحو ثمانمئة وثمانين كيلومترًا. قطع قطار ثلاثمئة وخمسة وتسعين كيلومترًا. كم كيلومترًا يتبقى؟"
+      }
+    },
+    {
+      "q": { "en": "8,060 − 3,247 = ?", "ar": "8060 − 3247 = ؟" },
+      "options": {
+        "en": ["4,813", "5,227", "4,823", "4,913"],
+        "ar": ["4813", "5227", "4823", "4913"]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Ones: 0 < 7, regroup a ten: 10 − 7 = 3, tens 6 → 5, 5 − 4 = 1. Hundreds: 0 < 2, regroup: 10 − 2 = 8. Thousands: 7 − 3 = 4. 4,823 forgets to lower the tens.",
+        "ar": "الآحاد: 0 أصغر من 7، نعيد تجميع عشرة: 10 − 7 = 3، وتصبح العشرات 5 بدل 6، و 5 − 4 = 1. المئات: 0 أصغر من 2، نعيد التجميع: 10 − 2 = 8. الآلاف: 7 − 3 = 4. أما 4823 فنسيت إنقاص العشرات."
+      },
+      "say": {
+        "en": "Eight thousand sixty minus three thousand two hundred forty-seven equals?",
+        "ar": "ثمانية آلاف وستون ناقص ثلاثة آلاف ومئتين وسبعة وأربعين يساوي؟"
+      }
+    }
+  ]
+}

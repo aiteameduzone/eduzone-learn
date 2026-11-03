@@ -1,0 +1,392 @@
+{
+  "id": "g4-math-u01-01",
+  "title": {
+    "en": "Place and Value of a Digit",
+    "ar": "منزلة الرقم وقيمته"
+  },
+  "objective": {
+    "en": "Name the place of each digit up to the hundred thousands and find its value.",
+    "ar": "أن يحدد التلميذ منزلة كل رقم حتى منزلة مئات الألوف ويوجد قيمته."
+  },
+  "refs": {
+    "egypt": [
+      "U1 · 1.1 Place value of a digit"
+    ],
+    "ccss": [
+      "4.NBT.A.2"
+    ]
+  },
+  "steps": [
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "blocks",
+        "n": 2345
+      },
+      "check": {
+        "q": {
+          "en": "In 2,345, what is the value of the digit 3?",
+          "ar": "في العدد 2,345، ما قيمة الرقم 3؟"
+        },
+        "options": {
+          "en": [
+            "300",
+            "3",
+            "30"
+          ],
+          "ar": [
+            "300",
+            "3",
+            "30"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "Every digit sits in a **place**. The place gives the digit its **value**.\n\nIn 2,345: 2 thousands, 3 hundreds, 4 tens, 5 ones.\n\nThe place of 3 is **hundreds**, so its value is **300**.",
+        "ar": "كل رقم يقع في **منزلة**، والمنزلة تعطي الرقم **قيمته**.\n\nفي العدد 2,345: ألفان، و 3 مئات، و 4 عشرات، و 5 آحاد.\n\nمنزلة الرقم 3 هي **المئات**، إذن قيمته **300**."
+      },
+      "say": {
+        "en": "Every digit sits in a place. The place gives the digit its value. In two thousand three hundred forty-five there are two thousands, three hundreds, four tens and five ones. The place of three is hundreds, so its value is three hundred.",
+        "ar": "كل رقم يقع في منزلة، والمنزلة تعطي الرقم قيمته. في العدد ألفين وثلاثمائة وخمسة وأربعين: ألفان، وثلاث مئات، وأربع عشرات، وخمسة آحاد. منزلة الرقم ثلاثة هي المئات، إذن قيمته ثلاثمائة."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "blocks",
+        "n": 582
+      },
+      "text": {
+        "en": "**The place-value chart.** Each group of three places is a **period**: ones and thousands. Read the number 582,614 place by place.",
+        "ar": "**جدول القيمة المكانية.** كل ثلاث منازل تكوّن **دورة**: دورة الآحاد ودورة الألوف. اقرأ العدد 582,614 منزلةً منزلة."
+      },
+      "lines": {
+        "en": [
+          "582 | 614 → thousands period | ones period",
+          "5 → hundred thousands → 500,000",
+          "8 → ten thousands → 80,000",
+          "2 → thousands → 2,000",
+          "6 → hundreds → 600",
+          "1 → tens → 10",
+          "4 → ones → 4"
+        ],
+        "ar": [
+          "582 | 614 ← دورة الألوف | دورة الآحاد",
+          "5 ← مئات الألوف ← 500,000",
+          "8 ← عشرات الألوف ← 80,000",
+          "2 ← الآلاف ← 2,000",
+          "6 ← المئات ← 600",
+          "1 ← العشرات ← 10",
+          "4 ← الآحاد ← 4"
+        ]
+      },
+      "say": {
+        "en": "The place-value chart. Each group of three places is a period: ones and thousands. Read the number five hundred eighty-two thousand, six hundred fourteen, place by place. Five is in the hundred thousands place, so it is worth five hundred thousand. Eight is in the ten thousands place, worth eighty thousand. Two is in the thousands place, worth two thousand. Six hundreds is six hundred, one ten is ten, and four ones is four.",
+        "ar": "جدول القيمة المكانية. كل ثلاث منازل تكوّن دورة: دورة الآحاد ودورة الألوف. اقرأ العدد خمسمائة واثنين وثمانين ألفًا وستمائة وأربعة عشر منزلةً منزلة. الرقم خمسة في منزلة مئات الألوف وقيمته خمسمائة ألف. والرقم ثمانية في منزلة عشرات الألوف وقيمته ثمانون ألفًا. والرقم اثنان في منزلة الآلاف وقيمته ألفان. والرقم ستة في منزلة المئات وقيمته ستمائة، والرقم واحد في منزلة العشرات وقيمته عشرة، والرقم أربعة في منزلة الآحاد وقيمته أربعة."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": {
+        "places": 6,
+        "target": 582614
+      },
+      "text": {
+        "en": "Use + and − to put each digit in its place.",
+        "ar": "استخدم + و − لتضع كل رقم في منزلته."
+      },
+      "prompt": {
+        "en": "Build 582,614 in the chart.",
+        "ar": "كوّن العدد 582,614 في الجدول."
+      },
+      "say": {
+        "en": "Build five hundred eighty-two thousand, six hundred fourteen in the chart.",
+        "ar": "كوّن العدد خمسمائة واثنين وثمانين ألفًا وستمائة وأربعة عشر في الجدول."
+      }
+    },
+    {
+      "type": "example",
+      "visual": {
+        "kind": "blocks",
+        "n": 5555
+      },
+      "check": {
+        "q": {
+          "en": "In 5,555, which 5 is worth the most?",
+          "ar": "في العدد 5,555، أي رقم 5 قيمته أكبر؟"
+        },
+        "options": {
+          "en": [
+            "The one on the far left",
+            "The one on the far right",
+            "They are all worth the same"
+          ],
+          "ar": [
+            "الذي في أقصى اليسار",
+            "الذي في أقصى اليمين",
+            "كلها لها القيمة نفسها"
+          ]
+        },
+        "answer": 0
+      },
+      "text": {
+        "en": "**Same digit, different values.** In 5,555 every digit is 5, but each 5 is worth 10 times the 5 on its right.",
+        "ar": "**الرقم نفسه بقيم مختلفة.** في العدد 5,555 كل الأرقام 5، لكن قيمة كل 5 تساوي 10 أمثال قيمة الـ 5 التي على يمينه."
+      },
+      "lines": {
+        "en": [
+          "5,555 = 5,000 + 500 + 50 + 5"
+        ],
+        "ar": [
+          "5,555 = 5,000 + 500 + 50 + 5"
+        ]
+      },
+      "say": {
+        "en": "Same digit, different values. In five thousand five hundred fifty-five every digit is five, but each five is worth ten times the five on its right: five thousand, five hundred, fifty, and five.",
+        "ar": "الرقم نفسه بقيم مختلفة. في العدد خمسة آلاف وخمسمائة وخمسة وخمسين كل الأرقام خمسة، لكن قيمة كل خمسة تساوي عشرة أمثال قيمة الخمسة التي على يمينه: خمسة آلاف، وخمسمائة، وخمسون، وخمسة."
+      }
+    },
+    {
+      "type": "interactive",
+      "widget": "place-value",
+      "params": {
+        "places": 4,
+        "target": 6090
+      },
+      "text": {
+        "en": "A zero keeps a place empty. Be careful with it!",
+        "ar": "الصفر يحجز منزلة فارغة. انتبه له!"
+      },
+      "prompt": {
+        "en": "Build six thousand ninety.",
+        "ar": "كوّن العدد: ستة آلاف وتسعون."
+      },
+      "say": {
+        "en": "Build six thousand ninety. Which places need a zero?",
+        "ar": "كوّن العدد ستة آلاف وتسعين. أي المنازل تحتاج إلى صفر؟"
+      }
+    },
+    {
+      "type": "explain",
+      "visual": {
+        "kind": "blocks",
+        "n": 1111
+      },
+      "text": {
+        "en": "**Remember:**\n\n**Place** = where the digit sits.\n\n**Value** = the digit × its place, e.g. 3 in the hundreds = 300.\n\nA **zero** holds a place so the other digits stay where they belong.",
+        "ar": "**تذكّر:**\n\n**المنزلة** = مكان الرقم في العدد.\n\n**القيمة** = الرقم × منزلته، مثلًا 3 في منزلة المئات = 300.\n\n**الصفر** يحجز المنزلة الفارغة لتبقى الأرقام الأخرى في منازلها."
+      },
+      "say": {
+        "en": "Remember. Place is where the digit sits. Value is the digit times its place, for example three in the hundreds place is three hundred. A zero holds an empty place so the other digits stay where they belong.",
+        "ar": "تذكّر. المنزلة هي مكان الرقم في العدد. والقيمة هي الرقم مضروبًا في منزلته، فمثلًا الرقم ثلاثة في منزلة المئات قيمته ثلاثمائة. والصفر يحجز المنزلة الفارغة لتبقى الأرقام الأخرى في منازلها."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "q": {
+        "en": "What is the value of the digit 7 in 743,615?",
+        "ar": "ما قيمة الرقم 7 في العدد 743,615؟"
+      },
+      "options": {
+        "en": [
+          "700,000",
+          "7",
+          "70,000",
+          "7,000"
+        ],
+        "ar": [
+          "700,000",
+          "7",
+          "70,000",
+          "7,000"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "7 is in the hundred thousands place, so it is worth 700,000. 7 is only the digit, not its value.",
+        "ar": "الرقم 7 في منزلة مئات الألوف، إذن قيمته 700,000. أما 7 فهو الرقم وليس قيمته."
+      },
+      "say": {
+        "en": "What is the value of the digit seven in seven hundred forty-three thousand, six hundred fifteen?",
+        "ar": "ما قيمة الرقم سبعة في العدد سبعمائة وثلاثة وأربعين ألفًا وستمائة وخمسة عشر؟"
+      }
+    },
+    {
+      "q": {
+        "en": "In 284,190, which digit is in the ten thousands place?",
+        "ar": "في العدد 284,190، ما الرقم الذي في منزلة عشرات الألوف؟"
+      },
+      "options": {
+        "en": [
+          "8",
+          "4",
+          "2",
+          "9"
+        ],
+        "ar": [
+          "8",
+          "4",
+          "2",
+          "9"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "From the right: 0 ones, 9 tens, 1 hundred, 4 thousands, 8 ten thousands.",
+        "ar": "من اليمين: 0 آحاد، 9 عشرات، 1 مئات، 4 آلاف، 8 عشرات ألوف."
+      },
+      "say": {
+        "en": "In two hundred eighty-four thousand, one hundred ninety, which digit is in the ten thousands place?",
+        "ar": "في العدد مئتين وأربعة وثمانين ألفًا ومائة وتسعين، ما الرقم الذي في منزلة عشرات الألوف؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Which number has 5 in the hundred thousands place?",
+        "ar": "أي عدد فيه الرقم 5 في منزلة مئات الألوف؟"
+      },
+      "options": {
+        "en": [
+          "523,000",
+          "253,000",
+          "235,000",
+          "23,500"
+        ],
+        "ar": [
+          "523,000",
+          "253,000",
+          "235,000",
+          "23,500"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "In 523,000 the 5 is the 6th digit from the right: hundred thousands.",
+        "ar": "في العدد 523,000 الرقم 5 هو السادس من اليمين: منزلة مئات الألوف."
+      },
+      "say": {
+        "en": "Which number has five in the hundred thousands place?",
+        "ar": "أي عدد فيه الرقم خمسة في منزلة مئات الألوف؟"
+      }
+    },
+    {
+      "q": {
+        "en": "What is the place of the digit 3 in 40,306?",
+        "ar": "ما منزلة الرقم 3 في العدد 40,306؟"
+      },
+      "options": {
+        "en": [
+          "Hundreds",
+          "Thousands",
+          "Tens",
+          "Ones"
+        ],
+        "ar": [
+          "المئات",
+          "الآلاف",
+          "العشرات",
+          "الآحاد"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "6 ones, 0 tens, 3 hundreds. Don't skip the zeros when you count places.",
+        "ar": "6 آحاد، 0 عشرات، 3 مئات. لا تتخطَّ الأصفار عندما تعدّ المنازل."
+      },
+      "say": {
+        "en": "What is the place of the digit three in forty thousand, three hundred six?",
+        "ar": "ما منزلة الرقم ثلاثة في العدد أربعين ألفًا وثلاثمائة وستة؟"
+      }
+    },
+    {
+      "q": {
+        "en": "Sara wrote \"three thousand five\" as 305. What is the correct number?",
+        "ar": "كتبت سارة «ثلاثة آلاف وخمسة» هكذا: 305. ما العدد الصحيح؟"
+      },
+      "options": {
+        "en": [
+          "3,005",
+          "305",
+          "3,500",
+          "30,005"
+        ],
+        "ar": [
+          "3,005",
+          "305",
+          "3,500",
+          "30,005"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Three thousand needs 4 places: 3 thousands, 0 hundreds, 0 tens, 5 ones = 3,005.",
+        "ar": "ثلاثة آلاف تحتاج 4 منازل: 3 آلاف، 0 مئات، 0 عشرات، 5 آحاد = 3,005."
+      },
+      "say": {
+        "en": "Sara wrote three thousand five as three hundred five. What is the correct number?",
+        "ar": "كتبت سارة ثلاثة آلاف وخمسة هكذا: ثلاثمائة وخمسة. ما العدد الصحيح؟"
+      }
+    },
+    {
+      "q": {
+        "en": "What is the value of the digit 4 in 148,200?",
+        "ar": "ما قيمة الرقم 4 في العدد 148,200؟"
+      },
+      "options": {
+        "en": [
+          "40,000",
+          "4,000",
+          "400,000",
+          "4"
+        ],
+        "ar": [
+          "40,000",
+          "4,000",
+          "400,000",
+          "4"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "4 is in the ten thousands place: 4 × 10,000 = 40,000.",
+        "ar": "الرقم 4 في منزلة عشرات الألوف: 4 × 10,000 = 40,000."
+      },
+      "say": {
+        "en": "What is the value of the digit four in one hundred forty-eight thousand, two hundred?",
+        "ar": "ما قيمة الرقم أربعة في العدد مائة وثمانية وأربعين ألفًا ومئتين؟"
+      }
+    },
+    {
+      "q": {
+        "en": "What is the greatest place in a 6-digit number?",
+        "ar": "ما أكبر منزلة في عدد مكوّن من 6 أرقام؟"
+      },
+      "options": {
+        "en": [
+          "Hundred thousands",
+          "Millions",
+          "Ten thousands",
+          "Thousands"
+        ],
+        "ar": [
+          "مئات الألوف",
+          "الملايين",
+          "عشرات الألوف",
+          "الآلاف"
+        ]
+      },
+      "answer": 0,
+      "explain": {
+        "en": "Ones, tens, hundreds, thousands, ten thousands, hundred thousands: the 6th place is hundred thousands.",
+        "ar": "آحاد، عشرات، مئات، آلاف، عشرات ألوف، مئات ألوف: المنزلة السادسة هي مئات الألوف."
+      },
+      "say": {
+        "en": "What is the greatest place in a six-digit number?",
+        "ar": "ما أكبر منزلة في عدد مكوّن من ستة أرقام؟"
+      }
+    }
+  ]
+}
