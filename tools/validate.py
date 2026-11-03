@@ -14,7 +14,10 @@ WIDGETS = {
     "number-line": ["target"],
     "place-value": ["target"],
     "compare": ["a", "b"],
+    "array": [],
+    "area-grid": ["target"],
 }
+VISUALS = {"pies": ["items"], "bars": ["items"], "blocks": ["n"], "array": ["rows", "cols"], "grid": ["w", "h"]}
 STEP_TYPES = {"explain", "example", "interactive"}
 CURRICULA = {"egypt", "ccss"}
 errors, warnings = [], []
@@ -45,7 +48,7 @@ def bi(where, obj, name, required=True):
 
 def needs_ar_say(text):
     # Fractions or operators read badly by Arabic TTS: require a spoken version.
-    return bool(re.search(r"\[\d+/\d+\]|[=<>×÷]", text))
+    return bool(re.search(r"\d|[=<>×÷]", text))
 
 
 def check_lesson(path, meta):
@@ -79,6 +82,24 @@ def check_lesson(path, meta):
         ar_text = (s.get("text") or {}).get("ar", "") + " ".join((s.get("lines") or {}).get("ar", []))
         if needs_ar_say(ar_text) and not (s.get("say") or {}).get("ar"):
             warn(w, "Arabic text has fractions/symbols but no say.ar for narration")
+        vis = s.get("visual")
+        if vis is not None:
+            if vis.get("kind") not in VISUALS:
+                err(w, "unknown visual kind %r" % vis.get("kind"))
+            else:
+                for k in VISUALS[vis["kind"]]:
+                    if k not in vis:
+                        err(w, "visual %s missing %s" % (vis["kind"], k))
+            if vis.get("kind") == "blocks" and not 0 < vis.get("n", 0) < 10000:
+                err(w, "blocks n must be 1..9999")
+        if s.get("check") is not None:
+            c = s["check"]
+            bi(w, c.get("q"), "check.q")
+            o = c.get("options") or {}
+            if len(o.get("en", [])) < 2 or len(o.get("en", [])) != len(o.get("ar", [])):
+                err(w, "check options need >=2 entries, same count en/ar")
+            if not isinstance(c.get("answer"), int) or not 0 <= c["answer"] < len(o.get("en", [])):
+                err(w, "check answer index out of range")
         if s.get("type") == "interactive":
             wid = s.get("widget")
             if wid not in WIDGETS:
@@ -101,6 +122,17 @@ def check_lesson(path, meta):
                     err(w, "targetDen unreachable with maxK")
             if wid == "place-value" and p["target"] >= 10 ** p.get("places", 7):
                 err(w, "target too large for places")
+            if wid == "array" and not (p.get("target") or p.get("exact")):
+                err(w, "array needs target or exact")
+            if wid == "array" and p.get("target") and p["target"] > p.get("max", 10) ** 2:
+                err(w, "array target unreachable with max")
+            if wid == "area-grid":
+                tg = p["target"]
+                ok = any(tg.get("area") in (None, a * b) and tg.get("perimeter") in (None, 2 * (a + b))
+                         and (tg.get("w") is None or {a, b} == {tg["w"], tg["h"]})
+                         for a in range(1, p.get("maxW", 10) + 1) for b in range(1, p.get("maxH", 8) + 1))
+                if not ok:
+                    err(w, "area-grid target unreachable")
     quiz = l.get("quiz") or []
     if len(quiz) < 4:
         err(where, "fewer than 4 quiz questions")
@@ -125,6 +157,16 @@ def check_lesson(path, meta):
 
 
 def main():
+    # `validate.py FILE...` checks lesson files that are not in the catalog yet
+    if len(sys.argv) > 1:
+        for f in sys.argv[1:]:
+            check_lesson(f, {"id": os.path.basename(f)[:-5]})
+        for m in warnings:
+            print("WARN ", m)
+        for m in errors:
+            print("ERROR", m)
+        print("%d files, %d errors, %d warnings" % (len(sys.argv) - 1, len(errors), len(warnings)))
+        sys.exit(1 if errors else 0)
     cat = json.load(open(os.path.join(ROOT, "content", "catalog.json"), encoding="utf-8"))
     ids = set()
     for u in cat["units"]:
