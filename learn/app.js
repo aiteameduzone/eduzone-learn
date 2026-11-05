@@ -35,13 +35,26 @@
     }
   };
 
+  // Egyptian conversational register: instructions in colloquial Egyptian;
+  // mathematics terms, examples, objectives and question content remain standard Arabic.
+  I18N.eg = Object.assign({}, I18N.ar, {
+    pick_grade: "تحب تتعلم إيه النهارده؟", pick_grade_sub: "يلا نتعلم خطوة بخطوة!",
+    lessons: "دروس", start: "يلا نبدأ", next: "اللي بعده", back: "اللي فات",
+    listen: "اسمع", stop: "وقف", quiz: "يلا نحل!", check_quiz: "ابدأ التحدي",
+    explain: "نتعلم سوا", example: "مثال", interactive: "جرّب بنفسك",
+    correct: "عاش يا بطل! إجابة صح!", try_again: "ولا يهمك، جرّب تاني.",
+    right: "برافو!", wrong: "لسه مش مظبوط، حاول تاني.",
+    question: "سؤال", finish: "خلصنا", score: "نتيجتك", again: "نلعب تاني",
+    back_unit: "ارجع للدروس", do_it_first: "كمّل النشاط الأول عشان نكمل",
+    continue: "يلا نكمل", show_step: "ورّيني الخطوة اللي بعد كده"
+  });
   var store = {
     get: function (k, d) { try { var v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
     set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
   };
 
   var state = {
-    lang: store.get("ez_lang", "en"),
+    lang: store.get("ez_lang", localStorage.getItem("ez-hub-lang") || "en"),
     cur: store.get("ez_cur", "egypt"),
     catalog: null,
     audio: {},
@@ -49,14 +62,14 @@
   };
 
   var app = document.getElementById("app");
-  function t(k) { return I18N[state.lang][k] || I18N.en[k] || k; }
-  function L(obj) { return obj == null ? "" : (typeof obj === "string" ? obj : (obj[state.lang] != null ? obj[state.lang] : obj.en)); }
+  function t(k) { return (I18N[state.lang] || I18N.en)[k] || I18N.en[k] || k; }
+  function L(obj) { return obj == null ? "" : (typeof obj === "string" ? obj : (obj[state.lang] != null ? obj[state.lang] : (state.lang === "eg" ? obj.ar : obj.en))); }
 
   // ---------- text helpers ----------
   var EAST = "٠١٢٣٤٥٦٧٨٩";
   function digits(s) {
     s = String(s);
-    return state.lang === "ar" ? s.replace(/[0-9]/g, function (d) { return EAST[d]; }) : s;
+    return state.lang !== "en" ? s.replace(/[0-9]/g, function (d) { return EAST[d]; }) : s;
   }
   function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
   function fracHTML(n, d) {
@@ -101,7 +114,7 @@
     if (!text) return;
     speakingBtn = btn;
     btn.classList.add("playing"); btn.textContent = "■ " + t("stop");
-    var key = djb2(state.lang + "|" + text);
+    var key = djb2((state.lang === "eg" ? "ar" : state.lang) + "|" + text);
     if (state.audio[key]) {
       player.src = "../audio/" + key + ".mp3";
       player.playbackRate = rate();
@@ -111,8 +124,8 @@
     }
     if (!window.speechSynthesis) { stopAudio(); return; }
     var u = new SpeechSynthesisUtterance(text);
-    u.lang = state.lang === "ar" ? "ar-EG" : "en-US";
-    var voices = speechSynthesis.getVoices().filter(function (v) { return v.lang.indexOf(state.lang) === 0; });
+    u.lang = state.lang !== "en" ? "ar-EG" : "en-US";
+    var voices = speechSynthesis.getVoices().filter(function (v) { return v.lang.indexOf(state.lang === "eg" ? "ar" : state.lang) === 0; });
     if (voices.length) u.voice = voices[0];
     u.rate = 0.92 * rate();
     u.onend = stopAudio;
@@ -120,14 +133,14 @@
   }
   // Play a list of narration texts one after another (unit listen bar).
   function playOne(text, next) {
-    var key = djb2(state.lang + "|" + text);
+    var key = djb2((state.lang === "eg" ? "ar" : state.lang) + "|" + text);
     if (state.audio[key]) {
       player.src = "../audio/" + key + ".mp3"; player.playbackRate = rate();
       player.onended = next; player.play().catch(next); return;
     }
     if (!window.speechSynthesis) return next();
     var u = new SpeechSynthesisUtterance(text);
-    u.lang = state.lang === "ar" ? "ar-EG" : "en-US"; u.rate = 0.92 * rate(); u.onend = next;
+    u.lang = state.lang !== "en" ? "ar-EG" : "en-US"; u.rate = 0.92 * rate(); u.onend = next;
     speechSynthesis.speak(u);
   }
   function playQueue(texts, onDone) {
@@ -160,8 +173,8 @@
   // ---------- chrome ----------
   function applyLang() {
     var html = document.documentElement;
-    html.lang = state.lang;
-    html.dir = state.lang === "ar" ? "rtl" : "ltr";
+    html.lang = state.lang === "eg" ? "ar-EG" : state.lang;
+    html.dir = state.lang !== "en" ? "rtl" : "ltr";
     document.querySelectorAll(".lang-switch button").forEach(function (b) {
       b.classList.toggle("on", b.dataset.lang === state.lang);
       b.setAttribute("aria-pressed", b.dataset.lang === state.lang);
@@ -287,7 +300,7 @@
       // Egypt refs are written "U4 · topic" in English: show just the unit, in the page language
       if (state.cur === "egypt") refs = refs.map(function (r) {
         var m = /^U(\d+)/.exec(r);
-        return m ? (state.lang === "ar" ? "الوحدة " : "Unit ") + digits(m[1]) : r;
+        return m ? (state.lang !== "en" ? "الوحدة " : "Unit ") + digits(m[1]) : r;
       }).filter(function (r, i, a) { return a.indexOf(r) === i; });
       app.innerHTML = crumbs([[t("back_unit"), backHref], [L(lsn.title), null]]) +
         "<h1>" + esc(L(lsn.title)) + "</h1>" +
