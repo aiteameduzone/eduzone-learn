@@ -46,6 +46,7 @@ button { font: inherit; cursor: pointer; }
   background: var(--orange); color: #fff; font-weight: 800; border-radius: 10px;
   width: 36px; height: 36px; display: grid; place-items: center;
 }
+.logo-img{width:42px;height:42px;object-fit:contain;border-radius:12px;background:#fff;border:1px solid rgba(255,255,255,.35);padding:4px;display:block}
 .brand-text { font-size: 1.1rem; }
 .controls { display: flex; gap: 8px; align-items: center; }
 .controls select, .pill {
