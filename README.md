@@ -1,35 +1,24 @@
-# EduZone Learn — Unified Learning Hub
+# EduZone Learn — Grade 4 Math & Science (student-only)
 
-A browser-based, GitHub Pages-ready unified front end assembled from the two supplied projects:
-- **EduZone Learn Code**: 51 original lesson JSON files in 13 units, their step-by-step activities, quizzes, English/Arabic switching, and its interactive widgets. All of these are preserved under `learn/`.
-- **NileStem**: a science/STEM discovery concept adapted into four self-contained interactive mini labs under `labs.html` (circuit/Ohm's law, density and buoyancy, square-pyramid volume, pH). These are lightweight new implementations inspired by the uploaded simulations, not exact React component ports.
+Static GitHub Pages website. Upload all files/folders to the repository root.
 
-## Launch
+- `index.html`: grade 4 home, math lessons and science entry point
+- `learn/`: existing 51 Grade 4 Math lessons (9 populated units)
+- `science.html`: restored Grade 4 Science adaptation topic based on the original NileStem curriculum data; four short learning sections plus automatic quiz
+- `labs.html`: four interactive enrichment mini labs
+- Language options: English, Arabic (formal), مصري (Egyptian colloquial UI/instructions, formal Arabic scientific terminology)
 
-To test locally:
+**Scope:** Original NileStem ZIP contains only one Grade 4 Science topic (adaptation for desert survival), not a complete Grade 4 Science course. Other Science materials concern other grades and are deliberately not mislabeled as Grade 4.
 
-```sh
-python3 -m http.server 8000
-```
+No GitHub repository was modified by generating this ZIP.
 
-Open http://localhost:8000 . Do **not** open `index.html` using `file://`, since lesson JSON is fetched by JavaScript.
+## Added: British Year 4 Mathematics pathway
 
-## GitHub Pages
-
-Upload **the contents** of this directory (not the enclosing directory) to a public repository. In Settings → Pages, deploy from `main` → `/ (root)`; `index.html` is the landing page. All navigation uses relative paths, so a repository subdirectory URL is supported. No build step, API key, or server needed.
-
-## Key limits
-
-- Grade 4 Mathematics is where the uploaded EduZone project contains a substantial lesson library. The marketing descriptions of K–12 coverage in the original projects do not mean complete lesson curricula for all grades; this hub does not claim that.
-- NileStem's full React interface and six original detailed simulators are **not** ported here. Four simplified, working experiments are integrated into this static application. Their results are educational approximations.
-- The NileStem AI curriculum agent needs a backend and a protected API key; it is deliberately excluded from this public static version.
-- Browser text-to-speech varies by device and is not suitable as verified Arabic pronunciation instruction.
-- Your two original ZIP archives were **not modified**. This ZIP is a new combined user-facing app.
-
-## Structure
-
-`index.html`, `unified.css`, `unified.js` — new friendly learning hub.
-
-`labs.html`, `labs.js` — four responsive science mini labs.
-
-`learn/` — complete original EduZone Learn static lesson player, lesson catalog, step content and widgets.
+- Homepage: new prominent British Year 4 Math entry above the existing content
+- `british-year4.html`: grade-specific, student-only skills explorer with 35 topics
+- `british/year4-map.json`: 35 mapped practice topics, 15 link to **related** existing Grade 4 Math units, 20 provide new bite-sized practice
+- `british/british.js`, `british/british.css`: interactive teaching cards, automatically checked answers, language choices, search, term filters and browser-local star progress
+- British Year 4 source: user-provided 2026–27 long-term mathematics plan from one British Division school. The school's pacing, unit identifiers and timetable should not be presented as universal Cambridge curriculum requirements.
+- The 51 existing detailed mathematics lessons remain in `learn/`; the Grade 4 Science page and four enrichment mini-labs are unchanged.
+- The newly added quick-practice modules are not yet full in-depth lesson units. Links to existing Grade 4 lessons indicate related material, not certified curriculum equivalence.
+- Deploy as a *static site* on GitHub Pages by uploading all files/folders to the repository root, then enable Pages for the main branch root. No backend needed. Browser progress is saved per device.
