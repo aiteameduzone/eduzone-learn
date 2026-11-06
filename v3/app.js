@@ -26,8 +26,16 @@
     bigIdea: ["The big idea", "الفكرة الأساسية", "الفكرة ببساطة"], listen: ["🔊 Listen", "🔊 استمع", "🔊 اسمع"],
     example: ["Worked example", "مثال محلول", "مثال محلول"], showSteps: ["Show the steps", "اعرض الخطوات", "ورّيني الخطوات"], another: ["Another example ↻", "مثال آخر ↻", "مثال تاني ↻"],
     answer: ["Answer", "الإجابة", "الإجابة"], quick: ["Quick check", "تحقّق سريع", "سؤال سريع"],
-    your3: ["Your 3 steps", "خطواتك الثلاث", "خطواتك التلاتة"],
-    s1: ["Read the idea and the example.", "اقرأ الفكرة والمثال.", "اقرا الفكرة والمثال."], s2: ["Reach a goal with the hands-on tool.", "حقّق هدفًا باستخدام الأداة التفاعلية.", "حقّق هدف بالأداة."], s3: ["Answer 5 questions to earn up to 3 stars.", "أجب عن ٥ أسئلة لتحصل على ٣ نجوم.", "جاوب ٥ أسئلة وخد لحد ٣ نجوم."],
+    your3: ["Your learning path", "مسار تعلّمك", "مسار تعلّمك"],
+    s0: ["Hear the idea two ways: official and story.", "استمع إلى الفكرة بطريقتين: رسمية وبالقصة.", "استمع إلى الفكرة بطريقتين: رسمية وبالقصة."],
+    s1: ["Watch an example, then solve one with help.", "شاهد مثالًا، ثم حلّ سؤالًا بمساعدة.", "شاهد مثالًا، ثم حلّ سؤالًا بمساعدة."],
+    twoWays: ["Pick a way, press Play, and follow the highlighted lines.", "اختر الطريقة واضغط تشغيل وتابع السطر المضيء.", "اختر الطريقة واضغط تشغيل وتابع السطر المضيء."],
+    watch: ["Watch it solved", "شاهد الحل", "شاهد الحل"], watchSub: ["Tap “Next step” to reveal the solution one line at a time.", "اضغط «الخطوة التالية» لتظهر خطوات الحل واحدة تلو الأخرى.", "اضغط «الخطوة التالية» لتظهر خطوات الحل واحدة تلو الأخرى."],
+    yourTurn: ["Your turn, with help", "دورك، مع المساعدة", "دورك، مع المساعدة"], yourTurnSub: ["Stuck? Reveal one step at a time. No points lost here.", "احتجت مساعدة؟ اكشف خطوة واحدة في كل مرة. لا تخسر نقاطًا هنا.", "احتجت مساعدة؟ اكشف خطوة واحدة في كل مرة. لا تخسر نقاطًا هنا."],
+    oneStep: ["Show me one step", "أرني خطوة واحدة", "أرني خطوة واحدة"], newQ: ["New question ↻", "سؤال جديد ↻", "سؤال جديد ↻"],
+    tapStep: ["Tap “Show me one step” for a clue.", "اضغط «أرني خطوة واحدة» لتحصل على مفتاح.", "اضغط «أرني خطوة واحدة» لتحصل على مفتاح."],
+    usedHelp: ["You used the steps - now try one alone in Practise.", "استخدمت الخطوات، جرّب الآن وحدك في التدريب.", "استخدمت الخطوات، جرّب الآن وحدك في التدريب."],
+    hearSol: ["Hear the solution two ways", "استمع إلى الحل بطريقتين", "استمع إلى الحل بطريقتين"], s2: ["Reach a goal with the hands-on tool.", "حقّق هدفًا باستخدام الأداة التفاعلية.", "حقّق هدف بالأداة."], s3: ["Answer 5 questions to earn up to 3 stars.", "أجب عن ٥ أسئلة لتحصل على ٣ نجوم.", "جاوب ٥ أسئلة وخد لحد ٣ نجوم."],
     openLesson: ["Open the full lesson →", "افتح الدرس الكامل ←", "افتح الدرس الكامل ←"],
     goTry: ["Next: Try it →", "التالي: جرّب ←", "اللي بعده: جرّب ←"], goPractise: ["Next: Practise →", "التالي: تدرّب ←", "اللي بعده: اتمرّن ←"],
     tryHint: ["Reach the goal, then press “New goal” for another challenge.", "حقّق الهدف، ثم اضغط «هدف جديد» لتحدٍّ آخر.", "خلّص الهدف ودوس «هدف جديد» عشان تحدي تاني."],
@@ -259,31 +267,56 @@
     else practiceTab(body, s);
   }
 
+  /* ---------- two-way scripts: idea + solution ---------- */
+  function ideaWays(s) {
+    var x = E.EXPLAIN && E.EXPLAIN[s.id];
+    if (!x) return { official: [esc(E.d(E.L(s.explain)))], story: [] };
+    return { official: E.L(x.official).map(esc), story: E.L(x.story).map(esc) };
+  }
+  function ansText(q) { return q.kind === "num" ? n(q.answer) + (q.unit ? " " + q.unit : "") : q.answer; }
+  function lowerFirst(h) { return E.isAr() ? h : h.replace(/^([A-Z])(?=[a-z])/, function (c) { return c.toLowerCase(); }); }
+  function solutionWays(s, q) {
+    var ans = ansText(q), x = E.EXPLAIN && E.EXPLAIN[s.id], st = q.steps || [];
+    var official = st.concat([t("Answer: ", "الإجابة: ", "الإجابة: ") + "<b>" + ans + "</b>"]);
+    var con = E.isAr() ? ["أولًا، ", "بعد ذلك، ", "ثم ", "وأخيرًا، "] : ["First, ", "Next, ", "Then, ", "Finally, "];
+    var story = [x ? esc(E.L(x.hook)) : t("Let's solve it together, step by step.", "هيا نحلّها معًا خطوة بخطوة.")].concat(
+      st.map(function (h, i) { return (st.length === 1 ? "" : con[i === 0 ? 0 : i === st.length - 1 ? 3 : (i % 2 ? 1 : 2)]) + lowerFirst(h); }),
+      [t("So the answer is ", "إذن الإجابة هي ", "يبقى الإجابة ") + "<b>" + ans + "</b>" + t(". Well done!", ". أحسنت!", ". عاش!")]);
+    return { official: official, story: story };
+  }
+
   function learnTab(body, s) {
     prog.learned[s.id] = true; save();
-    var ex = s.gen && E.makeQuestion(s.gen);
-    var h = '<div class="layout two"><div style="display:flex;flex-direction:column;gap:16px">' +
-      '<div class="card pad"><div class="sec-head" style="margin-bottom:6px"><h3>💡 ' + w("bigIdea") + '</h3><button class="say" type="button" id="sayit">' + w("listen") + '</button></div><div class="explain"><p>' + esc(E.d(E.L(s.explain))) + "</p></div></div>" +
-      '<div class="card pad"><h3 style="margin-bottom:10px">✏️ ' + w("example") + '</h3><div id="ex"></div></div>' +
-      '<div class="card pad"><h3 style="margin-bottom:10px">✅ ' + w("quick") + '</h3><div id="qc"></div></div></div>' +
-      '<aside style="display:flex;flex-direction:column;gap:16px"><div class="card pad"><h3>🧭 ' + w("your3") + '</h3><ol style="margin:10px 0 0;padding-inline-start:22px;font-weight:700;line-height:1.9"><li>' + esc(w("s1")) + "</li><li>" + esc(w("s2")) + "</li><li>" + esc(w("s3")) + "</li></ol>" +
+    var num = function (k) { return '<span class="lnum">' + n(k) + "</span>"; };
+    var h = '<div class="layout two"><div class="learn-flow">' +
+      '<section class="card pad lstep"><div class="lhead">' + num(1) + "<div><h3>💡 " + w("bigIdea") + '</h3><p class="sub">' + esc(w("twoWays")) + '</p></div></div><p class="headline">' + esc(E.d(E.L(s.explain))) + '</p><div id="idea"></div></section>' +
+      '<section class="card pad lstep"><div class="lhead">' + num(2) + "<div><h3>👀 " + w("watch") + '</h3><p class="sub">' + esc(w("watchSub")) + '</p></div></div><div id="ex"></div></section>' +
+      '<section class="card pad lstep"><div class="lhead">' + num(3) + "<div><h3>🙋 " + w("yourTurn") + '</h3><p class="sub">' + esc(w("yourTurnSub")) + '</p></div></div><div id="guided"></div></section>' +
+      '<section class="card pad lstep"><div class="lhead">' + num(4) + "<div><h3>✅ " + w("quick") + '</h3></div></div><div id="qc"></div></section></div>' +
+      '<aside style="display:flex;flex-direction:column;gap:16px"><div class="card pad"><h3>🧭 ' + w("your3") + '</h3><ol style="margin:10px 0 0;padding-inline-start:22px;font-weight:700;line-height:1.9"><li>' + esc(w("s0")) + "</li><li>" + esc(w("s1")) + "</li><li>" + esc(w("s2")) + "</li><li>" + esc(w("s3")) + "</li></ol>" +
       '<div class="btn-row" style="margin-top:14px"><a class="btn primary" href="#/s/' + s.id + '/try">' + w("goTry") + "</a></div></div>" +
       (unitOf(s) ? '<a class="card pad" style="text-decoration:none;display:block" href="../learn/index.html#/unit/' + encodeURIComponent(unitOf(s)) + '"><b>📘 ' + w("fullLesson") + '</b><p class="sub" style="margin:4px 0 8px">' + esc(w("fullLessonsSub")) + '</p><span class="tag-link">' + w("openLesson") + "</span></a>" : "") +
       "</aside></div>";
     body.innerHTML = h;
-    body.querySelector("#sayit").onclick = function () { E.speak(E.L(s.explain)); };
+
+    // 1. the idea, presented two ways
+    E.presenter(body.querySelector("#idea"), ideaWays(s), {});
+
+    // 2. watch a worked example unfold step by step (two ways)
     function drawEx(q) {
       var exEl = body.querySelector("#ex");
       if (!q) { exEl.innerHTML = '<p class="sub">—</p>'; return; }
-      var ans = q.kind === "num" ? n(q.answer) + (q.unit ? " " + q.unit : "") : q.answer;
       exEl.innerHTML = '<div class="example"><div class="q">' + q.q + "</div>" + (q.vis ? '<div class="vis">' + q.vis + "</div>" : "") +
-        '<div class="btn-row"><button class="btn sm" type="button" id="show">' + w("showSteps") + '</button><button class="btn sm ghost" type="button" id="again">' + w("another") + "</button></div>" +
-        '<div class="solution" hidden><ol>' + q.steps.map(function (x) { return "<li>" + x + "</li>"; }).join("") + "</ol><p style=\"margin:8px 0 0\">" + w("answer") + ": <b>" + ans + "</b></p></div></div>";
-      exEl.querySelector("#show").onclick = function () { exEl.querySelector(".solution").hidden = false; this.remove(); };
+        '<div class="ex-pres"></div><div class="btn-row" style="margin-top:10px"><button class="btn sm ghost" type="button" id="again">' + w("another") + "</button></div></div>";
+      E.presenter(exEl.querySelector(".ex-pres"), solutionWays(s, q), { step: true });
       exEl.querySelector("#again").onclick = function () { drawEx(E.makeQuestion(s.gen)); };
     }
-    drawEx(ex);
-    // quick check from the year-4 map
+    drawEx(s.gen && E.makeQuestion(s.gen));
+
+    // 3. your turn, with help on tap
+    guided(body.querySelector("#guided"), s);
+
+    // 4. quick check from the year-4 map
     var qc = body.querySelector("#qc"), ck = s.check, answered = false;
     qc.innerHTML = '<div class="qtext" style="font-size:20px;margin-bottom:12px">' + esc(E.d(E.L(ck.q))) + '</div><div class="choices">' +
       ck.options.map(function (o, i) { return '<button class="choice" type="button" data-i="' + i + '">' + esc(E.d(o)) + "</button>"; }).join("") + '</div><div id="qcfb" style="margin-top:12px"></div>';
@@ -294,10 +327,71 @@
         b.classList.add(ok ? "right" : "wrong");
         if (!ok) qc.querySelector('[data-i="' + ck.correct + '"]').classList.add("right");
         answered = true;
-        qc.querySelector("#qcfb").innerHTML = '<div class="fb ' + (ok ? "ok" : "no") + '"><b>' + (ok ? w("right") : w("theAnswer") + ": " + esc(E.d(ck.options[ck.correct]))) + "</b>" + esc(E.d(E.L(ck.why))) + "</div>";
+        qc.querySelector("#qcfb").innerHTML = '<div class="fb ' + (ok ? "ok" : "no") + '"><b>' + (ok ? w("right") : w("theAnswer") + ": " + esc(E.d(ck.options[ck.correct]))) + "</b>" + esc(E.d(E.L(ck.why))) + "</div>" +
+          '<div class="btn-row" style="margin-top:12px"><a class="btn primary" href="#/s/' + s.id + '/try">' + w("goTry") + "</a></div>";
         if (ok) E.burst();
       };
     });
+  }
+
+  /* A supported question: the learner can reveal the method one step at a time before answering,
+     has unlimited tries, and hears the solution two ways at the end. */
+  function guided(host, s) {
+    var q = s.gen && E.makeQuestion(s.gen);
+    if (!q) { host.innerHTML = '<p class="sub">—</p>'; return; }
+    var helps = 0, wrong = 0, finished = false;
+    var h = '<div class="qtext">' + q.q + "</div>" + (q.vis ? '<div class="vis">' + q.vis + "</div>" : "");
+    if (q.kind === "choice") h += '<div class="choices">' + q.choices.map(function (c, k) { return '<button class="choice" type="button" data-k="' + k + '">' + c + "</button>"; }).join("") + "</div>";
+    else h += '<div class="answer-row">' + (s.gen === "negative" ? '<button class="btn sm" type="button" id="gneg" aria-label="minus">±</button>' : "") +
+      '<input class="num-in" id="gans" inputmode="numeric" autocomplete="off" placeholder="?" aria-label="' + esc(w("typeAnswer")) + '">' + (q.unit ? "<b>" + q.unit + "</b>" : "") +
+      '<button class="btn primary" type="button" id="gchk">' + w("check") + "</button></div>";
+    h += '<ol class="helps"></ol><div class="btn-row"><button class="btn sm" type="button" id="ghelp">🪜 ' + w("oneStep") + '</button><button class="btn sm ghost" type="button" id="gnew">' + w("newQ") + '</button></div><div id="gfb"></div><div class="g-pres"></div>';
+    host.innerHTML = h;
+    var fb = host.querySelector("#gfb"), list = host.querySelector(".helps"), hb = host.querySelector("#ghelp");
+    host.querySelector("#gnew").onclick = function () { guided(host, s); };
+    hb.onclick = function () {
+      if (helps >= q.steps.length) return;
+      var li = E.el("li", "pop", q.steps[helps]); list.appendChild(li); E.speak(q.steps[helps]); helps++;
+      if (helps >= q.steps.length) hb.disabled = true;
+    };
+    function end(ok) {
+      finished = true; hb.disabled = true;
+      fb.innerHTML = '<div class="fb ' + (ok ? "ok" : "no") + '"><b>' + (ok ? w("right") : w("theAnswer") + ": " + ansText(q)) + "</b>" + (ok && helps ? esc(w("usedHelp")) : "") + "</div>";
+      E.presenter(host.querySelector(".g-pres"), solutionWays(s, q), { title: "🔊 " + w("hearSol") });
+      if (ok) E.burst();
+    }
+    function verdict(ok) {
+      if (finished) return;
+      if (ok) return end(true);
+      wrong++;
+      if (wrong >= 3) return end(false);
+      fb.innerHTML = '<div class="fb no"><b>' + w("tryAgain") + "</b>" + (helps < q.steps.length ? esc(w("tapStep")) : "💡 " + q.hint) + "</div>";
+    }
+    if (q.kind === "choice") {
+      host.querySelectorAll(".choice").forEach(function (b) {
+        b.onclick = function () {
+          if (finished || b.classList.contains("wrong")) return;
+          var ok = q.choices[Number(b.dataset.k)] === q.answer;
+          b.classList.add(ok ? "right" : "wrong");
+          verdict(ok);
+          if (finished && !ok) host.querySelectorAll(".choice").forEach(function (c) { if (q.choices[Number(c.dataset.k)] === q.answer) c.classList.add("right"); });
+        };
+      });
+    } else {
+      var inp = host.querySelector("#gans");
+      var go = function () {
+        if (finished) return;
+        var v = E.parse(inp.value.replace(/[^0-9٠-٩۰-۹\-−.,٬٫]/g, ""));
+        if (isNaN(v)) { inp.focus(); return; }
+        var ok = v === q.answer;
+        inp.style.borderColor = ok ? "var(--green)" : "var(--red)";
+        verdict(ok);
+      };
+      host.querySelector("#gchk").onclick = go;
+      inp.onkeydown = function (e) { if (e.key === "Enter") go(); };
+      var neg = host.querySelector("#gneg");
+      if (neg) neg.onclick = function () { inp.value = /^[-−]/.test(inp.value) ? inp.value.slice(1) : "-" + inp.value; inp.focus(); };
+    }
   }
 
   function tryTab(body, s) {
@@ -358,7 +452,7 @@
           var pts = attempts === 1 ? 1 : 0.5;
           score += pts; results.push(pts); finished = true;
           prog.answered++; prog.correct++; save();
-          fb.innerHTML = '<div class="fb ok"><b>' + w("right") + "</b>" + q.steps.join(" · ") + '</div><div class="btn-row" style="margin-top:12px"><button class="btn primary" type="button" id="nx">' + w("next") + "</button></div>";
+          fb.innerHTML = '<div class="fb ok"><b>' + w("right") + "</b>" + q.steps.join(" · ") + '</div><div class="btn-row" style="margin-top:12px"><button class="btn sm ghost" type="button" id="hearsol">🔊 ' + w("hearSol") + '</button><button class="btn primary" type="button" id="nx">' + w("next") + '</button></div><div class="p-pres"></div>';
           E.burst();
         } else if (attempts < 2) {
           fb.innerHTML = '<div class="fb no"><b>' + w("tryAgain") + "</b>💡 " + q.hint + "</div>";
@@ -366,8 +460,10 @@
         } else {
           results.push(0); finished = true; prog.answered++; save();
           fb.innerHTML = '<div class="fb no"><b>' + w("theAnswer") + ": " + rightText + '</b><ol style="margin:6px 0 0;padding-inline-start:20px">' + q.steps.map(function (x) { return "<li>" + x + "</li>"; }).join("") +
-            '</ol></div><div class="btn-row" style="margin-top:12px"><button class="btn primary" type="button" id="nx">' + w("next") + "</button></div>";
+            '</ol></div><div class="btn-row" style="margin-top:12px"><button class="btn sm ghost" type="button" id="hearsol">🔊 ' + w("hearSol") + '</button><button class="btn primary" type="button" id="nx">' + w("next") + '</button></div><div class="p-pres"></div>';
         }
+        var hs = body.querySelector("#hearsol");
+        if (hs) hs.onclick = function () { hs.remove(); E.presenter(body.querySelector(".p-pres"), solutionWays(src.skill, q), { auto: true }); };
         var nx = body.querySelector("#nx"); nx.onclick = function () { i++; nextQ(); }; nx.focus();
         return true;
       }

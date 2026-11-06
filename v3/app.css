@@ -277,3 +277,33 @@ input[type=range]{accent-color:var(--orange);width:100%;min-height:32px}
   .top-tools .lang.cur{flex:1 1 auto;max-width:52vw}
   .icon-btn{width:36px;height:36px;flex:none}
 }
+
+/* ---------- learn flow + two-way presenter ---------- */
+.learn-flow{display:flex;flex-direction:column;gap:16px}
+.lhead{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px}
+.lhead h3{margin:0}
+.lhead .sub{margin:2px 0 0}
+.lnum{flex:none;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--orange);color:#fff;font-weight:900}
+.headline{font-size:19px;font-weight:800;margin:0 0 12px;line-height:1.5}
+.pres{border:1px solid var(--line,rgba(0,0,0,.08));border-radius:var(--radius-sm);padding:12px;background:var(--card)}
+.example .pres{margin-top:10px}
+.pres-top{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;margin-bottom:10px}
+.pres-title{font-weight:900;width:100%}
+.pres-lines{margin:0;padding-inline-start:24px;display:flex;flex-direction:column;gap:6px;font-size:17px;font-weight:650;line-height:1.55}
+.pres-lines li{padding:6px 10px;border-radius:10px;cursor:pointer;transition:background .25s,opacity .25s}
+.pres-lines li.hid{display:none}
+.pres-lines li.past{opacity:.75}
+.pres-lines li.on{background:var(--blue-soft);color:var(--blue);box-shadow:inset 4px 0 0 var(--orange)}
+[dir="rtl"] .pres-lines li.on{box-shadow:inset -4px 0 0 var(--orange)}
+.pres-lines.story li{font-style:normal}
+.pres-lines.story{list-style:none;padding-inline-start:0}
+.pres-lines.story li{border-inline-start:3px solid color-mix(in srgb,var(--orange) 45%,transparent)}
+.pres.playing .pres-play{background:var(--orange);border-color:var(--orange)}
+.pres-steprow{margin-top:10px}
+.pop{animation:ezpop .35s ease}
+@keyframes ezpop{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.helps{margin:10px 0 0;padding-inline-start:22px;font-weight:700;display:flex;flex-direction:column;gap:4px}
+.helps:empty{display:none}
+.g-pres:not(:empty),.p-pres:not(:empty){margin-top:12px}
+.pres-ways button{padding:7px 12px}
+@media (max-width:640px){.pres-lines{font-size:16px}.pres-top .pres-ways{width:100%}.pres-ways button{flex:1}}

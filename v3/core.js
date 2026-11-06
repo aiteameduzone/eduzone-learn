@@ -62,21 +62,48 @@
   var voiceOn = store.get("ez3_voice", true);
   EZ3.voiceOn = function () { return voiceOn; };
   EZ3.setVoice = function (v) { voiceOn = v; store.set("ez3_voice", v); if (!v) EZ3.hush(); };
-  EZ3.hush = function () { try { speechSynthesis.cancel(); } catch (e) {} };
+  EZ3.hush = function () { if (EZ3._seq) { EZ3._seq.stop = true; EZ3._seq = null; } try { speechSynthesis.cancel(); } catch (e) {} };
+  function cleanSpeech(text) { return String(text).replace(/<[^>]+>/g, " ").replace(/[*_#]/g, "").replace(/−/g, "-").replace(/\s+/g, " ").trim(); }
+  function utter(clean) {
+    var u = new SpeechSynthesisUtterance(clean);
+    var want = lang === "en" ? "en" : "ar";
+    u.lang = lang === "en" ? "en-GB" : "ar-EG";
+    var vs = speechSynthesis.getVoices().filter(function (v) { return v.lang.toLowerCase().indexOf(want) === 0; });
+    var female = vs.filter(function (v) { return /female|woman|zira|samantha|serena|kate|salma|laila|mariam|hoda|amira|zeina/i.test(v.name); });
+    if (female.length) u.voice = female[0]; else if (vs.length) u.voice = vs[0];
+    u.rate = 0.95;
+    return u;
+  }
+  EZ3.canSpeak = function () { return voiceOn && ("speechSynthesis" in window); };
   EZ3.speak = function (text) {
     if (!voiceOn || !("speechSynthesis" in window) || !text) return;
-    var clean = String(text).replace(/<[^>]+>/g, " ").replace(/[*_#]/g, "").replace(/−/g, "-");
-    try {
-      speechSynthesis.cancel();
-      var u = new SpeechSynthesisUtterance(clean);
-      var want = lang === "en" ? "en" : "ar";
-      u.lang = lang === "en" ? "en-GB" : "ar-EG";
-      var vs = speechSynthesis.getVoices().filter(function (v) { return v.lang.toLowerCase().indexOf(want) === 0; });
-      var female = vs.filter(function (v) { return /female|woman|zira|samantha|serena|kate|salma|laila|mariam|hoda|amira|zeina/i.test(v.name); });
-      if (female.length) u.voice = female[0]; else if (vs.length) u.voice = vs[0];
-      u.rate = 0.95;
-      speechSynthesis.speak(u);
-    } catch (e) {}
+    try { EZ3.hush(); speechSynthesis.speak(utter(cleanSpeech(text))); } catch (e) {}
+  };
+  /* Speak a list of sentences one after another.
+     onIdx(i) fires as sentence i starts; onDone() after the last one.
+     With the voice off (or no speech engine) it still steps through on a reading timer,
+     so the on-screen presentation works silently too. Returns a token; EZ3.hush() stops it. */
+  EZ3.speakSeq = function (list, onIdx, onDone, from) {
+    EZ3.hush();
+    var token = { stop: false }, i = from || 0;
+    EZ3._seq = token;
+    function next() {
+      if (token.stop) return;
+      if (i >= list.length) { if (EZ3._seq === token) EZ3._seq = null; if (onDone) onDone(); return; }
+      var k = i++, text = cleanSpeech(list[k]), fired = false, tm;
+      if (onIdx) onIdx(k);
+      var est = Math.max(1600, text.length * (lang === "en" ? 65 : 80));
+      var fin = function () { if (fired) return; fired = true; clearTimeout(tm); setTimeout(next, 280); };
+      if (EZ3.canSpeak() && text) {
+        try {
+          var u = utter(text); u.onend = fin; u.onerror = fin;
+          speechSynthesis.speak(u);
+          tm = setTimeout(fin, est * 2.5 + 4000); // safety net if the engine never fires onend
+        } catch (e) { tm = setTimeout(fin, est); }
+      } else tm = setTimeout(fin, est);
+    }
+    next();
+    return token;
   };
 
   /* ---------- celebration ---------- */
