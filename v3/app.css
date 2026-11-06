@@ -317,3 +317,20 @@ input[type=range]{accent-color:var(--orange);width:100%;min-height:32px}
 .gate .big{font-size:46px}
 .gate h3{margin:6px 0}
 @media (max-width:640px){.jarr{display:none}.jstep{font-size:13px;padding:5px 10px}}
+/* ---------- top switches (buttons, not dropdowns) ---------- */
+.switchbar{max-width:1180px;margin:0 auto;padding:0 16px 10px;display:flex;gap:10px;align-items:center;justify-content:space-between}
+.sw{display:inline-flex;gap:4px;padding:4px;background:var(--bg-2);border:1px solid var(--line);border-radius:999px}
+.sw button{border:0;background:transparent;border-radius:999px;padding:7px 14px;font:inherit;font-weight:800;font-size:14px;color:var(--ink-2);cursor:pointer;display:inline-flex;gap:6px;align-items:center;min-height:36px;white-space:nowrap}
+.sw button i{font-style:normal}
+.sw button:hover{color:var(--blue)}
+.sw button.on{background:var(--blue);color:#fff;box-shadow:0 2px 6px rgba(11,58,164,.25)}
+.sw-lang button.on{background:var(--orange);box-shadow:0 2px 6px rgba(255,91,20,.25)}
+.sw .short{display:none}
+:root:not([data-theme="light"]) .sw button.on{color:#fff}
+@media (max-width:640px){
+  .switchbar{padding:0 10px 8px;gap:6px}
+  .sw-cur{flex:1;min-width:0}
+  .sw-cur button{flex:1;justify-content:center;padding:7px 6px;font-size:13px;gap:4px;min-width:0}
+  .sw-lang button{padding:7px 12px;font-size:14px}
+  .sw-lang .full{display:none}.sw-lang .short{display:inline}
+}

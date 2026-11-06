@@ -117,19 +117,17 @@
       '<header class="top"><div class="top-in">' +
       '<a class="brand" href="#/"><img src="ez-icon.png" alt="EduZone"><span><b>EduZone <span>Learn</span></b><small id="bsub"></small></span></a>' +
       '<nav class="nav" id="nav"></nav>' +
-      '<div class="top-tools"><select class="lang cur" id="cur"></select>' +
-      '<select class="lang" id="lang" aria-label="Language"><option value="en">English</option><option value="ar">العربية</option></select>' +
-      '<button class="icon-btn" id="voice" type="button"></button></div>' +
-      '</div></header><main class="page" id="view"></main><footer class="foot" id="foot"></footer><nav class="bnav" id="bnav"></nav>';
+      '<div class="top-tools"><button class="icon-btn" id="voice" type="button"></button></div>' +
+      '</div><div class="switchbar"><div class="sw sw-cur" id="cur" role="group"></div><div class="sw sw-lang" id="lang" role="group"></div></div></header><main class="page" id="view"></main><footer class="foot" id="foot"></footer><nav class="bnav" id="bnav"></nav>';
     if (E.lang === "eg") E.setLang("ar");
-    var sel = document.getElementById("lang");
-    sel.value = E.lang;
-    sel.onchange = function () { E.setLang(sel.value); route(); };
-    var cs = document.getElementById("cur");
-    cs.onchange = function () {
-      setCur(cs.value);
-      var h = location.hash;
-      if (/^#\/c\//.test(h)) location.hash = "#/topics"; else route();
+    document.getElementById("lang").onclick = function (e) {
+      var b = e.target.closest("button[data-v]"); if (!b || b.dataset.v === E.lang) return;
+      E.setLang(b.dataset.v); route();
+    };
+    document.getElementById("cur").onclick = function (e) {
+      var b = e.target.closest("button[data-v]"); if (!b || b.dataset.v === CUR) return;
+      setCur(b.dataset.v);
+      if (/^#\/c\//.test(location.hash)) location.hash = "#/topics"; else route();
     };
     var vb = document.getElementById("voice");
     vb.onclick = function () { E.setVoice(!E.voiceOn()); paintChrome(); };
@@ -138,10 +136,19 @@
     var cd = E.CURRICULA[CUR];
     document.title = "EduZone Learn · " + E.L(cd.sub);
     document.getElementById("bsub").textContent = E.L(cd.sub);
+    var SHORT = { british: ["British", "بريطاني"], american: ["American", "أمريكي"], national: ["National", "قومي"] };
     var cs = document.getElementById("cur");
     cs.setAttribute("aria-label", t("Curriculum", "المنهج"));
-    cs.innerHTML = Object.keys(E.CURRICULA).map(function (k) { var c = E.CURRICULA[k]; return '<option value="' + k + '"' + (k === CUR ? " selected" : "") + ">" + c.flag + " " + E.L(c) + "</option>"; }).join("");
-    document.getElementById("lang").value = E.lang;
+    cs.innerHTML = Object.keys(E.CURRICULA).map(function (k) {
+      var c = E.CURRICULA[k], on = k === CUR, nm = SHORT[k] ? t(SHORT[k][0], SHORT[k][1]) : E.L(c);
+      return '<button type="button" data-v="' + k + '" class="' + (on ? "on" : "") + '" aria-pressed="' + on + '" title="' + esc(E.L(c)) + '"><i>' + c.flag + "</i>" + esc(nm) + "</button>";
+    }).join("");
+    var ls = document.getElementById("lang");
+    ls.setAttribute("aria-label", t("Language", "اللغة"));
+    ls.innerHTML = [["en", "English", "EN"], ["ar", "العربية", "ع"]].map(function (x) {
+      var on = x[0] === E.lang;
+      return '<button type="button" data-v="' + x[0] + '" class="' + (on ? "on" : "") + '" aria-pressed="' + on + '" lang="' + x[0] + '"><span class="full">' + x[1] + '</span><span class="short">' + x[2] + "</span></button>";
+    }).join("");
     var vb = document.getElementById("voice");
     vb.textContent = E.voiceOn() ? "🔊" : "🔇"; vb.classList.toggle("off", !E.voiceOn());
     vb.setAttribute("aria-label", w("voice")); vb.title = w("voice");
