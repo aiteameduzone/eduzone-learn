@@ -127,7 +127,7 @@
   };
   W["place-value"] = function (el, p, ctx) {
     var cols = p.places || 7, target = p.target;
-    var names = PLACES[ctx.lang].slice(7 - cols);
+    var names = (PLACES[ctx.lang] || PLACES.ar).slice(7 - cols);
     var vals = [];
     var grid = h("div", "pv");
     grid.style.setProperty("--cols", cols);
@@ -208,8 +208,8 @@
   W["array"] = function (el, p, ctx) {
     var r = p.rows || 1, c = p.cols || 1, max = p.max || 10;
     var wrap = h("div", "w-row"), pic = h("div", "dots-wrap"), read = h("div", "w-readout"), st = h("div", "w-status");
-    wrap.appendChild(stepper(ROWS[ctx.lang], r, 1, max, function (x) { r = x; upd(); }, ctx));
-    wrap.appendChild(stepper(COLS[ctx.lang], c, 1, max, function (x) { c = x; upd(); }, ctx));
+    wrap.appendChild(stepper((ROWS[ctx.lang] || ROWS.ar), r, 1, max, function (x) { r = x; upd(); }, ctx));
+    wrap.appendChild(stepper((COLS[ctx.lang] || COLS.ar), c, 1, max, function (x) { c = x; upd(); }, ctx));
     el.appendChild(wrap); el.appendChild(pic); el.appendChild(read); el.appendChild(st);
     function upd() {
       pic.innerHTML = ""; pic.appendChild(dotGrid(r, c));
@@ -228,13 +228,13 @@
   W["area-grid"] = function (el, p, ctx) {
     var w = p.w || 1, ht = p.h || 1, mw = p.maxW || 10, mh = p.maxH || 8, tg = p.target || {};
     var wrap = h("div", "w-row"), pic = h("div", "grid-wrap"), read = h("div", "w-readout area-read"), st = h("div", "w-status");
-    wrap.appendChild(stepper(WD[ctx.lang], w, 1, mw, function (x) { w = x; upd(); }, ctx));
-    wrap.appendChild(stepper(HT[ctx.lang], ht, 1, mh, function (x) { ht = x; upd(); }, ctx));
+    wrap.appendChild(stepper((WD[ctx.lang] || WD.ar), w, 1, mw, function (x) { w = x; upd(); }, ctx));
+    wrap.appendChild(stepper((HT[ctx.lang] || HT.ar), ht, 1, mh, function (x) { ht = x; upd(); }, ctx));
     el.appendChild(wrap); el.appendChild(pic); el.appendChild(read); el.appendChild(st);
     function upd() {
       pic.innerHTML = ""; pic.appendChild(gridPic(w, ht, mw, mh));
-      read.innerHTML = '<span dir="ltr">' + AREA[ctx.lang] + " = " + ctx.num(w) + " × " + ctx.num(ht) + " = <b>" + ctx.num(w * ht) +
-        "</b></span><br><span dir=\"ltr\">" + PERI[ctx.lang] + " = " + ctx.num(w) + " + " + ctx.num(ht) + " + " + ctx.num(w) + " + " + ctx.num(ht) + " = <b>" + ctx.num(2 * (w + ht)) + "</b></span>";
+      read.innerHTML = '<span dir="ltr">' + (AREA[ctx.lang] || AREA.ar) + " = " + ctx.num(w) + " × " + ctx.num(ht) + " = <b>" + ctx.num(w * ht) +
+        "</b></span><br><span dir=\"ltr\">" + (PERI[ctx.lang] || PERI.ar) + " = " + ctx.num(w) + " + " + ctx.num(ht) + " + " + ctx.num(w) + " + " + ctx.num(ht) + " = <b>" + ctx.num(2 * (w + ht)) + "</b></span>";
       var ok = (tg.area == null || w * ht === tg.area) && (tg.perimeter == null || 2 * (w + ht) === tg.perimeter) &&
                (tg.w == null || (w === tg.w && ht === tg.h) || (w === tg.h && ht === tg.w));
       if (ok) { status(st, true, ctx.say("correct")); ctx.done(); } else status(st, false, "");
@@ -286,7 +286,7 @@
       var pile = h("div", "pile pile-" + i);
       for (var j = 0; j < k; j++) { var b = h("span", "blk blk-" + i); b.style.animationDelay = (j * 0.08) + "s"; pile.appendChild(b); }
       col.appendChild(pile);
-      col.appendChild(h("div", "vis-label small", ctx.num(k) + " " + PLACE4[ctx.lang][i]));
+      col.appendChild(h("div", "vis-label small", ctx.num(k) + " " + (PLACE4[ctx.lang] || PLACE4.ar)[i]));
       row.appendChild(col);
     });
     el.appendChild(row);

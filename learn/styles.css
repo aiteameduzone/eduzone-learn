@@ -386,3 +386,17 @@ html[dir="rtl"] .unit-card .go { transform: scaleX(-1); }
 }
 .ops-line { font-weight: 700; text-align: start; }
 .lab-steps li { margin-bottom: 8px; }
+
+/* Universal interactive-first, two-way narration journey */
+.lesson-welcome{display:grid;gap:15px}
+.lesson-welcome h2{margin:0}
+.lesson-order{font-weight:800;color:var(--muted);line-height:1.8;margin:0}
+.dual-voice{display:grid;gap:10px;margin:18px 0;border-top:1px solid var(--line);padding-top:14px}
+.dual-voice h3{font-size:1.05rem;margin:0 0 2px}
+.dual-voice-card{background:var(--soft-blue);border:1px solid var(--line);padding:13px 15px;border-radius:14px;min-width:0}
+.dual-voice-card.story{background:var(--soft-orange)}
+.dual-voice-card-head{display:flex;gap:10px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.dual-voice-card-head strong{font-size:.94rem}
+.dual-voice-card p{margin:9px 0 0;line-height:1.7;font-size:.98rem}
+.learning-priority{background:rgba(34,160,107,.1);padding:15px;border:1px solid rgba(34,160,107,.25);border-radius:12px;font-weight:800}
+@media(max-width:620px){.dual-voice-card{padding:12px}.dual-voice-card-head{align-items:flex-start}}

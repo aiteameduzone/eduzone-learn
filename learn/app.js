@@ -126,8 +126,9 @@
     var u = new SpeechSynthesisUtterance(text);
     u.lang = state.lang !== "en" ? "ar-EG" : "en-US";
     var voices = speechSynthesis.getVoices().filter(function (v) { return v.lang.indexOf(state.lang === "eg" ? "ar" : state.lang) === 0; });
-    if (voices.length) u.voice = voices[0];
-    u.rate = 0.92 * rate();
+    var preferred = voices.find(function(v){return /samantha|zira|salma|hoda|female|jenny|ava|aria|sonia/i.test(v.name);});
+    if(preferred) u.voice=preferred; else if(voices.length) u.voice=voices[0];
+    u.rate = 1.03 * rate();
     u.onend = stopAudio;
     speechSynthesis.speak(u);
   }
@@ -140,7 +141,11 @@
     }
     if (!window.speechSynthesis) return next();
     var u = new SpeechSynthesisUtterance(text);
-    u.lang = state.lang !== "en" ? "ar-EG" : "en-US"; u.rate = 0.92 * rate(); u.onend = next;
+    u.lang = state.lang !== "en" ? "ar-EG" : "en-US"; u.rate = 1.03 * rate();
+    var voices = speechSynthesis.getVoices().filter(function(v){return v.lang.toLowerCase().startsWith(state.lang === "en" ? "en" : "ar");});
+    var pref = voices.find(function(v){return /samantha|zira|salma|hoda|female|jenny|ava|aria|sonia/i.test(v.name);});
+    if(pref) u.voice=pref; else if(voices.length) u.voice=voices[0];
+    u.onend = next;
     speechSynthesis.speak(u);
   }
   function playQueue(texts, onDone) {
@@ -289,6 +294,68 @@
     return box;
   }
 
+  // Two complementary narration styles: precise teacher explanation, and a friendly
+  // example-based explanation grounded in the lesson's own examples.
+  function dualVoicePanel(official, example, title) {
+    var wrap = document.createElement("section");
+    wrap.className = "dual-voice";
+    var heading = document.createElement("h3");
+    heading.textContent = title || (state.lang === "en" ? "Hear it two ways" : "اسمع الشرح بطريقتين");
+    wrap.appendChild(heading);
+    [
+      { label: state.lang === "en" ? "🎓 Clear teacher explanation" : "🎓 شرح أكاديمي واضح", text: official, kind: "formal" },
+      { label: state.lang === "en" ? "📖 Example & story explanation" : "📖 شرح بالمثال والحكاية", text: example, kind: "story" }
+    ].forEach(function (item) {
+      var area = document.createElement("div");
+      area.className = "dual-voice-card " + item.kind;
+      var words = document.createElement("p");
+      words.textContent = item.text;
+      var btn = speakButton(item.text);
+      btn.setAttribute("aria-label", item.label);
+      var h = document.createElement("div");
+      h.className = "dual-voice-card-head";
+      var name = document.createElement("strong");
+      name.textContent = item.label;
+      h.appendChild(name); h.appendChild(btn);
+      area.appendChild(h); area.appendChild(words); wrap.appendChild(area);
+    });
+    return wrap;
+  }
+  // Authored story scripts (content/stories.json): a named child in a real Egyptian setting
+  // using the lesson's own method. Falls back to the lesson's worked example when missing.
+  function storyOf(lsn) {
+    var x = state.stories && state.stories[lsn.id];
+    if (!x) return null;
+    var lines = x.story[state.lang] || x.story.ar || x.story.en;
+    return { text: lines.join(" "), hook: x.hook[state.lang] || x.hook.ar || x.hook.en };
+  }
+  function lessonNarrations(lsn) {
+    var firstExplain = lsn.steps.filter(function (s) { return s.type === "explain"; })[0];
+    var firstExample = lsn.steps.filter(function (s) { return s.type === "example"; })[0];
+    var objective = plain(L(lsn.objective));
+    var formal = firstExplain ? plain(L(firstExplain.say) || L(firstExplain.text)) : objective;
+    var example = firstExample ? plain(L(firstExample.say) || L(firstExample.text)) : objective;
+    var st = storyOf(lsn);
+    if (st) return { formal: formal, example: st.text };
+    if (state.lang === "eg") {
+      example = "يلا ناخد مثال من الدرس ونفهمه سوا. " + example;
+    } else if (state.lang === "ar") {
+      example = "لنفهم الفكرة من مثال في الدرس. " + example;
+    } else {
+      example = "Let's explore a worked example from this lesson. " + example;
+    }
+    return { formal: formal, example: example };
+  }
+  function solutionNarrations(q, lsn) {
+    var exp = plain(L(q.explain));
+    var formal = exp;
+    var st = lsn && storyOf(lsn);
+    if (st) return { formal: formal, example: st.hook + " " + exp };
+    var example = (state.lang === "en" ? "Let's walk through this answer together. " :
+      state.lang === "eg" ? "تعالى نفهم الحل واحدة واحدة. " : "لنفهم الحل خطوة بخطوة. ") + exp;
+    return {formal: formal, example: example};
+  }
+
   function runLesson(lsn) {
     store.set("ez_last", { id: lsn.id });
     var unit = findUnit(lsn.id);
@@ -310,6 +377,36 @@
       app.appendChild(inner);
     }
 
+    function showWelcome() {
+      stopAudio();
+      var intro = document.createElement("div");
+      intro.className = "card lesson-welcome";
+      var heading = document.createElement("h2");
+      heading.textContent = state.lang === "en" ? "First, understand and explore" :
+        state.lang === "eg" ? "الأول نفهم ونجرب بنفسنا" : "أولًا: افهم وجرّب بنفسك";
+      intro.appendChild(heading);
+      var hint = document.createElement("p");
+      hint.className = "lesson-order";
+      hint.textContent = state.lang === "en" ? "1. Hear two explanations  →  2. Explore an interactive model  →  3. See worked examples  →  4. Try questions" :
+        state.lang === "eg" ? "١. اسمع بطريقتين ← ٢. جرّب نموذج تفاعلي ← ٣. شوف أمثلة محلولة ← ٤. حل أسئلة" :
+        "١. استمع لشرحَين ← ٢. جرّب نموذجًا تفاعليًا ← ٣. تعلّم من أمثلة محلولة ← ٤. أجب عن الأسئلة";
+      intro.appendChild(hint);
+      var narration = lessonNarrations(lsn);
+      intro.appendChild(dualVoicePanel(narration.formal,narration.example,
+        state.lang === "en" ? "Two ways to understand the idea" : "طريقتان لفهم الفكرة"));
+      var ib = document.createElement("div"); ib.className="learning-priority";
+      ib.textContent = state.lang === "en" ?
+        "You will try an interactive activity before the final quiz. No need to rush!" :
+        state.lang === "eg" ? "هتجرّب نشاط تفاعلي قبل الاختبار. خد وقتك!" : "ستجرب نشاطًا تفاعليًا قبل الاختبار. تعلّم على مهلك.";
+      intro.appendChild(ib);
+      var start = document.createElement("button");
+      start.className="btn orange";
+      start.textContent = state.lang === "en" ? "🎮 Begin learning & exploring" : "🎮 ابدأ التعلم والتجربة";
+      start.onclick=showStep;
+      intro.appendChild(start);
+      frame(intro,0);
+    }
+
     function showStep() {
       stopAudio();
       var s = steps[i], card = document.createElement("div");
@@ -320,6 +417,18 @@
       var lines = s.lines ? L(s.lines) : [];
       head.appendChild(speakButton(L(s.say) || plain(L(s.text) + (lines.length ? ". " + lines.join(". ") : ""))));
       card.appendChild(head);
+      if (s.type === "explain" || s.type === "example") {
+        var source = plain(L(s.say) || L(s.text));
+        var firstWorked = steps.filter(function(item){return item.type === "example";})[0];
+        var worked = firstWorked ? plain(L(firstWorked.say) || L(firstWorked.text)) : source;
+        var conversational = (state.lang === "en" ?
+          "Let's use a worked example to understand this. " :
+          state.lang === "eg" ? "تعالى نفهمها بمثال من الدرس. " : "لنفهم الفكرة باستخدام مثال من الدرس. ") + (s.type === "example" ? source : worked);
+        var stl = storyOf(lsn);
+        if (stl) conversational = s.type === "explain" ? stl.text : stl.hook + " " + source;
+        card.appendChild(dualVoicePanel(source, conversational,
+          state.lang === "en" ? "Listen in two styles" : "اسمع الشرح بطريقتين"));
+      }
       var wctx = { lang: state.lang, num: digits, frac: fracHTML, say: t, inline: inline, L: L };
       var vis = null;
       if (s.visual) {
@@ -435,6 +544,9 @@
             if (!ok) b.classList.add("wrong");
             fb.className = "feedback " + (ok ? "ok" : "no");
             fb.innerHTML = "<b>" + (ok ? t("right") : t("wrong")) + "</b> " + inline(L(q.explain));
+            var sols = solutionNarrations(q, lsn);
+            fb.appendChild(dualVoicePanel(sols.formal, sols.example,
+              state.lang === "en" ? "Hear the solution two ways" : "اسمع الحل بطريقتين"));
             nextBtn.style.display = "";
           };
           list.appendChild(b);
@@ -457,12 +569,12 @@
           '</div><p class="stars" style="font-size:2rem">' + stars(st) + '</p><div class="nav" style="justify-content:center">' +
           '<button class="btn secondary" id="again">' + t("again") + '</button><a class="btn" href="' + backHref + '" style="text-decoration:none">' + t("back_unit") + "</a></div>";
         frame(card, total);
-        document.getElementById("again").onclick = function () { i = 0; showStep(); };
+        document.getElementById("again").onclick = function () { i = 0; showWelcome(); };
       }
       showQ();
     }
 
-    showStep();
+    showWelcome();
   }
 
   // ---------- router ----------
@@ -488,9 +600,11 @@
   applyLang();
   Promise.all([
     getJSON("content/catalog.json"),
-    getJSON("../audio/manifest.json").catch(function () { return { keys: [] }; })
+    getJSON("../audio/manifest.json").catch(function () { return { keys: [] }; }),
+    getJSON("content/stories.json").catch(function () { return {}; })
   ]).then(function (r) {
     state.catalog = r[0];
+    state.stories = r[2] || {};
     r[1].keys.forEach(function (k) { state.audio[k] = 1; });
     route();
   }).catch(function (e) { app.innerHTML = "<p>Could not load content: " + esc(e.message) + "</p>"; });
