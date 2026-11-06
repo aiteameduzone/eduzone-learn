@@ -59,6 +59,70 @@
     carroll: { en: "Carroll diagram", ar: "مخطط كارول" }
   };
 
+  /* ---------- curricula: the same 35 skills, organised three ways ----------
+     british  = the school's Year 4 long-term plan (clusters + terms 1-3 from year4-map.json)
+     american = Common Core Grade 4 domains; each skill carries its standard code
+     national = Egyptian Primary 4 units 1-13 (unit ids match ../learn/content/catalog.json)
+     A skill that is not part of a curriculum's Grade 4 goes into that curriculum's "Extra practice" group. */
+  EZ3.CURRICULA = {
+    british: { flag: "🇬🇧", en: "British", ar: "بريطاني", sub: { en: "British Year 4 · Maths", ar: "رياضيات · السنة الرابعة البريطانية" }, terms: [1, 2, 3] },
+    american: { flag: "🇺🇸", en: "American", ar: "أمريكي", sub: { en: "American Grade 4 · Common Core Maths", ar: "رياضيات · الصف الرابع الأمريكي" }, terms: null,
+      groups: [
+        { id: "OA", icon: "➕", color: "orange", code: "4.OA", en: "Operations & Algebraic Thinking", ar: "العمليات والتفكير الجبري",
+          skills: [["by4-12", "4.OA.A.1"], ["by4-22", "4.OA.A.3"], ["by4-29", "4.OA.B.4"], ["by4-02", "4.OA.C.5"], ["by4-24", "4.OA.C.5"]] },
+        { id: "NBT", icon: "🔢", color: "blue", code: "4.NBT", en: "Number & Operations in Base Ten", ar: "الأعداد والعمليات في النظام العشري",
+          skills: [["by4-03", "4.NBT.A.1"], ["by4-05", "4.NBT.A.2"], ["by4-04", "4.NBT.A.3"], ["by4-11", "4.NBT.B.4"], ["by4-23", "4.NBT.B.5"], ["by4-32", "4.NBT.B.6"]] },
+        { id: "NF", icon: "🍕", color: "pink", code: "4.NF", en: "Number & Operations – Fractions", ar: "الأعداد والعمليات – الكسور",
+          skills: [["by4-20", "4.NF.A.1"], ["by4-19", "4.NF.B.3"], ["by4-21", "4.NF.B.3.a"]] },
+        { id: "MD", icon: "📏", color: "green", code: "4.MD", en: "Measurement & Data", ar: "القياس والبيانات",
+          skills: [["by4-30", "4.MD.A.1"], ["by4-14", "4.MD.A.2"], ["by4-09", "4.MD.A.3"], ["by4-10", "4.MD.A.3"], ["by4-26", "4.MD.C.5"],
+            ["by4-08", "3.MD.C.7", true], ["by4-15", "3.MD.B.3", true], ["by4-33", "3.MD.B.3", true]] },
+        { id: "G", icon: "📐", color: "purple", code: "4.G", en: "Geometry", ar: "الهندسة",
+          skills: [["by4-06", "4.G.A.2"], ["by4-34", "4.G.A.3"]] }
+      ] },
+    national: { flag: "🇪🇬", en: "National (Egypt)", ar: "قومي (مصري)", sub: { en: "Egyptian National · Primary 4 Maths", ar: "رياضيات · الصف الرابع الابتدائي (المنهج المصري)" }, terms: [1, 2],
+      groups: [
+        { id: "U1", num: 1, term: 1, unit: "g4-math-u01", icon: "🔢", color: "blue", en: "Place Value", ar: "القيمة المكانية", skills: [["by4-03"], ["by4-05"], ["by4-04"]] },
+        { id: "U2", num: 2, term: 1, unit: "g4-math-u02", icon: "➕", color: "orange", en: "Addition and Subtraction Strategies", ar: "إستراتيجيات الجمع والطرح", skills: [["by4-11"], ["by4-22"]] },
+        { id: "U3", num: 3, term: 1, unit: "g4-math-u03", icon: "📏", color: "yellow", en: "Measurement", ar: "مفاهيم القياس", skills: [["by4-30"], ["by4-14"]] },
+        { id: "U4", num: 4, term: 1, unit: "g4-math-u04", icon: "🟦", color: "purple", en: "Area and Perimeter", ar: "المساحة والمحيط", skills: [["by4-09"], ["by4-10"], ["by4-08"]] },
+        { id: "U5", num: 5, term: 1, unit: "g4-math-u05", icon: "✖️", color: "orange", en: "Multiplication as a Relationship", ar: "الضرب كعلاقة", skills: [["by4-12"]] },
+        { id: "U6", num: 6, term: 1, unit: "g4-math-u06", icon: "🔗", color: "teal", en: "Factors and Multiples", ar: "العوامل والمضاعفات", skills: [["by4-29"]] },
+        { id: "U7", num: 7, term: 1, unit: "g4-math-u07", icon: "➗", color: "red", en: "Multiplication and Division", ar: "الضرب والقسمة", skills: [["by4-23"], ["by4-32"]] },
+        { id: "U8", num: 8, term: 1, unit: "g4-math-u08", icon: "🧮", color: "green", en: "Order of Operations", ar: "ترتيب العمليات", skills: [] },
+        { id: "U9", num: 9, term: 2, unit: "g4-math-frac", icon: "🍕", color: "pink", en: "Fractions", ar: "الكسور الاعتيادية", skills: [["by4-19"], ["by4-20"], ["by4-21"]] },
+        { id: "U10", num: 10, term: 2, unit: "g4-math-u10", icon: "🔟", color: "blue", en: "Decimals", ar: "الكسور العشرية", skills: [], soon: true },
+        { id: "U11", num: 11, term: 2, unit: "g4-math-u11", icon: "📊", color: "green", en: "Data", ar: "البيانات", skills: [["by4-15"], ["by4-33"]] },
+        { id: "U12", num: 12, term: 2, unit: "g4-math-u12", icon: "🔷", color: "purple", en: "Geometry: Lines, Angles and Shapes", ar: "الهندسة: الخطوط والزوايا والأشكال", skills: [["by4-06"]] },
+        { id: "U13", num: 13, term: 2, unit: "g4-math-u13", icon: "📐", color: "teal", en: "Measuring Angles", ar: "قياس الزوايا", skills: [["by4-26"]] }
+      ] }
+  };
+  // units of the Egyptian plan that have full guided lessons in ../learn (U10-U13 not written yet)
+  var LESSON_UNITS = { "g4-math-u01": 6, "g4-math-u02": 6, "g4-math-u03": 6, "g4-math-u04": 5, "g4-math-u05": 6, "g4-math-u06": 5, "g4-math-u07": 6, "g4-math-u08": 4, "g4-math-frac": 7 };
+  EZ3.lessonCount = function (unit) { return LESSON_UNITS[unit] || 0; };
+
+  /* groupsFor(cur, skills) -> [{ id, icon, color, title, skills:[skill], meta:{skillId: {code, review}}, unit?, term?, num?, extra? }] */
+  EZ3.groupsFor = function (cur, skills) {
+    var BY = {}; skills.forEach(function (s) { BY[s.id] = s; });
+    var out;
+    if (cur === "british" || !EZ3.CURRICULA[cur]) {
+      out = EZ3.CLUSTERS.map(function (c) {
+        return { id: c.id, icon: c.icon, color: c.color, title: { en: c.en, ar: c.ar }, skills: skills.filter(function (s) { return s.cluster === c.id; }), meta: {} };
+      });
+      return out;
+    }
+    var used = {};
+    out = EZ3.CURRICULA[cur].groups.map(function (g) {
+      var meta = {}, list = [];
+      g.skills.forEach(function (x) { if (BY[x[0]]) { list.push(BY[x[0]]); used[x[0]] = 1; meta[x[0]] = { code: x[1] || "", review: !!x[2] }; } });
+      return { id: g.id, icon: g.icon, color: g.color, title: { en: g.en, ar: g.ar }, skills: list, meta: meta, unit: g.unit, term: g.term, num: g.num, code: g.code, soon: g.soon };
+    });
+    var extra = skills.filter(function (s) { return !used[s.id]; });
+    if (extra.length) out.push({ id: "extra", icon: "⭐", color: "teal", extra: true, skills: extra, meta: {},
+      title: { en: "Extra practice (beyond this Grade 4 plan)", ar: "تدريب إضافي (خارج خطة هذا الصف)" } });
+    return out;
+  };
+
   // Called by app.js with the parsed year4-map.json
   EZ3.buildSkills = function (map) {
     return map.map(function (m, i) {

@@ -10,7 +10,7 @@
     learn: ["Learn", "تعلّم", "اتعلم"], tryit: ["Try it", "جرّب", "جرّب"], practise: ["Practise", "تدرّب", "اتمرّن"],
     brandSub: ["British Year 4 · Maths", "رياضيات · السنة الرابعة البريطانية", "رياضيات · رابعة بريطاني"],
     heroT: ["Learn it. Try it. Practise it.", "تعلّم. جرّب. تدرّب.", "اتعلم. جرّب. اتمرّن."],
-    heroP: ["35 Year 4 maths skills. Each one has a short explanation, a hands-on tool and unlimited practice with instant feedback.", "٣٥ مهارة في رياضيات السنة الرابعة. لكل مهارة شرح قصير وأداة تفاعلية وتدريب غير محدود مع تصحيح فوري.", "٣٥ مهارة رياضيات لرابعة. كل مهارة ليها شرح بسيط وأداة تلعب بيها وتمارين كتير بتتصحح على طول."],
+    heroP: ["Grade 4 maths, organised the way your curriculum teaches it. Every skill has a short explanation, a hands-on tool and unlimited practice with instant feedback.", "رياضيات الصف الرابع مرتبة حسب منهجك. لكل مهارة شرح قصير وأداة تفاعلية وتدريب غير محدود مع تصحيح فوري.", "رياضيات رابعة مترتبة على حسب منهجك. كل مهارة ليها شرح بسيط وأداة تلعب بيها وتمارين كتير بتتصحح على طول."],
     start: ["▶ Start learning", "▶ ابدأ التعلّم", "▶ يلا نبدأ"], cont: ["▶ Continue", "▶ تابع", "▶ كمّل"],
     stars: ["stars", "نجمة", "نجمة"], mastered: ["skills mastered", "مهارة متقنة", "مهارة خلصتها"], goals: ["tool goals", "هدف في الأدوات", "هدف في الأدوات"],
     mission: ["Today's mission", "مهمة اليوم", "مهمة النهارده"], missionSub: ["Three skills picked for you. Finish each step to earn stars.", "ثلاث مهارات اخترناها لك. أكمل كل خطوة لتجمع النجوم.", "٣ مهارات اخترناهم ليك. خلّص كل خطوة وخد نجوم."],
@@ -41,7 +41,7 @@
     note: ["Skills follow a British Division Year 4 long-term plan; practice materials, not official exam content.", "المهارات مبنية على خطة السنة الرابعة لقسم بريطاني؛ مواد تدريبية وليست امتحانات رسمية.", "المهارات ماشية على خطة رابعة بريطاني؛ دي تمارين مش امتحانات رسمية."],
     loadErr: ["Could not load the skills. Open this page from the website (not from a file).", "تعذّر تحميل المهارات. افتح الصفحة من الموقع وليس من ملف.", "مش قادرين نحمّل المهارات. افتح الصفحة من الموقع."],
     reset: ["Reset my progress", "مسح تقدّمي", "امسح تقدّمي"], resetQ: ["Clear all stars and progress on this device?", "مسح كل النجوم والتقدّم على هذا الجهاز؟", "تمسح كل النجوم والتقدّم على الجهاز ده؟"],
-    voice: ["Voice", "الصوت", "الصوت"], learned: ["Learn ✓", "تعلّم ✓", "اتعلم ✓"], mode: ["Mode", "النمط", "النوع"]
+    voice: ["Voice", "الصوت", "الصوت"], lessons: ["lessons", "دروس", "دروس"], soon: ["Coming soon", "قريبًا", "قريب"], learned: ["Learn ✓", "تعلّم ✓", "اتعلم ✓"], mode: ["Mode", "النمط", "النوع"]
   };
   function w(k) { var x = W[k]; return x ? t(x[0], x[1], x[2]) : k; }
 
@@ -59,9 +59,33 @@
   }
 
   /* ---------- helpers ---------- */
-  function cl(id) { return E.CLUSTERS.filter(function (c) { return c.id === id; })[0] || E.CLUSTERS[0]; }
   function soft(c) { return "background:var(--" + c.color + "-soft)"; }
-  function skillsIn(cid) { return SKILLS.filter(function (s) { return s.cluster === cid; }); }
+
+  /* ---------- curriculum (British / American / National) ---------- */
+  var CUR = E.store.get("ez3_cur", "british");
+  if (!E.CURRICULA[CUR]) CUR = "british";
+  var GROUPS = [], ORDER = [], GOF = {}, NATUNIT = {};
+  function buildGroups() {
+    GROUPS = E.groupsFor(CUR, SKILLS); ORDER = []; GOF = {};
+    GROUPS.forEach(function (g) { g.skills.forEach(function (s) { if (!GOF[s.id]) { GOF[s.id] = g; ORDER.push(s); } }); });
+    NATUNIT = {};
+    E.groupsFor("national", SKILLS).forEach(function (g) { if (g.unit) g.skills.forEach(function (s) { NATUNIT[s.id] = g.unit; }); });
+  }
+  function setCur(c) { CUR = c; E.store.set("ez3_cur", c); viewTopics.term = 0; buildGroups(); }
+  function grp(id) { return GROUPS.filter(function (g) { return g.id === id; })[0] || null; }
+  function gOf(s) { return GOF[s.id] || GROUPS[0]; }
+  function gTitle(g) { return (g.num ? t("Unit ", "الوحدة ") + n(g.num) + " · " : "") + E.L(g.title); }
+  // short curriculum label for a skill: British "Term 2", American "4.NBT.A.3", National "Unit 1 · Term 1"
+  function labelOf(s) {
+    var g = gOf(s);
+    if (CUR === "british") return w("term") + " " + n(s.term);
+    if (g.extra) return t("Extra practice", "تدريب إضافي");
+    if (CUR === "american") { var m = g.meta[s.id] || {}; return E.d(m.code) + (m.review ? " · " + t("Grade 3 review", "مراجعة الصف الثالث") : ""); }
+    return t("Unit ", "الوحدة ") + n(g.num) + " · " + w("term") + " " + n(g.term);
+  }
+  function termOf(s) { return CUR === "british" ? s.term : (gOf(s).term || 0); }
+  // full guided lesson for a skill (Egyptian unit when mapped, else the British map's link)
+  function unitOf(s) { var u = NATUNIT[s.id] || s.unit; return u && E.lessonCount(u) ? u : ""; }
   function href(s, tab) { return "#/s/" + s.id + "/" + (tab || nextStepOf(s)); }
   function plain(html) { var d = document.createElement("div"); d.innerHTML = html; return d.textContent; }
   function ring(pct) {
@@ -77,18 +101,31 @@
       '<header class="top"><div class="top-in">' +
       '<a class="brand" href="#/"><img src="ez-icon.png" alt="EduZone"><span><b>EduZone <span>Learn</span></b><small id="bsub"></small></span></a>' +
       '<nav class="nav" id="nav"></nav>' +
-      '<div class="top-tools"><button class="icon-btn" id="voice" type="button"></button>' +
-      '<select class="lang" id="lang" aria-label="Language"><option value="en">English</option><option value="ar">العربية</option><option value="eg">مصري</option></select></div>' +
+      '<div class="top-tools"><select class="lang cur" id="cur"></select>' +
+      '<select class="lang" id="lang" aria-label="Language"><option value="en">English</option><option value="ar">العربية</option></select>' +
+      '<button class="icon-btn" id="voice" type="button"></button></div>' +
       '</div></header><main class="page" id="view"></main><footer class="foot" id="foot"></footer><nav class="bnav" id="bnav"></nav>';
+    if (E.lang === "eg") E.setLang("ar");
     var sel = document.getElementById("lang");
     sel.value = E.lang;
     sel.onchange = function () { E.setLang(sel.value); route(); };
+    var cs = document.getElementById("cur");
+    cs.onchange = function () {
+      setCur(cs.value);
+      var h = location.hash;
+      if (/^#\/c\//.test(h)) location.hash = "#/topics"; else route();
+    };
     var vb = document.getElementById("voice");
     vb.onclick = function () { E.setVoice(!E.voiceOn()); paintChrome(); };
   }
   function paintChrome(active) {
-    document.title = "EduZone Learn · " + t("Year 4 Maths", "رياضيات السنة الرابعة", "رياضيات رابعة");
-    document.getElementById("bsub").textContent = w("brandSub");
+    var cd = E.CURRICULA[CUR];
+    document.title = "EduZone Learn · " + E.L(cd.sub);
+    document.getElementById("bsub").textContent = E.L(cd.sub);
+    var cs = document.getElementById("cur");
+    cs.setAttribute("aria-label", t("Curriculum", "المنهج"));
+    cs.innerHTML = Object.keys(E.CURRICULA).map(function (k) { var c = E.CURRICULA[k]; return '<option value="' + k + '"' + (k === CUR ? " selected" : "") + ">" + c.flag + " " + E.L(c) + "</option>"; }).join("");
+    document.getElementById("lang").value = E.lang;
     var vb = document.getElementById("voice");
     vb.textContent = E.voiceOn() ? "🔊" : "🔇"; vb.classList.toggle("off", !E.voiceOn());
     vb.setAttribute("aria-label", w("voice")); vb.title = w("voice");
@@ -97,7 +134,10 @@
     var a = paintChrome.active || "home";
     document.getElementById("nav").innerHTML = items.map(function (i) { return '<a href="' + i[1] + '" class="' + (i[0] === a ? "on" : "") + '">' + w(i[0]) + "</a>"; }).join("");
     document.getElementById("bnav").innerHTML = items.map(function (i) { return '<a href="' + i[1] + '" class="' + (i[0] === a ? "on" : "") + '"><span>' + i[2] + "</span>" + w(i[0]) + "</a>"; }).join("");
-    document.getElementById("foot").innerHTML = esc(w("note")) + ' · <a href="#" id="resetp">' + esc(w("reset")) + "</a>";
+    var note = CUR === "american" ? t("Skills are mapped to Common Core Grade 4 standards (codes shown on each skill); practice materials, not official test content.", "المهارات مرتبطة بمعايير Common Core للصف الرابع (الرمز ظاهر على كل مهارة)؛ مواد تدريبية وليست امتحانات رسمية.")
+      : CUR === "national" ? t("Skills are mapped to the Egyptian Primary 4 maths units; practice materials, not official exam content.", "المهارات مرتبطة بوحدات رياضيات الصف الرابع الابتدائي المصري؛ مواد تدريبية وليست امتحانات رسمية.")
+      : w("note");
+    document.getElementById("foot").innerHTML = esc(note) + ' · <a href="#" id="resetp">' + esc(w("reset")) + "</a>";
     document.getElementById("resetp").onclick = function (e) {
       e.preventDefault();
       if (confirm(w("resetQ"))) { prog = { stars: {}, goals: {}, learned: {}, answered: 0, correct: 0, last: null }; save(); route(); }
@@ -109,7 +149,7 @@
     paintChrome("home");
     var last = prog.last && BY[prog.last];
     var pct = masteredCount() / SKILLS.length;
-    var cont = last ? '<a class="btn primary" href="' + href(last) + '">' + w("cont") + ": " + esc(E.L(last.title)) + "</a>" : '<a class="btn primary" href="' + href(SKILLS[0]) + '">' + w("start") + "</a>";
+    var cont = last ? '<a class="btn primary" href="' + href(last) + '">' + w("cont") + ": " + esc(E.L(last.title)) + "</a>" : '<a class="btn primary" href="' + href(ORDER[0]) + '">' + w("start") + "</a>";
     var h = '<section class="hero"><div><h1>' + w("heroT") + "</h1><p>" + esc(w("heroP")) + '</p><div class="btn-row" style="margin:16px 0">' + cont +
       '<a class="btn" href="#/mix">🎯 ' + w("mix") + "</a></div>" +
       '<div class="hero-stats"><div class="hstat"><b>' + n(totalStars()) + "/" + n(SKILLS.length * 3) + "</b><span>⭐ " + w("stars") + '</span></div><div class="hstat"><b>' + n(masteredCount()) + "/" + n(SKILLS.length) + "</b><span>🏅 " + w("mastered") +
@@ -117,24 +157,27 @@
     // mission
     h += '<section class="sec"><div class="sec-head"><div><h2>🚀 ' + w("mission") + '</h2><p class="sub">' + esc(w("missionSub")) + '</p></div></div><div class="mission">' +
       mission().map(function (s) {
-        var c = cl(s.cluster), st = nextStepOf(s);
+        var c = gOf(s), st = nextStepOf(s);
         return '<a class="mcard" href="' + href(s, st) + '"><span class="mi" style="' + soft(c) + '">' + s.icon + '</span><span class="mt"><b>' + esc(E.L(s.title)) + "</b><small>" + w("nextStep") + ": " + w(st === "learn" ? "learn" : st === "try" ? "tryit" : "practise") + "</small></span>" + starHTML(stars(s.id)) + "</a>";
       }).join("") + "</div></section>";
     // topics
     h += '<section class="sec"><div class="sec-head"><div><h2>🗂️ ' + w("topics") + '</h2><p class="sub">' + esc(w("topicsSub")) + '</p></div><a class="tag-link" href="#/topics">' + w("allTopics") + " " + t("→", "←") + '</a></div><div class="clusters">' +
-      E.CLUSTERS.map(function (c) {
-        var list = skillsIn(c.id), m = masteredCount(list), st = list.reduce(function (a, s) { return a + stars(s.id); }, 0);
-        return '<a class="ccard" href="#/c/' + c.id + '"><span class="ci" style="' + soft(c) + '">' + c.icon + "</span><b>" + esc(E.L(c)) + "</b><small>" + n(list.length) + " " + w("skills") + " · ⭐ " + n(st) + "/" + n(list.length * 3) + '</small><div class="bar"><i style="width:' + (list.length ? Math.round(st / (list.length * 3) * 100) : 0) + '%"></i></div></a>';
+      GROUPS.map(function (c) {
+        var list = c.skills, st = list.reduce(function (a, s) { return a + stars(s.id); }, 0);
+        var sub = list.length ? n(list.length) + " " + w("skills") + " · ⭐ " + n(st) + "/" + n(list.length * 3)
+          : E.lessonCount(c.unit) ? "📘 " + n(E.lessonCount(c.unit)) + " " + w("lessons") : w("soon");
+        return '<a class="ccard" href="#/c/' + c.id + '"><span class="ci" style="' + soft(c) + '">' + c.icon + "</span><b>" + esc(gTitle(c)) + "</b>" + (c.code ? '<span class="chip">' + c.code + "</span>" : "") + "<small>" + sub + '</small><div class="bar"><i style="width:' + (list.length ? Math.round(st / (list.length * 3) * 100) : 0) + '%"></i></div></a>';
       }).join("") + "</div></section>";
     h += moreBlock();
     el.innerHTML = h;
   }
   function mission() {
     var pick = [], add = function (s) { if (s && pick.indexOf(s) < 0 && stars(s.id) < 3 && pick.length < 3) pick.push(s); };
-    if (prog.last) add(BY[prog.last]);
-    SKILLS.forEach(function (s) { if (prog.learned[s.id] || prog.goals[s.id]) add(s); });
-    SKILLS.forEach(function (s) { add(s); });
-    if (!pick.length) pick = SKILLS.slice(0, 3);
+    var core = ORDER.filter(function (s) { return !gOf(s).extra; });
+    if (prog.last && core.indexOf(BY[prog.last]) >= 0) add(BY[prog.last]);
+    core.forEach(function (s) { if (prog.learned[s.id] || prog.goals[s.id]) add(s); });
+    core.forEach(function (s) { add(s); });
+    if (!pick.length) pick = ORDER.slice(0, 3);
     return pick;
   }
   function moreBlock() {
@@ -153,34 +196,40 @@
   }
 
   function skillRow(s) {
-    var c = cl(s.cluster);
-    return '<a class="srow" href="' + href(s) + '"><span class="si" style="' + soft(c) + '">' + s.icon + '</span><span class="st"><b>' + esc(E.L(s.title)) + '</b><span class="meta"><span class="chip">' + w("term") + " " + n(s.term) + "</span>" +
-      (prog.learned[s.id] ? '<span class="chip green">' + w("learned") + "</span>" : "") + (s.unit ? '<span class="chip blue">📘 ' + w("fullLesson") + "</span>" : "") + "</span></span>" + starHTML(stars(s.id)) + "</a>";
+    var c = gOf(s);
+    return '<a class="srow" href="' + href(s) + '"><span class="si" style="' + soft(c) + '">' + s.icon + '</span><span class="st"><b>' + esc(E.L(s.title)) + '</b><span class="meta"><span class="chip">' + labelOf(s) + "</span>" +
+      (prog.learned[s.id] ? '<span class="chip green">' + w("learned") + "</span>" : "") + (unitOf(s) ? '<span class="chip blue">📘 ' + w("fullLesson") + "</span>" : "") + "</span></span>" + starHTML(stars(s.id)) + "</a>";
   }
   function viewTopics(el, cid) {
     paintChrome("topics");
-    var one = cid ? cl(cid) : null, termF = viewTopics.term || 0, q = viewTopics.q || "";
+    var one = cid ? grp(cid) : null, termF = viewTopics.term || 0, q = viewTopics.q || "", terms = E.CURRICULA[CUR].terms;
+    if (cid && !one) { location.hash = "#/topics"; return; }
     var h = "";
     if (one) {
       h += '<div class="crumbs"><a href="#/">' + w("home") + "</a> / <a href=\"#/topics\">" + w("topics") + "</a></div>" +
-        '<div class="chead"><span class="ci" style="' + soft(one) + '">' + one.icon + "</span><div><h1>" + esc(E.L(one)) + '</h1><p class="sub">' + n(skillsIn(one.id).length) + " " + w("skills") + " · 🏅 " + n(masteredCount(skillsIn(one.id))) + "</p></div></div>";
+        '<div class="chead"><span class="ci" style="' + soft(one) + '">' + one.icon + "</span><div><h1>" + esc(gTitle(one)) + '</h1><p class="sub">' + (one.code ? one.code + " · " : "") + (one.term ? w("term") + " " + n(one.term) + " · " : "") + n(one.skills.length) + " " + w("skills") + " · 🏅 " + n(masteredCount(one.skills)) + "</p></div></div>";
     } else {
       h += "<h1>🗂️ " + w("allTopics") + '</h1><p class="sub">' + esc(w("topicsSub")) + "</p>";
     }
     h += '<div class="filters"><input class="search" id="q" type="search" placeholder="' + esc(w("search")) + '" value="' + esc(q) + '"></div><div class="filters" id="tf"></div><div id="list"></div>';
     el.innerHTML = h;
     var tf = el.querySelector("#tf"), api = E.makeToolApi(tf);
-    tf.appendChild(api.seg([[0, w("all")], [1, w("term") + " " + n(1)], [2, w("term") + " " + n(2)], [3, w("term") + " " + n(3)]], termF, function (v) { viewTopics.term = v; draw(); }));
+    if (terms && !one) tf.appendChild(api.seg([[0, w("all")]].concat(terms.map(function (k) { return [k, w("term") + " " + n(k)]; })), termF, function (v) { viewTopics.term = v; draw(); }));
     var qi = el.querySelector("#q");
     qi.oninput = function () { viewTopics.q = qi.value; draw(); };
     function norm(s) { return String(s).toLowerCase().replace(/[أإآ]/g, "ا").replace(/ة/g, "ه").replace(/ى/g, "ي").replace(/[ًٌٍَُِّْ]/g, ""); }
     function draw() {
       var qq = norm(viewTopics.q || ""), tt = viewTopics.term || 0;
-      var groups = (one ? [one] : E.CLUSTERS).map(function (c) {
-        var list = skillsIn(c.id).filter(function (s) { return (!tt || s.term === tt) && (!qq || norm(s.title.en + " " + s.title.ar).indexOf(qq) >= 0); });
-        if (!list.length) return "";
-        return '<section class="sec">' + (one ? "" : '<div class="sec-head"><h2>' + c.icon + " " + esc(E.L(c)) + "</h2><a class=\"tag-link\" href=\"#/c/" + c.id + '">' + n(list.length) + " " + w("skills") + "</a></div>") +
-          '<div class="slist">' + list.map(skillRow).join("") + "</div></section>";
+      var groups = (one ? [one] : GROUPS).map(function (c) {
+        if (one && one.extra) tt = 0;
+        var list = c.skills.filter(function (s) { return (!tt || termOf(s) === tt) && (!qq || norm(s.title.en + " " + s.title.ar).indexOf(qq) >= 0); });
+        var lessons = E.lessonCount(c.unit), lessonCard = lessons ? '<a class="srow" href="../learn/index.html#/unit/' + encodeURIComponent(c.unit) + '"><span class="si" style="' + soft(c) + '">📘</span><span class="st"><b>' + w("fullLessons") + '</b><span class="meta"><span class="chip blue">' + n(lessons) + " " + w("lessons") + '</span></span></span><span class="tag-link">' + t("→", "←") + "</span></a>" : "";
+        if (!list.length && (qq || (tt && c.term !== tt))) return "";
+        if (!list.length && !lessonCard && !c.soon) return "";
+        var head = one ? "" : '<div class="sec-head"><h2>' + c.icon + " " + esc(gTitle(c)) + (c.code ? ' <span class="chip">' + c.code + "</span>" : "") + "</h2><a class=\"tag-link\" href=\"#/c/" + c.id + '">' + n(list.length) + " " + w("skills") + "</a></div>";
+        if (c.extra && !one) head += '<p class="sub" style="margin:-6px 0 12px">' + esc(t("These skills are on the British Year 4 plan but are not part of this curriculum's Grade 4. Use them as extra practice.", "هذه المهارات ضمن خطة السنة الرابعة البريطانية لكنها ليست من منهج هذا الصف. استخدمها للتدريب الإضافي.")) + "</p>";
+        var body = list.length || lessonCard ? '<div class="slist">' + list.map(skillRow).join("") + lessonCard + "</div>" : '<div class="card pad empty">🛠️ ' + w("soon") + "</div>";
+        return '<section class="sec">' + head + body + "</section>";
       }).join("");
       el.querySelector("#list").innerHTML = groups || '<div class="empty">🔍</div>';
     }
@@ -194,10 +243,10 @@
     paintChrome("topics");
     prog.last = id; save();
     tab = ["learn", "try", "practice"].indexOf(tab) >= 0 ? tab : "learn";
-    var c = cl(s.cluster), idx = SKILLS.indexOf(s), prev = SKILLS[idx - 1], next = SKILLS[idx + 1];
+    var c = gOf(s), idx = ORDER.indexOf(s), prev = ORDER[idx - 1], next = ORDER[idx + 1];
     var stepCls = function (k) { var done = k === "learn" ? prog.learned[id] : k === "try" ? prog.goals[id] : stars(id) > 0; return (k === tab ? "on " : "") + (done ? "done" : ""); };
-    var h = '<div class="crumbs"><a href="#/">' + w("home") + '</a> / <a href="#/c/' + c.id + '">' + esc(E.L(c)) + "</a></div>" +
-      '<div class="shead"><div class="left"><span class="si" style="' + soft(c) + '">' + s.icon + "</span><div><h1>" + esc(E.L(s.title)) + '</h1><div class="btn-row"><span class="chip">' + w("term") + " " + n(s.term) + '</span><span class="chip">' + c.icon + " " + esc(E.L(c)) + "</span></div></div></div>" + starHTML(stars(id)) + "</div>" +
+    var h = '<div class="crumbs"><a href="#/">' + w("home") + '</a> / <a href="#/c/' + c.id + '">' + esc(gTitle(c)) + "</a></div>" +
+      '<div class="shead"><div class="left"><span class="si" style="' + soft(c) + '">' + s.icon + "</span><div><h1>" + esc(E.L(s.title)) + '</h1><div class="btn-row"><span class="chip">' + labelOf(s) + '</span><span class="chip">' + c.icon + " " + esc(gTitle(c)) + "</span></div></div></div>" + starHTML(stars(id)) + "</div>" +
       '<nav class="steps">' + [["learn", "learn", 1], ["try", "tryit", 2], ["practice", "practise", 3]].map(function (x) {
         return '<a href="#/s/' + id + "/" + x[0] + '" class="' + stepCls(x[0]) + '"><span class="n">' + (stepCls(x[0]).indexOf("done") >= 0 ? "✓" : n(x[2])) + "</span>" + w(x[1]) + "</a>";
       }).join("") + '</nav><div id="body"></div>' +
@@ -219,7 +268,7 @@
       '<div class="card pad"><h3 style="margin-bottom:10px">✅ ' + w("quick") + '</h3><div id="qc"></div></div></div>' +
       '<aside style="display:flex;flex-direction:column;gap:16px"><div class="card pad"><h3>🧭 ' + w("your3") + '</h3><ol style="margin:10px 0 0;padding-inline-start:22px;font-weight:700;line-height:1.9"><li>' + esc(w("s1")) + "</li><li>" + esc(w("s2")) + "</li><li>" + esc(w("s3")) + "</li></ol>" +
       '<div class="btn-row" style="margin-top:14px"><a class="btn primary" href="#/s/' + s.id + '/try">' + w("goTry") + "</a></div></div>" +
-      (s.unit ? '<a class="card pad" style="text-decoration:none;display:block" href="../learn/index.html#/unit/' + encodeURIComponent(s.unit) + '"><b>📘 ' + w("fullLesson") + '</b><p class="sub" style="margin:4px 0 8px">' + esc(w("fullLessonsSub")) + '</p><span class="tag-link">' + w("openLesson") + "</span></a>" : "") +
+      (unitOf(s) ? '<a class="card pad" style="text-decoration:none;display:block" href="../learn/index.html#/unit/' + encodeURIComponent(unitOf(s)) + '"><b>📘 ' + w("fullLesson") + '</b><p class="sub" style="margin:4px 0 8px">' + esc(w("fullLessonsSub")) + '</p><span class="tag-link">' + w("openLesson") + "</span></a>" : "") +
       "</aside></div>";
     body.innerHTML = h;
     body.querySelector("#sayit").onclick = function () { E.speak(E.L(s.explain)); };
@@ -363,7 +412,7 @@
   }
 
   function practiceTab(body, s) {
-    var idx = SKILLS.indexOf(s), next = SKILLS[idx + 1];
+    var idx = ORDER.indexOf(s), next = ORDER[idx + 1];
     var opts = {
       count: 5, stars: true, pick: function () { return { gen: s.gen, skill: s }; },
       nextHref: next ? href(next, "learn") : null,
@@ -379,8 +428,9 @@
 
   function viewMix(el) {
     paintChrome("mix");
-    var pool = SKILLS.filter(function (s) { return prog.learned[s.id] || prog.goals[s.id] || stars(s.id); });
-    if (pool.length < 3) pool = SKILLS.filter(function (s) { return s.term === 1; });
+    var core = ORDER.filter(function (s) { return !gOf(s).extra; });
+    var pool = core.filter(function (s) { return prog.learned[s.id] || prog.goals[s.id] || stars(s.id); });
+    if (pool.length < 3) pool = core.slice(0, 10);
     el.innerHTML = "<h1>🎯 " + w("mixT") + '</h1><p class="sub" style="margin-bottom:16px">' + esc(w("mixP")) + '</p><div id="body"></div>';
     var order = E.shuffle(pool);
     practiceRound(el.querySelector("#body"), {
@@ -409,6 +459,7 @@
   fetch("../british/year4-map.json").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (map) {
     SKILLS = E.buildSkills(map);
     SKILLS.forEach(function (s) { BY[s.id] = s; });
+    buildGroups();
     window.addEventListener("hashchange", route);
     route();
   }).catch(function () {

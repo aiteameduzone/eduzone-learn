@@ -265,3 +265,15 @@ input[type=range]{accent-color:var(--orange);width:100%;min-height:32px}
   .brand img{width:36px;height:36px}
   .lang{padding:7px 8px}
 }
+
+/* ---------- curriculum + language selectors in the top bar ---------- */
+.top-tools .lang{font-size:14px;max-width:46vw;text-overflow:ellipsis}
+.lang.cur{background:var(--blue-soft);border-color:color-mix(in srgb,var(--blue-2) 40%,transparent)}
+.ccard .chip{align-self:flex-start}
+@media (max-width:640px){
+  .brand > span{display:none}
+  .top-tools{gap:6px;flex:1;justify-content:flex-end}
+  .top-tools .lang{padding:7px 6px;font-size:13px;max-width:none;min-width:0}
+  .top-tools .lang.cur{flex:1 1 auto;max-width:52vw}
+  .icon-btn{width:36px;height:36px;flex:none}
+}
