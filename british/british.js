@@ -46,5 +46,5 @@ function close(){active=null; $('#overlay').classList.add('hidden'); document.bo
 $('#close').onclick=close; $('#overlay').onclick=e=>{if(e.target===$('#overlay'))close()}; document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
 $('#lang').onchange=e=>{lang=e.target.value; localStorage.setItem('ez-hub-lang',lang); try{localStorage.setItem('ez_lang',JSON.stringify(lang))}catch{} localize()}; $('#term').onchange=render; $('#type').onchange=render; $('#search').oninput=render;
 $('#continuebtn').onclick=()=>{let id=localStorage.getItem('ez-by4-last')||topics[0]?.id; if(id)show(id)};
-fetch('british/year4-map.json').then(r=>{if(!r.ok)throw Error('No map'); return r.json()}).then(arr=>{topics=arr.map(enrich); localize()}).catch(err=>{$('#groups').textContent='Unable to load activities. Please run this app on GitHub Pages or a local web server.'; console.error(err)});
+fetch('british/year4-map.json').then(r=>{if(!r.ok)throw Error('No map'); return r.json()}).then(arr=>{topics=arr.map(enrich); localize(); const requested=new URLSearchParams(location.search).get('topic'); if(requested&&topics.some(t=>t.id===requested))show(requested)}).catch(err=>{$('#groups').textContent='Unable to load activities. Please run this app on GitHub Pages or a local web server.'; console.error(err)});
 })();
