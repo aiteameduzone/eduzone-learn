@@ -16,7 +16,7 @@
     mission: ["Today's mission", "مهمة اليوم", "مهمة النهارده"], missionSub: ["Three skills picked for you. Finish each step to earn stars.", "ثلاث مهارات اخترناها لك. أكمل كل خطوة لتجمع النجوم.", "٣ مهارات اخترناهم ليك. خلّص كل خطوة وخد نجوم."],
     nextStep: ["Next step", "الخطوة التالية", "الخطوة الجاية"], allTopics: ["All topics", "كل الموضوعات", "كل المواضيع"], topicsSub: ["Pick a topic, then a skill.", "اختر موضوعًا ثم مهارة.", "اختار موضوع وبعدين مهارة."],
     moreT: ["More to explore", "المزيد للاستكشاف", "حاجات تانية تستكشفها"],
-    fullLessons: ["Full Grade 4 lessons", "دروس الصف الرابع الكاملة", "دروس رابعة كاملة"], fullLessonsSub: ["51 guided lessons with voice", "٥١ درسًا موجّهًا بالصوت", "٥١ درس بالصوت"],
+    fullLessons: ["Full Grade 4 lessons", "دروس الصف الرابع الكاملة", "دروس رابعة كاملة"], fullLessonsSub: ["51 guided lessons, each with a teacher and a story explanation", "٥١ درسًا موجّهًا، لكل درس شرح رسمي وشرح بالقصة", "٥١ درسًا موجّهًا، لكل درس شرح رسمي وشرح بالقصة"],
     science: ["Grade 4 Science", "علوم الصف الرابع", "علوم رابعة"], scienceSub: ["Desert animals and adaptation", "حيوانات الصحراء والتكيف", "حيوانات الصحرا والتكيف"],
     labs: ["STEM labs", "معامل STEM", "معامل STEM"], labsSub: ["Circuits, floating, pyramids, pH", "الدوائر والطفو والأهرامات والحموضة", "الكهربا والطفو والأهرامات والحموضة"],
     studio: ["Math Discovery Studio", "استوديو استكشاف الرياضيات", "استوديو الرياضيات"], studioSub: ["The 8 original hands-on games", "الألعاب التفاعلية الثماني الأصلية", "الـ٨ ألعاب الأصلية"],
@@ -35,6 +35,14 @@
     oneStep: ["Show me one step", "أرني خطوة واحدة", "أرني خطوة واحدة"], newQ: ["New question ↻", "سؤال جديد ↻", "سؤال جديد ↻"],
     tapStep: ["Tap “Show me one step” for a clue.", "اضغط «أرني خطوة واحدة» لتحصل على مفتاح.", "اضغط «أرني خطوة واحدة» لتحصل على مفتاح."],
     usedHelp: ["You used the steps - now try one alone in Practise.", "استخدمت الخطوات، جرّب الآن وحدك في التدريب.", "استخدمت الخطوات، جرّب الآن وحدك في التدريب."],
+    journeyT: ["Learn by doing, before any quiz", "تعلّم بالتجربة قبل أي اختبار", "تعلّم بالتجربة قبل أي اختبار"],
+    jOff: ["Official voice", "شرح رسمي بالصوت", "شرح رسمي بالصوت"], jStory: ["Story voice", "شرح بالقصة", "شرح بالقصة"], jWatch: ["Watch it solved", "شاهد الحل", "شاهد الحل"],
+    jGuided: ["Solve with help", "حلّ بمساعدة", "حلّ بمساعدة"], jTool: ["Hands-on tool", "أداة تفاعلية", "أداة تفاعلية"], jQuiz: ["Quiz + 2 spoken solutions", "اختبار + حل بطريقتين", "اختبار + حل بطريقتين"],
+    gateT: ["Explore first, then practise", "جرّب أولًا، ثم تدرّب", "جرّب أولًا، ثم تدرّب"],
+    gateLearn: ["Start with Learn: hear the idea two ways and solve one with help.", "ابدأ بخطوة تعلّم: استمع للفكرة بطريقتين وحلّ سؤالًا بمساعدة.", "ابدأ بخطوة تعلّم: استمع للفكرة بطريقتين وحلّ سؤالًا بمساعدة."],
+    gateTry: ["Reach one goal with the hands-on tool first. It makes the questions easier.", "حقّق هدفًا واحدًا بالأداة التفاعلية أولًا، فتصبح الأسئلة أسهل.", "حقّق هدفًا واحدًا بالأداة التفاعلية أولًا، فتصبح الأسئلة أسهل."],
+    anyway: ["Practise anyway", "تدرّب على أي حال", "تدرّب على أي حال"],
+    voiceNote: ["Voice uses your device's speech voices; a female voice is chosen when available.", "الصوت من أصوات جهازك، ويُختار صوت أنثوي عند توفّره.", "الصوت من أصوات جهازك، ويُختار صوت أنثوي عند توفّره."],
     hearSol: ["Hear the solution two ways", "استمع إلى الحل بطريقتين", "استمع إلى الحل بطريقتين"], s2: ["Reach a goal with the hands-on tool.", "حقّق هدفًا باستخدام الأداة التفاعلية.", "حقّق هدف بالأداة."], s3: ["Answer 5 questions to earn up to 3 stars.", "أجب عن ٥ أسئلة لتحصل على ٣ نجوم.", "جاوب ٥ أسئلة وخد لحد ٣ نجوم."],
     openLesson: ["Open the full lesson →", "افتح الدرس الكامل ←", "افتح الدرس الكامل ←"],
     goTry: ["Next: Try it →", "التالي: جرّب ←", "اللي بعده: جرّب ←"], goPractise: ["Next: Practise →", "التالي: تدرّب ←", "اللي بعده: اتمرّن ←"],
@@ -145,7 +153,7 @@
     var note = CUR === "american" ? t("Skills are mapped to Common Core Grade 4 standards (codes shown on each skill); practice materials, not official test content.", "المهارات مرتبطة بمعايير Common Core للصف الرابع (الرمز ظاهر على كل مهارة)؛ مواد تدريبية وليست امتحانات رسمية.")
       : CUR === "national" ? t("Skills are mapped to the Egyptian Primary 4 maths units; practice materials, not official exam content.", "المهارات مرتبطة بوحدات رياضيات الصف الرابع الابتدائي المصري؛ مواد تدريبية وليست امتحانات رسمية.")
       : w("note");
-    document.getElementById("foot").innerHTML = esc(note) + ' · <a href="#" id="resetp">' + esc(w("reset")) + "</a>";
+    document.getElementById("foot").innerHTML = esc(note) + " " + esc(w("voiceNote")) + ' · <a href="#" id="resetp">' + esc(w("reset")) + "</a>";
     document.getElementById("resetp").onclick = function (e) {
       e.preventDefault();
       if (confirm(w("resetQ"))) { prog = { stars: {}, goals: {}, learned: {}, answered: 0, correct: 0, last: null }; save(); route(); }
@@ -162,6 +170,10 @@
       '<a class="btn" href="#/mix">🎯 ' + w("mix") + "</a></div>" +
       '<div class="hero-stats"><div class="hstat"><b>' + n(totalStars()) + "/" + n(SKILLS.length * 3) + "</b><span>⭐ " + w("stars") + '</span></div><div class="hstat"><b>' + n(masteredCount()) + "/" + n(SKILLS.length) + "</b><span>🏅 " + w("mastered") +
       '</span></div><div class="hstat"><b>' + n(Object.keys(prog.goals).reduce(function (a, k) { return a + prog.goals[k]; }, 0)) + "</b><span>🎯 " + w("goals") + "</span></div></div></div>" + ring(pct) + "</section>";
+    // learn-by-doing path (same order on every skill)
+    h += '<section class="journey"><b>' + esc(w("journeyT")) + '</b><div class="jsteps">' + [["🎓", "jOff"], ["📖", "jStory"], ["👀", "jWatch"], ["🙋", "jGuided"], ["🎮", "jTool"], ["✅", "jQuiz"]].map(function (x, i) {
+      return '<span class="jstep"><i>' + x[0] + "</i>" + esc(w(x[1])) + "</span>" + (i < 5 ? '<span class="jarr">' + t("→", "←") + "</span>" : "");
+    }).join("") + "</div></section>";
     // mission
     h += '<section class="sec"><div class="sec-head"><div><h2>🚀 ' + w("mission") + '</h2><p class="sub">' + esc(w("missionSub")) + '</p></div></div><div class="mission">' +
       mission().map(function (s) {
@@ -328,7 +340,12 @@
         if (!ok) qc.querySelector('[data-i="' + ck.correct + '"]').classList.add("right");
         answered = true;
         qc.querySelector("#qcfb").innerHTML = '<div class="fb ' + (ok ? "ok" : "no") + '"><b>' + (ok ? w("right") : w("theAnswer") + ": " + esc(E.d(ck.options[ck.correct]))) + "</b>" + esc(E.d(E.L(ck.why))) + "</div>" +
-          '<div class="btn-row" style="margin-top:12px"><a class="btn primary" href="#/s/' + s.id + '/try">' + w("goTry") + "</a></div>";
+          '<div class="qc-pres" style="margin-top:12px"></div><div class="btn-row" style="margin-top:12px"><a class="btn primary" href="#/s/' + s.id + '/try">' + w("goTry") + "</a></div>";
+        var why = esc(E.d(E.L(ck.why))), ans = esc(E.d(ck.options[ck.correct])), xx = E.EXPLAIN && E.EXPLAIN[s.id];
+        E.presenter(qc.querySelector(".qc-pres"), {
+          official: [why, t("Answer: ", "الإجابة: ") + "<b>" + ans + "</b>"],
+          story: [xx ? esc(E.L(xx.hook)) : t("Let's think it through together.", "هيا نفكر فيها معًا."), why, t("So the answer is ", "إذن الإجابة هي ") + "<b>" + ans + "</b>" + t(". Well done!", ". أحسنت!")]
+        }, { title: "🔊 " + w("hearSol") });
         if (ok) E.burst();
       };
     });
@@ -507,7 +524,14 @@
     nextQ();
   }
 
-  function practiceTab(body, s) {
+  function practiceTab(body, s, force) {
+    if (!force && !(practiceTab.skip || {})[s.id] && (!prog.learned[s.id] || !prog.goals[s.id])) {
+      var miss = !prog.learned[s.id] ? "learn" : "try";
+      body.innerHTML = '<div class="card pad gate"><div class="big">🎮</div><h3>' + esc(w("gateT")) + '</h3><p class="sub">' + esc(w(miss === "learn" ? "gateLearn" : "gateTry")) + '</p>' +
+        '<div class="btn-row" style="justify-content:center"><a class="btn primary" href="#/s/' + s.id + "/" + miss + '">' + w(miss === "learn" ? "learn" : "tryit") + " " + t("→", "←") + '</a><button class="btn ghost" type="button" id="anyway">' + w("anyway") + "</button></div></div>";
+      body.querySelector("#anyway").onclick = function () { (practiceTab.skip = practiceTab.skip || {})[s.id] = true; practiceTab(body, s, true); };
+      return;
+    }
     var idx = ORDER.indexOf(s), next = ORDER[idx + 1];
     var opts = {
       count: 5, stars: true, pick: function () { return { gen: s.gen, skill: s }; },

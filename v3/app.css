@@ -307,3 +307,13 @@ input[type=range]{accent-color:var(--orange);width:100%;min-height:32px}
 .g-pres:not(:empty),.p-pres:not(:empty){margin-top:12px}
 .pres-ways button{padding:7px 12px}
 @media (max-width:640px){.pres-lines{font-size:16px}.pres-top .pres-ways{width:100%}.pres-ways button{flex:1}}
+.journey{margin:18px 0;padding:16px 18px;border-radius:var(--radius);background:var(--teal-soft,#e9f8f5);border:1px solid color-mix(in srgb,var(--teal,#14a39a) 35%,transparent)}
+.journey b{font-size:18px}
+.jsteps{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;margin-top:10px}
+.jstep{display:inline-flex;gap:6px;align-items:center;background:var(--card);border-radius:999px;padding:6px 12px;font-weight:800;font-size:14px}
+.jstep i{font-style:normal}
+.jarr{color:var(--muted);font-weight:900}
+.gate{text-align:center}
+.gate .big{font-size:46px}
+.gate h3{margin:6px 0}
+@media (max-width:640px){.jarr{display:none}.jstep{font-size:13px;padding:5px 10px}}

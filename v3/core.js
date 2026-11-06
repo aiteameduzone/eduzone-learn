@@ -69,7 +69,7 @@
     var want = lang === "en" ? "en" : "ar";
     u.lang = lang === "en" ? "en-GB" : "ar-EG";
     var vs = speechSynthesis.getVoices().filter(function (v) { return v.lang.toLowerCase().indexOf(want) === 0; });
-    var female = vs.filter(function (v) { return /female|woman|zira|samantha|serena|kate|salma|laila|mariam|hoda|amira|zeina/i.test(v.name); });
+    var female = vs.filter(function (v) { return /female|woman|zira|samantha|serena|kate|sonia|libby|jenny|aria|ava|salma|laila|mariam|hoda|amira|zeina/i.test(v.name); });
     if (female.length) u.voice = female[0]; else if (vs.length) u.voice = vs[0];
     u.rate = 0.95;
     return u;
