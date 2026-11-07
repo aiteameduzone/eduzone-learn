@@ -63,7 +63,16 @@
   EZ3.voiceOn = function () { return voiceOn; };
   EZ3.setVoice = function (v) { voiceOn = v; store.set("ez3_voice", v); if (!v) EZ3.hush(); };
   EZ3.hush = function () { if (EZ3._seq) { EZ3._seq.stop = true; EZ3._seq = null; } try { speechSynthesis.cancel(); } catch (e) {} };
-  function cleanSpeech(text) { return String(text).replace(/<[^>]+>/g, " ").replace(/[*_#]/g, "").replace(/−/g, "-").replace(/\s+/g, " ").trim(); }
+  // science formulas (<span class="eq">) are read as words: "→" gives, "=" equals, subscripts as digits
+  var SUB = { "₀": "0", "₁": "1", "₂": "2", "₃": "3", "₄": "4", "₅": "5", "₆": "6", "₇": "7", "₈": "8", "₉": "9", "²": "2", "³": "3" };
+  function sayEq(s) {
+    var ar = lang !== "en";
+    return " " + s.replace(/<[^>]+>/g, "").replace(/[₀-₉²³]/g, function (c) { return SUB[c]; })
+      .replace(/⁺/g, ar ? " موجب " : " plus ").replace(/⁻/g, ar ? " سالب " : " minus ").replace(/[↓↑]/g, "")
+      .replace(/→/g, ar ? " يعطي " : " gives ").replace(/=/g, ar ? " يساوي " : " equals ").replace(/÷/g, ar ? " على " : " divided by ")
+      .replace(/×/g, ar ? " في " : " times ").replace(/Ω/g, ar ? " أوم " : " ohms ") + " ";
+  }
+  function cleanSpeech(text) { return String(text).replace(/<span class="eq"[^>]*>([\s\S]*?)<\/span>/g, function (m, x) { return sayEq(x); }).replace(/<[^>]+>/g, " ").replace(/[*_#]/g, "").replace(/−/g, "-").replace(/\s+/g, " ").trim(); }
   function utter(clean) {
     var u = new SpeechSynthesisUtterance(clean);
     var want = lang === "en" ? "en" : "ar";

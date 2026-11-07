@@ -57,7 +57,7 @@
     note: ["Skills follow a British Division Year 4 long-term plan; practice materials, not official exam content.", "المهارات مبنية على خطة السنة الرابعة لقسم بريطاني؛ مواد تدريبية وليست امتحانات رسمية.", "المهارات ماشية على خطة رابعة بريطاني؛ دي تمارين مش امتحانات رسمية."],
     loadErr: ["Could not load the skills. Open this page from the website (not from a file).", "تعذّر تحميل المهارات. افتح الصفحة من الموقع وليس من ملف.", "مش قادرين نحمّل المهارات. افتح الصفحة من الموقع."],
     reset: ["Reset my progress", "مسح تقدّمي", "امسح تقدّمي"], resetQ: ["Clear all stars and progress on this device?", "مسح كل النجوم والتقدّم على هذا الجهاز؟", "تمسح كل النجوم والتقدّم على الجهاز ده؟"],
-    voice: ["Voice", "الصوت", "الصوت"], lessons: ["lessons", "دروس", "دروس"], soon: ["Coming soon", "قريبًا", "قريب"], learned: ["Learn ✓", "تعلّم ✓", "اتعلم ✓"], mode: ["Mode", "النمط", "النوع"]
+    sci: ["Science", "العلوم", "العلوم"], voice: ["Voice", "الصوت", "الصوت"], lessons: ["lessons", "دروس", "دروس"], soon: ["Coming soon", "قريبًا", "قريب"], learned: ["Learn ✓", "تعلّم ✓", "اتعلم ✓"], mode: ["Mode", "النمط", "النوع"]
   };
   function w(k) { var x = W[k]; return x ? t(x[0], x[1], x[2]) : k; }
 
@@ -136,6 +136,7 @@
     var cd = E.CURRICULA[CUR];
     document.title = "EduZone Learn · " + E.L(cd.sub);
     document.getElementById("bsub").textContent = E.L(cd.sub);
+    if ((active || paintChrome.active) === "sci" && active !== "home" && active !== "topics" && active !== "mix" && active !== "more") { document.getElementById("bsub").textContent = t("Science · Prep 3", "العلوم · الثالث الإعدادي"); document.title = "EduZone Learn · " + t("Science · Prep 3", "العلوم · الثالث الإعدادي"); }
     var SHORT = { british: ["British", "بريطاني"], american: ["American", "أمريكي"], national: ["National", "قومي"] };
     var cs = document.getElementById("cur");
     cs.setAttribute("aria-label", t("Curriculum", "المنهج"));
@@ -153,6 +154,7 @@
     vb.textContent = E.voiceOn() ? "🔊" : "🔇"; vb.classList.toggle("off", !E.voiceOn());
     vb.setAttribute("aria-label", w("voice")); vb.title = w("voice");
     var items = [["home", "#/", "🏠"], ["topics", "#/topics", "🗂️"], ["mix", "#/mix", "🎯"], ["more", "#/more", "📚"]];
+    if ((CUR === "national" || CUR === "british") && E.sciView) items.splice(2, 0, ["sci", "#/sci", "🔬"]);
     if (active !== undefined) paintChrome.active = active;
     var a = paintChrome.active || "home";
     document.getElementById("nav").innerHTML = items.map(function (i) { return '<a href="' + i[1] + '" class="' + (i[0] === a ? "on" : "") + '">' + w(i[0]) + "</a>"; }).join("");
@@ -187,6 +189,8 @@
         var c = gOf(s), st = nextStepOf(s);
         return '<a class="mcard" href="' + href(s, st) + '"><span class="mi" style="' + soft(c) + '">' + s.icon + '</span><span class="mt"><b>' + esc(E.L(s.title)) + "</b><small>" + w("nextStep") + ": " + w(st === "learn" ? "learn" : st === "try" ? "tryit" : "practise") + "</small></span>" + starHTML(stars(s.id)) + "</a>";
       }).join("") + "</div></section>";
+    // science (Prep 3) - shown first on the National and British curricula
+    if ((CUR === "national" || CUR === "british") && E.sciHomeBlock) h += E.sciHomeBlock();
     // topics
     h += '<section class="sec"><div class="sec-head"><div><h2>🗂️ ' + w("topics") + '</h2><p class="sub">' + esc(w("topicsSub")) + '</p></div><a class="tag-link" href="#/topics">' + w("allTopics") + " " + t("→", "←") + '</a></div><div class="clusters">' +
       GROUPS.map(function (c) {
@@ -576,6 +580,7 @@
     else if (parts[0] === "s") viewSkill(el, parts[1], parts[2]);
     else if (parts[0] === "mix") viewMix(el);
     else if (parts[0] === "more") viewMore(el);
+    else if (parts[0] === "sci" && E.sciView) { paintChrome("sci"); E.sciView(el, parts); }
     else viewHome(el);
     if (route.lastPath !== parts.slice(0, 2).join("/")) window.scrollTo(0, 0);
     route.lastPath = parts.slice(0, 2).join("/");
