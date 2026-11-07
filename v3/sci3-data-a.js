@@ -52,7 +52,7 @@
           ["Oxidation", "الأكسدة", "Loss of electrons. The substance that loses them is the reducing agent.", "فقد إلكترونات، والمادة التي تفقدها هي العامل المختزل."],
           ["Reduction", "الاختزال", "Gain of electrons. The substance that gains them is the oxidising agent.", "اكتساب إلكترونات، والمادة التي تكتسبها هي العامل المؤكسد."]
         ],
-        lab: { parts: [{ type: "patterns" }, { type: "series" }, {
+        lab: { parts: [{ type: "reactlab" }, { type: "patterns" }, {
           type: "sort",
           prompt: ["Tap an equation, then tap its reaction type.", "اضغط على معادلة، ثم اضغط على نوع التفاعل."],
           bins: [["comb", "🤝", "Direct combination", "اتحاد مباشر"], ["dec", "💥", "Decomposition", "تحلل"], ["single", "🔁", "Single displacement", "إحلال بسيط"], ["double", "🔀", "Double displacement", "إحلال مزدوج"]],
@@ -126,7 +126,7 @@
           ["Carbon monoxide", "أول أكسيد الكربون", "CO: a toxic gas with no colour and no smell.", "CO: غاز سام عديم اللون والرائحة."],
           ["Catalytic converter", "المحول الحفزي", "A car part that changes CO and nitrogen oxides into less harmful gases.", "جزء في السيارة يحوّل أول أكسيد الكربون وأكاسيد النيتروجين إلى غازات أقل ضررًا."]
         ],
-        lab: { type: "fire" },
+        lab: { type: "burner" },
         quiz: [
           { q: ["Covering a burning pan with a lid puts out the fire because it removes…", "تغطية مقلاة مشتعلة بغطاء تطفئ النار لأنها تمنع…"],
             c: [["oxygen", "الأكسجين"], ["heat", "الحرارة"], ["fuel", "الوقود"], ["carbon dioxide", "ثاني أكسيد الكربون"]],
@@ -190,7 +190,7 @@
           ["Passive smoking", "التدخين السلبي", "Breathing other people's smoke.", "استنشاق دخان الآخرين."],
           ["Haemoglobin", "الهيموجلوبين", "The substance in red blood cells that carries oxygen.", "المادة التي تحمل الأكسجين في كرات الدم الحمراء."]
         ],
-        lab: { parts: [{ type: "lungs" }, {
+        lab: { parts: [{ type: "lungsim" }, {
           type: "sort",
           prompt: ["Sort what is in tobacco smoke. Tap a substance, then tap its group.", "صنّف مكونات دخان التبغ: اضغط على المادة ثم على مجموعتها."],
           bins: [["add", "🪝", "Addictive substance", "مادة مسببة للإدمان"], ["gas", "☁️", "Toxic or irritant gas", "غاز سام أو مهيّج"], ["metal", "🔩", "Heavy metal", "فلز ثقيل"], ["rad", "☢️", "Radioactive", "مادة مشعة"]],
@@ -272,7 +272,7 @@
           ["EMF", "القوة الدافعة الكهربية", "The total work a source does to move one coulomb around the whole circuit.", "الشغل الكلي الذي يبذله المصدر لنقل كولوم واحد خلال الدائرة كلها."],
           ["Ohm (Ω)", "الأوم", "Unit of electrical resistance.", "وحدة المقاومة الكهربية."]
         ],
-        lab: { parts: [{ type: "current" }, { type: "cells" }] },
+        lab: { parts: [{ type: "flow" }, { type: "cells" }] },
         quiz: [
           { q: ["A charge of 12 C passes in 3 s. What is the current?", "كمية كهربية ١٢ كولوم تمر في ٣ ثوانٍ. ما شدة التيار؟"],
             c: [["4 A", "٤ أمبير"], ["36 A", "٣٦ أمبير"], ["3 A", "٣ أمبير"], ["15 A", "١٥ أمبير"]],
@@ -341,7 +341,7 @@
           ["Electric power (W)", "القدرة الكهربية", "Energy used per second, measured in watts.", "الطاقة المستهلكة في الثانية، وتقاس بالوات."],
           ["Kilowatt-hour", "الكيلووات ساعة", "The unit on the home meter: 1 kW·h = 3.6 × 10⁶ J.", "وحدة عداد البيت: ١ كيلووات ساعة = ٣٫٦ × ١٠⁶ جول."]
         ],
-        lab: { parts: [{ type: "ohm" }, { type: "circuit" }] },
+        lab: { parts: [{ type: "builder" }, { type: "ohm" }] },
         quiz: [
           { q: ["A 2 Ω wire is connected to 6 V. What is the current?", "سلك مقاومته ٢ أوم وُصّل بفرق جهد ٦ فولت. ما شدة التيار؟"],
             c: [["3 A", "٣ أمبير"], ["12 A", "١٢ أمبير"], ["4 A", "٤ أمبير"], ["0.33 A", "٠٫٣٣ أمبير"]],
@@ -413,7 +413,7 @@
           ["Electric generator", "المولد الكهربي", "Changes kinetic energy into electrical energy.", "يحوّل الطاقة الحركية إلى طاقة كهربية."],
           ["Alternating current", "التيار المتردد", "Current that keeps changing direction; produced by power stations.", "تيار يتغير اتجاهه باستمرار، وتنتجه محطات الكهرباء."]
         ],
-        lab: { type: "magnet" },
+        lab: { type: "emlab" },
         quiz: [
           { q: ["Who showed that an electric current produces a magnetic field?", "من أثبت أن التيار الكهربي يولّد مجالًا مغناطيسيًا؟"],
             c: [["Oersted", "أورستد"], ["Mendel", "مندل"], ["Ohm", "أوم"], ["Darwin", "داروين"]],

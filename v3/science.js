@@ -108,17 +108,20 @@
     return '<div class="obj" style="margin:0 0 12px"><b style="width:100%;font-size:14px">🎯 ' + t("In this lesson", "في هذا الدرس") + "</b>" + (o[lang()] || o.en).map(function (x) { return '<span class="chip blue">' + esc(x) + "</span>"; }).join("") + "</div>";
   }
   function learnTab(body, l) {
-    var L = lang();
+    var L = lang(), hasD = !!E.sciDiagram;
+    var sec = function (k, title, sub, inner) { return '<div class="card pad"><div class="lhead"><span class="lnum">' + n(k) + '</span><div><h3>' + title + '</h3><p class="sub">' + esc(sub) + "</p></div></div>" + inner + "</div>"; };
     body.innerHTML = '<div class="learn-flow">' +
-      '<div class="card pad"><div class="lhead"><span class="lnum">' + n(1) + '</span><div><h3>' + w("idea") + '</h3><p class="sub">' + esc(w("ideaSub")) + '</p></div></div>' + objHTML(l) + '<div id="idea"></div></div>' +
-      '<div class="card pad"><div class="lhead"><span class="lnum">' + n(2) + '</span><div><h3>' + w("words") + '</h3><p class="sub">' + esc(w("wordsSub")) + '</p></div></div><div class="flips" id="flips">' +
-      l.words.map(function (x, i) {
-        return '<button type="button" class="flip" data-i="' + i + '"><span class="ff">' + esc(E.isAr() ? x[1] : x[0]) + '<small>' + esc(E.isAr() ? x[0] : x[1]) + '</small></span><span class="fb2">' + esc(E.isAr() ? x[3] : x[2]) + "</span></button>";
-      }).join("") + "</div></div>" +
+      sec(1, w("idea"), w("ideaSub"), objHTML(l) + '<div id="idea"></div>') +
+      (hasD ? sec(2, "🔎 " + esc(E.sciDiagramTitle(l.id) || t("Explore the diagram", "استكشف الرسم")), t("Explore the picture: every part talks.", "استكشف الصورة: كل جزء يتكلم."), '<div id="diag"></div>') : "") +
+      sec(hasD ? 3 : 2, w("words"), w("wordsSub"), '<div class="flips" id="flips">' +
+        l.words.map(function (x, i) {
+          return '<button type="button" class="flip" data-i="' + i + '"><span class="ff">' + esc(E.isAr() ? x[1] : x[0]) + '<small>' + esc(E.isAr() ? x[0] : x[1]) + '</small></span><span class="fb2">' + esc(E.isAr() ? x[3] : x[2]) + "</span></button>";
+        }).join("") + "</div>") +
       '<div class="btn-row" style="justify-content:flex-end"><a class="btn primary" id="golab" href="#/sci/' + l.id + '/lab">' + w("goLab") + " " + arrow() + "</a></div></div>";
     E.presenter(body.querySelector("#idea"), { official: l.idea.official[L], story: l.idea.story[L] }, {});
     var seen = {};
     function learned() { if (!P.learn[l.id]) { P.learn[l.id] = 1; save(); markStep(0); } }
+    if (hasD) E.sciDiagram(body.querySelector("#diag"), l.id, learned);
     body.querySelectorAll(".flip").forEach(function (b) {
       b.onclick = function () {
         var x = l.words[Number(b.dataset.i)];
@@ -164,9 +167,118 @@
     start(0);
   }
 
+  /* ---------- quiz engine: choice, true/false, order, match ---------- */
+  function ansText(it) {
+    if (it.k === "tf") return it.a ? t("True", "صواب") : t("False", "خطأ");
+    if (it.k === "order") return it.items.map(T).join(" → ");
+    if (it.k === "match") return it.pairs.map(function (p) { return T(p[0]) + " : " + T(p[1]); }).join(t("; ", "؛ "));
+    return T(it.c[0]);
+  }
   function solWays(item, ansTxt) {
     var a = w("theAns") + ": " + ansTxt + ".";
     return { official: [a, T(item.off)], story: [T(item.sto), w("answerIs") + ": " + ansTxt + "."] };
+  }
+  function lessonQs(l) { return l.quiz.concat((E.SCI3_EXTRA && E.SCI3_EXTRA[l.id]) || []).map(function (q) { q.lesson = l; return q; }); }
+
+  // body, list of questions, { onDone(score,total), nextHref, restart, tag }
+  function quizRound(body, qs, opts) {
+    var i = 0, score = 0;
+    function show() {
+      E.hush();
+      if (i >= qs.length) return finish();
+      var it = qs[i], kind = it.k || "choice";
+      var head = '<div class="q-top"><span class="chip">' + w("q") + " " + n(i + 1) + " " + w("of") + " " + n(qs.length) + "</span>" +
+        (opts.tag && it.lesson ? '<span class="chip blue">' + it.lesson.icon + " " + esc(E.L(it.lesson.title)) + "</span>" : "") +
+        '<span class="chip orange">' + (kind === "order" ? "🔢 " + t("Put in order", "رتّب") : kind === "match" ? "🔗 " + t("Match", "صِل") : kind === "tf" ? "⚖️ " + t("True or false", "صواب أم خطأ") : "🔘 " + t("Choose", "اختر")) + '</span><button type="button" class="btn sm ghost" id="sayq">🔊</button></div>';
+      body.innerHTML = '<div class="card pad">' + head + '<h2 class="sq">' + T(it.q) + '</h2><div id="qa"></div><div id="fb" style="margin-top:12px"></div></div>';
+      body.querySelector("#sayq").onclick = function () { E.speak(T(it.q)); };
+      var qa = body.querySelector("#qa");
+      if (kind === "choice") choiceQ(qa, it, settle);
+      else if (kind === "tf") tfQ(qa, it, settle);
+      else if (kind === "order") orderQ(qa, it, settle);
+      else matchQ(qa, it, settle);
+      function settle(ok) {
+        if (ok) score++;
+        var ans = ansText(it), fb = body.querySelector("#fb");
+        fb.innerHTML = '<div class="fb ' + (ok ? "ok" : "no") + '"><b>' + (ok ? w("right") : w("wrong") + " " + w("theAns") + ": " + ans) + "</b></div>" +
+          (ok ? '<button type="button" class="btn sm" id="hs" style="margin-top:10px">🔊 ' + w("hearSol") + "</button>" : "") +
+          '<div class="p-pres" style="margin-top:10px"></div><div class="btn-row" style="justify-content:flex-end;margin-top:12px"><button type="button" class="btn primary" id="nx">' + w("next") + " " + arrow() + "</button></div>";
+        var host = fb.querySelector(".p-pres");
+        if (ok) { E.speak(w("right")); fb.querySelector("#hs").onclick = function () { this.remove(); E.presenter(host, solWays(it, ans), { auto: true }); }; }
+        else E.presenter(host, solWays(it, ans), { auto: true });
+        fb.querySelector("#nx").onclick = function () { i++; show(); };
+      }
+    }
+    function finish() {
+      var total = qs.length, st = score >= total ? 3 : score >= total - 1 ? 2 : score >= total / 2 ? 1 : 0;
+      if (opts.onDone) opts.onDone(st, score, total);
+      var face = st === 3 ? "🏆" : st === 2 ? "🌟" : st === 1 ? "👍" : "💪";
+      body.innerHTML = '<div class="card result"><div class="big">' + face + "</div><h2>" + w("done") + '</h2><div class="score">' + n(score) + " / " + n(total) + '</div><div style="font-size:30px">' + starHTML(st) + "</div>" +
+        '<div class="btn-row" style="justify-content:center;margin-top:18px"><button class="btn" type="button" id="again">' + w("again") + "</button>" + (opts.nextHref ? '<a class="btn primary" href="' + opts.nextHref + '">' + w("nextLesson") + " " + arrow() + "</a>" : "") + "</div></div>";
+      if (st >= 2) E.burst();
+      body.querySelector("#again").onclick = opts.restart;
+    }
+    show();
+  }
+  function choiceQ(qa, it, settle) {
+    var order = E.shuffle([0, 1, 2, 3]);
+    qa.innerHTML = '<div class="choices sci-choices">' + order.map(function (k) { return '<button class="choice" type="button" data-k="' + k + '">' + T(it.c[k]) + "</button>"; }).join("") + "</div>";
+    qa.querySelectorAll(".choice").forEach(function (b) {
+      b.onclick = function () {
+        var ok = b.dataset.k === "0";
+        qa.querySelectorAll(".choice").forEach(function (c) { c.disabled = true; if (c.dataset.k === "0") c.classList.add("right"); });
+        if (!ok) b.classList.add("wrong");
+        settle(ok);
+      };
+    });
+  }
+  function tfQ(qa, it, settle) {
+    qa.innerHTML = '<div class="tf"><button type="button" class="choice tf-t" data-v="1">✔ ' + t("True", "صواب") + '</button><button type="button" class="choice tf-f" data-v="0">✖ ' + t("False", "خطأ") + "</button></div>";
+    qa.querySelectorAll(".choice").forEach(function (b) {
+      b.onclick = function () {
+        var v = b.dataset.v === "1", ok = v === it.a;
+        qa.querySelectorAll(".choice").forEach(function (c) { c.disabled = true; if ((c.dataset.v === "1") === it.a) c.classList.add("right"); });
+        if (!ok) b.classList.add("wrong");
+        settle(ok);
+      };
+    });
+  }
+  function orderQ(qa, it, settle) {
+    var pool = E.shuffle(it.items.map(function (x, k) { return k; })), picked = [];
+    qa.innerHTML = '<p class="sub">' + esc(t("Tap the cards in the right order.", "اضغط على البطاقات بالترتيب الصحيح.")) + '</p><ol class="ord-picked"></ol><div class="ord-pool"></div><div class="btn-row"><button type="button" class="btn sm ghost" id="undo">↶ ' + t("Undo", "تراجع") + '</button><button type="button" class="btn sm primary" id="chk" disabled>' + t("Check", "تحقّق") + "</button></div>";
+    function draw() {
+      qa.querySelector(".ord-picked").innerHTML = picked.map(function (k) { return "<li>" + esc(T(it.items[k])) + "</li>"; }).join("");
+      qa.querySelector(".ord-pool").innerHTML = pool.filter(function (k) { return picked.indexOf(k) < 0; }).map(function (k) { return '<button type="button" class="sl-item" data-k="' + k + '">' + esc(T(it.items[k])) + "</button>"; }).join("");
+      qa.querySelectorAll(".ord-pool button").forEach(function (b) { b.onclick = function () { picked.push(Number(b.dataset.k)); draw(); }; });
+      qa.querySelector("#chk").disabled = picked.length !== it.items.length;
+    }
+    qa.querySelector("#undo").onclick = function () { picked.pop(); draw(); };
+    qa.querySelector("#chk").onclick = function () {
+      var ok = picked.every(function (k, j) { return k === j; });
+      qa.querySelectorAll(".ord-picked li").forEach(function (li, j) { li.classList.add(picked[j] === j ? "ok" : "no"); });
+      qa.querySelectorAll("button").forEach(function (b) { b.disabled = true; });
+      settle(ok);
+    };
+    draw();
+  }
+  function matchQ(qa, it, settle) {
+    var right = E.shuffle(it.pairs.map(function (p, k) { return k; })), sel = null, got = 0, miss = 0;
+    qa.innerHTML = '<p class="sub">' + esc(t("Tap an item on the left, then its partner on the right.", "اضغط على عنصر في العمود الأول ثم على ما يناسبه في العمود الثاني.")) + '</p><div class="mt"><div class="mt-l">' +
+      it.pairs.map(function (p, k) { return '<button type="button" class="sl-item" data-k="' + k + '">' + T(p[0]) + "</button>"; }).join("") + '</div><div class="mt-r">' +
+      right.map(function (k) { return '<button type="button" class="sl-item" data-k="' + k + '">' + esc(T(it.pairs[k][1])) + "</button>"; }).join("") + "</div></div>";
+    qa.querySelectorAll(".mt-l button").forEach(function (b) { b.onclick = function () { if (b.disabled) return; qa.querySelectorAll(".mt-l .sel").forEach(function (x) { x.classList.remove("sel"); }); b.classList.add("sel"); sel = b; }; });
+    qa.querySelectorAll(".mt-r button").forEach(function (b) {
+      b.onclick = function () {
+        if (b.disabled) return;
+        if (!sel) { E.toast(t("Tap an item on the left first.", "اضغط على عنصر في العمود الأول أولًا.")); return; }
+        if (sel.dataset.k === b.dataset.k) {
+          sel.classList.remove("sel"); sel.classList.add("placed"); b.classList.add("placed"); sel.disabled = b.disabled = true;
+          var c = "m" + (got % 4); sel.classList.add(c); b.classList.add(c);
+          sel = null; got++;
+          if (got === it.pairs.length) settle(miss === 0);
+        } else { miss++; b.classList.remove("shake"); void b.offsetWidth; b.classList.add("shake"); }
+      };
+    });
   }
 
   function quizTab(body, l, force) {
@@ -177,52 +289,49 @@
       body.querySelector("#anyway").onclick = function () { (quizTab.skip = quizTab.skip || {})[l.id] = true; quizTab(body, l, true); };
       return;
     }
-    var qs = E.shuffle(l.quiz), i = 0, score = 0;
-    function show() {
-      E.hush();
-      if (i >= qs.length) return finish();
-      var it = qs[i], order = E.shuffle([0, 1, 2, 3]);
-      body.innerHTML = '<div class="card pad"><div class="q-top"><span class="chip">' + w("q") + " " + n(i + 1) + " " + w("of") + " " + n(qs.length) + '</span><button type="button" class="btn sm ghost" id="sayq">🔊</button></div>' +
-        '<h2 class="sq">' + T(it.q) + '</h2><div class="choices sci-choices">' + order.map(function (k) {
-          return '<button class="choice" type="button" data-k="' + k + '">' + T(it.c[k]) + "</button>";
-        }).join("") + '</div><div id="fb" style="margin-top:12px"></div></div>';
-      body.querySelector("#sayq").onclick = function () { E.speak(T(it.q)); };
-      body.querySelectorAll(".choice").forEach(function (b) {
-        b.onclick = function () {
-          var k = Number(b.dataset.k), ok = k === 0, ans = T(it.c[0]);
-          body.querySelectorAll(".choice").forEach(function (c) { c.disabled = true; if (Number(c.dataset.k) === 0) c.classList.add("right"); });
-          if (!ok) b.classList.add("wrong");
-          if (ok) score++;
-          var fb = body.querySelector("#fb");
-          fb.innerHTML = '<div class="fb ' + (ok ? "ok" : "no") + '"><b>' + (ok ? w("right") : w("wrong") + " " + w("theAns") + ": " + ans) + "</b></div>" +
-            (ok ? '<button type="button" class="btn sm" id="hs" style="margin-top:10px">🔊 ' + w("hearSol") + "</button>" : "") +
-            '<div class="p-pres" style="margin-top:10px"></div><div class="btn-row" style="justify-content:flex-end;margin-top:12px"><button type="button" class="btn primary" id="nx">' + w("next") + " " + arrow() + "</button></div>";
-          var host = fb.querySelector(".p-pres");
-          if (ok) { E.speak(w("right")); fb.querySelector("#hs").onclick = function () { this.remove(); E.presenter(host, solWays(it, ans), { auto: true }); }; }
-          else E.presenter(host, solWays(it, ans), { auto: true });
-          var nx = fb.querySelector("#nx"); nx.onclick = function () { i++; show(); };
-        };
-      });
-    }
-    function finish() {
-      var total = qs.length, st = score >= total ? 3 : score >= total - 1 ? 2 : score >= total / 2 ? 1 : 0;
-      if (st > (P.stars[l.id] || 0)) { P.stars[l.id] = st; save(); }
-      if (score > 0) markStep(2);
-      var hs = document.querySelector(".shead .stars"); if (hs) hs.outerHTML = starHTML(P.stars[l.id] || 0);
-      var list = all(), nxt = list[list.indexOf(l) + 1];
-      var face = st === 3 ? "🏆" : st === 2 ? "🌟" : st === 1 ? "👍" : "💪";
-      body.innerHTML = '<div class="card result"><div class="big">' + face + "</div><h2>" + w("done") + '</h2><div class="score">' + n(score) + " / " + n(total) + '</div><div style="font-size:30px">' + starHTML(st) + "</div>" +
-        '<div class="btn-row" style="justify-content:center;margin-top:18px"><button class="btn" type="button" id="again">' + w("again") + "</button>" + (nxt ? '<a class="btn primary" href="#/sci/' + nxt.id + '/learn">' + w("nextLesson") + " " + arrow() + "</a>" : "") + "</div></div>";
-      if (st >= 2) E.burst();
-      body.querySelector("#again").onclick = function () { quizTab(body, l, true); };
-    }
-    show();
+    var list = all(), nxt = list[list.indexOf(l) + 1];
+    quizRound(body, E.shuffle(lessonQs(l)), {
+      nextHref: nxt ? "#/sci/" + nxt.id + "/learn" : null,
+      restart: function () { quizTab(body, l, true); },
+      onDone: function (st, score) {
+        if (st > (P.stars[l.id] || 0)) { P.stars[l.id] = st; save(); }
+        if (score > 0) markStep(2);
+        var hs = document.querySelector(".shead .stars"); if (hs) hs.outerHTML = starHTML(P.stars[l.id] || 0);
+      }
+    });
   }
+
+  /* quick revision: 10 mixed questions from lessons started (or all) */
+  function viewMix(el) {
+    var ls = all().filter(function (l) { return P.learn[l.id] || P.lab[l.id] || P.stars[l.id]; });
+    if (ls.length < 2) ls = all();
+    var pool = [];
+    ls.forEach(function (l) { pool = pool.concat(lessonQs(l)); });
+    el.innerHTML = '<div class="crumbs"><a href="#/">' + w("home") + "</a></div><h1>🎯 " + t("Quick revision", "مراجعة سريعة") + '</h1><p class="sub" style="margin-bottom:14px">' + esc(t("10 mixed questions from the lessons you have started: choose, match, order and true or false.", "١٠ أسئلة متنوعة من الدروس التي بدأتها: اختيار وتوصيل وترتيب وصواب أم خطأ.")) + '</p><div id="mixb"></div>';
+    quizRound(el.querySelector("#mixb"), E.shuffle(pool).slice(0, 10), { tag: true, restart: function () { viewMix(el); } });
+  }
+
+  /* science home (subject = Science) */
+  E.sciHome = function (el) {
+    var ls = all(), done = 0, stars = 0;
+    ls.forEach(function (l) { done += lessonDone(l); stars += P.stars[l.id] || 0; });
+    var next = ls.filter(function (l) { return lessonDone(l) < 3; })[0] || ls[0];
+    el.innerHTML = '<section class="hero sci-home"><div><h1>🔬 ' + w("sci") + "</h1><p>" + esc(w("sciSub")) + '</p><div class="btn-row" style="margin:16px 0"><a class="btn primary" href="#/sci/' + next.id + "/" + nextTab(next) + '">▶ ' + esc(E.L(next.title)) + '</a><a class="btn" href="#/sci/mix">🎯 ' + t("Quick revision", "مراجعة سريعة") + "</a></div>" +
+      '<div class="hero-stats"><div class="hstat"><b>' + n(stars) + "/" + n(ls.length * 3) + "</b><span>⭐ " + t("stars", "نجمة") + '</span></div><div class="hstat"><b>' + n(ls.filter(function (l) { return P.lab[l.id]; }).length) + "/" + n(ls.length) + "</b><span>🧪 " + t("labs done", "معامل منجزة") + "</span></div></div></div>" +
+      '<div class="sci-hero-art">⚗️🧲🧬🦴</div></section>' +
+      '<section class="journey"><b>' + esc(t("Every lesson, step by step", "كل درس خطوة بخطوة")) + '</b><div class="jsteps">' + [["🎓", t("Official voice", "شرح رسمي")], ["📖", t("Story voice", "شرح بالقصة")], ["🔎", t("Explore the picture", "استكشف الصورة")], ["🧪", t("Simulation lab", "معمل محاكاة")], ["✅", t("Quiz + 2 spoken solutions", "اختبار + حل بطريقتين")]].map(function (x, i) {
+        return '<span class="jstep"><i>' + x[0] + "</i>" + esc(x[1]) + "</span>" + (i < 4 ? '<span class="jarr">' + arrow() + "</span>" : "");
+      }).join("") + "</div></section>" +
+      E.sciHomeBlock().replace("sec sci-sec", "sec") +
+      units().map(function (u) { return '<section class="sec"><div class="sec-head"><h2>' + u.icon + " " + esc(unitTitle(u)) + '</h2></div><div class="slist">' + u.lessons.map(lessonRow).join("") + "</div></section>"; }).join("") +
+      '<p class="sub sci-note">' + esc(w("note")) + "</p>";
+  };
 
   /* ---------- router entry (app.js calls this for #/sci...) ---------- */
   E.sciView = function (el, parts) {
     var a = parts[1] || "";
     if (!a) return viewAll(el);
+    if (a === "mix") return viewMix(el);
     if (/^u\d+$/.test(a)) return viewAll(el, a);
     var l = byId(a);
     if (!l) { location.hash = "#/sci"; return; }

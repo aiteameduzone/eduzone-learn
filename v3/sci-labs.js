@@ -26,6 +26,9 @@
     return '<label class="sl"><span>' + label + ' <b class="slv"></b></span><input type="range" min="' + min + '" max="' + max + '" step="' + step + '" value="' + val + '" data-unit="' + (unit || "") + '"></label>';
   }
 
+  L._goals = function (h, l, d) { return goals(h, l, d); };
+  L._slider = function (a, b, c, d, e, f) { return slider(a, b, c, d, e, f); };
+
   /* ---------- sort: tap an item, then its group ---------- */
   L.sort = function (host, cfg, done) {
     var items = E.shuffle(cfg.items.map(function (x, i) { return { i: i, html: typeof x[0] === "string" ? x[0] : esc(T(x[0])), bin: x[1] }; }));
@@ -295,7 +298,10 @@
     sort: ["Sort it", "صنّف"], fire: ["Fire triangle", "مثلث الاحتراق"], ohm: ["Ohm's law lab", "معمل قانون أوم"], circuit: ["Series and parallel", "التوالي والتوازي"],
     magnet: ["Electromagnet", "المغناطيس الكهربي"], punnett: ["Punnett square", "مربع بانيت"], moth: ["Peppered moths", "فراشات العثة"], layers: ["Rock layers and half-life", "طبقات الصخور وعمر النصف"],
     patterns: ["Watch the atoms rearrange", "شاهد الذرات تعيد ترتيبها"], series: ["Activity series test tubes", "أنابيب سلسلة النشاط"], lungs: ["Lungs and smoke model", "نموذج الرئتين والدخان"],
-    current: ["Charges through the wire", "الشحنات في السلك"], cells: ["Connect the cells", "توصيل الأعمدة"], fossilize: ["How a fossil forms", "كيف تتكون الحفرية"]
+    current: ["Charges through the wire", "الشحنات في السلك"], cells: ["Connect the cells", "توصيل الأعمدة"], fossilize: ["How a fossil forms", "كيف تتكون الحفرية"],
+    reactlab: ["Metal + solution simulation", "محاكاة الفلز والمحلول"], burner: ["Gas burner simulation", "محاكاة موقد الغاز"], lungsim: ["Breathing simulation", "محاكاة التنفس"],
+    flow: ["Electron flow simulation", "محاكاة سريان الإلكترونات"], builder: ["Circuit builder", "بناء الدوائر"], emlab: ["Electromagnet and motor simulation", "محاكاة المغناطيس الكهربي والمحرك"],
+    peas: ["Pea breeding simulation", "محاكاة تهجين البازلاء"], selection: ["Be the bird!", "كن الطائر!"], dig: ["Fossil time-lapse and dig", "تكوّن الحفرية والحفر"], decay: ["Radioactive decay simulation", "محاكاة التحلل الإشعاعي"]
   };
 
   /* ---------- reaction patterns: animated atoms ---------- */

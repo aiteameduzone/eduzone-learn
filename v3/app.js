@@ -57,7 +57,7 @@
     note: ["Skills follow a British Division Year 4 long-term plan; practice materials, not official exam content.", "المهارات مبنية على خطة السنة الرابعة لقسم بريطاني؛ مواد تدريبية وليست امتحانات رسمية.", "المهارات ماشية على خطة رابعة بريطاني؛ دي تمارين مش امتحانات رسمية."],
     loadErr: ["Could not load the skills. Open this page from the website (not from a file).", "تعذّر تحميل المهارات. افتح الصفحة من الموقع وليس من ملف.", "مش قادرين نحمّل المهارات. افتح الصفحة من الموقع."],
     reset: ["Reset my progress", "مسح تقدّمي", "امسح تقدّمي"], resetQ: ["Clear all stars and progress on this device?", "مسح كل النجوم والتقدّم على هذا الجهاز؟", "تمسح كل النجوم والتقدّم على الجهاز ده؟"],
-    sci: ["Science", "العلوم", "العلوم"], voice: ["Voice", "الصوت", "الصوت"], lessons: ["lessons", "دروس", "دروس"], soon: ["Coming soon", "قريبًا", "قريب"], learned: ["Learn ✓", "تعلّم ✓", "اتعلم ✓"], mode: ["Mode", "النمط", "النوع"]
+    sci: ["Lessons", "الدروس", "الدروس"], scimix: ["Quick revision", "مراجعة سريعة", "مراجعة سريعة"], voice: ["Voice", "الصوت", "الصوت"], lessons: ["lessons", "دروس", "دروس"], soon: ["Coming soon", "قريبًا", "قريب"], learned: ["Learn ✓", "تعلّم ✓", "اتعلم ✓"], mode: ["Mode", "النمط", "النوع"]
   };
   function w(k) { var x = W[k]; return x ? t(x[0], x[1], x[2]) : k; }
 
@@ -87,6 +87,10 @@
     NATUNIT = {};
     E.groupsFor("national", SKILLS).forEach(function (g) { if (g.unit) g.skills.forEach(function (s) { NATUNIT[s.id] = g.unit; }); });
   }
+  var SUBJ = E.store.get("ez3_subj", null); if (SUBJ !== "math" && SUBJ !== "sci") SUBJ = null;
+  function sciOK() { return (CUR === "national" || CUR === "british") && !!E.sciView; }
+  function setSubj(v) { SUBJ = v; E.store.set("ez3_subj", v); }
+  E.subject = function () { return SUBJ; };
   function setCur(c) { CUR = c; E.store.set("ez3_cur", c); viewTopics.term = 0; buildGroups(); }
   function grp(id) { return GROUPS.filter(function (g) { return g.id === id; })[0] || null; }
   function gOf(s) { return GOF[s.id] || GROUPS[0]; }
@@ -118,7 +122,7 @@
       '<a class="brand" href="#/"><img src="ez-icon.png" alt="EduZone"><span><b>EduZone <span>Learn</span></b><small id="bsub"></small></span></a>' +
       '<nav class="nav" id="nav"></nav>' +
       '<div class="top-tools"><button class="icon-btn" id="voice" type="button"></button></div>' +
-      '</div><div class="switchbar"><div class="sw sw-cur" id="cur" role="group"></div><div class="sw sw-lang" id="lang" role="group"></div></div></header><main class="page" id="view"></main><footer class="foot" id="foot"></footer><nav class="bnav" id="bnav"></nav>';
+      '</div><div class="switchbar"><div class="sw sw-cur" id="cur" role="group"></div><div class="sw sw-lang" id="lang" role="group"></div></div><div class="switchbar sb2"><div class="sw sw-subj" id="subj" role="group"></div></div></header><main class="page" id="view"></main><footer class="foot" id="foot"></footer><nav class="bnav" id="bnav"></nav>';
     if (E.lang === "eg") E.setLang("ar");
     document.getElementById("lang").onclick = function (e) {
       var b = e.target.closest("button[data-v]"); if (!b || b.dataset.v === E.lang) return;
@@ -127,7 +131,13 @@
     document.getElementById("cur").onclick = function (e) {
       var b = e.target.closest("button[data-v]"); if (!b || b.dataset.v === CUR) return;
       setCur(b.dataset.v);
+      if (SUBJ === "sci" && !sciOK()) { setSubj(null); if (/^#\/sci/.test(location.hash)) { location.hash = "#/"; return; } }
       if (/^#\/c\//.test(location.hash)) location.hash = "#/topics"; else route();
+    };
+    document.getElementById("subj").onclick = function (e) {
+      var b = e.target.closest("button[data-v]"); if (!b || b.disabled) return;
+      setSubj(b.dataset.v === SUBJ ? SUBJ : b.dataset.v);
+      if (location.hash === "#/" || location.hash === "") route(); else location.hash = "#/";
     };
     var vb = document.getElementById("voice");
     vb.onclick = function () { E.setVoice(!E.voiceOn()); paintChrome(); };
@@ -136,7 +146,13 @@
     var cd = E.CURRICULA[CUR];
     document.title = "EduZone Learn · " + E.L(cd.sub);
     document.getElementById("bsub").textContent = E.L(cd.sub);
-    if ((active || paintChrome.active) === "sci" && active !== "home" && active !== "topics" && active !== "mix" && active !== "more") { document.getElementById("bsub").textContent = t("Science · Prep 3", "العلوم · الثالث الإعدادي"); document.title = "EduZone Learn · " + t("Science · Prep 3", "العلوم · الثالث الإعدادي"); }
+    if (SUBJ !== "math") { var sb = SUBJ === "sci" ? t("Science · Prep 3", "العلوم · الثالث الإعدادي") : t("Choose a subject", "اختر المادة"); document.getElementById("bsub").textContent = sb; document.title = "EduZone Learn · " + sb; }
+    var ss = document.getElementById("subj");
+    ss.setAttribute("aria-label", t("Subject", "المادة"));
+    ss.innerHTML = '<span class="sw-lbl">' + t("Subject", "المادة") + "</span>" + [["math", "🔢", t("Maths", "الرياضيات"), t("Grade 4", "الصف الرابع")], ["sci", "🔬", t("Science", "العلوم"), t("Prep 3", "الثالث الإعدادي")]].map(function (x) {
+      var on = x[0] === SUBJ, dis = x[0] === "sci" && !sciOK();
+      return '<button type="button" data-v="' + x[0] + '" class="' + (on ? "on" : "") + '" aria-pressed="' + on + '"' + (dis ? ' disabled title="' + esc(t("Science follows the Egyptian Prep 3 book: choose National or British", "العلوم حسب كتاب الثالث الإعدادي المصري: اختر قومي أو بريطاني")) + '"' : "") + "><i>" + x[1] + "</i>" + esc(x[2]) + "<small>" + esc(dis ? t("National / British", "قومي / بريطاني") : x[3]) + "</small></button>";
+    }).join("");
     var SHORT = { british: ["British", "بريطاني"], american: ["American", "أمريكي"], national: ["National", "قومي"] };
     var cs = document.getElementById("cur");
     cs.setAttribute("aria-label", t("Curriculum", "المنهج"));
@@ -153,8 +169,9 @@
     var vb = document.getElementById("voice");
     vb.textContent = E.voiceOn() ? "🔊" : "🔇"; vb.classList.toggle("off", !E.voiceOn());
     vb.setAttribute("aria-label", w("voice")); vb.title = w("voice");
-    var items = [["home", "#/", "🏠"], ["topics", "#/topics", "🗂️"], ["mix", "#/mix", "🎯"], ["more", "#/more", "📚"]];
-    if ((CUR === "national" || CUR === "british") && E.sciView) items.splice(2, 0, ["sci", "#/sci", "🔬"]);
+    var items = SUBJ === "math" ? [["home", "#/", "🏠"], ["topics", "#/topics", "🗂️"], ["mix", "#/mix", "🎯"], ["more", "#/more", "📚"]]
+      : SUBJ === "sci" ? [["home", "#/", "🏠"], ["sci", "#/sci", "🔬"], ["scimix", "#/sci/mix", "🎯"], ["more", "#/more", "📚"]]
+      : [["home", "#/", "🏠"], ["more", "#/more", "📚"]];
     if (active !== undefined) paintChrome.active = active;
     var a = paintChrome.active || "home";
     document.getElementById("nav").innerHTML = items.map(function (i) { return '<a href="' + i[1] + '" class="' + (i[0] === a ? "on" : "") + '">' + w(i[0]) + "</a>"; }).join("");
@@ -162,6 +179,8 @@
     var note = CUR === "american" ? t("Skills are mapped to Common Core Grade 4 standards (codes shown on each skill); practice materials, not official test content.", "المهارات مرتبطة بمعايير Common Core للصف الرابع (الرمز ظاهر على كل مهارة)؛ مواد تدريبية وليست امتحانات رسمية.")
       : CUR === "national" ? t("Skills are mapped to the Egyptian Primary 4 maths units; practice materials, not official exam content.", "المهارات مرتبطة بوحدات رياضيات الصف الرابع الابتدائي المصري؛ مواد تدريبية وليست امتحانات رسمية.")
       : w("note");
+    if (SUBJ === "sci") note = t("Lessons follow the Egyptian Ministry Prep 3 Science book, Term 1. Simulations are simplified teaching models; practice material, not official exam content.", "الدروس حسب كتاب العلوم للصف الثالث الإعدادي (الفصل الأول) من وزارة التربية والتعليم، والمحاكاة نماذج تعليمية مبسطة؛ مواد تدريبية وليست امتحانًا رسميًا.");
+    else if (SUBJ !== "math") note = t("EduZone Learn: practice material in English and Arabic.", "EduZone Learn: مواد تدريبية بالعربية والإنجليزية.");
     document.getElementById("foot").innerHTML = esc(note) + " " + esc(w("voiceNote")) + ' · <a href="#" id="resetp">' + esc(w("reset")) + "</a>";
     document.getElementById("resetp").onclick = function (e) {
       e.preventDefault();
@@ -171,6 +190,8 @@
 
   /* ---------- views ---------- */
   function viewHome(el) {
+    if (SUBJ === "sci" && E.sciHome) { paintChrome("home"); E.sciHome(el); return; }
+    if (SUBJ !== "math") return viewPicker(el);
     paintChrome("home");
     var last = prog.last && BY[prog.last];
     var pct = masteredCount() / SKILLS.length;
@@ -189,8 +210,6 @@
         var c = gOf(s), st = nextStepOf(s);
         return '<a class="mcard" href="' + href(s, st) + '"><span class="mi" style="' + soft(c) + '">' + s.icon + '</span><span class="mt"><b>' + esc(E.L(s.title)) + "</b><small>" + w("nextStep") + ": " + w(st === "learn" ? "learn" : st === "try" ? "tryit" : "practise") + "</small></span>" + starHTML(stars(s.id)) + "</a>";
       }).join("") + "</div></section>";
-    // science (Prep 3) - shown first on the National and British curricula
-    if ((CUR === "national" || CUR === "british") && E.sciHomeBlock) h += E.sciHomeBlock();
     // topics
     h += '<section class="sec"><div class="sec-head"><div><h2>🗂️ ' + w("topics") + '</h2><p class="sub">' + esc(w("topicsSub")) + '</p></div><a class="tag-link" href="#/topics">' + w("allTopics") + " " + t("→", "←") + '</a></div><div class="clusters">' +
       GROUPS.map(function (c) {
@@ -201,6 +220,15 @@
       }).join("") + "</div></section>";
     h += moreBlock();
     el.innerHTML = h;
+  }
+  /* ---------- subject picker (no subject is chosen by default) ---------- */
+  function viewPicker(el) {
+    paintChrome("home");
+    var ok = sciOK();
+    el.innerHTML = '<section class="pick-hero"><h1>' + t("What do you want to learn today?", "ماذا تريد أن تتعلم اليوم؟") + '</h1><p class="sub">' + esc(t("Pick a subject. You can switch any time from the Subject bar at the top.", "اختر المادة، ويمكنك التغيير في أي وقت من شريط «المادة» بالأعلى.")) + '</p></section><div class="pick-grid">' +
+      '<button type="button" class="pick math" data-v="math"><span class="pk-i">🔢</span><b>' + t("Maths", "الرياضيات") + "</b><small>" + esc(E.L(E.CURRICULA[CUR].sub)) + '</small><span class="pk-tags"><span class="chip">' + n(SKILLS.length) + " " + w("skills") + '</span><span class="chip">🎮 ' + t("hands-on tools", "أدوات تفاعلية") + '</span></span><span class="pk-go">' + t("Start →", "ابدأ ←") + "</span></button>" +
+      '<button type="button" class="pick sci" data-v="sci"' + (ok ? "" : " disabled") + '><span class="pk-i">🔬</span><b>' + t("Science", "العلوم") + "</b><small>" + esc(t("Prep 3 · Term 1 · Egyptian Ministry book", "الثالث الإعدادي · الفصل الأول · كتاب الوزارة")) + '</small><span class="pk-tags"><span class="chip">' + n(10) + " " + w("lessons") + '</span><span class="chip">🧪 ' + t("virtual labs", "معامل افتراضية") + '</span></span><span class="pk-go">' + (ok ? t("Start →", "ابدأ ←") : esc(t("Choose National or British", "اختر قومي أو بريطاني"))) + "</span></button></div>";
+    el.querySelectorAll(".pick").forEach(function (b) { b.onclick = function () { if (b.disabled) return; setSubj(b.dataset.v); route(); window.scrollTo(0, 0); }; });
   }
   function mission() {
     var pick = [], add = function (s) { if (s && pick.indexOf(s) < 0 && stars(s.id) < 3 && pick.length < 3) pick.push(s); };
@@ -575,12 +603,14 @@
     E.hush();
     var el = document.getElementById("view"), parts = location.hash.replace(/^#\/?/, "").split("/");
     if (!SKILLS.length) return;
+    if (/^(topics|c|s|mix)$/.test(parts[0]) && SUBJ !== "math") setSubj("math");
+    if (parts[0] === "sci" && SUBJ !== "sci") setSubj("sci");
     if (parts[0] === "topics") viewTopics(el);
     else if (parts[0] === "c") viewTopics(el, decodeURIComponent(parts[1] || ""));
     else if (parts[0] === "s") viewSkill(el, parts[1], parts[2]);
     else if (parts[0] === "mix") viewMix(el);
     else if (parts[0] === "more") viewMore(el);
-    else if (parts[0] === "sci" && E.sciView) { paintChrome("sci"); E.sciView(el, parts); }
+    else if (parts[0] === "sci" && E.sciView) { paintChrome(parts[1] === "mix" ? "scimix" : "sci"); E.sciView(el, parts); }
     else viewHome(el);
     if (route.lastPath !== parts.slice(0, 2).join("/")) window.scrollTo(0, 0);
     route.lastPath = parts.slice(0, 2).join("/");

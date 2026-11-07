@@ -48,7 +48,7 @@
           ["Phenotype", "النمط الظاهري", "The trait you can see, e.g. yellow or green seeds.", "الصفة التي تظهر مثل البذور الصفراء أو الخضراء."],
           ["Carrier", "الحامل للمرض", "Looks healthy but has one disease allele.", "سليم ظاهريًا لكنه يحمل أليلًا واحدًا للمرض."]
         ],
-        lab: { type: "punnett" },
+        lab: { type: "peas" },
         quiz: [
           { q: [eq("Yy × Yy") + ". What fraction of the offspring is green (yy)?", eq("Yy × Yy") + ". ما نسبة الأبناء الخضراء (yy)؟"],
             c: [["¼", "¼"], ["½", "½"], ["¾", "¾"], ["0", "٠"]],
@@ -112,7 +112,7 @@
           ["Artificial selection", "الانتخاب الصناعي", "Humans breed living things for traits they want.", "الإنسان يربّي الكائنات للحصول على صفات يريدها."],
           ["Gene bank", "بنك الجينات", "A modern store of seeds, cells and gametes to preserve traits.", "مخزن حديث للبذور والخلايا والجاميتات للحفاظ على الصفات."]
         ],
-        lab: { type: "moth" },
+        lab: { type: "selection" },
         quiz: [
           { q: ["After factory soot darkened the trees, dark moths increased because…", "بعد أن سوّد سناج المصانع الأشجار زادت الفراشات الداكنة لأنها…"],
             c: [["they were hidden from birds, survived and reproduced", "اختبأت من الطيور فعاشت وتكاثرت"], ["the soot painted the moths", "السناج لوّن الفراشات"], ["light moths turned dark", "الفراشات الفاتحة تحولت إلى داكنة"], ["birds preferred dark moths", "الطيور فضّلت الداكنة"]],
@@ -184,7 +184,7 @@
           ["Homologous structures", "التراكيب المتماثلة", "Same basic structure, different function: arm, bat wing, whale flipper.", "بناء أساسي واحد ووظائف مختلفة: الذراع وجناح الخفاش وزعنفة الحوت."],
           ["Mass extinction", "الانقراض الجماعي", "Many species dying out in a relatively short time.", "موت أنواع كثيرة في وقت قصير نسبيًا."]
         ],
-        lab: { parts: [{ type: "fossilize" }, {
+        lab: { parts: [{ type: "dig" }, {
           type: "sort",
           prompt: ["Sort each find into its fossil type. Tap a find, then tap the type.", "صنّف كل اكتشاف حسب نوع الحفرية: اضغط على الاكتشاف ثم على النوع."],
           bins: [["body", "🦴", "Body fossil", "حفرية جسم"], ["trace", "👣", "Trace fossil", "حفرية آثار"], ["mold", "🐚", "Mold or cast", "قالب أو نسخة"], ["pet", "🪵", "Petrified fossil", "حفرية متحجرة"]],
@@ -258,7 +258,7 @@
           ["Absolute age", "العمر المطلق", "The age in years, found from radioactive decay.", "العمر بالسنين، ويُعرف من التحلل الإشعاعي."],
           ["Half-life", "عمر النصف", "The time for half of a radioactive element to decay.", "الزمن اللازم لتحلل نصف كمية العنصر المشع."]
         ],
-        lab: { type: "layers" },
+        lab: { parts: [{ type: "decay" }, { type: "layers" }] },
         quiz: [
           { q: ["In undisturbed rock layers, the oldest layer is…", "في طبقات الصخور غير المضطربة تكون الطبقة الأقدم…"],
             c: [["the bottom layer", "الطبقة السفلى"], ["the top layer", "الطبقة العليا"], ["the middle layer", "الطبقة الوسطى"], ["the thinnest layer", "الطبقة الأرق"]],
