@@ -1,0 +1,600 @@
+{
+  "year": "2026–2027",
+  "grade": "Preparatory 3 / Grade 9",
+  "term": 1,
+  "units": [
+    {
+      "id": "u1",
+      "en": "Chemical Reactions and Their Environmental Impacts",
+      "ar": "التفاعلات الكيميائية وآثارها البيئية",
+      "icon": "⚗️",
+      "start": 2
+    },
+    {
+      "id": "u2",
+      "en": "Electricity and Magnetism",
+      "ar": "الكهربية والمغناطيسية",
+      "icon": "💡",
+      "start": 35
+    },
+    {
+      "id": "u3",
+      "en": "Variation of Traits in Living Organisms",
+      "ar": "تنوع الصفات في الكائنات الحية",
+      "icon": "🧬",
+      "start": 65
+    },
+    {
+      "id": "u4",
+      "en": "Dating Planet Earth",
+      "ar": "تأريخ كوكب الأرض",
+      "icon": "🪨",
+      "start": 85
+    }
+  ],
+  "lessons": [
+    {
+      "id": "p3-u1-l1",
+      "unit": "u1",
+      "unitNum": 1,
+      "lessonNum": 1,
+      "en": "Types of Chemical Reactions",
+      "ar": "أنواع التفاعلات الكيميائية",
+      "page": 2,
+      "sim": "reactions",
+      "formal": {
+        "en": "Chemical reactions rearrange atoms into new substances. Common patterns include combination, decomposition, single replacement and double replacement. The reactivity series helps predict whether a metal can replace another.",
+        "ar": "تُعيد التفاعلات الكيميائية ترتيب الذرات لتكوين مواد جديدة. تشمل الأنماط الاتحاد والانحلال والإحلال البسيط والإحلال المزدوج. وتساعد متسلسلة النشاط الكيميائي على توقّع الإحلال."
+      },
+      "story": {
+        "en": "Imagine a school team: sometimes players join to make one team, sometimes a team splits, and sometimes partners swap. Atoms behave in organised patterns too.",
+        "ar": "تخيّل فريقًا مدرسيًا: أحيانًا يتحد لاعبان، وأحيانًا ينقسم الفريق، وأحيانًا يتبادل الشركاء أماكنهم. التفاعلات لها أنماط مشابهة."
+      },
+      "solution": {
+        "en": "Identify the pattern from the reactants and products. In a single-replacement reaction, a more reactive metal can displace a less reactive metal from its compound.",
+        "ar": "حدّد النمط من المواد المتفاعلة والناتجة. في الإحلال البسيط يستطيع الفلز الأكثر نشاطًا إحلال فلز أقل نشاطًا من مركّبه."
+      },
+      "storySolution": {
+        "en": "You can predict the team swap by checking which metal is more reactive. Then check that atoms are conserved.",
+        "ar": "علشان تتوقع مين هيبدّل مكان مين، بص على نشاط الفلزات، وبعد كده اتأكد إن الذرات محفوظة."
+      },
+      "quiz": {
+        "question": "Which is a decomposition reaction?",
+        "options": [
+          "2Mg + O₂ → 2MgO",
+          "CaCO₃ → CaO + CO₂",
+          "Zn + CuSO₄ → ZnSO₄ + Cu"
+        ],
+        "correct": 1,
+        "why": "One compound forms two simpler products.",
+        "questionAr": "أي المعادلات التالية يمثل تفاعل انحلال؟",
+        "optionsAr": [
+          "2Mg + O₂ → 2MgO",
+          "CaCO₃ → CaO + CO₂",
+          "Zn + CuSO₄ → ZnSO₄ + Cu"
+        ]
+      },
+      "objectives": {
+        "en": [
+          "Signs and patterns of chemical change",
+          "Direct combination and decomposition",
+          "Single and double displacement",
+          "Reactivity series and simple redox"
+        ],
+        "ar": [
+          "دلائل وأنماط التغير الكيميائي",
+          "الاتحاد المباشر والانحلال",
+          "الإحلال البسيط والمزدوج",
+          "متسلسلة النشاط الكيميائي والأكسدة والاختزال"
+        ]
+      }
+    },
+    {
+      "id": "p3-u1-l2",
+      "unit": "u1",
+      "unitNum": 1,
+      "lessonNum": 2,
+      "en": "Combustion Reactions and Environmental Pollution",
+      "ar": "تفاعلات الاحتراق والتلوث البيئي",
+      "page": 15,
+      "sim": "combustion",
+      "formal": {
+        "en": "Combustion requires fuel, oxygen and sufficient heat. Complete combustion of hydrocarbons produces carbon dioxide and water. Insufficient oxygen may produce harmful carbon monoxide and soot.",
+        "ar": "يتطلب الاحتراق وقودًا وأكسجينًا وحرارة كافية. وينتج الاحتراق التام للهيدروكربونات ثاني أكسيد الكربون والماء. وقد يؤدي نقص الأكسجين إلى تكوّن أول أكسيد الكربون والسخام."
+      },
+      "story": {
+        "en": "Picture three friends keeping a campfire going: fuel, oxygen and heat. Remove one, and the fire cannot continue. The air supply also affects what the fire produces.",
+        "ar": "تخيّل ثلاث حاجات محتاجينها عشان النار تفضل شغالة: وقود وأكسجين وحرارة. لو واحدة اختفت، النار مش هتكمل. والهواء بيأثر في نواتج الاحتراق."
+      },
+      "solution": {
+        "en": "Check the fire triangle first. Then compare oxygen availability to distinguish idealised complete and incomplete combustion.",
+        "ar": "تحقّق أولًا من أضلاع مثلث الاحتراق، ثم قارن كمية الأكسجين للتمييز بين الاحتراق التام وغير التام في هذا النموذج المبسّط."
+      },
+      "storySolution": {
+        "en": "When oxygen is limited, combustion can be incomplete. In real life, never test this by burning anything indoors.",
+        "ar": "لو الأكسجين قليل، الاحتراق ممكن يبقى غير تام. لكن مش بنجرب حرق حاجات في البيت."
+      },
+      "quiz": {
+        "question": "Which is necessary for sustained combustion?",
+        "options": [
+          "Only fuel",
+          "Fuel, oxygen and enough heat",
+          "Only oxygen"
+        ],
+        "correct": 1,
+        "why": "The three components form the fire triangle.",
+        "questionAr": "ما العناصر اللازمة لاستمرار الاحتراق؟",
+        "optionsAr": [
+          "الوقود فقط",
+          "وقود وأكسجين وحرارة كافية",
+          "الأكسجين فقط"
+        ]
+      },
+      "objectives": {
+        "en": [
+          "Fire triangle and ignition conditions",
+          "Complete and incomplete combustion",
+          "Oxides and pollutant products",
+          "Air pollution prevention"
+        ],
+        "ar": [
+          "مثلث الاحتراق وشروط الاشتعال",
+          "الاحتراق التام وغير التام",
+          "الأكاسيد والنواتج الملوثة",
+          "الحد من تلوث الهواء"
+        ]
+      }
+    },
+    {
+      "id": "p3-u1-l3",
+      "unit": "u1",
+      "unitNum": 1,
+      "lessonNum": 3,
+      "en": "Smoking and Its Hazards",
+      "ar": "التدخين ومخاطره",
+      "page": 25,
+      "sim": "smoking",
+      "formal": {
+        "en": "Tobacco smoke contains harmful substances including carbon monoxide and carcinogens. Active smoking and second-hand exposure can harm the respiratory and cardiovascular systems. Avoiding smoke protects health.",
+        "ar": "يحتوي دخان التبغ على مواد ضارة، منها أول أكسيد الكربون ومواد مسرطنة. وقد يضر التدخين والتعرض للدخان غير المباشر بالجهازين التنفسي والدوري. وتجنّب الدخان يحمي الصحة."
+      },
+      "story": {
+        "en": "Imagine a waiting room. Even someone who is not smoking may breathe smoke from nearby people. A smoke-free room helps everyone.",
+        "ar": "تخيّل قاعة انتظار: شخص مش بيدخّن ممكن يستنشق دخان من شخص جنبه. المكان الخالي من التدخين بيحمي الكل."
+      },
+      "solution": {
+        "en": "Identify exposure sources and choose the safest environment: a smoke-free space.",
+        "ar": "حدّد مصادر التعرّض للدخان واختر البيئة الأكثر أمانًا: مكان خالٍ من التدخين."
+      },
+      "storySolution": {
+        "en": "The best answer is avoiding smoke exposure; being a non-smoker does not eliminate second-hand exposure in smoky spaces.",
+        "ar": "الأفضل تبعد عن الدخان. وحتى لو مش بتدخّن، وجودك في مكان مليان دخان ممكن يضرّك."
+      },
+      "quiz": {
+        "question": "Which environment reduces second-hand smoke exposure?",
+        "options": [
+          "Closed room with smoke",
+          "Smoke-free indoor space",
+          "Standing closer to smoke"
+        ],
+        "correct": 1,
+        "why": "Removing smoke exposure from indoor air is the safest choice.",
+        "questionAr": "أي بيئة تقلل التعرض لدخان التدخين غير المباشر؟",
+        "optionsAr": [
+          "غرفة مغلقة بها دخان",
+          "مكان داخلي خالٍ من التدخين",
+          "الاقتراب من مصدر الدخان"
+        ]
+      },
+      "objectives": {
+        "en": [
+          "Harmful substances in tobacco smoke",
+          "Effects on respiratory and circulatory systems",
+          "Active and passive exposure",
+          "Preventing smoke exposure"
+        ],
+        "ar": [
+          "المواد الضارة في دخان التبغ",
+          "التأثير على الجهازين التنفسي والدوري",
+          "التدخين المباشر وغير المباشر",
+          "الوقاية من التعرض للدخان"
+        ]
+      }
+    },
+    {
+      "id": "p3-u2-l1",
+      "unit": "u2",
+      "unitNum": 2,
+      "lessonNum": 1,
+      "en": "Electric Current",
+      "ar": "التيار الكهربي",
+      "page": 35,
+      "sim": "current",
+      "formal": {
+        "en": "Electric current is the rate of flow of electric charge, I = Q ÷ t. An ammeter measures current in amperes. Potential difference is measured in volts.",
+        "ar": "التيار الكهربي هو معدل مرور الشحنة الكهربائية، شدة التيار = الشحنة ÷ الزمن. ويُقاس بالأميتر بوحدة الأمبير، بينما يُقاس فرق الجهد بالفولت."
+      },
+      "story": {
+        "en": "Imagine a doorway with students walking through. Count how many pass each second. Current similarly measures how much charge passes per second.",
+        "ar": "تخيّل باب فصل والطلبة بتعدّي منه. لو حسبت عدد اللي بيعدّوا في كل ثانية، هتفهم فكرة التيار: شحنة بتعدّي خلال زمن."
+      },
+      "solution": {
+        "en": "Divide the charge in coulombs by the elapsed time in seconds to find current in amperes.",
+        "ar": "اقسم الشحنة بالكولوم على الزمن بالثانية لتحصل على شدة التيار بالأمبير."
+      },
+      "storySolution": {
+        "en": "If 12 coulombs pass in 3 seconds, the current is 4 amperes. Think of four units of charge per second.",
+        "ar": "لو ١٢ كولوم عدّوا في ٣ ثواني، يبقى التيار ٤ أمبير: ٤ كولوم كل ثانية."
+      },
+      "quiz": {
+        "question": "If 12 C passes in 3 s, what is the current?",
+        "options": [
+          "3 A",
+          "4 A",
+          "36 A"
+        ],
+        "correct": 1,
+        "why": "I = Q ÷ t = 12 ÷ 3 = 4 A.",
+        "questionAr": "إذا مرت شحنة 12 كولوم خلال 3 ثوانٍ، فما شدة التيار؟",
+        "optionsAr": [
+          "3 أمبير",
+          "4 أمبير",
+          "36 أمبير"
+        ]
+      },
+      "objectives": {
+        "en": [
+          "Flow of electric charge",
+          "Current: I = Q / t",
+          "Ammeter and voltmeter",
+          "Voltage, cells, resistance and symbols"
+        ],
+        "ar": [
+          "سريان الشحنة الكهربائية",
+          "شدة التيار = الشحنة ÷ الزمن",
+          "الأميتر والفولتميتر",
+          "فرق الجهد والأعمدة والمقاومة والرموز"
+        ]
+      }
+    },
+    {
+      "id": "p3-u2-l2",
+      "unit": "u2",
+      "unitNum": 2,
+      "lessonNum": 2,
+      "en": "Electric Circuits",
+      "ar": "الدوائر الكهربية",
+      "page": 46,
+      "sim": "circuits",
+      "formal": {
+        "en": "In a simple resistive circuit, Ohm’s law states V = I × R. Resistors in series add; identical resistors in parallel have lower equivalent resistance. Electric power is P = V × I.",
+        "ar": "في الدائرة المقاومة البسيطة ينص قانون أوم على أن فرق الجهد = شدة التيار × المقاومة. تُجمع المقاومات في التوالي، وتقل المقاومة المكافئة للمقاومات المتساوية في التوازي. القدرة = فرق الجهد × شدة التيار."
+      },
+      "story": {
+        "en": "Think of electricity moving through a route. Two narrow gates in a row make the route harder; two parallel routes make it easier for charge to flow.",
+        "ar": "تخيّل طريق للكهرباء: بوابتين ضيقتين ورا بعض بيصعّبوا المرور، لكن طريقين جنب بعض بيسهّلوا المرور."
+      },
+      "solution": {
+        "en": "For two equal resistors R, series resistance is 2R; parallel resistance is R ÷ 2. Then use I = V ÷ R_equivalent.",
+        "ar": "لمقاومتين متساويتين قيمة كل منهما م: مقاومة التوالي = ٢م، ومقاومة التوازي = م÷٢. ثم احسب شدة التيار = فرق الجهد ÷ المقاومة المكافئة."
+      },
+      "storySolution": {
+        "en": "With 6 V and two 6 Ω resistors in series, total resistance is 12 Ω and current is 0.5 A.",
+        "ar": "مع ٦ فولت ومقاومتين ٦ أوم على التوالي، المقاومة الكلية ١٢ أوم والتيار ٠٫٥ أمبير."
+      },
+      "quiz": {
+        "question": "Two 6 Ω resistors in series have equivalent resistance of:",
+        "options": [
+          "3 Ω",
+          "6 Ω",
+          "12 Ω"
+        ],
+        "correct": 2,
+        "why": "Series resistances add: 6 + 6 = 12 Ω.",
+        "questionAr": "ما المقاومة المكافئة لمقاومتين 6 أوم متصلتين على التوالي؟",
+        "optionsAr": [
+          "3 أوم",
+          "6 أوم",
+          "12 أوم"
+        ]
+      },
+      "objectives": {
+        "en": [
+          "Ohm’s law: V = I R",
+          "Resistors in series and parallel",
+          "Electric power and energy",
+          "Household electricity and safety"
+        ],
+        "ar": [
+          "قانون أوم",
+          "توصيل المقاومات توالي وتوازٍ",
+          "القدرة والطاقة الكهربائية",
+          "استهلاك الكهرباء والأمان"
+        ]
+      }
+    },
+    {
+      "id": "p3-u2-l3",
+      "unit": "u2",
+      "unitNum": 2,
+      "lessonNum": 3,
+      "en": "Electric and Magnetic Forces",
+      "ar": "القوى الكهربية والمغناطيسية",
+      "page": 54,
+      "sim": "magnet",
+      "formal": {
+        "en": "An electric current creates a magnetic field. Increasing the number of coil turns or the current can strengthen an electromagnet. Motors convert electrical energy to mechanical motion; generators do the reverse.",
+        "ar": "يُنشئ التيار الكهربي مجالًا مغناطيسيًا. ويمكن أن تزيد شدة المغناطيس الكهربي بزيادة عدد لفات الملف أو شدة التيار. يحوّل المحرك الطاقة الكهربائية إلى حركة، ويعمل المولد في الاتجاه العكسي."
+      },
+      "story": {
+        "en": "Imagine wrapping wire around an iron nail. When current flows, it behaves like a magnet. More turns usually make the pull stronger in a simplified setup.",
+        "ar": "تخيّل سلك ملفوف حوالين مسمار حديد. لما يمر تيار، المسمار يبقى مغناطيس. ومع لفات أكتر، الجذب ممكن يقوى."
+      },
+      "solution": {
+        "en": "Compare coil turns and current while keeping other factors fixed. This simulator represents relative magnetic strength, not a laboratory measurement.",
+        "ar": "قارن عدد اللفات وشدة التيار مع تثبيت العوامل الأخرى. تعرض المحاكاة شدة نسبية للمجال وليست قياسًا معمليًا."
+      },
+      "storySolution": {
+        "en": "Increasing coil turns from 10 to 20 while holding current steady makes the simplified strength indicator double.",
+        "ar": "لو زوّدنا اللفات من ١٠ إلى ٢٠ مع ثبات التيار، مؤشر الشدة في نموذجنا المبسط هيتضاعف."
+      },
+      "quiz": {
+        "question": "Which device converts mechanical motion into electrical energy?",
+        "options": [
+          "Electric motor",
+          "Electric generator",
+          "Resistor"
+        ],
+        "correct": 1,
+        "why": "A generator converts mechanical energy into electrical energy.",
+        "questionAr": "ما الجهاز الذي يحول الطاقة الميكانيكية إلى كهربائية؟",
+        "optionsAr": [
+          "محرك كهربائي",
+          "مولد كهربائي",
+          "مقاومة"
+        ]
+      },
+      "objectives": {
+        "en": [
+          "Magnetic effect of current",
+          "Electromagnets and coil turns",
+          "Force on a current-carrying wire",
+          "Motors versus generators"
+        ],
+        "ar": [
+          "الأثر المغناطيسي للتيار",
+          "المغناطيس الكهربي ولفات الملف",
+          "القوة المؤثرة على سلك يحمل تيارًا",
+          "الفرق بين المحرك والمولد"
+        ]
+      }
+    },
+    {
+      "id": "p3-u3-l1",
+      "unit": "u3",
+      "unitNum": 3,
+      "lessonNum": 1,
+      "en": "Heredity and Variation of Traits",
+      "ar": "الوراثة وتنوع الصفات",
+      "page": 65,
+      "sim": "heredity",
+      "formal": {
+        "en": "Genes are sections of DNA on chromosomes. Different alleles can influence inherited traits. A Punnett square predicts possible allele combinations; it does not guarantee the outcome for any individual child.",
+        "ar": "الجينات أجزاء من الحمض النووي DNA موجودة على الكروموسومات. تؤثر الأليلات المختلفة في الصفات الموروثة. ويساعد مربع بانيت على توقع الاحتمالات ولا يحدد نتيجة فرد بعينه."
+      },
+      "story": {
+        "en": "Imagine each parent handing one card from their pair to a new generation. The two cards combine to make one possible genetic combination.",
+        "ar": "تخيّل كل أب وأم بيدّوا كارت واحد من الكارتين اللي عندهم. الكارتين بيكوّنوا احتمال جيني للجيل الجديد."
+      },
+      "solution": {
+        "en": "For the simple Mendelian example Aa × Aa, possible genotypes are AA, Aa, Aa, aa: a 1:2:1 ratio.",
+        "ar": "في المثال المندلي البسيط Aa × Aa تكون التراكيب المحتملة AA وAa وAa وaa، بنسبة ١ : ٢ : ١."
+      },
+      "storySolution": {
+        "en": "A Punnett square shows possibilities, not promises. In an Aa × Aa cross, one of four equally likely cells is aa.",
+        "ar": "مربع بانيت بيعرض احتمالات مش وعود. في Aa × Aa خانة واحدة من الأربع بتكون aa."
+      },
+      "quiz": {
+        "question": "In a simple Aa × Aa cross, the probability of aa is:",
+        "options": [
+          "0%",
+          "25%",
+          "75%"
+        ],
+        "correct": 1,
+        "why": "One of the four equally likely combinations is aa.",
+        "questionAr": "في مثال وراثة مندلي بسيط Aa × Aa، ما احتمال التركيب aa؟",
+        "optionsAr": [
+          "0٪",
+          "25٪",
+          "75٪"
+        ]
+      },
+      "objectives": {
+        "en": [
+          "DNA, genes and chromosomes",
+          "Alleles and dominant/recessive inheritance",
+          "Genotype and phenotype",
+          "Mendelian crosses and Punnett squares",
+          "Genetic diversity"
+        ],
+        "ar": [
+          "DNA والجينات والكروموسومات",
+          "الأليلات والصفات السائدة والمتنحية",
+          "التركيب الجيني والصفة الظاهرية",
+          "التزاوج المندلي ومربع بانيت",
+          "التنوع الوراثي"
+        ]
+      }
+    },
+    {
+      "id": "p3-u3-l2",
+      "unit": "u3",
+      "unitNum": 3,
+      "lessonNum": 2,
+      "en": "Natural Selection and Artificial Selection",
+      "ar": "الانتخاب الطبيعي والانتخاب الصناعي",
+      "page": 75,
+      "sim": "selection",
+      "formal": {
+        "en": "Natural selection changes how common inherited traits become when they affect survival or reproduction in an environment. Artificial selection occurs when humans deliberately choose organisms with desired inherited traits for breeding.",
+        "ar": "يتغير شيوع الصفات الموروثة بالانتخاب الطبيعي عندما تؤثر في البقاء والتكاثر في بيئة معينة. أما الانتخاب الصناعي فيحدث عندما يختار الإنسان كائنات ذات صفات مرغوبة للتكاثر."
+      },
+      "story": {
+        "en": "Imagine light and dark moths on different tree trunks. Better camouflage may make some easier to survive. A farmer choosing seeds for a specific trait is a different kind of selection.",
+        "ar": "تخيّل فراشات فاتحة وغامقة على شجر بألوان مختلفة. اللي تمويهها أحسن ممكن تنجو أكتر. أما المزارع اللي بيختار بذور لصفة معينة، ده انتخاب صناعي."
+      },
+      "solution": {
+        "en": "Check who is doing the selection: environmental pressures for natural selection, deliberate human breeding for artificial selection.",
+        "ar": "حدّد سبب الاختيار: ضغوط البيئة في الانتخاب الطبيعي، أو اختيار الإنسان المتعمد للتكاثر في الانتخاب الصناعي."
+      },
+      "storySolution": {
+        "en": "Selecting sheep for more wool is artificial selection; camouflage helping insects avoid predators is natural selection.",
+        "ar": "اختيار الغنم عشان صوف أكتر انتخاب صناعي؛ أما تمويه الحشرات اللي يساعدها تهرب من المفترسات فده انتخاب طبيعي."
+      },
+      "quiz": {
+        "question": "A farmer breeding plants for larger fruit is an example of:",
+        "options": [
+          "Natural selection",
+          "Artificial selection",
+          "Radioactive dating"
+        ],
+        "correct": 1,
+        "why": "Humans deliberately choose breeding parents for a desired trait.",
+        "questionAr": "اختيار مزارع نباتات ذات ثمار أكبر للتكاثر مثال على ماذا؟",
+        "optionsAr": [
+          "الانتخاب الطبيعي",
+          "الانتخاب الصناعي",
+          "التأريخ الإشعاعي"
+        ]
+      },
+      "objectives": {
+        "en": [
+          "Population variation and environmental pressures",
+          "Natural selection and camouflage",
+          "Artificial selection in breeding",
+          "How selection changes inherited traits over generations"
+        ],
+        "ar": [
+          "التنوع في الجماعات وضغوط البيئة",
+          "الانتخاب الطبيعي والتمويه",
+          "الانتخاب الصناعي في التربية",
+          "تغير شيوع الصفات الموروثة عبر الأجيال"
+        ]
+      }
+    },
+    {
+      "id": "p3-u4-l1",
+      "unit": "u4",
+      "unitNum": 4,
+      "lessonNum": 1,
+      "en": "The Fossil Record",
+      "ar": "السجل الحفري",
+      "page": 85,
+      "sim": "fossils",
+      "formal": {
+        "en": "Fossils are preserved remains, impressions or traces of ancient organisms. Sedimentary layers and index fossils help scientists compare relative ages and reconstruct past environments.",
+        "ar": "الحفريات بقايا أو طبعات أو آثار كائنات قديمة محفوظة. تساعد الطبقات الرسوبية والحفريات المرشدة العلماء على مقارنة الأعمار النسبية واستنتاج البيئات القديمة."
+      },
+      "story": {
+        "en": "Imagine an old stack of notebooks. The bottom one was placed first. In an undisturbed stack of rock layers, lower layers are usually older.",
+        "ar": "تخيّل كراسات متكومة فوق بعض. اللي تحت اتحط الأول. في طبقات الصخور غير المقلوبة، الطبقة اللي تحت غالبًا أقدم."
+      },
+      "solution": {
+        "en": "Use the law of superposition for undisturbed sedimentary rock: lower layers are generally older than upper layers.",
+        "ar": "استخدم قانون تعاقب الطبقات في الصخور الرسوبية غير المضطربة: الطبقات السفلية عادة أقدم من العليا."
+      },
+      "storySolution": {
+        "en": "If fossil A is in an undisturbed bottom layer and fossil B is at the top, fossil A is usually older.",
+        "ar": "لو حفرية أ في طبقة سفلية غير مضطربة وحفرية ب فوقها، أ غالبًا أقدم."
+      },
+      "quiz": {
+        "question": "In undisturbed sedimentary rocks, the oldest layer is usually:",
+        "options": [
+          "At the top",
+          "At the bottom",
+          "Always the thickest"
+        ],
+        "correct": 1,
+        "why": "By superposition, lower layers are generally older in an undisturbed sequence.",
+        "questionAr": "في طبقات صخور رسوبية غير مضطربة، تكون الطبقة الأقدم عادة أين؟",
+        "optionsAr": [
+          "في الأعلى",
+          "في الأسفل",
+          "هي دائمًا الأكثر سُمكًا"
+        ]
+      },
+      "objectives": {
+        "en": [
+          "How fossils form",
+          "Fossil types and fossil record",
+          "Index fossils and past environments",
+          "Relative ages and superposition"
+        ],
+        "ar": [
+          "طرق تكوّن الحفريات",
+          "أنواع الحفريات والسجل الحفري",
+          "الحفريات المرشدة والبيئات القديمة",
+          "الأعمار النسبية وتعاقب الطبقات"
+        ]
+      }
+    },
+    {
+      "id": "p3-u4-l2",
+      "unit": "u4",
+      "unitNum": 4,
+      "lessonNum": 2,
+      "en": "Geologic Time",
+      "ar": "الأزمنة الجيولوجية",
+      "page": 95,
+      "sim": "geologic",
+      "formal": {
+        "en": "The geologic time scale divides Earth’s history into large and small intervals. Relative dating orders events; radiometric dating estimates absolute ages using known radioactive decay rates and half-life.",
+        "ar": "يقسم مقياس الزمن الجيولوجي تاريخ الأرض إلى فترات متفاوتة. يرتب التأريخ النسبي الأحداث، بينما يقدّر التأريخ الإشعاعي الأعمار العددية بمعدلات التحلل ونصف العمر."
+      },
+      "story": {
+        "en": "Imagine a clock that loses half its sand every hour. After one hour half remains; after another, a quarter remains. Radioactive isotopes decay in a predictable statistical pattern.",
+        "ar": "تخيّل ساعة رملية كل فترة بتفقد نص الرمل الباقي. بعد فترة النص، وبعد فترتين الربع. النظائر المشعة بتتحلل بنمط إحصائي معروف."
+      },
+      "solution": {
+        "en": "After n half-lives, the fraction of the original parent isotope remaining is (1/2)^n.",
+        "ar": "بعد عدد ن من فترات نصف العمر، تكون النسبة المتبقية من النظير الأصلي هي (١/٢) أس ن."
+      },
+      "storySolution": {
+        "en": "After three half-lives, 1/8 of the original isotope remains. That is 12.5%, not 1/3.",
+        "ar": "بعد ٣ فترات نصف عمر، بيتبقى ١/٨ من النظير الأصلي؛ يعني ١٢٫٥٪."
+      },
+      "quiz": {
+        "question": "After two half-lives, what fraction remains?",
+        "options": [
+          "1/2",
+          "1/4",
+          "1/8"
+        ],
+        "correct": 1,
+        "why": "Half, then half again: 1/2 × 1/2 = 1/4.",
+        "questionAr": "بعد مرور فترتين من نصف العمر، ما الكسر المتبقي من النظير الأصلي؟",
+        "optionsAr": [
+          "1/2",
+          "1/4",
+          "1/8"
+        ]
+      },
+      "objectives": {
+        "en": [
+          "Geologic eons, eras, periods and epochs",
+          "Relative dating of rock layers",
+          "Absolute dating and radioactivity",
+          "Half-life and remaining parent isotope"
+        ],
+        "ar": [
+          "الدهور والحقب والفترات والعصور الجيولوجية",
+          "التأريخ النسبي لطبقات الصخور",
+          "التأريخ العددي والنشاط الإشعاعي",
+          "نصف العمر والنظير الأصلي المتبقي"
+        ]
+      }
+    }
+  ],
+  "source": "Egyptian National Science (Discover and Learn) Term 1; detailed topic coverage cross-checked with contemporary curriculum summaries; original explanations and simulations"
+}
