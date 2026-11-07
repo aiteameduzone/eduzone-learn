@@ -13,7 +13,7 @@
   function save() { E.store.set("ez3_sci3", P); }
   function T(pair) { return typeof pair === "string" ? pair : (E.isAr() ? pair[1] : pair[0]); }
   function lang() { return E.isAr() ? "ar" : "en"; }
-  function units() { return (E.SCI3 && E.SCI3.units) || []; }
+  function units() { var u = (E.SCI3 && E.SCI3.units) || []; u.forEach(function (x) { x.lessons.forEach(function (l) { l.unit = x; }); }); return u; }
   function all() { var a = []; units().forEach(function (u) { u.lessons.forEach(function (l) { l.unit = u; a.push(l); }); }); return a; }
   function byId(id) { return all().filter(function (l) { return l.id === id; })[0] || null; }
   function starHTML(k) { var h = ""; for (var i = 0; i < 3; i++) h += i < k ? "⭐" : '<span class="off">⭐</span>'; return '<span class="stars">' + h + "</span>"; }
