@@ -15,10 +15,10 @@
   D.u1l1 = {
     title: ["The activity series", "سلسلة النشاط الكيميائي"],
     svg: function () {
-      var m = ["K", "Na", "Ca", "Mg", "Al", "Zn", "Fe", "Sn", "Pb", "H", "Cu", "Hg", "Ag", "Pt", "Au"], s = "";
+      var m = ["K", "Na", "Li", "Ba", "Ca", "Mg", "Al", "Zn", "Fe", "Sn", "Pb", "H", "Cu", "Hg", "Ag", "Pt", "Au"], s = "";
       m.forEach(function (x, i) {
-        var c = i < 3 ? "#f87171" : i < 9 ? "#fb923c" : i === 9 ? "#facc15" : "#94a3b8", h = 150 - i * 7;
-        s += '<rect x="' + (12 + i * 25.3) + '" y="' + (190 - h) + '" width="22" height="' + h + '" rx="5" fill="' + c + '"/>' + tx(23 + i * 25.3, 208, x);
+        var c = i < 5 ? "#f87171" : i < 11 ? "#fb923c" : i === 11 ? "#facc15" : "#94a3b8", h = 150 - i * 6;
+        s += '<rect x="' + (10 + i * 22.6) + '" y="' + (190 - h) + '" width="19" height="' + h + '" rx="5" fill="' + c + '"/>' + tx(19.5 + i * 22.6, 208, x);
       });
       s += '<path d="M380 26 L30 26" stroke="var(--muted)" stroke-width="3" marker-end="url(#ar1)"/><defs><marker id="ar1" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="var(--muted)"/></marker></defs>' +
         tx(205, 18, t("more active", "أكثر نشاطًا"), mut);
@@ -150,7 +150,7 @@
       [55, 80, ["Strong magnets", "مغناطيسان قويان"], ["Their magnetic field runs from the N pole to the S pole across the coil.", "مجالهما المغناطيسي يمتد من القطب الشمالي إلى الجنوبي عبر الملف."]],
       [200, 70, ["The coil", "الملف"], ["Current in the coil inside the field makes two equal and opposite forces: a couple that turns it.", "مرور التيار في الملف داخل المجال يولّد قوتين متساويتين ومتضادتين تكوّنان ازدواجًا يديره."]],
       [200, 192, ["Split ring", "الأسطوانة المشقوقة"], ["Reverses the current in the coil every half turn, so it keeps spinning the same way.", "تعكس التيار في الملف كل نصف دورة فيستمر في الدوران في الاتجاه نفسه."]],
-      [233, 197, ["Carbon brushes", "فرشتا الكربون"], ["Press on the split ring and carry current into the spinning coil.", "تضغطان على الأسطوانة المشقوقة وتنقلان التيار إلى الملف الدوار."]],
+      [233, 197, ["Graphite brushes", "فرشتا الجرافيت"], ["Press on the split ring and carry current into the spinning coil.", "تضغطان على الأسطوانة المشقوقة وتنقلان التيار إلى الملف الدوار."]],
       [200, 226, ["Energy change", "تحول الطاقة"], ["A motor changes electrical energy into kinetic energy. A generator does the reverse.", "المحرك يحوّل الطاقة الكهربية إلى حركية، والمولد يفعل العكس."]]
     ]
   };
@@ -225,7 +225,7 @@
     title: ["4.6 billion years on one bar", "٤٫٦ مليار سنة على شريط واحد"],
     svg: function () {
       return '<g direction="ltr"><rect x="20" y="80" width="300" height="56" rx="8" fill="#a8a29e"/><rect x="320" y="80" width="30" height="56" fill="#93c5fd"/><rect x="350" y="80" width="20" height="56" fill="#86efac"/><rect x="370" y="80" width="12" height="56" rx="3" fill="#fcd34d"/>' +
-        tx(170, 114, t("Precambrian time", "ما قبل الكمبري")) + tx(335, 70, "🪲") + tx(360, 70, "🦖") + tx(376, 56, "🦣") +
+        tx(170, 114, t("Hadean · Archean · Proterozoic", "الهادي · الأركي · البروتيروزوي")) + tx(335, 70, "🪲") + tx(360, 70, "🦖") + tx(376, 56, "🦣") +
         '<path d="M368 140 V176" stroke="#ef4444" stroke-width="3"/>' + tx(340, 192, t("66 million years ago", "منذ ٦٦ مليون سنة"), 'style="fill:#ef4444"') +
         tx(20, 160, "4.6 bn", mut) + tx(382, 160, t("now", "الآن"), mut) + '<path d="M36 70 L36 50" stroke="var(--muted)" stroke-width="2"/>' + tx(60, 44, t("oldest crystals ~4.4 bn", "أقدم البلورات ~٤٫٤ مليار"), mut) + "</g>";
     },
@@ -269,4 +269,5 @@
     return true;
   };
   E.sciDiagramTitle = function (id) { return D[id] ? T(D[id].title) : ""; };
+  E.sciDiagrams = D;
 })();

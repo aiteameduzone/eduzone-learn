@@ -10,7 +10,7 @@
     u1l1: [
       { k: "match", q: ["Match each reaction to its type.", "صِل كل تفاعل بنوعه."],
         pairs: [[[eq("2Mg + O₂ → 2MgO"), eq("2Mg + O₂ → 2MgO")], ["Direct combination", "اتحاد مباشر"]], [[eq("CaCO₃ → CaO + CO₂"), eq("CaCO₃ → CaO + CO₂")], ["Decomposition", "تحلل"]],
-          [[eq("Zn + CuSO₄ → ZnSO₄ + Cu"), eq("Zn + CuSO₄ → ZnSO₄ + Cu")], ["Single displacement", "إحلال بسيط"]], [[eq("AgNO₃ + NaCl → NaNO₃ + AgCl"), eq("AgNO₃ + NaCl → NaNO₃ + AgCl")], ["Double displacement", "إحلال مزدوج"]]],
+          [[eq("Zn + CuSO₄ → ZnSO₄ + Cu"), eq("Zn + CuSO₄ → ZnSO₄ + Cu")], ["Single replacement", "إحلال بسيط"]], [[eq("AgNO₃ + NaCl → NaNO₃ + AgCl"), eq("AgNO₃ + NaCl → NaNO₃ + AgCl")], ["Double replacement", "إحلال مزدوج"]]],
         off: ["Two make one: combination. One breaks into two: decomposition. An element swaps in: single. Two compounds swap ions: double.", "اثنان يصبحان واحدًا: اتحاد، وواحد يتفكك: تحلل، وعنصر يحل محل آخر: إحلال بسيط، ومركبان يتبادلان الأيونات: إحلال مزدوج."],
         sto: ["Join the couple, split the couple, cut in, or swap partners: four dance moves, four reaction types.", "زوج يتكوّن، وزوج ينفصل، وراقص يأخذ المكان، وزوجان يتبادلان: أربع حركات وأربعة أنواع."] },
       { k: "tf", q: ["True or false: silver displaces copper from copper sulphate solution.", "صواب أم خطأ: الفضة تحل محل النحاس في محلول كبريتات النحاس."], a: false,
@@ -94,7 +94,7 @@
     u4l2: [
       { k: "order", q: ["Order from the oldest to the most recent.", "رتّب من الأقدم إلى الأحدث."],
         items: [["Earth forms (about 4.6 billion years ago)", "تكوّن الأرض (منذ نحو ٤٫٦ مليار سنة)"], ["Paleozoic: ancient life", "حقب الحياة القديمة"], ["Mesozoic: middle life", "حقب الحياة الوسطى"], ["Cenozoic: modern life", "حقب الحياة الحديثة"]],
-        off: ["After Precambrian time come the Paleozoic, Mesozoic and Cenozoic eras of the Phanerozoic eon.", "بعد زمن ما قبل الكمبري تأتي أحقاب الحياة القديمة ثم الوسطى ثم الحديثة في دهر الحياة الظاهرة."],
+        off: ["After the Hadean, Archean and Proterozoic eons come the Paleozoic, Mesozoic and Cenozoic eras of the Phanerozoic eon.", "بعد دهور الهادي والأركي والبروتيروزوي تأتي أحقاب الحياة القديمة ثم الوسطى ثم الحديثة في دهر الحياة الظاهرة."],
         sto: ["Earth's story book: the long opening, then ancient, middle and modern chapters.", "كتاب قصة الأرض: مقدمة طويلة ثم فصول قديمة ووسطى وحديثة."] },
       { k: "tf", q: ["True or false: relative age tells us the exact age of a rock in years.", "صواب أم خطأ: العمر النسبي يخبرنا بعمر الصخر بالسنين بالضبط."], a: false,
         off: ["False. Relative age only says older or younger; radioactive dating gives the absolute age in years.", "خطأ؛ العمر النسبي يحدد الأقدم والأحدث فقط، والتأريخ بالعناصر المشعة يعطي العمر المطلق بالسنين."],

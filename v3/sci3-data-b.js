@@ -17,7 +17,7 @@
         idea: {
           official: {
             en: ["Traits pass from parents to offspring through genes, which are segments of DNA on the chromosomes.",
-              "Each trait has two alleles, one from each parent. A dominant allele hides a recessive allele.",
+              "For each trait, an individual usually has two alleles, one from each parent. A dominant allele hides a recessive allele.",
               "The genotype is the pair of alleles, such as Yy. The phenotype is the trait we see, such as yellow seeds.",
               "Mendel's first law: pure yellow × pure green gives all yellow in the first generation, and crossing those gives 3 yellow : 1 green.",
               "Mendel's second law: two traits are inherited independently, giving 9 : 3 : 3 : 1. Recessive diseases such as thalassemia are more likely in marriages between relatives, so premarital tests help."],
@@ -82,7 +82,7 @@
         idea: {
           official: {
             en: ["In good conditions a population grows quickly, then slows down and settles at the carrying capacity of the environment.",
-              "Environmental resistance, such as limited food, competition, disease and predators, stops endless growth.",
+              "Environmental resistance, such as depleted resources, more competition, and the spread of diseases and parasites, stops endless growth.",
               "Natural selection: individuals whose traits suit the environment survive and reproduce more, so those traits become common over generations.",
               "The environment does not create new traits; it selects among traits that already exist, as with light and dark peppered moths.",
               "Artificial selection: humans choose parents with useful traits, such as cows that give a lot of milk. It is faster but can reduce genetic variation."],
@@ -107,7 +107,7 @@
         },
         words: [
           ["Carrying capacity", "السعة التحملية", "The largest population an environment can support.", "أكبر عدد من الأفراد تستطيع البيئة إعالته."],
-          ["Environmental resistance", "المقاومة البيئية", "Factors such as food shortage, competition, disease and predators.", "عوامل مثل نقص الغذاء والتنافس والأمراض والمفترسات."],
+          ["Environmental resistance", "المقاومة البيئية", "Depletion of resources, competition, and spread of diseases and parasites.", "نفاد الموارد والتنافس وانتشار الأمراض والطفيليات."],
           ["Natural selection", "الانتخاب الطبيعي", "Individuals suited to the environment survive and reproduce more.", "الأفراد الملائمون للبيئة يعيشون ويتكاثرون أكثر."],
           ["Artificial selection", "الانتخاب الصناعي", "Humans breed living things for traits they want.", "الإنسان يربّي الكائنات للحصول على صفات يريدها."],
           ["Gene bank", "بنك الجينات", "A modern store of seeds, cells and gametes to preserve traits.", "مخزن حديث للبذور والخلايا والجاميتات للحفاظ على الصفات."]
@@ -152,7 +152,7 @@
         title: { en: "The Fossil Record", ar: "السجل الحفري" },
         idea: {
           official: {
-            en: ["Fossils are remains or traces of past living things, preserved in sedimentary rock, ice, amber or natural asphalt.",
+            en: ["Fossils are remains or traces of past living things, preserved in sedimentary rock, ice, amber or natural tar.",
               "The fossil record is all the fossils found so far. The rock record is all the rock layers of the Earth's crust.",
               "There are four types: body fossils, trace fossils, molds and casts, and petrified fossils.",
               "Transitional fossils, like Archaeopteryx, share traits of two groups. Index fossils, like trilobites and ammonites, lived for a short time over a wide area.",

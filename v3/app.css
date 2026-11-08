@@ -602,3 +602,8 @@ input[type=range]{accent-color:var(--orange);width:100%;min-height:32px}
 :root:not([data-theme="light"]) .sl-item.m0,:root:not([data-theme="light"]) .sl-item.m1,:root:not([data-theme="light"]) .sl-item.m2,:root:not([data-theme="light"]) .sl-item.m3{color:#0f172a}
 .dg-spot.seen{opacity:.8}
 @media (max-width:640px){.dg-spot{width:22px;height:22px;font-size:11px;border-width:2px}}
+/* science grade chips */
+.gchips{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:14px 0 4px}
+.gchips .sw-lbl{display:inline-block !important;padding:0 4px 0 0}
+.gchips a{font-weight:900;font-size:14px;padding:8px 14px;border-radius:999px;border:2px solid var(--line);background:var(--card);color:var(--ink);text-decoration:none}
+.gchips a.on{background:var(--blue);border-color:var(--blue);color:#fff}

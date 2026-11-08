@@ -146,12 +146,12 @@
     var cd = E.CURRICULA[CUR];
     document.title = "EduZone Learn · " + E.L(cd.sub);
     document.getElementById("bsub").textContent = E.L(cd.sub);
-    if (SUBJ !== "math") { var sb = SUBJ === "sci" ? t("Science · Prep 3", "العلوم · الثالث الإعدادي") : t("Choose a subject", "اختر المادة"); document.getElementById("bsub").textContent = sb; document.title = "EduZone Learn · " + sb; }
+    if (SUBJ !== "math") { var sb = SUBJ === "sci" ? t("Science · ", "العلوم · ") + (E.sciGradeName ? E.sciGradeName() : "") : t("Choose a subject", "اختر المادة"); document.getElementById("bsub").textContent = sb; document.title = "EduZone Learn · " + sb; }
     var ss = document.getElementById("subj");
     ss.setAttribute("aria-label", t("Subject", "المادة"));
-    ss.innerHTML = '<span class="sw-lbl">' + t("Subject", "المادة") + "</span>" + [["math", "🔢", t("Maths", "الرياضيات"), t("Grade 4", "الصف الرابع")], ["sci", "🔬", t("Science", "العلوم"), t("Prep 3", "الثالث الإعدادي")]].map(function (x) {
+    ss.innerHTML = '<span class="sw-lbl">' + t("Subject", "المادة") + "</span>" + [["math", "🔢", t("Maths", "الرياضيات"), t("Grade 4", "الصف الرابع")], ["sci", "🔬", t("Science", "العلوم"), E.sciGradeName ? E.sciGradeName() : ""]].map(function (x) {
       var on = x[0] === SUBJ, dis = x[0] === "sci" && !sciOK();
-      return '<button type="button" data-v="' + x[0] + '" class="' + (on ? "on" : "") + '" aria-pressed="' + on + '"' + (dis ? ' disabled title="' + esc(t("Science follows the Egyptian Prep 3 book: choose National or British", "العلوم حسب كتاب الثالث الإعدادي المصري: اختر قومي أو بريطاني")) + '"' : "") + "><i>" + x[1] + "</i>" + esc(x[2]) + "<small>" + esc(dis ? t("National / British", "قومي / بريطاني") : x[3]) + "</small></button>";
+      return '<button type="button" data-v="' + x[0] + '" class="' + (on ? "on" : "") + '" aria-pressed="' + on + '"' + (dis ? ' disabled title="' + esc(t("Science follows the Egyptian Ministry books: choose National or British", "العلوم حسب كتب الوزارة المصرية: اختر قومي أو بريطاني")) + '"' : "") + "><i>" + x[1] + "</i>" + esc(x[2]) + "<small>" + esc(dis ? t("National / British", "قومي / بريطاني") : x[3]) + "</small></button>";
     }).join("");
     var SHORT = { british: ["British", "بريطاني"], american: ["American", "أمريكي"], national: ["National", "قومي"] };
     var cs = document.getElementById("cur");
@@ -179,7 +179,7 @@
     var note = CUR === "american" ? t("Skills are mapped to Common Core Grade 4 standards (codes shown on each skill); practice materials, not official test content.", "المهارات مرتبطة بمعايير Common Core للصف الرابع (الرمز ظاهر على كل مهارة)؛ مواد تدريبية وليست امتحانات رسمية.")
       : CUR === "national" ? t("Skills are mapped to the Egyptian Primary 4 maths units; practice materials, not official exam content.", "المهارات مرتبطة بوحدات رياضيات الصف الرابع الابتدائي المصري؛ مواد تدريبية وليست امتحانات رسمية.")
       : w("note");
-    if (SUBJ === "sci") note = t("Lessons follow the Egyptian Ministry Prep 3 Science book, Term 1. Simulations are simplified teaching models; practice material, not official exam content.", "الدروس حسب كتاب العلوم للصف الثالث الإعدادي (الفصل الأول) من وزارة التربية والتعليم، والمحاكاة نماذج تعليمية مبسطة؛ مواد تدريبية وليست امتحانًا رسميًا.");
+    if (SUBJ === "sci") note = t("Lessons follow the Egyptian Ministry " + E.sciGradeName() + " Science book, Term 1. Simulations are simplified teaching models; practice material, not official exam content.", "الدروس حسب كتاب العلوم للصف " + E.sciGradeName() + " (الفصل الأول) من وزارة التربية والتعليم، والمحاكاة نماذج تعليمية مبسطة؛ مواد تدريبية وليست امتحانًا رسميًا.");
     else if (SUBJ !== "math") note = t("EduZone Learn: practice material in English and Arabic.", "EduZone Learn: مواد تدريبية بالعربية والإنجليزية.");
     document.getElementById("foot").innerHTML = esc(note) + " " + esc(w("voiceNote")) + ' · <a href="#" id="resetp">' + esc(w("reset")) + "</a>";
     document.getElementById("resetp").onclick = function (e) {
@@ -227,7 +227,7 @@
     var ok = sciOK();
     el.innerHTML = '<section class="pick-hero"><h1>' + t("What do you want to learn today?", "ماذا تريد أن تتعلم اليوم؟") + '</h1><p class="sub">' + esc(t("Pick a subject. You can switch any time from the Subject bar at the top.", "اختر المادة، ويمكنك التغيير في أي وقت من شريط «المادة» بالأعلى.")) + '</p></section><div class="pick-grid">' +
       '<button type="button" class="pick math" data-v="math"><span class="pk-i">🔢</span><b>' + t("Maths", "الرياضيات") + "</b><small>" + esc(E.L(E.CURRICULA[CUR].sub)) + '</small><span class="pk-tags"><span class="chip">' + n(SKILLS.length) + " " + w("skills") + '</span><span class="chip">🎮 ' + t("hands-on tools", "أدوات تفاعلية") + '</span></span><span class="pk-go">' + t("Start →", "ابدأ ←") + "</span></button>" +
-      '<button type="button" class="pick sci" data-v="sci"' + (ok ? "" : " disabled") + '><span class="pk-i">🔬</span><b>' + t("Science", "العلوم") + "</b><small>" + esc(t("Prep 3 · Term 1 · Egyptian Ministry book", "الثالث الإعدادي · الفصل الأول · كتاب الوزارة")) + '</small><span class="pk-tags"><span class="chip">' + n(10) + " " + w("lessons") + '</span><span class="chip">🧪 ' + t("virtual labs", "معامل افتراضية") + '</span></span><span class="pk-go">' + (ok ? t("Start →", "ابدأ ←") : esc(t("Choose National or British", "اختر قومي أو بريطاني"))) + "</span></button></div>";
+      '<button type="button" class="pick sci" data-v="sci"' + (ok ? "" : " disabled") + '><span class="pk-i">🔬</span><b>' + t("Science", "العلوم") + "</b><small>" + esc((E.sciGrades ? E.sciGrades().map(function (g) { return E.isAr() ? g[2] : g[1]; }).join(" · ") : "") + t(" · Term 1 · Ministry books", " · الفصل الأول · كتب الوزارة")) + '</small><span class="pk-tags"><span class="chip">' + n(E.sciGrades ? E.sciGrades().length : 1) + " " + t("grades", "صفوف") + '</span><span class="chip">🧪 ' + t("virtual labs", "معامل افتراضية") + '</span></span><span class="pk-go">' + (ok ? t("Start →", "ابدأ ←") : esc(t("Choose National or British", "اختر قومي أو بريطاني"))) + "</span></button></div>";
     el.querySelectorAll(".pick").forEach(function (b) { b.onclick = function () { if (b.disabled) return; setSubj(b.dataset.v); route(); window.scrollTo(0, 0); }; });
   }
   function mission() {
@@ -610,7 +610,7 @@
     else if (parts[0] === "s") viewSkill(el, parts[1], parts[2]);
     else if (parts[0] === "mix") viewMix(el);
     else if (parts[0] === "more") viewMore(el);
-    else if (parts[0] === "sci" && E.sciView) { paintChrome(parts[1] === "mix" ? "scimix" : "sci"); E.sciView(el, parts); }
+    else if (parts[0] === "sci" && E.sciView) { E.sciView(el, parts); paintChrome(parts[1] === "mix" ? "scimix" : "sci"); }
     else viewHome(el);
     if (route.lastPath !== parts.slice(0, 2).join("/")) window.scrollTo(0, 0);
     route.lastPath = parts.slice(0, 2).join("/");

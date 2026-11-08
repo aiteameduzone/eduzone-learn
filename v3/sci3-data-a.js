@@ -23,7 +23,7 @@
           official: {
             en: ["A chemical reaction breaks bonds in the reactants and forms new bonds in the products, so new substances are made.",
               "Signs of a reaction: a colour change, a gas, a precipitate, or heat and light given out.",
-              "There are four main types: direct combination, decomposition, single displacement and double displacement.",
+              "There are four main types: direct combination, decomposition, single replacement and double replacement.",
               "In the activity series, a more active metal displaces a less active metal from its salt solution, and metals above hydrogen displace it from dilute acids.",
               "Oxidation is the loss of electrons and reduction is the gain of electrons. They always happen together."],
             ar: ["التفاعل الكيميائي هو كسر روابط في المواد المتفاعلة وتكوين روابط جديدة في المواد الناتجة، فتتكوّن مواد جديدة.",
@@ -36,8 +36,8 @@
             en: ["Imagine a dance party. The atoms are dancers holding hands, and their hands are the bonds.",
               "Combination: two dancers join into one couple. Magnesium and oxygen become magnesium oxide.",
               "Decomposition: a couple splits up when it gets too hot. Heating calcium carbonate gives calcium oxide and carbon dioxide.",
-              "Single displacement: a stronger dancer cuts in. Zinc takes copper's place, so the blue solution fades and red copper appears.",
-              "Double displacement: two couples swap partners. Silver nitrate and sodium chloride swap, and white silver chloride falls as a precipitate."],
+              "Single replacement: a stronger dancer cuts in. Zinc takes copper's place, so the blue solution fades and red copper appears.",
+              "Double replacement: two couples swap partners. Silver nitrate and sodium chloride swap, and white silver chloride falls as a precipitate."],
             ar: ["تخيّل حفلة رقص: الذرات راقصون يمسكون بأيدي بعضهم، وهذه الأيدي هي الروابط.",
               "الاتحاد المباشر: راقصان يتّحدان في زوج واحد؛ الماغنسيوم والأكسجين يكوّنان أكسيد الماغنسيوم.",
               "التحلل: الزوج ينفصل عندما تشتد الحرارة؛ تسخين كربونات الكالسيوم يعطي أكسيد الكالسيوم وثاني أكسيد الكربون.",
@@ -46,16 +46,16 @@
           }
         },
         words: [
-          ["Activity series", "سلسلة النشاط الكيميائي", "Metals in order of activity: K, Na, Ca, Mg, Al, Zn, Fe, Sn, Pb, H, Cu, Hg, Ag, Pt, Au.", "ترتيب الفلزات حسب نشاطها: K, Na, Ca, Mg, Al, Zn, Fe, Sn, Pb, H, Cu, Hg, Ag, Pt, Au."],
+          ["Chemical reactivity series", "متسلسلة النشاط الكيميائي", "Metals in descending order of reactivity: K, Na, Li, Ba, Ca, Mg, Al, Zn, Fe, Sn, Pb, H, Cu, Hg, Ag, Pt, Au.", "ترتيب الفلزات تنازليًا حسب نشاطها الكيميائي: K, Na, Li, Ba, Ca, Mg, Al, Zn, Fe, Sn, Pb, H, Cu, Hg, Ag, Pt, Au."],
           ["Precipitate", "الراسب", "A solid that forms and settles out of a solution.", "مادة صلبة تتكوّن وتنفصل عن المحلول."],
-          ["Neutralisation", "التعادل", "Acid + base → salt + water. A kind of double displacement.", "حمض + قاعدة ← ملح + ماء، وهو نوع من الإحلال المزدوج."],
+          ["Neutralisation", "التعادل", "Acid + alkali → salt + water. A kind of double replacement.", "حمض + قلوي ← ملح + ماء، وهو نوع من الإحلال المزدوج."],
           ["Oxidation", "الأكسدة", "Loss of electrons. The substance that loses them is the reducing agent.", "فقد إلكترونات، والمادة التي تفقدها هي العامل المختزل."],
           ["Reduction", "الاختزال", "Gain of electrons. The substance that gains them is the oxidising agent.", "اكتساب إلكترونات، والمادة التي تكتسبها هي العامل المؤكسد."]
         ],
         lab: { parts: [{ type: "reactlab" }, { type: "patterns" }, {
           type: "sort",
           prompt: ["Tap an equation, then tap its reaction type.", "اضغط على معادلة، ثم اضغط على نوع التفاعل."],
-          bins: [["comb", "🤝", "Direct combination", "اتحاد مباشر"], ["dec", "💥", "Decomposition", "تحلل"], ["single", "🔁", "Single displacement", "إحلال بسيط"], ["double", "🔀", "Double displacement", "إحلال مزدوج"]],
+          bins: [["comb", "🤝", "Direct combination", "اتحاد مباشر"], ["dec", "💥", "Decomposition", "تحلل"], ["single", "🔁", "Single replacement", "إحلال بسيط"], ["double", "🔀", "Double replacement", "إحلال مزدوج"]],
           items: [
             [eq("2Mg + O₂ → 2MgO"), "comb"], [eq("2Cu + O₂ → 2CuO"), "comb"],
             [eq("2HgO → 2Hg + O₂"), "dec"], [eq("CaCO₃ → CaO + CO₂"), "dec"],
@@ -65,7 +65,7 @@
         }] },
         quiz: [
           { q: ["Which type of reaction is " + eq("2Mg + O₂ → 2MgO") + "?", "ما نوع التفاعل " + eq("2Mg + O₂ → 2MgO") + "؟"],
-            c: [["Direct combination", "اتحاد مباشر"], ["Decomposition", "تحلل"], ["Single displacement", "إحلال بسيط"], ["Double displacement", "إحلال مزدوج"]],
+            c: [["Direct combination", "اتحاد مباشر"], ["Decomposition", "تحلل"], ["Single replacement", "إحلال بسيط"], ["Double replacement", "إحلال مزدوج"]],
             off: ["Two substances join to form one compound, so it is direct combination.", "مادتان تتحدان لتكوين مركب واحد، إذن هو اتحاد مباشر."],
             sto: ["Two dancers became one couple: magnesium and oxygen joined into magnesium oxide.", "راقصان أصبحا زوجًا واحدًا: الماغنسيوم والأكسجين اتّحدا في أكسيد الماغنسيوم."] },
           { q: ["Zinc is put into blue copper sulphate solution. What do you see?", "وُضع الخارصين في محلول كبريتات النحاس الأزرق. ماذا تلاحظ؟"],
@@ -81,11 +81,11 @@
             off: ["Oxidation is loss of electrons. Zinc loses two electrons, so it is oxidised and is the reducing agent.", "الأكسدة فقد إلكترونات، والخارصين فقد إلكترونين، إذن تأكسد وهو العامل المختزل."],
             sto: ["Zinc gives away two electrons like giving away two coins. Losing is oxidation.", "الخارصين أعطى إلكترونين كأنه أعطى عملتين، والفقد هو الأكسدة."] },
           { q: [eq("HCl + NaOH → NaCl + H₂O") + " is an example of…", eq("HCl + NaOH → NaCl + H₂O") + " مثال على…"],
-            c: [["neutralisation (double displacement)", "التعادل (إحلال مزدوج)"], ["decomposition", "التحلل"], ["direct combination", "الاتحاد المباشر"], ["single displacement", "الإحلال البسيط"]],
-            off: ["An acid and a base exchange ions to make a salt and water. That is neutralisation, a type of double displacement.", "حمض وقاعدة يتبادلان الأيونات فيتكوّن ملح وماء، وهذا تعادل وهو نوع من الإحلال المزدوج."],
+            c: [["neutralisation (double replacement)", "التعادل (إحلال مزدوج)"], ["decomposition", "التحلل"], ["direct combination", "الاتحاد المباشر"], ["single replacement", "الإحلال البسيط"]],
+            off: ["An acid and a base exchange ions to make a salt and water. That is neutralisation, a type of double replacement.", "حمض وقاعدة يتبادلان الأيونات فيتكوّن ملح وماء، وهذا تعادل وهو نوع من الإحلال المزدوج."],
             sto: ["Two couples swapped partners: H met OH to make water, and Na met Cl to make salt.", "زوجان تبادلا الشركاء: الهيدروجين قابل الهيدروكسيد فتكوّن الماء، والصوديوم قابل الكلور فتكوّن الملح."] },
           { q: ["Heating mercury oxide gives mercury and oxygen. This is…", "تسخين أكسيد الزئبق يعطي زئبقًا وأكسجين. هذا تفاعل…"],
-            c: [["thermal decomposition", "تحلل حراري"], ["direct combination", "اتحاد مباشر"], ["double displacement", "إحلال مزدوج"], ["neutralisation", "تعادل"]],
+            c: [["thermal decomposition", "تحلل حراري"], ["direct combination", "اتحاد مباشر"], ["double replacement", "إحلال مزدوج"], ["neutralisation", "تعادل"]],
             off: ["One compound breaks down by heat into simpler substances: thermal decomposition, " + eq("2HgO → 2Hg + O₂") + ".", "مركب واحد يتفكك بالحرارة إلى مواد أبسط، وهذا تحلل حراري: " + eq("2HgO → 2Hg + O₂") + "."],
             sto: ["The heat made the couple split: mercury went one way and oxygen went the other.", "الحرارة جعلت الزوج ينفصل: الزئبق في اتجاه والأكسجين في اتجاه آخر."] }
         ]
@@ -193,7 +193,7 @@
         lab: { parts: [{ type: "lungsim" }, {
           type: "sort",
           prompt: ["Sort what is in tobacco smoke. Tap a substance, then tap its group.", "صنّف مكونات دخان التبغ: اضغط على المادة ثم على مجموعتها."],
-          bins: [["add", "🪝", "Addictive substance", "مادة مسببة للإدمان"], ["gas", "☁️", "Toxic or irritant gas", "غاز سام أو مهيّج"], ["metal", "🔩", "Heavy metal", "فلز ثقيل"], ["rad", "☢️", "Radioactive", "مادة مشعة"]],
+          bins: [["add", "🪝", "Addictive substance", "مادة مسببة للإدمان"], ["gas", "☁️", "Toxic or irritant gas", "غاز سام أو مهيّج"], ["metal", "🔩", "Toxic heavy element", "عنصر ثقيل سام"], ["rad", "☢️", "Radioactive", "مادة مشعة"]],
           items: [
             [["Nicotine", "النيكوتين"], "add"],
             [["Carbon monoxide", "أول أكسيد الكربون"], "gas"], [["Hydrogen cyanide", "سيانيد الهيدروجين"], "gas"], [["Ammonia", "النشادر"], "gas"], [["Nitrogen oxides", "أكاسيد النيتروجين"], "gas"],
@@ -385,12 +385,12 @@
             en: ["Oersted found that a current in a wire makes a magnetic field that deflects a compass needle.",
               "An electromagnet is insulated copper wire wound round a soft iron core. It is a temporary magnet.",
               "It becomes stronger with more turns of wire, a bigger current, and a soft iron core.",
-              "A current-carrying wire in a magnetic field feels a force. The electric motor uses this to change electrical energy into kinetic energy, with a split ring and two carbon brushes.",
+              "A current-carrying wire in a magnetic field feels a force. The electric motor uses this to change electrical energy into kinetic energy, with a commutator (a split cylinder) and two graphite brushes.",
               "A generator does the opposite: a coil spinning in a magnetic field produces EMF, changing kinetic energy into electrical energy. Power stations produce alternating current."],
             ar: ["اكتشف أورستد أن مرور تيار في سلك يولّد مجالًا مغناطيسيًا يحرّف إبرة البوصلة.",
               "المغناطيس الكهربي سلك نحاسي معزول ملفوف حول قلب من الحديد المطاوع، وهو مغناطيس مؤقت.",
               "تزداد قوته بزيادة عدد لفات السلك، وزيادة شدة التيار، ووجود قلب من الحديد المطاوع.",
-              "السلك الذي يمر به تيار داخل مجال مغناطيسي تؤثر فيه قوة، ويستخدم المحرك الكهربي ذلك لتحويل الطاقة الكهربية إلى طاقة حركية، وفيه أسطوانة مشقوقة وفرشتان من الكربون.",
+              "السلك الذي يمر به تيار داخل مجال مغناطيسي تؤثر فيه قوة، ويستخدم المحرك الكهربي ذلك لتحويل الطاقة الكهربية إلى طاقة حركية، وفيه أسطوانة مشقوقة (مُبدِّل) وفرشتان من الجرافيت.",
               "المولد الكهربي يعمل عكس ذلك: ملف يدور في مجال مغناطيسي فتتولد قوة دافعة كهربية، أي تتحول الطاقة الحركية إلى كهربية، ومحطات الكهرباء تنتج تيارًا مترددًا."]
           },
           story: {

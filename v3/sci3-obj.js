@@ -6,7 +6,7 @@
   "en": [
    "Signs and patterns of chemical change",
    "Direct combination and decomposition",
-   "Single and double displacement",
+   "Single and double replacement",
    "Reactivity series and simple redox"
   ],
   "ar": [

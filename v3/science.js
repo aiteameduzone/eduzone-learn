@@ -13,9 +13,26 @@
   function save() { E.store.set("ez3_sci3", P); }
   function T(pair) { return typeof pair === "string" ? pair : (E.isAr() ? pair[1] : pair[0]); }
   function lang() { return E.isAr() ? "ar" : "en"; }
-  function units() { var u = (E.SCI3 && E.SCI3.units) || []; u.forEach(function (x) { x.lessons.forEach(function (l) { l.unit = x; }); }); return u; }
-  function all() { var a = []; units().forEach(function (u) { u.lessons.forEach(function (l) { l.unit = u; a.push(l); }); }); return a; }
-  function byId(id) { return all().filter(function (l) { return l.id === id; })[0] || null; }
+  /* grades: Prep 3 = EZ3.SCI3 (ids u1l1...); other grades register EZ3.SCIG[g] = {units, book} with prefixed ids (p4u1l1...) */
+  var GR = [["p4", "Primary 4", "الرابع الابتدائي"], ["p5", "Primary 5", "الخامس الابتدائي"], ["p6", "Primary 6", "السادس الابتدائي"], ["prep1", "Prep 1", "الأول الإعدادي"], ["prep2", "Prep 2", "الثاني الإعدادي"], ["prep3", "Prep 3", "الثالث الإعدادي"]];
+  function gData(g) { return g === "prep3" ? E.SCI3 : (E.SCIG && E.SCIG[g]); }
+  function grades() { return GR.filter(function (g) { var d = gData(g[0]); return d && d.units && d.units.length; }); }
+  var G = E.store.get("ez3_sgrade", "prep3");
+  if (!gData(G)) G = "prep3";
+  function setG(g) { if (gData(g) && g !== G) { G = g; E.store.set("ez3_sgrade", g); } }
+  function gName(g) { var x = GR.filter(function (r) { return r[0] === (g || G); })[0]; return x ? (E.isAr() ? x[2] : x[1]) : ""; }
+  function units(g) { var d = gData(g || G), u = (d && d.units) || []; u.forEach(function (x) { x.lessons.forEach(function (l) { l.unit = x; l.grade = g || G; }); }); return u; }
+  function all(g) { var a = []; units(g).forEach(function (u) { u.lessons.forEach(function (l) { a.push(l); }); }); return a; }
+  function byId(id) { var f = null; grades().forEach(function (g) { if (!f) f = all(g[0]).filter(function (l) { return l.id === id; })[0] || null; }); if (f) setG(f.grade); return f; }
+  function unitById(id) { var f = null; grades().forEach(function (g) { if (!f) { f = units(g[0]).filter(function (u) { return u.id === id; })[0] || null; if (f) setG(g[0]); } }); return f; }
+  E.sciGradeName = gName;
+  E.sciGrades = grades;
+  E.sciCount = function () { return all().length; };
+  function gchips() {
+    var gs = grades();
+    if (gs.length < 2) return "";
+    return '<div class="gchips" role="group" aria-label="' + esc(t("Grade", "الصف")) + '"><span class="sw-lbl">' + t("Grade", "الصف") + "</span>" + gs.map(function (g) { return '<a href="#/sci/g/' + g[0] + '" class="' + (g[0] === G ? "on" : "") + '">' + esc(E.isAr() ? g[2] : g[1]) + "</a>"; }).join("") + "</div>";
+  }
   function starHTML(k) { var h = ""; for (var i = 0; i < 3; i++) h += i < k ? "⭐" : '<span class="off">⭐</span>'; return '<span class="stars">' + h + "</span>"; }
   function soft(c) { return "background:var(--" + c + "-soft)"; }
   function unitTitle(u) { return t("Unit ", "الوحدة ") + n(u.num) + " · " + E.L(u.title); }
@@ -23,8 +40,8 @@
   var arrow = function () { return t("→", "←"); };
 
   var W = {
-    sci: ["Science · Prep 3", "العلوم · الثالث الإعدادي"],
-    sciSub: ["Term 1 · Egyptian Ministry book · 4 units, 10 lessons", "الفصل الدراسي الأول · كتاب الوزارة · ٤ وحدات و١٠ دروس"],
+    sci: function () { return t("Science · ", "العلوم · ") + gName(); },
+    sciSub: function () { var u = units(); return t("Term 1 · Egyptian Ministry book · ", "الفصل الدراسي الأول · كتاب الوزارة · ") + n(u.length) + t(" units, ", " وحدات و") + n(all().length) + t(" lessons", " دروس"); },
     sciHome: ["Learn each lesson in two voiced ways, explore it in a hands-on lab, then take the quiz.", "تعلّم كل درس بطريقتين بالصوت، وجرّبه في معمل تفاعلي، ثم خذ الاختبار."],
     allLessons: ["All lessons", "كل الدروس"],
     learn: ["Learn", "تعلّم"], lab: ["Lab", "المعمل"], quiz: ["Quiz", "الاختبار"],
@@ -41,11 +58,11 @@
     theAns: ["The answer is", "الإجابة الصحيحة"], hearSol: ["Hear the solution two ways", "استمع إلى الحل بطريقتين"], next: ["Next", "التالي"],
     done: ["Quiz complete!", "انتهى الاختبار!"], again: ["Try the quiz again ↻", "أعد الاختبار ↻"], nextLesson: ["Next lesson", "الدرس التالي"],
     page: ["Book page", "صفحة الكتاب"], unit: ["Unit", "الوحدة"], lessons: ["lessons", "دروس"],
-    note: ["Lesson titles follow the Ministry of Education Prep 3 Science book, Term 1. Practice material, not official exam content.", "عناوين الدروس حسب كتاب العلوم للصف الثالث الإعدادي (الفصل الأول) من وزارة التربية والتعليم. مواد تدريبية وليست امتحانًا رسميًا."],
+    note: function () { return t("Lesson titles follow the Ministry of Education " + gName() + " Science book, Term 1 (2026-2027). Practice material, not official exam content.", "عناوين الدروس حسب كتاب العلوم للصف " + gName() + " (الفصل الأول ٢٠٢٦-٢٠٢٧) من وزارة التربية والتعليم. مواد تدريبية وليست امتحانًا رسميًا."); },
     goals: ["Goals", "الأهداف"], pickFirst: ["Tap an item first.", "اضغط على عنصر أولًا."], notHere: ["Not this group. Try another one.", "ليست هذه المجموعة، جرّب مجموعة أخرى."],
     home: ["Home", "الرئيسية"], answerIs: ["So the answer is", "إذن الإجابة هي"]
   };
-  function w(k) { var x = W[k]; return x ? T(x) : k; }
+  function w(k) { var x = W[k]; return typeof x === "function" ? x() : x ? T(x) : k; }
 
   /* ---------- progress used by the home page ---------- */
   function lessonDone(l) { return (P.learn[l.id] ? 1 : 0) + (P.lab[l.id] ? 1 : 0) + ((P.stars[l.id] || 0) > 0 ? 1 : 0); }
@@ -71,6 +88,7 @@
     var one = uid ? units().filter(function (u) { return u.id === uid; })[0] : null;
     var h = '<div class="crumbs"><a href="#/">' + w("home") + "</a>" + (one ? ' / <a href="#/sci">' + w("sci") + "</a>" : "") + "</div>" +
       '<section class="card pad sci-hero"><div class="sci-hero-i">🔬</div><div><h1>' + (one ? one.icon + " " + esc(unitTitle(one)) : w("sci")) + '</h1><p class="sub">' + esc(one ? w("sciSub") : w("sciHome")) + "</p></div></section>";
+    if (!one) h += gchips();
     (one ? [one] : units()).forEach(function (u) {
       h += '<section class="sec"><div class="sec-head"><h2>' + u.icon + " " + esc(unitTitle(u)) + "</h2>" + (one ? "" : '<a class="tag-link" href="#/sci/' + u.id + '">' + n(u.lessons.length) + " " + w("lessons") + "</a>") + '</div><div class="slist">' +
         u.lessons.map(lessonRow).join("") + "</div></section>";
@@ -108,7 +126,7 @@
     return '<div class="obj" style="margin:0 0 12px"><b style="width:100%;font-size:14px">🎯 ' + t("In this lesson", "في هذا الدرس") + "</b>" + (o[lang()] || o.en).map(function (x) { return '<span class="chip blue">' + esc(x) + "</span>"; }).join("") + "</div>";
   }
   function learnTab(body, l) {
-    var L = lang(), hasD = !!E.sciDiagram;
+    var L = lang(), hasD = !!(E.sciDiagram && E.sciDiagramTitle(l.id));
     var sec = function (k, title, sub, inner) { return '<div class="card pad"><div class="lhead"><span class="lnum">' + n(k) + '</span><div><h3>' + title + '</h3><p class="sub">' + esc(sub) + "</p></div></div>" + inner + "</div>"; };
     body.innerHTML = '<div class="learn-flow">' +
       sec(1, w("idea"), w("ideaSub"), objHTML(l) + '<div id="idea"></div>') +
@@ -319,6 +337,7 @@
     el.innerHTML = '<section class="hero sci-home"><div><h1>🔬 ' + w("sci") + "</h1><p>" + esc(w("sciSub")) + '</p><div class="btn-row" style="margin:16px 0"><a class="btn primary" href="#/sci/' + next.id + "/" + nextTab(next) + '">▶ ' + esc(E.L(next.title)) + '</a><a class="btn" href="#/sci/mix">🎯 ' + t("Quick revision", "مراجعة سريعة") + "</a></div>" +
       '<div class="hero-stats"><div class="hstat"><b>' + n(stars) + "/" + n(ls.length * 3) + "</b><span>⭐ " + t("stars", "نجمة") + '</span></div><div class="hstat"><b>' + n(ls.filter(function (l) { return P.lab[l.id]; }).length) + "/" + n(ls.length) + "</b><span>🧪 " + t("labs done", "معامل منجزة") + "</span></div></div></div>" +
       '<div class="sci-hero-art">⚗️🧲🧬🦴</div></section>' +
+      gchips() +
       '<section class="journey"><b>' + esc(t("Every lesson, step by step", "كل درس خطوة بخطوة")) + '</b><div class="jsteps">' + [["🎓", t("Official voice", "شرح رسمي")], ["📖", t("Story voice", "شرح بالقصة")], ["🔎", t("Explore the picture", "استكشف الصورة")], ["🧪", t("Simulation lab", "معمل محاكاة")], ["✅", t("Quiz + 2 spoken solutions", "اختبار + حل بطريقتين")]].map(function (x, i) {
         return '<span class="jstep"><i>' + x[0] + "</i>" + esc(x[1]) + "</span>" + (i < 4 ? '<span class="jarr">' + arrow() + "</span>" : "");
       }).join("") + "</div></section>" +
@@ -332,7 +351,8 @@
     var a = parts[1] || "";
     if (!a) return viewAll(el);
     if (a === "mix") return viewMix(el);
-    if (/^u\d+$/.test(a)) return viewAll(el, a);
+    if (a === "g") { setG(parts[2]); location.replace("#/"); return; }
+    if (/^[a-z0-9]*?u\d+$/.test(a) && unitById(a)) return viewAll(el, a);
     var l = byId(a);
     if (!l) { location.hash = "#/sci"; return; }
     viewLesson(el, l, parts[2]);

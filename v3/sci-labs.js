@@ -311,9 +311,9 @@
         atoms: [["Mg", "#ef4444", [6, 0], [56, 0]], ["O", "#3b82f6", [26, 0], [56, 36]]], plus: [[18, 0]], plusAfter: [] },
       dec: { name: ["Decomposition", "تحلل"], eqn: "2HgO → 2Hg + O₂",
         atoms: [["Hg", "#a3a3a3", [8, 0], [52, 0]], ["O", "#3b82f6", [8, 36], [78, 0]]], plus: [], plusAfter: [[68, 0]] },
-      single: { name: ["Single displacement", "إحلال بسيط"], eqn: "Zn + CuSO₄ → ZnSO₄ + Cu",
+      single: { name: ["Single replacement", "إحلال بسيط"], eqn: "Zn + CuSO₄ → ZnSO₄ + Cu",
         atoms: [["Zn", "#94a3b8", [2, 0], [50, 0]], ["Cu", "#f97316", [20, 0], [80, 0]], ["SO₄", "#22c55e", [20, 36], [50, 36]]], plus: [[12, 0]], plusAfter: [[68, 0]] },
-      double: { name: ["Double displacement", "إحلال مزدوج"], eqn: "AgNO₃ + NaCl → NaNO₃ + AgCl↓",
+      double: { name: ["Double replacement", "إحلال مزدوج"], eqn: "AgNO₃ + NaCl → NaNO₃ + AgCl↓",
         atoms: [["Ag", "#cbd5e1", [0, 0], [74, 0]], ["NO₃", "#a855f7", [0, 36], [50, 36]], ["Na", "#eab308", [20, 0], [50, 0]], ["Cl", "#14b8a6", [20, 36], [74, 36]]], plus: [[11, 0]], plusAfter: [[64, 0]] }
     };
     var keys = ["comb", "dec", "single", "double"], cur = "comb", seen = {};
