@@ -1,0 +1,5 @@
+# MOE source shelf — 2026–2027
+
+All 286 counted entries are first-term *directory listings*, including multiple language editions and variants, grouped in 15 grade/pathway categories. They have NOT been independently downloaded, inspected, OCRed, reproduced, or converted to interactive lessons. Every directory link is external (miskeg.app); the external directory points to MOE-hosted PDFs. Only two specific official-hosted PDF URLs are included in direct-links.json after previous link-level checks. This collection is a source navigator, not the complete content of 286 books.
+
+The app labels National references distinctly from British/American courses. The National grade selector covers KG1–Secondary 3, with Baccalaureate 2 a separate pathway. First-term source listings only. Do not claim second-term books or completeness. Existing Math Grade 4 and Prep 3 Science courses remain playable, but have not been fully reconciled with the complete 2026–2027 textbooks. No textbook PDF bytes are bundled.
