@@ -15,11 +15,16 @@
   function lang() { return E.isAr() ? "ar" : "en"; }
   /* grades: Prep 3 = EZ3.SCI3 (ids u1l1...); other grades register EZ3.SCIG[g] = {units, book} with prefixed ids (p4u1l1...) */
   var GR = [["p4", "Primary 4", "الرابع الابتدائي"], ["p5", "Primary 5", "الخامس الابتدائي"], ["p6", "Primary 6", "السادس الابتدائي"], ["prep1", "Prep 1", "الأول الإعدادي"], ["prep2", "Prep 2", "الثاني الإعدادي"], ["prep3", "Prep 3", "الثالث الإعدادي"]];
+  /* Secondary stage: one entry per subject book [id, EN name, AR name, EN book, AR book] */
+  GR = GR.concat([["sec1", "Sec 1 · Integrated Science", "الأول الثانوي · العلوم المتكاملة", "Integrated Science", "العلوم المتكاملة"], ["sec2phy", "Sec 2 · Physics", "الثاني الثانوي · الفيزياء", "Physics", "الفيزياء"], ["sec2chem", "Sec 2 · Chemistry", "الثاني الثانوي · الكيمياء", "Chemistry", "الكيمياء"], ["sec3phy", "Sec 3 · Physics", "الثالث الثانوي · الفيزياء", "Physics", "الفيزياء"], ["sec3chem", "Sec 3 · Chemistry", "الثالث الثانوي · الكيمياء", "Chemistry", "الكيمياء"], ["sec3bio", "Sec 3 · Biology", "الثالث الثانوي · الأحياء", "Biology", "الأحياء"]]);
   function gData(g) { return g === "prep3" ? E.SCI3 : (E.SCIG && E.SCIG[g]); }
   function grades() { return GR.filter(function (g) { var d = gData(g[0]); return d && d.units && d.units.length; }); }
   var G = E.store.get("ez3_sgrade", "prep3");
   if (!gData(G)) G = "prep3";
   function setG(g) { if (gData(g) && g !== G) { G = g; E.store.set("ez3_sgrade", g); } }
+  function bk(ar) { var x = GR.filter(function (r) { return r[0] === G; })[0]; return (x && x[ar ? 4 : 3]) || (ar ? "العلوم" : "Science"); }
+  function fullYr() { return G.indexOf("sec3") === 0; }
+  E.sciFullYear = fullYr;
   function gName(g) { var x = GR.filter(function (r) { return r[0] === (g || G); })[0]; return x ? (E.isAr() ? x[2] : x[1]) : ""; }
   function units(g) { var d = gData(g || G), u = (d && d.units) || []; u.forEach(function (x) { x.lessons.forEach(function (l) { l.unit = x; l.grade = g || G; }); }); return u; }
   function all(g) { var a = []; units(g).forEach(function (u) { u.lessons.forEach(function (l) { a.push(l); }); }); return a; }
@@ -31,7 +36,7 @@
   function gchips() {
     var gs = grades();
     if (gs.length < 2) return "";
-    return '<div class="gchips" role="group" aria-label="' + esc(t("Grade", "الصف")) + '"><span class="sw-lbl">' + t("Grade", "الصف") + "</span>" + gs.map(function (g) { return '<a href="#/sci/g/' + g[0] + '" class="' + (g[0] === G ? "on" : "") + '">' + esc(E.isAr() ? g[2] : g[1]) + "</a>"; }).join("") + "</div>";
+    return '<div class="gchips" role="group" aria-label="' + esc(t("Grade", "الصف")) + '"><span class="sw-lbl">' + t("Grade", "الصف") + "</span>" + gs.map(function (g, i) { return (g[0].indexOf("sec") === 0 && gs[i - 1] && gs[i - 1][0].indexOf("sec") !== 0 ? '<i class="gbr"></i><span class="sw-lbl">' + t("Secondary", "الثانوي") + "</span>" : "") + '<a href="#/sci/g/' + g[0] + '" class="' + (g[0] === G ? "on" : "") + '">' + esc(E.isAr() ? g[2] : g[1]) + "</a>"; }).join("") + "</div>";
   }
   function starHTML(k) { var h = ""; for (var i = 0; i < 3; i++) h += i < k ? "⭐" : '<span class="off">⭐</span>'; return '<span class="stars">' + h + "</span>"; }
   function soft(c) { return "background:var(--" + c + "-soft)"; }
@@ -41,7 +46,7 @@
 
   var W = {
     sci: function () { return t("Science · ", "العلوم · ") + gName(); },
-    sciSub: function () { var u = units(); return t("Term 1 · Egyptian Ministry book · ", "الفصل الدراسي الأول · كتاب الوزارة · ") + n(u.length) + t(" units, ", " وحدات و") + n(all().length) + t(" lessons", " دروس"); },
+    sciSub: function () { var u = units(); return (fullYr() ? t("Full-year book · Egyptian Ministry · ", "كتاب العام كاملًا · وزارة التربية والتعليم · ") : t("Term 1 · Egyptian Ministry book · ", "الفصل الدراسي الأول · كتاب الوزارة · ")) + n(u.length) + t(" units, ", " وحدات و") + n(all().length) + t(" lessons", " دروس"); },
     sciHome: ["Learn each lesson in two voiced ways, explore it in a hands-on lab, then take the quiz.", "تعلّم كل درس بطريقتين بالصوت، وجرّبه في معمل تفاعلي، ثم خذ الاختبار."],
     allLessons: ["All lessons", "كل الدروس"],
     learn: ["Learn", "تعلّم"], lab: ["Lab", "المعمل"], quiz: ["Quiz", "الاختبار"],
@@ -58,7 +63,7 @@
     theAns: ["The answer is", "الإجابة الصحيحة"], hearSol: ["Hear the solution two ways", "استمع إلى الحل بطريقتين"], next: ["Next", "التالي"],
     done: ["Quiz complete!", "انتهى الاختبار!"], again: ["Try the quiz again ↻", "أعد الاختبار ↻"], nextLesson: ["Next lesson", "الدرس التالي"],
     page: ["Book page", "صفحة الكتاب"], unit: ["Unit", "الوحدة"], lessons: ["lessons", "دروس"],
-    note: function () { return t("Lesson titles follow the Ministry of Education " + gName() + " Science book, Term 1 (2026-2027). Practice material, not official exam content.", "عناوين الدروس حسب كتاب العلوم للصف " + gName() + " (الفصل الأول ٢٠٢٦-٢٠٢٧) من وزارة التربية والتعليم. مواد تدريبية وليست امتحانًا رسميًا."); },
+    note: function () { return t("Lesson titles follow the Ministry of Education " + gName() + " " + bk() + " book, " + (fullYr() ? "full year" : "Term 1") + " (2026-2027). Practice material, not official exam content.", "عناوين الدروس حسب كتاب " + bk(1) + " للصف " + gName() + " (" + (fullYr() ? "العام كاملًا" : "الفصل الأول") + " ٢٠٢٦-٢٠٢٧) من وزارة التربية والتعليم. مواد تدريبية وليست امتحانًا رسميًا."); },
     goals: ["Goals", "الأهداف"], pickFirst: ["Tap an item first.", "اضغط على عنصر أولًا."], notHere: ["Not this group. Try another one.", "ليست هذه المجموعة، جرّب مجموعة أخرى."],
     home: ["Home", "الرئيسية"], answerIs: ["So the answer is", "إذن الإجابة هي"]
   };

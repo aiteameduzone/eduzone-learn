@@ -607,3 +607,4 @@ input[type=range]{accent-color:var(--orange);width:100%;min-height:32px}
 .gchips .sw-lbl{display:inline-block !important;padding:0 4px 0 0}
 .gchips a{font-weight:900;font-size:14px;padding:8px 14px;border-radius:999px;border:2px solid var(--line);background:var(--card);color:var(--ink);text-decoration:none}
 .gchips a.on{background:var(--blue);border-color:var(--blue);color:#fff}
+.gchips .gbr{flex-basis:100%;height:0}
