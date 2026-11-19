@@ -88,6 +88,7 @@
     E.groupsFor("national", SKILLS).forEach(function (g) { if (g.unit) g.skills.forEach(function (s) { NATUNIT[s.id] = g.unit; }); });
   }
   var SUBJ = E.store.get("ez3_subj", null); if (SUBJ !== "math" && SUBJ !== "sci") SUBJ = null;
+  function mthOn() { return SUBJ === "math" && CUR === "national" && !!(E.mthActive && E.mthActive()); }
   function sciOK() { return (CUR === "national" || CUR === "british") && !!E.sciView; }
   function setSubj(v) { SUBJ = v; E.store.set("ez3_subj", v); }
   E.subject = function () { return SUBJ; };
@@ -146,10 +147,11 @@
     var cd = E.CURRICULA[CUR];
     document.title = "EduZone Learn · " + E.L(cd.sub);
     document.getElementById("bsub").textContent = E.L(cd.sub);
+    if (mthOn()) { var mb = t("Maths · ", "الرياضيات · ") + E.mthGradeName(); document.getElementById("bsub").textContent = mb; document.title = "EduZone Learn · " + mb; }
     if (SUBJ !== "math") { var sb = SUBJ === "sci" ? t("Science · ", "العلوم · ") + (E.sciGradeName ? E.sciGradeName() : "") : t("Choose a subject", "اختر المادة"); document.getElementById("bsub").textContent = sb; document.title = "EduZone Learn · " + sb; }
     var ss = document.getElementById("subj");
     ss.setAttribute("aria-label", t("Subject", "المادة"));
-    ss.innerHTML = '<span class="sw-lbl">' + t("Subject", "المادة") + "</span>" + [["math", "🔢", t("Maths", "الرياضيات"), t("Grade 4", "الصف الرابع")], ["sci", "🔬", t("Science", "العلوم"), E.sciGradeName ? E.sciGradeName() : ""]].map(function (x) {
+    ss.innerHTML = '<span class="sw-lbl">' + t("Subject", "المادة") + "</span>" + [["math", "🔢", t("Maths", "الرياضيات"), mthOn() ? E.mthGradeName() : t("Grade 4", "الصف الرابع")], ["sci", "🔬", t("Science", "العلوم"), E.sciGradeName ? E.sciGradeName() : ""]].map(function (x) {
       var on = x[0] === SUBJ, dis = x[0] === "sci" && !sciOK();
       return '<button type="button" data-v="' + x[0] + '" class="' + (on ? "on" : "") + '" aria-pressed="' + on + '"' + (dis ? ' disabled title="' + esc(t("Science follows the Egyptian Ministry books: choose National or British", "العلوم حسب كتب الوزارة المصرية: اختر قومي أو بريطاني")) + '"' : "") + "><i>" + x[1] + "</i>" + esc(x[2]) + "<small>" + esc(dis ? t("National / British", "قومي / بريطاني") : x[3]) + "</small></button>";
     }).join("");
@@ -169,7 +171,8 @@
     var vb = document.getElementById("voice");
     vb.textContent = E.voiceOn() ? "🔊" : "🔇"; vb.classList.toggle("off", !E.voiceOn());
     vb.setAttribute("aria-label", w("voice")); vb.title = w("voice");
-    var items = SUBJ === "math" ? [["home", "#/", "🏠"], ["topics", "#/topics", "🗂️"], ["mix", "#/mix", "🎯"], ["more", "#/more", "📚"]]
+    var items = mthOn() ? [["home", "#/", "🏠"], ["sci", "#/mth", "🔢"], ["scimix", "#/mth/mix", "🎯"], ["more", "#/more", "📚"]]
+      : SUBJ === "math" ? [["home", "#/", "🏠"], ["topics", "#/topics", "🗂️"], ["mix", "#/mix", "🎯"], ["more", "#/more", "📚"]]
       : SUBJ === "sci" ? [["home", "#/", "🏠"], ["sci", "#/sci", "🔬"], ["scimix", "#/sci/mix", "🎯"], ["more", "#/more", "📚"]]
       : [["home", "#/", "🏠"], ["more", "#/more", "📚"]];
     if (active !== undefined) paintChrome.active = active;
@@ -180,6 +183,7 @@
       : CUR === "national" ? t("Skills are mapped to the Egyptian Primary 4 maths units; practice materials, not official exam content.", "المهارات مرتبطة بوحدات رياضيات الصف الرابع الابتدائي المصري؛ مواد تدريبية وليست امتحانات رسمية.")
       : w("note");
     if (SUBJ === "sci") note = t("Lessons follow the Egyptian Ministry " + E.sciGradeName() + " Science book, Term 1. Simulations are simplified teaching models; practice material, not official exam content.", "الدروس حسب كتاب العلوم للصف " + E.sciGradeName() + " (الفصل الأول) من وزارة التربية والتعليم، والمحاكاة نماذج تعليمية مبسطة؛ مواد تدريبية وليست امتحانًا رسميًا.");
+    else if (mthOn()) note = t("Lessons follow the Egyptian Ministry " + E.mthGradeName() + " Mathematics book, Term 1 (2026-2027). Practice material, not official exam content.", "الدروس حسب كتاب الرياضيات للصف " + E.mthGradeName() + " (الفصل الأول ٢٠٢٦-٢٠٢٧) من وزارة التربية والتعليم؛ مواد تدريبية وليست امتحانًا رسميًا.");
     else if (SUBJ !== "math") note = t("EduZone Learn: practice material in English and Arabic.", "EduZone Learn: مواد تدريبية بالعربية والإنجليزية.");
     document.getElementById("foot").innerHTML = esc(note) + " " + esc(w("voiceNote")) + ' · <a href="#" id="resetp">' + esc(w("reset")) + "</a>";
     document.getElementById("resetp").onclick = function (e) {
@@ -192,6 +196,7 @@
   function viewHome(el) {
     if (SUBJ === "sci" && E.sciHome) { paintChrome("home"); E.sciHome(el); return; }
     if (SUBJ !== "math") return viewPicker(el);
+    if (mthOn()) { paintChrome("home"); E.mthHome(el); return; }
     paintChrome("home");
     var last = prog.last && BY[prog.last];
     var pct = masteredCount() / SKILLS.length;
@@ -605,13 +610,16 @@
     if (!SKILLS.length) return;
     if (/^(topics|c|s|mix)$/.test(parts[0]) && SUBJ !== "math") setSubj("math");
     if (parts[0] === "sci" && SUBJ !== "sci") setSubj("sci");
+    if (parts[0] === "mth" && SUBJ !== "math") setSubj("math");
+    if (parts[0] === "mth" && CUR !== "national") setCur("national");
     if (parts[0] === "topics") viewTopics(el);
     else if (parts[0] === "c") viewTopics(el, decodeURIComponent(parts[1] || ""));
     else if (parts[0] === "s") viewSkill(el, parts[1], parts[2]);
     else if (parts[0] === "mix") viewMix(el);
     else if (parts[0] === "more") viewMore(el);
     else if (parts[0] === "sci" && E.sciView) { E.sciView(el, parts); paintChrome(parts[1] === "mix" ? "scimix" : "sci"); }
-    else viewHome(el);
+    else if (parts[0] === "mth" && E.mthView) { E.mthView(el, parts); paintChrome(parts[1] === "mix" ? "scimix" : "sci"); }
+    else { viewHome(el); if (SUBJ === "math" && CUR === "national" && !mthOn() && E.mthChips && E.mthGrades && E.mthGrades().length) { var hh = el.querySelector(".hero"); if (hh) hh.insertAdjacentHTML("afterend", E.mthChips()); } }
     if (route.lastPath !== parts.slice(0, 2).join("/")) window.scrollTo(0, 0);
     route.lastPath = parts.slice(0, 2).join("/");
   }
